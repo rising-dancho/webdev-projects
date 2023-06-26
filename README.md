@@ -7,7 +7,7 @@ that is the plan.
 
 (html, css, javascript, next.js) tuts playlist: https://www.youtube.com/watch?v=0YFrGy_mzjY&list=PLPG6wUjL9QmTPQ1UDAFOb7nGCJjP6dKW_&pp=gAQBiAQB
 
-my goal is to have 6 (one is portfolio website showcasing the other 5) front-end websites that i built self directed from scratch! 
+my goal is to have 6 (one of which is portfolio website showcasing the other 5) front-end websites that i built self directed from scratch! 
 
 wish me luck bois!!
 im goin in! :)
