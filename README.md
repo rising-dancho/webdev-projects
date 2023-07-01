@@ -1,7 +1,6 @@
 # webdev-projects
 
-freecodecamp is great but too boring. rather than focusing on what tools do 
-i think i'd focus on actually creating projects. seeing what's possible through other people's works 
+freecodecamp is great but too boring. rather than focusing on the tools i think i'd focus on actually creating projects. seeing what's possible through other people's works 
 is extremely inspiring. i'll just do projects and pick-up patterns on how they do things along the way..
 that is the plan.
 
