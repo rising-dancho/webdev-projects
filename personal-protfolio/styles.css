@@ -171,10 +171,11 @@ nav ul li a:hover::after{
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
-    -webkit-transition: background-color 0.4s ease-out;
+    /* -webkit-transition: background-color 0.4s ease-out;
     -moz-transition: background-color 0.4s ease-out;
     -o-transition: background-color 0.4s ease-out;
-    transition: background-color 0.4s ease-out;
+    transition: background-color 0.4s ease-out; */
+    transition: background 0.5s, transform 0.5s;
 }
 
 .services-list i{
@@ -201,3 +202,65 @@ nav ul li a:hover::after{
     background: #ff004f;
     transform: translateY(-10px);
 }
+
+/* ----- PORTFOLIO ----- */
+#portfolio{
+    padding: 50px 0;
+
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.layer{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.layer h3{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+   
+}
+
