@@ -366,3 +366,18 @@ form .btn2{
 .copyright i{
     color: #ff004f;
 }
+
+/* ------- CSS FOR SMALL SCREENS ------- */
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/phone-background.png);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+}
