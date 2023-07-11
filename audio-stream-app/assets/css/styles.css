@@ -96,3 +96,80 @@ body{overflow-x: hidden;}
 /*----------------------*\
  * #REUSED STYLE
 \*----------------------*/
+.container{
+  padding: 30px 15px;
+  padding-right: 8px;
+}
+
+.btn-primary{
+  background: var(--amaranth);
+  color: var(--white);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  text-transform: capitalize;
+  padding: 12px 40px;
+  border-radius: 25px;
+}
+
+.btn-primary:hover{ --amaranth: hsl(349, 69%,43%)}
+
+/*----------------------*\
+ * #HEADER
+\*----------------------*/
+
+header {
+  position: relative;
+  background: var(--xiketic-1);
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar{
+  background: var(--purple-violet);
+  position: fixed;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  box-shadow: 8 2px 5px hsla(0, 0%, 0%, 0.5);
+  visibility: hidden;
+  transition: var(--transition);
+  z-index: 1;
+}
+
+.navbar.active{
+  transform: translateY(100%);
+  visibility: visible;
+}
+
+.navbar-link{
+  width: max-content;
+  color: var(--white);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.navbar-link:hover{ background: var(--nsu-purple);}
+
+.navbar.btn-primary {display: none;}
+ 
+.nav-open-btn, 
+.nav-close-btn {
+  background: var(--white);
+  color: var(--black);
+  font-size: 30px;
+  padding: 3px;
+  border-radius: 8px;
+}
+
+.nav-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
