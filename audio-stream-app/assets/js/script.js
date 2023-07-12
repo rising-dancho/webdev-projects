@@ -16,3 +16,5 @@ navbarOpenBtn.addEventListener("click", function(){
 navbarCloseBtn.addEventListener("click", function(){
     elemToggleFunc(navbar)
 });
+
+
