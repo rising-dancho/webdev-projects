@@ -18,3 +18,13 @@ navbarCloseBtn.addEventListener("click", function(){
 });
 
 
+// Change Text Highlight Color
+const colors = ["#4F247B"];
+
+
+window.addEventListener("mousedown", (e) => {
+    const color = colors.shift();
+    document.documentElement.style.setProperty("--highlight-color", color);
+    colors.push(color);
+});
+// ************************** //

@@ -49,7 +49,16 @@
     */
   --transition: 0.15s ease-in-out;
 
+/**
+    * highlight text
+    */
+  --highlight-color: null;
 }
+
+::selection {
+  background: var(--highlight-color);
+}
+
 
 /*----------------------*\
  * #RESET
@@ -86,6 +95,9 @@ body{overflow-x: hidden;}
   ::-webkit-scrollbar-thumb{
   background: var(--nsu-purple);
   border-radius: 10px;
+
+
+  
 }
 
 ::-webkit-scrollbar-button{
