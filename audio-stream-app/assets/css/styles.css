@@ -257,3 +257,38 @@ main{ background: var(--xiketic-1);}
   margin-bottom: 15px;
   
 }
+
+/*----------------------*\
+ * #FEATURES
+\*----------------------*/
+
+.features{
+  padding: 80px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  gap: 60px;
+}
+
+.features-item:not(:last-child){ margin-bottom: 50px;}
+
+.features-item-title { margin-bottom: 20px;}
+
+.features-item-text { color: var(--light-periwinkle)}
+
+.features-banner { position: relative;}
+
+.feature-banner-bg { 
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(calc(-50% - 3px));
+  width: 125%;
+}
+
+.banner-img {
+  position: relative;
+  left: 5px;
+  width: 100%;
+  margin: auto;
+}
