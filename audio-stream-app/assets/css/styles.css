@@ -108,6 +108,7 @@ body{overflow-x: hidden;}
 /*----------------------*\
  * #REUSED STYLE
 \*----------------------*/
+
 .container{
   padding: 30px 15px;
   padding-right: 8px;
@@ -189,7 +190,7 @@ header .container{
 .navbar-link:hover{ background: var(--nsu-purple);}
 
 .navbar.btn-primary {display: none;}
- 
+
 .nav-open-btn, 
 .nav-close-btn {
   background: var(--white);
@@ -207,7 +208,7 @@ header .container{
 
 .get-started button{
   margin-top: 10px;
-
+  
 }
 
 /*----------------------*\
@@ -335,4 +336,64 @@ main{ background: var(--xiketic-1);}
 .overview-item span {
   font-size: var(--fs-6);
   width: calc(100% - 30px);
+}
+
+/*----------------------*\
+ * #BLOG
+\*----------------------*/
+
+.blog { padding: 80px 0;}
+
+.blog-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.blog-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+}
+
+.blog-banner {
+  position: relative;
+  height: 250px;
+  margin-bottom: 40px;
+}
+
+.blog-banner img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.blog-banner time {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--amaranth);
+  color: var(--white);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  text-align: center;
+  min-width: 130px;
+  padding: 8px 0;
+  border-radius: 20px;
+}
+
+.blog-post-title {
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.blog-post:hover .blog-post-title{
+  text-decoration: underline;
+}
+
+.blog-post-text {
+  color: var(--silver-sand);
+  font-size: var(--fs-6);
+  padding-right: 50px;
 }
