@@ -91,11 +91,7 @@ alt = 5 Brilliant Apps That Will Make Your Life Better
 Each time a digital asset is purchased or sold, Sequoir donates a percentage
 
 
-# footer
-
-alt = pod logo
-
-Follow us on
+w
 
 href = https://youtube.com/c/codewithsadee
 <ion-icon name="logo-youtube"></ion-icon>
