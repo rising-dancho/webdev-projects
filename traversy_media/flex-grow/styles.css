@@ -1,0 +1,35 @@
+ /* RESET */
+ *, *::before, *::after{
+   
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+/*-- END --*/
+
+body{
+    background: white;
+}
+
+.row {
+    background: lightgray; 
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items:flex-end;
+    margin-top:5px;
+}
+  .left {
+    background:lightblue;
+  }
+  .separator{
+    flex-grow:1;
+    border-bottom:dotted 2px black;
+  }
+  .right {
+    background:coral;
+  }

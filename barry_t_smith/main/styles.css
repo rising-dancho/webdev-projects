@@ -1,0 +1,409 @@
+/* General */
+h1, h2, h3, h4, h5, h6, ul, ol, dl, p, blockquote {
+	margin: 0;
+	padding: .75rem 0;
+}
+
+
+body {
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 3em;
+	font-family: 'Playfair Display', Georgia, serif; 
+	line-height: 1.75em;
+}
+
+#main {
+	overflow: auto;
+	padding-bottom: 1.5rem;
+}
+
+#main section {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.width-managed	 {
+	max-width: 50em;
+	margin: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.striped {	
+	background: #eee;
+	border-top: 1px solid #888;
+	border-bottom: 1px solid #888;
+}
+
+.off-screen {
+  position: fixed;
+  left: -999px;
+}
+
+img { max-width: 100%; }
+
+header {
+	padding: .75rem 0;
+}
+
+header h1 {
+	font-size: 1.5rem;
+	padding: 1rem 0;
+	text-align: right;
+}
+
+footer {
+	padding-top: 1.5rem;
+}
+
+input, textarea  {
+	font-family: inherit;
+	padding: .5rem;
+	border: none;
+	border-bottom: 1px solid #222;
+	background: transparent;
+	font-size: 1em;
+	text-align: center;
+	border-radius: 0;
+}
+
+input:focus, textarea:focus {
+	background: #fff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+button, submit {
+	font-family: inherit;
+	font-weight: bold;
+	padding: .5rem;
+	font-size: 1rem;
+	border-radius: .25rem;
+	border: 1px solid #222;
+	background: #eee;
+	cursor: pointer;
+}
+
+ul, ol {
+	padding-left: 2rem;	
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 1px dotted;	
+	position: relative;
+}
+
+a:hover, a:focus{
+	color: #fff;
+	border-bottom: none;
+	background: #a82121;
+	border-radius: .1rem;
+	box-shadow: 0 0 0 .2rem #a82121;
+}
+
+blockquote {
+	position: relative;
+	padding-left: 2rem;
+}
+
+blockquote:before {
+	content:"\201C";
+	font-size: 12rem;
+	color: #eee;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: -1;
+}
+
+.footnote {
+	font-size: .8em;
+}
+
+/* =============== NAV =============== */
+
+#primary-nav {
+	overflow: visible;
+	border-bottom: 1px solid #ccc;
+	margin-top: .75rem;
+}
+
+#primary-nav a {
+	text-decoration: none;
+	color: black;
+	padding: .5em 1em;
+	display: inline-block;
+}
+
+#primary-nav a:hover, #primary-nav a:focus {
+
+}
+
+h1 {
+	font-family: 'Playfair Display', inherit;
+	font-weight: 900;
+	font-style: italic;
+}
+
+
+
+/* =============== Misc =============== */
+
+h2 {
+	clear: both;	
+	text-align: center;
+	font-size: 2.5em;
+	padding: 1em 0;
+	line-height: 1em;
+	position: relative;
+}
+
+h2.fancy {overflow-x: hidden; }
+
+h2.fancy span {
+	position: relative; 
+}
+
+h2.fancy span:before,
+h2.fancy span:after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	background: #222;
+	top: 55%;
+	width: 600px;
+}
+
+h2.fancy span:before { 
+	right: 100%;
+	margin-right: .25rem;
+}
+
+
+h2.fancy span:after{ 
+	left: 100%;
+	margin-left: .25rem;
+}
+
+h2 a { color: inherit; }
+
+.illustration {
+	float: left;
+	max-width: 20rem;
+	width: 33%;
+	margin-right: 1rem;	
+}	
+
+#barry-age-sentence {
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+#barry-age-sentence.ready {
+	opacity: 1;
+	transition: opacity 1s;
+	transition-delay: 2s;
+}
+
+.cbc-embed {
+	clear: both;
+	padding-top: 1rem;
+}
+
+.fin {
+	height: 1px;
+	background: #222;
+	width: 3rem;
+	display: block;
+	margin: 3rem auto;
+}
+
+/* =============== LIFE COMPLETION WIDGET ================ */
+
+#life-completion-widget h2 {
+	font-size: 2rem;
+	text-align: left;	
+}
+
+#user-age {
+	width: 3rem;
+}
+
+#life-completion {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+#life-completion.active {
+  opacity: 1;
+  height: auto;
+  transition: all 1s;
+}
+
+#life-completion-meter {
+  position: relative;
+  margin: 4rem;
+  font-family: sans-serif;
+}
+
+#life-completion-meter::before, #life-completion-meter::after {
+  height: 2rem;
+  line-height: 2rem;
+  margin: 0 .5rem;
+  top: 0;
+}
+
+#life-completion-meter::before {
+  content: "Birth";
+  position: absolute;
+  right: 100%;
+}
+
+#life-completion-meter::after {
+  content: "Death";
+  position: absolute;
+  left: 100%;
+}
+
+#life-completion-bar-outer {
+    border-radius: .15rem;
+    overflow: hidden;
+    border: 1px solid #bbb;
+    background: #ccc;
+}
+
+#life-completion-bar {
+  height: 2rem;
+  background: linear-gradient(to left, #a82121 0%,#e05353 100%);
+  width: 0%;
+  transition: all 1s;
+  transition-delay: .5s;
+  border-top-right-radius: .15rem;
+  border-bottom-right-radius: .15rem;
+}
+
+#life-completion-location {
+  display: block;
+  font-size: .8rem;
+  width: 7rem;
+  margin-left: -3.5rem;
+  margin-top: 1rem;
+  border-radius: 100em;
+  background: #222;
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+  position: absolute;
+  top: 200%;
+  left: 0;
+  opacity: 0;
+  transition: top .4s, opacity .5s;
+  transition-delay: 1.5s;
+}
+
+#life-completion-location.active {
+	top: 100%;
+	opacity: 1;
+}
+
+#life-completion-location::after {
+  content: "";
+  height: 0;
+  width: 0;
+  border: .5rem solid transparent;
+  border-bottom-color: #222;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -.5rem;
+}
+
+#life-completion-text:focus {
+	outline: none;
+	text-align: center;
+}
+
+/* END LIFE COMPLETION */
+
+/* ====================== GOOD READS ================= */
+.goodreads-container {
+	text-align: center;
+	line-height: 1.2rem;
+}
+
+.goodreads-container a {
+	border-bottom: none;
+}	
+
+.goodreads-container a:hover, .goodreads-container a:focus {
+	color: #a82121;
+	background: transparent;
+	box-shadow: none;
+	text-decoration: underline;
+}
+
+[class^="gr_custom_each_container"]{
+	display: inline-block;
+	width: 15rem;
+	margin: .25rem;
+	background: #fbfbfb;
+	border-radius: .15rem;
+	position: relative;
+	font-size: .8em;
+	overflow: hidden;
+	border: 1px solid #222;
+}
+
+[class^="gr_custom_title"]{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 75%;
+	overflow: visible;
+	text-align: left;
+}
+
+[class^="gr_custom_title"] a{
+	min-height: 75px;
+	overflow: hidden;
+	padding: .5rem;
+	display: block;
+}
+
+[class^="gr_custom_book_container"]{
+	float: left;
+	margin: 0;
+	margin-right: 1rem;
+	width: 25%;
+}
+
+[class^="gr_custom_author"] {
+	clear: left;
+	text-align: right;
+	display: block;
+	background: #222;
+	color: #eee;
+	padding: .25rem;
+}
+
+[class^="gr_custom_author"] a {
+	color: inherit;	
+}
+
+center { padding-top: 2rem; }
+		
+/* small view media query */
+
+@media all and (max-width: 600px){
+
+}
