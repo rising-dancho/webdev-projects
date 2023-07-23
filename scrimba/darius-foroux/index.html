@@ -1,0 +1,1430 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="pingback" href="https://dariusforoux.com/xmlrpc.php">
+        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
+        <style id="aoatfcss" media="all">
+            @charset "UTF-8";.wp-block-image img {
+                height: auto;
+                max-width: 100%;
+                vertical-align: bottom;
+                box-sizing: border-box
+            }
+
+            ul {
+                box-sizing: border-box;
+                padding-left: 20px;
+                list-style: disc
+            }
+
+            .convertkit-broadcasts-list li time {
+                display: inline-block;
+                grid-area: date
+            }
+
+            .convertkit-broadcasts-list li .convertkit-broadcast-title {
+                display: inline-block;
+                grid-area: title
+            }
+
+            .convertkit-broadcasts-list li .convertkit-broadcast-image {
+                display: inline-block;
+                grid-area: image
+            }
+
+            .convertkit-broadcasts-list li .convertkit-broadcast-text {
+                display: inline-block;
+                grid-area: text;
+                font-size: 16px
+            }
+
+            .convertkit-broadcasts-pagination li.convertkit-broadcasts-pagination-prev {
+                grid-area: prev;
+                text-align: left
+            }
+
+            .convertkit-broadcasts-pagination li.convertkit-broadcasts-pagination-next {
+                grid-area: next;
+                text-align: right
+            }
+
+            body {
+                --wp--preset--color--black: #000;
+                --wp--preset--color--cyan-bluish-gray: #abb8c3;
+                --wp--preset--color--white: #fff;
+                --wp--preset--color--pale-pink: #f78da7;
+                --wp--preset--color--vivid-red: #cf2e2e;
+                --wp--preset--color--luminous-vivid-orange: #ff6900;
+                --wp--preset--color--luminous-vivid-amber: #fcb900;
+                --wp--preset--color--light-green-cyan: #7bdcb5;
+                --wp--preset--color--vivid-green-cyan: #00d084;
+                --wp--preset--color--pale-cyan-blue: #8ed1fc;
+                --wp--preset--color--vivid-cyan-blue: #0693e3;
+                --wp--preset--color--vivid-purple: #9b51e0;
+                --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,#9b51e0 100%);
+                --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,#7adcb4 0%,#00d082 100%);
+                --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);
+                --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,#cf2e2e 100%);
+                --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,#eee 0%,#a9b8c3 100%);
+                --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,#4aeadc 0%,#9778d1 20%,#cf2aba 40%,#ee2c82 60%,#fb6962 80%,#fef84c 100%);
+                --wp--preset--gradient--blush-light-purple: linear-gradient(135deg,#ffceec 0%,#9896f0 100%);
+                --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,#fecda5 0%,#fe2d2d 50%,#6b003e 100%);
+                --wp--preset--gradient--luminous-dusk: linear-gradient(135deg,#ffcb70 0%,#c751c0 50%,#4158d0 100%);
+                --wp--preset--gradient--pale-ocean: linear-gradient(135deg,#fff5cb 0%,#b6e3d4 50%,#33a7b5 100%);
+                --wp--preset--gradient--electric-grass: linear-gradient(135deg,#caf880 0%,#71ce7e 100%);
+                --wp--preset--gradient--midnight: linear-gradient(135deg,#020381 0%,#2874fc 100%);
+                --wp--preset--duotone--dark-grayscale: url(/wp-content/cache/autoptimize/css/);
+                --wp--preset--duotone--grayscale: url(/wp-content/cache/autoptimize/css/);
+                --wp--preset--duotone--purple-yellow: url(/wp-content/cache/autoptimize/css/);
+                --wp--preset--duotone--blue-red: url(/wp-content/cache/autoptimize/css/);
+                --wp--preset--duotone--midnight: url(/wp-content/cache/autoptimize/css/);
+                --wp--preset--duotone--magenta-yellow: url(/wp-content/cache/autoptimize/css/);
+                --wp--preset--duotone--purple-green: url(/wp-content/cache/autoptimize/css/);
+                --wp--preset--duotone--blue-orange: url(/wp-content/cache/autoptimize/css/);
+                --wp--preset--font-size--small: 13px;
+                --wp--preset--font-size--medium: 20px;
+                --wp--preset--font-size--large: 36px;
+                --wp--preset--font-size--x-large: 42px;
+                --wp--preset--spacing--20: .44rem;
+                --wp--preset--spacing--30: .67rem;
+                --wp--preset--spacing--40: 1rem;
+                --wp--preset--spacing--50: 1.5rem;
+                --wp--preset--spacing--60: 2.25rem;
+                --wp--preset--spacing--70: 3.38rem;
+                --wp--preset--spacing--80: 5.06rem;
+                --wp--preset--shadow--natural: 6px 6px 9px rgba(0,0,0,.2);
+                --wp--preset--shadow--deep: 12px 12px 50px rgba(0,0,0,.4);
+                --wp--preset--shadow--sharp: 6px 6px 0px rgba(0,0,0,.2);
+                --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255,255,255,1),6px 6px rgba(0,0,0,1);
+                --wp--preset--shadow--crisp: 6px 6px 0px rgba(0,0,0,1);
+                margin: 0
+            }
+
+            @font-face {
+                font-family: olsen-icons;
+                font-display: swap;
+                src: url(https://dariusforoux.com/wp-content/themes/olsen/vendor/olsen-icons/css/../fonts/olsen-icons.eot);
+                src: url(https://dariusforoux.com/wp-content/themes/olsen/vendor/olsen-icons/css/../fonts/olsen-icons.eot?#iefix) format("eot"),url(https://dariusforoux.com/wp-content/themes/olsen/vendor/olsen-icons/css/../fonts/olsen-icons.woff2) format("woff2"),url(https://dariusforoux.com/wp-content/themes/olsen/vendor/olsen-icons/css/../fonts/olsen-icons.woff) format("woff"),url(https://dariusforoux.com/wp-content/themes/olsen/vendor/olsen-icons/css/../fonts/olsen-icons.ttf) format("truetype"),url(https://dariusforoux.com/wp-content/themes/olsen/vendor/olsen-icons/css/../fonts/olsen-icons.svg#olsen-icons) format("svg")
+            }
+
+            .olsen-icons:before {
+                font-family: olsen-icons;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-style: normal;
+                font-variant: normal;
+                font-weight: 400;
+                text-decoration: none;
+                text-transform: none
+            }
+
+            .olsen-icons-bars:before {
+                content: "\E015"
+            }
+
+            .olsen-icons-instagram:before {
+                content: "\E043"
+            }
+
+            .olsen-icons-search:before {
+                content: "\E059"
+            }
+
+            .olsen-icons-twitter:before {
+                content: "\E070"
+            }
+
+            .olsen-icons-youtube-play:before {
+                content: "\E07B"
+            }
+
+            html {
+                line-height: 1.15;
+                -webkit-text-size-adjust: 100%;
+                box-sizing: border-box;
+                height: 100%
+            }
+
+            main {
+                display: block
+            }
+
+            a {
+                background-color: transparent;
+                outline: 0;
+                text-decoration: none;
+                color: #333
+            }
+
+            img {
+                border-style: none;
+                display: inline-block;
+                vertical-align: middle;
+                max-width: 100%;
+                height: auto
+            }
+
+            button,input {
+                font-family: inherit;
+                font-size: 100%;
+                line-height: 1.15;
+                margin: 0;
+                overflow: visible
+            }
+
+            button {
+                text-transform: none;
+                display: inline-block;
+                margin: 0;
+                border: none;
+                box-shadow: none;
+                text-align: center;
+                vertical-align: middle;
+                white-space: nowrap;
+                width: auto;
+                height: auto;
+                padding: 12px 25px 11px;
+                background: #b49543;
+                color: #fff
+            }
+
+            [type=button],[type=submit],button {
+                -webkit-appearance: button
+            }
+
+            [type=button]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner {
+                border-style: none;
+                padding: 0
+            }
+
+            [type=button]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring {
+                outline: ButtonText dotted 1px
+            }
+
+            [type=search] {
+                -webkit-appearance: textfield;
+                outline-offset: -2px
+            }
+
+            [type=search]::-webkit-search-decoration {
+                -webkit-appearance: none
+            }
+
+            ::-webkit-file-upload-button {
+                -webkit-appearance: button;
+                font: inherit
+            }
+
+            .container {
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                padding-right: 15px;
+                padding-left: 15px
+            }
+
+            .row {
+                display: -webkit-box;
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: -15px;
+                margin-left: -15px
+            }
+
+            .col-12,.col-lg-8 {
+                position: relative;
+                width: 100%;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px
+            }
+
+            .col-12 {
+                -webkit-box-flex: 0;
+                flex: 0 0 100%;
+                max-width: 100%
+            }
+
+            *,::after,::before {
+                box-sizing: inherit
+            }
+
+            .group::after {
+                content: "";
+                display: table;
+                clear: both
+            }
+
+            figure {
+                margin: 0
+            }
+
+            .sr-only {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                margin: -1px;
+                padding: 0;
+                overflow: hidden;
+                clip: rect(0,0,0,0);
+                border: 0
+            }
+
+            label {
+                display: block;
+                margin: 0 0 2px;
+                font-weight: 400
+            }
+
+            input[type=search] {
+                box-sizing: border-box
+            }
+
+            ::-webkit-input-placeholder {
+                color: rgba(51,51,51,.3);
+                font-weight: 400;
+                font-size: 11px;
+                opacity: 1
+            }
+
+            :-moz-placeholder {
+                color: rgba(51,51,51,.3);
+                font-weight: 400;
+                font-size: 11px;
+                opacity: 1
+            }
+
+            ::-moz-placeholder {
+                color: rgba(51,51,51,.3);
+                font-weight: 400;
+                font-size: 11px;
+                opacity: 1
+            }
+
+            .nav {
+                font-size: 14px
+            }
+
+            .nav ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                position: relative;
+                z-index: 200
+            }
+
+            .navigation li {
+                position: relative
+            }
+
+            .navigation>li {
+                display: inline-block
+            }
+
+            .navigation ul {
+                text-align: left;
+                position: absolute;
+                z-index: 10;
+                visibility: hidden;
+                opacity: 0;
+                -webkit-transform: translate(0,10px);
+                transform: translate(0,10px);
+                margin-left: 12px;
+                list-style: none;
+                min-width: 200px;
+                background: #ebebeb;
+                padding: 1px
+            }
+
+            .navigation ul.sub-menu {
+                margin-top: 13px
+            }
+
+            .navigation>li:first-child ul {
+                margin-left: 0
+            }
+
+            .navigation a {
+                display: block;
+                white-space: nowrap;
+                position: relative;
+                color: #333
+            }
+
+            .navigation>li>a {
+                margin: 0 12px
+            }
+
+            .navigation>li:first-child>a {
+                margin-left: 0
+            }
+
+            .navigation li li a {
+                padding: 6px 15px
+            }
+
+            .navigation>li ul a {
+                background: #fff;
+                padding: 8px;
+                margin-bottom: 1px
+            }
+
+            .navigation>li>ul {
+                margin-top: 10px
+            }
+
+            .navigation .menu-item-has-children>a::after {
+                font-family: olsen-icons;
+                content: "\E00A";
+                font-size: 12px;
+                position: relative;
+                top: 0;
+                right: -6px;
+                line-height: normal
+            }
+
+            .mobile-nav-trigger {
+                font-size: 16px;
+                line-height: 1;
+                border: 2px solid #ebebeb;
+                padding: 10px 12px;
+                display: none
+            }
+
+            .mobile-nav-trigger i {
+                position: relative;
+                top: 2px
+            }
+
+            .site-bar {
+                border-top: 1px solid #ebebeb;
+                border-bottom: 1px solid #ebebeb;
+                padding: 13px 0;
+                z-index: 10000000;
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                align-items: center
+            }
+
+            .site-logo {
+                padding: 30px;
+                text-align: center
+            }
+
+            .site-logo>div {
+                font-size: 26px;
+                line-height: normal;
+                margin: 0 0 15px;
+                word-wrap: break-word;
+                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+                font-weight: 400
+            }
+
+            .site-logo a {
+                display: block
+            }
+
+            #site-content #content {
+                padding-top: 30px
+            }
+
+            .home #site-content {
+                border-top: 1px solid #ebebeb
+            }
+
+            .socials {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                float: right
+            }
+
+            .socials li {
+                float: left
+            }
+
+            .socials li a {
+                display: block;
+                font-size: 13px;
+                padding: 2px 5px;
+                margin-left: 5px
+            }
+
+            .site-tools {
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                position: relative
+            }
+
+            .site-tools .global-search-form-trigger {
+                margin-left: 10px;
+                font-size: 13px
+            }
+
+            .site-tools .global-search-form {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                width: 400px;
+                -webkit-transform: translateY(-30%);
+                transform: translateY(-30%);
+                padding: 10px;
+                z-index: 200;
+                opacity: 0;
+                visibility: hidden
+            }
+
+            .site-tools .global-search-form button.global-search-form-submit {
+                position: absolute;
+                right: 50px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                padding: 5px 10px 6px
+            }
+
+            .site-tools .global-search-input {
+                display: block;
+                height: 56px;
+                font-size: 14px
+            }
+
+            .site-tools .global-search-input::-webkit-search-cancel-button {
+                display: none
+            }
+
+            .site-tools .global-search-input::-webkit-input-placeholder {
+                font-size: 14px;
+                letter-spacing: 0
+            }
+
+            .site-tools .global-search-input::-moz-placeholder {
+                font-size: 14px;
+                letter-spacing: 0
+            }
+
+            .site-tools .global-search-input::-ms-input-placeholder {
+                font-size: 14px;
+                letter-spacing: 0
+            }
+
+            .site-tools .global-search-form-dismiss {
+                background: 0 0;
+                position: absolute;
+                width: 42px;
+                height: 56px;
+                top: calc(50% - 2px);
+                right: 10px;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                font-size: 26px;
+                padding: 0;
+                line-height: 0;
+                opacity: .5;
+                color: #000
+            }
+
+            .entry {
+                margin: 0 0 30px;
+                position: relative
+            }
+
+            .entry figure:not(.gallery-item) {
+                margin-bottom: 30px;
+                position: relative
+            }
+
+            .entry-title {
+                text-align: center;
+                position: relative;
+                margin: 0 0 10px;
+                padding: 0 60px;
+                letter-spacing: -.025em
+            }
+
+            .entry-content::after {
+                content: "";
+                display: table;
+                clear: both
+            }
+
+            .page .entry-content {
+                margin-bottom: 10px
+            }
+
+            .entry-content>[class^=wp-block-] {
+                margin-bottom: 30px
+            }
+
+            .navigation-mobile-wrap {
+                background-color: #f5f5f5;
+                color: #333;
+                padding: 0 15px;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                overflow-y: auto;
+                z-index: 1000;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                visibility: hidden
+            }
+
+            .navigation-mobile {
+                margin: 0;
+                padding: 0;
+                line-height: normal;
+                color: #333
+            }
+
+            .navigation-mobile-dismiss {
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: end;
+                justify-content: flex-end;
+                border-bottom: 1px solid #ececec;
+                padding: 14px;
+                text-align: right;
+                font-weight: 700;
+                color: #333
+            }
+
+            .navigation-mobile-dismiss::after {
+                content: "\00d7";
+                font-size: 1.5rem;
+                margin-left: 5px
+            }
+
+            @media (min-width: 576px) {
+                .container {
+                    padding-right:15px;
+                    padding-left: 15px;
+                    width: 540px;
+                    max-width: 100%
+                }
+
+                .row {
+                    margin-right: -15px;
+                    margin-left: -15px
+                }
+
+                .col-12,.col-lg-8 {
+                    padding-right: 15px;
+                    padding-left: 15px
+                }
+            }
+
+            @media (min-width: 768px) {
+                .container {
+                    padding-right:15px;
+                    padding-left: 15px;
+                    width: 750px;
+                    max-width: 100%
+                }
+
+                .row {
+                    margin-right: -15px;
+                    margin-left: -15px
+                }
+
+                .col-12,.col-lg-8 {
+                    padding-right: 15px;
+                    padding-left: 15px
+                }
+            }
+
+            @media (min-width: 992px) {
+                .container {
+                    padding-right:15px;
+                    padding-left: 15px;
+                    width: 970px;
+                    max-width: 100%
+                }
+
+                .row {
+                    margin-right: -15px;
+                    margin-left: -15px
+                }
+
+                .col-12,.col-lg-8 {
+                    padding-right: 15px;
+                    padding-left: 15px
+                }
+
+                .col-lg-8 {
+                    -webkit-box-flex: 0;
+                    flex: 0 0 66.66667%;
+                    max-width: 66.66667%
+                }
+
+                .offset-lg-2 {
+                    margin-left: 16.66667%
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .container {
+                    padding-right:15px;
+                    padding-left: 15px;
+                    width: 1040px;
+                    max-width: 100%
+                }
+
+                .row {
+                    margin-right: -15px;
+                    margin-left: -15px
+                }
+
+                .col-12,.col-lg-8 {
+                    padding-right: 15px;
+                    padding-left: 15px
+                }
+            }
+
+            @media (max-width: 991px) {
+                input {
+                    width:100%
+                }
+
+                .navigation>li>a {
+                    margin-right: 15px
+                }
+
+                #masthead .navigation {
+                    display: none
+                }
+
+                .mobile-nav-trigger {
+                    display: inline-block
+                }
+            }
+
+            @media (max-width: 767px) {
+                .site-tools .global-search-form {
+                    width:100vw;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    -webkit-transform: translateY(-100%);
+                    transform: translateY(-100%)
+                }
+
+                body {
+                    font-size: 18px
+                }
+
+                .site-bar .nav,.site-bar .site-tools {
+                    -webkit-box-pack: center;
+                    justify-content: center
+                }
+
+                .entry-title {
+                    padding: 0
+                }
+            }
+
+            body {
+                background: #fff;
+                color: #333;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 1.7
+            }
+
+            h1 {
+                line-height: normal;
+                margin: 0 0 15px;
+                word-wrap: break-word;
+                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+                font-weight: 700;
+                font-size: 34px;
+                text-transform: upper
+            }
+
+            input {
+                display: inline-block;
+                width: 100%;
+                max-width: 100%;
+                padding: 8px 12px 8px 15px;
+                background-color: #ebebeb;
+                background-image: none;
+                border: none;
+                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 1.2;
+                letter-spacing: 2px
+            }
+
+            form label {
+                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 1.626
+            }
+
+            button,button[type=submit] {
+                font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.2;
+                text-transform: uppercase;
+                letter-spacing: 2px
+            }
+
+            @media (max-width: 575px) {
+                h1 {
+                    font-size:28px
+                }
+            }
+
+            :root {
+                --wp--preset--font-size--normal: 16px;
+                --wp--preset--font-size--huge: 42px;
+                --swiper-theme-color: #007aff;
+                --swiper-navigation-size: 44px;
+                --jp-carousel-primary-color: #fff;
+                --jp-carousel-primary-subtle-color: #999;
+                --jp-carousel-bg-color: #000;
+                --jp-carousel-bg-faded-color: #222;
+                --jp-carousel-border-color: #3a3a3a;
+                --jetpack--contact-form--border: 1px solid #8c8f94;
+                --jetpack--contact-form--border-color: #8c8f94;
+                --jetpack--contact-form--border-size: 1px;
+                --jetpack--contact-form--border-style: solid;
+                --jetpack--contact-form--border-radius: 0px;
+                --jetpack--contact-form--input-padding: 16px;
+                --jetpack--contact-form--font-size: 16px
+            }
+
+            button[type=submit] {
+                background-color: #000
+            }
+
+            .site-header .navigation {
+                font-size: 12px
+            }
+
+            html:not(.jetpack-lazy-images-js-enabled):not(.js) .jetpack-lazy-image {
+                display: none
+            }
+
+            .site-logo {
+                margin: auto;
+                max-width: 280px
+            }
+
+            footer .site-logo h3>a {
+                display: none
+            }
+
+            .navigation li {
+                font-size: 14px;
+                font-family: Arial
+            }
+
+            .mobile-nav-trigger,.navigation>li>a {
+                font-family: Arial
+            }
+
+            body h1 {
+                padding-bottom: 15px!important
+            }
+
+            p {
+                margin: 0 0 25px
+            }
+        </style>
+        <link rel="stylesheet" media="print" href="https://dariusforoux.com/wp-content/cache/autoptimize/css/autoptimize_447c7b863428d136e0518620428cf814.css" onload="this.onload=null;this.media='all';">
+        <noscript id="aonoscrcss">
+            <link media="all" href="https://dariusforoux.com/wp-content/cache/autoptimize/css/autoptimize_447c7b863428d136e0518620428cf814.css" rel="stylesheet">
+        </noscript>
+        <title>Darius Foroux | Weekly ideas to become smarter and wealthier</title>
+        <meta name="description" content="Hi, I&#039;m Darius Foroux, author of this blog. I’ve been sharing weekly ideas to become smarter and wealthier since 2015."/>
+        <link rel="canonical" href="https://dariusforoux.com/"/>
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Darius Foroux | Weekly ideas to become smarter and wealthier"/>
+        <meta property="og:description" content="Hi, I&#039;m Darius Foroux, author of this blog. I’ve been sharing weekly ideas to become smarter and wealthier since 2015."/>
+        <meta property="og:url" content="https://dariusforoux.com/"/>
+        <meta property="og:site_name" content="Darius Foroux"/>
+        <meta property="article:publisher" content="http://facebook.com/dariusforoux/"/>
+        <meta property="article:modified_time" content="2022-10-14T13:41:59+00:00"/>
+        <meta property="og:image" content="https://dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-1024x803.jpg"/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@DariusForoux"/>
+        <script type="application/ld+json" class="yoast-schema-graph">
+            {"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://dariusforoux.com/","url":"https://dariusforoux.com/","name":"Darius Foroux | Weekly ideas to become smarter and wealthier","isPartOf":{"@id":"https://dariusforoux.com/#website"},"about":{"@id":"https://dariusforoux.com/#/schema/person/1b570f6b18eaea188b3ee1cae0a7d32d"},"primaryImageOfPage":{"@id":"https://dariusforoux.com/#primaryimage"},"image":{"@id":"https://dariusforoux.com/#primaryimage"},"thumbnailUrl":"https://dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-1024x803.jpg","datePublished":"2017-01-07T19:36:54+00:00","dateModified":"2022-10-14T13:41:59+00:00","description":"Hi, I'm Darius Foroux, author of this blog. I’ve been sharing weekly ideas to become smarter and wealthier since 2015.","breadcrumb":{"@id":"https://dariusforoux.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://dariusforoux.com/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://dariusforoux.com/#primaryimage","url":"https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?fit=2560%2C2007&ssl=1","contentUrl":"https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?fit=2560%2C2007&ssl=1","width":2560,"height":2007,"caption":"Join Wise & Wealthy"},{"@type":"BreadcrumbList","@id":"https://dariusforoux.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://dariusforoux.com/#website","url":"https://dariusforoux.com/","name":"Darius Foroux","description":"","publisher":{"@id":"https://dariusforoux.com/#/schema/person/1b570f6b18eaea188b3ee1cae0a7d32d"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://dariusforoux.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":["Person","Organization"],"@id":"https://dariusforoux.com/#/schema/person/1b570f6b18eaea188b3ee1cae0a7d32d","name":"Darius Foroux","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://dariusforoux.com/#/schema/person/image/","url":"https://i1.wp.com/dariusforoux.com/wp-content/uploads/2020/05/Darius-Foroux-photo-scaled.jpeg?fit=1200%2C800&ssl=1","contentUrl":"https://i1.wp.com/dariusforoux.com/wp-content/uploads/2020/05/Darius-Foroux-photo-scaled.jpeg?fit=1200%2C800&ssl=1","width":1200,"height":800,"caption":"Darius Foroux"},"logo":{"@id":"https://dariusforoux.com/#/schema/person/image/"},"description":"My work covers a range of topics like productivity, decision making, habits, and personal finance—anything that inspires you to take more action to live a meaningful life. You’re welcome to join my free newsletter to get my articles in your inbox.","sameAs":["https://dariusforoux.com","http://facebook.com/dariusforoux/","http://instagram.com/dariusforoux","https://twitter.com/DariusForoux","https://www.youtube.com/channel/UC2yipOLydNmOFYYRO_v-sSg"]}]}
+        </script>
+        <link rel='dns-prefetch' href='//a.omappapi.com'/>
+        <link rel='dns-prefetch' href='//www.googletagmanager.com'/>
+        <link rel='dns-prefetch' href='//stats.wp.com'/>
+        <link rel='dns-prefetch' href='//jetpack.wordpress.com'/>
+        <link rel='dns-prefetch' href='//s0.wp.com'/>
+        <link rel='dns-prefetch' href='//public-api.wordpress.com'/>
+        <link rel='dns-prefetch' href='//0.gravatar.com'/>
+        <link rel='dns-prefetch' href='//1.gravatar.com'/>
+        <link rel='dns-prefetch' href='//2.gravatar.com'/>
+        <link rel='dns-prefetch' href='//i0.wp.com'/>
+        <link rel='dns-prefetch' href='//c0.wp.com'/>
+        <link rel="alternate" type="application/rss+xml" title="Darius Foroux &raquo; Feed" href="https://dariusforoux.com/feed/"/>
+        <link rel="alternate" type="application/rss+xml" title="Darius Foroux &raquo; Comments Feed" href="https://dariusforoux.com/comments/feed/"/>
+        <script type="text/javascript">
+            window._wpemojiSettings = {
+                "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
+                "ext": ".png",
+                "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
+                "svgExt": ".svg",
+                "source": {
+                    "concatemoji": "https:\/\/dariusforoux.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"
+                }
+            };
+            /*! This file is auto-generated */
+            !function(e, a, t) {
+                var n, r, o, i = a.createElement("canvas"), p = i.getContext && i.getContext("2d");
+                function s(e, t) {
+                    p.clearRect(0, 0, i.width, i.height),
+                    p.fillText(e, 0, 0);
+                    e = i.toDataURL();
+                    return p.clearRect(0, 0, i.width, i.height),
+                    p.fillText(t, 0, 0),
+                    e === i.toDataURL()
+                }
+                function c(e) {
+                    var t = a.createElement("script");
+                    t.src = e,
+                    t.defer = t.type = "text/javascript",
+                    a.getElementsByTagName("head")[0].appendChild(t)
+                }
+                for (o = Array("flag", "emoji"),
+                t.supports = {
+                    everything: !0,
+                    everythingExceptFlag: !0
+                },
+                r = 0; r < o.length; r++)
+                    t.supports[o[r]] = function(e) {
+                        if (p && p.fillText)
+                            switch (p.textBaseline = "top",
+                            p.font = "600 32px Arial",
+                            e) {
+                            case "flag":
+                                return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !s("\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");
+                            case "emoji":
+                                return !s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff", "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")
+                            }
+                        return !1
+                    }(o[r]),
+                    t.supports.everything = t.supports.everything && t.supports[o[r]],
+                    "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
+                t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag,
+                t.DOMReady = !1,
+                t.readyCallback = function() {
+                    t.DOMReady = !0
+                }
+                ,
+                t.supports.everything || (n = function() {
+                    t.readyCallback()
+                }
+                ,
+                a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1),
+                e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n),
+                a.attachEvent("onreadystatechange", function() {
+                    "complete" === a.readyState && t.readyCallback()
+                })),
+                (e = t.source || {}).concatemoji ? c(e.concatemoji) : e.wpemoji && e.twemoji && (c(e.twemoji),
+                c(e.wpemoji)))
+            }(window, document, window._wpemojiSettings);
+        </script>
+        <script type='text/javascript' src='https://www.googletagmanager.com/gtag/js?id=UA-67545581-1' id='google_gtagjs-js' async></script>
+        <script type='text/javascript' id='google_gtagjs-js-after'>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('set', 'linker', {
+                "domains": ["dariusforoux.com"]
+            });
+            gtag("js", new Date());
+            gtag("set", "developer_id.dZTNiMT", true);
+            gtag("config", "UA-67545581-1", {
+                "anonymize_ip": true
+            });
+            gtag("config", "G-Z91WGTFFFZ");
+        </script>
+        <link rel="https://api.w.org/" href="https://dariusforoux.com/wp-json/"/>
+        <link rel="alternate" type="application/json" href="https://dariusforoux.com/wp-json/wp/v2/pages/1888"/>
+        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://dariusforoux.com/xmlrpc.php?rsd"/>
+        <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://dariusforoux.com/wp-includes/wlwmanifest.xml"/>
+        <meta name="generator" content="WordPress 6.2.2"/>
+        <link rel='shortlink' href='https://dariusforoux.com/'/>
+        <link rel="alternate" type="application/json+oembed" href="https://dariusforoux.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdariusforoux.com%2F"/>
+        <link rel="alternate" type="text/xml+oembed" href="https://dariusforoux.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdariusforoux.com%2F&#038;format=xml"/>
+        <meta name="generator" content="Site Kit by Google 1.105.0"/>
+        <script>
+            document.documentElement.classList.add('jetpack-lazy-images-js-enabled');
+        </script>
+    </head>
+    <body data-rsssl=1 class="home page-template page-template-template-fullwidth page-template-template-fullwidth-php page page-id-1888">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+            <defs>
+                <filter id="wp-duotone-dark-grayscale">
+                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
+                    <feComponentTransfer color-interpolation-filters="sRGB">
+                        <feFuncR type="table" tableValues="0 0.49803921568627"/>
+                        <feFuncG type="table" tableValues="0 0.49803921568627"/>
+                        <feFuncB type="table" tableValues="0 0.49803921568627"/>
+                        <feFuncA type="table" tableValues="1 1"/>
+                    </feComponentTransfer>
+                    <feComposite in2="SourceGraphic" operator="in"/>
+                </filter>
+            </defs>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+            <defs>
+                <filter id="wp-duotone-grayscale">
+                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
+                    <feComponentTransfer color-interpolation-filters="sRGB">
+                        <feFuncR type="table" tableValues="0 1"/>
+                        <feFuncG type="table" tableValues="0 1"/>
+                        <feFuncB type="table" tableValues="0 1"/>
+                        <feFuncA type="table" tableValues="1 1"/>
+                    </feComponentTransfer>
+                    <feComposite in2="SourceGraphic" operator="in"/>
+                </filter>
+            </defs>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+            <defs>
+                <filter id="wp-duotone-purple-yellow">
+                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
+                    <feComponentTransfer color-interpolation-filters="sRGB">
+                        <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765"/>
+                        <feFuncG type="table" tableValues="0 1"/>
+                        <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431"/>
+                        <feFuncA type="table" tableValues="1 1"/>
+                    </feComponentTransfer>
+                    <feComposite in2="SourceGraphic" operator="in"/>
+                </filter>
+            </defs>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+            <defs>
+                <filter id="wp-duotone-blue-red">
+                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
+                    <feComponentTransfer color-interpolation-filters="sRGB">
+                        <feFuncR type="table" tableValues="0 1"/>
+                        <feFuncG type="table" tableValues="0 0.27843137254902"/>
+                        <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902"/>
+                        <feFuncA type="table" tableValues="1 1"/>
+                    </feComponentTransfer>
+                    <feComposite in2="SourceGraphic" operator="in"/>
+                </filter>
+            </defs>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+            <defs>
+                <filter id="wp-duotone-midnight">
+                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
+                    <feComponentTransfer color-interpolation-filters="sRGB">
+                        <feFuncR type="table" tableValues="0 0"/>
+                        <feFuncG type="table" tableValues="0 0.64705882352941"/>
+                        <feFuncB type="table" tableValues="0 1"/>
+                        <feFuncA type="table" tableValues="1 1"/>
+                    </feComponentTransfer>
+                    <feComposite in2="SourceGraphic" operator="in"/>
+                </filter>
+            </defs>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+            <defs>
+                <filter id="wp-duotone-magenta-yellow">
+                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
+                    <feComponentTransfer color-interpolation-filters="sRGB">
+                        <feFuncR type="table" tableValues="0.78039215686275 1"/>
+                        <feFuncG type="table" tableValues="0 0.94901960784314"/>
+                        <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412"/>
+                        <feFuncA type="table" tableValues="1 1"/>
+                    </feComponentTransfer>
+                    <feComposite in2="SourceGraphic" operator="in"/>
+                </filter>
+            </defs>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+            <defs>
+                <filter id="wp-duotone-purple-green">
+                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
+                    <feComponentTransfer color-interpolation-filters="sRGB">
+                        <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745"/>
+                        <feFuncG type="table" tableValues="0 1"/>
+                        <feFuncB type="table" tableValues="0.44705882352941 0.4"/>
+                        <feFuncA type="table" tableValues="1 1"/>
+                    </feComponentTransfer>
+                    <feComposite in2="SourceGraphic" operator="in"/>
+                </filter>
+            </defs>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+            <defs>
+                <filter id="wp-duotone-blue-orange">
+                    <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "/>
+                    <feComponentTransfer color-interpolation-filters="sRGB">
+                        <feFuncR type="table" tableValues="0.098039215686275 1"/>
+                        <feFuncG type="table" tableValues="0 0.66274509803922"/>
+                        <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725"/>
+                        <feFuncA type="table" tableValues="1 1"/>
+                    </feComponentTransfer>
+                    <feComposite in2="SourceGraphic" operator="in"/>
+                </filter>
+            </defs>
+        </svg>
+        <div id="page">
+            <header id="masthead" class="site-header group">
+                <div class="site-logo">
+                    <div>
+                        <a href="https://dariusforoux.com">
+                            <img src="https://dariusforoux.com/wp-content/uploads/2017/01/dariusforoux-logo1.png" alt="Darius Foroux"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="site-bar ">
+                                <nav class="nav" role="navigation">
+                                    <ul id="menu-menu" class="navigation">
+                                        <li id="menu-item-11141" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11141">
+                                            <a href="#">Articles</a>
+                                            <ul class="sub-menu">
+                                                <li id="menu-item-6433" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6433">
+                                                    <a href="https://dariusforoux.com/articles/">Latest Articles</a>
+                                                </li>
+                                                <li id="menu-item-1454" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1454">
+                                                    <a href="https://dariusforoux.com/best-articles/">Best Articles</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li id="menu-item-7665" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7665">
+                                            <a href="https://dariusforoux.com/about/">About</a>
+                                        </li>
+                                        <li id="menu-item-2942" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2942">
+                                            <a href="https://dariusforoux.com/books/">Books</a>
+                                        </li>
+                                        <li id="menu-item-7442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7442">
+                                            <a href="https://dariusforoux.com/courses/">Courses</a>
+                                        </li>
+                                        <li id="menu-item-10721" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10721">
+                                            <a href="https://dariusforoux.com/wise-wealthy/">Newsletter</a>
+                                        </li>
+                                        <li id="menu-item-5794" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5794">
+                                            <a href="#">Learn</a>
+                                            <ul class="sub-menu">
+                                                <li id="menu-item-3036" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3036">
+                                                    <a href="https://dariusforoux.com/podcast/">Podcast</a>
+                                                </li>
+                                                <li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50">
+                                                    <a href="https://dariusforoux.com/reading-list/">Reading List</a>
+                                                </li>
+                                                <li id="menu-item-3704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3704">
+                                                    <a href="https://dariusforoux.com/resources/">Tools I Use</a>
+                                                </li>
+                                                <li id="menu-item-10145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10145">
+                                                    <a href="https://dariusforoux.com/community/">Reader Stories</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <a class="mobile-nav-trigger" href="#mobilemenu">
+                                        <i class="olsen-icons olsen-icons-bars"></i>
+                                        Menu
+                                    </a>
+                                </nav>
+                                <div id="mobilemenu"></div>
+                                <div class="site-tools has-search">
+                                    <ul class="socials">
+                                        <li>
+                                            <a href="https://twitter.com/DariusForoux" target="_blank" rel="noopener">
+                                                <i class="olsen-icons olsen-icons-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/dariusforoux/" target="_blank" rel="noopener">
+                                                <i class="olsen-icons olsen-icons-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.youtube.com/c/DariusForoux" target="_blank" rel="noopener">
+                                                <i class="olsen-icons olsen-icons-youtube-play"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <form action="https://dariusforoux.com/" method="get" class="global-search-form" role="search">
+                                        <label for="global-search-input" class="sr-only">Search for:</label>
+                                        <input type="search" id="global-search-input" name="s" class="global-search-input" value="" placeholder="Type and hit enter to search"/>
+                                        <button type="submit" class="global-search-form-submit">Search </button>
+                                        <button type="button" class="global-search-form-dismiss">&times;</button>
+                                    </form>
+                                    <a href="#" class="global-search-form-trigger">
+                                        <span class="olsen-icons olsen-icons-search"></span>
+                                        <span class="sr-only">Expand search form</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="site-content">
+                            <div class="row">
+                                <div class="col-lg-8 offset-lg-2 col-12">
+                                    <main id="content">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <article id="entry-1888" class="entry post-1888 page type-page status-publish hentry">
+                                                    <h1 class="entry-title">The Wise &#038;Wealthy newsletter: Receive weekly ideas to become smarter and wealthier</h1>
+                                                    <div class="entry-content">
+                                                        <figure class="wp-block-image size-large">
+                                                            <img decoding="async" width="665" height="521" src="https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy.jpg?resize=665%2C521&#038;ssl=1" alt="Join Wise &amp; Wealthy" class="wp-image-10489 jetpack-lazy-image" data-recalc-dims="1" data-lazy-srcset="https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?resize=1024%2C803&amp;ssl=1 1024w, https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?resize=300%2C235&amp;ssl=1 300w, https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?resize=768%2C602&amp;ssl=1 768w, https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?resize=1536%2C1204&amp;ssl=1 1536w, https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?resize=2048%2C1605&amp;ssl=1 2048w, https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?resize=665%2C521&amp;ssl=1 665w, https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?resize=332%2C260&amp;ssl=1 332w, https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?w=1330&amp;ssl=1 1330w, https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?w=1995&amp;ssl=1 1995w" data-lazy-sizes="(max-width: 665px) 100vw, 665px" data-lazy-src="https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy.jpg?resize=665%2C521&amp;is-pending-load=1#038;ssl=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+                                                            <noscript>
+                                                                <img data-lazy-fallback="1" decoding="async" width="665" height="521" src="https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy.jpg?resize=665%2C521&#038;ssl=1" alt="Join Wise &amp; Wealthy" class="wp-image-10489" srcset="https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?resize=1024%2C803&amp;ssl=1 1024w, https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?resize=300%2C235&amp;ssl=1 300w, https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?resize=768%2C602&amp;ssl=1 768w, https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?resize=1536%2C1204&amp;ssl=1 1536w, https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?resize=2048%2C1605&amp;ssl=1 2048w, https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?resize=665%2C521&amp;ssl=1 665w, https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?resize=332%2C260&amp;ssl=1 332w, https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?w=1330&amp;ssl=1 1330w, https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?w=1995&amp;ssl=1 1995w" sizes="(max-width: 665px) 100vw, 665px" data-recalc-dims="1"/>
+                                                            </noscript>
+                                                        </figure>
+                                                        <p>Wise &amp;Wealthy is a weekly newsletter full of proven ideas to become smarter and wealthier.</p>
+                                                        <p>I send this out to hundreds of thousands of readers every Monday. Here’s what you can expect from every email:</p>
+                                                        <ol>
+                                                            <li>One tip that makes you wiser</li>
+                                                            <li>One tip that makes you wealthier</li>
+                                                            <li>And one bonus tip about any other interesting thing (quotes, books, podcasts, documentaries)</li>
+                                                        </ol>
+                                                        <p>Enter your email below and &nbsp;join now.</p>
+                                                        <p>
+                                                            You &#8217;ll also receive my <strong>free Growth Kit</strong>
+                                                            : a bundle of 6 resources with proven tips for optimizing your life and work.
+                                                        </p>
+                                                        <script async data-uid="90fa053802" src="https://df-training-consulting.ck.page/90fa053802/index.js"></script>
+                                                        <p class="has-text-align-center has-small-font-size">🔒 I value your privacy. 1-click unsubscribe.</p>
+                                                        <p>P.S. Why Wise &amp;Wealthy and not the other way around? I think you want to get wise first, and then wealthy. That makes you appreciate money so much more. And it will inspire you to do good with your wealth.</p>
+                                                        <div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+                                                        <hr class="wp-block-separator has-css-opacity is-style-dots"/>
+                                                        <div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+                                                        <div class="wp-block-columns is-layout-flex wp-container-3">
+                                                            <div class="wp-block-column is-layout-flow">
+                                                                <h3 class="wp-block-heading">About the author</h3>
+                                                                <p>
+                                                                    Hi, I &#8217;m Darius Foroux, the author of seven books including the international best-sellers Think Straight and Do It Today. I write for people who continuously want to become wiser and wealthier. On my blog, you can read about topics like investing, productivity, habits, Stoicism, and more.<br>
+                                                                    <br>
+                                                                    ↳ 
+                                                                    <strong>
+                                                                        <a data-type="page" data-id="2559" href="https://dariusforoux.com/about/">Learn more</a>
+                                                                    </strong>
+                                                                </p>
+                                                                <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+                                                            </div>
+                                                            <div class="wp-block-column is-layout-flow">
+                                                                <h3 class="wp-block-heading">Read the latest articles</h3>
+                                                                <ul class="wp-block-latest-posts__list has-dates wp-block-latest-posts">
+                                                                    <li>
+                                                                        <a class="wp-block-latest-posts__post-title" href="https://dariusforoux.com/metrics-stock-investor/">7 Key Metrics Every Stock Investor Should Understand</a>
+                                                                        <time datetime="2023-07-17T14:55:00+02:00" class="wp-block-latest-posts__post-date">July 17, 2023</time>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="wp-block-latest-posts__post-title" href="https://dariusforoux.com/easy-life/">Do Hard Things if You Want an Easy Life</a>
+                                                                        <time datetime="2023-07-10T14:55:00+02:00" class="wp-block-latest-posts__post-date">July 10, 2023</time>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="wp-block-latest-posts__post-title" href="https://dariusforoux.com/money-you-save/">How Much Money Should You Save? A Balanced Perspective</a>
+                                                                        <time datetime="2023-07-03T14:55:00+02:00" class="wp-block-latest-posts__post-date">July 3, 2023</time>
+                                                                    </li>
+                                                                </ul>
+                                                                <p>
+                                                                    ↳ 
+                                                                    <strong>
+                                                                        <a href="https://dariusforoux.com/best-articles/">Read best articles</a>
+                                                                    </strong>
+                                                                </p>
+                                                                <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </main>
+                                </div>
+                            </div>
+                        </div>
+                        <footer id="footer">
+                            <div class="site-bar">
+                                <nav class="nav">
+                                    <ul id="menu-menu-footer" class="navigation">
+                                        <li id="menu-item-1918" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1918">
+                                            <a href="https://dariusforoux.com/archive/">Archive</a>
+                                        </li>
+                                        <li id="menu-item-2407" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2407">
+                                            <a href="http://members.dariusforoux.com">Members</a>
+                                        </li>
+                                        <li id="menu-item-3764" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-3764">
+                                            <a rel="privacy-policy" href="https://dariusforoux.com/privacy/">Privacy</a>
+                                        </li>
+                                        <li id="menu-item-11400" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11400">
+                                            <a href="https://dariusforoux.com/media/">Media</a>
+                                        </li>
+                                        <li id="menu-item-9393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9393">
+                                            <a href="https://dariusforoux.com/contact/">Contact</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="site-tools"></div>
+                            </div>
+                            <div class="site-logo">
+                                <h3>
+                                    <a href="https://dariusforoux.com">
+                                        <img src="https://dariusforoux.com/wp-content/uploads/2018/07/olsen_footer.png" alt="Darius Foroux"/>
+                                    </a>
+                                </h3>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navigation-mobile-wrap">
+            <a href="#nav-dismiss" class="navigation-mobile-dismiss">Close Menu </a>
+            <ul class="navigation-mobile"></ul>
+        </div>
+        <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=dc41132f-5586-4a2f-aa5d-b80970ebd5a6"></script>
+        <script>
+            (function(d, u, ac) {
+                var s = d.createElement('script');
+                s.type = 'text/javascript';
+                s.src = 'https://a.omappapi.com/app/js/api.min.js';
+                s.async = true;
+                s.dataset.user = u;
+                s.dataset.campaign = ac;
+                d.getElementsByTagName('head')[0].appendChild(s);
+            }
+            )(document, 243028, 'ggfyeqs2spmqhzsvtlmr');
+        </script>
+        <script>
+            (function(d, u, ac) {
+                var s = d.createElement('script');
+                s.type = 'text/javascript';
+                s.src = 'https://a.omappapi.com/app/js/api.min.js';
+                s.async = true;
+                s.dataset.user = u;
+                s.dataset.campaign = ac;
+                d.getElementsByTagName('head')[0].appendChild(s);
+            }
+            )(document, 243028, 'c9ku2lqgezsikyxry0kg');
+        </script>
+        <script>
+            (function(d, u, ac) {
+                var s = d.createElement('script');
+                s.type = 'text/javascript';
+                s.src = 'https://a.omappapi.com/app/js/api.min.js';
+                s.async = true;
+                s.dataset.user = u;
+                s.dataset.campaign = ac;
+                d.getElementsByTagName('head')[0].appendChild(s);
+            }
+            )(document, 243028, 'y9aey2myjoeayckfysqt');
+        </script>
+        <script type="text/javascript">
+            var ggfyeqs2spmqhzsvtlmr_shortcode = true;
+            var c9ku2lqgezsikyxry0kg_shortcode = true;
+            var y9aey2myjoeayckfysqt_shortcode = true;
+        </script>
+        <style id='core-block-supports-inline-css' type='text/css'>
+            .wp-container-3.wp-container-3 {
+                flex-wrap: nowrap;
+            }
+        </style>
+        <script type='text/javascript' id='jetpack-lazy-images-js-extra'>
+            var jetpackLazyImagesL10n = {
+                "loading_warning": "Images are still loading. Please cancel your print and try again."
+            };
+        </script>
+        <script>
+            (function(d) {
+                var s = d.createElement("script");
+                s.type = "text/javascript";
+                s.src = "https://a.omappapi.com/app/js/api.min.js";
+                s.async = true;
+                s.id = "omapi-script";
+                d.getElementsByTagName("head")[0].appendChild(s);
+            }
+            )(document);
+        </script>
+        <script defer type='text/javascript' src='https://stats.wp.com/e-202329.js' id='jetpack-stats-js'></script>
+        <script type='text/javascript' id='jetpack-stats-js-after'>
+            _stq = window._stq || [];
+            _stq.push(["view", {
+                v: 'ext',
+                blog: '96644506',
+                post: '1888',
+                tz: '2',
+                srv: 'dariusforoux.com',
+                j: '1:12.3'
+            }]);
+            _stq.push(["clickTrackerInit", "96644506", "1888"]);
+        </script>
+        <script type="text/javascript">
+            var images = new Array()
+            function preload() {
+                for (i = 0; i < preload.arguments.length; i++) {
+                    images[i] = new Image()
+                    images[i].src = preload.arguments[i]
+                }
+            }
+            preload("https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?resize=1024%2C803&#038;ssl=1", "https://i0.wp.com/dariusforoux.com/wp-content/uploads/2022/04/Join-Wise-and-Wealthy-scaled.jpg?w=1330&#038;ssl=1")
+        </script>
+        <script type="text/javascript">
+            var omapi_localized = {
+                ajax: 'https://dariusforoux.com/wp-admin/admin-ajax.php?optin-monster-ajax-route=1',
+                nonce: '34f7d649ad',
+                slugs: {
+                    "ggfyeqs2spmqhzsvtlmr": {
+                        "slug": "ggfyeqs2spmqhzsvtlmr",
+                        "mailpoet": false
+                    },
+                    "c9ku2lqgezsikyxry0kg": {
+                        "slug": "c9ku2lqgezsikyxry0kg",
+                        "mailpoet": false
+                    },
+                    "y9aey2myjoeayckfysqt": {
+                        "slug": "y9aey2myjoeayckfysqt",
+                        "mailpoet": false
+                    }
+                }
+            };
+        </script>
+        <script type="text/javascript">
+            var omapi_data = {
+                "object_id": 1888,
+                "object_key": "page",
+                "object_type": "post",
+                "term_ids": [],
+                "wp_json": "https:\/\/dariusforoux.com\/wp-json",
+                "wc_active": false,
+                "edd_active": false,
+                "nonce": "8648359652"
+            };
+        </script>
+        <script defer src="https://dariusforoux.com/wp-content/cache/autoptimize/js/autoptimize_6849369743a51a135f0a65c08f23338f.js"></script>
+    </body>
+</html>

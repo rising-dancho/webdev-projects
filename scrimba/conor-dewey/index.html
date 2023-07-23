@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charSet="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <style data-href="/styles.376454122ce6516a315d.css" id="gatsby-global-css">
+            @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);@import url(https://fonts.googleapis.com/css?family=Roboto);body {
+                overflow-x: hidden;
+                position: relative
+            }
+
+            * {
+                box-sizing: border-box;
+                -webkit-font-smoothing: antialiased;
+                height: auto;
+                background-color: #fff
+            }
+
+            *,p,section {
+                font-family: Helvetica Neue,sans-serif
+            }
+
+            p,section {
+                font-weight: 400;
+                line-height: 32px
+            }
+
+            ::selection {
+                background: #fff2a8
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none
+            }
+
+            a:hover {
+                color: #3182ce
+            }
+
+            .icon {
+                color: #5f656d
+            }
+
+            section a:hover {
+                background: #fff2a8
+            }
+
+            .newsletterQuote {
+                font-size: 1.93rem;
+                line-height: 48px;
+                font-style: italic
+            }
+
+            .postContent {
+                color: #4a5568;
+                margin-top: -.4rem;
+                padding-bottom: 0;
+                font-size: 1.1rem
+            }
+
+            .postContent h2 {
+                font-family: Roboto Mono,sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 1.3rem;
+                margin-top: 2.75rem;
+                margin-bottom: -.6rem;
+                color: #0a0a0a
+            }
+
+            .postContent h3 {
+                font-family: Helvetica Neue,sans-serif;
+                font-size: 1.15rem;
+                margin-top: 2.2rem;
+                margin-bottom: -.8rem;
+                font-weight: 700
+            }
+
+            .postSubheader {
+                font-family: Roboto Mono,sans-serif;
+                display: inline-block;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: #4a5568
+            }
+
+            .postTitle {
+                font-size: 1rem;
+                margin-bottom: -.6rem;
+                font-size: 2.4rem;
+                line-height: 3.3rem
+            }
+
+            .previewHeader {
+                margin-bottom: -.5rem;
+                font-size: 1.48rem;
+                margin-top: 2.1rem;
+                line-height: 2rem;
+                font-weight: 500;
+                letter-spacing: .05rem
+            }
+
+            .previewSubheader {
+                display: inline-block;
+                font-family: Roboto Mono,sans-serif;
+                font-size: .94rem;
+                font-weight: 700;
+                line-height: 1.55rem;
+                color: #4a5568
+            }
+
+            .previewContent {
+                color: #4a5568;
+                line-height: 1.8rem;
+                margin-top: -.2rem;
+                margin-bottom: 2.8rem
+            }
+
+            .miniPreviewHeader {
+                margin-bottom: -.6rem;
+                font-size: 1.24rem;
+                margin-top: .4rem;
+                line-height: 1.9rem;
+                font-weight: 500;
+                letter-spacing: .05em
+            }
+
+            .miniPreviewSubheader {
+                display: block;
+                line-height: 1.55rem;
+                margin-top: 15px;
+                margin-bottom: 26px;
+                font-family: Roboto Mono,sans-serif;
+                font-size: .92rem;
+                font-weight: 700;
+                letter-spacing: .05rem;
+                color: #4a5568
+            }
+
+            .relatedPostHeader {
+                margin-bottom: -.96rem;
+                font-size: 1.2rem;
+                line-height: 2.1rem;
+                font-weight: 500;
+                letter-spacing: .05em
+            }
+
+            .relatedPostSubheader {
+                display: block;
+                line-height: 1.1rem;
+                margin-top: 17px;
+                margin-bottom: 27px;
+                font-size: .94rem;
+                color: #4a5568
+            }
+
+            .indexHeader,.relatedPostSubheader {
+                font-family: Roboto Mono,sans-serif;
+                font-weight: 700
+            }
+
+            .indexHeader {
+                font-size: 1.1rem;
+                color: #0a0a0a;
+                text-transform: uppercase;
+                margin-bottom: -1rem;
+                letter-spacing: .12em
+            }
+
+            .readMore {
+                font-size: 1.1rem;
+                color: #4a5568;
+                font-weight: 400;
+                margin-top: -1.8rem;
+                box-shadow: none
+            }
+
+            .aboutSubheader {
+                padding-bottom: .2rem
+            }
+
+            .aboutSubheader,.quantSubheader {
+                color: #0a0a0a;
+                text-transform: uppercase;
+                font-size: 1.1rem;
+                font-family: Roboto Mono,sans-serif;
+                font-weight: 700;
+                letter-spacing: .12em
+            }
+
+            .quantSubheader {
+                padding-bottom: .5rem
+            }
+
+            .aboutHeader {
+                font-size: 2.4rem;
+                margin-bottom: 1.4rem;
+                line-height: 4rem
+            }
+
+            .manualHeader,.manualHeader2 {
+                font-size: 1.1rem;
+                color: #0a0a0a;
+                font-weight: 500;
+                text-transform: uppercase;
+                padding-bottom: 0;
+                margin-bottom: -.4rem;
+                font-family: Roboto Mono,sans-serif;
+                font-weight: 700;
+                letter-spacing: .12em
+            }
+
+            .manualHeader2 {
+                padding-bottom: 1rem
+            }
+
+            .footerContent {
+                color: #4a5568;
+                line-height: 1.85rem;
+                margin-bottom: -1.2rem
+            }
+
+            .footerHeader {
+                font-size: 1.1rem;
+                text-transform: uppercase;
+                padding-bottom: .2rem;
+                padding-top: 3.6rem;
+                color: #0a0a0a;
+                font-family: Roboto Mono,sans-serif;
+                font-weight: 700;
+                letter-spacing: .12em
+            }
+
+            .titleLink,section a {
+                color: #3182ce
+            }
+
+            h1 a,h2 a,h3 a {
+                color: #0a0a0a
+            }
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%
+            }
+
+            ol,ul {
+                list-style-position: outside;
+                line-height: 32px
+            }
+
+            code {
+                border: 1px solid #ddd;
+                border-left: 9px solid #ccc;
+                color: inherit;
+                page-break-inside: avoid;
+                font-family: monospace;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 1.6;
+                margin-bottom: 1.6em;
+                max-width: 100%;
+                overflow: auto;
+                padding: .7em 1.4em;
+                display: block;
+                word-wrap: break-word
+            }
+
+            blockquote,code {
+                background: #f9f9f9
+            }
+
+            blockquote {
+                border-left: 4px solid #3182ce;
+                margin: 1.5em 10px;
+                padding: .5em 20px
+            }
+
+            .kg-embed-card {
+                margin: "auto";
+                padding: .2em 0
+            }
+
+            .container {
+                display: inline-block;
+                cursor: pointer;
+                transition: 1s
+            }
+
+            .bar1,.bar2,.bar3 {
+                width: 30px;
+                height: 1.9px;
+                background-color: #333;
+                margin: 5px 0;
+                transition: 1s;
+                -webkit-transition: 1s
+            }
+
+            .change .bar1 {
+                transform: rotate(-40deg) translate(-2px,5.5px)
+            }
+
+            .change .bar2 {
+                opacity: 0
+            }
+
+            .change .bar3 {
+                transform: rotate(40deg) translate(-4px,-8.5px)
+            }
+
+            .littleArrow {
+                font-weight: 900
+            }
+
+            .footerTrademark,.littleArrow {
+                font-size: .95rem
+            }
+
+            @media (max-width: 400px) {
+                .aboutHeader {
+                    font-size:2rem
+                }
+
+                .miniPreviewSubheader {
+                    line-height: 1.88rem
+                }
+
+                .previewSubheader {
+                    display: none
+                }
+
+                .previewHeader {
+                    margin-bottom: .8rem
+                }
+
+                .relatedPosts {
+                    display: none
+                }
+
+                .aboutSubheader,.footerHeader,.indexHeader,.manualHeader,.manualHeader2,.miniPreviewSubheader,.postContent h2,.postSubheader,.previewSubheader,.quantSubheader,.relatedPostSubheader {
+                    font-family: sans-serif
+                }
+
+                .footerTrademark {
+                    font-size: .9rem
+                }
+
+                .twitterLogo {
+                    size: 10
+                }
+            }
+
+            * {
+                background-color: #0c0f11
+            }
+
+            li,p,section {
+                color: #dde1e7
+            }
+
+            ::selection {
+                background: #2f4a69
+            }
+
+            section a:hover {
+                background: #2f4a69;
+                border-radius: 5px 5px 5px 5px;
+                padding: 0
+            }
+
+            a:hover {
+                color: #4385d7
+            }
+
+            .icon {
+                color: #a8adb2
+            }
+
+            .conor-hero,.postTitle {
+                color: #eef5fc
+            }
+
+            .newsletterQuote {
+                color: rgba(66,68,71,.726)
+            }
+
+            .postContent h2,.postContent h3 {
+                color: #eef5fc
+            }
+
+            .postSubheader {
+                color: #a8adb2
+            }
+
+            .previewSubheader {
+                color: #c2cbd4
+            }
+
+            .previewContent {
+                color: #adb4bb
+            }
+
+            .miniPreviewSubheader,.relatedPostSubheader {
+                color: #a8adb2
+            }
+
+            .aboutSubheader,.indexHeader,.manualHeader,.manualHeader2,.quantSubheader,.readMore {
+                color: #eef5fc
+            }
+
+            .footerContent {
+                color: #dde1e7
+            }
+
+            .footerHeader {
+                color: #eef5fc
+            }
+
+            .titleLink,section a {
+                color: #4385d7
+            }
+
+            h1,h1 a,h2,h2 a,h3 a {
+                color: #eef5fc
+            }
+
+            .heroContent {
+                color: #a8adb2
+            }
+
+            .title:hover {
+                color: #3182ce
+            }
+
+            code {
+                border: .5px solid #c2cbd4;
+                border-left-width: 9px
+            }
+
+            blockquote,code {
+                background: #171b1e;
+                color: #dde1e7
+            }
+
+            blockquote {
+                border-left: 4px solid #c2cbd4
+            }
+
+            blockquote a {
+                background: #171b1e
+            }
+
+            .container:hover {
+                color: #5f656d
+            }
+
+            .bar1,.bar2,.bar3 {
+                background-color: #a8adb2
+            }
+
+            .footerLogos,.navLink {
+                color: #a8adb2
+            }
+
+            .pageTemplateSubheader {
+                color: #c2cbd4
+            }
+
+            .openNavLinks {
+                color: #dde1e7
+            }
+
+            .heroSocial,.siteTitle {
+                color: #a8adb2
+            }
+
+            .heroSocialTwitter:hover {
+                color: #85bff7
+            }
+
+            .heroSocialInstagram:hover {
+                color: #ee7470
+            }
+
+            .heroSocialLinkedIn:hover {
+                color: #0e76a8
+            }
+
+            .heroSocialGithub:hover {
+                color: #d4d4d4
+            }
+        </style>
+        <meta name="generator" content="Gatsby 2.32.13"/>
+        <style id="glamor-styles">
+            .css-1tbgzq9,[data-css-1tbgzq9] {
+                display: block;
+                position: relative;
+                top: -.5rem;
+                right: 0px;
+                left: 0px;
+                width: 100%;
+                padding-bottom: 0rem;
+            }
+
+            .css-12diisl,[data-css-12diisl] {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: row;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+            }
+
+            .css-cmvmdv,[data-css-cmvmdv] {
+                display: block;
+                font-weight: 700;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 1.05rem;
+                letter-spacing: 1.9px;
+            }
+
+            .css-vw69x7,[data-css-vw69x7] {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                flex: 1;
+                max-width: 34rem;
+                font-size: 18px;
+                align-items: center;
+                justify-content: flex-end;
+                cursor: pointer;
+                -webkit-flex: 1;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -webkit-box-pack: end;
+                -webkit-justify-content: flex-end;
+            }
+
+            .css-fisw11,[data-css-fisw11] {
+                display: block;
+            }
+
+            .css-156zae5,[data-css-156zae5] {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 0.3rem;
+                padding-top: 5.2rem;
+                margin-bottom: 0rem;
+                justify-content: center;
+                align-items: center;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: row;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+            }
+
+            .css-120yjvw,[data-css-120yjvw] {
+                display: block;
+                font-weight: 700;
+                text-decoration: none;
+                font-size: 17px;
+                letter-spacing: 1.3px;
+            }
+
+            .css-j82ban,[data-css-j82ban] {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                flex-direction: row;
+                flex: 1;
+                max-width: 36rem;
+                font-size: 18px;
+                align-items: center;
+                justify-content: flex-end;
+                margin-top: 12px;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: row;
+                -webkit-flex: 1;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -webkit-box-pack: end;
+                -webkit-justify-content: flex-end;
+            }
+
+            .css-x6uy7z,[data-css-x6uy7z] {
+                display: block;
+                max-width: 36rem;
+                font-size: 18px;
+                padding-top: 5px;
+            }
+        </style>
+        <script id="glamor-ids">
+            // <![CDATA[
+            window._glamor = ["1tbgzq9", "12diisl", "cmvmdv", "vw69x7", "fisw11", "156zae5", "120yjvw", "j82ban", "x6uy7z"]
+            // ]]>
+        </script>
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
+        <link rel="preconnect" href="https://www.google-analytics.com"/>
+        <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+        <title data-react-helmet="true">Conor Dewey</title>
+        <meta data-react-helmet="true" name="description" content="Growth operator and data scientist. Conor operates somewhere in the 
+    intersection of growth, product, and data science. This means breaking down complex problems, 
+    building useful things, and experimenting with new ideas."/>
+        <meta data-react-helmet="true" property="og:image" content="https://www.conordewey.com/headshot_rect.png"/>
+        <meta data-react-helmet="true" property="og:url" content="https://www.conordewey.com/"/>
+        <meta data-react-helmet="true" property="og:title" content="Conor Dewey"/>
+        <meta data-react-helmet="true" property="og:description" content="Growth operator and data scientist. Conor operates somewhere in the 
+    intersection of growth, product, and data science. This means breaking down complex problems, 
+    building useful things, and experimenting with new ideas."/>
+        <meta data-react-helmet="true" property="og:image" content="https://www.conordewey.com/headshot_rect.png"/>
+        <meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/>
+        <meta data-react-helmet="true" name="twitter:creator" content="cdeweyx"/>
+        <meta data-react-helmet="true" name="twitter:title" content="Conor Dewey"/>
+        <meta data-react-helmet="true" name="twitter:description" content="Growth operator and data scientist. Conor operates somewhere in the 
+    intersection of growth, product, and data science. This means breaking down complex problems, 
+    building useful things, and experimenting with new ideas."/>
+        <meta data-react-helmet="true" name="twitter:image" content="https://www.conordewey.com/headshot_rect.png"/>
+        <script data-react-helmet="true" type="application/ld+json">
+            {"@context":"https://schema.org/","@type":"Person","name":"Conor Dewey","description":"Growth operator and data scientist. Conor operates somewhere in the \n    intersection of growth, product, and data science. This means breaking down complex problems, \n    building useful things, and experimenting with new ideas.","url":"https://www.conordewey.com","image":"https://www.conordewey.com/headshot_rect.png","sameAs":["https://twitter.com/cdeweyx","https://www.instagram.com/cdeweyx/","https://www.linkedin.com/in/conordewey/","https://github.com/cdeweyx"]}
+        </script>
+        <link as="script" rel="preload" href="/webpack-runtime-16234544c16e509fd4a9.js"/>
+        <link as="script" rel="preload" href="/framework-b17a64ad725e0b3c1338.js"/>
+        <link as="script" rel="preload" href="/app-561f9e2395a77832344c.js"/>
+        <link as="script" rel="preload" href="/styles-7d4153d260c0197f0043.js"/>
+        <link as="script" rel="preload" href="/1bfc9850-07795b7a8c3cafc1effc.js"/>
+        <link as="script" rel="preload" href="/da7ea07baccae54c83ffcebf2ebb243f701966c1-030075cb5de58ca1a00d.js"/>
+        <link as="script" rel="preload" href="/30d1204961ab501ce6ad10fafa79a2b69b9e2f65-8699ba5757c43e134894.js"/>
+        <link as="script" rel="preload" href="/component---src-templates-index-js-b0198cda1d900573851e.js"/>
+        <link as="fetch" rel="preload" href="/page-data/index/page-data.json" crossorigin="anonymous"/>
+        <link as="fetch" rel="preload" href="/page-data/sq/d/228695001.json" crossorigin="anonymous"/>
+        <link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <script>
+            void function() {
+                window.__onThemeChange = function() {}
+
+                var preferredTheme
+                try {
+                    preferredTheme = localStorage.getItem('theme')
+                } catch (err) {}
+
+                function setTheme(newTheme) {
+                    if (preferredTheme && document.body.classList.contains(preferredTheme)) {
+                        document.body.classList.replace(preferredTheme, newTheme)
+                    } else {
+                        document.body.classList.add(newTheme)
+                    }
+
+                    window.__theme = newTheme
+                    preferredTheme = newTheme
+                    window.__onThemeChange(newTheme)
+                }
+
+                window.__setPreferredTheme = function(newTheme) {
+                    setTheme(newTheme)
+                    try {
+                        localStorage.setItem('theme', newTheme)
+                    } catch (err) {}
+                }
+
+                var darkQuery = window.matchMedia('(prefers-color-scheme: dark)')
+                darkQuery.addListener(function(e) {
+                    window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+                })
+
+                setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'))
+            }()
+        </script>
+        <div id="___gatsby">
+            <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+                <html lang="en">
+                    <article>
+                        <div style="margin:auto;max-width:47.5rem;padding:1.5rem 1.45rem;font-size:1.1rem;line-height:34px;letter-spacing:0.9px">
+                            <header>
+                                <div>
+                                    <div>
+                                        <div data-css-1tbgzq9="">
+                                            <div data-css-12diisl="">
+                                                <div data-css-cmvmdv="" to="/">
+                                                    <a aria-current="page" style="box-shadow:none;text-decoration:none;font-weight:700;text-align:center;font-family:&#x27;system-ui&#x27;, &#x27;Roboto&#x27;, &#x27;Helvetica Neue&#x27;, sans-serif;letter-spacing:0.1em;class-name:siteTitle;color:#A8ADB2" class="" href="/">Conor Dewey</a>
+                                                </div>
+                                                <nav data-css-vw69x7="">
+                                                    <div class="" style="z-index:10000">
+                                                        <div class="bar1"></div>
+                                                        <div class="bar2"></div>
+                                                        <div class="bar3"></div>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </header>
+                            <div style="display:block;margin-top:4.2rem;margin-bottom:4.5rem;font-size:28px;line-height:2.8rem">
+                                <img src="./static/conor.png" alt="Conor" style="width:142px;height:142px;min-width:142px"/>
+                                <p style="margin-left:0.8rem;line-height:2.7rem">
+                                    <span class="conor-hero" style="font-weight:700;letter-spacing:0.03em">
+                                        <a href="/about">Hey, I &#x27;m Conor.</a>
+                                    </span>
+                                    <font class="heroContent" style="font-weight:700;letter-spacing:0.03em">I &#x27;m a product manager and data scientist.</font>
+                                <div data-css-x6uy7z="" class="heroSocial">
+                                    <div>
+                                        <a style="box-shadow:none;vertical-align:middle" href="https://twitter.com/cdeweyx" target="_blank" rel="noopener noreferrer" class="heroSocialTwitter">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" size="16" style="color:#85BFF7;position:relative;top:2px;padding-top:1.8rem" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                                <title>Twitter</title>
+                                                <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                                            </svg>
+                                            <!-- -->
+                                            Twitter
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a style="box-shadow:none" href="https://www.instagram.com/cdeweyx/" target="_blank" rel="noopener noreferrer" class="heroSocialInstagram">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" size="16" style="color:#EE7470;position:relative;top:2px" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                                <title>Instagram</title>
+                                                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                                            </svg>
+                                            <!-- -->
+                                            Instagram
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a style="box-shadow:none" href="https://www.linkedin.com/in/conordewey/" target="_blank" rel="noopener noreferrer" class="heroSocialLinkedIn">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" size="17" style="color:#2966BC;position:relative;top:2px" height="17" width="17" xmlns="http://www.w3.org/2000/svg">
+                                                <title>LinkedIn</title>
+                                                <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                                            </svg>
+                                            <!-- -->
+                                            LinkedIn
+                                        </a>
+                                    </div>
+                                    <div></div>
+                                    <div>
+                                        <a style="box-shadow:none" href="https://github.com/cdeweyx" target="_blank" rel="noopener noreferrer" class="heroSocialGithub">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" size="16" style="color:#D4D4D4;position:relative;top:2px" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                                <title>Github</title>
+                                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                                            </svg>
+                                            <!-- -->
+                                            Github
+                                        </a>
+                                    </div>
+                                </div>
+</p></div>
+<div data-css-fisw11="">
+    <div class="indexHeader">Recent Posts</div>
+</div>
+<article>
+    <header>
+        <h2 class="previewHeader">
+            <a style="box-shadow:none;letter-spacing:0.03em" href="/blog/27-principles-for-27-years/">🙏 27 Principles for 27 Years</a>
+        </h2>
+    </header>
+    <p class="previewSubheader">Jul 14, 2023
+    <!-- -->
+    • 
+    <!-- -->
+    3
+    <!-- -->
+    min •
+    <!-- -->
+    <!-- -->
+    Life</p>
+    <div>
+        <p class="previewContent">It’s that time of the year where I reflect on another trip around the sun. I’m turning 27 years old and unsurprisingly I don’t feel different than I did yesterday. But if I turn the clock back a year earlier, it does feel quite different now...</p>
+    </div>
+</article>
+<article>
+    <header>
+        <h2 class="previewHeader">
+            <a style="box-shadow:none;letter-spacing:0.03em" href="/blog/notes-on-managing-oneself/">💭 Notes on Managing Oneself</a>
+        </h2>
+    </header>
+    <p class="previewSubheader">May 05, 2023
+    <!-- -->
+    • 
+    <!-- -->
+    3
+    <!-- -->
+    min •
+    <!-- -->
+    <!-- -->
+    Reading</p>
+    <div>
+        <p class="previewContent">We've got decades and decades of career left. This gets much less intimidating when you have a sense of how and when to change the work we do. Peter Drecker's Managing Oneself provides provoking questions on precisely this...</p>
+    </div>
+</article>
+<article>
+    <header>
+        <h2 class="previewHeader">
+            <a style="box-shadow:none;letter-spacing:0.03em" href="/blog/notes-on-good-strategy-bad-strategy/">🧩 Notes on Good Strategy Bad Strategy</a>
+        </h2>
+    </header>
+    <p class="previewSubheader">Mar 02, 2023
+    <!-- -->
+    • 
+    <!-- -->
+    9
+    <!-- -->
+    min •
+    <!-- -->
+    <!-- -->
+    Reading</p>
+    <div>
+        <p class="previewContent">The most recent gap I discovered in my PM skillset was around developing and articulating a strategy in different product areas. I was recommended Good Strategy Bad Strategy to help out. It didn't disappoint...</p>
+    </div>
+</article>
+<div data-css-fisw11="">
+    <section class="readMore">
+        <a href="/blog">Read more posts →</a>
+    </section>
+</div>
+<div data-css-fisw11="">
+    <div data-css-156zae5="">
+        <div data-css-120yjvw="" to="/">
+            <div class="footerTrademark" style="box-shadow:none;text-decoration:none;font-weight:500;color:#A8ADB2;line-height:1.5rem" to="/">
+                <a href="">© Conor Dewey</a>
+            </div>
+        </div>
+        <nav data-css-j82ban="" class="footerLogos">
+            <a style="box-shadow:none;margin-left:1rem" href="https://twitter.com/cdeweyx" target="_blank" rel="noopener noreferrer" class="heroSocialTwitter">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" size="22" height="22" width="22" xmlns="http://www.w3.org/2000/svg">
+                    <title>Twitter</title>
+                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                </svg>
+            </a>
+            <a style="box-shadow:none;margin-left:1rem" href="https://www.instagram.com/cdeweyx/" target="_blank" rel="noopener noreferrer" class="heroSocialInstagram">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" size="22" height="22" width="22" xmlns="http://www.w3.org/2000/svg">
+                    <title>Instagram</title>
+                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                </svg>
+            </a>
+            <a style="box-shadow:none;margin-left:1rem" href="https://www.linkedin.com/in/conordewey/" target="_blank" rel="noopener noreferrer" class="heroSocialLinkedIn">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" size="22" height="22" width="22" xmlns="http://www.w3.org/2000/svg">
+                    <title>LinkedIn</title>
+                    <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                </svg>
+            </a>
+            <a style="box-shadow:none;margin-left:1rem" href="https://github.com/cdeweyx" target="_blank" rel="noopener noreferrer" class="heroSocialGithub">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" size="22" height="22" width="22" xmlns="http://www.w3.org/2000/svg">
+                    <title>Github</title>
+                    <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                </svg>
+            </a>
+        </nav>
+    </div>
+</div>
+</div></article></html></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div>
+</div><script>
+
+    if (true) {
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }
+            ,
+            i[r].l = 1 * new Date();
+            a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        }
+        )(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    }
+    if (typeof ga === "function") {
+        ga('create', 'UA-80637838-2', 'auto', {});
+
+    }
+</script>
+<script id="gatsby-script-loader">
+    /*<![CDATA[*/
+    window.pagePath = "/";
+    /*]]>*/
+</script>
+<script id="gatsby-chunk-mapping">
+    /*<![CDATA[*/
+    window.___chunkMapping = {
+        "polyfill": ["/polyfill-f8d6bc3f3d1ba44ac510.js"],
+        "app": ["/app-561f9e2395a77832344c.js"],
+        "component---cache-caches-gatsby-plugin-offline-app-shell-js": ["/component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"],
+        "component---src-pages-404-js": ["/component---src-pages-404-js-670576cfd8e53cb6493f.js"],
+        "component---src-pages-about-js": ["/component---src-pages-about-js-1d45b3a9d9271512192d.js"],
+        "component---src-pages-manual-js": ["/component---src-pages-manual-js-a9b92a99e7408df8c1f7.js"],
+        "component---src-pages-newsletter-js": ["/component---src-pages-newsletter-js-de243ef00b84231f8731.js"],
+        "component---src-pages-reading-js": ["/component---src-pages-reading-js-b0f73e99262c6197c1be.js"],
+        "component---src-templates-blog-js": ["/component---src-templates-blog-js-fe324df189503c7fee1e.js"],
+        "component---src-templates-index-js": ["/component---src-templates-index-js-b0198cda1d900573851e.js"],
+        "component---src-templates-podcast-js": ["/component---src-templates-podcast-js-dc7b20d9b67d02c6723e.js"],
+        "component---src-templates-post-js": ["/component---src-templates-post-js-e39b6e5004cbca85055f.js"]
+    };
+    /*]]>*/
+</script>
+<script src="/polyfill-f8d6bc3f3d1ba44ac510.js" nomodule=""></script>
+<script src="/component---src-templates-index-js-b0198cda1d900573851e.js" async=""></script>
+<script src="/30d1204961ab501ce6ad10fafa79a2b69b9e2f65-8699ba5757c43e134894.js" async=""></script>
+<script src="/da7ea07baccae54c83ffcebf2ebb243f701966c1-030075cb5de58ca1a00d.js" async=""></script>
+<script src="/1bfc9850-07795b7a8c3cafc1effc.js" async=""></script>
+<script src="/styles-7d4153d260c0197f0043.js" async=""></script>
+<script src="/app-561f9e2395a77832344c.js" async=""></script>
+<script src="/framework-b17a64ad725e0b3c1338.js" async=""></script>
+<script src="/webpack-runtime-16234544c16e509fd4a9.js" async=""></script>
+</body></html>
