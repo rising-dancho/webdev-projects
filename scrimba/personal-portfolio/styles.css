@@ -90,7 +90,7 @@ input {
     border-color:  var(--background);
     color: var(--background);
     background: none;
-    border-radius: var(--round);
+    border-radius: var(--sharp);
     font-family: var(--font);
 }
 
@@ -99,7 +99,7 @@ input {
 }
 
 button {
-    border-radius: var(--round);
+    border-radius: var(--sharp);
     padding: 5px 10px;
     border: none;
     background: var(--light);
