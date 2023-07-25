@@ -1,3 +1,8 @@
+:root{
+    --round: 100px;
+    --light: #f5f5f5;
+}
+
 body {
     margin: 20px;
     /*
@@ -5,12 +10,30 @@ body {
     Find a web safe font you like, and add it 
     to your card.
     */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lucida Console','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #14213D;
 }
 
 .avatar {
     width: 150px;
 }
+img{
+    width: 30%;
+    border-radius: calc(var(--round) * 2);
+    border: 4px solid var(--light);
+}
+
+.border-radius{
+    border-radius: 12px;
+}
+
+h2 {
+    font-size: 22px;
+}
+p{
+    font-size: 16px;
+}
+
 
 .card {
     width: 400px;
@@ -19,9 +42,9 @@ body {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    background: #ddebf8;
+    background: #FCA311;
     color: #2b2839;
-    border-bottom: 6px solid #d8cefe;
+    border-bottom: 6px solid var(--light);
         
     /*
     Challenge:
@@ -30,9 +53,7 @@ body {
      */
 }
 
-.border-blue {
-    border: 1px dotted blue;
-}
+
 
 /*
 Stretch goals:
