@@ -1,68 +1,161 @@
 :root {
-    --cowboy: 'Rye', cursive;
-    --font: var(--regular);
-    --round: 100px;
-    
-    --image: var(--soft);
-    
-    --background: #f5f5f5;
-    --text: #222222;
-    
-    --light: var(--background);
-    --dark: var(--text);
+    /* fonts */
+    --pixel: 'Press Start 2P', cursive;
+    --inter: 'Inter', sans-serif;;
 
-    --primary-color: #2F81F7;
+    /* for images */
+    --round: 100px;
+    --image: var(--soft);
+        
+    /* background color */
+    --primary-color: #0A101F;
+    --accent-color: #2F81F7;
+
+    /* text color */
+    --white: #eee; 
+    --black: #030712;
+    
 }
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* utility classes */
 
+.pixel-font{
+    font-family: 'Press Start 2P', cursive;
+}
+.inter-font{
+    font-family: 'Inter', sans-serif;
+}
 .coral-bg{
     background: lightcoral;
-    border: dotted 2px black;
+    border: dotted 2px var(--black);
 }
 
 .background-color{
-    background: var(--dark);
-    color: var(--light);
+    background: var(--black);
+    color: var(--white);
 }
 
 .container-flex{
     width: 700px;
     display: flex;
     justify-content: space-evenly;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 .container-block{
     display: block;
     width: 700px;
-    margin: 0 auto;
-    padding-left: 160px;
+    margin: 40px auto;
+    padding-left: 72px;
 }
+
+/* navigation bar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: var(--primary-color);
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+    
+}
+
+#navbar__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item{
+    height: 80px;
+}
+
+.navbar__links{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+.navbar__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    width: 100%;
+    
+}
+.button{
+    text-decoration: none;
+    background: var(--white);
+    height: 100%;
+    width: 100%;
+    color: var(--black);
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 4px;
+}
+
+
+
 
 img {
     width: 180px;
     border-radius: calc(var(--round) * 2);
-    border: 4px solid var(--light);
+    border: 4px solid var(--white);
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 28px;
 }
 
 body, html {
     margin: 0;
     padding: 10px;
-    background: var(--dark);
+    background: var(--black);
     color: var(--text);
     font-family: var(--font);
     font-size: 18px;
 }
 
 a {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 span{
-    color:var(--primary-color);
+    color:var(--accent-color);
 }
 
 input {
@@ -73,23 +166,23 @@ input {
     padding: 4px 8px;
     border-width: 1px; 
     border-style: solid;
-    border-color:  var(--background);
-    color: var(--background);
+    border-color:  var(--white);
+    color: var(--white);
     background: none;
     border-radius: var(--sharp);
     font-family: var(--font);
 }
 
 ::placeholder {
-    color: var(--light);
+    color: var(--white);
 }
 
 button {
     border-radius: var(--sharp);
     padding: 5px 10px;
     border: none;
-    background: var(--light);
-    color: var(--dark);
+    background: var(--white);
+    color: var(--black);
     font-weight: bold;
     box-sizing: border-box;
     display: block;
@@ -97,4 +190,11 @@ button {
     cursor: pointer;
     font-family: var(--font);
     width: 160px;
+}
+
+@media screen and (max-width: 980px) {
+    h1{
+        color: red;
+    }
+    
 }

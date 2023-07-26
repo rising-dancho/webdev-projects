@@ -4,23 +4,40 @@
         <link rel="stylesheet" href="styles.css" />
         <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&family=Creepster&family=La+Belle+Aurore&family=MedievalSharp&family=Orbitron&family=Rye&display=swap" rel="stylesheet">
         <script src="index.js"></script>
-        <title>Portfolio - adfinemrising</title>
+        <title>Portfolio - rising.dancho</title>
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Press+Start+2P&display=swap" rel="stylesheet">
         <!--favicon-->
 		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icons">
     </head>
     <body>
-        <!-- 
-        Challenge 1:
-        Write the HTML for your personal website.
-        -->
+        <!-- Navbar Section -->
+        <nav class="navbar pixel-font">
+            <div class="navbar__container">
+                <a href="#" id="navbar__logo">rising.dancho</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                <ul class="navbar__menu">
+                    <li class="navbar__item"><a href="#" class="navbar__links">Home</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__links">Portfolio</a></li>
+                    <li class="navbar__item"><a href="#" class="navbar__links">About</a></li>
+                    <li class="navbar__btn"><a href="#" class="button">Hire</a></li>
+                </ul>
+    
+                </div>
+            </div>
+        </nav>
         <!-- hero section -->
         <div class="background-color container-flex">
-            <img src="jr.jpg" alt="Jose Perez showing a quirky smile inside Rodic's diner.">
-            <h1>Hi, my name <br> is <span>Jay-r</span>!</h1>
+            <img src="./champloo.png" alt="Jose Perez showing a quirky smile inside Rodic's diner.">
+            <h1 class="pixel-font">Hi, my name <br> is <span>Jay-r</span>!</h1>
         </div>
 
         <!-- about -->
-        <div class="background-color container-block">
+        <div class="background-color container-block inter-font">
             <h2>Fun facts about me:</h2>
             <div class="card">
                 <ul>
@@ -31,7 +48,7 @@
                 </ul>
             </div>
         </div>
-        <div class="background-color container-block">
+        <div class="background-color container-block inter-font">
             <p>You can find me @<a href="https://www.youtube.com/channel/UC9cqnX1phxqaaBc2dIX2XlQ" target="_blank">youtube</a> or @<a href="https://www.facebook.com/adfinemrising" target="_blank">facebook</a></p>
             <input type="text" placeholder="Enter email...">
             <button>Join newsletter</button>

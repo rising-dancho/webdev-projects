@@ -1,0 +1,90 @@
+:root{
+  --clr-dark: #020617;
+  --clr-light: #f1f5f9;
+  --clr-slate400: #94a3b8;
+  --clr-slate600: #475569;
+  --clr-slate800: #1e293b;
+  --clr-rose: #e11d48;
+  --clr-indigo: #4f46e5;
+
+  /* rose rgb(225, 29, 72) */
+  /* indigo rgb(79, 70, 229) */
+
+  /* sizes */
+  --sizes-xxs: 0.5rem;
+  --sizes-xs: 0.75rem;
+  --sizes-s: 0.875rem;
+  --sizes-base: 1rem;
+  --sizes-lg: 1.125rem;
+  --sizes-xl: 1.25rem;
+  --sizes-2xl: 1.5rem;
+  --sizes-3xl: 1.875rem;
+  --sizes-4xl: 2.25rem;
+  --sizes-5xl: 3rem;
+  --sizes-6xl: 3.75rem;
+  --sizes-7xl: 4.5rem;
+  --sizes-8xl: 6rem;
+  --sizes-9xl: 8rem;
+  --sizes-10xl: 10rem;
+}
+
+@font-face {
+  /* regular */
+  font-family: 'GeneralSans-Regular';
+  src: url(./fonts/GeneralSans-Regular.ttf);
+
+  /* medium */
+  font-family: 'GeneralSans-Medium';
+  src: url(./fonts/GeneralSans-Medium.ttf);
+
+  /* semi-bold */
+  font-family: 'GeneralSans-Semibold';
+  src: url(./fonts/GeneralSans-Semibold.ttf);
+
+  /* bold */
+  font-family: 'GeneralSans-Bold';
+  src: url(./fonts/GeneralSans-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  /* for auto correct line height regardless of font size */
+  line-height: calc(1em + 0.5rem); 
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'GeneralSans-Regular', sans-serif;
+  background: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+a{
+  color: var(--clr-rose);
+}
+
+strong{
+  color: var(--clr-indigo);
+}
