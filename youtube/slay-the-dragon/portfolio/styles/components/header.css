@@ -4,6 +4,8 @@
     align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    position: relative;
+    z-index: 9999;
 }
 .header__menu{
     display: none;
@@ -76,9 +78,21 @@
 }
 
 /* L */
-/* @media (min-width: 1024px){
+    @media (min-width: 1024px){
+    .header__link{
+        font-size: var(--size-lg);
+    }
 
-} */
+    .header__sun{
+        width: var(--size-2xl);
+        height: var(--size-2xl);
+       
+    }
+
+    .header__contact {
+        font-size: var(--size-lg);
+    }
+}
 
 /* xL */
 /* @media (min-width: 1280px){
