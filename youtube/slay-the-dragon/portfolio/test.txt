@@ -1,0 +1,10 @@
+ <article class="container">
+      <h1>Hello, World!</h1>
+      <p><strong>Laborum aute fugiat ut velit aliquip.</strong> Ipsum aute culpa enim qui irure laborum laboris enim ea. Sunt nostrud proident velit ullamco sunt do. Mollit aliqua proident aliquip consequat commodo adipisicing labore. <a href="#">Exercitation culpa laboris ad aute mollit irure pariatur veniam ut.</a></p>
+      <button class="btn">Budots</button>
+    </article>
+    <article class="container section">
+      <h1>Hello, World!</h1>
+      <p><strong>Laborum aute fugiat ut velit aliquip.</strong> Ipsum aute culpa enim qui irure laborum laboris enim ea. Sunt nostrud proident velit ullamco sunt do. Mollit aliqua proident aliquip consequat commodo adipisicing labore. <a href="#">Exercitation culpa laboris ad aute mollit irure pariatur veniam ut.</a></p>
+      <button class="btn">Budots</button>
+    </article>

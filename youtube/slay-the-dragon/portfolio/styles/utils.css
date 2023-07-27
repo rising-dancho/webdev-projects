@@ -52,6 +52,9 @@
     0 0 120px -10px var(--clr-rose) ;
 
 }
+.test-border{
+    border: solid 2px var(--clr-rose);
+}
 
 .container {
     width: 100%;
@@ -59,7 +62,6 @@
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    border: solid 2px red;
 }
 
 .section{
