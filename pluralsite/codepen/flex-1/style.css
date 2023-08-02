@@ -1,0 +1,15 @@
+.columns {
+    width: 100%;
+    display: flex;
+    border: 1px solid skyblue;
+  }
+  
+  .columns > div {
+    flex: 1;  /* allow each div to take up one column of space for each */
+    border: 1px solid grey;
+  }
+
+  .columns > div:nth-of-type(2) { /* selected the 2nd div element buy using nth-of-type */
+    flex: 2;  /* assign double portion   as compared to the other columns  */
+    border: 1px solid grey;
+  } 
