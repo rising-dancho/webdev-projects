@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Literals</title>
+    
+</head>
+<body style="background-color: #0F1419;">
+    <script>
+        let firstName = "";
+        let lastName = "";
+        let gmail = "";
+
+        // assinging to curly braces means the variable is an object literal
+        // object literals use , instead of ;
+        let person = {
+            firstName: "adfinem",
+            lastName: "rising",
+            gmail: "@gmail.com",
+            
+            greet: function(){
+                console.log("Hello, " + this.firstName + this.lastName + this.gmail)
+            }
+        }; //semi colon to end the object literal
+
+        person.greet()
+    </script>    
+</body>
+</html>
