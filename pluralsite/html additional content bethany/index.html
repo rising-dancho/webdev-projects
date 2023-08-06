@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Bethany's Pie Shop</title>
+    <meta name="author" content="Bethany's Pie Shop">
+    <meta name="description" content="Store front for Bethany's Pie Shop">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <style>
+        body {
+            margin-top: 0px;
+            font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #e6e4d9;
+            background-image: url("images/pattern.png");
+        }
+
+        #main_header {
+            background-color: #a593c2;
+        }
+
+        nav {
+            height: 60px;
+            width: 1000px;
+            margin: 0 auto 20px;
+            /* top [left-and-right] bottom*/
+        }
+
+        #container {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #left_menu {
+            float: left;
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        .search_box {
+            padding: 5px;
+            margin: 10px 10px;
+            width: 200px;
+        }
+
+        #main {
+            float: right;
+            width: 70%;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #a593c2;
+        }
+
+        footer {
+            clear: both;
+            /* no other element must be placed inside this block */
+            width: 100%;
+            /* takes all the available space within the surrounding div */
+        }
+
+        /* used to tell old browsers to consider these following sections belong to the same block (like a div). so that they won't be displayed inline (side-by-side). but instead on top of each other*/
+        header,
+        section,
+        footer,
+        aside,
+        nav,
+        main,
+        article,
+        figure {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="main_header">
+        <nav>
+            <img src="./images/cake.png" alt="bethany's pie shop logo" height="55px">
+        </nav>
+    </header>
+    <div id="container"> <!-- non-semantic element to contain all other element -->
+        <aside id="left_menu">
+            <img src="./images/bethanylogo.png" alt="bethany's pie shop aside logo">
+            <header>
+                <h4 style="text-align: center;">Browsew our pies</h4>
+            </header>
+            <input type="search" class="search_box" placeholder="Search our store" />
+        </aside>
+        <main id="main">
+            <article>
+                <header>
+                    <h1>Welcome to Bethany's Pie Shop</h1>
+                </header>
+                <figure>
+                    <img src="./images/bethany.jpg" alt="Bethany in her pie shop." width="700px">
+                    <figcaption>Bethany in her pie shop</figcaption>
+                </figure>
+
+                <h2>Our History</h2>
+                <p>
+                    For many years, <strong>Bethany</strong> has been baking the most delicious pies at her home. In
+                    2013,
+                    we opened our first store in Brussels (Belgium) in a cosy little street near the Grand Market.
+                    People
+                    from all over the world fell in love with the soft cakes, heavenly cheese cakes, spicy apple pies...
+                    <em>The store became a success in no time.</em>
+                    <br><br>In 2015, no less than 100 pies were sold every day and Bethany's Pie Shop moved into a
+                    larger
+                    building. After receiving many requests, it became clear that our next step was making it possible
+                    to
+                    order pies from the comfort of your own home and from anywhere in the world. You are now looking at
+                    the
+                    result of this: our very own webstore, making it possible to order Bethany's delicious pies whenever
+                    you
+                    feel like it!
+                </p>
+                <p>
+                    Bethany is famous for using only the best ingredients. This way, we can make sure that our pies are
+                    absolutely the best.
+                </p>
+            </article>
+            <section>
+                <h3>Our weekly promotions</h3>
+                <h4>Cheese cake</h4>
+                $12.95 - serves 4<br>
+                <img src="./images/products/cheesecake.jpg" alt="" width="500" height="300">
+            </section>
+        </main>
+        <footer>
+            <p>Our address is
+            <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
+            </p>
+            <small>2020 Bethany's Pie Shop - All rights reserved</small>
+        </footer>
+    </div>
+</body>
+
+</html>
