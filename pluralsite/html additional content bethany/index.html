@@ -21,10 +21,6 @@
             background-image: url("images/pattern.png");
         }
 
-        #main_header {
-            background-color: #a593c2;
-        }
-
         nav {
             height: 60px;
             width: 1000px;
@@ -83,21 +79,57 @@
         figure {
             display: block;
         }
+
+        nav>ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav>ul>li {
+            float: left;
+        }
+
+        #nav_links{
+            display: block;
+            padding: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        #main_header {
+            background-color: #a593c2;
+        }
     </style>
 </head>
 
 <body>
-    <header id="main_header">
+     <header id="main_header">
         <nav>
-            <img src="./images/cake.png" alt="bethany's pie shop logo" height="55px">
+            <ul>
+                <li><a href="./index.html"><img src="images/cake.png" height="55" /></a></li>
+                <li><a id="nav_links" href="./index.html">Home</a></li>
+                <li><a id="nav_links"href="./pie-overview.html">All pies</a></li>
+            </ul>
         </nav>
     </header>
+    
     <div id="container"> <!-- non-semantic element to contain all other element -->
         <aside id="left_menu">
-            <img src="./images/bethanylogo.png" alt="bethany's pie shop aside logo">
+            <a href="./index.html"><img src="./images/bethanylogo.png" alt="bethany's pie shop aside logo"></a>
             <header>
-                <h4 style="text-align: center;">Browse our pies</h4>
+                <h4 style="text-align: left;">Browse our pies</h4>
             </header>
+            <ul>
+                <li><a href="./pie-overview.html">All Pies</a></li>
+                <li><a href="./cheesecakes.html">Cheese cakes</a></li>
+                <li><a href="./fruitpies.html">Fruit cakes</a></li>
+                <li><a href="./seasonalpies.html">Seasonal cakes</a></li>
+                <li><a href="#promos">Promotions</a></li>
+            </ul>
+            
             <input type="search" class="search_box" placeholder="Search our store" />
         </aside>
         <main id="main">
@@ -132,8 +164,9 @@
                     Bethany is famous for using only the best ingredients. This way, we can make sure that our pies are
                     absolutely the best.
                 </p>
+                <p>Download our full<a href="./downloads/Price list.zip">price list</a></p>
             </article>
-            <section>
+            <section id="promos">
                 <h3>Our weekly promotions</h3>
                 <h4>Cheese cake</h4>
                 $12.95 - serves 4<br>
@@ -144,7 +177,11 @@
             <p>Our address is
             <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
             </p>
-            <small>2020 Bethany's Pie Shop - All rights reserved</small>
+            <p>Contact us via: <a href="mailto:qjperezjr.1@tip.edu.ph"> Email</a></p>
+            <small>&copy; 2023 Bethany's Pie Shop - All rights reserved</small>
+            <small>
+                <p>Created by <a href="https://adfinem.netlify.app/">adfinem</a></p> 
+            </small>
         </footer>
     </div>
 </body>
