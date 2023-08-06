@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Bethany's Pie Shop</title>
+    <meta name="author" content="Bethany's Pie Shop">
+    <meta name="description" content="Store front for Bethany's Pie Shop">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <style>
+        body {
+            margin-top: 0px;
+            font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #e6e4d9;
+            background-image: url("images/pattern.png");
+        }
+
+        #main_header {
+            background-color: #a593c2;
+        }
+
+        nav {
+            height: 60px;
+            width: 1000px;
+            margin: 0 auto 20px;
+            /* top [left-and-right] bottom*/
+        }
+
+        #container {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #left_menu {
+            float: left;
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        .search_box {
+            padding: 5px;
+            margin: 10px 10px;
+            width: 200px;
+        }
+
+        #main {
+            float: right;
+            width: 70%;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #a593c2;
+        }
+
+        h4 {
+            margin: 10px 10px;
+        }
+
+        footer {
+            clear: both;
+            /* no other element must be placed inside this block */
+            width: 100%;
+            /* takes all the available space within the surrounding div */
+        }
+
+        /* used to tell old browsers to consider these following sections belong to the same block (like a div). so that they won't be displayed inline (side-by-side). but instead on top of each other*/
+        header,
+        section,
+        footer,
+        aside,
+        nav,
+        main,
+        article,
+        figure {
+            display: block;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="main_header">
+        <nav>
+            <img src="./images/cake.png" alt="bethany's pie shop logo" height="55px">
+        </nav>
+    </header>
+    <div id="container"> <!-- non-semantic element to contain all other element -->
+        <aside id="left_menu">
+            <img src="./images/bethanylogo.png" alt="bethany's pie shop aside logo">
+            <header>
+                <h4>Browse our pies</h4>
+            </header>
+            <input type="search" class="search_box" placeholder="Search our store" />
+        </aside>
+        <main id="main">
+            <table>
+                <!-- <caption>
+                    Our delicious selection of pies for you to enjoy!
+                </caption> -->
+                <!-- <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Pie name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Details</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td colspan="5">Here are the pies of Bethany </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/cheesecakesmall.jpg" width="100"></td>
+                        <td>Cheese cake</td>
+                        <td>Plain cheese cake. Plain pleasure.</td>
+                        <td>$12.95</td>
+                        <td>View details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/applepiesmall.jpg" width="100"></td>
+                        <td>Apple pie</td>
+                        <td>Our famous apple pie</td>
+                        <td>$14.95</td>
+                        <td>View details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/cranberrypiesmall.jpg" width="100"></td>
+                        <td>Cranberry pie</td>
+                        <td>A Christmas favorite</td>
+                        <td>$18.95</td>
+                        <td>View details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/cherrypiesmall.jpg" width="100"></td>
+                        <td>Cherry pie</td>
+                        <td>A summer classic!</td>
+                        <td>$18.95</td>
+                        <td>View details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/peachpiesmall.jpg" width="100"></td>
+                        <td>Peach pie</td>
+                        <td>Sweet as peach</td>
+                        <td>$18.95</td>
+                        <td>View details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/pumpkinpiesmall.jpg" width="100"></td>
+                        <td>Pumpkin pie</td>
+                        <td>Our Halloween favorite</td>
+                        <td>$18.95</td>
+                        <td>View details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/christmasapplepiesmall.jpg" width="100"></td>
+                        <td>Christmas apple pie</td>
+                        <td>Happy holidays with this pie!</td>
+                        <td>$19.95</td>
+                        <td>View details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/blueberrycheesecakesmall.jpg" width="100"></td>
+                        <td>Blueberry cheese cake</td>
+                        <td>You'll love it!</td>
+                        <td>$17.95</td>
+                        <td>View details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/rhubarbpiesmall.jpg" width="100"></td>
+                        <td>Rhubarb Pie</td>
+                        <td>My God, so sweet!</td>
+                        <td>$21.95</td>
+                        <td>View details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/strawberrypiesmall.jpg" width="100"></td>
+                        <td>Strawberry Pie</td>
+                        <td>Our delicious strawberry pie!</td>
+                        <td>$18.95</td>
+                        <td>View details</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/strawberrycheesecakesmall.jpg" width="100"></td>
+                        <td>Strawberry Cheese Cake</td>
+                        <td>One of the best cheese cakes you'll ever find!</td>
+                        <td>$18.95</td>
+                        <td>View details</td>
+                    </tr>
+            </table>
+            </tbody>
+
+        </main>
+        <footer>
+            <p>Our address is
+            <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
+            </p>
+            <small>2020 Bethany's Pie Shop - All rights reserved</small>
+        </footer>
+    </div>
+</body>
+
+</html>
