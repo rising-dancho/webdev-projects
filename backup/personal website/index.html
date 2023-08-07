@@ -29,6 +29,22 @@
             margin: 0 5px 0 5px;
             font-family: 'Inter', sans-serif;
         }
+
+        h2 {
+            margin: 40px 0 10px 0;
+        }
+
+        ul>li {
+            list-style: none;
+        }
+
+        button {
+            border-radius: 4px;
+        }
+
+        input {
+            border-radius: 4px;
+        }
     </style>
 </head>
 
@@ -43,10 +59,10 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <ul class="navbar__menu">
-                        <li class="navbar__item"><a href="/" class="navbar__links">Home</a></li>
-                        <li class="navbar__item"><a href="/" class="navbar__links">Portfolio</a></li>
-                        <li class="navbar__item"><a href="/" class="navbar__links">About</a></li>
-                        <li class="navbar__btn"><a href="/" class="button">Hire</a></li>
+                        <li class="navbar__item"><a href="#hero" class="navbar__links">Home</a></li>
+                        <li class="navbar__item"><a href="#about" class="navbar__links">About</a></li>
+                        <li class="navbar__item"><a href="#portfolio" class="navbar__links">Portfolio</a></li>
+                        <li class="navbar__btn"><a href="#hire" class="button">Contact</a></li>
                     </ul>
 
                 </div>
@@ -55,14 +71,14 @@
     </header>
     <main>
         <!-- hero section -->
-        <div class="background-color container-flex">
+        <div id="#hero" class="background-color container-flex">
             <img src="jr.jpg" alt="Jose Perez showing a quirky smile inside Rodic's diner.">
             <h1 class="pixel-font">Hi, my name <br> is <span>Jay-r</span>!</h1>
         </div>
 
         <!-- about -->
         <div class="background-color container-block inter-font">
-            <h2>Fun facts about me:</h2>
+            <h2 id="#about">Fun facts about me:</h2>
             <div class="card">
                 <ul>
                     <li>👋 introvert</li>
@@ -76,9 +92,17 @@
             <p>You can find me @<a href="https://www.youtube.com/channel/UC9cqnX1phxqaaBc2dIX2XlQ"
                     target="_blank">youtube</a>, @<a href="https://github.com/rising-dancho" target="_blank">github</a>,
                 or @<a href="https://www.facebook.com/adfinemrising" target="_blank">facebook</a></p>
-            <!-- <input type="text" placeholder="Enter email...">
-            <button>Join newsletter</button> -->
-            <p style="color: rgba(255, 255, 255, 0.301);">website is under construction © 2023</p>
+
+            <h2 id="#portfolio">Portfolio:</h2>
+            <ul>
+                <li>online résumé: <a href="https://rising-dancho.github.io/online-resume-caps1/" target="_blank">live demo</a></li>
+                <li>bethany's pie shop: <a href="https://bethanyspies.netlify.app/" target="_blank">live demo</a></li>
+            </ul>
+
+            <h2 id="#hire">Contact:</h2>
+            <input type="text" placeholder="Enter email...">
+            <button>Message</button>
+            <p style="color: rgba(255, 255, 255, 0.301);">website is under construction © 2023 adfinem. </p>
         </div>
     </main>
     <footer>
