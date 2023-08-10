@@ -1,0 +1,63 @@
+
+
+
+
+
+.text {
+    width:140px;
+    padding-right:10px;
+}
+
+.pie-title {
+    width:250px;
+    padding-right:10px;
+}
+
+.pie-description {
+    width:300px;
+    padding-right:10px;
+}
+.num {
+    width:90px;
+    padding-right:10px;
+}
+
+.pie-image {
+    width:180px;
+    padding-right:10px;
+}
+
+fieldset{
+    border-color:#a593c2;
+    border-width: 3px;
+    border-style:solid;
+}
+
+fieldset>legend{
+    color:#a593c2;
+}
+
+p>label {
+    display:block;
+}
+
+input[type="email"], 
+input[type="tel"], 
+textarea {
+    border-radius:7px;
+}
+
+input:valid{
+    border-color:green;
+}
+input:invalid{
+    border-color:red;
+}
+
+input:focus:invalid {
+    border-color:black;
+}
+input:required,
+textarea:required{
+    border-style:dashed;
+}
