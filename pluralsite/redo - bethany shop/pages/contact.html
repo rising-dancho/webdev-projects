@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to Bethany's Pie Shop!</title>
+    <meta name="author" content="Bethany's Pie Shop">
+    <meta name="description" content="Store front for Bethany's Pie Shop">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icons">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+
+</head>
+
+<body>
+
+    <div id="somecolor">
+        <header id="topheader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="../images/cake.svg" alt="Bethany's Pie Shop Logo">
+                        <h1>Bethany's</h1>
+                        <h2>Fantastic Pie Shop</h2>
+                    </div> <!-- end column -->
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </header>
+    </div>
+
+
+    <header id="mainheader">
+        <nav>
+            <ul>
+                <!-- <li><img src="images/cake.svg" height="55" /></li> -->
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./pieoverview.html">All pies</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li class="right">
+                    <input type="search" class="searchbox" placeholder="Search our store" />
+                    <button type="submit"><img src="../images/search.ico" alt="search icon"></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div style="width:1000px;margin-left: auto;margin-right: auto;">
+        <aside id="leftmenu">
+            <a href="../index.html"><img class="logo" src="../images/bethanylogo.png" /></a>
+            <section>
+                <h4 style="text-align: center;">Browse our pies</h4>
+            </section>
+            <ul>
+                <li class="rounded-borders">
+                    <a href="./pieoverview.html">
+                        <div>All pies</div>
+                        <span>11</span>
+                    </a>
+                </li>
+                <li class="rounded-borders">
+                    <a href="./cheesecakes.html">
+                        <div>Cheese cakes</div>
+                        <span>3</span>
+                    </a>
+                </li>
+                <li class="rounded-borders">
+                    <a href="./fruitpies.html">
+                        <div>Fruit pies</div>
+                        <span>6</span>
+                    </a>
+                </li>
+                <li class="rounded-borders">
+                    <a href="./seasonalpies.html">
+                        <div>Seasonal pies</div>
+                        <span>2</span>
+                    </a>
+                </li>
+        
+            </ul>
+        </aside>
+        <main id="main">
+            <h1>Contact Us</h1>
+            <form action="contact.html" method="POST" enctype="application/x-www-form-urlencoded">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <p>
+                        <label for="nameField">*Your name: </label>
+                        <input id="nameField" type="text" required minlength="10" maxlength="75" name="customerName">
+                    </p>
+                    <p>
+                        <label for="customerEmail">Your email: </label>
+                        <input type="email" name="customerEmail" id="customerEmail">
+                    </p>
+                    <p><label for="customerPhone">Your phone: </label>
+                        <input type="tel" pattern="\(\d{3}\) \d{3}-\d{4}" name="customerPhone" id="customerPhone"></p>
+                    <p>
+                        <label>Phone type: </label>
+                    </p>
+
+                    <label><input type="radio" name="phoneType" value="cell">Cell</label>
+                    <label><input type="radio" name="phoneType" value="work">Work</label>
+                    <label><input type="radio" name="phoneType" value="home">Home</label>
+                    <p>
+                        Ok to contact me:
+                        <label><input type="checkbox" name="okToContact" value="phone"> by phone</label>
+                        <label><input type="checkbox" name="okToContact" value="email"> by email</label>
+
+                    </p>
+                </fieldset>
+
+                <input type="hidden" name="source" value="ContactForm">
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <p>
+                        <textarea required tabindex="1" name="feedbackText" cols="40" rows="3"></textarea>
+                    </p>
+                    <p>
+                        <label for="feedbackType">Feedback type: </label><select tabindex="2" name="feedbackType"
+                            multiple="multiple" size="6" id="feedbackType">
+                            <optgroup label="Stores">
+                                <option value="webstore">Web Store</option>
+                                <option value="store">Physical Store</option>
+                            </optgroup>
+                            <option value="webtech">Website Issue</option>
+                            <option value="general">General Feedback</option>
+                        </select>
+                    </p>
+
+                    <p><label for="severityRange">Severity: </label>
+                        <input tabindex="3" type="range" min="1" max="10" name="severityRange" id="severityRange">
+                    </p>
+                    <!-- <p><label for="severity">Severity: </label>
+                        <input tabindex="4" type="number" min="1" max="10" name="severity" id="severity"></label>
+                    </p> -->
+                    <p>
+                        <label for="issueDate">Issue date: </label>
+                        <input tabindex="5" type="date" name="issueDate" id="issueDate">
+                    </p>
+                    <p>
+                        <label for="issueTime">Issue time: </label>
+                        <input tabindex="6" type="time" name="issueTime" id="issueTime">
+                    </p>
+
+                </fieldset>
+                <input type="submit" value="SendContact">
+            </form>
+        </main>
+    </div>
+    <footer>
+        <p>Our address is </p>
+        <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address>
+        <p>Contact us via: <a href="mailto:qjperezjr.1@tip.edu.ph"> Email</a></p>
+        <small>&copy; 2023 Bethany's Pie Shop - All rights reserved</small>
+        <small>
+            <p>Created by <a href="https://risingdancho.netlify.app/">adfinem</a></p>
+        </small>
+    </footer>
+</body>
+
+</html>
