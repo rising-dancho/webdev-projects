@@ -13,11 +13,12 @@ body{
     line-height: 1.6;
 }
 
-ul{
+.mainheader ul{
     list-style-type: none;
+    padding: 0 20px;
 }
 
-a{
+.mainheader a{
     text-decoration: none;
     color: #333;
 }
@@ -47,9 +48,9 @@ p{
     margin: 0 8px;
 }
 
-/* .test-border{
+.test-border{
     border: solid 2px firebrick;
-} */
+}
 
 
 .container > div{
@@ -74,6 +75,7 @@ p{
     color: white;
     padding: 10px;
     margin: 0 5px;
+    text-decoration: none;
 }
 
 .navbar nav a:hover{
