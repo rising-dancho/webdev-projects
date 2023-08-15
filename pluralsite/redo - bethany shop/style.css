@@ -13,6 +13,12 @@ body{
     line-height: 1.6;
 }
 
+/* for testing */
+.test-border{
+    border: solid 2px firebrick;
+}
+/* end */
+
 .mainheader ul{
     list-style-type: none;
     padding: 0 20px;
@@ -22,7 +28,6 @@ body{
     text-decoration: none;
     color: #333;
 }
-
 
 .logo-name 
 h1,
@@ -48,9 +53,6 @@ p{
     margin: 0 8px;
 }
 
-.test-border{
-    border: solid 2px firebrick;
-}
 
 
 .container > div{
@@ -103,3 +105,13 @@ p{
     align-items: center;
 }
 
+
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-links{
+    display: flex;
+    justify-content: space-between;
+}
