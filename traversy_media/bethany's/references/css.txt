@@ -1,0 +1,312 @@
+#topheader{
+  width: 1000px;
+  margin: 0 auto;
+ 
+}
+
+#mainheader {
+  background-color: #24cfa6;
+  /* box-shadow: 0px 2px 15px gray; */
+}
+
+#somecolor{
+  background-color: #9b87b8;
+  height: 5.625rem;
+}
+
+#somefooter{
+  width: 100%;
+  background-color: #9b87b8;
+}
+
+header h1, header h2 {
+  margin: 0;
+  color: #fff; 
+  font-weight: 300;
+  font-style: italic;
+}
+header h1 { 
+padding: .5rem 0 0 0; 
+font-size: 2.1rem;
+}
+header h2{
+padding: .2rem 0 0 0; 
+font-size:1.05rem;    
+}
+header img {
+  float: left; 
+  height: 85px;
+  padding-right: 10px; 
+  
+}
+
+
+
+/************
+Nav-bar
+*************/
+
+nav {
+  height: 60px;
+  width: 1000px;
+  margin: 0 auto 20px;
+  background: #24cfa6;
+}
+
+nav button {
+  background: #9b87b8;
+  border-radius: 5px;
+}
+
+nav button > img {
+  height: 1rem;
+  width: 1rem;
+}
+
+nav > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav > ul > li {
+  float: left;
+}
+
+nav > ul > li.right {
+  float: right;
+  padding: 10px 0px;
+}
+
+nav > ul > li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px 22px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav input {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  border: none;
+  padding: 14px 12px 7px 12px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+
+body {
+  margin-top: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url("./images/pietexture.png");
+}
+
+
+
+button {
+  outline: none;
+  border: none;
+  background: #a593c2;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.rounded-borders{
+  border-radius: 5px;
+}
+
+
+/************
+Page Layout
+*************/
+#leftmenu {
+  float: left;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+#main {
+  float: right;
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+/************
+Footer
+*************/
+footer {
+  clear: both;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer>p,
+footer>address {
+    margin: .5rem;
+}
+
+
+/************
+Cards
+*************/
+
+div.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.card {
+  border: 1px solid gray;
+  background: #e6e4d9;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+div.card.active {
+  box-shadow: 5px 5px 15px 10px #7b5ea9;
+}
+
+div.card a {
+  text-decoration: none;
+  color: unset;
+}
+
+div.card h1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+div.card img {
+  width: 100%;
+}
+
+div.card .image {
+  padding: 10px 10px 0px 10px;
+}
+
+div.card .content {
+  padding: 10px 10px 0px 10px;
+  background: #f8f4f1;
+  margin-top: 4px;
+  border-top: 1px solid lightgray;
+  padding: 4px 10px 4px 10px;
+}
+
+div.card .description {
+  font-style: italic;
+}
+
+div.card .footer {
+  font-size: 14px;
+  font-weight: bold;
+  color: gray;
+  background: #f8f4f1;
+  padding: 4px 10px 4px 10px;
+}
+
+
+/************
+Aside
+*************/
+aside div{
+  width: 70%;
+}
+aside > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+aside > ul > li {
+  padding: 8px;
+  margin-bottom: 2px;
+  margin-right: 8px;
+  background: #24cfa6;
+  color: white;
+  font-weight: 450;
+  margin-right: 8%;
+  margin-left: 4%;
+  padding-left: 5%;
+
+}
+
+aside > ul > li a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+aside > ul > li span {
+  opacity: 0;
+  /* padding-right: 50%; */
+}
+
+aside > ul > li:hover {
+  background: white;
+  color: #24cfa6;
+  transition: 0.15s;
+  font-weight: 600;
+}
+
+aside > ul > li:hover span {
+  opacity: 1;
+  transition: opacity .1s;
+  margin-right: 3%;
+  font-weight: bold;
+  color: #24cfa6;
+}
+
+
+/************
+Page Layout
+*************/
+
+
+
+fieldset{
+  border-color:#a593c2;
+  border-width: 3px;
+  border-style:solid;
+}
+
+fieldset>legend{
+  color:#a593c2;
+}
+
+p>label {
+  display:block;
+}
+
+input[type="email"], 
+input[type="tel"], 
+textarea {
+  border-radius:7px;
+}
+
+input:valid{
+  border-color:green;
+}
+input:invalid{
+  border-color:red;
+}
+
+input:focus:invalid {
+  border-color:black;
+}
+input:required,
+textarea:required{
+  border-style:dashed;
+}
