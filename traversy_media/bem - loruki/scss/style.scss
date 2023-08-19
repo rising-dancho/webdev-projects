@@ -1,11 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-// sass placeholder
+// VARIABLES
+:root {
+    // theme colors
+    --primary-color: #047aed;
+    --accent-color: #2BA84A;
+    --border-color: white;
+
+    // text colors
+    --text-white: white;
+    --text-black: black;
+}
+
+// UTILITIES: sass placeholder 
 %container {
     max-width: 1100px;
     margin: 0 auto;
     overflow: auto;
     padding: 0 40px;
+}
+
+%flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
 // DEFAULT STYLES
@@ -48,11 +67,11 @@ body {
 
 }
 
-// navbar
+// Navbar
 
 .navbar {
-    background-color: #047aed;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-white);
     height: 70px;
 
     &__container {
@@ -60,10 +79,7 @@ body {
 
         // modifier for container
         &--flex {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            height: 100%;
+            @extend %flex;
         }
     }
 
@@ -72,19 +88,23 @@ body {
     }
 
     &__link {
-        color: #fff;
+        color: var(--text-white);
         padding: 10px;
         margin: 0 5px;
     }
 
     &__link:hover {
-        border-bottom: solid 2px #fff;
+        border-bottom: solid 2px var(--text-white);
     }
 }
 
-// showcase
+// Showcase
 
 .showcase {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+
     &__container {
         @extend %container;
     }
