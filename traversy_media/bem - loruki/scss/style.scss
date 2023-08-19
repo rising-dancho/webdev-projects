@@ -120,29 +120,37 @@ body {
 
     &__container {
         @extend %container;
+        overflow: visible;
 
         &--grid {
             @extend %grid;
-            grid-template-columns: 50% 45%;
+            grid-template-columns: 55% 45%;
+            overflow: visible;
         }
     }
 
-    &__form{
-        &--card{
-            background-color: var(--border-color);  
+    &__form {
+        position: relative;
+        top: 60px;
+        height: 350px;
+
+        &--card {
+            background-color: var(--border-color);
+            color: var(--text-black);
             border-radius: var(--boder-radius);
-            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
             padding: 20px;
             margin: 10px;
         }
     }
 
+    h1 {
 
-    &__h1 {
         font-size: 40px;
     }
 
-    &__p {
+    p {
         margin: 20px 0;
     }
+
 }
