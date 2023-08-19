@@ -5,11 +5,14 @@
     // theme colors
     --primary-color: #047aed;
     --accent-color: #2BA84A;
-    --border-color: white;
+    --border-color: #FCFFFC;
 
     // text colors
-    --text-white: white;
-    --text-black: black;
+    --text-white: #FCFFFC;
+    --text-black: #040F0F;
+
+    // border radius
+    --boder-radius: 10px;
 }
 
 // UTILITIES: sass placeholder 
@@ -24,6 +27,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
+}
+
+%grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
     height: 100%;
 }
 
@@ -104,8 +116,33 @@ body {
     height: 400px;
     background-color: var(--primary-color);
     color: var(--text-white);
+    position: relative;
 
     &__container {
         @extend %container;
+
+        &--grid {
+            @extend %grid;
+            grid-template-columns: 50% 45%;
+        }
+    }
+
+    &__form{
+        &--card{
+            background-color: var(--border-color);  
+            border-radius: var(--boder-radius);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            padding: 20px;
+            margin: 10px;
+        }
+    }
+
+
+    &__h1 {
+        font-size: 40px;
+    }
+
+    &__p {
+        margin: 20px 0;
     }
 }
