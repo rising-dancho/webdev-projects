@@ -205,9 +205,36 @@ body {
             @extend %btn;
         }
 
-        &__btn:hover{
+        &__btn:hover {
             @extend %btn-hover;
         }
     }
 
+}
+
+.showcase::before {
+    content: "";
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background-color: var(--background-color-white);
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+// Stats
+.stats {
+    padding-top: 100px;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__grid {
+        @extend %grid;
+    }
 }
