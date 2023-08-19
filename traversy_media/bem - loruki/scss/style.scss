@@ -69,88 +69,88 @@
 
 // MARGINS: rem/em = 16px 
 // top and bottom margin: 1 rem
-%my-1{
-    margin: 1rem 0; 
+%my-1 {
+    margin: 1rem 0;
 }
 
-%my-2{
-    margin: 1.5rem 0; 
+%my-2 {
+    margin: 1.5rem 0;
 }
 
-%my-3{
-    margin: 2rem 0; 
+%my-3 {
+    margin: 2rem 0;
 }
 
-%my-4{
-    margin: 3rem 0; 
+%my-4 {
+    margin: 3rem 0;
 }
 
-%my-5{
-    margin: 4rem 0; 
+%my-5 {
+    margin: 4rem 0;
 }
 
 // all sides margin: 1 rem
-%m-1{
-    margin: 1rem; 
+%m-1 {
+    margin: 1rem;
 }
 
-%m-2{
-    margin: 1.5rem; 
+%m-2 {
+    margin: 1.5rem;
 }
 
-%m-3{
-    margin: 2rem; 
+%m-3 {
+    margin: 2rem;
 }
 
-%m-4{
-    margin: 3rem; 
+%m-4 {
+    margin: 3rem;
 }
 
-%m-5{
-    margin: 4rem; 
+%m-5 {
+    margin: 4rem;
 }
 
 // PADDINGS: rem/em = 16px 
 // top and bottom padding: 1 rem
-%py-1{
-    padding: 1rem 0; 
+%py-1 {
+    padding: 1rem 0;
 }
 
-%py-2{
-    padding: 1.5rem 0; 
+%py-2 {
+    padding: 1.5rem 0;
 }
 
-%py-3{
-    padding: 2rem 0; 
+%py-3 {
+    padding: 2rem 0;
 }
 
-%py-4{
-    padding: 3rem 0; 
+%py-4 {
+    padding: 3rem 0;
 }
 
-%py-5{
-    padding: 4rem 0; 
+%py-5 {
+    padding: 4rem 0;
 }
 
 // all sides padding: 1 rem
-%p-1{
-    padding: 1rem; 
+%p-1 {
+    padding: 1rem;
 }
 
-%p-2{
-    padding: 1.5rem; 
+%p-2 {
+    padding: 1.5rem;
 }
 
-%p-3{
-    padding: 2rem; 
+%p-3 {
+    padding: 2rem;
 }
 
-%p-4{
-    padding: 3rem; 
+%p-4 {
+    padding: 3rem;
 }
 
-%p-5{
-    padding: 4rem; 
+%p-5 {
+    padding: 4rem;
 }
 
 // ---------------------   UTILITIES: END   ---------------------
@@ -332,17 +332,30 @@ body {
         @extend %container;
     }
 
-    &__heading{
-        &--text-center{
+    &__heading {
+        max-width: 500px;
+        margin: auto;
+
+        &--text-center {
             @extend %text-center;
         }
-        &--my-1{
+
+        &--my-1 {
             @extend %my-1;
         }
     }
 
     &__grid {
         @extend %grid;
+
+        h3 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+        }
 
         &--grid-3 {
             // modifier for grid: sets the grid to have 3 columns, instead of just 2.
@@ -353,7 +366,7 @@ body {
             @extend %text-center;
         }
 
-        &--my-4{
+        &--my-4 {
             @extend %my-4;
         }
     }
