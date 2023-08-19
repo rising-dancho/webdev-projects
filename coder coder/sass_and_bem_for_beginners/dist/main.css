@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Press+Start+2P&display=swap");
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -14,9 +15,9 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: skyblue;
-  color: black;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 h1,
@@ -33,4 +34,9 @@ p {
 
 a, a:visited, a:active {
   text-decoration: none;
+}
+
+:root {
+  --background-color: skyblue;
+  --text-color:black;
 }/*# sourceMappingURL=main.css.map */
