@@ -5,7 +5,8 @@
     // theme colors
     --primary-color: #047aed;
     --accent-color: #2BA84A;
-    --border-color: #FCFFFC;
+    --background-color-white: #FCFFFC;
+    --border-color-input: #b4becb;
 
     // text colors
     --text-white: #FCFFFC;
@@ -133,14 +134,32 @@ body {
         position: relative;
         top: 60px;
         height: 350px;
+        width: 400px;
+        padding: 40px;
+
+        input {
+            border: 0;
+            border-bottom: 1px solid var(--border-color-input);
+            width: 100%;
+            padding: 3px;
+            font-size: 16px;
+        }
+
+        input:focus {
+            outline: none;
+        }
 
         &--card {
-            background-color: var(--border-color);
+            background-color: var(--background-color-white);
             color: var(--text-black);
             border-radius: var(--boder-radius);
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
             padding: 20px;
             margin: 10px;
+        }
+
+        &__form-control {
+            margin: 30px 0;
         }
     }
 
