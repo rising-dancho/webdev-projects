@@ -15,6 +15,9 @@
     // border radius
     --btn-border-radius: 5px;
     --boder-radius: 10px;
+
+    // text sizes
+    --textsize-20px: 1.25rem;
 }
 
 // UTILITIES: sass placeholders
@@ -95,6 +98,15 @@
 %bg-dark,
 %btn-dark {
     background-color: var(--dark-color);
+    color: var(--text-white);
+}
+
+%bg-primary a,
+%btn-primary a,
+%bg-secondary a,
+%btn-secondary a,
+%bg-dark a,
+%btn-dark a {
     color: var(--text-white);
 }
 
@@ -190,7 +202,28 @@
     padding: 4rem;
 }
 
-// ---------------------   UTILITIES: END   ---------------------
+// text sizes
+%lead {
+    font-size: 1.25rem;
+}
+
+%sm {
+    font-size: 1rem;
+}
+
+%md {
+    font-size: 2rem;
+}
+
+%lg {
+    font-size: 3rem;
+}
+
+%xl {
+    font-size: 4rem;
+}
+
+// ---------------------   END of UTILITIES  ---------------------
 
 // DEFAULT STYLES
 * {
@@ -281,14 +314,14 @@ body {
         &__btn {
             @extend %btn;
 
+            &--btn-hover:hover {
+                @extend %btn-hover;
+            }
+
             &--outline {
                 background-color: transparent;
                 border: 1px white solid;
             }
-        }
-
-        &__btn:hover {
-            @extend %btn-hover;
         }
     }
 
@@ -333,10 +366,10 @@ body {
 
         &__btn {
             @extend %btn;
-        }
 
-        &__btn:hover {
-            @extend %btn-hover;
+            &--btn-hover:hover {
+                @extend %btn-hover;
+            }
         }
     }
 
@@ -439,12 +472,22 @@ body {
         }
     }
 
-    &__text-center {
-        @extend %text-center;
+    &__p {
+        &--lead {
+            @extend %lead;
+        }
+
+        &--my-1 {
+            @extend %my-1;
+        }
     }
 
     &__btn {
         @extend %btn;
+
+        &--btn-hover:hover {
+            @extend %btn-hover;
+        }
 
         &--btn-dark {
             @extend %btn-dark;
@@ -452,9 +495,22 @@ body {
 
     }
 
+    &__h2 {
+        &--lg {
+            @extend %lg;
+        }
+    }
+
+    &__div {
+        &--text-center {
+            @extend %text-center;
+        }
+    }
+
+
     &--bg-primary {
         @extend %bg-primary;
-        
+
     }
 
     &--my-2 {
@@ -463,5 +519,86 @@ body {
 
     &--py-2 {
         @extend %py-2;
+    }
+
+}
+
+// Languages
+.languages {
+
+    languages__div--container
+    
+    &__container {
+        @extend %container;
+    }
+
+    &__h2 {
+        &--md {
+            @extend %md;
+        }
+
+        &--text-center {
+            @extend %text-center;
+        }
+
+        &--my-2 {
+            @extend %my-2;
+        }
+    }
+
+    &__div {
+        &--container {
+            @extend %container;
+        }
+
+        &--flex {
+            @extend %flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__card {
+        @extend %card;
+        text-align: center;
+        margin: 18px 10px 40px;
+        transition: transform 0.2s ease-in;
+
+        h4 {
+            margin-bottom: 10px;
+            font-size: var(--textsize-20px);
+        }
+
+        &--card-hover:hover {
+            transform: translateY(-15px);
+        }
+
+    }
+}
+
+// Footer
+.footer {
+
+    &__social a{
+        margin: 0 10px;
+    }
+
+    &__container {
+        @extend %container;
+
+        &--grid {
+            @extend %grid;
+        }
+
+        &--grid-3 {
+            @extend %grid-3;
+        }
+    }
+
+    &--bg-dark {
+        @extend %bg-dark;
+    }
+
+    &--py-5 {
+        @extend %py-5;
     }
 }

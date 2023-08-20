@@ -17,7 +17,7 @@
 
 <body>
     <!-- Navbar -->
-    <div class="navbar">
+    <header class="navbar">
         <div class="navbar__container navbar__container--flex">
             <h1 class="navbar__logo">Loruki.</h1>
             <nav class="navbar__nav">
@@ -28,7 +28,7 @@
                 </ul>
             </nav>
         </div>
-    </div>
+    </header>
     <!-- Showcase -->
     <section class="showcase">
         <div class="showcase__container showcase__container--grid">
@@ -37,7 +37,8 @@
                 <p>Deploy web apps of all kinds, from large scale enterprise APIs to static
                     websites for individuals.
                     Fill out the form to try a demo of our platform</p>
-                <a class="showcase__text__btn showcase__text__btn--outline" href="index.html">Read More</a>
+                <a class="showcase__text__btn showcase__text__btn--btn-hover showcase__text__btn--outline"
+                    href="index.html">Read More</a>
                 <!-- class="btn btn-outline" -->
             </div>
             <div class="showcase__form showcase__form--card">
@@ -52,7 +53,8 @@
                     <div class="showcase__form__form-control">
                         <input type="email" name="email" placeholder="Email" required>
                     </div>
-                    <input type="submit" value="Send" class="showcase__form__btn showcase__form__btn--outline">
+                    <input type="submit" value="Send"
+                        class="showcase__form__btn showcase__form__btn--btn-hover showcase__form__btn--outline">
                 </form>
             </div>
         </div>
@@ -98,15 +100,73 @@
     <!-- Cloud -->
     <section class="cloud cloud--bg-primary cloud--my-2 cloud--py-2">
         <div class="cloud__container cloud__container--grid">
-            <div class="cloud__text-center">
-                <h2 class="cloud__lg">Extreme Cloud Hosting</h2>
-                <p class="cloud__lead cloud--my-1">Cloud hosting like you've never seen before. Fast, efficient and scalable.</p>
-                <a href="features.html" class="cloud__btn cloud__btn--btn-dark">Read More</a>
+            <div class="cloud__div cloud__div--text-center">
+                <h2 class="cloud__h2 cloud__h2--lg">Extreme Cloud Hosting</h2>
+                <p class="cloud__p cloud__p--lead cloud__p--my-1">Cloud hosting like you've never seen before. Fast,
+                    efficient and scalable.</p>
+                <a href="features.html" class="cloud__btn cloud__btn--btn-hover cloud__btn--btn-dark">Read More</a>
             </div>
             <img src="./images/cloud.png" alt="">
         </div>
     </section>
-
+    <!-- Languages -->
+    <section class="languages">
+            <h2 class="languages__h2 languages__h2--md languages__h2--text-center languages__h2--my-2">
+                Supported Languages
+            </h2>
+            <div class="languages__div languages__div--container languages__div--flex">
+                <div class="languages__card languages__card--card-hover">
+                    <h4>Node.js</h4>
+                    <img src="./images/logos/node.png" alt="node logo">
+                </div>
+                <div class="languages__card languages__card--card-hover">
+                    <h4>Python</h4>
+                    <img src="images/logos/python.png" alt="python logo">
+                </div>
+                <div class="languages__card languages__card--card-hover">
+                    <h4>C#</h4>
+                    <img src="images/logos/csharp.png" alt="csharp logo">
+                </div>
+                <div class="languages__card languages__card--card-hover">
+                    <h4>Ruby</h4>
+                    <img src="images/logos/ruby.png" alt="ruby logo">
+                </div>
+                <div class="languages__card languages__card--card-hover">
+                    <h4>PHP</h4>
+                    <img src="images/logos/php.png" alt="php logo">
+                </div>
+                <div class="languages__card languages__card--card-hover">
+                    <h4>Scala</h4>
+                    <img src="images/logos/scala.png" alt="scala logo">
+                </div>
+                <div class="languages__card languages__card--card-hover">
+                    <h4>Clojure</h4>
+                    <img src="images/logos/clojure.png" alt="clojure logo">
+                </div>
+            </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer footer--bg-dark footer--py-5">
+        <div class="footer__container footer__container--grid footer__container--grid-3">
+            <div>
+                <h1>Loruki</h1>
+                <p>Copyright &copy; 2023</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                </ul>
+            </nav>
+            <div class="footer__social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
