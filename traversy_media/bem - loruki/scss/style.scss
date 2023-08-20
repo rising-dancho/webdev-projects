@@ -1,8 +1,10 @@
-// VARIABLES
+// CUSTOM PROPERTIES: variables
 :root {
     // theme colors
     --primary-color: #047aed;
-    --accent-color: #2BA84A;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
     --background-color-white: #FCFFFC;
     --border-color-input: #b4becb;
 
@@ -58,6 +60,12 @@
     height: 100%;
 }
 
+%text-center {
+    text-align: center;
+}
+
+// Background & colored buttons
+
 %btn {
     display: inline-block;
     padding: 10px 30px;
@@ -72,8 +80,28 @@
     transform: scale(.98);
 }
 
-%text-center {
-    text-align: center;
+%bg-primary,
+%btn-primary {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
+
+%bg-secondary,
+%btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-white);
+}
+
+%bg-dark,
+%btn-dark {
+    background-color: var(--dark-color);
+    color: var(--text-white);
+}
+
+%bg-light,
+%btn-light {
+    background-color: var(--light-color);
+    color: var(--text-white);
 }
 
 // MARGINS: rem/em = 16px 
@@ -388,7 +416,7 @@ body {
             grid-template-rows: repeat(2, 1fr);
         }
 
-        &--grid > *:first-child{
+        &--grid>*:first-child {
             grid-column: 1 / span 2;
             grid-row: 1 / span 2;
         }
@@ -400,23 +428,40 @@ body {
 }
 
 // Cloud
-.cloud{
-    &__container{
+.cloud {
+
+    &__container {
         @extend %container;
-        &--grid{
-           @extend %grid; 
+
+        &--grid {
+            @extend %grid;
+            grid-template-columns: 4fr 3fr;
         }
     }
-    &__text-center{
+
+    &__text-center {
         @extend %text-center;
     }
-    &__btn{
+
+    &__btn {
         @extend %btn;
+
+        &--btn-dark {
+            @extend %btn-dark;
+        }
+
     }
-    &--my-2{
+
+    &--bg-primary {
+        @extend %bg-primary;
+        
+    }
+
+    &--my-2 {
         @extend %my-2;
     }
-    &--py-2{
+
+    &--py-2 {
         @extend %py-2;
     }
 }
