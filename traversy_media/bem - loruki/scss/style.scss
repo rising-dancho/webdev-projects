@@ -16,12 +16,21 @@
 }
 
 // UTILITIES: sass placeholders
-// LAYOUTS: 
+// FOR LAYOUTS: 
 %container {
     max-width: 1100px;
     margin: 0 auto;
     overflow: auto;
     padding: 0 40px;
+}
+
+%card {
+    background-color: var(--background-color-white);
+    color: var(--text-black);
+    border-radius: var(--boder-radius);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
 }
 
 %flex {
@@ -287,12 +296,7 @@ body {
         }
 
         &--card {
-            background-color: var(--background-color-white);
-            color: var(--text-black);
-            border-radius: var(--boder-radius);
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            margin: 10px;
+            @extend %card;
         }
 
         &__form-control {
@@ -371,4 +375,48 @@ body {
         }
     }
 
+}
+
+// CLI
+.cli {
+    &__container {
+        @extend %container;
+
+        &--grid {
+            @extend %grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        &--grid > *:first-child{
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+        }
+    }
+
+    &__card {
+        @extend %card;
+    }
+}
+
+// Cloud
+.cloud{
+    &__container{
+        @extend %container;
+        &--grid{
+           @extend %grid; 
+        }
+    }
+    &__text-center{
+        @extend %text-center;
+    }
+    &__btn{
+        @extend %btn;
+    }
+    &--my-2{
+        @extend %my-2;
+    }
+    &--py-2{
+        @extend %py-2;
+    }
 }
