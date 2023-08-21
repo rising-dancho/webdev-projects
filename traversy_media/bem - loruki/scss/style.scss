@@ -540,10 +540,8 @@ body {
         }
     }
 
-    &__div {
-        &--container {
-            @extend %container;
-        }
+    &__container {
+        @extend %container;
 
         &--flex {
             @extend %flex;
@@ -661,6 +659,7 @@ body {
 
 
 }
+
 // Mobile medium
 @media (max-width: 500px) {
     .navbar {
