@@ -526,10 +526,6 @@ body {
 // Languages
 .languages {
 
-    languages__div--container &__container {
-        @extend %container;
-    }
-
     &__h2 {
         &--md {
             @extend %md;
