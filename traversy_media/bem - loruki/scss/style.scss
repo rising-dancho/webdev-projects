@@ -602,42 +602,8 @@ body {
 }
 
 //  Tablets and under
-@media(max-width: 768px) {
-    .showcase__container--grid,
-    .stats__grid,
-    .cli__container--grid,
-    .cloud__container--grid,
-    .footer__container--grid{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
+@media(max-width: 978px) {
 
-    .showcase{
-        height: auto; // takes up the amount of the container
-    }
-
-    .showcase__text{
-        text-align: center;
-        margin-top: 40px;
-    }
-
-    .showcase__form{
-        justify-self: center;
-    }
-
-    .cli__container--grid>*:first-child {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .cli__container h3{
-        text-align: center;
-    }
-
-}
-
-// Mobile
-@media(max-width: 500px) {
     .navbar {
         height: 110px;
 
@@ -646,9 +612,106 @@ body {
                 flex-direction: column;
             }
         }
-        &__list{
+
+        &__list {
             padding: 10px;
-            background-color: rgba(0,0,0,0.1);
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .showcase__container--grid,
+    .stats__grid,
+    .cli__container--grid,
+    .cloud__container--grid,
+    .footer__container--grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase {
+        height: auto; // takes up the amount of the container
+    }
+
+    .showcase__text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .showcase__form {
+        justify-self: center;
+    }
+
+    .cli__container--grid>*:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .cli__container h3 {
+        text-align: center;
+    }
+
+}
+
+
+// Mobile
+@media(max-width: 450px) {
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        height: 120px;
+        &__container{
+            overflow: visible;
+        }
+    }
+  
+  
+}
+
+// Mobile xsmall
+
+@media (max-width: 425px){
+    .showcase {
+        &__btn {
+            margin: auto;
+        }
+
+        &__form {
+            margin-bottom: 20px;
+            height: 370px;
+            width: 335px;
+            padding: 40px 30px;
+        }
+    }
+    .cli img{
+        display: none;
+    }
+    
+}
+
+
+// Mobile xxsmall
+
+@media (max-width: 370px){
+    .showcase {
+        &__form {
+            width: 300px;
         }
     }
 }
+
+// Mobile xxxsmall
+@media (max-width: 330px){
+    .showcase {
+        &__form {
+            width: 270px;
+        }
+    }
+}
+
