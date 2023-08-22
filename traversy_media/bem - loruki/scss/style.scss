@@ -596,6 +596,12 @@ body {
             @extend %lead;
         }
     }
+    
+    &__img{
+        width: 200px;
+        justify-self: flex-end;
+    }
+
 }
 
 // Footer
