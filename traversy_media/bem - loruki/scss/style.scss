@@ -649,12 +649,21 @@ body {
         }
 
         &--grid>*:first-child {
+            grid-column: 1 / span 3; 
+        }
+
+        &--grid>*:nth-child(3) {
+            grid-column: 2 / span 2;
+        }
+
+        &--grid>*:nth-child(4) {
+            grid-column: 1 / span 2;
+        }
+
+        &--grid>*:last-child {
             grid-column: 1 / span 3;
         }
 
-        &--grid>*:nth-child(2) {
-            grid-column: 1 / span 2;
-        }
 
         &--grid-3 {
             @extend %grid-3;
