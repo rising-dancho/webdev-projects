@@ -676,6 +676,16 @@ body {
             background-color: rgba(0, 0, 0, 0.1);
         }
     }
+
+    .languages {
+        &__container {
+            justify-content: center;
+        }
+
+        &__card {
+            margin: 20px auto;
+        }
+    }
 }
 
 
