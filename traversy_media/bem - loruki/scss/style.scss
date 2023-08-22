@@ -592,12 +592,12 @@ body {
     }
 
     &__p {
-        &--lead{
+        &--lead {
             @extend %lead;
         }
     }
-    
-    &__img{
+
+    &__img {
         width: 200px;
         justify-self: flex-end;
     }
