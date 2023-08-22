@@ -567,6 +567,37 @@ body {
     }
 }
 
+// Features
+.features-heading {
+    &--bg-primary {
+        @extend %bg-primary;
+    }
+
+    &--py-3 {
+        @extend %py-3;
+    }
+
+    &__container {
+        @extend %container;
+
+        &--grid {
+            @extend %grid;
+        }
+    }
+
+    &__h1 {
+        &--xl {
+            @extend %xl;
+        }
+    }
+
+    &__p {
+        &--lead{
+            @extend %lead;
+        }
+    }
+}
+
 // Footer
 .footer {
 
