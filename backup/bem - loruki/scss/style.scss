@@ -683,6 +683,52 @@ body {
     }
 }
 
+// Docs
+.docs-heading {
+    &--bg-primary {
+        @extend %bg-primary;
+    }
+
+    &--py-3 {
+        @extend %py-3;
+    }
+
+    &__container {
+        @extend %container;
+
+        &--grid {
+            @extend %grid;
+        }
+    }
+
+    &__h1 {
+        &--xl {
+            @extend %xl;
+        }
+    }
+
+    &__p {
+        &--lead {
+            @extend %lead;
+        }
+    }
+
+    &__img {
+        width: 200px;
+        justify-self: flex-end;
+    }
+}
+
+.docs-main {
+    &--my-4 {
+        @extend %my-4;
+    }
+
+    &__container {
+        @extend %container;
+    }
+}
+
 // Footer
 .footer {
 
@@ -728,24 +774,29 @@ body {
 
     .showcase {
         height: auto; // takes up the amount of the container
+
+        &__text {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        &__form {
+            justify-self: center;
+        }
     }
 
-    .showcase__text {
-        text-align: center;
-        margin-top: 40px;
-    }
+    .cli {
+        &__container {
 
-    .showcase__form {
-        justify-self: center;
-    }
+            h3 {
+                text-align: center;
+            }
 
-    .cli__container--grid>*:first-child {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .cli__container h3 {
-        text-align: center;
+            &--grid>*:first-child {
+                grid-column: 1;
+                grid-row: 1;
+            }
+        }
     }
 
     .features-heading,
@@ -848,9 +899,10 @@ body {
         }
     }
 
-    .features-heading__img{
+    .features-heading__img {
         width: 60%;
     }
+
     .features-sub-heading__container__img {
         width: 80%;
     }
@@ -875,11 +927,11 @@ body {
         }
     }
 
-    .features-heading__h1--xl{
+    .features-heading__h1--xl {
         font-size: 3rem;
     }
 
-    .features-heading__p--lead{
+    .features-heading__p--lead {
         font-size: 1rem;
     }
 }
