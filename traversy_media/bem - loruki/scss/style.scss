@@ -694,6 +694,8 @@ body {
     }
 
     &__container{
+        @extend %container;
+        
         &--grid{
             @extend %grid;
         }
