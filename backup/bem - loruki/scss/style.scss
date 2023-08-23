@@ -599,7 +599,7 @@ body {
     }
 
     &__img {
-        width: 200px;
+        width: 12.5rem;
         justify-self: flex-end;
     }
 
@@ -629,7 +629,7 @@ body {
         }
 
         &__img {
-            width: 300px;
+            width: 18.75rem;
             justify-self: flex-end;
         }
     }
@@ -776,9 +776,6 @@ body {
 
 }
 
-//  Tablets small
-@media (max-width: 560px) {}
-
 // Mobile
 @media(max-width: 450px) {
     .navbar {
@@ -851,6 +848,13 @@ body {
         }
     }
 
+    .features-heading__img{
+        width: 60%;
+    }
+    .features-sub-heading__container__img {
+        width: 80%;
+    }
+
 }
 
 
@@ -869,5 +873,13 @@ body {
         &__form {
             width: 270px;
         }
+    }
+
+    .features-heading__h1--xl{
+        font-size: 3rem;
+    }
+
+    .features-heading__p--lead{
+        font-size: 1rem;
     }
 }
