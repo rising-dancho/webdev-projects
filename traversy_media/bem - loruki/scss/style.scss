@@ -684,6 +684,39 @@ body {
 }
 
 // Docs
+.docs-heading{
+    &--bg-primary{
+        @extend %bg-primary;
+    }
+
+    &--py-3{
+        @extend %py-3;
+    }
+
+    &__container{
+        &--grid{
+            @extend %grid;
+        }
+    }
+    &__h1{
+        &--xl{
+            @extend %xl;
+        }
+    }
+
+    &__p{
+        &--lead{
+            @extend %lead;
+        }
+    }
+    
+    &__img {
+        width: 200px;
+        justify-self: flex-end;
+    }
+}
+
+
 
 
 // Footer
