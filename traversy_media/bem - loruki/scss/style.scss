@@ -288,15 +288,13 @@ body {
         width: 100%;
     }
 
-    code, pre{
+    code,
+    pre {
         background-color: #333;
         color: #fff;
         padding: 10px;
     }
 }
-
-
-
 
 // Navbar
 .navbar {
@@ -753,6 +751,10 @@ body {
 }
 
 .docs-main {
+
+    p{
+        font-size: 1rem;
+    }
 
     nav li {
         font-size: 1.0625rem;
