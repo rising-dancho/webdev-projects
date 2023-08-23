@@ -684,38 +684,51 @@ body {
 }
 
 // Docs
-.docs-heading{
-    &--bg-primary{
+.docs-heading {
+    &--bg-primary {
         @extend %bg-primary;
     }
 
-    &--py-3{
+    &--py-3 {
         @extend %py-3;
     }
 
-    &__container{
+    &__container {
         @extend %container;
-        
-        &--grid{
+
+        &--grid {
             @extend %grid;
         }
     }
-    &__h1{
-        &--xl{
+
+    &__h1 {
+        &--xl {
             @extend %xl;
         }
     }
 
-    &__p{
-        &--lead{
+    &__p {
+        &--lead {
             @extend %lead;
         }
     }
-    
+
     &__img {
         width: 200px;
         justify-self: flex-end;
     }
+}
+
+.docs-main {
+    &--my-4 {
+        @extend %my-4;
+    }
+
+    &__container {
+        @extend %container;
+    }
+
+    
 }
 
 
