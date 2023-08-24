@@ -13,7 +13,6 @@ document.querySelectorAll(".copy-text").forEach((copyLinkParent) => {
         // add the hidden pop-up component
         copyText.classList.add("active");
         setTimeout(() => {
-            inputField.value = text;
             copyText.classList.remove("active");
         }, 1800);
     });
