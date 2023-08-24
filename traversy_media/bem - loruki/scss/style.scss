@@ -752,7 +752,7 @@ body {
 
 .docs-main {
 
-    p{
+    p {
         font-size: 1rem;
     }
 
@@ -803,8 +803,9 @@ body {
 
     &__btn {
         @extend %btn;
-        @extend %my-1;
-        
+        margin-top: 5px;
+        margin-bottom: 15px;
+
         &--btn-primary {
             @extend %btn-primary;
         }
