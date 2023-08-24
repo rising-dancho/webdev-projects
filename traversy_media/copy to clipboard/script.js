@@ -1,11 +1,20 @@
-let copyText = document.querySelector(".copy-text");
-copyText.querySelector("button").addEventListener("click", function() {
-    let input = copyText.querySelector("input.text");
-    input.select();
-    document.execCommand("copy");
-    copyText.classList.add("active");
-    window.getSelection().removeAllRanges();
-    setTimeout(function() {
-        copyText.classList.remove("active");
-    }, 1800);
-}); 
+document.querySelectorAll(".copy-text").forEach((copyLinkParent) => {
+    const inputField = copyLinkParent.querySelector(".copy-link-input");
+    const copyButton = copyLinkParent.querySelector(".copy-link-button");
+    
+
+    inputField.addEventListener("focus", () => inputField.select());
+
+    copyButton.addEventListener("click", () => {
+        const text = inputField.value;
+        const copyText = document.querySelector(".copy-text");
+        inputField.select();
+        navigator.clipboard.writeText(text);
+        // add the hidden pop-up component
+        copyText.classList.add("active");
+        setTimeout(() => {
+            inputField.value = text;
+            copyText.classList.remove("active");
+        }, 1800);
+    });
+});
