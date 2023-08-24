@@ -860,7 +860,9 @@ body {
     .footer__container--grid,
     .features-heading__container--grid,
     .features-sub-heading__container--grid,
-    .features-main__container--grid {
+    .features-main__container--grid,
+    .docs-heading__container--grid,
+    .docs-main__container--grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
@@ -893,12 +895,14 @@ body {
     }
 
     .features-heading,
-    .features-sub-heading {
+    .features-sub-heading,
+    .docs-heading {
         text-align: center;
     }
 
     .features-heading__img,
-    .features-sub-heading__container__img {
+    .features-sub-heading__container__img,
+    .docs-heading__img {
         justify-self: center;
     }
 
