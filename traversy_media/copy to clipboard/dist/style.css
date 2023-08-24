@@ -36,15 +36,27 @@ body {
     color: #555;
     border: none;
     outline: none;
+    background: #eeeeee;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px; 
 }
+
+.copy-text input:hover {
+    background: #dbdbdb;
+  }
 
 .copy-text button {
     padding: 10px;
     background-color: #5784f5;
     color: #fff;
     border: none;
-    border-radius: 10px;
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px; 
     cursor: pointer
+}
+
+.copy-text button:hover{
+    background-color: #4b74dd;
 }
 
 .copy-text button:active {
