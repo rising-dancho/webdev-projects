@@ -855,6 +855,7 @@ body {
         &--btn-primary {
             background-color: #333;
             color: var(--text-white);
+            // @extend %btn-primary;
             
         }
     }
