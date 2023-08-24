@@ -9,6 +9,10 @@ body {
     background-color: #f0f2f7
 }
 
+h4{
+    color: #555;
+}
+
 .container {
     position: absolute;
     top: 50%;
