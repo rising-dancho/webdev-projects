@@ -82,7 +82,7 @@ h4{
     content: "Copied!";
     position: absolute;
     top: -42px;
-    right: 10px;
+    right: 5px;
     background-color: #e2e2e2;
     color: #616161;
     padding: 8px 10px;
@@ -95,7 +95,7 @@ h4{
     content: "";
     position: absolute;
     top: -15px;
-    right: 50px;
+    right: 35px;
     width: 10px;
     height: 10px;
     background-color: #e2e2e2;
