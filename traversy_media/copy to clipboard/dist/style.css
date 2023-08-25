@@ -59,6 +59,7 @@ h4{
     cursor: pointer;
     border-top-right-radius: 10px; 
     border-bottom-right-radius: 10px; 
+    font-weight: 600;
 }
 
 .copy-text i {
@@ -82,7 +83,7 @@ h4{
     position: absolute;
     top: -45px;
     right: 20px;
-    background-color: #4965ac;
+    background-color: #27C451;
     padding: 8px 10px;
     border-radius: 10px;
     font-size: .9375rem;
@@ -96,7 +97,7 @@ h4{
     right: 50px;
     width: 10px;
     height: 10px;
-    background-color: #4965ac;
+    background-color: #27C451;
     transform: rotate(45deg);
     display: none;
 }
