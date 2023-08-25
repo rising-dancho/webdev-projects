@@ -9,21 +9,22 @@ body {
     background-color: #f0f2f7
 }
 
-h4{
+h4 {
     color: #555;
 }
 
 /* Change text highlighting color */
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+    /* Code for Firefox */
     color: #fff;
     background: #4D90FD;
-  }
-  
-  ::selection {
+}
+
+::selection {
     color: #fff;
     background: #4D90FD;
-  }
+}
 
 /* end */
 
@@ -45,40 +46,8 @@ h4{
     padding: 5px;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 4px;
     display: flex;
-}
-
-.copy-text input {
-    padding: 0px 20px;
-    color: #9EACC1;
-    border: none;
-    outline: none;
-    border-top-left-radius: 10px; /* Adjust the value as needed */
-    border-bottom-left-radius: 10px; /* Adjust the value as needed */
-    background: #eeeeee;
-}
-
-input[type=text]:focus{
-    border: 3px solid #4D90FD;
-    border-right: none;
-}
-
-
-.copy-text input:hover {
-    background: #e2e2e2;
-    color: #8490a1;
-  }
-
-.copy-text button {
-    padding: 10px 30px;
-    background-color: #4D90FD;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-top-right-radius: 10px; 
-    border-bottom-right-radius: 10px; 
-    font-weight: 600;
 }
 
 .copy-text i {
@@ -86,10 +55,41 @@ input[type=text]:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 20px;
+    padding-left: 20px;
 }
 
-.copy-text button:hover{
+.copy-text input {
+    padding-left: 45px;
+    margin-left: 20px;
+    margin-right: 5px;
+    color: #9EACC1;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+input[type=text]:focus {
+    border: 2px solid #4D90FD;
+    background: #eeeeee;
+}
+
+.copy-text input:hover {
+    background: #eeeeee;
+}
+
+.copy-text button {
+    padding: 10px 30px;
+    background-color: #4D90FD;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+
+
+.copy-text button:hover {
     background-color: #4965ac;
 }
 
@@ -105,7 +105,7 @@ input[type=text]:focus{
     background-color: #e2e2e2;
     color: #616161;
     padding: 8px 10px;
-    border-radius: 10px;
+    border-radius: 4px;
     font-size: .9375rem;
     display: none;
 }
