@@ -13,6 +13,7 @@ h4{
     color: #555;
 }
 
+
 .container {
     position: absolute;
     top: 50%;
@@ -23,77 +24,85 @@ h4{
 
 .label {
     padding: 10px;
-    color: #111
+    color: #111;
 }
 
 .copy-text {
     position: relative;
-    padding: 10px;
+    padding: 5px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    display: flex
+    display: flex;
 }
 
 .copy-text input {
-    padding: 0px 8px;
-    color: #555;
+    padding: 0px 20px;
+    color: #9EACC1;
     border: none;
     outline: none;
+    border-top-left-radius: 10px; /* Adjust the value as needed */
+    border-bottom-left-radius: 10px; /* Adjust the value as needed */
     background: #eeeeee;
-    border-top-left-radius: 10px; 
-    border-bottom-left-radius: 10px; 
 }
 
 .copy-text input:hover {
-    background: #dbdbdb;
+    background: #eeeeee;
   }
 
 .copy-text button {
-    padding: 10px;
-    background-color: #5784f5;
+    padding: 10px 30px;
+    background-color: #4D90FD;
     color: #fff;
     border: none;
+    cursor: pointer;
     border-top-right-radius: 10px; 
     border-bottom-right-radius: 10px; 
-    cursor: pointer
+}
+
+.copy-text i {
+    color: #9EACC1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
 }
 
 .copy-text button:hover{
-    background-color: #4b74dd;
+    background-color: #4965ac;
 }
 
 .copy-text button:active {
-    background-color: #809ce2
+    background-color: #6b8bda;
 }
 
 .copy-text button:before {
     content: "Copied!";
     position: absolute;
     top: -45px;
-    right: 0px;
-    background-color: #5c81dc;
+    right: 20px;
+    background-color: #27C451;
     padding: 8px 10px;
     border-radius: 20px;
     font-size: .9375rem;
-    display: none
+    display: none;
 }
 
 .copy-text button:after {
     content: "";
     position: absolute;
     top: -20px;
-    right: 25px;
+    right: 50px;
     width: 10px;
     height: 10px;
-    background-color: #5c81dc;
+    background-color: #27C451;
     transform: rotate(45deg);
-    display: none
+    display: none;
 }
 
 .copy-text.active button:before,
 .copy-text.active button:after {
-    display: block
+    display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
