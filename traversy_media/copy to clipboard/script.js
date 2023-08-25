@@ -10,7 +10,6 @@ document.querySelectorAll(".copy-text").forEach((copyLinkParent) => {
         const copyText = document.querySelector(".copy-text");
         const copyButton = copyLinkParent.querySelector(".copy-link-button");
 
-
         //  select the input field and copy contents to clipboard
         // inputField.select();
         navigator.clipboard.writeText(text);
@@ -33,6 +32,7 @@ document.querySelectorAll(".copy-text").forEach((copyLinkParent) => {
         window.getSelection().removeAllRanges();
 
         setTimeout(() => {
+            const inputField = copyLinkParent.querySelector(".copy-link-input");
             // remove the hidden pop-up component
             copyText.classList.remove("active");
             // revert the color change of button to original
@@ -40,6 +40,9 @@ document.querySelectorAll(".copy-text").forEach((copyLinkParent) => {
             copyButton.innerHTML = 'Copy';
             // remove the blue outline on the input field upon button click
             inputField.blur();
-        }, 1800);
+        }, 1500);
     });
 });
+
+inputField.value = "Copied!";
+    setTimeout(() => (inputField.value = text), 2000);
