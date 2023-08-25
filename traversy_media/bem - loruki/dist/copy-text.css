@@ -18,12 +18,12 @@ h4 {
 ::-moz-selection {
     /* Code for Firefox */
     color: #fff;
-    background: #4D90FD;
+    background: var(--primary-color);
 }
 
 ::selection {
     color: #fff;
-    background: #4D90FD;
+    background: var(--primary-color);
 }
 
 /* end */
@@ -73,13 +73,13 @@ h4 {
 }
 
 input[type=text]:focus {
-    border: 1.5px solid #4D90FD;
+    border: 1.5px solid var(--primary-color);
     background: #eeeeee;
 }
 
 /* Add this to modify the focus outline color when active class is applied */
 .copy-text.active input[type=text].focused:focus {
-    border-color: #27C451;
+    border-color: var(--success-color);
     /* Change focus outline color when active */
     background: #eeeeee;
 }
@@ -90,7 +90,7 @@ input[type=text]:focus {
 
 .copy-text button {
     padding: 10px 30px;
-    background-color: #4D90FD;
+    background-color: var(--primary-color);
     color: #fff;
     border: none;
     cursor: pointer;

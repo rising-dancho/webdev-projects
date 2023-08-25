@@ -18,7 +18,7 @@ document.querySelectorAll(".copy-text").forEach((copyLinkParent) => {
         inputField.classList.add("focused");
 
         // change the button to green to indicate success
-        copyButton.style.backgroundColor = '#27C451';
+        copyButton.style.backgroundColor = 'var(--success-color)';
         copyButton.innerHTML = '✓';
 
         // remove the blue outline on the input field upon button click
@@ -36,7 +36,7 @@ document.querySelectorAll(".copy-text").forEach((copyLinkParent) => {
             // remove the blue outline on the input field upon button click
             inputField.blur();
             // revert the color change of button to original
-            copyButton.style.backgroundColor = '#4D90FD';
+            copyButton.style.backgroundColor = 'var(--primary-color)';
             copyButton.innerHTML = 'Copy';
             // remove the hidden pop-up component
             copyText.classList.remove("active");
