@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  input:focus {
+    outline-color: green; /* New outline color when focused */
+  }
+</style>
+<title>Change Outline Color on Focus</title>
+</head>
+<body>
+  <input type="text" id="inputField" placeholder="Type something...">
+  <button id="changeButton">Change Outline Color and Focus</button>
+
+  <script>
+    const inputField = document.getElementById('inputField');
+    const changeButton = document.getElementById('changeButton');
+
+    changeButton.addEventListener('click', function() {
+      inputField.focus(); // Set the input field in focus
+    });
+  </script>
+</body>
+</html>
