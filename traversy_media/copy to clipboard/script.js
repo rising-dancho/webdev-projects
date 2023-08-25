@@ -33,16 +33,16 @@ document.querySelectorAll(".copy-text").forEach((copyLinkParent) => {
 
         setTimeout(() => {
             const inputField = copyLinkParent.querySelector(".copy-link-input");
-            // remove the hidden pop-up component
-            copyText.classList.remove("active");
+            // remove the blue outline on the input field upon button click
+            inputField.blur();
             // revert the color change of button to original
             copyButton.style.backgroundColor = '#4D90FD';
             copyButton.innerHTML = 'Copy';
-            // remove the blue outline on the input field upon button click
-            inputField.blur();
+            // remove the hidden pop-up component
+            copyText.classList.remove("active");
         }, 1500);
     });
 });
 
 inputField.value = "Copied!";
-    setTimeout(() => (inputField.value = text), 2000);
+setTimeout(() => (inputField.value = text), 2000);
