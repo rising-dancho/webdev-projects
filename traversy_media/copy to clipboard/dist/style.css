@@ -47,7 +47,8 @@ h4{
 }
 
 .copy-text input:hover {
-    background: #eeeeee;
+    background: #e2e2e2;
+    color: #8490a1;
   }
 
 .copy-text button {
@@ -81,9 +82,9 @@ h4{
     position: absolute;
     top: -45px;
     right: 20px;
-    background-color: #27C451;
+    background-color: #4965ac;
     padding: 8px 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: .9375rem;
     display: none;
 }
@@ -95,7 +96,7 @@ h4{
     right: 50px;
     width: 10px;
     height: 10px;
-    background-color: #27C451;
+    background-color: #4965ac;
     transform: rotate(45deg);
     display: none;
 }
