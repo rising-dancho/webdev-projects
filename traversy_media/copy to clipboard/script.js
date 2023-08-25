@@ -10,8 +10,9 @@ document.querySelectorAll(".copy-text").forEach((copyLinkParent) => {
         const copyText = document.querySelector(".copy-text");
         const copyButton = copyLinkParent.querySelector(".copy-link-button");
 
+
         //  select the input field and copy contents to clipboard
-        inputField.select();
+        // inputField.select();
         navigator.clipboard.writeText(text);
 
         // Change the focus outline color when button is clicked
@@ -28,15 +29,17 @@ document.querySelectorAll(".copy-text").forEach((copyLinkParent) => {
         copyText.classList.add("active");
         // put the input field into focus 
         inputField.focus();
+        // unselects the text in the textfield
+        window.getSelection().removeAllRanges();
 
         setTimeout(() => {
             // remove the hidden pop-up component
             copyText.classList.remove("active");
-            // remove the blue outline on the input field upon button click
-            inputField.blur();
             // revert the color change of button to original
             copyButton.style.backgroundColor = '#4D90FD';
             copyButton.innerHTML = 'Copy';
+            // remove the blue outline on the input field upon button click
+            inputField.blur();
         }, 1800);
     });
 });

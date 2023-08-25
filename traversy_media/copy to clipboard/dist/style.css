@@ -97,6 +97,11 @@ input[type=text]:focus {
     font-weight: 600;
 }
 
+/* .copy-link-button i {
+    color: #fff;
+    text-align: center;
+} */
+
 .copy-text button:hover {
     background-color: #4965ac;
 }
