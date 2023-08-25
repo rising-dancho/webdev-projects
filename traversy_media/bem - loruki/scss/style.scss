@@ -142,7 +142,7 @@
     padding: 2px 10px;
     border-radius: var(--btn-border-radius);
     font-weight: bold;
-    
+
 }
 
 %text-highlight-dark {
@@ -277,7 +277,7 @@
     background-color: var(--success-color);
     color: var(--text-white);
     border-radius: var(--btn-border-radius);
-    
+
 }
 
 %alert-error {
@@ -524,6 +524,11 @@ body {
             grid-column: 1 / span 2;
             grid-row: 1 / span 2;
         }
+    }
+
+    &__img {
+        max-width: 100%;
+        height: auto;
     }
 
     &__card {
@@ -802,7 +807,7 @@ body {
         border-bottom: 1px solid #ccc;
     }
 
-    ul{
+    ul {
         @extend %my-1;
     }
 
@@ -835,8 +840,8 @@ body {
             @extend %p-3;
         }
     }
-    
-    &__h2{
+
+    &__h2 {
         font-weight: bold;
     }
 
@@ -851,18 +856,18 @@ body {
     &__btn {
         @extend %btn;
         font-weight: bold;
-        
+
         &--btn-primary {
             background-color: #333;
             color: var(--text-white);
             // @extend %btn-primary;
-            
+
         }
     }
 
     &__text-highlight-primary {
         @extend %text-highlight-primary;
-        
+
     }
 
     &__alert {
@@ -945,6 +950,11 @@ body {
                 grid-column: 1;
                 grid-row: 1;
             }
+        }
+
+        &__img {
+            content: url("../images/snappify_xs.png");
+            /* Change to the smaller image */
         }
     }
 
@@ -1072,6 +1082,13 @@ body {
 
     .docs-main__container {
         overflow: visible;
+    }
+    .cli {
+        &__img {
+            content: url("../images/snappify_xxs.png");
+            max-width: 100%;
+            max-height: 100%;
+        }
     }
 }
 
