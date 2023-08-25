@@ -59,7 +59,7 @@ h4 {
 }
 
 .copy-text input {
-    padding:0;
+    padding: 0;
     padding-left: 25px;
     padding-right: 25px;
     text-align: center;
@@ -78,7 +78,8 @@ input[type=text]:focus {
 
 /* Add this to modify the focus outline color when active class is applied */
 .copy-text.active input[type=text].focused:focus {
-    border-color: #27C451; /* Change focus outline color when active */
+    border-color: #27C451;
+    /* Change focus outline color when active */
     background: #eeeeee;
 }
 
@@ -95,8 +96,6 @@ input[type=text]:focus {
     border-radius: 4px;
     font-weight: 600;
 }
-
-
 
 .copy-text button:hover {
     background-color: #4965ac;
@@ -135,5 +134,3 @@ input[type=text]:focus {
 .copy-text.active button:after {
     display: block;
 }
-
-/*# sourceMappingURL=style.css.map */
