@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  input {
+    border: 2px solid black; /* Initial border style */
+  }
+
+  input:focus {
+    border-color: green; /* Default border color when focused */
+  }
+
+  input.checked:focus {
+    border-color: blue; /* Border color when focused and checkbox is checked */
+  }
+</style>
+<title>Change Border Color on Focus</title>
+</head>
+<body>
+  <input type="text" id="inputField" placeholder="Type something...">
+  <label for="checkbox">Change Focus Color</label>
+  <input type="checkbox" id="checkbox">
+  <button id="changeButton">Set Focus</button>
+  <button id="removeFocusButton">Remove Focus</button>
+
+  <script>
+    const inputField = document.getElementById('inputField');
+    const changeButton = document.getElementById('changeButton');
+    const removeFocusButton = document.getElementById('removeFocusButton');
+    const checkbox = document.getElementById('checkbox');
+
+    changeButton.addEventListener('click', function() {
+      inputField.focus(); // Set the input field in focus
+    });
+
+    removeFocusButton.addEventListener('click', function() {
+      inputField.blur(); // Remove focus from the input field
+    });
+
+    checkbox.addEventListener('change', function() {
+      if (checkbox.checked) {
+        inputField.classList.add('checked');
+      } else {
+        inputField.classList.remove('checked');
+      }
+    });
+  </script>
+</body>
+</html>
