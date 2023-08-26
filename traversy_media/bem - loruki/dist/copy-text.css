@@ -5,12 +5,7 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
     background-color: #f0f2f7
-}
-
-h4 {
-    color: #555;
 }
 
 /* Change text highlighting color */
@@ -104,8 +99,7 @@ input[type=text]:focus {
 } */
 
 .copy-text button:hover {
-    transform: scale(.98);
-   
+    background-color: var(--hover-btn);
 }
 
 

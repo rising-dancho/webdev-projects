@@ -2,47 +2,56 @@ document.querySelectorAll(".copy-text").forEach((copyLinkParent) => {
     const inputField = copyLinkParent.querySelector(".copy-link-input");
     const copyButton = copyLinkParent.querySelector(".copy-link-button");
 
+    let isClicking = false;
 
+    // Hover styles
+    copyButton.addEventListener("mouseover", () => {
+        if (!copyButton.classList.contains("focused") && !isClicking) {
+            copyButton.style.backgroundColor = "var(--hover-btn)";
+        }
+    });
+
+    copyButton.addEventListener("mouseout", () => {
+        if (!copyButton.classList.contains("focused") && !isClicking) {
+            copyButton.style.backgroundColor = "var(--primary-color)";
+        }
+    });
+
+    // Select the text when input field is clicked
     inputField.addEventListener("focus", () => inputField.select());
 
+    // Trigger this function when copyButton is clicked
     copyButton.addEventListener("click", () => {
         const text = inputField.value;
-        const copyText = document.querySelector(".copy-text");
-        const copyButton = copyLinkParent.querySelector(".copy-link-button");
 
-        //  select the input field and copy contents to clipboard
-        // inputField.select();
+        if (isClicking) {
+            return; // Prevent click event if already in clicking state
+        }
+    
+        isClicking = true;
+
+        // Copy text to clipboard
         navigator.clipboard.writeText(text);
 
-        // Change the focus outline color when button is clicked
+        // Change button appearance
         inputField.classList.add("focused");
-
-        // change the button to green to indicate success
         copyButton.style.backgroundColor = 'var(--success-color)';
         copyButton.innerHTML = '✓';
-
-        // remove the blue outline on the input field upon button click
         inputField.blur();
 
-        // add the hidden pop-up component
-        copyText.classList.add("active");
-        // put the input field into focus 
+        // Show "Copied!" message
+        copyLinkParent.classList.add("active");
         inputField.focus();
-        // unselects the text in the textfield
         window.getSelection().removeAllRanges();
 
+        // Reset button appearance and remove message after delay
         setTimeout(() => {
-            const inputField = copyLinkParent.querySelector(".copy-link-input");
-            // remove the blue outline on the input field upon button click
             inputField.blur();
-            // revert the color change of button to original
             copyButton.style.backgroundColor = 'var(--primary-color)';
             copyButton.innerHTML = 'Copy';
-            // remove the hidden pop-up component
-            copyText.classList.remove("active");
+            copyLinkParent.classList.remove("active");
+            isClicking = false; // Reset clicking state after processing
         }, 1500);
     });
-});
 
-inputField.value = "Copied!";
-setTimeout(() => (inputField.value = text), 2000);
+});

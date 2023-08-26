@@ -2,21 +2,26 @@
 :root {
     // theme colors
     --primary-color: #047aed;
-    --secondary-color: #1c3fa8;
+    --secondary-color: #0358ab;
     --dark-color: #002240;
     --light-color: #f4f4f4;
     --background-color-white: #FCFFFC;
-    --border-color-input: #b4becb;
     --success-color: #5cb85c;
     --error-color: #d9534f;
+
+    // ui colors
+    --border-color-input: #ddd;
+    --hover-text-input: #eeeeee;
+    --hover-btn: #0358ab;
 
     // text colors
     --text-white: #FFF;
     --text-black: #040F0F;
+    --text-lesser: #9EACC1;
 
     // border radius
-    --btn-border-radius: 5px;
-    --boder-radius: 10px;
+    --btn-border-radius: 4px;
+    --boder-radius: 6px;
 
     // text sizes
     --textsize-20px: 1.25rem;
@@ -83,6 +88,10 @@
 
 %btn-hover {
     transform: scale(.98);
+}
+
+%btn-hover-bg {
+    background-color: var(--hover-btn);
 }
 
 %bg-primary,
@@ -439,7 +448,7 @@ body {
             @extend %btn;
 
             &--btn-hover:hover {
-                @extend %btn-hover;
+                @extend %btn-hover-bg;
             }
         }
     }
@@ -811,14 +820,10 @@ body {
         @extend %my-1;
     }
 
-    a:hover {
-        font-weight: bold;
-    }
-
     &--my-4 {
         @extend %my-4;
     }
-
+    
     &__container {
         @extend %container;
 
@@ -839,6 +844,10 @@ body {
         &--p-3 {
             @extend %p-3;
         }
+    }
+
+    &__link:hover{
+        font-weight: bold;
     }
 
     &__h2 {
@@ -862,12 +871,18 @@ body {
         }
 
         &--btn-hover:hover {
-            @extend %btn-hover;
+            @extend %btn-hover-bg;
         }
     }
 
-    &__text-highlight-primary {
-        @extend %text-highlight-primary;
+    &__text {
+        &--highlight-primary {
+            @extend %text-highlight-primary;
+        }
+
+        &--highlight-primary:hover {
+            @extend %btn-hover-bg;
+        }
     }
 
     &__alert {
@@ -875,10 +890,8 @@ body {
 
         &--alert-success {
             @extend %alert-success;
-
         }
     }
-
 }
 
 // Footer
