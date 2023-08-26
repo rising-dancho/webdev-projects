@@ -12,12 +12,12 @@ body {
 
 ::-moz-selection {
     /* Code for Firefox */
-    color: #fff;
+    color: var(--text-white);
     background: var(--primary-color);
 }
 
 ::selection {
-    color: #fff;
+    color: var(--text-white);
     background: var(--primary-color);
 }
 
@@ -39,7 +39,7 @@ body {
 .copy-text {
     position: relative;
     padding: 5px;
-    background-color: #fff;
+    background-color: var(--text-white);
     border: 1px solid var(--border-color-input);
     border-radius: 4px;
     display: flex;
@@ -86,7 +86,7 @@ input[type=text]:focus {
 .copy-text button {
     padding: 10px 30px;
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--text-white);
     border: none;
     cursor: pointer;
     border-radius: 4px;
@@ -94,7 +94,7 @@ input[type=text]:focus {
 }
 
 /* .copy-link-button i {
-    color: #fff;
+    color: var(--text-white);
     text-align: center;
 } */
 
