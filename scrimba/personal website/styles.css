@@ -1,72 +1,40 @@
 :root {
-    /* fonts */
-    --pixel: 'Press Start 2P', cursive;
-    --inter: 'Inter', sans-serif;;
-
-    /* for images */
+    --cowboy: 'Rye', cursive;
+    --font: var(--regular);
     --round: 100px;
-    --image: var(--soft);
-        
-    /* background color */
-    --primary-color: #0A101F;
-    --accent-color: #2F81F7;
 
-    /* text color */
-    --white: #eee; 
-    --black: #030712;
-    
+    --image: var(--soft);
+
+    --background: #f5f5f5;
+    --text: #222222;
+
+    --light: var(--background);
+    --dark: var(--text);
+
+    --primary-color: #2F81F7;
+
+    --white: #eee;
+    --black: #131313;
 }
 
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* utility classes */
-
-.pixel-font{
-    font-family: 'Press Start 2P', cursive;
-}
-.inter-font{
-    font-family: 'Inter', sans-serif;
-}
-.coral-bg{
-    background: lightcoral;
-    border: dotted 2px var(--black);
-}
-
-.background-color{
-    background: var(--black);
-    color: var(--white);
-}
-
-.container-flex{
-    width: 700px;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 40px auto;
-}
-.container-block{
-    display: block;
-    width: 700px;
-    margin: 40px auto;
-    padding-left: 72px;
-}
-
-/* navigation bar */
-.navbar{
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
-    background: var(--primary-color);
+    background: var(--black);
     font-size: 1rem;
     position: sticky;
     top: 0;
     z-index: 999;
-    
+
 }
 
 .navbar__container {
@@ -77,7 +45,7 @@
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
-    
+
 }
 
 #navbar__logo {
@@ -95,11 +63,11 @@
     text-align: center;
 }
 
-.navbar__item{
+.navbar__item {
     height: 80px;
 }
 
-.navbar__links{
+.navbar__links {
     color: var(--white);
     display: flex;
     align-items: center;
@@ -109,15 +77,16 @@
     padding: 0 1rem;
 }
 
-.navbar__btn{
+.navbar__btn {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 1rem;
     width: 100%;
-    
+
 }
-.button{
+
+.button {
     text-decoration: none;
     background: var(--white);
     height: 100%;
@@ -126,36 +95,70 @@
     padding: 10px 20px;
     outline: none;
     border-radius: 4px;
+
 }
 
 
+/* utility classes */
+.pixel-font {
+    font-family: 'Press Start 2P', cursive;
+}
 
+.inter-font {
+    font-family: 'Inter', sans-serif;
+}
+
+.coral-bg {
+    background: lightcoral;
+    border: dotted 2px black;
+}
+
+.background-color {
+    background: var(--dark);
+    color: var(--light);
+}
+
+.container-flex {
+    width: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px auto;
+}
+
+.container-block {
+    display: block;
+    width: 700px;
+    margin: 40px auto;
+    padding-left: 72px;
+}
 
 img {
     width: 180px;
     border-radius: calc(var(--round) * 2);
-    border: 4px solid var(--white);
+    border: 4px solid var(--light);
 }
 
 h1 {
     font-size: 28px;
 }
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 10px;
-    background: var(--black);
+    background: var(--dark);
     color: var(--text);
     font-family: var(--font);
     font-size: 18px;
 }
 
 a {
-    color: var(--accent-color);
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
-span{
-    color:var(--accent-color);
+span {
+    color: var(--primary-color);
 }
 
 input {
@@ -164,25 +167,25 @@ input {
     width: 160px;
     box-sizing: border-box;
     padding: 4px 8px;
-    border-width: 1px; 
+    border-width: 1px;
     border-style: solid;
-    border-color:  var(--white);
-    color: var(--white);
+    border-color: var(--background);
+    color: var(--background);
     background: none;
     border-radius: var(--sharp);
     font-family: var(--font);
 }
 
 ::placeholder {
-    color: var(--white);
+    color: var(--light);
 }
 
 button {
     border-radius: var(--sharp);
     padding: 5px 10px;
     border: none;
-    background: var(--white);
-    color: var(--black);
+    background: var(--light);
+    color: var(--dark);
     font-weight: bold;
     box-sizing: border-box;
     display: block;
@@ -190,11 +193,4 @@ button {
     cursor: pointer;
     font-family: var(--font);
     width: 160px;
-}
-
-@media screen and (max-width: 980px) {
-    h1{
-        color: red;
-    }
-    
 }

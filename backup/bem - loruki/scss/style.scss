@@ -17,7 +17,7 @@
     // text colors
     --text-white: #FFF;
     --text-black: #040F0F;
-    --text-lesser: #9EACC1;
+    --text-lesser: #7085a4;
 
     // border radius
     --btn-border-radius: 4px;
@@ -338,10 +338,24 @@ body {
     code,
     pre {
         background-color: #333;
-        color: #fff;
+        color: var(--text-white);
         padding: 10px;
         border-radius: var(--btn-border-radius);
     }
+
+    /* Change text highlighting color */
+
+    ::-moz-selection {
+        /* Code for Firefox */
+        color: var(--text-white);
+        background: var(--primary-color);
+    }
+
+    ::selection {
+        color: var(--text-white);
+        background: var(--primary-color);
+    }
+
 }
 
 // Navbar
@@ -809,21 +823,25 @@ body {
         font-size: 1rem;
     }
 
-    nav li {
-        font-size: 1.0625rem;
-        padding-bottom: 5px;
-        margin-bottom: 5px;
-        border-bottom: 1px solid #ccc;
-    }
-
-    ul {
-        @extend %my-1;
-    }
-
     &--my-4 {
         @extend %my-4;
     }
-    
+
+
+
+    &__page-nav {
+        li {
+            font-size: 1.0625rem;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        ul {
+            @extend %my-1;
+        }
+    }
+
     &__container {
         @extend %container;
 
@@ -842,11 +860,13 @@ body {
         }
 
         &--p-3 {
-            @extend %p-3;
+            padding: 0px 2rem;
+            padding-bottom: 2rem;
+            padding-top: 10px;
         }
     }
 
-    &__link:hover{
+    &__link:hover {
         font-weight: bold;
     }
 
@@ -892,6 +912,14 @@ body {
             @extend %alert-success;
         }
     }
+
+    &__requirements {
+        margin: 1rem 0;
+
+        li {
+            padding-left: 1rem;
+        }
+    }
 }
 
 // Footer
@@ -905,7 +933,7 @@ body {
         margin: 0 10px;
 
         .fab {
-            color: #fff;
+            color: var(--text-white);
 
         }
 

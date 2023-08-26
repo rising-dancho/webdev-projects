@@ -1,28 +1,3 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box
-}
-
-body {
-    background-color: #f0f2f7
-}
-
-/* Change text highlighting color */
-
-::-moz-selection {
-    /* Code for Firefox */
-    color: #fff;
-    background: var(--primary-color);
-}
-
-::selection {
-    color: #fff;
-    background: var(--primary-color);
-}
-
-/* end */
-
 .container {
     position: absolute;
     top: 50%;
@@ -39,7 +14,7 @@ body {
 .copy-text {
     position: relative;
     padding: 5px;
-    background-color: #fff;
+    background-color: var(--text-white);
     border: 1px solid var(--border-color-input);
     border-radius: 4px;
     display: flex;
@@ -86,7 +61,7 @@ input[type=text]:focus {
 .copy-text button {
     padding: 10px 30px;
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--text-white);
     border: none;
     cursor: pointer;
     border-radius: 4px;
@@ -94,7 +69,7 @@ input[type=text]:focus {
 }
 
 /* .copy-link-button i {
-    color: #fff;
+    color: var(--text-white);
     text-align: center;
 } */
 

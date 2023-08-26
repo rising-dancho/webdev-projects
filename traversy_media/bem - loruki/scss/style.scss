@@ -342,6 +342,20 @@ body {
         padding: 10px;
         border-radius: var(--btn-border-radius);
     }
+
+    /* Change text highlighting color */
+
+    ::-moz-selection {
+        /* Code for Firefox */
+        color: var(--text-white);
+        background: var(--primary-color);
+    }
+
+    ::selection {
+        color: var(--text-white);
+        background: var(--primary-color);
+    }
+
 }
 
 // Navbar
