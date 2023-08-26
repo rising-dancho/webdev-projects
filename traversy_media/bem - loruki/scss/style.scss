@@ -846,7 +846,9 @@ body {
         }
 
         &--p-3 {
-            @extend %p-3;
+            padding: 0px 2rem;
+            padding-bottom: 2rem;
+            padding-top: 10px;
         }
     }
 
