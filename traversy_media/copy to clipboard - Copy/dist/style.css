@@ -135,7 +135,17 @@ input[type=text]:focus {
     display: none;
 }
 
-.copy-text.active button:before,
-.copy-text.active button:after {
+
+/* By using the child combinator (>) and targeting the specific button element inside the active .copy-text container, you ensure that the :before and :after pseudo-elements will appear over the correct button in each .copy-text container.
+
+Make sure to apply this updated CSS rule in your stylesheet, and it should resolve the issue you were facing with the pseudo-elements only appearing on the first button.
+ */
+
+.copy-text.active > button:before,
+.copy-text.active > button:after {
     display: block;
 }
+
+
+
+

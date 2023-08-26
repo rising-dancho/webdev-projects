@@ -45,13 +45,13 @@ h4 {
     position: relative;
     padding: 5px;
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color-input);
     border-radius: 4px;
     display: flex;
 }
 
 .copy-text i {
-    color: #9EACC1;
+    color: var(--text-lesser);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,7 +66,7 @@ h4 {
     text-align: center;
     margin-left: 20px;
     margin-right: 5px;
-    color: #9EACC1;
+    color: var(--text-lesser);
     border: none;
     outline: none;
     border-radius: 4px;
@@ -74,18 +74,18 @@ h4 {
 
 input[type=text]:focus {
     border: 1.5px solid var(--primary-color);
-    background: #eeeeee;
+    background: var(--hover-text-input);
 }
 
 /* Add this to modify the focus outline color when active class is applied */
 .copy-text.active input[type=text].focused:focus {
     border-color: var(--success-color);
     /* Change focus outline color when active */
-    background: #eeeeee;
+    background: var(--hover-text-input);
 }
 
 .copy-text input:hover {
-    background: #eeeeee;
+    background: var(--hover-text-input);
 }
 
 .copy-text button {
@@ -104,12 +104,10 @@ input[type=text]:focus {
 } */
 
 .copy-text button:hover {
-    background-color: #4965ac;
+    transform: scale(.98);
+   
 }
 
-.copy-text button:active {
-    background-color: #6b8bda;
-}
 
 .copy-text button:before {
     content: "Copied!";
