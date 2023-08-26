@@ -128,7 +128,6 @@
 }
 
 // Text colors
-
 %text-highlight-primary {
     background-color: var(--primary-color);
     color: var(--text-white);
@@ -309,6 +308,7 @@ body {
     font-family: 'Lato', sans-serif;
     color: #333;
     line-height: 1.6;
+    background-color: var(--background-color-white);
 
     h1,
     h2 {
@@ -752,16 +752,8 @@ body {
 
         &--grid>*:nth-child(2) {
             grid-column: 1 / span 2;
-        }
 
-        &--grid>*:nth-child(5) {
-            grid-column: 2 / span 2;
         }
-
-        &--grid>*:last-child {
-            grid-column: 1 / span 3;
-        }
-
 
         &--grid-3 {
             @extend %grid-3;
@@ -963,7 +955,6 @@ body {
     &--py-5 {
         @extend %py-5;
     }
-
 }
 
 //  Tablets and under
@@ -1030,17 +1021,9 @@ body {
         grid-column: 1;
     }
 
-    .features-main__container--grid>*:nth-child(5) {
-        grid-column: 1;
-    }
-
-    .features-main__container--grid>*:last-child {
-        grid-column: 1;
-    }
-
 }
 
-// Tablets small
+// Tablets lg
 @media (max-width: 640px) {
     .cli {
         &__img {
@@ -1050,35 +1033,25 @@ body {
     }
 }
 
-// Mobile
-@media(max-width: 450px) {
-    .navbar {
-        height: 110px;
+// docs page: tablet view
+@media (max-width: 520px) {
 
-        &__container {
-            &--flex {
-                flex-direction: column;
-            }
-        }
-
-        &__list {
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.1);
-        }
+    .copy-text .copy-link-input {
+        text-align: center;
+        padding: 0px;
+        margin-left: 0px;
+        margin-right: 5px;
+        width: auto;
     }
-
-    .navbar {
-        height: 120px;
-
-        &__container {
-            overflow: visible;
-        }
-    }
-
 }
 
-// Mobile medium
+// Tablets medium
 @media (max-width: 500px) {
+
+    .copy-text .fa-dollar-sign {
+        display: none;
+    }
+
     .navbar {
         height: 110px;
 
@@ -1105,9 +1078,41 @@ body {
     }
 }
 
+// Tablets small
+@media(max-width: 450px) {
 
-// Mobile xsmall
-@media (max-width: 425px) {
+    .navbar {
+        height: 110px;
+
+        &__container {
+            &--flex {
+                flex-direction: column;
+            }
+        }
+
+        &__list {
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .navbar {
+        height: 120px;
+
+        &__container {
+            overflow: visible;
+        }
+    }
+
+}
+
+// Mobile small
+@media (max-width: 430px) {
+
+    .copy-text .copy-link-button {
+        padding: 10px;
+    }
+
     .showcase {
         &__btn {
             margin: auto;
@@ -1140,8 +1145,7 @@ body {
 
 }
 
-
-// Mobile xxsmall
+// Mobile xsmall
 @media (max-width: 370px) {
     .showcase {
         &__form {
@@ -1155,7 +1159,7 @@ body {
 
 }
 
-// Mobile xxxsmall
+// Mobile xxsmall
 @media (max-width: 330px) {
     .showcase {
         &__form {
