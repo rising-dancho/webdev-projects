@@ -2,17 +2,16 @@
 const name = 'John Wick';
 const age = 30;
 
-// Reference values are stored on the heap
-const person = {
-    name: 'dancho',
-    age: 32,
-};
+// Reference values in an "object" are stored on the heap
+const person = { name: 'dancho', age: 32 };
 
-let newName = name;
-newName = 'Timothy';
+let newName = name; // John Wick : consistently name John Wick because of "const"; re-initialized with "let" to assign a new name
+newName = 'Timothy'; // John Wick re-assigned name to "Timothy"
 
 let newPerson = person;
-newPerson.name = 'Bradley';
+newPerson.name = 'Bradley'; // the heap is actually assigned to "Bradley" now in the heap. so heap is changeable, while stack is not.
 
-console.log(name, newName);
-console.log(person, newPerson);
+console.log(newName);
+console.log(person.name);
+console.log(newPerson);
+// console.log(newPerson);
