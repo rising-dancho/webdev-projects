@@ -8,6 +8,7 @@
     --background-color-white: #FCFFFC;
     --success-color: #5cb85c;
     --error-color: #d9534f;
+    --info-color:#d9824f;
 
     // ui colors
     --border-color-input: #ddd;
@@ -275,6 +276,7 @@
     padding: 10px 20px;
     font-weight: bold;
     margin: 15px 0;
+    border-radius: var(--btn-border-radius);
 }
 
 %alert i {
@@ -290,6 +292,12 @@
 
 %alert-error {
     background-color: var(--error-color);
+    color: var(--text-white);
+    border-radius: var(--btn-border-radius);
+}
+
+%alert-primary {
+    background-color: var(--info-color);
     color: var(--text-white);
     border-radius: var(--btn-border-radius);
 }
@@ -902,9 +910,6 @@ body {
 
         &--alert-success {
             @extend %alert-success;
-        }
-        &--alert-error {
-            @extend %alert-error;
         }
     }
 

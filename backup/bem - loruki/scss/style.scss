@@ -8,6 +8,7 @@
     --background-color-white: #FCFFFC;
     --success-color: #5cb85c;
     --error-color: #d9534f;
+    --info-color:#d9824f;
 
     // ui colors
     --border-color-input: #ddd;
@@ -275,6 +276,7 @@
     padding: 10px 20px;
     font-weight: bold;
     margin: 15px 0;
+    border-radius: var(--btn-border-radius);
 }
 
 %alert i {
@@ -294,6 +296,12 @@
     border-radius: var(--btn-border-radius);
 }
 
+%alert-primary {
+    background-color: var(--info-color);
+    color: var(--text-white);
+    border-radius: var(--btn-border-radius);
+}
+
 
 // ---------------------   END of UTILITIES  ---------------------
 
@@ -307,7 +315,7 @@
 body {
     font-family: 'Lato', sans-serif;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.5;
     background-color: var(--background-color-white);
 
     h1,
