@@ -307,7 +307,7 @@
 body {
     font-family: 'Lato', sans-serif;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.5;
     background-color: var(--background-color-white);
 
     h1,
@@ -902,6 +902,9 @@ body {
 
         &--alert-success {
             @extend %alert-success;
+        }
+        &--alert-error {
+            @extend %alert-error;
         }
     }
 
