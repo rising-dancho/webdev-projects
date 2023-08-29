@@ -1,6 +1,8 @@
 let amount = 100;
+// let amount = 'henlo';
 
-// amount = parseInt(amount);
+// to int
+amount = parseInt(amount);
 // amount = +amount; //unary operator : easy convert to integer
 // amount = Number(amount); 
 
@@ -8,9 +10,15 @@ let amount = 100;
 // amount = amount.toString(); 
 // amount = String(amount); 
 
-// variations on parseInt
-amount = 99.9;
-amount = parseFloat(amount);
+// to float : variations on parseInt
+// amount = 99.9;
+// const amountFloat = parseFloat(amount);
+// const amountInt = parseInt(amount);
 
+// console.log(amount, typeof amount);
+// console.log(Math.sqrt(-1));
+// console.log(1 + NaN);
+// console.log(undefined + undefined);
+// console.log('foo' / 3);
 
 console.log(amount, typeof amount);

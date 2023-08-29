@@ -4,27 +4,19 @@ body h1, h2{
     color: blueviolet;
 }
 
-/* div p[class=done]{
-    color: firebrick;
-} */
-
-/* .box > .done {
-    color: firebrick;
-} */
-
 div > .done {
     color: firebrick;
 }
 
 .done {
-    color: green;
+    color: seagreen;
 }
 
 .done ul, li{
     color: blue;
 }
 
-ul p[class="done"]{
+ul > p[class="done"]{
     color: black;
     font-size: .7em;
 }
