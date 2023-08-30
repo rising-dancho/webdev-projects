@@ -23,6 +23,9 @@
     --btn-border-radius: 4px;
     --boder-radius: 6px;
 
+    // min-width of containers
+    --min-width: 280px;
+
     // text sizes
     --textsize-20px: 1.25rem;
 }
@@ -43,6 +46,10 @@
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin: 10px;
+}
+
+%min-width{
+    min-width: var(--min-width);
 }
 
 %flex {
@@ -825,7 +832,7 @@ body {
     &--my-4 {
         @extend %my-4;
     }
-
+   
 
 
     &__page-nav {
@@ -862,6 +869,10 @@ body {
             padding: 0px 2rem;
             padding-bottom: 2rem;
             padding-top: 10px;
+        }
+        
+        &--min-width{
+            @extend %min-width;
         }
     }
 
