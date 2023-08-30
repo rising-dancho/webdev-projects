@@ -88,8 +88,8 @@ body {
     padding: 1.14em;
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
     background: #fff;
+    border-radius: var(--btn-border-radius);
     border: 1px solid var(--secondary-color);
 }
 
