@@ -85,4 +85,7 @@ body {
     .row{
         grid-template-columns: 1fr;
     }
+    .col:nth-child(2){
+        margin-top: 30px;
+    }
 }
