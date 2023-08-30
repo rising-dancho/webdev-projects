@@ -2,14 +2,15 @@
 :root {
     /* theme colors */
     --primary-color: #047aed;
-    --secondary-color: #0358ab;
+    --secondary-color: #9bcaf8;
     --dark-color: #040F0F;
     --light-color: #f4f4f4;
-    --background-color-white: #FCFFFC;
+    --background-color-white: #FFFFFF;
+    --background-color-lesser: #F6F5F8;
 
     /* text colors */
     --text-white: #FFF;
-    --text-black: #040F0F;
+    --text-black: #3F3F44;
     --text-lesser: #7085a4;
 
     /* border radius */
@@ -43,19 +44,39 @@
 }
 
 body {
-    font-family: 'Fira Sans', sans-serif;
-    color: var(--text-white);
+    font-family: "BentonSans", "Helvetica Neue", sans-serif;
+    color: var(--text-black);
     line-height: 1.5;
-    background-color: var(--primary-color);
+    background-color: var(--background-color-lesser);
 }
 
 .timeline {
     display: grid;
-    grid-template-columns: 1fr 3px 1fr;
+    grid-template-columns: 1fr 2px 1fr;
     display: grid;
     margin: 0 auto;
     max-width: 750px;
     padding: 25px;
+}
+
+.timeline__title {
+    margin: 0;
+    font-size: 1.14rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.timeline__paragraph {
+    display: block;
+    line-height: 1.5;
+    margin-block-start: .5rem;
+    margin-block-end: .5rem;
+}
+
+.timeline__year {
+    color: var(--secondary-color);
+    margin-top: 0px;
+    display: block;
 }
 
 .timeline__component {
@@ -68,6 +89,12 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    background: #fff;
+    border: 1px solid var(--secondary-color);
+}
+
+.timeline__component--bottom {
+    margin-bottom: 0;
 }
 
 .timeline__date--right {
@@ -80,7 +107,7 @@ body {
 
 .timeline__middle {
     position: relative;
-    background-color: var(--background-color-white);
+    background-color: var(--primary-color);
 }
 
 .timeline__point {
@@ -90,28 +117,12 @@ body {
     transform: translateX(-50%);
     width: 15px;
     height: 15px;
-    background-color: var(--background-color-white);
+    background-color: var(--primary-color);
     border-radius: 50%;
 }
 
-.timeline__title {
-    margin: 0;
-    font-size: 1.14rem;
-    font-weight: 700;
-}
-
-.timeline__paragraph {
-    display: block;
-    line-height: 1.5;
-    margin-block-start: .5rem;
-    margin-block-end: .5rem;
-}
-
 .timeline__point--bottom {
-    top: initial; /* reset top property back to normal */
+    top: initial;
+    /* reset top property back to normal */
     bottom: 0;
-}
-
-.timeline__component--bottom{
-    margin-bottom: 0;
 }
