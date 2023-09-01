@@ -1,7 +1,28 @@
 
+:root {
+    /* theme colors */
+    --primary-color: #047aed;
+    --secondary-color: #9bcaf8;
+    --dark-color: #040F0F;
+    --light-color: #f4f4f4;
+    --background-color-white: #FFFFFF;
+    --background-color-lesser: #F6F5F8;
 
+    /* text colors */
+    --text-white: #FFF;
+    --text-black: #3F3F44;
+    --text-lesser: #7085a4;
 
+    /* border radius */
+    --btn-border-radius: 4px;
+    --boder-radius: 6px;
 
+    /* min-width of containers */
+    --min-width: 280px;
+
+    /* text sizes */
+    --textsize-20px: 1.25rem;
+}
 
 
 * {
@@ -15,7 +36,7 @@ body {
     margin: 0;
     padding: 30px 0;
     /* font-family: 'Roboto', sans-serif; */
-    background: #F1F2F6;
+    background-color: #fafafa;
 }
 
 h1 {
@@ -44,7 +65,7 @@ h1 span {
     margin-left: -1px;
     width: 2px;
     height: 100%;
-    background: #CCD1D9;
+    background: var(--secondary-color);
     z-index: -1;
     /* animate line to move down in 6s */
     animation: moveline 6s linear forwards;
@@ -101,28 +122,35 @@ h1 span {
 }
 
 .timeline-block:nth-child(2) {
-    animation-delay: 1.3s;
+    animation-delay: 1s;
     /* Delay for the second container */
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     /* Ease in */
 }
 
 .timeline-block:nth-child(3) {
-    animation-delay: 2.4s;
+    animation-delay: 2s;
     /* Delay for the third container */
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     /* Ease in */
 }
 
 .timeline-block:nth-child(4) {
-    animation-delay: 3.5s;
+    animation-delay: 3s;
     /* Delay for the fourth container */
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     /* Ease in */
 }
 
 .timeline-block:nth-child(5) {
-    animation-delay: 4.6s;
+    animation-delay: 4s;
+    /* Delay for the fifth container */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Ease in */
+}
+
+.timeline-block:nth-child(6) {
+    animation-delay: 5s;
     /* Delay for the fifth container */
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     /* Ease in */
@@ -144,7 +172,7 @@ h1 span {
     height: 16px;
     border-radius: 50%;
     border: 2px solid #F5F7FA;
-    background: #4FC1E9;
+    background: var(--secondary-color);
     margin-top: 10px;
     z-index: 1;
 }
@@ -153,8 +181,17 @@ h1 span {
     width: 95%;
     padding: 0 15px;
     color: #666;
-    /* opacity: 0; */
+    /* timeline content: borders
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    transition: all 0.4s;
+    margin-bottom: 20px; */
 }
+
+/* .timeline-content:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid  transparent;
+} */
 
 .timeline-content h3 {
     margin-top: 5px;
