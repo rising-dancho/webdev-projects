@@ -1,9 +1,0 @@
-.container::before {
-    content: "Before - ";
-    color: red;
-  }
-  
-  .container::after {
-    content: " - After";
-    color: blue;
-  }

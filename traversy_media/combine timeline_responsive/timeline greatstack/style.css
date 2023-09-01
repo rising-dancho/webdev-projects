@@ -92,6 +92,7 @@ body {
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     /* Ease in */
 }
+/* cubic-bezier: https://chat.openai.com/share/9b7b5bb6-e08b-4511-8b25-2c4bc1ee5412 */
 
 .container img {
     position: absolute;
