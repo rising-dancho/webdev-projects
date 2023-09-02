@@ -151,11 +151,11 @@ h1 span {
 .marker {
     content: '';
     width: 18px;
-    height: 16px;
+    height: 18px;
     border-radius: 50%;
     top: 0;
     background: var(--secondary-color);
-    border: 1px solid #F5F7FA;
+    border: 3px solid #F5F7FA;
     margin-top: 45px;
     z-index: 1;
 }
@@ -167,7 +167,7 @@ h1 span {
     border: 1px solid #eaeaea;
     background-color: #fff;
     transition: all 0.4s;
-    margin: 20px;
+    margin: 30px;
 }
 
 .timeline-content:hover {
@@ -193,6 +193,10 @@ h1 span {
     font-size: 14px;
     line-height: 1.5em;
     color: #666666;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 @media screen and (max-width: 768px) {
