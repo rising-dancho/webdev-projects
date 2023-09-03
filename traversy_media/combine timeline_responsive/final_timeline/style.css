@@ -116,7 +116,7 @@ h1 span {
 }
 
 .timeline-block:nth-child(5) {
-    animation-delay: 4.8s;
+    animation-delay: 4.7s;
     /* Delay for the fifth container */
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     /* Ease in */
