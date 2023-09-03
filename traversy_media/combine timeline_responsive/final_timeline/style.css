@@ -41,7 +41,7 @@ h1 span {
     background: #CCD1D9;
     z-index: -1;
     /* animate line to move down in 6s */
-    animation: moveline 6s linear forwards;
+    animation: moveline 10s linear forwards;
 }
 
 /* moveline animation function */
@@ -70,7 +70,7 @@ h1 span {
     clear: both;
     opacity: 0;
     animation: movedown 1s linear forwards;
-    transition: opacity .1s ease-in-out;
+    transition: opacity 1s ease-in-out;
     animation-fill-mode: forwards; 
 }
 
@@ -95,14 +95,14 @@ h1 span {
 }
 
 .timeline-block:nth-child(2) {
-    animation-delay: 1.3s;
+    animation-delay: 1.5s;
     /* Delay for the second container */
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     /* Ease in */
 }
 
 .timeline-block:nth-child(3) {
-    animation-delay: 2.4s;
+    animation-delay: 2.5s;
     /* Delay for the third container */
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     /* Ease in */
@@ -116,26 +116,26 @@ h1 span {
 }
 
 .timeline-block:nth-child(5) {
-    animation-delay: 4.6s;
+    animation-delay: 4.8s;
     /* Delay for the fifth container */
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     /* Ease in */
 }
 
 .timeline-block:nth-child(6) {
-    animation-delay: 5.7s;
+    animation-delay: 6.2s;
     /* Delay for the fifth container */
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     /* Ease in */
 }
 .timeline-block:nth-child(7) {
-    animation-delay: 6.7s;
+    animation-delay: 7.2s;
     /* Delay for the fifth container */
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     /* Ease in */
 }
 .timeline-block:nth-child(8) {
-    animation-delay: 7.8s;
+    animation-delay: 8.4s;
     /* Delay for the fifth container */
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     /* Ease in */
