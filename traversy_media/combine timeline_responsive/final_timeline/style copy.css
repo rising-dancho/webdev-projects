@@ -24,8 +24,6 @@
 }
 
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     outline: none;
     margin: 0;
@@ -37,7 +35,7 @@ body {
     min-height: 100%;
     background-color: #fafafa;
     margin: 0;
-    /* padding: 30px 0; */
+    padding: 30px 0;
 }
 
 h1 {
@@ -51,9 +49,9 @@ h1 span {
 }
 
 .container {
-    width: 80%;  /* this sets the width of the timeline-block*/
+    width: 80%;
     padding: 50px 0;
-    margin: 50px auto;  /* this decreases the width from the top of the timeline */
+    margin: 50px auto;
     position: relative;
     overflow: hidden;
 }
