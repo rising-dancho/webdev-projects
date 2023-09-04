@@ -1,25 +1,49 @@
-* {
+/* * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     outline: none;
-}
+} */
 
+/* 
 body {
     margin: 0;
     padding: 30px 0;
-    /* font-family: 'Roboto', sans-serif; */
     background: #F1F2F6;
+}  */
+
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.5;
+    background-color: var(--background-color-white);
 }
 
-h1 {
-    text-align: center;
+h1,
+h2 {
     font-weight: 300;
-    color: #777;
+    line-height: 1.2;
+    margin: 10px 0;
 }
 
-h1 span {
-    font-weight: 600;
+p {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    /* make images fit 100% of its parent's width */
+    width: 100%;
 }
 
 .container {
@@ -71,7 +95,7 @@ h1 span {
     opacity: 0;
     animation: movedown 1s linear forwards;
     transition: opacity 1s ease-in-out;
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
 }
 
 @keyframes movedown {
@@ -128,18 +152,21 @@ h1 span {
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     /* Ease in */
 }
+
 .timeline-block:nth-child(7) {
     animation-delay: 7.2s;
     /* Delay for the fifth container */
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     /* Ease in */
 }
+
 .timeline-block:nth-child(8) {
     animation-delay: 8.4s;
     /* Delay for the fifth container */
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     /* Ease in */
 }
+
 /* cubic-bezier: https://chat.openai.com/share/9b7b5bb6-e08b-4511-8b25-2c4bc1ee5412 */
 
 
