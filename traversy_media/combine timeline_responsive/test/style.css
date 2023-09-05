@@ -126,30 +126,26 @@ body {
     bottom: 0;
 }
 
-@media(max-width: 768px) {
-
+@media (max-width: 768px) {
     .timeline {
         grid-template-columns: 2px 1fr;
     }
 
-    .timeline__year {
+    .timeline__middle,
+    .timeline__point {
         grid-column: 1;
     }
-   
+
+    .timeline__title,
+    .timeline__paragraph,
+    .timeline__year,
     .timeline__component,
-    .timeline__date--left,
-    .timeline__date--right {
+    .timeline__date--right,
+    .timeline__date--left {
         grid-column: 2;
     }
 
-    .timeline__component{
-        margin-bottom: 20px;
-    }
-
-    .timeline__point,
-    .timeline__middle{
+    .timeline__year {
         display: none;
     }
-
-
 }
