@@ -24,7 +24,7 @@ h1 span {
 .marker {
     position: absolute;
     right: -6.8px;
-    top: -3px;
+    top: -4px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -36,14 +36,14 @@ h1 span {
 
 .container__right .marker {
     left: -9.7px;
-    top: -3px;
+    top: -4px;
 }
 
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 100px auto;
-    padding: 50px 40px;
+    padding: 40px;
 }
 
 .timeline::after {
