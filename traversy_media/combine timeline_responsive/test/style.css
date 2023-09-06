@@ -8,12 +8,12 @@
 body {
     margin: 0;
     padding: 30px 0;
-    background: #181717;
+    background: #F1F2F6;
 }
 
 .marker {
     position: absolute;
-    right: -6.5px;
+    right: -6.8px;
     top: 35px;
     width: 16px;
     height: 16px;
@@ -24,17 +24,8 @@ body {
     z-index: 10;
 }
 
-/* .container img {
-    position: absolute;
-    width: 40px;
-    border-radius: 50%;
-    right: -20px;
-    top: 32px;
-    z-index: 10;
-} */
-
 .container__right .marker {
-    left: -9.5px;
+    left: -9.7px;
     top: 35px;
 }
 
@@ -47,14 +38,14 @@ body {
 .timeline::after {
     content: '';
     position: absolute;
-    width: 3px;
+    width: 2px;
     height: 100%;
-    background-color: #fff;
+    background: #CCD1D9;
     top: 0%;
     left: 50%;
     margin-left: -3px;
     z-index: -1;
-    animation: moveline 6s linear forwards;
+    animation: moveline 10s linear forwards;
 }
 
 @keyframes moveline {
@@ -96,7 +87,7 @@ body {
 }
 
 .container:nth-child(2) {
-    animation-delay: 1.25s;
+    animation-delay: 1.5s;
     /* Delay for the second container */
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     /* Ease in */
@@ -110,14 +101,33 @@ body {
 }
 
 .container:nth-child(4) {
-    animation-delay: 3.75s;
+    animation-delay: 3.5s;
     /* Delay for the fourth container */
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     /* Ease in */
 }
 
 .container:nth-child(5) {
-    animation-delay: 5s;
+    animation-delay: 4.7s;
+    /* Delay for the fifth container */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Ease in */
+}
+.container:nth-child(6) {
+    animation-delay: 6.2s;
+    /* Delay for the fifth container */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Ease in */
+}
+.container:nth-child(7) {
+    animation-delay: 7.2s;
+    /* Delay for the fifth container */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Ease in */
+}
+
+.container:nth-child(8) {
+    animation-delay: 8.4s;
     /* Delay for the fifth container */
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
     /* Ease in */
@@ -134,23 +144,33 @@ body {
     left: 50%;
 }
 
-
-
 .textbox {
     padding: 20px 30px;
-    background-color: #ddd;
+    background: #F1F2F6;
     position: relative;
     border-radius: 6px;
     font-size: 15px;
+    color: #666;
 }
 
-.textbox h2 {
-    font-weight: 600;
+.textbox h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 500;
 }
 
-.textbox small {
-    display: inline-block;
-    margin-bottom: 15px;
+.textbox span {
+    font-size: 15px;
+    color: #a4a4a4;
+}
+
+
+.textbox p {
+    font-size: 14px;
+    line-height: 1.5em;
+    word-spacing: 1px;
+    color: #888;
 }
 
 .left-container-arrow {
@@ -161,7 +181,7 @@ body {
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-left: 15px solid #ddd;
+    border-left: 15px solid #F1F2F6;
     right: -15px;
 }
 
@@ -173,7 +193,7 @@ body {
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 15px solid #ddd;
+    border-right: 15px solid #F1F2F6;
     left: -15px;
 }
 
@@ -197,11 +217,7 @@ body {
 
     /* textbox: reduce font size, add margin */
     .textbox {
-        font-size: 13px;
-    }
-
-    .textbox small {
-        margin-bottom: 10px;
+        font-size: 14px;
     }
 
     /* move all right containers to the right */
@@ -218,7 +234,7 @@ body {
 
     .right-container-arrow,
     .left-container-arrow {
-        border-right: 15px solid #ddd;
+        border-right: 15px solid #F1F2F6;
         border-left: 0;
         left: -15px;
     }
