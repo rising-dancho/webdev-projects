@@ -11,6 +11,16 @@ body {
     background: #F1F2F6;
 }
 
+h1 {
+    text-align: center;
+    font-weight: 300;
+    color: #777;
+}
+
+h1 span {
+    font-weight: 600;
+}
+
 .marker {
     position: absolute;
     right: -6.8px;
@@ -138,10 +148,12 @@ body {
 
 .container__left {
     left: 0;
+    direction: rtl;
 }
 
 .container__right {
     left: 50%;
+    direction: ltr;
 }
 
 .textbox {
@@ -173,30 +185,6 @@ body {
     color: #888;
 }
 
-.left-container-arrow {
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: 28px;
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 15px solid #F1F2F6;
-    right: -15px;
-}
-
-.right-container-arrow {
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: 28px;
-    z-index: 1;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid #F1F2F6;
-    left: -15px;
-}
-
 
 @media screen and (max-width: 600px) {
 
@@ -211,11 +199,10 @@ body {
 
     .container {
         width: 100%;
-        padding-left: 80px;
+        padding-left: 30px;
         padding-right: 25px;
     }
 
-    /* textbox: reduce font size, add margin */
     .textbox {
         font-size: 14px;
     }
@@ -223,20 +210,17 @@ body {
     /* move all right containers to the right */
     .container__right {
         left: 0;
+        
     }
 
-    /* move all icons on top of the time line */
-    .container__right img,
-    .container__left img {
-        left: 10px;
+    .container__left {
+        direction: ltr;
     }
 
-
-    .right-container-arrow,
-    .left-container-arrow {
-        border-right: 15px solid #F1F2F6;
-        border-left: 0;
-        left: -15px;
+    /* move all markers on top of the timeline */
+    .container__right .marker,
+    .container__left .marker {
+        left: 20.5px;
     }
 
 }

@@ -160,7 +160,7 @@ body {
 
 @media screen and (max-width: 600px) {
 
-    /* for the line : moving it to the left side */
+   
     .timeline {
         margin: 50px auto;
     }
@@ -175,7 +175,7 @@ body {
         padding-right: 25px;
     }
 
-    /* textbox: reduce font size, add margin */
+    
     .textbox {
         font-size: 13px;
     }
@@ -184,12 +184,12 @@ body {
         margin-bottom: 10px;
     }
 
-    /* move all right containers to the right */
+   
     .container__right {
         left: 0;
     }
 
-    /* move all icons on top of the time line */
+    
     .container__right img,
     .container__left img {
         left: 10px;
@@ -201,6 +201,6 @@ body {
         border-right: 15px solid #ddd;
         border-left: 0;
         left: -15px;
-    }
+    } 
 
 }
