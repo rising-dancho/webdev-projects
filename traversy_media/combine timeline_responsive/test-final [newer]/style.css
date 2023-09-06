@@ -24,7 +24,7 @@ h1 span {
 .marker {
     position: absolute;
     right: -6.8px;
-    top: 22px;
+    top: -3px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -36,13 +36,14 @@ h1 span {
 
 .container__right .marker {
     left: -9.7px;
-    top: 22px;
+    top: -3px;
 }
 
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 100px auto;
+    padding: 50px 40px;
 }
 
 .timeline::after {
@@ -69,6 +70,7 @@ h1 span {
 }
 
 .container {
+    /* background-color: black; */
     padding: 0px 5px;
     position: relative;
     width: 50%;
@@ -144,8 +146,6 @@ h1 span {
 }
 /* cubic-bezier: https://chat.openai.com/share/9b7b5bb6-e08b-4511-8b25-2c4bc1ee5412 */
 
-
-
 .container__left {
     left: 0;
     direction: rtl;
@@ -157,13 +157,12 @@ h1 span {
 }
 
 .textbox {
-    padding: 20px 25px;
+    padding: 0px 25px;
     background: #F1F2F6;
     position: relative;
     border-radius: 6px;
     font-size: 15px;
     color: #666;
-    /* background-color: black; */
 }
 
 .textbox h3 {
@@ -180,7 +179,7 @@ h1 span {
 
 
 .textbox p {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.5em;
     word-spacing: 1px;
     color: #888;
