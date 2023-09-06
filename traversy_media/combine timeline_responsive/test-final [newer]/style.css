@@ -201,6 +201,7 @@ h1 span {
         width: 100%;
         padding-left: 10px;
         padding-right: 25px;
+        padding-top: 20px;
     }
 
     .textbox {
@@ -221,6 +222,7 @@ h1 span {
     .container__right .marker,
     .container__left .marker {
         left: -19.5px;
+        top: 20.5px;
     }
 
 }
