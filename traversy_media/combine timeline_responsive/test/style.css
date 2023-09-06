@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #2e354a;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #fff;
+    top: 0%;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+.container {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    opacity: 0;
+    animation: movedown 1s linear forwards;
+    transition: opacity 1s ease-in-out; /* Add transition for opacity */
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.container:nth-child(1) {
+    animation-delay: 0s;
+    /* Delay for the first container */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Ease in */
+}
+
+.container:nth-child(2) {
+    animation-delay: 1.25s;
+    /* Delay for the second container */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Ease in */
+}
+
+.container:nth-child(3) {
+    animation-delay: 2.5s;
+    /* Delay for the third container */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Ease in */
+}
+
+.container:nth-child(4) {
+    animation-delay: 3.75s;
+    /* Delay for the fourth container */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Ease in */
+}
+
+.container:nth-child(5) {
+    animation-delay: 5s;
+    /* Delay for the fifth container */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Ease in */
+}
+/* cubic-bezier: https://chat.openai.com/share/9b7b5bb6-e08b-4511-8b25-2c4bc1ee5412 */
+
+.container img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.container__left {
+    left: 0;
+}
+
+.container__right {
+    left: 50%;
+}
+
+.container__right img {
+    left: -20px;
+    top: 32px;
+}
+
+.textbox {
+    padding: 20px 30px;
+    background-color: #ddd;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.textbox h2 {
+    font-weight: 600;
+}
+
+.textbox small {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #ddd;
+    right: -15px;
+}
+
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #ddd;
+    left: -15px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    /* for the line : moving it to the left side */
+    .timeline {
+        margin: 50px auto;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    /* textbox: reduce font size, add margin */
+    .textbox {
+        font-size: 13px;
+    }
+
+    .textbox small {
+        margin-bottom: 10px;
+    }
+
+    /* move all right containers to the right */
+    .container__right {
+        left: 0;
+    }
+
+    /* move all icons on top of the time line */
+    .container__right img,
+    .container__left img {
+        left: 10px;
+    }
+
+
+    .right-container-arrow,
+    .left-container-arrow {
+        border-right: 15px solid #ddd;
+        border-left: 0;
+        left: -15px;
+    }
+
+}
