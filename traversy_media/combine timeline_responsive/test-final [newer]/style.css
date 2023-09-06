@@ -199,7 +199,7 @@ h1 span {
 
     .container {
         width: 100%;
-        padding-left: 30px;
+        padding-left: 10px;
         padding-right: 25px;
     }
 
@@ -220,7 +220,7 @@ h1 span {
     /* move all markers on top of the timeline */
     .container__right .marker,
     .container__left .marker {
-        left: 20.5px;
+        left: -19.5px;
     }
 
 }
