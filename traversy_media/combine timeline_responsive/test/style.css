@@ -14,7 +14,7 @@ body {
 .marker {
     position: absolute;
     right: -6.5px;
-    top: 32px;
+    top: 35px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -32,6 +32,11 @@ body {
     top: 32px;
     z-index: 10;
 } */
+
+.container__right .marker {
+    left: -9.5px;
+    top: 35px;
+}
 
 .timeline {
     position: relative;
@@ -129,10 +134,7 @@ body {
     left: 50%;
 }
 
-.container__right img {
-    left: -20px;
-    top: 32px;
-}
+
 
 .textbox {
     padding: 20px 30px;
