@@ -1,0 +1,221 @@
+body{
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.5;
+}
+
+.card {
+    /* background-color: var(--background-color-white); */
+    color: var(--text-black);
+    border-radius: var(--boder-radius);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.marker {
+    position: absolute;
+    right: -6.8px;
+    top: -4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #F5F7FA;
+    background: #047aed;
+    margin-top: 10px;
+    z-index: 10;
+}
+
+.container__right .marker {
+    left: -9.7px;
+    top: -4px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 40px;
+    /* background: #F1F2F6; */
+    /* background-color: hsl(210, 100%, 96%); */
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #CCD1D9;
+    top: 0%;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 10s linear forwards;
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+.container {
+    /* background-color: black; */
+    padding: 0px 5px;
+    position: relative;
+    width: 50%;
+    opacity: 0;
+    animation: movedown 1s linear forwards;
+    transition: opacity 1s ease-in-out; /* Add transition for opacity */
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.container:nth-child(1) {
+    animation-delay: 0s;
+    /* Delay for the first container */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Ease in */
+}
+
+.container:nth-child(2) {
+    animation-delay: 1.3s;
+    /* Delay for the second container */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Ease in */
+}
+
+.container:nth-child(3) {
+    animation-delay: 2.3s;
+    /* Delay for the third container */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Ease in */
+}
+
+.container:nth-child(4) {
+    animation-delay: 3.5s;
+    /* Delay for the fourth container */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Ease in */
+}
+
+.container:nth-child(5) {
+    animation-delay: 4.8s;
+    /* Delay for the fifth container */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Ease in */
+}
+.container:nth-child(6) {
+    animation-delay: 6s;
+    /* Delay for the fifth container */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Ease in */
+}
+.container:nth-child(7) {
+    animation-delay: 7.2s;
+    /* Delay for the fifth container */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Ease in */
+}
+
+.container:nth-child(8) {
+    animation-delay: 8.4s;
+    /* Delay for the fifth container */
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* Ease in */
+}
+/* cubic-bezier: https://chat.openai.com/share/9b7b5bb6-e08b-4511-8b25-2c4bc1ee5412 */
+
+.container__left {
+    left: 0;
+    direction: rtl;
+}
+
+.container__right {
+    left: 50%;
+    direction: ltr;
+}
+
+.textbox {
+    padding: 0px 25px;
+    /* background: #F1F2F6; */
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #666;
+}
+
+.textbox h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.textbox span {
+    font-size: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.textbox p {
+    font-size: 14px;
+    line-height: 1.5em;
+    word-spacing: 1px;
+    color: #77787a;
+}
+
+@media screen and (max-width: 600px) {
+
+    /* for the line : moving it to the left side */
+    .timeline {
+        margin: 50px auto;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 25px;
+        padding-top: 20px;
+    }
+
+    .textbox {
+        font-size: 14px;
+    }
+
+    /* move all right containers to the right */
+    .container__right {
+        left: 0;
+        
+    }
+
+    .container__left {
+        direction: ltr;
+    }
+
+    /* move all markers on top of the timeline */
+    .container__right .marker,
+    .container__left .marker {
+        left: -19.5px;
+        top: 20.5px;
+    }
+
+}
