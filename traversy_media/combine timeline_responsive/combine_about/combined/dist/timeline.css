@@ -13,15 +13,6 @@ body{
     margin: 10px;
 }
 
-.docs__container {
-    width: 100%;
-    padding: 50px 0;
-    margin: 50px auto;
-    position: relative;
-    overflow: hidden;
-    /* background-color: hsl(210, 100%, 96%); */
-}
-
 .marker {
     position: absolute;
     right: -6.8px;
@@ -43,8 +34,10 @@ body{
 .timeline {
     position: relative;
     max-width: 1200px;
-    margin: 100px auto;
+    margin: 30px auto;
     padding: 40px;
+    /* background: #F1F2F6; */
+    /* background-color: hsl(210, 100%, 96%); */
 }
 
 .timeline::after {
@@ -159,7 +152,7 @@ body{
 
 .textbox {
     padding: 0px 25px;
-    background: #F1F2F6;
+    /* background: #F1F2F6; */
     position: relative;
     border-radius: 6px;
     font-size: 15px;
@@ -170,22 +163,21 @@ body{
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 25px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .textbox span {
     font-size: 15px;
-    color: #a4a4a4;
+    color: #333;
+    font-weight: bold;
 }
-
 
 .textbox p {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.5em;
     word-spacing: 1px;
-    color: #888;
+    color: #77787a;
 }
-
 
 @media screen and (max-width: 600px) {
 
