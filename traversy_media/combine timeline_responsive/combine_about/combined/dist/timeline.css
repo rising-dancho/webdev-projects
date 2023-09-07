@@ -16,19 +16,19 @@ body{
 .marker {
     position: absolute;
     right: -6.8px;
-    top: -4px;
+    top: 2px;
     width: 16px;
     height: 16px;
     border-radius: 50%;
     border: 2px solid #F5F7FA;
-    background: #047aed;
+    background: #3591ec;
     margin-top: 10px;
     z-index: 10;
 }
 
 .container__right .marker {
     left: -9.7px;
-    top: -4px;
+    top: 2px;
 }
 
 .timeline {
@@ -164,11 +164,12 @@ body{
     margin-bottom: 5px;
     font-size: 25px;
     font-weight: bold;
+    color: #040F0F;
 }
 
 .textbox span {
     font-size: 15px;
-    color: #333;
+    color: #3591ec;
     font-weight: bold;
 }
 
@@ -176,7 +177,7 @@ body{
     font-size: 14px;
     line-height: 1.5em;
     word-spacing: 1px;
-    color: #77787a;
+    color: #6b6e6e;
 }
 
 @media screen and (max-width: 600px) {
@@ -215,7 +216,7 @@ body{
     .container__right .marker,
     .container__left .marker {
         left: -19.5px;
-        top: 20.5px;
+        top: 27px;
     }
 
 }
