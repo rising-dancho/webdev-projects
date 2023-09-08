@@ -39,8 +39,8 @@ body{
     padding: 0 20px;
     max-height: 180px;
     overflow-y: auto;
-    transition: .4 linear .2s;
-    display: none;
+    transition: .4s linear .2s;
+    height: 0;
 }
 
 .option{
@@ -64,5 +64,5 @@ body{
 }
 
 .options-list.active{
-    display: block;
+    height: 180px;
 }
