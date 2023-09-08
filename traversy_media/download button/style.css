@@ -40,6 +40,7 @@ body{
     max-height: 180px;
     overflow-y: auto;
     transition: .4 linear .2s;
+    display: none;
 }
 
 .option{
@@ -51,4 +52,17 @@ body{
 
 .option:hover{
     color: #00a8ff;
+}
+
+.options-list::-webkit-scrollbar{
+    width: 4px;
+    background-color: #eee;
+}
+
+.options-list::-webkit-scrollbar-thumb{
+    background-color: #00a8ff;
+}
+
+.options-list.active{
+    display: block;
 }
