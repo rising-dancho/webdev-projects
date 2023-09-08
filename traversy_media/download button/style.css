@@ -29,3 +29,26 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+
+.options-list{
+    position: absolute;
+    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    margin-top: 14px;
+    padding: 0 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    transition: .4 linear .2s;
+}
+
+.option{
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 14px;
+    transition: .3s ease-in-out;
+}
+
+.option:hover{
+    color: #00a8ff;
+}
