@@ -36,9 +36,24 @@
         const options = document.querySelectorAll(".option");
 
         // show and hide options list 
-        select.addEventListener("click", () =>{
+        select.addEventListener("click", () => {
             options_list.classList.toggle("active");
             select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+        });
+
+        // select option
+        options.forEach((option) => {
+            option.addEventListener("click", () => {
+                options.forEach((option) => { option.classList.remove('selected') });
+
+                // change the text in the span into the one user selected
+                select.querySelector("span").innerHTML = option.innerHTML;
+                option.classList.add("selected");
+
+                // close the dropdown menu
+                options_list.classList.toggle("active");
+                select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+            })
         });
     </script>
 </body>

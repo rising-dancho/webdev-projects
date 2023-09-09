@@ -50,7 +50,8 @@ body{
     transition: .3s ease-in-out;
 }
 
-.option:hover{
+.option:hover,
+.option.selected{
     color: #00a8ff;
 }
 
