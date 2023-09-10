@@ -98,8 +98,6 @@ const yearsUntilRetirement = function (birthYear, firstName, currentYear) {
         console.log(`${firstName} already retired 🎉`);
         return -1; // returning a number because the entry (argument) is a number
     }
-
-
 }
 
 console.log(yearsUntilRetirement(1992, 'Jose', 2023));
