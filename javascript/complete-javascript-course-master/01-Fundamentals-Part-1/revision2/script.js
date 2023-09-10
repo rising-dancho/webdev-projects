@@ -22,13 +22,24 @@
 
 // TEST DATA 2: Dolphins scored 85, 54, and 41. Koalas scored 23, 34, and 27.
 
-let scoreDolphins;
-let scoreKoalas;
+let scoreDolphins = [44, 23, 71];
+let scoreKoalas = [65, 54, 49];
+let sum = 0;
+
+function computerScore(score) {
+    for (let i = 0; i < score.length; i++) {
+        sum += score[i];
+    }
+    return sum;
+}
+
+
 
 const calcAverage = (score1, score2, score3) => {
     const average = score1 + score2 + score3 / 3;
     return average;
 }
+
 // DATA 1:
 let avgDolphins = calcAverage(44, 23, 71);
 let avgKoalas = calcAverage(65, 54, 49);
@@ -37,13 +48,20 @@ let avgKoalas = calcAverage(65, 54, 49);
 // avgKoalas = calcAverage(23, 34, 27);
 
 const checkWinner = (avgDolphins, avgKoalas) => {
-    if (avgDolphins > avgKoalas) {
-        console.log(`Dolphins won`);
+
+    if ((avgDolphins*2) > avgKoalas) {
+        console.log(`Dolphins won with an average score of ${avgDolphins}`);
+    } else if ((avgDolphins*2) < avgKoalas) {
+        console.log(`Koalas won with an average score of  ${avgKoalas}`);
     } else {
-        console.log(`Koalas won`);
+        console.log("nobody won");
     }
 }
+console.log(`Dolphin's score: ${computerScore(scoreDolphins)}`);
+console.log(`Koalas's score: ${computerScore(scoreKoalas)}`);
+console.log(`Dolphin's average score: ${avgDolphins}`);
+console.log(`Koalas's average score: ${avgKoalas}`);
+checkWinner(avgDolphins, avgKoalas)
 
-// console.log(scoreDolphins);
-// console.log(scoreKoalas);
-checkWinner(scoreDolphins, scoreKoalas)
+// console.log(avgDolphins%avgKoalas === 0);
+// console.log(avgKoalas%avgDolphins === 0);
