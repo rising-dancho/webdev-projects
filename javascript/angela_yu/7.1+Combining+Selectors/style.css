@@ -11,7 +11,7 @@ p {
 .list {
     color: blue;
 }
-
+/* chaining */
 li.done {
     color: seagreen;
 }
@@ -21,7 +21,7 @@ li.done {
 }
 
 /* chaining */
-p#other.done.small{
+p#other.done{
     color: black;
     font-size: 10px;
 }
