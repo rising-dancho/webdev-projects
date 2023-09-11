@@ -1,5 +1,5 @@
 /* Write your code here: */
-body {
+h1,h2 {
     color: blueviolet;
 }
 
@@ -7,7 +7,7 @@ p {
     color: black;
 }
 
-.list>li {
+.list {
     color: blue;
 }
 
