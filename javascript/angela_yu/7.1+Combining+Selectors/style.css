@@ -16,13 +16,11 @@ li.done {
     color: seagreen;
 }
 
-.box>.done {
+.box>p {
     color: firebrick;
 }
 
-/* chaining */
-p#other.done{
-    color: black;
-    font-size: 10px;
+/* complex chaining */
+ul > p.done{
+    font-size: 0.5rem;
 }
-
