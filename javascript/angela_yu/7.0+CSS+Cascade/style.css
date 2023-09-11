@@ -16,14 +16,16 @@ p {
 }
 
 #outer-box > .box > p{
-  padding-left: 10px;
   color: yellow;
 }
 
 .white-text{
+  color: white;
+}
+
+.inner-box{
   padding: 10px;
   background-color: red;
-  color: white;
 }
 
 
