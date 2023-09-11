@@ -12,7 +12,7 @@ p {
     color: blue;
 }
 
-.list .done {
+li.done {
     color: seagreen;
 }
 
