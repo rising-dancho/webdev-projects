@@ -1,0 +1,25 @@
+/* Write your code here: */
+body {
+    color: blueviolet;
+}
+
+p {
+    color: black;
+}
+
+.list>li {
+    color: blue;
+}
+
+.list .done {
+    color: green;
+}
+
+.box>.done {
+    color: firebrick;
+}
+
+ul p {
+    color: black;
+    font-size: 10px;
+}

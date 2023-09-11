@@ -2,7 +2,7 @@
 
 .box {
   background-color: blue;
-  padding: 10px;
+  padding: 10px;   /* padding not needed to all other boxes. they all share this padding */
 }
 
 p {
@@ -11,21 +11,18 @@ p {
   padding: 0;
 }
 
-#outer-box{
+#outer-box {
   background-color: purple;
 }
 
-#outer-box > .box > p{
+#outer-box>.box>p {
   color: yellow;
 }
 
-.white-text{
-  color: white;
-}
-
-.inner-box{
-  padding: 10px;
+.inner-box {
   background-color: red;
 }
 
-
+.white-text {
+  color: white;
+}
