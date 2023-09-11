@@ -11,19 +11,14 @@ p {
   padding: 0;
 }
 
-#outer-box{
-  background-color: purple;
+#outer-box {
+  background: indigo;
 }
 
-#outer-box > .box > p{
-  padding-left: 10px;
-  color: yellow;
+.inner-box{
+  background: red;
 }
 
 .white-text{
-  padding: 10px;
-  background-color: red;
   color: white;
 }
-
-
