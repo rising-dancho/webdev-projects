@@ -1,5 +1,6 @@
 /* Write your code here: */
-h1,h2 {
+h1,
+h2 {
     color: blueviolet;
 }
 
@@ -12,14 +13,16 @@ p {
 }
 
 .list .done {
-    color: green;
+    color: seagreen;
 }
 
 .box>.done {
     color: firebrick;
 }
 
-ul p {
+/* chaining */
+p#other.done.small{
     color: black;
     font-size: 10px;
 }
+
