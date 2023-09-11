@@ -31,6 +31,12 @@ Hint: Use the CSS inspector in Chrome. */
     border: solid black;
     border-width: 20px 10px;
     margin-left: 260px;
+    /* 
+    200px box width (green) 
+    + 10px left and right border 
+    + 20px padding 
+    = 260px
+    */
 }
 .red {
     background-color: indianred;
