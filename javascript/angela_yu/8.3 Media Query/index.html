@@ -15,10 +15,10 @@ TODO: Change the background color for each device
   <title>Media Query</title>
   <style>
     body {
-      background-color: aquamarine;
+      background-color: white;
     }
 
-    @media (min-width: 480px) {
+    @media (min-width: 319px) and (max-width: 480px) {
 
       /* Mobile Devices: 319px — 480px */
       body {
@@ -26,7 +26,7 @@ TODO: Change the background color for each device
       }
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 481px) and (max-width: 1200px) {
 
       /* iPads and Tablets: 481px — 1200px */
       body {
@@ -34,15 +34,15 @@ TODO: Change the background color for each device
       }
     }
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1201px) and (max-width: 1600px) {
 
-      /* iPads and Tablets: 481px — 1200px */
+      /* Laptops: 1201px — 1600px */
       body {
         background-color: limegreen;
       }
     }
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1601px) {
 
       /* Desktops: 1601px and more */
       body {
