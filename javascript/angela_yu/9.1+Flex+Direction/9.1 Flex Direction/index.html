@@ -13,12 +13,18 @@
     .container {
       color: white;
       border: 5px solid gold;
-      display: flex;
+      display: inline-flex; 
       flex-direction: column;  
-      width: 50px;
+      /* width: 50px; */
+      /* inline = always adjusts the width according only to the width
+      of it's content */
     }
 
-    .container div {
+    /* .container div {
+      flex-basis: 100px;
+    } */
+
+    .container > *{
       flex-basis: 100px;
     }
 
