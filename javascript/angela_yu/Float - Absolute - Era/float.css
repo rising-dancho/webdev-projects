@@ -1,0 +1,19 @@
+div {
+    display: inline-block;
+    background-color: blueviolet;
+}
+
+.one {
+    width: 25%;
+    float: left;
+}
+
+.two {
+    width: 25%;
+    float: left;
+}
+
+.three {
+    width: 40%;
+    float: left;
+}
