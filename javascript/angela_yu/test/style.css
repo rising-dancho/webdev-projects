@@ -1,0 +1,21 @@
+div {
+    display: inline-block;
+    background-color: blueviolet;
+}
+
+.one{
+    width: 25%;
+    position: absolute;
+}
+.two{
+    width: 25%;
+    position: absolute;
+    left:27.5%
+    
+}
+.three{ 
+    width: 40%;
+    position: absolute;
+    left:53%
+    
+}
