@@ -93,15 +93,16 @@
     <div class="three">Item 3: 400px</div>
   </div>
   <div class="container" id="container">
-    <div class="item1">Item 1: 200px</div>
-    <div class="item2">Item 2: 200px</div>
-    <div class="item3">Item 3: 400px</div>
+    <div class="item1">Home: 200px</div>
+    <div class="item2">About: 200px</div>
+    <div class="item3">Contact Us: 400px</div>
   </div>
   <textarea id="user-css" placeholder="Write your CSS code here..." rows="25">
 /* Write your CSS code below to make the blue items size, grow and shrink like the green ones.*/
 
 .container {
-  
+  display: flex;
+  justify-content: space-between;
 }
   
 .container > * {
@@ -109,16 +110,20 @@
 }
 
 .item1 {
-
+  flex-grow:1;
+  flex-shrink:1
 }
 
 .item2 {
-
+  flex-grow:1;
+  min-width:200px;
 }
 
 .item3 {
-
+  flex-grow:1;
+  min-width:400px;
 }
+    
 </textarea>
   <button onclick="applyUserCss()">Apply CSS</button>
 
