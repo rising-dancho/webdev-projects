@@ -100,6 +100,8 @@
   <textarea id="user-css" placeholder="Write your CSS code here..." rows="25">
 /* Write your CSS code below to make the blue items size, grow and shrink like the green ones.*/
 
+/* Write your CSS code below to make the blue items size, grow and shrink like the green ones.*/
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -110,19 +112,20 @@
 }
 
 .item1 {
+  max-width: 200px;
   flex-grow:1;
   flex-shrink:1
 }
 
 .item2 {
-  flex-grow:1;
   min-width:200px;
 }
 
 .item3 {
-  flex-grow:1;
   min-width:400px;
 }
+    
+
     
 </textarea>
   <button onclick="applyUserCss()">Apply CSS</button>
