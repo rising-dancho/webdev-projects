@@ -1,6 +1,7 @@
 body {
     font-family: 'Space Mono', monospace;
     background-color: #fdf9fd;
+    color: #222;
 }
 
 div {
@@ -24,20 +25,25 @@ h2 {
     font-size: 50px;
 }
 
-a {
 
-    /* LVHA */
-    a:link {
-        text-decoration: none;
-    }
 
-    a:visited {}
-
-    a:hover {}
-
-    a:active {}
-
+/* LINKS : LVHA */
+.link {
+    border-bottom: 1px dotted #fdf9fd;
+    padding: 1px 5px;
+    transition: all 0.4s;
+    color: #222;
 }
+
+
+a:visited {}
+
+a:hover {
+    background: #000;
+    color: #fdf9fd;    
+}
+
+a:active {}
 
 p {
     font-size: 20px;
