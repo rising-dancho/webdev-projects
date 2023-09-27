@@ -31,7 +31,7 @@ h2 {
 .link {
     border-bottom: 1px dotted #fdf9fd;
     padding: 1px 5px;
-    transition: all 0.4s;
+    transition: all 0.2s;
     color: #222;
 }
 
@@ -39,8 +39,8 @@ h2 {
 a:visited {}
 
 a:hover {
-    background: #000;
-    color: #fdf9fd;    
+    text-shadow: 0 -1.5px blue, 0 -2.5px cyan, 0 1.5px red, 0 2.5px yellow; 
+    text-decoration: none;
 }
 
 a:active {}
