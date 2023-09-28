@@ -52,8 +52,11 @@ button {
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: #A6192E;
-    color: black;
+    color: white;
     border: none;
+    /* Four length values and a color */
+    /* <length> | <length> | <length> | <length> | <color> */
+    box-shadow: 0px 3px 15px rgba(166, 25, 46, 0.2);
 }
