@@ -44,7 +44,16 @@ button {
     padding: 20px;
     text-transform: uppercase;
     font-weight: bold;
+    border: none;
     font-size: 20px;
     color: white;
     background-color: #463D36;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #A6192E;
+    color: black;
+    border: none;
 }
