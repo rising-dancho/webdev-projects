@@ -27,6 +27,14 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card{
+    margin-bottom: 32px;
+}
 .navbar {
     display: flex;
     gap: 2rem;
@@ -89,7 +97,7 @@ h1 {
 @media (max-width: 1000px) {
 
     .container {
-        padding: 0 100px;
+        padding: 0 60px;
     }
 
     .navbar {
@@ -110,7 +118,7 @@ h1 {
 @media (max-width: 800px) {
 
     .container {
-        padding: 0 50px;
+        padding: 0 40px;
     }
 }
 
