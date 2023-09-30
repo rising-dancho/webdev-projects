@@ -14,10 +14,15 @@ p {
     margin-bottom: 1rem;
 }
 
-h1 {
-    font-size: 80px;
+h1,
+h2,
+h3 {
     font-family: 'Bitter', serif;
-    font-weight: 500;
+    font-weight: normal;
+}
+
+span {
+    color: #e95400;
 }
 
 .container {
@@ -41,6 +46,10 @@ header {
     height: 100vh;
 }
 
+header h1 {
+    font-size: 80px;
+}
+
 header p {
     text-align: center;
     font-family: 'Mukta', sans-serif;
@@ -62,21 +71,24 @@ main {
     height: 100vh;
 }
 
-main p {
-    padding-top: 1rem;
+.date-posted {
+    padding-top: 2.5rem;
     text-align: center;
     font-weight: bold;
     letter-spacing: 1.5px;
 }
 
-main span {
-    padding-top: 1rem;
-    text-align: center;
-    font-weight: bold;
-    color: #e95400;
+main h2 {
+    font-size: 50px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-main h2 {
-    text-align: start;
-    padding: 32px;
+.headline {
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    line-height: 2;
+    letter-spacing: 1.5px;
 }
