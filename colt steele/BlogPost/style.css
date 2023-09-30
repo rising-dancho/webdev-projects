@@ -22,6 +22,7 @@ h2,
 main p {
     font-family: 'Bitter', serif;
     font-weight: bold;
+    margin: 32px auto;
 }
 
 header, 
@@ -31,7 +32,7 @@ main {
 
 .container {
     width: 100%;
-    max-width: 1400px;
+    /* max-width: 1400px; */
     margin: 0 auto;
 }
 
@@ -71,6 +72,8 @@ main {
 main p {
     font-weight: bold;
     text-align: center;
+    padding-top: 32px;
+    border: 1px solid red ;
 }
 
 main h2 {
