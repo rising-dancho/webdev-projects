@@ -23,6 +23,8 @@ header h1 {
 
 header p {
     text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 40px;
 }
 
 .card {
@@ -32,5 +34,5 @@ header p {
     align-items: center;
     margin: 0 15%;
     height: 100%;
-    border-bottom: 1px solid white;
+    
 }
