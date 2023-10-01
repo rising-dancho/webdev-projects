@@ -100,7 +100,34 @@
             </article>
             <article>
                 <h3>Common Font Sizing Approaches</h3>
-                <h4><span>px</span> (pixels)</h4>
+                <ul>
+                    <li><span>px</span> (pixels)</li>
+                    <p>Pixels are the simplest way to hard code your font size. By default the browser sets the root font
+                        size
+                        to <code class="mono">16px</code>, but you can change the font size in the <span
+                            class="mono">body</span> element or any other HTML element by setting
+                        <code class="mono">font-size</code> to any number of <code class="mono">px</code>.
+                    </p>
+                    <li><span>em</span></li>
+                    <p><code class="mono">em</code> units size font relative to the parent element. For example, if the body
+                        element is <code class="mono">16px</code>, and a nested
+                        <code class="mono">div</code> element's font size is set to <code class="mono">1.5em</code>, the
+                        browser will multiply <code class="mono">16px</code> x 1.5, resulting in <span
+                            class="mono">24px</span> font in
+                        the <code class="mono">div</code>.
+                    </p>
+                    <li><span>rem</span> (root em)</li>
+                    <p><code class="mono">Root em</code> units are similar to em, but they are relative to the root font
+                        size instead of the parent
+                        element of whatever is being styled. For example, if the root font size (the font size of the body
+                        element) is set to <code class="mono">16px</code>, and we have a <code class="mono">p</code> element
+                        nested many layers down with a <code class="mono">font-size</code> set to <span
+                            class="mono">2rem</span>,
+                        that paragraph will have <code class="mono">32px</code> font. If the body font size ever changes,
+                        this paragraph will also change
+                        accordingly.</p>
+                </ul>
+                <!-- <h4><span>px</span> (pixels)</h4>
                 <p>Pixels are the simplest way to hard code your font size. By default the browser sets the root font
                     size
                     to <code class="mono">16px</code>, but you can change the font size in the <span
@@ -124,7 +151,7 @@
                         class="mono">2rem</span>,
                     that paragraph will have <code class="mono">32px</code> font. If the body font size ever changes,
                     this paragraph will also change
-                    accordingly.</p>
+                    accordingly.</p> -->
                 <h4>Which one do I use?</h4>
                 <p>Great question! Generally, people try to stick to using <code class="mono">em</code> or <span
                         class="mono">rem</span> over <code class="mono">px</code>, since they make responsive
