@@ -28,8 +28,6 @@
     <main>
         <section class="container">
             <article>
-
-
                 <p class="date-posted">12.31.2050 | <span>ALL ABOUT CSS BLOG</span></p>
 
                 <h2>All About Typography</h2>
@@ -104,11 +102,46 @@
                     explicabo, nobis accusamus quos nihil eligendi earum minus voluptas. Reiciendis!
                 </p>
             </article>
+            <article>
             <h3>Common Font Sizing Approaches</h3>
-
-
+            <h4><span>px</span> (pixels)</h4>
+            <p>Pixels are the simplest way to hard code your font size. By default the browser sets the root font size
+                to <span class="mono">16px</span>, but you can change the font size in the <span class="mono">body</span> element or any other HTML element by setting
+                <span class="mono">font-size</span> to any number of <span class="mono">px</span>.</p>
+            <h4><span>em</span></h4>
+            <p><span class="mono">em</span> units size font relative to the parent element. For example, if the body element is <span class="mono">16px</span>, and a nested
+                <span class="mono">div</span> element's font size is set to <span class="mono">1.5em</span>, the browser will multiply <span class="mono">16px</span> x 1.5, resulting in <span class="mono">24px</span> font in
+                the <span class="mono">div</span>.</p>
+            <h4><span>rem</span> (root em)</h4>
+            <p><span class="mono">Root em</span> units are similar to em, but they are relative to the root font size instead of the parent
+                element of whatever is being styled. For example, if the root font size (the font size of the body
+                element) is set to <span class="mono">16px</span>, and we have a <span class="mono">p</span> element nested many layers down with a <span class="mono">font-size</span> set to <span class="mono">2rem</span>,
+                that paragraph will have <span class="mono">32px</span> font. If the body font size ever changes, this paragraph will also change
+                accordingly.</p>
+            <h4>Which one do I use?</h4>
+            <p>Great question! Generally, people try to stick to using <span class="mono">em</span> or <span class="mono">rem</span> over <span class="mono">px</span>, since they make responsive
+                typography that scales up and down across different device widths much easier. Using px for your font
+                sizes is not as dynamic, and you may find that writing media queries to update all the various element
+                font sizes in pixels at different screen widths is not the most scalable approach to typography.</p>
+            <p>Between <span class="mono">em</span> and <span class="mono">rem</span>, rem has a nice advantage of all elements being relative to one single root font
+                value, where nested elements with parent/child font size dependencies can still be hard to manage with
+                em units. When writing responsive styles, rem allows you to simply update the root font size at
+                different screen sizes and all elements using rem units will adjust themselves accordingly creating a
+                super easy-to-manage typography size system.</p>
+            <p>In small projects you may not have an issues hard coding pixelage, but it's always important to
+                understand the drawbacks of writing styles that may not be responsive or dynamic.</p>
+            </article>
         </section>
     </main>
+    <footer>
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">More Info</a></li>
+        </ul>
+    </footer>
 </body>
 
 </html>
