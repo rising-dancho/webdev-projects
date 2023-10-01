@@ -49,8 +49,8 @@ span {
 
 .container {
     margin: 0 auto;
-    width: 100%;
     max-width: 900px;
+    padding: 32px;
 }
 
 body {
@@ -154,7 +154,7 @@ main h6 {
     letter-spacing: 1.5px;
 }
 
-footer ul{
+footer ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,12 +165,100 @@ footer ul{
 }
 
 /* LVHA */
-footer a:link{
-   color: #fdf9fd;
-   text-decoration: none;
+footer a:link {
+    color: #fdf9fd;
+    text-decoration: none;
 }
+
 /* footer a:visited{} */
-footer a:hover{
+footer a:hover {
     text-decoration: underline;
 }
+
 /* footer a:active{} */
+
+@media (max-width: 630px) {
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 32px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    /* Reducing Font Sizes :
+    - to fit the screens of smaller devices */
+
+    header h1 {
+        font-size: 4.5rem;
+    }
+
+    main h2 {
+        font-size: 2.5rem;
+    }
+
+    .date-posted {
+        font-size: .95rem;
+    }
+
+    .headline {
+        font-size: .98rem;
+    }
+
+    .quote {
+        font-size: .92rem;
+    }
+
+}
+
+@media (max-width: 460px) {
+
+    /* Reducing Font Sizes :
+    - to fit the screens of smaller devices */
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    /* Reducing Font Sizes :
+    - to fit the screens of smaller devices */
+
+    header h1 {
+        font-size: 3.3rem;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    /* Reducing Font Sizes :
+    - to fit the screens of smaller devices */
+
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    main h2 {
+        font-size: 2.3rem;
+    }
+
+    .date-posted {
+        font-size: .92rem;
+    }
+
+    .headline {
+        font-size: .95rem;
+    }
+
+    .quote {
+        font-size: .90rem;
+    }
+
+}
