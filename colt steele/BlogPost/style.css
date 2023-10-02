@@ -123,8 +123,6 @@ main {
     padding-bottom: 2rem;
 }
 
-
-
 main h2 {
     font-size: 3.125rem;
     margin-top: 2rem;
@@ -262,6 +260,10 @@ footer a:hover {
 
     header h1 {
         font-size: 3.3rem;
+    }
+
+    code {
+        color: #e95400;
     }
 
 }
