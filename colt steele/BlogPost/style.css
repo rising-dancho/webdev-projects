@@ -204,7 +204,10 @@ footer a:link {
     text-decoration: none;
 }
 
-/* footer a:visited{} */
+footer a:visited{
+    color: #fdf9fd;
+}
+
 footer a:hover {
     text-decoration: underline;
 }
