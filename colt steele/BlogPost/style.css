@@ -163,7 +163,7 @@ main h6 {
     color: #111;
 }
 
-.quote {
+blockquote {
     font-size: .92rem;
     font-style: italic;
     border-left: 2px solid #e95400;
