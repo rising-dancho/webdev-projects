@@ -6,13 +6,14 @@
 
 body {
     margin: 0;
-    font-family: 'Forum', cursive;
+    font-family: 'Forum', serif;
 }
 
 header {
     background-color: #f08e80;
     color: #fdf9fd;
     height: 90vh;
+    padding: 24px 32px;
 }
 
 header p,
@@ -39,13 +40,22 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
 }
 
 header button {
-    padding: 16px;
+    padding: 16px 24px;
     border: none;
     color: #f08e80;
+    font-family: 'Forum', serif;
+    background-color: #fdf9fd;
+    font-size: 1rem;
+    transition: all 0.25s;
+    font-weight: bold;
+}
+
+header button:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 /* LHVA */
