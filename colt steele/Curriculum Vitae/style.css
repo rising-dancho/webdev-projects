@@ -105,12 +105,14 @@ header article h2 {
     width: 100%;
     margin: 0;
     padding: 32px 0;
+    font-weight: 300;
 }
 
 header article p {
     /* border: 1px solid red; */
     width: 100%;
     padding: 32px 0;
+    font-weight: 300;
 }
 
 
@@ -121,6 +123,7 @@ header article p {
     grid-template-rows: 1fr;
     padding: 32px 0;
     width: 100%;
+    font-weight: 300;
 }
 
 .specialties ul {
