@@ -1,12 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
+    font-family: 'Forum', cursive;
 }
 
 header {
     background-color: #f08e80;
+    color: #fdf9fd;
+    height: 90vh;
 }
 
-header nav > ul{
+header p,
+header h1 {
+    font-weight: 700;
+}
+
+header p {
+    font-size: 2rem;
+}
+
+header h1 {
+    font-size: 4.5rem;
+}
+
+
+header nav>ul {
     display: flex;
     gap: 1rem;
     list-style: none;
@@ -15,5 +38,38 @@ header nav > ul{
 header nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 2rem;
+}
+
+header button {
+    padding: 16px;
+    border: none;
+    color: #f08e80;
+}
+
+/* LHVA */
+header a:link {
+    color: #fdf9fd;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header a:hover {
+    border-bottom: 2px solid #fdf9fd;
+}
+
+header a:visited {
+    color: #fdf9fd;
+}
+
+header a:active {
+    color: #fdf9fd;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 2.5rem;
 }
