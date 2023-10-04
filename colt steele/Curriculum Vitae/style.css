@@ -31,6 +31,14 @@ header p {
     font-size: 2rem;
 }
 
+nav ul li:nth-child(3){
+    display: none;
+}
+
+nav ul li:last-child{
+    display: none;
+}
+
 main h3 {
     font-size: 1.5rem;
 }
@@ -336,6 +344,20 @@ footer img {
 
 }
 
+@media (max-width: 606px) {
+
+    .tech .container,
+    .events .container {
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin-top: 60px;
+        max-height: 75vh;
+    }
+
+}
+
 @media (max-width: 563px) {
 
     header {
@@ -387,6 +409,39 @@ footer img {
         font-size: 1.2rem;
     }
 
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav p{
+        order: -3;
+        margin-bottom: 10px;
+    }
+
+    header nav button{
+        display: none;
+    }
+
+    header nav ul{
+        order:-1;
+        background-color: rgba(0, 0, 0, .1);
+        padding: 5px;
+    }
+
+    nav ul li:nth-child(2){
+        display: none;
+    }
+
+    nav ul li:last-child{
+        display: block;
+    }
+
+    nav ul li:nth-child(3){
+        display: block;
+    }
+    
+
 }
 
 @media (max-width: 466px) {
@@ -405,3 +460,15 @@ footer img {
     
 
 }
+
+
+@media (max-width: 417px) {
+
+    .tech .container,
+    .events .container  {
+        /* border: 1px solid red; */
+        max-height: 90vh;
+    }
+    
+}
+
