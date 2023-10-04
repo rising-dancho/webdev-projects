@@ -16,6 +16,27 @@ body {
     padding: 2.5rem;
 }
 
+/*  font sizes  */
+header h1 {
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+}
+
+header .specialties {
+    font-size: 1.25rem;
+}
+
+h2,
+header p {
+    font-size: 2rem;
+}
+
+main h3 {
+    font-size: 1.5rem;
+}
+
+/*  end  */
+
 h1,
 h2 {
     margin-block-start: 0.83rem;
@@ -36,15 +57,9 @@ header button {
     font-weight: 700;
 }
 
-header p {
-    font-size: 2rem;
-}
-
 header h1 {
-    font-size: 4.5rem;
     letter-spacing: 2px;
 }
-
 
 header nav>ul {
     display: flex;
@@ -105,7 +120,6 @@ header article p {
     /* border: 1px solid red; */
     padding: 32px 0;
     font-weight: 300;
-    font-size: 2rem;
     width: 100%;
 }
 
@@ -123,7 +137,6 @@ header article h2 {
     padding: 32px 0;
     width: 100%;
     font-weight: 300;
-    font-size: 1.25rem;
 }
 
 .specialties ul {
@@ -141,6 +154,14 @@ main {
 
 .tech {
     background-color: #fdf9fd;
+    padding: 24px 32px;
+}
+
+.events {
+    background-color: #FDF0E6;
+    height: 50vh;
+    width: 100%;
+    padding: 0 32px;
 }
 
 .tech .container,
@@ -158,6 +179,7 @@ main {
     padding-top: 64px;
     margin-bottom: 0;
     padding-bottom: 0;
+    
 }
 
 main .container article {
@@ -172,13 +194,11 @@ main h3 {
 }
 
 main h2 {
-    font-size: 32px;
     margin: 0;
     padding: 0;
 }
 
 main h3 {
-    font-size: 1.5rem;
     margin: 8px 0;
 }
 
@@ -194,12 +214,6 @@ main time {
     margin-bottom: 32px;
 }
 
-.events {
-    background-color: #FDF0E6;
-    height: 50vh;
-    width: 100%;
-}
-
 footer {
     text-align: center;
     background-color: #111;
@@ -210,4 +224,184 @@ footer img {
     text-align: center;
     width: 2rem;
     margin: 8px;
+}
+
+@media (max-width: 1323px) {
+
+    /*  font sizes  */
+    header h1 {
+        font-size: 68px;
+    }
+
+    header p,
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    main h3 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 1267px) {
+
+    /*  font sizes  */
+    header h1 {
+        font-size: 62px;
+    }
+
+    header p,
+    h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 1179px) {
+
+    /*  font sizes  */
+    header h1 {
+        font-size: 60px;
+    }
+
+}
+
+@media (max-width: 861px) {
+
+    /*  font sizes  */
+    header h1 {
+        font-size: 50px;
+    }
+
+}
+
+@media (max-width: 813px) {
+
+    header article {
+        /* border: 1px solid red; */
+        grid-template-columns: 1fr;
+        grid-template-rows: 6.5% .45fr 6.5% .45fr;
+    }
+
+    header article h2,
+    header article p {
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+
+    header article h2 {
+        /* border: 1px solid red; */
+        margin: 0;
+        padding: 0;
+        font-weight: 600;
+    }
+
+    header {
+        height: 90vh;
+    }
+
+    .tech .container,
+    .events .container {
+        /* border: 1px solid red; */
+        max-height: 60vh;
+    }
+
+}
+
+@media (max-width: 749px) {
+
+    /*  font sizes  */
+    header h1 {
+        font-size: 45px;
+    }
+
+    header p,
+    h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 664px) {
+
+    .tech .container,
+    .events .container {
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin-top: 60px;
+        max-height: 70vh;
+    }
+
+}
+
+@media (max-width: 563px) {
+
+    header {
+        height: 95vh;
+    }
+
+    /*  font sizes  */
+    header h1 {
+        font-size: 40px;
+    }
+
+    header p,
+    h2 {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    .tech .container,
+    .events .container {
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% repeat(3, .45fr);
+        margin-top: 35px;
+        padding-bottom: 0;
+        max-height: 60vh;
+    }
+
+    main h2 {
+        font-size: 1.55rem;
+        margin-bottom: 8px;
+        font-weight: 600;
+    }
+
+}
+
+@media (max-width: 563px) {
+
+    /*  font sizes  */
+    header h1 {
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 521px) {
+
+    header article p {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 466px) {
+
+    /*  font sizes  */
+    header h1 {
+        font-size: 35px;
+    }
+
+    header article p {
+        font-size: 1.1rem;
+    }
+    header .specialties {
+        font-size: 1.1rem;
+    }
+    
+
 }
