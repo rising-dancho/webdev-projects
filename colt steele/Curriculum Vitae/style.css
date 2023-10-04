@@ -7,6 +7,7 @@
 body {
     margin: 0;
     font-family: 'Forum', serif;
+    color: #fdf9fd;
 }
 
 .container {
@@ -25,7 +26,6 @@ h2 {
 
 header {
     background-color: #f08e80;
-    color: #fdf9fd;
     height: 90vh;
     padding: 24px 32px;
 }
@@ -133,4 +133,81 @@ header article h2 {
 
 .specialties ul li {
     margin-bottom: 20px;
+}
+
+main {
+    color: #333;
+}
+
+.tech {
+    background-color: #fdf9fd;
+}
+
+.tech .container,
+.events .container {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 60px;
+    max-height: 50vh;
+}
+
+.events .container {
+    /* border: 1px solid red; */
+    padding-top: 64px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+main .container article {
+    margin-bottom: 32px;
+    /* border: 1px solid red; */
+}
+
+main h2,
+main h3 {
+    /* border: 1px solid red; */
+    font-weight: 300;
+}
+
+main h2 {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+main h3 {
+    font-size: 1.5rem;
+    margin: 8px 0;
+}
+
+main h3:first-child {
+    margin-top: 0px;
+}
+
+main p {
+    margin: 8px 0;
+}
+
+main time {
+    margin-bottom: 32px;
+}
+
+.events {
+    background-color: #FDF0E6;
+    height: 50vh;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: #111;
+    padding: 64px;
+}
+
+footer img {
+    text-align: center;
+    width: 2rem;
+    margin: 8px;
 }
