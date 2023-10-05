@@ -405,6 +405,10 @@ footer img {
 
 @media (max-width: 521px) {
 
+    .container {
+        padding: 1.25rem;
+    }
+
     header article p {
         font-size: 1.2rem;
     }
