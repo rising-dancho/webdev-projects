@@ -1,3 +1,11 @@
+:root {
+    /* texts */
+    --white-text:  #fdf9fd;
+    --coral-text: #f08e80;
+
+    /* backgrounds */
+}
+
 * {
     box-sizing: border-box;
 }
@@ -19,9 +27,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f08e80;
+    background-color: var(--coral-text);
     padding: 24px 32px;
-    color: white;
+    color:  var(--white-text);
     font-family: 'Bitter', serif;
 }
 
@@ -33,6 +41,7 @@ body {
     padding: 0;
 }
 
+/* --> Font Size */
 .navbar p {
     margin: 0;
     font-size: 2rem;
@@ -42,22 +51,22 @@ body {
 /* LVHA */
 .navbar a:link {
     text-decoration: none;
-    color: white;
+    color:  var(--white-text);
     padding: 5px;
 }
 
 .navbar a:visited {
-    color: white;
+    color:  var(--white-text);
 }
 
 .navbar a:hover {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid  var(--white-text);
 }
 
 .navbar .call-to-action {
     padding: 16px 24px;
-    background-color: white;
-    color: #f08e80;
+    background-color:  var(--white-text);
+    color: var(--coral-text);
     border: none;
 }
 
@@ -67,60 +76,29 @@ body {
 }
 
 header {
-    background-color: #f08e80;
-    height: 90vh;
+    background-color: var(--coral-text);
+    min-height: 90vh;
+    display: inline-block;
 }
 
+/* --> Font Size */
 header .tagline {
-    color: white;
+    color:  var(--white-text);
     font-size: 4.5rem;
     letter-spacing: 2px;
+    padding: 2rem 0;
 }
 
-/* --> FLOAT BASED  CODES <-- */
-
-/* header .mission,
-header .specialties {
-    font-size: 1.5rem;
+header .hero {
+    color:  var(--white-text);
 }
-
-header .mission h2,
-header .specialties h2 {
-    width: 50%;
-    float: left;
-    height: 100%;
-}
-
-header .mission p {
-    width: 50%;
-    float: right;
-    margin-top: 19.92px;
-}
-
-header .specialties .skills {
-    width: 50%;
-    float: left;
-    padding: 0;
-    list-style: none;
-    margin-top: 19.92px;
-}
-
-header .specialties .skills li {
-    width: 50%;
-    float: left;
-    font-size: 1.25rem;
-    margin: 8px 0;
-} */
-
-/* --> END <-- */
-
 
 header .mission,
 header .specialties {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
+    grid-template-rows: 1fr;
+    margin: 3rem 0;
 }
 
 header .mission h2,
@@ -131,18 +109,27 @@ header .specialties .skills {
     padding: 0;
 }
 
+/* --> Font Sizes */
+header .mission h2,
+header .specialties h2,
+header .mission p  {
+    font-size: 2rem;
+}
+
 header .specialties .skills {
     list-style: none;
 }
 
 header .specialties .skills li {
+    font-size: 1.25rem;
     margin: 8px 0;
     margin-top: 4px;
 }
 
 header .two-column-section {
-    display: flex;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 
@@ -167,5 +154,5 @@ header .two-column-section {
 
 
 main {
-    background-color: white;
+    background-color:  var(--white-text);
 }
