@@ -4,6 +4,8 @@
     --coral-text: #f08e80;
 
     /* backgrounds */
+    --cream-background: #FDF0E6; 
+    --dark-background: #111;
 }
 
 * {
@@ -21,6 +23,12 @@ body {
     /* max-width: 900px; */
     margin: 0 auto;
     padding: 0 15%;
+}
+
+.two-column-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .navbar {
@@ -126,12 +134,24 @@ header .specialties .skills li {
     margin-top: 4px;
 }
 
-header .two-column-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+
+main .techblog {
+    background-color:  var(--white-text);
 }
 
-main {
-    background-color:  var(--white-text);
+main .speaking-events{
+    background-color:  var(--cream-background);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--dark-background);
+    padding: 64px;
+    color: var(--white-text); 
+}
+
+footer img {
+    text-align: center;
+    width: 2rem;
+    margin: 8px;
 }
