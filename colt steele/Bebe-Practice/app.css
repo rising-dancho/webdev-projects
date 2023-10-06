@@ -1,10 +1,11 @@
 :root {
     /* texts */
-    --white-text:  #fdf9fd;
+    --white-text: #fdf9fd;
     --coral-text: #f08e80;
+    --grayish-text: #333;
 
     /* backgrounds */
-    --cream-background: #FDF0E6; 
+    --cream-background: #FDF0E6;
     --dark-background: #111;
 }
 
@@ -18,7 +19,7 @@ body {
     font-family: 'Forum', sans-serif;
 }
 
-/* Helper class */
+/* --> Helper class */
 .container {
     /* max-width: 900px; */
     margin: 0 auto;
@@ -31,13 +32,52 @@ body {
     grid-template-rows: 1fr;
 }
 
+/* font sizes */
+.fs-1 {
+    font-size: 1rem;
+}
+
+.fs-1-25 {
+    font-size: 1.25rem;
+}
+
+.fs-1-5 {
+    font-size: 1.5rem;
+}
+
+.fs-2 {
+    font-size: 2rem;
+}
+
+.fs-2-5 {
+    font-size: 2.5rem;
+}
+
+.fs-3 {
+    font-size: 3rem;
+}
+
+.fs-3-5 {
+    font-size: 3rem;
+}
+
+.fs-4 {
+    font-size: 4rem;
+}
+
+.fs-4-5 {
+    font-size: 4.5rem;
+}
+
+/* --> End */
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--coral-text);
     padding: 24px 32px;
-    color:  var(--white-text);
+    color: var(--white-text);
     font-family: 'Bitter', serif;
 }
 
@@ -52,28 +92,27 @@ body {
 /* --> Font Size */
 .navbar p {
     margin: 0;
-    font-size: 2rem;
     font-weight: bold;
 }
 
 /* LVHA */
 .navbar a:link {
     text-decoration: none;
-    color:  var(--white-text);
+    color: var(--white-text);
     padding: 5px;
 }
 
 .navbar a:visited {
-    color:  var(--white-text);
+    color: var(--white-text);
 }
 
 .navbar a:hover {
-    border-bottom: 1px solid  var(--white-text);
+    border-bottom: 1px solid var(--white-text);
 }
 
 .navbar .call-to-action {
     padding: 16px 24px;
-    background-color:  var(--white-text);
+    background-color: var(--white-text);
     color: var(--coral-text);
     border: none;
 }
@@ -89,16 +128,14 @@ header {
     display: inline-block;
 }
 
-/* --> Font Size */
 header .tagline {
-    color:  var(--white-text);
-    font-size: 4.5rem;
+    color: var(--white-text);
     letter-spacing: 2px;
     padding: 2rem 0;
 }
 
 header .hero {
-    color:  var(--white-text);
+    color: var(--white-text);
 }
 
 header .mission,
@@ -117,37 +154,28 @@ header .specialties .skills {
     padding: 0;
 }
 
-/* --> Font Sizes */
-header .mission h2,
-header .specialties h2,
-header .mission p  {
-    font-size: 2rem;
-}
-
 header .specialties .skills {
     list-style: none;
 }
 
 header .specialties .skills li {
-    font-size: 1.25rem;
     margin: 8px 0;
     margin-top: 4px;
 }
 
-
 main .techblog {
-    background-color:  var(--white-text);
+    background-color: var(--white-text);
 }
 
-main .speaking-events{
-    background-color:  var(--cream-background);
+main .speaking-events {
+    background-color: var(--cream-background);
 }
 
 footer {
     text-align: center;
     background-color: var(--dark-background);
     padding: 64px;
-    color: var(--white-text); 
+    color: var(--white-text);
 }
 
 footer img {
