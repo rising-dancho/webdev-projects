@@ -7,8 +7,8 @@
     --highlight-color: #38bdf8;
     --flavor-color1: #10b981;
     --flavor-color-main: #047aed;
-    --flavor-color-main-darker: #0358ab;
     --flavor-color-main-lighter: #38bdf8;
+    --flavor-color-main-darker: #227195;
 
     /* backgrounds */
     --white-background: #fdf9fd;
@@ -143,25 +143,6 @@ header nav ul {
     gap: 2rem;
 }
 
-/* LVHA */
-header nav .nav-item {
-    text-decoration: none;
-    color: var(--white-text);
-}
-
-header nav .nav-item:visited {
-    color: var(--white-text);
-}
-
-header nav .nav-item:hover {
-    padding-bottom: 9px;
-    border-bottom: 1px solid var(--white-text);
-}
-
-/* header nav .nav-item:active {
-    
-} */
-
 header nav button {
     padding: 5px 15px;
     color: var(--black-text);
@@ -172,6 +153,7 @@ header nav button {
     border: none;
     font-weight: bold;
     border-radius: var(--border-radius);
+    transition: all .2s;
 }
 
 header nav button:hover {
@@ -198,6 +180,10 @@ header .nav-social-links a:visited {
 }
 
 header .nav-social-links a:hover {
+    color: var(--gray-text);
+}
+
+header .nav-social-links a:active {
     color: var(--gray-text);
 }
 
@@ -268,6 +254,7 @@ main .portfolio button {
     font-family: var(--inter-font);
     font-weight: bold;
     border-radius: var(--border-radius);
+    transition: all .2s;
 }
 
 main .portfolio button:hover {
@@ -281,16 +268,20 @@ main .centered-section {
 /* LVHA */
 main .portfolio-link {
     text-decoration: none;
-    color: var(--flavor-color-main);
+    color: var(--flavor-color-main-lighter);
     transition: all .1s;
 }
 
 main .portfolio-link:visited {
-    color: var(--flavor-color-main-darker);
+    color: var(--flavor-color-main-lighter);
 }
 
 main .portfolio-link:hover {
-    color: var(--flavor-color-main-lighter);
+    color: var(--flavor-color-main-darker);
+}
+
+main .portfolio-link:active {
+    color: var(--flavor-color-main-darker);
 }
 
 footer {
@@ -315,6 +306,9 @@ footer a:hover {
     color: var(--gray-text);
 }
 
+footer a:active {
+    color: var(--gray-text);
+}
 
 @media (max-width:1166px) {
     .navbar {
