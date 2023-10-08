@@ -2,8 +2,8 @@
     /* texts */
     --white-text: #fdf9fd;
     --black-text: #131313;
-    --grayish-text: #333;
-    --gray-text: #d4cece;
+    --muted-text: #333;
+    --gray-text: #bdbdbd;
     --highlight-color: #38bdf8;
     --flavor-color1: #10b981;
     --flavor-color2: #2F81F7;
@@ -29,17 +29,21 @@
     margin: 0 15%;
 }
 
-/* font sizes and margins */
+/* font sizes, margins, font-families, colors */
 h1 {
-    font-size: 3rem;
-    margin-top: 0.83em;
-    margin-bottom: 0.83em;
+    font-size: 2.5rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-family: var(--play2start-font);
+    letter-spacing: 1px;
 }
 
 h2 {
-    font-size: 2rem;
-    margin-top: 0.83em;
-    margin-bottom: 0.83em;
+    font-size: 1.35rem;
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+    font-family: var(--play2start-font);
+    letter-spacing: 1px;
 }
 
 body {
@@ -48,6 +52,11 @@ body {
 
 header .logo-name {
     font-size: 1.125rem;
+}
+
+main .fun-facts ul,
+main .portfolio p {
+    color: var(--gray-text);
 }
 
 main .portfolio button {
@@ -195,6 +204,7 @@ header .nav-social-links .fa-message {
     font-size: 1.5rem;
 }
 
+
 main .hero-section {
     display: flex;
     justify-content: center;
@@ -208,7 +218,7 @@ main .hero-section img {
     width: 180px;
     height: 180px;
     object-fit: cover;
-    border: 1px solid var(--grayish-text);
+    border: 1px solid var(--muted-text);
     /* border-radius: var(--border-radius); */
     /* border-radius: 50%; */
 }
@@ -313,10 +323,10 @@ footer {
     .navbar .nav-social-links {
         display: flex;
         align-items: center;
-        justify-content:center;
+        justify-content: center;
         height: 100%;
         width: max-content;
-        gap:10px;
+        gap: 10px;
         padding: 5px 10px;
         border-radius: var(--border-radius);
     }
@@ -357,7 +367,7 @@ footer {
 }
 
 @media (max-width:610px) {
-    main .hero-section img{
+    main .hero-section img {
         width: 250px;
         height: 250px;
     }
@@ -374,14 +384,14 @@ footer {
 
 @media (max-width:426px) {
     header .nav-social-links span {
-        display:none;
+        display: none;
     }
 
     header .nav-social-links .fa-message {
         display: none;
     }
 
-    main .hero-section img{
+    main .hero-section img {
         width: 180px;
         height: 180px;
     }
