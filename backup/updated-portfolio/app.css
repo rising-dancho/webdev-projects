@@ -318,7 +318,6 @@ footer {
         width: max-content;
         gap:10px;
         padding: 5px 10px;
-        background-color: rgba(56, 189, 248, 0.09);
         border-radius: var(--border-radius);
     }
 
