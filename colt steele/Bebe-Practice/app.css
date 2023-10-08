@@ -3,6 +3,7 @@
     --white-text: #fdf9fd;
     --coral-text: #f08e80;
     --grayish-text: #333;
+    --gray-text: #808080;
 
     /* backgrounds */
     --cream-background: #FDF0E6;
@@ -17,6 +18,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Forum', sans-serif;
+
+}
+
+h2,
+h3 {
+    font-weight: 300;
 }
 
 /* --> Helper class */
@@ -77,6 +84,7 @@ body {
     align-items: center;
     background-color: var(--coral-text);
     padding: 24px 32px;
+    padding-bottom: 0;
     color: var(--white-text);
     font-family: 'Bitter', serif;
 }
@@ -89,7 +97,15 @@ body {
     padding: 0;
 }
 
-/* --> Font Size */
+.navbar ul li:nth-child(3) {
+    display: none;
+}
+
+/* hide extra nav links */
+.navbar ul li:last-child {
+    display: none;
+}
+
 .navbar p {
     margin: 0;
     font-weight: bold;
@@ -115,6 +131,8 @@ body {
     background-color: var(--white-text);
     color: var(--coral-text);
     border: none;
+    font-family: 'Forum', sans-serif;
+    font-weight: bold;
 }
 
 .navbar .call-to-action:hover {
@@ -165,10 +183,22 @@ header .specialties .skills li {
 
 main .techblog {
     background-color: var(--white-text);
+    padding-top: .1em;
+    padding-bottom: 3.5rem;
+    color: var(--grayish-text);
 }
 
 main .speaking-events {
     background-color: var(--cream-background);
+    padding-top: .1em;
+    padding-bottom: 3.5rem;
+    color: var(--grayish-text);
+}
+
+main .techblog .blog-date,
+main .speaking-events .event-date {
+    font-size: 0.9rem;
+    color: var(--gray-text);
 }
 
 footer {
@@ -182,4 +212,71 @@ footer img {
     text-align: center;
     width: 2rem;
     margin: 8px;
+}
+
+@media (max-width:971px) {
+    .two-column-section {
+        display: block;
+    }
+
+    .two-column-section ul:first-child li:last-child {
+        margin-bottom: 1.25rem;
+    }
+}
+
+@media (max-width:543px) {
+
+    header .mission,
+    header .specialties {
+        display: block;
+    }
+
+    header .mission h2,
+    header .specialties h2 {
+        margin: 0.83em 0;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar .logo {
+        order: -1;
+    }
+
+    .navbar ul {
+        margin: 1.2rem 0;
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 5px;
+    }
+
+    /* show and extra nav links */
+    .navbar ul li:nth-child(2) {
+        display: none;
+    }
+
+    .navbar ul li:nth-child(3) {
+        display: block;
+    }
+
+    .navbar ul li:last-child {
+        display: block;
+    }
+
+    .navbar button {
+        display: none;
+    }
+
+    header .tagline {
+        font-size: 3.25rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    header .mission p {
+        font-size: 1.25rem;
+        padding: 0;
+        margin: 0;
+    }
 }
