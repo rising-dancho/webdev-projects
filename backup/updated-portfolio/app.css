@@ -2,18 +2,20 @@
     /* texts */
     --white-text: #fdf9fd;
     --black-text: #131313;
-    --muted-text: #333;
+    --muted-text: #ffffff4d;
     --gray-text: #bdbdbd;
     --highlight-color: #38bdf8;
     --flavor-color1: #10b981;
-    --flavor-color2: #2F81F7;
-    --flavor-color2-darker: #3b82f6;
+    --flavor-color-main: #047aed;
+    --flavor-color-main-darker: #0358ab;
+    --flavor-color-main-lighter: #38bdf8;
 
     /* backgrounds */
     --white-background: #fdf9fd;
     --white-background-darker: #4d4d4d;
     --dark-background: #131313;
     --gray-background: #222222;
+    --gray-border: #333;
 
     /* font-family */
     --play2start-font: "Press Start 2P", sans-serif;
@@ -218,13 +220,13 @@ main .hero-section img {
     width: 180px;
     height: 180px;
     object-fit: cover;
-    border: 1px solid var(--muted-text);
+    border: 1px solid var(--gray-border);
     /* border-radius: var(--border-radius); */
     /* border-radius: 50%; */
 }
 
 main .hero-section h1 span {
-    color: var(--flavor-color2);
+    color: var(--flavor-color-main);
 }
 
 main .fun-facts ul,
@@ -272,32 +274,45 @@ main .portfolio button:hover {
     color: var(--flavor-color1);
 }
 
+main .centered-section {
+    margin: 0 22%;
+}
+
 /* LVHA */
 main .portfolio-link {
     text-decoration: none;
-    color: var(--flavor-color2);
+    color: var(--flavor-color-main);
+    transition: all .1s;
 }
 
 main .portfolio-link:visited {
-    color: var(--flavor-color2-darker);
+    color: var(--flavor-color-main-darker);
 }
 
-/* main .portfolio-link:hover {
-   
-} */
-
-/* main .portfolio-link:active {
-    
-} */
-
-main .centered-section {
-    margin: 0 22%;
+main .portfolio-link:hover {
+    color: var(--flavor-color-main-lighter);
 }
 
 footer {
     text-align: center;
     padding: 40px;
     font-size: 1rem;
+    color: var(--muted-text);
+}
+
+/* LVHA */
+footer a {
+    text-decoration: none;
+    color: var(--muted-text);
+    transition: all .2s;
+}
+
+footer a:visited {
+    color: var(--muted-text);
+}
+
+footer a:hover {
+    color: var(--gray-text);
 }
 
 
