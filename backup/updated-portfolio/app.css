@@ -5,19 +5,22 @@
     --grayish-text: #333;
     --gray-text: #d4cece;
     --highlight-color: #38bdf8;
-    --highlight-color: rgb(56, 189, 248);
-    --flavor-color1: #fe5186;
+    --flavor-color1: #10b981;
     --flavor-color2: #2F81F7;
     --flavor-color2-darker: #3b82f6;
 
     /* backgrounds */
     --white-background: #fdf9fd;
+    --white-background-darker: #4d4d4d;
     --dark-background: #131313;
     --gray-background: #222222;
 
     /* font-family */
     --play2start-font: "Press Start 2P", sans-serif;
     --inter-font: Inter, sans-serif;
+
+    /* border radius */
+    --border-radius: 3px;
 }
 
 /* helper class */
@@ -149,19 +152,26 @@ header nav .nav-item:hover {
 } */
 
 header nav button {
-    padding: 10px 20px;
-    border-radius: 6px;
+    padding: 5px 15px;
     color: var(--black-text);
     background-color: var(--white-background);
-    font-family: var(--play2start-font);
-    font-size: 1.125rem;
+    font-family: var(--inter-font);
+    font-size: 1rem;
     cursor: pointer;
-    transition: all .2s;
     border: none;
+    font-weight: bold;
+    border-radius: var(--border-radius);
 }
 
 header nav button:hover {
-    transform: scale(1.04);
+    color: var(--flavor-color1);
+}
+
+header .nav-social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 /* LVHA */
@@ -198,8 +208,9 @@ main .hero-section img {
     width: 180px;
     height: 180px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid var(--white-background);
+    border: 1px solid var(--grayish-text);
+    /* border-radius: var(--border-radius); */
+    /* border-radius: 50%; */
 }
 
 main .hero-section h1 span {
@@ -228,6 +239,7 @@ main .portfolio input {
     border-color: var(--white-background);
     color: var(--white-background);
     background: none;
+    border-radius: var(--border-radius);
 }
 
 main .portfolio button {
@@ -243,6 +255,11 @@ main .portfolio button {
     width: 160px;
     font-family: var(--inter-font);
     font-weight: bold;
+    border-radius: var(--border-radius);
+}
+
+main .portfolio button:hover {
+    color: var(--flavor-color1);
 }
 
 /* LVHA */
@@ -270,6 +287,7 @@ main .centered-section {
 footer {
     text-align: center;
     padding: 40px;
+    font-size: 1rem;
 }
 
 
@@ -283,10 +301,25 @@ footer {
         padding: 1.5rem;
     }
 
+    header .nav-social-links .fa-message {
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+
+    header .nav-social-links button {
+        display: none;
+    }
+
     .navbar .nav-social-links {
-        background-color: rgba(56, 189, 248, 0.07);
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        height: 100%;
+        width: max-content;
+        gap:10px;
         padding: 5px 10px;
-        border-radius: 4px;
+        background-color: rgba(56, 189, 248, 0.09);
+        border-radius: var(--border-radius);
     }
 
     main .hero-section {
@@ -314,19 +347,12 @@ footer {
 }
 
 
-@media (max-width:650px) {
-    header .nav-social-links .fa-message {
-        display: inline-block;
-        font-size: 1.5rem;
-    }
-
-    header .nav-social-links button {
-        display: none;
-    }
-}
-
 @media (max-width:620px) {
     body {
+        font-size: 1.1rem;
+    }
+
+    main .portfolio p {
         font-size: 1.1rem;
     }
 }
@@ -347,7 +373,7 @@ footer {
 
 }
 
-@media (max-width:400px) {
+@media (max-width:426px) {
     header .nav-social-links span {
         display:none;
     }
