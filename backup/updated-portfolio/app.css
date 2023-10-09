@@ -10,10 +10,10 @@
     /* alerts */
     --new-color: #10b981;
     --archived-color: #fdf9fd;
-    
+
     /* scroll bar */
     --lighter-color-scollbar: #A9A9A9;
-    --darker-color-scrollbar:#717171;
+    --darker-color-scrollbar: #717171;
 
     /* backgrounds */
     --white-background: #fdf9fd;
@@ -56,11 +56,11 @@
 
 ::-webkit-scrollbar-thumb:active {
     background-color: var(--darker-color-scrollbar);
- }
+}
 
- ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background-color: var(--darker-color-scrollbar);
- }
+}
 
 ::-webkit-scrollbar-button {
     height: 10px;
@@ -70,12 +70,12 @@
 /* helper class */
 .container {
     max-width: 1450px;
-    margin: 0 15%;
+    margin: 0 20%;
 }
 
 .container-large {
-    max-width: 1650px;
-    margin: 0 15%;
+    max-width: 1450px;
+    margin: 0 20%;
 }
 
 /* font sizes, margins, font-families, colors */
@@ -95,7 +95,8 @@ h2 {
     letter-spacing: 1px;
 }
 
-h3 {
+main .portfolio .new,
+main .portfolio .archived {
     font-size: 1.5rem;
     margin-top: .1em;
     margin-bottom: .1em;
@@ -133,7 +134,7 @@ main .contact button {
     font-weight: 700;
 }
 
-/* --> end */
+/* --> section end <-- */
 
 * {
     margin: 0;
@@ -156,7 +157,8 @@ header {
 }
 
 header nav {
-    padding: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 
 header .logo-name {
@@ -246,7 +248,6 @@ header .nav-social-links .fa-message {
     font-size: 1.5rem;
 }
 
-
 main .hero-section {
     display: flex;
     justify-content: center;
@@ -271,7 +272,7 @@ main .hero-section h1 span {
 
 main .fun-facts ul,
 main .portfolio ul,
-main .section-left-margin{
+main .section-left-margin {
     list-style: none;
     margin-left: 1rem;
 }
@@ -320,7 +321,7 @@ main .portfolio-link:visited {
     color: var(--lesser-white-text);
 }
 
-main .portfolio-link:hover {  
+main .portfolio-link:hover {
     color: var(--new-color);
 }
 
@@ -349,8 +350,6 @@ main .portfolio-link-archived:hover {
 main .portfolio-link-archived:active {
     color: var(--lesser-white-text);
 }
-
-
 
 main .contact input,
 main .contact textarea,
@@ -456,7 +455,7 @@ footer a:active {
 
 }
 
-@media (max-width:1166px) {
+@media (max-width:1394px) {
     .navbar {
         display: flex;
         flex-direction: column;
@@ -492,28 +491,27 @@ footer a:active {
         font-size: 1.75rem;
     }
 
-    main .portfolio button {
+    main .contact button {
         width: 100%;
     }
 
-    main .centered-section {
-        margin: 0 auto;
-    }
-
     .container {
-        max-width: 1650px;
-        margin: 0 5%;
+        margin: 0;
     }
-}
 
+    .container-large {
+        margin: 0;
+    }
+
+}
 
 @media (max-width:620px) {
     body {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     main .portfolio p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -525,7 +523,28 @@ footer a:active {
 
 }
 
-@media (max-width:426px) {
+@media (max-width:540px) {
+
+    main .portfolio .links-container-new,
+    main .portfolio .links-container-archived {
+        display: block;
+    }
+
+    main .portfolio .links-container-new li,
+    main .portfolio .links-container-archived li {
+        margin-bottom: 1.01rem;
+    }
+
+    main h2 {
+        font-size: 1rem;
+    }
+
+    main .centered-section {
+        margin: 0 15%;
+    }
+}
+
+@media (max-width:495px) {
     header .nav-social-links span {
         display: none;
     }
@@ -551,6 +570,19 @@ footer a:active {
 
     main .portfolio p {
         display: block;
+    }
+
+}
+
+@media (max-width:400px) {
+    main .centered-section {
+        margin: 0 13.5%;
+    }
+}
+
+@media (max-width:378px) {
+    main .hero-section h1 {
+        font-size: 1.153rem;
     }
 
 }
