@@ -384,9 +384,8 @@ main .contact input,
 main .contact textarea,
 main .contact select {
     background: transparent;
-    /* color: #FFA86A; */
     color: var(--white-text);
-    border: 1px solid var(--gray-text);
+    border: 1px solid var(--white-background);
     border-radius: 0;
     padding: 10px;
     margin: 5px 0;
@@ -394,7 +393,6 @@ main .contact select {
     font: inherit;
     appearance: none;
     border-radius: var(--border-radius);
-    transition: all .8s;
 }
 
 main .contact input:focus,
@@ -403,8 +401,8 @@ main .contact textarea:focus,
 main .contact textarea :active,
 main .contact select:focus,
 main .contact select :active {
-    border-color: var(--white-background);
-    outline: 1px solid var(--white-background);
+    border-color: var(--highlight-color);
+    outline: 1px solid var(--highlight-color);
 }
 
 main .contact button {
@@ -427,7 +425,7 @@ main .contact p {
 }
 
 main .contact button:hover {
-    color: var(--highlight-color);
+    color: var(--new-color);
 }
 
 footer {
