@@ -89,7 +89,7 @@ h1 {
 
 h2 {
     font-size: 1.35rem;
-    margin-top: 2.5em;
+    margin-top: 0.83em;
     margin-bottom: 1.5em;
     font-family: var(--play2start-font);
     letter-spacing: 1px;
@@ -258,12 +258,21 @@ main .hero-section {
 }
 
 main .hero-section img {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border: 1px solid var(--gray-border);
-    /* border-radius: var(--border-radius); */
+    border-radius: var(--border-radius);
     border-radius: 50%;
+}
+
+.grayscale {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.grayscale:hover {
+    filter: grayscale(0%);
 }
 
 main .hero-section h1 span {
@@ -530,8 +539,8 @@ footer a:active {
         width: 100%;
     }
 
-      /* helper class */
-      .container {
+    /* helper class */
+    .container {
         max-width: 1450px;
         margin: 0 10%;
     }
