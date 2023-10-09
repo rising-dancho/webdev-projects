@@ -195,7 +195,7 @@ main .hero-section img {
     object-fit: cover;
     border: 1px solid var(--gray-border);
     /* border-radius: var(--border-radius); */
-    /* border-radius: 50%; */
+    border-radius: 50%;
 }
 
 main .hero-section h1 span {
