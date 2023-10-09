@@ -455,28 +455,6 @@ footer a:active {
     color: var(--gray-text);
 }
 
-@media (max-width:1753px) {
-    main .hero-section {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-    }
-
-    main .hero-section img {
-        width: 230px;
-        height: 230px;
-        margin: 0;
-    }
-
-    h1 {
-        margin-top: .01em;
-        margin-bottom: .25em;
-        letter-spacing: -1px;
-        line-height: 1.5;
-    }
-}
-
 @media (max-width:1645px) {
 
     main .centered-section {
@@ -502,8 +480,6 @@ footer a:active {
         letter-spacing: -1px;
         line-height: 1.5;
     }
-
-
 }
 
 @media (max-width:1449px) {
@@ -573,6 +549,36 @@ footer a:active {
     .navbar {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media (max-width:840px) {
+    main .hero-section img {
+        width: 200px;
+        height: 200px;
+        margin: 0;
+    }
+}
+
+@media (max-width:732px) {
+    main .hero-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    main .hero-section img {
+        width: 230px;
+        height: 230px;
+        margin: 0;
+    }
+
+    h1 {
+        margin-top: .01em;
+        margin-bottom: .25em;
+        letter-spacing: -1px;
+        line-height: 1.5;
     }
 }
 
