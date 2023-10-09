@@ -119,9 +119,9 @@ header .logo-name {
 }
 
 header .nav-social-links span {
-    font-size: 1rem;
-    color: var(--muted-text);
-    font-family: var(--mukta-font);
+    width: 2.5px;
+    background-color: var(--muted-text);
+    height: 24px;
 }
 
 main .fun-facts ul,
