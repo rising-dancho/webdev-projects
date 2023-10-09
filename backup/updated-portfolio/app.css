@@ -204,24 +204,11 @@ header nav {
     font-family: var(--play2start-font);
 }
 
-header nav section {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 2rem;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-}
-
 header .nav-social-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1.5rem;
 }
 
 /* LVHA */
