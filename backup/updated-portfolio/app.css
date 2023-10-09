@@ -1,6 +1,7 @@
 :root {
     /* texts */
     --white-text: #fdf9fd;
+    --lesser-white-text: #d8d7d8;
     --black-text: #131313;
     --muted-text: #ffffff4d;
     --gray-text: #bdbdbd;
@@ -311,21 +312,45 @@ main .portfolio .links-container-archived {
 /* LVHA */
 main .portfolio-link {
     text-decoration: none;
-    color: var(--highlight-color);
+    color: var(--lesser-white-text);
     transition: all .1s;
 }
 
 main .portfolio-link:visited {
-    color: var(--highlight-color);
+    color: var(--lesser-white-text);
 }
 
-main .portfolio-link:hover {
-    color: var(--white-text);
+main .portfolio-link:hover {  
+    color: var(--new-color);
 }
 
 main .portfolio-link:active {
-    color: var(--white-text);
+    color: var(--new-color);
 }
+
+/* archived links */
+main .portfolio-link-archived {
+    color: var(--muted-text);
+    transition: all .1s;
+    text-decoration: none;
+}
+
+main .portfolio-link-archived:visited {
+    color: var(--muted-text);
+}
+
+
+main .portfolio-link-archived:hover {
+    color: var(--lesser-white-text);
+    transition: all .1s;
+    text-decoration: none;
+}
+
+main .portfolio-link-archived:active {
+    color: var(--lesser-white-text);
+}
+
+
 
 main .contact input,
 main .contact textarea,
