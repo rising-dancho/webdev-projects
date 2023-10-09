@@ -5,6 +5,10 @@
     --muted-text: #ffffff4d;
     --gray-text: #bdbdbd;
     --highlight-color: #449DF5;
+
+    /* alerts */
+    --new-color: #10b981;
+    --archived-color: #fdf9fd;
     
     /* scroll bar */
     --lighter-color-scollbar: #A9A9A9;
@@ -20,13 +24,13 @@
 
     /* font-family */
     --play2start-font: "Press Start 2P", sans-serif;
-    --inter-font: Inter, sans-serif;
+    --mukta-font: 'Mukta', sans-serif;
 
     /* border radius */
     --border-radius: 3px;
 }
 
-/* custom text selection */
+/* custom texnew section-left-margt selection */
 ::selection {
     background-color: var(--highlight-color);
     /* Background color of the selection */
@@ -90,6 +94,20 @@ h2 {
     letter-spacing: 1px;
 }
 
+h3 {
+    font-size: 1.5rem;
+    margin-top: .1em;
+    margin-bottom: .1em;
+    font-family: var(--mukta-font);
+    letter-spacing: 1px;
+    color: var(--new-color);
+    font-weight: 700;
+}
+
+main .portfolio .archived {
+    color: var(--archived-color);
+}
+
 body {
     font-size: 1.25rem;
 }
@@ -101,7 +119,7 @@ header .logo-name {
 header .nav-social-links span {
     font-size: 1rem;
     color: var(--muted-text);
-    font-family: var(--inter-font);
+    font-family: var(--mukta-font);
 }
 
 main .fun-facts ul,
@@ -109,8 +127,9 @@ main .portfolio p {
     color: var(--gray-text);
 }
 
-main .portfolio button {
-    font-size: 1rem;
+main .contact button {
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 /* --> end */
@@ -251,7 +270,7 @@ main .hero-section h1 span {
 
 main .fun-facts ul,
 main .portfolio ul,
-main .section-left-margin {
+main .section-left-margin{
     list-style: none;
     margin-left: 1rem;
 }
@@ -278,6 +297,17 @@ main .centered-section {
     margin: 0 22%;
 }
 
+main .portfolio .links-container-new,
+main .portfolio .links-container-archived {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+}
+
+main .portfolio .links-container-archived {
+    margin-bottom: 0;
+}
+
 /* LVHA */
 main .portfolio-link {
     text-decoration: none;
@@ -297,31 +327,9 @@ main .portfolio-link:active {
     color: var(--white-text);
 }
 
-main .portfolio button {
-    padding: 5px 10px;
-    border: none;
-    background: var(--white-background);
-    color: var(--black-text);
-    font-weight: bold;
-    box-sizing: border-box;
-    display: block;
-    margin: 8px 0;
-    cursor: pointer;
-    width: 160px;
-    font-family: var(--inter-font);
-    font-weight: bold;
-    border-radius: var(--border-radius);
-    transition: all .2s;
-    border: 1px solid var(--white-background);
-}
-
-main .portfolio button:hover {
-    color: var(--highlight-color);
-}
-
-main .portfolio input,
-main .portfolio textarea,
-main .portfolio select {
+main .contact input,
+main .contact textarea,
+main .contact select {
     background: transparent;
     /* color: #FFA86A; */
     color: var(--white-text);
@@ -336,14 +344,41 @@ main .portfolio select {
     transition: all .8s;
 }
 
-main .portfolio input:focus,
-main .portfolio input :active,
-main .portfolio textarea:focus,
-main .portfolio textarea :active,
-main .portfolio select:focus,
-main .portfolio select :active {
+main .contact input:focus,
+main .contact input :active,
+main .contact textarea:focus,
+main .contact textarea :active,
+main .contact select:focus,
+main .contact select :active {
     border-color: var(--white-background);
     outline: 1px solid var(--white-background);
+}
+
+main .contact button {
+    padding: 5px 10px;
+    border: none;
+    background: var(--white-background);
+    color: var(--black-text);
+    font-weight: bold;
+    box-sizing: border-box;
+    display: block;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 160px;
+    font-family: var(--mukta-font);
+    font-weight: bold;
+    border-radius: var(--border-radius);
+    transition: all .2s;
+    border: 1px solid var(--white-background);
+}
+
+main .contact p {
+    font-weight: 700;
+    color: var(--gray-text);
+}
+
+main .contact button:hover {
+    color: var(--highlight-color);
 }
 
 footer {
