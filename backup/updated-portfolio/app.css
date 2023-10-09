@@ -302,6 +302,7 @@ main .portfolio select :active {
 footer {
     text-align: center;
     padding: 40px;
+    /* padding-top: 25px; */
     font-size: 1rem;
     color: var(--muted-text);
 }
@@ -325,6 +326,29 @@ footer a:active {
     color: var(--gray-text);
 }
 
+@media (max-width:1503px) {
+    main .hero-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    main .hero-section img {
+        width: 230px;
+        height: 230px;
+        margin: 0;
+    }
+
+    h1 {
+        margin-top: .01em;
+        margin-bottom: .25em;
+        letter-spacing: -1px;
+        line-height: 1.5;
+    }
+
+}
+
 @media (max-width:1166px) {
     .navbar {
         display: flex;
@@ -334,6 +358,8 @@ footer a:active {
     h1 {
         margin-top: 1em;
         margin-bottom: .5em;
+        letter-spacing: -1px;
+        line-height: 1.5;
     }
 
     .navbar .logo-section {
@@ -351,16 +377,7 @@ footer a:active {
         border-radius: var(--border-radius);
     }
 
-    main .hero-section {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    main .hero-section img {
-        width: 210px;
-        height: 210px;
-    }
+   
 
     main .hero-section h1 {
         font-size: 1.75rem;
@@ -370,7 +387,16 @@ footer a:active {
         font-size: 1.75rem;
     }
 
+    main .portfolio button {
+        width: 100%;
+    }
+
     main .centered-section {
+        margin: 0 auto;
+    }
+
+    .container {
+        max-width: 1650px;
         margin: 0 5%;
     }
 }
@@ -409,7 +435,13 @@ footer a:active {
     }
 
     main .hero-section h1 {
-        font-size: 1.55rem;
+        font-size: 1.35rem;
+        letter-spacing: -1px;
+        line-height: 1.5;
+    }
+
+    main h2 {
+        font-size: 1.1rem;
     }
 
     main .portfolio p {
