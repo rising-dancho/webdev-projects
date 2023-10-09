@@ -53,6 +53,10 @@ h2 {
     letter-spacing: 1px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 1.25rem;
 }
@@ -296,7 +300,7 @@ main .portfolio textarea :active,
 main .portfolio select:focus,
 main .portfolio select :active {
     border-color: var(--white-background);
-    outline: 1px solid  var(--white-background);
+    outline: 1px solid var(--white-background);
 }
 
 footer {
@@ -376,8 +380,6 @@ footer a:active {
         padding: 5px 10px;
         border-radius: var(--border-radius);
     }
-
-   
 
     main .hero-section h1 {
         font-size: 1.75rem;
