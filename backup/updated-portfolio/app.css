@@ -425,7 +425,7 @@ main .contact p {
 }
 
 main .contact button:hover {
-    color: var(--new-color);
+    color: var(--highlight-color);
 }
 
 footer {
