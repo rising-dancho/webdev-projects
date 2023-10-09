@@ -85,7 +85,8 @@
                 <ul style="margin-left: 35px;" class="links-container-archived">
                     <p>Coding artists:</p>
                     <li>
-                        <a class="portfolio-link-archived" href="https://coding-artists.netlify.app/" target="_blank">view
+                        <a class="portfolio-link-archived" href="https://coding-artists.netlify.app/"
+                            target="_blank">view
                             demo</a>
                     </li>
                     <p>Bethany's pie shop:</p>
@@ -105,8 +106,9 @@
             <section class="contact">
                 <h2>Contact:</h2>
                 <div class="contact-form section-left-margin">
-                    <form action="https://formsubmit.co/josealejoperezjr@gmail.com" method="POST"
-                        name="submit-to-google-sheet">
+                    <!-- <form name="submit-to-google-sheet"> -->
+                    <form action="https://formsubmit.co/josealejoperezjr@gmail.com"
+                        method="POST">
                         <p>Name:</p>
                         <input type="text" name="Name" required>
                         <p>Email:</p>
@@ -115,7 +117,7 @@
                         <textarea name="Message" rows="6" required></textarea>
                         <button type="submit">Submit</button>
                     </form>
-                    <span id="msg"></span>
+                    <!-- <span id="msg"></span> -->
                 </div>
             </section>
         </div>
@@ -124,6 +126,25 @@
     <footer id="bottom">
         <p>Made with ❤️ © 2023 <a href="https://github.com/rising-dancho" target="_blank">rising.dancho</a> </p>
     </footer>
+    <!-- form-to-google-sheets: https://github.com/jamiewilson/form-to-google-sheets -->
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxO4ovTct20fpGRe96iUJ_z87GWrCa0jbkeDAR1ZZ3WtZ7d9HygIBdCC87F9LKRMVFGeg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script> -->
 </body>
 
 </html>
