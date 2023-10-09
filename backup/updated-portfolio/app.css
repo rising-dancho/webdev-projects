@@ -296,7 +296,7 @@ main .portfolio input {
 }
 
 main .centered-section {
-    margin: 0 22%;
+    margin: 0 15%;
 }
 
 main .portfolio .links-container-new,
@@ -432,7 +432,7 @@ footer a:active {
     color: var(--gray-text);
 }
 
-@media (max-width:1503px) {
+@media (max-width:1753px) {
     main .hero-section {
         display: flex;
         flex-direction: column;
@@ -452,14 +452,49 @@ footer a:active {
         letter-spacing: -1px;
         line-height: 1.5;
     }
+}
+
+@media (max-width:1645px) {
+
+    main .centered-section {
+        margin: 0 13%;
+    }
+}
+
+@media (max-width:1556px) {
+
+    main .centered-section {
+        margin: 0 10%;
+    }
+}
+
+@media (max-width:1503px) {
+    main .hero-section img {
+        width: 230px;
+        height: 230px;
+        margin: 0;
+    }
+
+    h1 {
+        margin-top: .01em;
+        margin-bottom: .25em;
+        letter-spacing: -1px;
+        line-height: 1.5;
+    }
+
 
 }
 
-@media (max-width:1394px) {
-    .navbar {
-        display: flex;
-        flex-direction: column;
+@media (max-width:1449px) {
+
+    main .centered-section {
+        margin: 0 8%;
     }
+}
+
+
+@media (max-width:1394px) {
+
 
     h1 {
         margin-top: 1em;
@@ -484,7 +519,7 @@ footer a:active {
     }
 
     main .hero-section h1 {
-        font-size: 1.75rem;
+        font-size: 2.1rem;
     }
 
     main .hero-section h2 {
@@ -495,14 +530,37 @@ footer a:active {
         width: 100%;
     }
 
-    .container {
-        margin: 0;
+      /* helper class */
+      .container {
+        max-width: 1450px;
+        margin: 0 10%;
     }
 
     .container-large {
-        margin: 0;
+        max-width: 1450px;
+        margin: 0 10%;
     }
 
+}
+
+@media (max-width:1040px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .centered-section {
+        margin: 0 5%;
+    }
+
+}
+
+@media (max-width:920px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width:620px) {
@@ -535,12 +593,28 @@ footer a:active {
         margin-bottom: 1.01rem;
     }
 
+    main .portfolio .links-container-new a {
+        margin-bottom: 1.01rem;
+        color: #10b981;
+    }
+
     main h2 {
         font-size: 1rem;
     }
 
     main .centered-section {
-        margin: 0 15%;
+        margin: 0 10%;
+    }
+
+    /* helper class */
+    .container {
+        max-width: 1450px;
+        margin: 0 5%;
+    }
+
+    .container-large {
+        max-width: 1450px;
+        margin: 0 5%;
     }
 }
 
@@ -551,11 +625,6 @@ footer a:active {
 
     header .nav-social-links .fa-message {
         display: none;
-    }
-
-    main .hero-section img {
-        width: 180px;
-        height: 180px;
     }
 
     main .hero-section h1 {
@@ -572,11 +641,37 @@ footer a:active {
         display: block;
     }
 
+    main .centered-section {
+        margin: 0 5%;
+    }
+
+    /* helper class */
+    .container {
+        max-width: 1450px;
+        margin: 0 5%;
+    }
+
+    .container-large {
+        max-width: 1450px;
+        margin: 0 5%;
+    }
+
 }
 
 @media (max-width:400px) {
     main .centered-section {
-        margin: 0 13.5%;
+        margin: 0 5%;
+    }
+
+    /* helper class */
+    .container {
+        max-width: 1450px;
+        margin: 0 5%;
+    }
+
+    .container-large {
+        max-width: 1450px;
+        margin: 0 5%;
     }
 }
 
@@ -585,4 +680,21 @@ footer a:active {
         font-size: 1.153rem;
     }
 
+}
+
+@media (max-width:330px) {
+    main .centered-section {
+        margin: 0 4%;
+    }
+
+    /* helper class */
+    .container {
+        max-width: 1450px;
+        margin: 0 4%;
+    }
+
+    .container-large {
+        max-width: 1450px;
+        margin: 0 4%;
+    }
 }
