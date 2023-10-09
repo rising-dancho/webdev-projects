@@ -25,7 +25,7 @@
 
     /* font-family */
     --play2start-font: "Press Start 2P", sans-serif;
-    --mukta-font: 'Mukta', sans-serif;
+    --open-sans-font: 'Open Sans', sans-serif;
 
     /* border radius */
     --border-radius: 3px;
@@ -78,32 +78,44 @@
     margin: 0 20%;
 }
 
-/* font sizes, margins, font-families, colors */
+/* Font-sizes, Margins, Font-families, Font-weights */
+
+/* --> margins */
 h1 {
-    font-size: 2.5rem;
     margin-top: 2.5em;
     margin-bottom: 2.5em;
-    font-family: var(--play2start-font);
+}
+
+h3,
+h2,
+h4,
+h5,
+h6 {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+h3 {
+    margin-top: 1em;
+    margin-bottom: 0.3em;
+}
+
+/* --> font-sizes */
+h1 {
+    font-size: 2.5rem;
     letter-spacing: 1px;
 }
 
 h2 {
     font-size: 1.35rem;
-    margin-top: 0.83em;
-    margin-bottom: 1.5em;
-    font-family: var(--play2start-font);
     letter-spacing: 1px;
 }
 
 main .portfolio .new,
 main .portfolio .archived {
     font-size: 1.5rem;
-    margin-top: .1em;
-    margin-bottom: .1em;
-    font-family: var(--mukta-font);
     letter-spacing: 1px;
     color: var(--new-color);
-    font-weight: 700;
 }
 
 main .portfolio .archived {
@@ -131,10 +143,34 @@ main .portfolio p {
 
 main .contact button {
     font-size: 1.1rem;
+}
+
+/* --> font-families */
+body,
+button {
+    font-family: var(--open-sans-font);
+}
+
+h1,
+h2,
+.logo-name {
+    font-family: var(--play2start-font);
+}
+
+/* --> font-weights */
+main .contact p
+main .portfolio .new,
+main .portfolio .archived,
+main .contact button {
     font-weight: 700;
 }
 
-/* --> section end <-- */
+body,
+p {
+    font-weight: 400;
+}
+
+/* section end */
 
 * {
     margin: 0;
@@ -147,7 +183,6 @@ html {
 }
 
 body {
-    font-family: Inter, sans-serif;
     background-color: var(--dark-background);
     color: var(--white-text);
 }
@@ -201,7 +236,6 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: var(--play2start-font);
 }
 
 header .nav-social-links {
@@ -240,7 +274,6 @@ main .hero-section {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    font-family: var(--play2start-font);
     margin: 25px auto;
 }
 
@@ -253,14 +286,14 @@ main .hero-section img {
     border-radius: 50%;
 }
 
-.grayscale {
+/* .grayscale {
     filter: grayscale(100%);
     transition: filter 0.5s ease;
 }
 
 .grayscale:hover {
     filter: grayscale(0%);
-}
+} */
 
 main .hero-section h1 span {
     color: var(--highlight-color);
@@ -379,21 +412,17 @@ main .contact button {
     border: none;
     background: var(--white-background);
     color: var(--black-text);
-    font-weight: bold;
     box-sizing: border-box;
     display: block;
     margin: 8px 0;
     cursor: pointer;
     width: 160px;
-    font-family: var(--mukta-font);
-    font-weight: bold;
     border-radius: var(--border-radius);
     transition: all .2s;
     border: 1px solid var(--white-background);
 }
 
 main .contact p {
-    font-weight: 700;
     color: var(--gray-text);
 }
 
@@ -472,8 +501,6 @@ footer a:active {
     }
 
     h1 {
-        margin-top: .01em;
-        margin-bottom: .25em;
         letter-spacing: -1px;
         line-height: 1.5;
     }
@@ -490,14 +517,6 @@ footer a:active {
 
 
 @media (max-width:1394px) {
-
-
-    h1 {
-        margin-top: 1em;
-        margin-bottom: .5em;
-        letter-spacing: -1px;
-        line-height: 1.5;
-    }
 
     .navbar .logo-section {
         padding: 1.5rem;
