@@ -31,6 +31,11 @@
     margin: 0 15%;
 }
 
+.container-large {
+    max-width: 1650px;
+    margin: 0 15%;
+}
+
 /* font sizes, margins, font-families, colors */
 h1 {
     font-size: 2.5rem;
@@ -62,7 +67,7 @@ main .portfolio p {
 }
 
 main .portfolio button {
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 
 /* --> end */
@@ -143,23 +148,6 @@ header nav ul {
     gap: 2rem;
 }
 
-header nav button {
-    padding: 5px 15px;
-    color: var(--black-text);
-    background-color: var(--white-background);
-    font-family: var(--inter-font);
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    font-weight: bold;
-    border-radius: var(--border-radius);
-    transition: all .2s;
-}
-
-header nav button:hover {
-    color: var(--flavor-color1);
-}
-
 header .nav-social-links {
     display: flex;
     justify-content: center;
@@ -188,7 +176,6 @@ header .nav-social-links a:active {
 }
 
 header .nav-social-links .fa-message {
-    display: none;
     font-size: 1.5rem;
 }
 
@@ -217,7 +204,7 @@ main .hero-section h1 span {
 
 main .fun-facts ul,
 main .portfolio ul,
-main .contact-section-left-margin {
+main .section-left-margin {
     list-style: none;
     margin-left: 1rem;
 }
@@ -238,27 +225,6 @@ main .portfolio input {
     color: var(--white-background);
     background: none;
     border-radius: var(--border-radius);
-}
-
-main .portfolio button {
-    padding: 5px 10px;
-    border: none;
-    background: var(--white-background);
-    color: var(--black-text);
-    font-weight: bold;
-    box-sizing: border-box;
-    display: block;
-    margin: 8px 0;
-    cursor: pointer;
-    width: 160px;
-    font-family: var(--inter-font);
-    font-weight: bold;
-    border-radius: var(--border-radius);
-    transition: all .2s;
-}
-
-main .portfolio button:hover {
-    color: var(--flavor-color1);
 }
 
 main .centered-section {
@@ -282,6 +248,55 @@ main .portfolio-link:hover {
 
 main .portfolio-link:active {
     color: var(--flavor-color-main-darker);
+}
+
+main .portfolio button {
+    padding: 5px 10px;
+    border: none;
+    background: var(--white-background);
+    color: var(--black-text);
+    font-weight: bold;
+    box-sizing: border-box;
+    display: block;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 160px;
+    font-family: var(--inter-font);
+    font-weight: bold;
+    border-radius: var(--border-radius);
+    transition: all .2s;
+    border: 1px solid var(--white-background);
+}
+
+main .portfolio button:hover {
+    color: var(--flavor-color1);
+}
+
+main .portfolio input,
+main .portfolio textarea,
+main .portfolio select {
+    background: transparent;
+    /* color: #FFA86A; */
+    color: var(--white-text);
+    border: 1px solid var(--gray-text);
+    border-radius: 0;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    font: inherit;
+    appearance: none;
+    border-radius: var(--border-radius);
+    transition: all .8s;
+}
+
+main .portfolio input:focus,
+main .portfolio input :active,
+main .portfolio textarea:focus,
+main .portfolio textarea :active,
+main .portfolio select:focus,
+main .portfolio select :active {
+    border-color: var(--white-background);
+    outline: 1px solid  var(--white-background);
 }
 
 footer {
@@ -325,22 +340,13 @@ footer a:active {
         padding: 1.5rem;
     }
 
-    header .nav-social-links .fa-message {
-        display: inline-block;
-        font-size: 1.5rem;
-    }
-
-    header .nav-social-links button {
-        display: none;
-    }
-
     .navbar .nav-social-links {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100%;
         width: max-content;
-        gap: 10px;
+        gap: 1rem;
         padding: 5px 10px;
         border-radius: var(--border-radius);
     }

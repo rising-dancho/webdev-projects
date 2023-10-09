@@ -21,7 +21,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body class="container-large">
     <header>
         <nav class="navbar container">
             <section class="logo-section">
@@ -36,8 +36,7 @@
                 <a href="https://www.facebook.com/jhayar.perez.315" target="_blank"><i
                         class="fab fa-facebook fa-2x"></i></a>
                 <span>|</span>
-                <button>Contact</button>
-                <a href="#" target="_blank"> <i class="fa-regular fa-message"></i></a>
+                <a href="#bottom"> <i class="fa-regular fa-message"></i></a>
             </div>
 
         </nav>
@@ -100,15 +99,25 @@
                     </li>
                 </ul>
 
-                <h2 id="#hire">Contact:</h2>
-                <div class="contact-section-left-margin">
-                    <input type="text" placeholder="Enter email...">
-                    <button>Send</button>
+                <h2>Contact:</h2>
+                <div class="contact-form section-left-margin">
+                    <form action="https://formsubmit.co/josealejoperezjr@gmail.com" method="POST"
+                        name="submit-to-google-sheet">
+                        <p>Name:</p>
+                        <input type="text" name="Name" required>
+                        <p>Email:</p>
+                        <input type="email" name="Email" required>
+                        <p>Message:</p>
+                        <textarea name="Message" rows="6" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
                 </div>
             </section>
         </div>
     </main>
-    <footer>
+    <!-- <hr class="container"> -->
+    <footer id="#bottom">
         <p>made with ❤️ © 2023 <a href="https://github.com/rising-dancho" target="_blank">rising.dancho</a> </p>
     </footer>
 </body>
