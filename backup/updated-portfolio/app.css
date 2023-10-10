@@ -31,7 +31,7 @@
     --border-radius: 3px;
 }
 
-#msg{
+#msg {
     color: var(--new-color);
     display: flex;
     justify-content: end;
@@ -94,7 +94,6 @@ h1 {
     margin-bottom: 2.5em;
 }
 
-h3,
 h2,
 h4,
 h5,
@@ -119,9 +118,16 @@ h2 {
     letter-spacing: 1px;
 }
 
-main .portfolio .new,
+/* main .portfolio .new,
 main .portfolio .archived {
     font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: var(--new-color);
+} */
+
+main .portfolio .new,
+main .portfolio .archived {
+    font-size: 1rem;
     letter-spacing: 1px;
     color: var(--new-color);
 }
@@ -138,12 +144,6 @@ header .logo-name {
     font-size: 1.125rem;
 }
 
-header .nav-social-links span {
-    width: 2.5px;
-    background-color: var(--muted-text);
-    height: 24px;
-}
-
 main .fun-facts ul,
 main .portfolio p {
     color: var(--gray-text);
@@ -151,6 +151,11 @@ main .portfolio p {
 
 main .contact button {
     font-size: 1.1rem;
+}
+
+main .portfolio-link,
+main .portfolio-link-archived {
+    font-size: 1rem;
 }
 
 /* --> font-families */
@@ -161,13 +166,13 @@ button {
 
 h1,
 h2,
+h3,
 .logo-name {
     font-family: var(--play2start-font);
 }
 
 /* --> font-weights */
-main .contact p
-main .portfolio .new,
+main .contact p main .portfolio .new,
 main .portfolio .archived,
 main .contact button {
     font-weight: 700;
@@ -176,6 +181,16 @@ main .contact button {
 body,
 p {
     font-weight: 400;
+}
+
+.portfolio-link,
+.portfolio-link-archived {
+    font-weight: 600;
+}
+
+h1,
+h2 {
+    font-weight: 100;
 }
 
 /* section end */
@@ -251,6 +266,12 @@ header .nav-social-links {
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+}
+
+header .nav-social-links span {
+    width: 2.5px;
+    background-color: var(--muted-text);
+    height: 24px;
 }
 
 /* LVHA */
