@@ -646,9 +646,9 @@ footer a:active {
         color: #10b981;
     }
 
-    main h2 {
+    /* main h2 {
         font-size: 1rem;
-    }
+    } */
 
     main .centered-section {
         margin: 0 10%;
@@ -676,13 +676,18 @@ footer a:active {
     }
 
     main .hero-section h1 {
-        font-size: 1.35rem;
+        font-size: 1.65rem;
         letter-spacing: -1px;
         line-height: 1.5;
     }
 
     main h2 {
         font-size: 1.1rem;
+    }
+
+    main .portfolio .new,
+    main .portfolio .archived {
+        font-size: .86rem;
     }
 
     main .portfolio p {
@@ -725,7 +730,7 @@ footer a:active {
 
 @media (max-width:378px) {
     main .hero-section h1 {
-        font-size: 1.153rem;
+        font-size: 1.45rem;
     }
 
 }
