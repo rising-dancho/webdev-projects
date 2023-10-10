@@ -77,12 +77,12 @@
 
 /* helper class */
 .container {
-    max-width: 1450px;
+    max-width: 1150px;
     margin: 0 20%;
 }
 
 .container-large {
-    max-width: 1450px;
+    max-width: 1150px;
     margin: 0 20%;
 }
 
@@ -137,7 +137,7 @@ main .portfolio .archived {
 }
 
 body {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 }
 
 header .logo-name {
