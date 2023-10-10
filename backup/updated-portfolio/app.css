@@ -641,9 +641,26 @@ footer a:active {
         margin-bottom: 1.01rem;
     }
 
-    main .portfolio .links-container-new a {
+    /* LVHA */
+    main .portfolio .links-container-new a,
+    main .portfolio .links-container-archived a {
         margin-bottom: 1.01rem;
-        color: #10b981;
+        color: var(--lesser-white-text);
+    }
+
+    main .portfolio .links-container-new a:visited,
+    main .portfolio .links-container-archived a:visited {
+        color: var(--lesser-white-text);
+    }
+
+    main .portfolio .links-container-new a:hover,
+    main .portfolio .links-container-archived a:hover {
+        color: var(--white-text);
+    }
+
+    main .portfolio .links-container-new a:active,
+    main .portfolio .links-container-archived a:active {
+        color: var(--white-text);
     }
 
     /* main h2 {
