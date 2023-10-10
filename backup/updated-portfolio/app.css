@@ -31,14 +31,6 @@
     --border-radius: 3px;
 }
 
-/* #msg {
-    color: var(--new-color);
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding-top: 1rem;
-} */
-
 /* custom texnew section-left-margt selection */
 ::selection {
     background-color: var(--highlight-color);
@@ -114,18 +106,18 @@ h3 {
 /* --> font-sizes */
 h1 {
     font-size: 2.5rem;
-    letter-spacing: -3px;
+    letter-spacing: 1px;
 }
 
 h2 {
     font-size: 1.35rem;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
 }
 
 main .portfolio .new,
 main .portfolio .archived {
     font-size: 1rem;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     color: var(--new-color);
 }
 
@@ -535,13 +527,13 @@ footer a:active {
 
     main .hero-section h1 {
         font-size: 2.1rem;
-        letter-spacing: -2.5px;
+        letter-spacing: -1.2px;
         line-height: 1.25;
     }
 
     main .hero-section h2 {
         font-size: 1.75rem;
-        letter-spacing: -2.5px;
+        letter-spacing: 1px;
     }
 
     main .contact button {
@@ -687,12 +679,12 @@ footer a:active {
 
     main .hero-section h1 {
         font-size: 1.95rem;
-        letter-spacing: -3.2px;
+        letter-spacing: 1.1px;
     }
 
     main h2 {
         font-size: 1.1rem;
-        letter-spacing: -2.5px;
+        letter-spacing: .95px;
     }
 
     main .portfolio .new,
@@ -718,9 +710,10 @@ footer a:active {
 }
 
 @media (max-width:378px) {
+
     main .hero-section h1 {
         font-size: 1.55rem;
-        letter-spacing: -4.5px;
+        letter-spacing: 1px;
     }
 
 }
