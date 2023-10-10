@@ -25,7 +25,7 @@
 
     /* font-family */
     --play2start-font: "Press Start 2P", sans-serif;
-    --open-sans-font: 'Open Sans', sans-serif;
+    --rubik-font: 'Rubik', sans-serif;
 
     /* border radius */
     --border-radius: 3px;
@@ -159,7 +159,7 @@ main .portfolio-link-archived {
 /* --> font-families */
 body,
 button {
-    font-family: var(--open-sans-font);
+    font-family: var(--rubik-font);
 }
 
 h1,
