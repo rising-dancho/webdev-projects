@@ -71,7 +71,8 @@ input {
 }
 
 /*Input focus*/
-.form_input:focus {
+.form_input:focus,
+textarea:focus {
     border: 1.5px solid #1A73E8;
 }
 
@@ -82,7 +83,9 @@ textarea {
     resize: vertical;
     box-sizing: border-box;
     font-size: 1rem;
+    outline: none;
 }
+
 
 .form_button {
     background-color: #1A73E8;
