@@ -307,138 +307,12 @@ header .nav-social-links .fa-message {
     font-size: 1.5rem;
 }
 
-main .hero-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin: 25px auto;
-}
-
-main .hero-section img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border: 1px solid var(--gray-border);
-    border-radius: var(--border-radius);
-    border-radius: 50%;
-}
-
-/* .grayscale {
-    filter: grayscale(100%);
-    transition: filter 0.5s ease;
-}
-
-.grayscale:hover {
-    filter: grayscale(0%);
-} */
-
-main .hero-section h1 span {
-    color: var(--highlight-color);
-}
-
-main .fun-facts ul,
-main .portfolio ul,
-main .section-left-margin {
-    list-style: none;
-    margin-left: 1rem;
-}
-
-main .portfolio p {
-    display: inline-block;
-}
-
-main .portfolio input {
-    display: block;
-    margin: 20px 0 0;
-    width: 160px;
-    box-sizing: border-box;
-    padding: 4px 8px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--white-background);
-    color: var(--white-background);
-    background: none;
-    border-radius: var(--border-radius);
-}
-
-main .centered-section {
-    margin: 0 15%;
-}
-
-main .portfolio .links-container-new,
-main .portfolio .links-container-archived {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 20px;
-}
-
-main .portfolio .links-container-archived {
-    margin-bottom: 0;
-}
-
-/* LVHA */
-main .portfolio-link {
-    text-decoration: none;
-    color: var(--lesser-white-text);
-    transition: all .1s;
-}
-
-main .portfolio-link:visited {
-    color: var(--lesser-white-text);
-}
-
-main .portfolio-link:hover {
-    color: var(--new-color);
-}
-
-main .portfolio-link:active {
-    color: var(--new-color);
-}
-
-/* archived links */
-main .portfolio-link-archived {
-    color: var(--muted-text);
-    transition: all .1s;
-    text-decoration: none;
-}
-
-main .portfolio-link-archived:visited {
-    color: var(--muted-text);
-}
-
-
-main .portfolio-link-archived:hover {
-    color: var(--lesser-white-text);
-    transition: all .1s;
-    text-decoration: none;
-}
-
-main .portfolio-link-archived:active {
-    color: var(--lesser-white-text);
-}
-
 main .contact fieldset {
     border: 0;
 }
 
-main .contact input,
-main .contact textarea,
-main .contact select {
-    background: transparent;
-    color: var(--white-text);
-    border: 1px solid var(--white-background);
-    margin: 5px 0;
-    font: inherit;
-}
 
-main .input-textarea {
-    min-height: 120px;
-    width: 100%;
-    padding: 0.625rem;
-    resize: vertical;
-    display: block;
-}
+
 
 main .form_input {
     position: absolute;
@@ -456,11 +330,8 @@ main .form_input {
     /* border: 2px solid red; */
 }
 
-
-
 main .contact .form_button {
-    display: block;
-    margin-left: auto;
+    align-self: flex-end; /* Adjust this based on your layout needs */
     padding: .65rem 2rem;
     outline: none;
     border: none;

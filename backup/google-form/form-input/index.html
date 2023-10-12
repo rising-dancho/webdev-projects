@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <title>Portfolio | rising.dancho</title>
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="app.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="container-large">
+    <header>
+        <nav class="navbar">
+            <section class="logo-section">
+                <span class="logo-greater-than">&gt;</span>
+                <a class="logo-name" href="https://risingdancho.netlify.app/"> rising.dancho</a>
+                <span class="logo-cursor"></span>
+            </section>
+            <div class="nav-social-links">
+                <a href="https://www.youtube.com/@adfinemrising/featured" target="_blank"><i
+                        class="fab fa-youtube fa-2x"></i></a>
+                <a href="https://github.com/rising-dancho" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://www.facebook.com/jhayar.perez.315" target="_blank"><i
+                        class="fab fa-facebook fa-2x"></i></a>
+                <span></span>
+                <a href="#bottom"> <i class="fa-regular fa-message"></i></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- contact -->
+        <section class="contact">
+            <h2>Contact me:</h2>
+            <fieldset class="contact-form section-left-margin l-form">
+                <!-- <form name="submit-to-google-sheet"> -->
+                <form action="https://formsubmit.co/josealejoperezjr@gmail.com" method="POST">
+                    <div class="form_div">
+                        <input name="Name" type="text" class="form_input" placeholder=" " required>
+                        <label for="Name" class="form_label">Name:</label>
+                    </div>
+                    <div class="form_div">
+                        <input name="Email" type="email" class="form_input" placeholder=" " required>
+                        <label for="Email" class="form_label">Email:</label>
+                    </div>
+                    <div class="form_div">
+                        <textarea name="Message" class="input-textarea form_input" placeholder=" " rows="6"
+                            required></textarea>
+                        <label for="Message" class="form_label">Message:</label>
+                    </div>
+                    <input type="submit" class="form_button" value="Submit">
+                </form>
+                <!-- <span id="msg"></span> -->
+            </fieldset>
+        </section>
+        </div>
+    </main>
+    <!-- <hr class="hr container"> -->
+    <footer id="bottom">
+        <p>Made with ❤️ © 2023 <a href="https://github.com/rising-dancho" target="_blank">rising.dancho</a> </p>
+    </footer>
+    <!-- form-to-google-sheets: https://github.com/jamiewilson/form-to-google-sheets -->
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxO4ovTct20fpGRe96iUJ_z87GWrCa0jbkeDAR1ZZ3WtZ7d9HygIBdCC87F9LKRMVFGeg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script> -->
+</body>
+
+</html>

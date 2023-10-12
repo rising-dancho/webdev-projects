@@ -105,19 +105,26 @@
             <!-- contact -->
             <section class="contact">
                 <h2>Contact me:</h2>
-                <div class="contact-form section-left-margin">
+                <fieldset class="contact-form section-left-margin l-form">
                     <!-- <form name="submit-to-google-sheet"> -->
                     <form action="https://formsubmit.co/josealejoperezjr@gmail.com" method="POST">
-                        <p>Name:</p>
-                        <input type="text" name="Name" required>
-                        <p>Email:</p>
-                        <input type="email" name="Email" required>
-                        <p>Message:</p>
-                        <textarea name="Message" rows="6" required></textarea>
-                        <button type="submit">Submit</button>
+                        <div class="form_div">
+                            <input name="Name" type="text" class="form_input" placeholder=" " required>
+                            <label for="Name" class="form_label">Name:</label>
+                        </div>
+                        <div class="form_div">
+                            <input name="Email" type="email" class="form_input" placeholder=" " required>
+                            <label for="Email" class="form_label">Email:</label>
+                        </div>
+                        <div class="form_div">
+                            <textarea name="Message" class="input-textarea form_input" placeholder=" " rows="6"
+                                required></textarea>
+                            <label for="Message" class="form_label">Message:</label>
+                        </div>
+                        <input type="submit" class="form_button" value="Submit">
                     </form>
                     <!-- <span id="msg"></span> -->
-                </div>
+                </fieldset>
             </section>
         </div>
     </main>
