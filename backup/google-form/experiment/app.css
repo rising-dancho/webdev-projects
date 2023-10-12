@@ -1,0 +1,119 @@
+:root {
+    /* colors */
+    --first-color: #1A73E8;
+    --first-color-darker: #1760c0;
+    --input-color: #80868B;
+    --border-color: #DADCE8;
+
+    /* typography */
+    --rubik-font-family: 'Rubik', sans-serif;
+    ;
+    --normal-font-size: 1rem;
+    --small-font-size: .75rem;
+
+    /* border-radius */
+    --border-radius: 5.5px;
+
+}
+
+body {
+    position: relative;
+    z-index: 0;
+    font-family: var(--rubik-font-family);
+    font-size: var(--normal-font-size);
+    padding: 2rem;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* moves the label on the upper left */
+.form_input:focus+.form_label {
+    top: -9px;
+    left: 15px;
+    color: var(--first-color);
+    font-size: var(--small-font-size);
+    font-weight: bold;
+    z-index: 10;
+}
+
+/* Input focus sticky top label */
+.form_input:not(:placeholder-shown).form_input:not(:focus)+.form_label {
+    top: -9px;
+    left: 15px;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    z-index: 10;
+}
+
+/*Input focus*/
+.form_input:focus {
+    border: 1.5px solid var(--first-color);
+}
+
+main .form_div {
+    position: relative;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    border: 2px solid red;
+    padding: 10px;
+}
+
+main .form_input {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-size: var(--normal-font-size);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    outline: none;
+    background: none;
+    z-index: 1;
+    /* border: 2px solid red; */
+}
+
+main label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    padding: 0 .25rem;
+    background-color: #fff;
+    color: var(--input-color);
+    font-size: var(--normal-font-size);
+    transition: .15s;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+    position: relative;
+}
+
+main .submit-button {
+    margin-right: inherit;
+    width: 30%;
+    padding: .75rem 2rem;
+    outline: none;
+    border: none;
+    background-color: var(--first-color);
+    color: #fff;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: bold;
+    transition: .15s;
+    position: absolute;
+    top: 345%;
+    left: 74.45%;
+}
+
+main .submit-button:hover {
+    box-shadow: 2px 5px 16px rgba(0, 0, 0, .15);
+    background-color: var(--first-color-darker);
+}

@@ -312,8 +312,6 @@ main .contact fieldset {
 }
 
 
-
-
 main .form_input {
     position: absolute;
     top: 0;
@@ -331,7 +329,7 @@ main .form_input {
 }
 
 main .contact .form_button {
-    align-self: flex-end; /* Adjust this based on your layout needs */
+  
     padding: .65rem 2rem;
     outline: none;
     border: none;
@@ -353,6 +351,20 @@ main .form_div {
     height: 48px;
     margin-bottom: 1.5rem;
     /* border: 2px solid red; */
+}
+
+  
+.input-textarea{
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+  }
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+
 }
 
 main .form_input {
