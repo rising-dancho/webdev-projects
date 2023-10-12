@@ -1,8 +1,12 @@
+fieldset {
+    border: 0;
+}
+
 form {
     padding: 10px;
     margin: 0;
     box-sizing: border-box;
-    border: 2px solid yellowgreen;
+    /* border: 2px solid yellowgreen; */
     width: 100%;
     display: inline-block;
 
@@ -10,7 +14,7 @@ form {
 
 .form_div {
     position: relative;
-    border: 2px solid tomato;
+    /* border: 2px solid tomato; */
     width: 100%;
     margin: 0;
     padding: 10px;
@@ -53,8 +57,6 @@ input {
     color: #1A73E8;
     font-size: .75rem;
     font-weight: bold;
-    border-left: 2px solid #1A73E8;
-    border-right: 2px solid #1A73E8;
     z-index: 10;
 }
 
@@ -64,8 +66,6 @@ input {
     left: 25px;
     font-size: .75rem;
     font-weight: bold;
-    border-left: 2px solid #1A73E8;
-    border-right: 2px solid #1A73E8;
     color: #1A73E8;
     z-index: 10;
 }
@@ -81,4 +81,21 @@ textarea {
     padding: 0.625rem;
     resize: vertical;
     box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.form_button {
+    background-color: #1A73E8;
+    border-radius: 6px;
+    width: 75px;
+    padding: 10px;
+}
+
+
+.position-right-btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
 }
