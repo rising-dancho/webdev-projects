@@ -481,7 +481,7 @@ main .form_input {
     position: relative;
     box-sizing: border-box;
     font-size: var(--normal-font-size);
-    color: white;
+    color: var(--white-text);
     background: none;
     height: 100%;
     width: 100%;
