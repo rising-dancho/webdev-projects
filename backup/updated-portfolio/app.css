@@ -493,7 +493,7 @@ main .form_input {
     outline: none;
     z-index: 1;
     font-weight: 400;
-    transition: .25s;
+    transition: .15s;
 }
 
 
