@@ -518,7 +518,7 @@ main .form_input {
 /*Input focus*/
 .form_input:focus {
     border: 2px solid var(--btn-color);
-    color: var(--lesser-white-text);
+    color: var(--white-text);
 }
 
 textarea {
