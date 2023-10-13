@@ -418,8 +418,9 @@ main .portfolio-link-archived:active {
     color: var(--lesser-white-text);
 }
 
-/* 
+/* ====================
     --> CONTACT FORM
+   ====================
 */
 main .contact fieldset {
     border: 0;
