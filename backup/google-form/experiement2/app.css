@@ -8,8 +8,6 @@ form {
     box-sizing: border-box;
     /* border: 2px solid yellowgreen; */
     width: 100%;
-    display: inline-block;
-
 }
 
 .form_div {
@@ -33,8 +31,8 @@ form {
     padding: 10px;
     padding-left: 12.5px;
     border: 1px solid #80868B;
+    border-radius: 6px;
     outline: none;
-    background: none;
     z-index: 1;
 }
 
@@ -45,9 +43,15 @@ form {
     background-color: white;
     color: #80868B;
     font-size: 1rem;
-    transition: .15s;
     padding: 0 10px;
     transition: .15s;
+}
+
+.form_button {
+    background-color: #1A73E8;
+    border-radius: 6px;
+    width: 75px;
+    padding: 10px;
 }
 
 /* moves the label on the upper left */
@@ -56,7 +60,7 @@ form {
     left: 25px;
     color: #1A73E8;
     font-size: .75rem;
-    font-weight: bold;
+    font-weight: 700;
     z-index: 10;
 }
 
@@ -75,24 +79,6 @@ form {
     border: 1.5px solid #1A73E8;
 }
 
-
-
-.form_button {
-    background-color: #1A73E8;
-    border-radius: 6px;
-    width: 75px;
-    padding: 10px;
-}
-
-
-.position-right-btn {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    height: 100%;
-    padding: 0 10px;
-}
-
 textarea {
     position: relative;
     min-height: 120px;
@@ -102,4 +88,12 @@ textarea {
     box-sizing: border-box;
     font-size: 1rem;
     outline: none;
+}
+
+.position-right-btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px;
 }
