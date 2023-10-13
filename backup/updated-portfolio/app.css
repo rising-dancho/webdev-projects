@@ -474,6 +474,7 @@ main .contact .form_button {
 
 main .contact .form_button:hover {
     background-color: var(--btn-color-darkest);
+    color: white;
 }
 
 main .form_input {
@@ -492,7 +493,7 @@ main .form_input {
     outline: none;
     z-index: 1;
     font-weight: 400;
-    transition: .1s;
+    transition: .25s;
 }
 
 
@@ -503,7 +504,7 @@ main .form_input {
     color: var(--btn-color);
     font-size: var(--small-font-size);
     z-index: 10;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 /* Input focus sticky top label */
@@ -519,7 +520,7 @@ main .form_input {
 .form_input:focus {
     border: 1px solid var(--btn-color);
     color: var(--white-text);
-    font-weight: 400;
+    font-weight: 600;
 }
 
 textarea {
