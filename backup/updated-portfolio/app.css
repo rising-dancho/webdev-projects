@@ -460,7 +460,7 @@ main .form_label {
 main .contact .form_button {
     padding: .65rem 2rem;
     border: none;
-    background-color: var(--btn-color-darker);
+    background-color: var(--btn-color);
     color: var(--btn-white-text);
     border-radius: var(--border-radius);
     cursor: pointer;
@@ -469,7 +469,7 @@ main .contact .form_button {
     font-family: var(--rubik-font-family);
     transition: .25s;
     font-size: 1rem;
-    /* font-weight: 500; */
+    font-weight: 500;
 }
 
 main .contact .form_button:hover {
@@ -491,7 +491,7 @@ main .form_input {
     border-radius: var(--border-radius);
     outline: none;
     z-index: 1;
-    font-weight: bold;
+    font-weight: 400;
     transition: .1s;
 }
 
@@ -517,8 +517,9 @@ main .form_input {
 
 /*Input focus*/
 .form_input:focus {
-    border: 2px solid var(--btn-color);
+    border: 1px solid var(--btn-color);
     color: var(--white-text);
+    font-weight: 400;
 }
 
 textarea {
