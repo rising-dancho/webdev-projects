@@ -25,9 +25,9 @@
     --gray-border: #333;
 
     /* button color */
-    --btn-color: #10b981;
-    --btn-color-darker: #059669;
-    --btn-color-lighter: #34d399;
+    --btn-color: #449DF5;
+    --btn-color-darker: #3d8ddd;
+    --btn-color-lighter: #57a7f6;
     --btn-black-text: #020617;
     --btn-white-text: #f8fafc;
 
@@ -418,99 +418,75 @@ main .portfolio-link-archived:active {
     color: var(--lesser-white-text);
 }
 
+/* 
+    --> CONTACT FORM
+*/
 main .contact fieldset {
     border: 0;
 }
 
-main .contact input,
-main .contact textarea,
-main .contact select {
-    background: transparent;
-    color: var(--white-text);
-    border: 1px solid var(--white-background);
-    margin: 5px 0;
-    font: inherit;
-}
-
-main .input-textarea {
-    min-height: 120px;
+form {
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 2px solid yellowgreen; */
     width: 100%;
-    padding: 0.625rem;
-    resize: vertical;
-    display: block;
-}
-
-main .form_input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    font-size: var(--normal-font-size);
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius);
-    padding: 1rem;
-    outline: none;
-    background: none;
-    z-index: 1;
-    /* border: 2px solid red; */
-}
-
-
-
-main .contact .form_button {
-    display: block;
-    margin-left: auto;
-    padding: .65rem 2rem;
-    outline: none;
-    border: none;
-    background-color: var(--btn-color);
-    color: var(--btn-white-text);
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    font-weight: bold;
-    transition: .15s;
-    width: 30%;
-}
-
-main .contact .form_button:hover {
-    background-color: var(--btn-color-lighter);
 }
 
 main .form_div {
     position: relative;
-    height: 48px;
-    margin-bottom: 1.5rem;
-    /* border: 2px solid red; */
+    margin-bottom: 1.1rem;
+    /* border: 2px solid tomato; */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 main .form_input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    box-sizing: border-box;
     font-size: var(--normal-font-size);
+    color: var(--input-text);
+    background: none;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    padding-left: 20.5px;
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-    padding: 1rem;
     outline: none;
-    background: none;
     z-index: 1;
-    /* border: 2px solid red; */
 }
 
-main label {
+main .form_label {
     position: absolute;
     left: 1rem;
     top: 1rem;
-    padding: 0 .25rem;
     background-color: var(--dark-background);
     color: var(--input-color);
-    font-size: var(font);
+    font-size: var(--normal-font-size);
+    padding: 0 .25rem;
     transition: .08s;
 }
 
+main .contact .form_button {
+    padding: .65rem 2rem;
+    border: none;
+    background-color: var(--btn-color-darker);
+    color: var(--btn-white-text);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: bold;
+    width: 120px;
+    transition: .15s;
+    margin: 0;
+}
+
+main .contact .form_button:hover {
+    background-color: var(--btn-color);
+}
+
+/* moves the label on the upper left */
 .form_input:focus+.form_label {
     top: -2px;
     left: 18px;
@@ -525,7 +501,7 @@ main label {
     top: -2px;
     left: 18px;
     font-size: var(--small-font-size);
-    color: var(--border-color);
+    color: var(--lesser-white-text);
     font-weight: bold;
     z-index: 10;
 }
@@ -533,8 +509,29 @@ main label {
 /*Input focus*/
 .form_input:focus {
     border: 1.5px solid var(--btn-color);
+    color: var(--lesser-white-text);
 }
 
+textarea {
+    position: relative;
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+    box-sizing: border-box;
+    font-size: 1rem;
+    outline: none;
+    font-family: var(--rubik-font-family);
+}
+
+.position-right-btn {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+}
+
+/* Contact --> END */
 
 footer {
     text-align: center;

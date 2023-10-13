@@ -105,11 +105,11 @@
             <!-- contact -->
             <section class="contact">
                 <h2>Contact me:</h2>
-                <fieldset class="contact-form section-left-margin l-form">
-                    <!-- <form name="submit-to-google-sheet"> -->
-                    <form action="https://formsubmit.co/josealejoperezjr@gmail.com" method="POST">
+                <form action="https://formsubmit.co/josealejoperezjr@gmail.com" method="POST">
+                    <fieldset>
+                        <!-- <form name="submit-to-google-sheet"> -->
                         <div class="form_div">
-                            <input name="Name" type="text" class="form_input" placeholder=" " required>
+                            <input name="Name" type="text" class="form_input" placeholder=" " required autofocus>
                             <label for="Name" class="form_label">Name:</label>
                         </div>
                         <div class="form_div">
@@ -117,14 +117,15 @@
                             <label for="Email" class="form_label">Email:</label>
                         </div>
                         <div class="form_div">
-                            <textarea name="Message" class="input-textarea form_input" placeholder=" " rows="6"
-                                required></textarea>
+                            <textarea name="Message" class="form_input" placeholder=" " required></textarea>
                             <label for="Message" class="form_label">Message:</label>
                         </div>
-                        <input type="submit" class="form_button" value="Submit">
-                    </form>
-                    <!-- <span id="msg"></span> -->
-                </fieldset>
+                        <div class="form_div position-right-btn">
+                            <input type="submit" class="form_button" value="Submit">
+                        </div>
+                    </fieldset>
+                </form>
+                <!-- <span id="msg"></span> -->
             </section>
         </div>
     </main>

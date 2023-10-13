@@ -351,7 +351,7 @@ form {
 
 main .form_div {
     position: relative;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.1rem;
     /* border: 2px solid tomato; */
     width: 100%;
     box-sizing: border-box;
@@ -395,6 +395,7 @@ main .contact .form_button {
     font-weight: bold;
     width: 120px;
     transition: .15s;
+    margin: 0;
 }
 
 main .contact .form_button:hover {
@@ -448,10 +449,9 @@ textarea {
 
 /* --> END */
 
-
-
-
-
+.logo-section {
+    margin: inherit 1rem;
+}
 
 
 
