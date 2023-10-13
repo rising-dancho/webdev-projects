@@ -7,6 +7,8 @@
     --gray-text: #bdbdbd;
     --highlight-color: #449DF5;
 
+    --input-text:#f3efefa4;
+
 
     /* alerts */
     --new-color: #10b981;
@@ -359,7 +361,7 @@ main .form_input {
     position: relative;
     box-sizing: border-box;
     font-size: var(--normal-font-size);
-    color: var(--lesser-white-text);
+    color: var(--input-text);
     background: none;
     height: 100%;
     width: 100%;
@@ -414,7 +416,7 @@ main .contact .form_button:hover {
     top: -2px;
     left: 18px;
     font-size: var(--small-font-size);
-    color: var(--border-color);
+    color: var(--lesser-white-text);
     font-weight: bold;
     z-index: 10;
 }
@@ -422,6 +424,7 @@ main .contact .form_button:hover {
 /*Input focus*/
 .form_input:focus {
     border: 1.5px solid var(--btn-color);
+    color: var(--lesser-white-text);
 }
 
 textarea {
@@ -433,6 +436,7 @@ textarea {
     box-sizing: border-box;
     font-size: 1rem;
     outline: none;
+    font-family: var(--rubik-font-family);
 }
 
 .position-right-btn {
