@@ -230,6 +230,8 @@ header {
 header nav {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
+    margin-right: 6.5rem;
+    margin-left: 3.5rem;
 }
 
 header .logo-name {
@@ -663,6 +665,11 @@ footer a:active {
 }
 
 @media (max-width:1040px) {
+
+    header nav {
+        margin-right: 0;
+        margin-left: 0;
+    }
 
     .navbar {
         display: flex;
