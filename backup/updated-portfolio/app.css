@@ -7,9 +7,9 @@
     --gray-text: #bdbdbd;
     --highlight-color: #449DF5;
 
-    --input-text:#f3efefa4;
-    --input-text-greater:#f3efefd8;
-    --input-text-lesser:#a5a5a5;
+    --input-text: #f3efefa4;
+    --input-text-greater: #f3efefd8;
+    --input-text-lesser: #a5a5a5;
 
 
     /* alerts */
@@ -54,11 +54,11 @@
 
 }
 
-/* custom texnew section-left-margt selection */
+/* custom text selection */
 ::selection {
-    background-color: var(--highlight-color);
+    background-color: var(--highlight-color) !important;
     /* Background color of the selection */
-    color: black;
+    color: var(--black-text) !important;
     /* Text color of the selection */
 }
 
@@ -545,15 +545,16 @@ textarea {
 
 /* changes the background of input box to --dark-background when user clicks an autofill option */
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
     -webkit-background-clip: text;
-    -webkit-text-fill-color: var(--highlight-color);
+    -webkit-text-fill-color: var(--white-text) !important;
     transition: background-color 5000s ease-in-out 0s;
-    box-shadow: inset 0 0 20px 20px var(--dark-background);
-    caret-color: white;
+    box-shadow: inset 0 0 20px 20px var(--dark-background) !important;
+    caret-color: white !important;
 }
+
 
 /* Contact --> END */
 
