@@ -228,10 +228,12 @@ header {
 }
 
 header nav {
-    padding-top: 1.5em;
+    /* padding-top: 1.5em; */
     padding-bottom: 1.5em;
+    margin-top: 2.75rem;
     margin-right: 6.5rem;
     margin-left: 3.5rem;
+
 }
 
 header .logo-name {
