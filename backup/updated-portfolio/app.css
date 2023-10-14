@@ -229,8 +229,8 @@ header {
 
 header nav {
     /* padding-top: 1.5em; */
-    padding-bottom: 1.5em;
-    margin-top: 2.75rem;
+    /* padding-bottom: 1.20em; */
+    margin-top: 2.65rem;
     margin-right: 6.5rem;
     margin-left: 3.5rem;
 
@@ -530,7 +530,7 @@ main .form_input {
 
 textarea {
     position: relative;
-    min-height: 120px;
+    min-height: 170px;
     width: 100%;
     padding: 0.625rem;
     resize: vertical;
