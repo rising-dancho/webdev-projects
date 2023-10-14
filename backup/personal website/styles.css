@@ -23,6 +23,10 @@
     padding: 0;
 }
 
+main ul {
+    list-style: none;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
