@@ -1,3 +1,7 @@
 body {
     background-color: aliceblue;
 }
+
+.container {
+    border: 1px solid #D66B6B;
+}
