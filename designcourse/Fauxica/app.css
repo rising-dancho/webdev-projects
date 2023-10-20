@@ -1,7 +1,24 @@
-/* body {
+body {
     background-color: aliceblue;
 }
 
 .container {
     border: 10px solid #D66B6B;
-} */
+}
+
+/* helper classes */
+
+.card img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.dimension-large {
+    width: 274px;
+    height: 464px;
+}
+
+.dimension-medium {
+    width: 274px;
+    height: 291px;
+}
