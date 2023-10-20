@@ -1,17 +1,16 @@
-* {
-    margin: 0;
-}
-
 html {
     font-size: 62.5%;
 }
 
 body {
+    margin: 0;
     font-family: 'Poppins';
 }
 
 h1 {
     font-family: 'Playfair Display';
+    font-size: 5.2rem;
+    font-weight: 300;
 }
 
 .container {
@@ -22,16 +21,42 @@ h1 {
 header a,
 main a{
     text-decoration: none;
+    color: black;
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
 }
 
-nav ul {
+header nav {
+    margin: 4rem;
+    /* border: 1px solid red; */
+}
+
+header nav ul {
     display: flex;
     gap: 4.1rem;
     list-style: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    /* border: 1px solid red; */
+    margin: 0;
+    padding-inline-start: 0;
 }
 
+main {
+    display: flex;
+    align-items: center;
+}
+
+main .left-column,
+main .right-column {
+    width: 50%;
+}
+
+main .subhead {
+    font-size: 1.8rem;
+}
