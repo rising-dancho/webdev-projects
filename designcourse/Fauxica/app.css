@@ -1,27 +1,37 @@
+* {
+    margin: 0;
+}
+
 html {
     font-size: 62.5%;
 }
+
 body {
-    background-color: aliceblue;
+    font-family: 'Poppins';
+}
+
+h1 {
+    font-family: 'Playfair Display';
 }
 
 .container {
-    border: 10px solid #D66B6B;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* helper classes */
-
-.card img {
-    object-fit: cover;
-    border-radius: 8px;
+header a,
+main a{
+    text-decoration: none;
 }
 
-.dimension-large {
-    width: 274px;
-    height: 464px;
+header {
+    display: flex;
+    justify-content: space-between;
 }
 
-.dimension-medium {
-    width: 274px;
-    height: 291px;
+nav ul {
+    display: flex;
+    gap: 4.1rem;
+    list-style: none;
 }
+
