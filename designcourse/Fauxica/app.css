@@ -190,7 +190,7 @@ main .right-column h3{
     font-size: var(--font-16px);
 }
 
-main .right-column p{
+main .product-desc{
     font-size: var(--font-14px);
 }
 
