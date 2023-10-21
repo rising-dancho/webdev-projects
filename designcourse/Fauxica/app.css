@@ -81,10 +81,12 @@ main .subhead {
     font-size: 1.8rem;
 }
 
-main .cta-btns, main .secondary-cta {
+main .cta-btns,
+main .secondary-cta {
     display: flex;
     gap: 2.2rem;
     align-items: center;
+    margin: 2.5rem 0;
 }
 
 main .primary-cta {
@@ -92,15 +94,58 @@ main .primary-cta {
     font-family: Poppins;
     font-weight: 700;
     background-color: #F2F0DFF1;
-    font-size:  1.8rem;
+    font-size: 1.8rem;
     padding: 1rem 1.5rem;
     align-items: center;
     border-radius: 8px;
 }
 
 main .secondary-cta {
-    color: #000;
+    display: block;
+    padding: 1em 0;
+    color: black;
     font-family: Poppins;
-    font-weight: 700;
-    font-size:  1.8rem;
+    font-weight: 300;
+    font-size: 1.8rem;
+}
+
+main .secondary-cta .arrow {
+    width: 20px;
+}
+
+main .announcement {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    border: 1px solid black;
+    border-radius: .8em;
+    position: relative;
+    padding: 40px 30px;
+}
+
+main .announcement::before {
+    position: absolute;
+    content: "";
+    background: url("assets/Confetti.svg");
+    width: 103.92px;
+    height: 85.45px;
+    top: 15px;
+    left: -30px;
+    z-index: 2;
+}
+
+main .announcement .employees {
+    font-size: 3.3rem;
+    font-weight: 300;
+    line-height: 100%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
+}
+
+main .announcement .details {
+    font-size: 1.4rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+
 }
