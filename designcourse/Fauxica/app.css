@@ -1,3 +1,8 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -13,16 +18,13 @@ h1 {
     font-weight: 300;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 header a,
 main a{
     text-decoration: none;
     color: black;
 }
+
+/* Navbar */
 
 header {
     display: flex;
@@ -46,6 +48,23 @@ header nav ul {
     margin: 0;
     padding-inline-start: 0;
 }
+
+header a {
+    position: relative;
+    padding: 5px;
+    transition: 3s ease;
+}
+
+header nav a.active:before {
+    position: absolute;
+    content:"";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: 0px;
+}
+
+/* Hero Section */
 
 main {
     display: flex;
