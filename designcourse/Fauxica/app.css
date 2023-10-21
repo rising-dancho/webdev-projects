@@ -1,11 +1,12 @@
 :root {
+    /* Font sizes */
     --font-14px: 0.875rem;
     --font-16px: 1rem;
     --font-18px: 1.125rem;
     --font-33px: 2.0625rem;
     --font-52px: 3.25rem;
 
-    /*   */
+    /* Margin and Paddings  */
     --mg-pd-16px: 1rem;
     --mg-pd-18px: 1.125rem;
     --mg-pd-22px: 1.375rem;
@@ -19,7 +20,6 @@
     --mg-pd-64px: 4rem;
     --mg-pd-69px: 4.3125rem;
     --mg-pd-88px: 5.5rem;
-
 }
 
 body {
@@ -184,4 +184,16 @@ main .right-column {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+}
+
+main .right-column h3{
+    font-size: var(--font-16px);
+}
+
+main .right-column p{
+    font-size: var(--font-14px);
+}
+
+main .price {
+    font-size: var(--font-18px);
 }
