@@ -5,9 +5,9 @@
     --black-text: #131313;
     --muted-text: #ffffff4d;
     --gray-text: #bdbdbd;
-    /* --highlight-color: hsl(210, 90%, 61%); */
-    --highlight-color: hsl(200, 100%, 50%);
-    --highlight-color-darker: rgba(5, 54, 102, 0.2);
+    --highlight-color: #00aaff;
+    --selection-color: #00aaff;
+    --selection-color-darker: hsla(204, 100%, 21%, 0.2);
 
     --input-text: #f3efefa4;
     --input-text-greater: #f3efefd8;
@@ -25,7 +25,7 @@
     /* backgrounds */
     --white-background: #fdf9fd;
     --white-background-darker: #4d4d4d;
-    --dark-background: #131313;
+    --dark-background: #121518;
     --darker-background: #0b0b0b;
     --gray-background: #222222;
     --gray-border: #333;
@@ -58,9 +58,9 @@
 
 /* custom text selection */
 ::selection {
-    background-color: var(--highlight-color-darker) !important;
+    background-color: var(--selection-color-darker) !important;
     /* Background color of the selection */
-    color: var(--highlight-color) !important;
+    color: var(--selection-color) !important;
     /* Text color of the selection */
 }
 
