@@ -335,3 +335,8 @@ main .product-desc {
 main .price {
     font-size: var(--font-18px);
 }
+
+/* Intro Animation */
+.overlay {
+    position: absolute;
+}
