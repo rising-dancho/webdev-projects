@@ -1,0 +1,11 @@
+body{ display:grid; grid-template-columns:1fr 1fr; }
+
+img{ 
+  width: 45%;  
+  background: url(./assets/Confetti.svg);
+  backdrop-filter: blur(10px);
+}
+
+img.aspect{  
+  aspect-ratio: 1 / 1;
+}

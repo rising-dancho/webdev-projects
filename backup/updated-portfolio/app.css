@@ -5,7 +5,9 @@
     --black-text: #131313;
     --muted-text: #ffffff4d;
     --gray-text: #bdbdbd;
-    --highlight-color: #449DF5;
+    /* --highlight-color: hsl(210, 90%, 61%); */
+    --highlight-color: hsl(200, 100%, 50%);
+    --highlight-color-darker: rgba(5, 54, 102, 0.2);
 
     --input-text: #f3efefa4;
     --input-text-greater: #f3efefd8;
@@ -56,9 +58,9 @@
 
 /* custom text selection */
 ::selection {
-    background-color: var(--highlight-color) !important;
+    background-color: var(--highlight-color-darker) !important;
     /* Background color of the selection */
-    color: var(--black-text) !important;
+    color: var(--highlight-color) !important;
     /* Text color of the selection */
 }
 

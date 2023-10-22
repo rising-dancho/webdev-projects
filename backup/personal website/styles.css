@@ -13,7 +13,17 @@
     --primary-color: #2F81F7;
 
     --white: #eee;
-    --black: #131313;
+    --black: #161A1D;
+
+    --color-blue-dark-hsl: rgba(0, 102, 153,.2);
+    /* --color-blue-dark-hsl: rgb(15, 49, 66); */
+    /* --color-blue-hsl: hsl(200, 100%, 50%);  */
+    --color-blue-hsl: #00AAFF; 
+}
+
+::selection {
+    color: var(--color-blue-hsl);
+    background-color: var(--color-blue-dark-hsl);
 }
 
 

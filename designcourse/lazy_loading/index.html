@@ -5,11 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./app.css">
 </head>
 
 <body>
-  
+    <aside>
+        <img class='aspect' />
+        <p>with aspect-ratio</p>
+    </aside>
 
+    <aside>
+        <img />
+        <p>normal</p>
+    </aside>
+    <script>
+        const imgURL = './assets/shoes.jpg';
+
+        // delay image loading (simulating slow network handshake)
+        setTimeout(() => {
+            document.querySelectorAll('img').forEach(node => node.src = imgURL)
+        }, 2000)
+    </script>
 </body>
 
 </html>
