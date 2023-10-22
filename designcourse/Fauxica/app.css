@@ -111,7 +111,7 @@ main {
     /* border: 3px solid #D66B6B; */
 }
 
-/* Left Column */
+/* -> Left column */
 
 main h1 {
     font-family: 'Playfair Display';
@@ -163,7 +163,8 @@ main .secondary-cta {
     font-size: var(--font-18px);
 }
 
-main .secondary-cta:hover span{
+/* Micro interaction */
+main .secondary-cta:hover span {
     text-decoration: underline;
 }
 
@@ -172,9 +173,10 @@ main .secondary-cta .arrow {
     transition: transform .23s;
 }
 
-main .secondary-cta:hover .arrow{
+/* Micro interaction */
+main .secondary-cta:hover .arrow {
     transform: translateX(10px);
-   
+
 }
 
 main .announcement {
@@ -210,7 +212,7 @@ main .announcement .details {
     margin: 0;
 }
 
-/* Right Column */
+/* -> Right column */
 
 main .right-column {
     height: 68vh;
@@ -228,6 +230,11 @@ main .card {
     align-items: end;
     border-radius: var(--border-8px);
     padding: var(--mg-pd-11px);
+    transition: 800ms all;
+}
+
+main .card:hover .card-details {
+    transform: translateY(-15%);
 }
 
 main .card-sport {
@@ -242,6 +249,13 @@ main .card-sport {
     position: relative;
 }
 
+main .card-sport:hover {
+    /* Zoom in by 1.5x */
+    background-size: 150%;
+    /* zoom position via x and y axis  */
+    background-position: 50% 100%;
+}
+
 main .card-sport:before {
     position: absolute;
     content: "";
@@ -253,8 +267,8 @@ main .card-sport:before {
     /* pointer-events: help make 
    links still clickable for .card-sport */
     pointer-events: none;
-
 }
+
 
 main .card-lifestyle {
     grid-column-start: 2;
@@ -267,6 +281,14 @@ main .card-lifestyle {
     width: 274px;
 }
 
+main .card-lifestyle:hover {
+    /* Zoom in by 1.5x */
+    background-size: 120%;
+    /* zoom position via x and y axis  */
+    background-position: 50% 80%;
+}
+
+
 main .card-fashion {
     grid-column-start: 2;
     grid-column-start: 3;
@@ -278,6 +300,13 @@ main .card-fashion {
     width: 275px;
 }
 
+main .card-fashion:hover {
+    /* Zoom in by 1.5x */
+    background-size: 200%;
+    /* zoom position via x and y axis  */
+    background-position: 50% 100%;
+}
+
 main .card-details {
     display: flex;
     justify-content: space-between;
@@ -287,6 +316,7 @@ main .card-details {
     padding: var(--mg-pd-11px) var(--mg-pd-23px);
     width: 100%;
     height: 85px;
+    transition: 800ms all;
 }
 
 main .right-column h3 {
