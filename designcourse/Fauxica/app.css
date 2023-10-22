@@ -75,16 +75,31 @@ header nav ul {
 header a {
     position: relative;
     padding-bottom: 5px;
-    transition: 3s ease;
+    
 }
 
 header nav a.active:before {
     position: absolute;
     content: "";
-    width: 35%;
+    width: 45%;
     height: 1px;
-    border-bottom: 2px solid black;
+    border-bottom: 2.5px solid black;
     bottom: 0px;
+}
+
+header nav a:before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2.5px solid black;
+    bottom: 0px;
+    transition: width .3s;
+}
+
+/* micro interaction */
+header nav a:hover:before {
+    width: 45%;
 }
 
 /* Hero Section */
@@ -95,6 +110,8 @@ main {
     align-items: center;
     /* border: 3px solid #D66B6B; */
 }
+
+/* Left Column */
 
 main h1 {
     font-family: 'Playfair Display';
@@ -177,6 +194,8 @@ main .announcement .details {
     font-size: var(--font-14px);
     margin: 0;
 }
+
+/* Right Column */
 
 main .right-column {
     height: 68vh;
