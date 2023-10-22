@@ -7,6 +7,7 @@
     --font-52px: 3.25rem;
 
     /* Margin and Paddings  */
+    --mg-pd-10px: 0.625rem;
     --mg-pd-11px: 0.6875rem;
     --mg-pd-16px: 1rem;
     --mg-pd-18px: 1.125rem;
@@ -131,7 +132,8 @@ main .primary-cta {
 }
 
 main .secondary-cta {
-    display: block;
+    display: flex;
+    gap: var(--mg-pd-10px);
     padding: var(--mg-pd-16px) 0;
     color: black;
     font-family: Poppins;
@@ -176,7 +178,6 @@ main .announcement .details {
     margin: 0;
 }
 
-
 main .right-column {
     height: 68vh;
 }
@@ -185,9 +186,7 @@ main .right-column {
     display: grid;
     gap: var(--mg-pd-16px);
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-        "left right"
-        "left bottom";
+    grid-template-rows: repeat(36, 1fr);
 }
 
 main .card {
@@ -198,15 +197,36 @@ main .card {
 }
 
 main .card-sport {
-    grid-area: left;
+    grid-column-start: 1;
+    grid-column-start: 2;
+    grid-row-start: 7;
+    grid-row-end: 34;
     background-image: url(./assets/shoes.jpg);
     background-size: cover;
     background-position: center;
     width: 274px;
+    position: relative;
+}
+
+main .card-sport:before {
+    position: absolute;
+    content: "";
+    background: url(assets/tag.svg) no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 15px;
+    left: -85px;
+    /* pointer-events: help make 
+   links still clickable for .card-sport */
+    pointer-events: none;
+
 }
 
 main .card-lifestyle {
-    grid-area: right;
+    grid-column-start: 2;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 18;
     background-image: url(./assets/sweater.jpg);
     background-size: cover;
     background-position: center;
@@ -214,7 +234,10 @@ main .card-lifestyle {
 }
 
 main .card-fashion {
-    grid-area: bottom;
+    grid-column-start: 2;
+    grid-column-start: 3;
+    grid-row-start: 18;
+    grid-row-end: 36;
     background-image: url(./assets/dress.jpg);
     background-size: cover;
     background-position: center;
@@ -227,13 +250,14 @@ main .card-details {
     align-items: center;
     background-color: white;
     border-radius: var(--border-8px);
-    padding: var(--mg-pd-16px) var(--mg-pd-23px);
+    padding: var(--mg-pd-11px) var(--mg-pd-23px);
     width: 100%;
     height: 85px;
 }
 
 main .right-column h3 {
     font-size: var(--font-16px);
+    font-weight: bold;
     margin: 0;
 }
 
@@ -241,6 +265,7 @@ main .product-desc {
     font-size: var(--font-14px);
     margin: 0;
     margin-top: 4px;
+    color: #3F3F3F;
 }
 
 main .price {
