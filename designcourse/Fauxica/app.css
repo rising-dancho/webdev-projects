@@ -339,4 +339,30 @@ main .price {
 /* Intro Animation */
 .overlay {
     position: absolute;
+    z-index: 999;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    animation: reveal 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    transform-origin: bottom;
+}
+
+@keyframes reveal {
+    from {
+        transform: scaleY(1);
+    }
+    to {
+        transform: scaleY(0);
+    }
+}
+
+main {
+    animation: growIn 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    transform: scale(.6);
+}
+
+@keyframes growIn {
+    to {
+        transform: scale(1);
+    }
 }
