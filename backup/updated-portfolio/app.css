@@ -404,10 +404,12 @@ main .portfolio-link:visited {
 
 main .portfolio-link:hover {
     color: var(--new-color);
+    text-shadow: 0px 0px 18px var(--new-color);
 }
 
 main .portfolio-link:active {
     color: var(--new-color);
+    text-shadow: 0px 0px 18px var(--new-color);
 }
 
 /* archived links */
@@ -424,12 +426,14 @@ main .portfolio-link-archived:visited {
 
 main .portfolio-link-archived:hover {
     color: var(--lesser-white-text);
+    text-shadow: 0px 0px 18px var(--lesser-white-text);
     transition: all .1s;
     text-decoration: none;
 }
 
 main .portfolio-link-archived:active {
     color: var(--lesser-white-text);
+    text-shadow: 0px 0px 18px var(--lesser-white-text);
 }
 
 /* ====================
