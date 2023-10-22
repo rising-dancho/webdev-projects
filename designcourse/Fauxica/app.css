@@ -75,7 +75,7 @@ header nav ul {
 header a {
     position: relative;
     padding-bottom: 5px;
-    
+
 }
 
 header nav a.active:before {
@@ -146,6 +146,11 @@ main .primary-cta {
     padding: var(--mg-pd-16px) var(--mg-pd-23px);
     align-items: center;
     border-radius: var(--border-8px);
+    transition: .23s ease;
+}
+
+main .primary-cta:hover {
+    background-color: #EAE7CCF1;
 }
 
 main .secondary-cta {
@@ -156,10 +161,16 @@ main .secondary-cta {
     font-family: Poppins;
     font-weight: 300;
     font-size: var(--font-18px);
+   
 }
 
 main .secondary-cta .arrow {
     width: 20px;
+    transition: transform .23s;
+}
+
+main .secondary-cta:hover .arrow{
+    transform: translateX(10px);
 }
 
 main .announcement {
