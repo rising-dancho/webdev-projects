@@ -178,12 +178,12 @@ main .announcement .details {
 
 
 main .right-column {
-    height: 65vh;
+    height: 68vh;
 }
 
 main .right-column {
     display: grid;
-    gap: var(--mg-pd-23px);
+    gap: var(--mg-pd-16px);
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
         "left right"
@@ -199,26 +199,26 @@ main .card {
 
 main .card-sport {
     grid-area: left;
-    background: url(./assets/clothing1.jpg);
-    object-fit: cover;
+    background-image: url(./assets/shoes.jpg);
+    background-size: cover;
+    background-position: center;
     width: 274px;
-    height: auto;
 }
 
 main .card-lifestyle {
     grid-area: right;
-    background: url(./assets/clothing2.jpg);
-    object-fit: cover;
+    background-image: url(./assets/sweater.jpg);
+    background-size: cover;
+    background-position: center;
     width: 274px;
-    height: auto;
 }
 
 main .card-fashion {
     grid-area: bottom;
-    background: url(./assets/clothing3.jpg);
-    object-fit: cover;
+    background-image: url(./assets/dress.jpg);
+    background-size: cover;
+    background-position: center;
     width: 275px;
-    height: auto;
 }
 
 main .card-details {
@@ -234,10 +234,13 @@ main .card-details {
 
 main .right-column h3 {
     font-size: var(--font-16px);
+    margin: 0;
 }
 
 main .product-desc {
     font-size: var(--font-14px);
+    margin: 0;
+    margin-top: 4px;
 }
 
 main .price {
