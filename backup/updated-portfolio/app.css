@@ -345,7 +345,7 @@ main .hero-section img {
 main .hero-section h1 span {
     color: var(--highlight-color);
     /* text-shadow: 1px 1px 11px hsla(200, 100%, 40%,.2); */
-    text-shadow: 1px 1px 8px hsla(200, 100%, 40%,.2);
+    text-shadow: 1px 1px 8px hsla(200, 100%, 40%, .2);
 }
 
 main .fun-facts ul,
@@ -423,14 +423,14 @@ main .portfolio-link-archived:visited {
 
 main .portfolio-link-archived:hover {
     color: var(--btn-white-text);
-    text-shadow: 0px 0px 18px  var(--btn-white-text);
+    text-shadow: 0px 0px 18px var(--btn-white-text);
     transition: all .1s;
     text-decoration: none;
 }
 
 main .portfolio-link-archived:active {
-    color:  var(--btn-white-text);
-    text-shadow: 0px 0px 18px  var(--btn-white-text);
+    color: var(--btn-white-text);
+    text-shadow: 0px 0px 18px var(--btn-white-text);
 }
 
 /* ====================
@@ -769,12 +769,14 @@ footer a:active {
 
     main .portfolio .links-container-new a:hover,
     main .portfolio .links-container-archived a:hover {
-        color: var(--white-text);
+        color: var(--btn-white-text);
+        text-shadow: 0px 0px 18px var(--btn-white-text);
     }
 
     main .portfolio .links-container-new a:active,
     main .portfolio .links-container-archived a:active {
-        color: var(--white-text);
+        color: var(--btn-white-text);
+        text-shadow: 0px 0px 18px var(--btn-white-text);
     }
 
     h3 {
