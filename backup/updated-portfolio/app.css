@@ -31,13 +31,10 @@
     --gray-border: #333;
 
     /* button color */
-    /* --btn-color: hsl(210, 90%, 61%);
-    --btn-color-darkest: hsl(210, 57%, 44%);
-    --btn-color-lighter: hsl(210, 90%, 65%); */
-    --btn-color: hsl(160, 84%, 39%);
-    --btn-color-darkest: hsla(160, 84%, 39%, 0.75);
-    --btn-color-lighter: hsl(200, 90%, 65%);
-    --btn-black-text: #020617;
+    /* --btn-color: hsl(160, 84%, 39%);
+    --btn-color-darkest: hsla(160, 84%, 39%, 0.75); */
+    --btn-color: hsl(200, 100%, 50%);
+    --btn-color-darkest: hsla(200, 100%, 50%, 0.75);
     --btn-white-text: #fff;
 
     /* font-family */
@@ -425,15 +422,15 @@ main .portfolio-link-archived:visited {
 
 
 main .portfolio-link-archived:hover {
-    color: var(--lesser-white-text);
-    text-shadow: 0px 0px 18px var(--lesser-white-text);
+    color: var(--btn-white-text);
+    text-shadow: 0px 0px 18px  var(--btn-white-text);
     transition: all .1s;
     text-decoration: none;
 }
 
 main .portfolio-link-archived:active {
-    color: var(--lesser-white-text);
-    text-shadow: 0px 0px 18px var(--lesser-white-text);
+    color:  var(--btn-white-text);
+    text-shadow: 0px 0px 18px  var(--btn-white-text);
 }
 
 /* ====================
@@ -490,7 +487,7 @@ main .contact .form_button {
 main .contact .form_button:hover {
     background-color: var(--btn-color-darkest);
     box-shadow: 0px 0px 2px var(--btn-color-darkest);
-    color: white;
+    color: var(--btn-white-text);
 }
 
 main .form_input {
