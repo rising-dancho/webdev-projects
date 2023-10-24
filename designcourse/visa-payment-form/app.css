@@ -1,3 +1,70 @@
+/* font weight values: https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight */
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('./font/SourceSansPro-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('font/SourceSansPro-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('font/SourceSansPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('./font/SourceSansPro-Light.otf') format('opentype');
+    font-weight: 300;
+    font-display: swap;
+}
+
 body {
     background-color: #DBECFA;
+    font-family: 'SourceSansPro', sans-serif;
+}
+
+main .credit-card {
+    width: 425px;
+    height: 255px;
+    background: url(images/23.jpeg);
+    border-radius: 12px;
+}
+
+main .card-details {
+    padding: 28px 24px;
+}
+
+main .card-details .chip {
+    width: 59px;
+    height: 46px;
+}
+
+main .card-details .visa {
+    width: 85px;
+    height: 48px;
+}
+
+main .top-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+main .payment-form form {
+    display: flex;
+    flex-direction: column;
+    width: 555px;
+    height: 529px;
+    background-color: #FFFFFF;
+    padding-top: 181px;
 }
