@@ -591,11 +591,13 @@ footer a:visited {
 }
 
 footer a:hover {
-    color: var(--gray-text);
+    color: var(--btn-white-text);
+    text-shadow: 0px 0px 18px var(--btn-white-text);
 }
 
 footer a:active {
-    color: var(--gray-text);
+    color: var(--btn-white-text);
+        text-shadow: 0px 0px 18px var(--btn-white-text);
 }
 
 @media (max-width:1645px) {
