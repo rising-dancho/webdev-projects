@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa Payment Form</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <main class="container">
+        <!-- Credit or debit card -->
+        <div class="credit-card">
+            <div class="card-details">
+                <img src="./images/chip.png" alt="credit card chip">
+                <img src="./images/visa.png" alt="visa logo for the credit/debit card">
+                <h1 class="card-numbers">#### #### #### ####</h1>
+                <div class="card-holder">
+                    <h2>Card Holder</h2>
+                    <p>Full Name</p>
+                </div>
+                <div class="expiration-date">
+                    <h2>Expires</h2>
+                    <p>MM / YY</p>
+                </div>
+            </div>
+        </div>
+        <!-- Payment Form -->
+        <div class="payment-form">
+            <form action="/submit" method="post">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+            
+                <label for="cardHolder">Card Holder:</label>
+                <input type="text" id="cardHolder" name="cardHolder" required>
+            
+                <label for="expirationMonth">Expiration Date:</label>
+                <div style="display: flex;">
+                  <select id="expirationMonth" name="expirationMonth" style="flex: 1;" required>
+                    <option value="" disabled selected>Month</option>
+                    <!-- Add month options here -->
+                  </select>
+            
+                  <select id="expirationYear" name="expirationYear" style="flex: 1; margin-left: 8px;" required>
+                    <option value="" disabled selected>Year</option>
+                    <!-- Add year options here -->
+                  </select>
+                </div>
+            
+                <label for="ccv">CCV:</label>
+                <input type="text" id="ccv" name="ccv" required>
+            
+                <button type="submit">Submit</button>
+              </form>
+        </div>
+    </main>
+</body>
+</html>
