@@ -39,16 +39,16 @@
 
 /* --> center div */
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
+    margin: 20% auto;
+    max-width: 685px;
+    height: 100%;
     /* border: 2px solid red; */
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #DBECFA;
     font-family: 'SourceSansPro', sans-serif;
 }
@@ -140,6 +140,7 @@ main .payment-form form label {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-top: 23px;
 }
 
 main .payment-form form input {
@@ -166,6 +167,7 @@ main .payment-form .drop-downs {
     align-items: center;
     padding: 0;
     margin: 0;
+    /* border: 2px solid red; */
 }
 
 main .payment-form .drop-downs .ccv-container {
