@@ -39,9 +39,9 @@
 
 /* --> center div */
 .container {
-    margin: 20% auto;
+    margin: 0 auto;
     max-width: 685px;
-    height: 100%;
+    height: 100vh;
     /* border: 2px solid red; */
 }
 
@@ -55,6 +55,7 @@ body {
 
 main .payment-form {
     position: relative;
+    margin-top: 50%;
 }
 
 main .credit-card {
@@ -129,7 +130,7 @@ main .payment-form form {
     height: 529px;
     background-color: #FFFFFF;
     padding: 32px 32px;
-    padding-top: 181px;
+    padding-top: 125px;
     border-radius: 12px;
 }
 
@@ -141,6 +142,7 @@ main .payment-form form label {
     font-weight: 400;
     line-height: normal;
     margin-top: 23px;
+    margin-bottom: 4px;
 }
 
 main .payment-form form input {
@@ -149,6 +151,7 @@ main .payment-form form input {
     border-radius: 4px;
     border: 1px solid #BEBEBE;
     background: #FFF;
+    padding: 15px;
 }
 
 main .payment-form form select {
@@ -156,6 +159,11 @@ main .payment-form form select {
     height: 47px;
     border: 1px solid #BEBEBE;
     background: #FFF;
+    margin: 0;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #595959;
 }
 
 /* --> two column grid*/
@@ -166,7 +174,7 @@ main .payment-form .drop-downs {
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    margin: 0;
+    margin-top: 23px;
     /* border: 2px solid red; */
 }
 
@@ -176,6 +184,20 @@ main .payment-form .drop-downs .ccv-container {
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    /* border: 2px solid red; */
+}
+
+main .payment-form .ccv-container label {
+    margin: 0;
+}
+
+main .payment-form .drop-downs label {
+    margin-bottom: 4px;
+    /* border: 1px solid red; */
+}
+
+main .drop-downs .month-year-dropdowns {
+    margin-top: 4px;
 }
 
 main .payment-form form .ccv-input {
@@ -185,11 +207,17 @@ main .payment-form form .ccv-input {
 main .payment-form form button {
     width: 491px;
     height: 56px;
-    border-radius: 4px;
+    border-radius: 4px; 
     background: #2364D2;
     color: #FFF;
     font-family: Source Sans Pro;
     font-size: 18px;
     font-weight: 600;
     border: none;
+    margin-top: 23px;
+    cursor: pointer;
+}
+
+main .payment-form form button:hover {
+    background-color: #101c31;
 }
