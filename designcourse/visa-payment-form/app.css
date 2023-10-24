@@ -127,10 +127,10 @@ main .payment-form form {
     display: flex;
     flex-direction: column;
     width: 555px;
-    height: 529px;
+    /* height: 529px; */
     background-color: #FFFFFF;
     padding: 32px 32px;
-    padding-top: 125px;
+    padding-top: 163px;
     border-radius: 12px;
 }
 
@@ -214,7 +214,7 @@ main .payment-form form button {
     font-size: 18px;
     font-weight: 600;
     border: none;
-    margin-top: 23px;
+    margin-top: 33px;
     cursor: pointer;
 }
 
