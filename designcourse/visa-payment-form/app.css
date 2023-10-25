@@ -54,6 +54,10 @@ body {
     font-family: 'SourceSansPro', sans-serif;
 }
 
+main {
+    transform: scale(0.925);
+}
+
 main .payment-form {
     position: relative;
     margin-top: 50%;
@@ -208,7 +212,7 @@ main .payment-form form .ccv-input {
 main .payment-form form button {
     width: 491px;
     height: 56px;
-    border-radius: 4px; 
+    border-radius: 4px;
     background: #2364D2;
     color: #FFF;
     font-family: Source Sans Pro;
