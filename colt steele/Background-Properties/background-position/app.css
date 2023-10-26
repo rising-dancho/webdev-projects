@@ -7,9 +7,7 @@ body {
     width: 900px;
     height: 500px;
     background-image: url(images/people.jpg);
-    /* background-size: cover; */
+    background-size: cover;
     /* background-size: 100% 100%; */
     /* background-repeat: no-repeat; */
-    background-size: 150%; /* zooming in on the large image */
-    background-position: right top;
 }
