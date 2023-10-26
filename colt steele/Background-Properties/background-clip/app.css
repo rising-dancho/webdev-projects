@@ -1,0 +1,15 @@
+body {
+    background-color: #DBECFA;
+}
+
+.box {
+    border: 20px dashed steelblue;
+    width: 400px;
+    height: 400px;
+    background-image: url(images/woman.jpg);
+    background-size: cover;
+    padding: 30px;
+    background-clip: padding-box;
+    /* background-clip: content-box; */
+    /* background-clip: border-box; */
+}
