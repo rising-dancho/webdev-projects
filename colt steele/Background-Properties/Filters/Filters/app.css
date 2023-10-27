@@ -1,0 +1,14 @@
+.box {
+  border: 2px solid black;
+  height: 700px;
+  width: 700px;
+  background: url("images/people.jpg");
+  background-size: cover;
+  filter: blur(20px);
+}
+
+img {
+  width: 500px;
+  border: 10px solid pink;
+  filter: hue-rotate(180deg);
+}
