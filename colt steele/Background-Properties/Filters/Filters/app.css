@@ -4,7 +4,12 @@
   width: 700px;
   background: url("images/people.jpg");
   background-size: cover;
+  filter: contrast(200%);
   filter: blur(20px);
+  filter: grayscale(80%);
+  /* rotates 90deg in the color wheel */
+  /* filter: hue-rotate(180deg); */
+  filter: drop-shadow(16px 16px 20px #42bea4) invert(35%);
 }
 
 img {
