@@ -3,6 +3,7 @@ body {
     background: radial-gradient(hsl(207, 83%, 49%), hsl(207, 86%, 35%));
     font-family: "DM Sans", sans-serif;
     color: white;
+    overflow: hidden;
 }
 .button,
 .notification {
