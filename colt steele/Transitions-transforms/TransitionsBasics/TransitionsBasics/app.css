@@ -1,8 +1,4 @@
 body {
-  /*
-* Created with https://www.css-gradient.com
-* Gradient link: https://www.css-gradient.com/?c1=5bea9e&c2=516ddd&gt=r&gd=dtl
-*/
   background: #5BEA9E;
   background: radial-gradient(at left top, #5BEA9E, #516DDD, hsl(200, 66%, 10%) 85%);
   overflow: hidden;
@@ -26,13 +22,14 @@ body {
   font-family: sans-serif;
   border-radius: 6px;
   box-shadow: 3px 3px 0px whitesmoke;
-  transition: background-color 300ms;
   border: 1px solid whitesmoke;
+  transition: background-color 300ms, color 600ms;
 }
 
 .btn:hover {
   display: inline-block;
   background-color: hsl(200, 66%, 10%);
+  color:aquamarine;
   
 }
 
