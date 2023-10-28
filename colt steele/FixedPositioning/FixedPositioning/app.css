@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  padding: 30px;
+  margin-top: 70px; /* moved the h1 below the span as to not overlap */
+}
+
+span {
+  font-size: 2rem;
+  display: block;
+  width: 100%;
+  padding: 30px;
+  background-color: rgba(113, 218, 113, .9);
+  color: white;
+  position: fixed;
+  top: 0;
+  color: rgba(244, 67, 54,.2)
+  rgba(233, 30, 99,.2)
+  rgba(156, 39, 176,.2)
+  rgba(63, 81, 181,.2);
+}
+
