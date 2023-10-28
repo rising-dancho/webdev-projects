@@ -5,6 +5,7 @@ body {
 */
   background: #5BEA9E;
   background: radial-gradient(at left top, #5BEA9E, #516DDD, hsl(200, 66%, 10%) 85%);
+  overflow: hidden;
 }
 
 .wrapper {
