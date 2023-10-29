@@ -37,6 +37,32 @@ main ul {
   list-style: none;
   font-weight: 700;
   color: #53319c;
+  text-transform: uppercase;
+  font-size: 15px;
+
+}
+
+/* LVHA */
+main li a:link {
+  text-decoration: none;
+  color: #bea1fc;
+  transition: color 300ms ease-in;
+}
+
+main li a:visited {
+  color: #bea1fc;
+}
+
+main li a:hover {
+  color: #53319c;
+}
+
+main li a:active {
+  color: #53319c;
+}
+
+main li a.active {
+  color: #53319c;
 }
 
 main hr {
