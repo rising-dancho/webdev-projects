@@ -46,7 +46,7 @@ main ul {
 main li a:link {
   text-decoration: none;
   color: #bea1fc;
-  transition: color 300ms ease-in;
+  /* transition: color 300ms ease-in; */
 }
 
 main li a:visited {
