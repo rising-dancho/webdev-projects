@@ -5,12 +5,13 @@ body {
   justify-content: center;
   align-items: center;
   transform: scale(45%);
+  overflow: hidden;
 }
 
 .btn {
   background-color: white;
   color: #401aff;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.05rem;
   border-radius: 0.3rem;
   padding: 2rem 7rem;
