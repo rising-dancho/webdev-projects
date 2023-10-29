@@ -36,3 +36,8 @@ main ul {
   color: #53319c;
   padding: 18px;
 }
+
+main hr {
+  border: 1.5px solid #dddada;
+  margin: 20px 0;
+}
