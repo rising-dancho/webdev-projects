@@ -4,6 +4,8 @@
   width: 100%;
   border-radius: 20px;
   padding: 32px;
+  padding-top: 0;
+  position: relative;
 }
 
 * {
@@ -21,6 +23,7 @@ body {
 header h1 {
   text-align: center;
   color: #53319c;
+  font-size: 28px;
 }
 
 main {
@@ -41,14 +44,18 @@ main ul {
   font-size: 15px;
   width: 100%;
   /* border: 2px solid red; */
+  padding: 0;
 
+}
+
+main li {
+  padding: 16px 0;
 }
 
 /* LVHA */
 main li a:link {
   text-decoration: none;
   color: #bea1fc;
-  /* transition: color 300ms ease-in; */
 }
 
 main li a:visited {
@@ -67,7 +74,32 @@ main li a.active {
   color: #53319c;
 }
 
-main hr {
-  border: 1.5px solid #dddada;
-  margin: 20px 0;
+/* main hr {
+  border: 2px solid rgb(231, 231, 231);
+} */
+
+main .line {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(231, 231, 231);
+  position: absolute;
+  top: 82px;
+  left: 0;
 }
+
+main .active {
+  position: relative;
+}
+
+main .active::before {
+  content: "";
+  width: 200%;
+  height: 4px;
+  background-color: #53319c;
+  position: absolute;
+  bottom: -34px;
+  left: -50%;
+  z-index: 1;
+  border-radius: 2px;
+}
+
