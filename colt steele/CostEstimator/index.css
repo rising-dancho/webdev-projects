@@ -18,6 +18,11 @@ body {
   /* border: 2px solid red; */
 }
 
+header h1 {
+  text-align: center;
+  color: #53319c;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -25,20 +30,17 @@ main {
   align-items: center;
 }
 
-main h1 {
-  color: #53319c;
-}
-
 main ul {
   display: flex;
-  gap: 15%;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   list-style: none;
   font-weight: 700;
   color: #53319c;
   text-transform: uppercase;
   font-size: 15px;
+  width: 100%;
+  /* border: 2px solid red; */
 
 }
 
