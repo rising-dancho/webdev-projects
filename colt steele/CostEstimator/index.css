@@ -1,6 +1,6 @@
 .container {
   max-width: 900px;
-  background-color: white;
+  background-color: #ffffff;
   width: 100%;
   border-radius: 20px;
   padding: 32px;
@@ -14,7 +14,7 @@ body {
   background-color: #e9dfff;
   font-family: "Open Sans", sans-serif;
   padding: 32px;
-  color: rgb(44, 44, 44);
+  color: #2c2c2c;
   /* border: 2px solid red; */
 }
 
