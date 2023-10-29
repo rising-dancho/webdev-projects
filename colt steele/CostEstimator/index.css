@@ -1,20 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  width: 100%;
+}
+
 body {
-  background-color: rgb(233, 223, 255);
+  background-color: #e9dfff;
   font-family: "Open Sans", sans-serif;
+
+}
+
+h1 {
+  color: #53319c;
+}
+
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 32px;
-  color: rgb(44, 44, 44);
-}
-
-h1 {
-  color: rgb(83, 49, 156);
-}
-
-.container {
-  background-color: white;
-  width: 100%;
-  max-width: 900px;
 }
