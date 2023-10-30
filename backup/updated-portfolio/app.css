@@ -323,6 +323,7 @@ main .hero-section {
     align-items: center;
     gap: 40px;
     margin: 25px auto;
+    margin-bottom: 0;
 }
 
 main .hero-section img {
@@ -636,6 +637,11 @@ footer a:active {
 
 
 @media (max-width:1394px) {
+
+    main .hero-section {
+        margin-top: 4rem;
+        margin-bottom: 2.5rem;
+    }
 
     .navbar .logo-section {
         padding: 1.5rem;
