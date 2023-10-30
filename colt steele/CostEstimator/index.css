@@ -129,6 +129,7 @@ main .toggle {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 main .toggle span:first-of-type {
@@ -145,6 +146,10 @@ main .toggle span:last-of-type {
     justify-content: center;
     align-items: center;
     padding: 4px 16px;
+}
+
+main .toggle span:last-of-type:hover {
+   transform: scale(.967);
 }
 
 main .sessions-card {
@@ -213,5 +218,12 @@ main .slider .seeker {
 }
 
 main .slider .seeker:hover {
-    transform: scale(1.25);
+    transform: scale(1.15);
+}
+
+main .scale ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #adadad;
 }
