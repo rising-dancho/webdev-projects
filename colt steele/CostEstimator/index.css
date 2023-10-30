@@ -45,7 +45,6 @@ main ul {
   width: 100%;
   /* border: 2px solid red; */
   padding: 0;
-
 }
 
 main li {
@@ -74,10 +73,6 @@ main li a.active {
   color: #53319c;
 }
 
-/* main hr {
-  border: 2px solid rgb(231, 231, 231);
-} */
-
 main .line {
   height: 3px;
   width: 100%;
@@ -103,3 +98,10 @@ main .active::before {
   border-radius: 2px;
 }
 
+main .toggle-wrapper {
+  display: flex;
+}
+
+main .toggle-wrapper img {
+  height: 40px;
+}
