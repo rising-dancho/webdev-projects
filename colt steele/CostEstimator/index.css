@@ -100,6 +100,7 @@ main .tab-active::before {
 
 main .toggle-wrapper {
   display: flex;
+  gap: 16px;
   justify-content: center;
   align-items: center;
   margin: 48px;
@@ -109,17 +110,34 @@ main .toggle-wrapper img {
   height: 40px;
 }
 
-.toggle {
+main .toggle {
+  height: 32px;
+  width: 140px;
+  padding: 0 4px 0 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
   background-color: #53319c;
   color: whitesmoke;
-  text-transform: uppercase;
-  padding: 5px 10px;
-  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
 }
 
-.toggle span.toggle-active {
+main .toggle span:first-of-type {
+  color: ffffff;
+}
+
+main .toggle span:last-of-type {
   background-color: #ffffff;
   color:#53319c;
-  padding: 5px 10px;
+  height: 24px;
+  width: 64px;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 16px;
 }
