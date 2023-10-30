@@ -143,6 +143,7 @@ main .portfolio .archived {
     font-size: 1rem;
     letter-spacing: 1.5px;
     color: var(--new-color);
+    line-height: 1.4;
 }
 
 main .portfolio .archived {
@@ -151,7 +152,7 @@ main .portfolio .archived {
 
 body {
     font-size: 1.15rem;
-    line-height: 1.2;
+    line-height: 1.6;
 }
 
 header .logo-name {
