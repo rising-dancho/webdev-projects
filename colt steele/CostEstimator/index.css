@@ -357,3 +357,81 @@ main .save-header p {
     margin: 0;
     padding: 5px 10px;
 }
+
+@media only screen and (max-width: 950px) {
+    body {
+        padding: 16px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    main .card {
+        width: 100%;
+    }
+
+    main .card-wrapper {
+        flex-wrap: wrap-reverse;
+    }
+
+    main .sessions-card {
+        width: 100%;
+    }
+
+    main .toggle-wrapper {
+        width: 100%;
+        justify-content: space-evenly;
+        /* border: 1px solid red; */
+    }
+
+    main .toggle {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main .container {
+        padding: 0 16px;
+        padding-bottom: 32px;
+    }
+
+}
+
+
+@media only screen and (max-width: 400px) {
+    main .container {
+        padding: 8px;
+        padding-bottom: 4px;
+    }
+
+    main .card {
+        margin: 16px 2px;
+        padding: 4px 8px;
+    }
+
+    main .card:first-of-type {
+        margin-bottom: 2px;
+    }
+
+    main ul {
+        font-size: 12.5px;
+    }
+
+    main .toggle-wrapper {
+        gap: 4px;
+        margin: 32px 0;
+    }
+
+    body {
+        padding: 4px;
+    }
+
+    main .sessions-card {
+        margin-top: 0;
+    }
+
+    main .tab-active::before {
+        bottom: -33.25px;
+        z-index: 1;
+        /* border: 1px solid red; */
+    }
+}
