@@ -59,6 +59,7 @@ main li {
 main li a:link {
     text-decoration: none;
     color: #bea1fc;
+    transition: 0.15s ease;
 }
 
 main li a:visited {
