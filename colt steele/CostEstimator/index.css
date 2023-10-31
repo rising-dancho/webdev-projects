@@ -149,7 +149,7 @@ main .toggle span:last-of-type {
 }
 
 main .toggle span:last-of-type:hover {
-   transform: scale(.967);
+    transform: scale(.967);
 }
 
 main .sessions-card {
@@ -236,8 +236,8 @@ main .card-wrapper {
 }
 
 main .card {
-   background-color: rgb(250, 247, 255);
-   border-radius: 6px;
+    background-color: rgb(250, 247, 255);
+    border-radius: 6px;
     margin: 16px;
-   border: 2px solid #53319c;
+    border: 2px solid #53319c;
 }
