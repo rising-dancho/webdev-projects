@@ -20,15 +20,20 @@
 body {
     background-color: #e9dfff;
     font-family: "Open Sans", sans-serif;
-    padding: 32px;
     color: #2c2c2c;
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* border: 2px solid red; */
 }
 
 header h1 {
     text-align: center;
     color: #53319c;
-    font-size: 28px;
+    font-size: 34px;
+    letter-spacing: 6px;
 }
 
 main {
@@ -178,7 +183,7 @@ main .sessions-card .number {
 
 main .description {
     line-height: 32px;
-    margin: 16px 0 32px 0;
+    margin: 32px 0;
 }
 
 main .slider {
@@ -266,6 +271,19 @@ main .top-section p {
     margin: 4px 0;
 }
 
+main .top-section p:first-of-type {
+    letter-spacing: 1.4px;
+    font-size: 18px;
+    line-height: 2.5;
+}
+
+main .top-section p:last-of-type {
+    letter-spacing: 1.2px;
+    font-size: 15px;
+    color: rgb(83, 49, 156, .78);
+    line-height: 1.2;
+}
+
 main .card .price {
     font-size: 42px;
     color: #2c2c2c;
@@ -283,7 +301,7 @@ main .card button {
     background-color: #53319c;
     padding: 16px;
     border-radius: 6px;
-    /* font-weight: bold; */
+    font-weight: bold;
     font-size: 16px;
     margin: 16px;
     cursor: pointer;
@@ -300,7 +318,7 @@ main .card .details-wrapper {
 }
 
 main .card .details {
-    color: #3f3f3f;
+    color: hsl(0, 0%, 42%);
     font-size: 15px;
     font-weight: normal;
     line-height: 1.45;
@@ -312,4 +330,30 @@ main .card .details:last-of-type {
     font-weight: bold;
     margin-top: 1rem;
     text-transform: uppercase;
+    color: hsl(0, 0%, 60%);
+    color: rgb(83, 49, 156, .58);
+    letter-spacing: 1.1px;
+}
+
+main .card {
+    /* border: 1px solid #53319c; */
+    position: relative;
+}
+
+main .card .save-header {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(53, 10, 74, 1) 36%, rgba(83, 49, 156, 1) 100%);
+    color: white;
+    position: absolute;
+    top: -16px;
+    left: 0;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    /* box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.1); */
+    letter-spacing: 3px;
+}
+
+main .save-header p {
+    margin: 0;
+    padding: 5px 10px;
 }
