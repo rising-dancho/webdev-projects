@@ -146,6 +146,7 @@ main .toggle span:last-of-type {
     justify-content: center;
     align-items: center;
     padding: 4px 16px;
+    transition: transform 0.15s;
 }
 
 main .toggle span:last-of-type:hover {
@@ -246,7 +247,6 @@ main .card {
     box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
     /* border: 1px solid #53319c; */
-    /* line-height: 1.2; */
 }
 
 main .top-section {
@@ -267,4 +267,41 @@ main .card hr {
     width: 30%;
     border: 1px solid rgb(210, 210, 210);
     border-radius: 6px;
+}
+
+main .card button {
+    border: none;
+    color: white;
+    background-color: #53319c;
+    padding: 16px;
+    border-radius: 6px;
+    /* font-weight: bold; */
+    font-size: 16px;
+    margin: 16px;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+main .card button:hover {
+    transform: scale(1.05);
+}
+
+main .card .details-wrapper {
+    margin-top: 2rem;
+    margin-bottom: .4rem;
+}
+
+main .card .details {
+    color: #3f3f3f;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.45;
+    text-transform: none;
+    margin: 0;
+}
+
+main .card .details:last-of-type {
+    font-weight: bold;
+    margin-top: 1rem;
+    text-transform: uppercase;
 }
