@@ -5,10 +5,10 @@ body {
 }
 
 div {
-    padding-left: 100px;
-    padding-top: 200px;
-    padding-bottom: 100px;
+    margin: 100px 0;
+    margin-left: 100px;
     width: 55%;
+    /* border: 2px solid red; */
 }
 
 span {
@@ -27,7 +27,6 @@ h2 {
 }
 
 
-
 /* LINKS : LVHA */
 .link {
     border-bottom: 1px dotted #fdf9fd;
@@ -37,8 +36,10 @@ h2 {
     transition: linear 0.2s;
 }
 
-
-a:visited {}
+a:visited {
+    border-bottom: 1px dotted #fdf9fd;
+    color: #222;
+}
 
 a:hover {
     text-shadow: 0 -1.5px #0c2ffb, 0 -2.5px #2cfcfd, 0 1.5px #fb203b, 0 2.5px #fefc4b;
@@ -46,8 +47,74 @@ a:hover {
     font-size: 30px;
 }
 
-a:active {}
+a:active {
+    text-shadow: 0 -1.5px #0c2ffb, 0 -2.5px #2cfcfd, 0 1.5px #fb203b, 0 2.5px #fefc4b;
+}
 
 p {
     font-size: 20px;
+}
+
+@media (max-width: 1700px) {
+    div {
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 70px;
+    }
+
+    span {
+        text-shadow: 0 -3.25px #0c2ffb, 0 -6.5px #2cfcfd, 0 3.25px #fb203b,
+            0 6.5px #fefc4b;
+    }
+}
+
+
+@media (max-width: 800px) {
+    div {
+        width: 90%;
+        margin: 100px auto;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 650px) {
+    div {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 385px) {
+    div {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
 }
