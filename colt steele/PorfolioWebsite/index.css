@@ -51,7 +51,9 @@ main .project-grid {
         "eth eth traveler"
         "astro cube traveler"
         "cup insta insta"
-        "cup insta insta";
+        "cup insta insta"
+        "foam foam dimensional"
+        "foam foam dimensional";
 }
 
 #eth {
@@ -80,4 +82,12 @@ main .project-grid {
 
 #insta {
     grid-area: insta;
+}
+
+#foam {
+    grid-area: foam;
+}
+
+#dimensional {
+    grid-area: dimensional;
 }
