@@ -95,3 +95,17 @@ main .project-grid {
 #dimensional {
     grid-area: dimensional;
 }
+
+@media only screen and (max-width: 1100px) {
+    main .project-grid {
+        grid-template-areas:
+            "eth eth"
+            "alphabet traveler"
+            "astro cube"
+            "insta insta"
+            " insta insta"
+            "cup foam"
+            "dimensional dimensional";
+    }
+    
+}
