@@ -1,9 +1,10 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* OVERLAY */
 main .project {
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin-top: 300px;
-    width: 300px;
+    width: 600px;
     position: relative;
 }
 
@@ -13,14 +14,12 @@ main .project img {
     object-fit: cover;
 }
 
-/* main .project img:hover {
-    display: block;
-} */
-
 main .project .overlay {
+    /* positioning */
     position: absolute;
     top: 0;
     left: 0;
+    /* layout */
     width: 100%;
     height: 100%;
     display: flex;
@@ -29,5 +28,17 @@ main .project .overlay {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgba(255,255,255, .1);
+    background-color: rgba(255, 255, 255, .1);
+    /* fonts */
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity .25s ease;
+}
+
+main .project .overlay:hover {
+    opacity: 1;
 }
