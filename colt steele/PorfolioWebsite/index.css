@@ -109,3 +109,21 @@ main .project-grid {
     }
 
 }
+
+@media only screen and (max-width: 768px) {
+    main .project-grid {
+        max-width: 98%;
+        column-gap: 0;
+        grid-template-areas:
+            "eth eth"
+            "alphabet alphabet"
+            "traveler astro"
+            "cube cube"
+            "insta insta"
+            "cup cup"
+            "foam foam"
+            "dimensional dimensional";
+        
+    }
+
+}
