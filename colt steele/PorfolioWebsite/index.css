@@ -45,5 +45,39 @@ main .project .overlay:hover {
 
 main .project-grid {
     display: grid;
-    grid-template-columns: repeat(2, 400px);
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-areas:
+        "eth eth alphabet"
+        "eth eth traveler"
+        "astro cube traveler"
+        "cup insta insta"
+        "cup insta insta";
+}
+
+#eth {
+    grid-area: eth;
+}
+
+#alphabet {
+    grid-area: alphabet;
+}
+
+#traveler {
+    grid-area: traveler;
+}
+
+#astro {
+    grid-area: astro;
+}
+
+#cube {
+    grid-area: cube;
+}
+
+#cup {
+    grid-area: cup;
+}
+
+#insta {
+    grid-area: insta;
 }
