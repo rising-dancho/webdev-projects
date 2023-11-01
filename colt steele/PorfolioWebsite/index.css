@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -45,7 +46,7 @@ main .project .overlay:hover {
 
 main .project-grid {
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 16px;
     grid-template-areas:
         "eth eth alphabet"
         "eth eth traveler"
@@ -54,6 +55,9 @@ main .project-grid {
         "cup insta insta"
         "foam foam dimensional"
         "foam foam dimensional";
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 #eth {
