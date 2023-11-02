@@ -280,16 +280,27 @@ footer a:active {
         font-size: 1rem;
         font-weight: bold;
     }
+
+    main #astro {
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    main #traveler {
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    header .left p {
+        font-size: 28px;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {
 
     main .project-grid {
         margin-top: 90px;
-    }
-
-    header .left p {
-        font-size: 28px;
     }
 
     header .hamburger {
@@ -305,16 +316,6 @@ footer a:active {
     main .project-grid .font-size {
         font-size: 14px;
         font-weight: bold;
-    }
-
-    main #astro {
-        text-align: center;
-        word-wrap: break-word;
-    }
-
-    main #traveler {
-        text-align: center;
-        word-wrap: break-word;
     }
 
 }
