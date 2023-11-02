@@ -295,14 +295,6 @@ footer a:active {
         font-size: 28px;
     }
 
-}
-
-@media only screen and (max-width: 400px) {
-
-    main .project-grid {
-        margin-top: 90px;
-    }
-
     header .hamburger {
         height: 30px;
         width: 30px;
@@ -312,6 +304,14 @@ footer a:active {
         height: 4px;
         width: 26px;
     }
+
+    main .project-grid {
+        margin-top: 90px;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
 
     main .project-grid .font-size {
         font-size: 14px;
