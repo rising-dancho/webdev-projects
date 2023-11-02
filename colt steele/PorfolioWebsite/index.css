@@ -1,10 +1,75 @@
 /* helper class */
+.container {
+    margin: 0auto;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
 .font-white {
     color: white;
 }
 
+/* .font-size {} */
+
 body {
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    padding: 42px 0;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+header .left p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+header .right {
+    width: 400px;
+    /* border: 1px solid red; */
+}
+
+header .right img {
+    width: 24px;
+    height: 24px;
+}
+
+header .right ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+/* LVHA */
+header .right ul a {
+    text-decoration: none;
+    color: black;
+    transition: text-decoration 10s ease;
+    /* border: 1px solid red; */
+}
+
+header .right ul a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+header .right ul a:hover {
+    text-decoration: underline;
+}
+
+header .right ul a:active {
+    text-decoration: underline;
 }
 
 /* OVERLAY */
@@ -59,8 +124,8 @@ main .project-grid {
         "cup insta insta"
         "foam foam dimensional"
         "foam foam dimensional";
-    width: 100%;
-    max-width: 90%;
+    width: 90%;
+    /* max-width: 90%; */
     margin: 0 auto;
 }
 
@@ -117,7 +182,7 @@ main .project-grid {
 
 @media only screen and (max-width: 768px) {
     main .project-grid {
-        max-width: 98%;
+        max-width: 100%;
         column-gap: 0;
         grid-template-areas:
             "eth eth"
