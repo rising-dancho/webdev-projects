@@ -167,6 +167,30 @@ main .project-grid {
     grid-area: dimensional;
 }
 
+footer {
+    text-align: center;
+    padding: 64px;
+}
+
+/* LVHA */
+footer a {
+    text-decoration: underline;
+    color: black;
+}
+
+footer a:visited {
+    text-decoration: underline;
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer a:active {
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 1100px) {
     .container {
         max-width: 100%;
