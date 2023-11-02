@@ -11,7 +11,9 @@
     color: white;
 }
 
-/* .font-size {} */
+.font-size {
+    font-size: 2.25rem;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -96,9 +98,7 @@ main .project .overlay {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 0;
-    padding: 0;
-    box-sizing: border-box; */
+    margin: 0;
     background-color: rgba(255, 255, 255, .1);
     /* fonts */
     font-size: 2.25rem;
@@ -108,6 +108,7 @@ main .project .overlay {
     opacity: 0;
     cursor: pointer;
     transition: opacity .25s ease;
+    /* border: 1px solid red; */
 }
 
 main .project .overlay:hover {
@@ -204,4 +205,11 @@ main .project-grid {
         font-size: 1.5rem;
     }
 
+}
+
+@media only screen and (max-width: 530px) {
+    main .project-grid .font-size {
+        font-size: 1rem;
+        font-weight: bold;
+    }
 }
