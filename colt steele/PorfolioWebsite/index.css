@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /* helper class */
 .container {
     width: 100%;
@@ -253,6 +257,22 @@ footer a:active {
     header .hamburger {
         display: flex;
     }
+
+    header {
+        padding: 24px 24px;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        background-color: white;
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+
+    main .project-grid {
+        margin-top: 100px;
+    }
 }
 
 @media only screen and (max-width: 530px) {
@@ -260,4 +280,41 @@ footer a:active {
         font-size: 1rem;
         font-weight: bold;
     }
+}
+
+@media only screen and (max-width: 400px) {
+
+    main .project-grid {
+        margin-top: 90px;
+    }
+
+    header .left p {
+        font-size: 28px;
+    }
+
+    header .hamburger {
+        height: 30px;
+        width: 30px;
+    }
+
+    header .hamburger .bar {
+        height: 4px;
+        width: 26px;
+    }
+
+    main .project-grid .font-size {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    main #astro {
+        text-align: center;
+        word-wrap: break-word;
+    }
+
+    main #traveler {
+        text-align: center;
+        word-wrap: break-word;
+    }
+
 }
