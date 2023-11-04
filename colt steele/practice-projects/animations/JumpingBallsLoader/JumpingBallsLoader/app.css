@@ -25,7 +25,7 @@ body {
   font-size: 24px;
 }
 
-.loader span:nth-child(1) {
+.loader span:nth-of-type(1) {
   transform: translateY(-10px);
   /* animation-name: bounce;
   animation-duration: 1s;
@@ -34,33 +34,31 @@ body {
 
   /* SHORTHAND: 
   duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
-  animation: 1s linear infinite bounce;
+  animation: 1s ease-in-out infinite bounce;
 }
 
-.loader span:nth-child(2) {
+.loader span:nth-of-type(2) {
   transform: translateY(-10px);
   /* SHORTHAND: 
   duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
-  animation: 1s linear 350ms infinite bounce;
+  animation: 1s ease-in-out 0.25s infinite bounce;
 }
 
-.loader span:nth-child(3) {
+.loader span:nth-of-type(3) {
   transform: translateY(-10px);
   /* SHORTHAND: 
   duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
-  animation: 1s linear 650ms infinite bounce;
+  animation: 1s ease-in-out  0.5s infinite bounce;
 }
 
 @keyframes bounce {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-8px);
-  }
-
+  0%,
   100% {
     transform: translateY(0px);
   }
+
+  75% {
+    transform: translateY(-8px);
+  }
+
 }
