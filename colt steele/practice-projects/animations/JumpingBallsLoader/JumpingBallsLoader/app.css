@@ -26,7 +26,7 @@ body {
 }
 
 .loader span:nth-of-type(1) {
-  transform: translateY(-10px);
+  transform: translateY(-12.5px);
   /* animation-name: bounce;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -38,14 +38,14 @@ body {
 }
 
 .loader span:nth-of-type(2) {
-  transform: translateY(-10px);
+  transform: translateY(-12px);
   /* SHORTHAND: 
   duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
   animation: 1s ease-in-out 0.25s infinite bounce;
 }
 
 .loader span:nth-of-type(3) {
-  transform: translateY(-10px);
+  transform: translateY(-12px);
   /* SHORTHAND: 
   duration | easing-function | delay | iteration-count | direction | fill-mode | play-state | name */
   animation: 1s ease-in-out  0.5s infinite bounce;
@@ -53,12 +53,12 @@ body {
 
 @keyframes bounce {
   0%,
-  100% {
-    transform: translateY(0px);
+  90% {
+    transform: translateY(0px) scale(1);
   }
 
   75% {
-    transform: translateY(-8px);
+    transform: translateY(-8px) scale(.8);
   }
 
 }
