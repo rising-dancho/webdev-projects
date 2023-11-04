@@ -1,0 +1,106 @@
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/animation */
+
+h1 {
+  /* animation-name: spin; */
+  /* animation-duration: 1s; */
+  display: inline-block;
+  /* animation-iteration-count: infinite; */
+  animation: spin 1s infinite reverse;
+}
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: orangered;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: 3s spin alternate-reverse infinite ease-in-out;
+  /* animation-name: spin;
+  animation-duration: 3s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out; */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+    background-color: purple;
+  }
+  25% {
+    transform: translateX(500px);
+  }
+  75% {
+    transform: translateX(800px);
+  }
+  100% {
+    transform: translateX(200px);
+    background-color: magenta;
+  }
+}
+
+@keyframes bounce {
+  0% {
+  }
+  6% {
+    transform: translateY(0px);
+  }
+  7% {
+    transform: translateY(-6px);
+  }
+  9% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(-1px);
+  }
+  11% {
+    transform: translateY(0px);
+  }
+  100% {
+  }
+}
+/* @keyframes colorchange {
+  from {
+    background-color: pink;
+  }
+  to {
+    background-color: cyan;
+  }
+} */
+
+/* @keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* @keyframes rainbow {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    background-color: violet;
+  }
+} */

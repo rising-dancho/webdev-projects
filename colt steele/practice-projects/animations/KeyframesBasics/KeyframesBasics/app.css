@@ -10,24 +10,17 @@
   justify-content: center;
   align-items: center;
   /* border: 5px solid rgb(119, 212, 181); */
-  animation-name: colorchange;
-  animation-duration: 3s;
+  animation-name: spin;
+  animation-duration: 1s;
+
 }
 
 @keyframes spin {
-  from{
+  from {
     transform: rotate(0deg);
   }
-  to{
-    transform: rotate(360deg);
-  }
-}
 
-@keyframes colorchange {
-  from{
-    background-color: rgb(196, 81, 81);
-  }
-  to{
-    transform: rgb(67, 189, 67);
+  to {
+    transform: rotate(360deg);
   }
 }
