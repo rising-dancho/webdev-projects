@@ -57,7 +57,7 @@ header .hamburger {
     display: none;
 }
 
-header .hamburger .bar1, 
+header .hamburger .bar1,
 header .hamburger .bar2,
 header .hamburger .bar3 {
     background-color: black;
@@ -258,6 +258,7 @@ footer a:active {
 
     header .hamburger {
         display: flex;
+        cursor: pointer;
     }
 
     header {
@@ -302,8 +303,8 @@ footer a:active {
         width: 30px;
     }
 
-    header .hamburger .bar1, 
-    header .hamburger .bar2, 
+    header .hamburger .bar1,
+    header .hamburger .bar2,
     header .hamburger .bar3 {
         height: 4px;
         width: 26px;
@@ -324,26 +325,26 @@ footer a:active {
 
 }
 
-.hamburger .bar1 {
+.animateBar1 {
     animation-name: rotateBar1;
-    animation-duration: 1s;
-    animation-timing-function: linear;
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
     /* animation-iteration-count: infinite; */
     animation-fill-mode: forwards;
 }
 
-.hamburger .bar2 {
+.animateBar2 {
     animation-name: fadeBar2;
-    animation-duration: 1s;
-    animation-timing-function: linear;
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
     /* animation-iteration-count: infinite; */
     animation-fill-mode: forwards;
 }
 
-.hamburger .bar3 {
+.animateBar3 {
     animation-name: rotateBar3;
-    animation-duration: 1s;
-    animation-timing-function: linear;
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
     /* animation-iteration-count: infinite; */
     animation-fill-mode: forwards;
 }
@@ -383,7 +384,7 @@ footer a:active {
 
 }
 
-.purple {
+/* .purple {
     background-color: purple;
     color: white;
-}
+} */
