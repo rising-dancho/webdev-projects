@@ -1,0 +1,51 @@
+/* h1 {
+  font-size: 5rem;
+}
+
+h1::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: purple;
+  display: inline-block;
+}
+
+h1::after {
+  content: "AFTER!";
+} */
+
+
+/* h1::before {
+  content: "";
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111111;
+  color: #E8E9F0;
+  padding: 50px;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 100%;
+}
+
+h1::after {
+  content: ".";
+  height: 50px;
+  width:50px;
+  color: #0AFF9D;
+}
+h1::before {
+  content: "";
+  height: 50px;
+  width:50px;
+  color: #0AFF9D;
+}
