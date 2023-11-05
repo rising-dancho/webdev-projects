@@ -378,3 +378,8 @@ footer a:active {
     }
 
 }
+
+.purple {
+    background-color: purple;
+    color: white;
+}
