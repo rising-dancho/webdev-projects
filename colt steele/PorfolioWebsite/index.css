@@ -86,15 +86,14 @@ header .hamburger .bar3 {
     padding: 0 16px;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -160px;
     z-index: 2;
     background-color: white;
-    opacity: 0;
-    transition: opacity .25s ease-out;
+    transition: right .25s ease-out;
 }
 
 .displayNav {
-    opacity: 1;
+    right: 0;
 }
 
 header .right img,
