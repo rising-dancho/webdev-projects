@@ -13,9 +13,16 @@ const bar2 = document.querySelector(".bar2");
 const bar3 = document.querySelector(".bar3");
 
 menu.addEventListener("click", () => {
-    // alert("clicked!")
-    bar1.classList.toggle("animateBar1");
-    bar2.classList.toggle("animateBar2");
-    bar3.classList.toggle("animateBar3");
-    mobileNav.classList.toggle("displayNav");
+    if (window.innerWidth <= 530) {
+        bar1.classList.toggle("animateBar1-mobile");
+        bar2.classList.toggle("animateBar2-mobile");
+        bar3.classList.toggle("animateBar3-mobile");
+        mobileNav.classList.toggle("displayNav");
+    } else {
+        bar1.classList.toggle("animateBar1");
+        bar2.classList.toggle("animateBar2");
+        bar3.classList.toggle("animateBar3");
+        mobileNav.classList.toggle("displayNav");
+    }
+
 })

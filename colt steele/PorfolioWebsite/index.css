@@ -336,6 +336,8 @@ footer a:active {
     header .hamburger {
         height: 30px;
         width: 30px;
+        animation: none;
+        /* Disable the original animation */
     }
 
     header .hamburger .bar1,
@@ -348,6 +350,12 @@ footer a:active {
     main .project-grid {
         margin-top: 90px;
     }
+
+    /* Apply X shape class for smaller screens */
+    .hamburger.x-shape {
+        animation: rotateBar1 1s forwards, fadeBar2 1s forwards, rotateBar3 1s forwards;
+    }
+
 
 }
 
@@ -415,6 +423,67 @@ footer a:active {
 
     to {
         transform: rotate(-45deg) translate(6px, -10px);
+    }
+
+}
+
+/* New class for X shape */
+
+.animateBar1-mobile {
+    animation-name: rotateBar1-mobile;
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: forwards;
+}
+
+.animateBar2-mobile {
+    animation-name: fadeBar2-mobile;
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: forwards;
+}
+
+.animateBar3-mobile {
+    animation-name: rotateBar3-mobile ;
+    animation-duration: .3s;
+    animation-timing-function: ease-out;
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotateBar1-mobile {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(45deg) translate(2px, 10px);
+    }
+
+}
+
+@keyframes fadeBar2-mobile {
+    from {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+
+}
+
+@keyframes rotateBar3-mobile {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(-45deg) translate(2px, -10px);
     }
 
 }
