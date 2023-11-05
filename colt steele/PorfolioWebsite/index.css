@@ -66,7 +66,38 @@ header .hamburger .bar3 {
 
 }
 
-header .right img {
+header .hamburger .bar1,
+header .hamburger .bar2,
+header .hamburger .bar3 {
+    background-color: black;
+    height: 4px;
+    width: 36px;
+}
+
+.mobileNav {
+    list-style: none;
+    /* border: 1px solid red; */
+    height: 100%;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background-color: white;
+    opacity: 0;
+}
+
+.displayNav {
+    opacity: 1;
+}
+
+header .right img,
+body .mobileNav img {
     width: 24px;
     height: 24px;
 }
@@ -78,23 +109,27 @@ header .right ul {
 }
 
 /* LVHA */
-header .right ul a {
+header .right ul a,
+body .mobileNav a {
     text-decoration: none;
     color: black;
     transition: text-decoration 10s ease;
     /* border: 1px solid red; */
 }
 
-header .right ul a:visited {
+header .right ul a:visited,
+body .mobileNav a:visited {
     text-decoration: none;
     color: black;
 }
 
-header .right ul a:hover {
+header .right ul a:hover,
+body .mobileNav a:hover {
     text-decoration: underline;
 }
 
-header .right ul a:active {
+header .right ul a:active,
+body .mobileNav a:active {
     text-decoration: underline;
 }
 
@@ -383,8 +418,3 @@ footer a:active {
     }
 
 }
-
-/* .purple {
-    background-color: purple;
-    color: white;
-} */
