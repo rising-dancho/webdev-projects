@@ -79,7 +79,7 @@ header .hamburger .bar3 {
     /* border: 1px solid red; */
     height: 100%;
     display: flex;
-    gap: 16px;
+    gap: 32px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -90,6 +90,7 @@ header .hamburger .bar3 {
     z-index: 2;
     background-color: white;
     opacity: 0;
+    transition: opacity .25s ease-out;
 }
 
 .displayNav {
@@ -356,7 +357,6 @@ footer a:active {
         animation: rotateBar1 1s forwards, fadeBar2 1s forwards, rotateBar3 1s forwards;
     }
 
-
 }
 
 @media only screen and (max-width: 400px) {
@@ -370,7 +370,7 @@ footer a:active {
 
 .animateBar1 {
     animation-name: rotateBar1;
-    animation-duration: .3s;
+    animation-duration: .25s;
     animation-timing-function: ease-out;
     /* animation-iteration-count: infinite; */
     animation-fill-mode: forwards;
@@ -378,7 +378,7 @@ footer a:active {
 
 .animateBar2 {
     animation-name: fadeBar2;
-    animation-duration: .3s;
+    animation-duration: .25s;
     animation-timing-function: ease-out;
     /* animation-iteration-count: infinite; */
     animation-fill-mode: forwards;
@@ -386,7 +386,7 @@ footer a:active {
 
 .animateBar3 {
     animation-name: rotateBar3;
-    animation-duration: .3s;
+    animation-duration: .25s;
     animation-timing-function: ease-out;
     /* animation-iteration-count: infinite; */
     animation-fill-mode: forwards;
@@ -431,7 +431,7 @@ footer a:active {
 
 .animateBar1-mobile {
     animation-name: rotateBar1-mobile;
-    animation-duration: .3s;
+    animation-duration: .25s;
     animation-timing-function: ease-out;
     /* animation-iteration-count: infinite; */
     animation-fill-mode: forwards;
@@ -439,15 +439,15 @@ footer a:active {
 
 .animateBar2-mobile {
     animation-name: fadeBar2-mobile;
-    animation-duration: .3s;
+    animation-duration: .25s;
     animation-timing-function: ease-out;
     /* animation-iteration-count: infinite; */
     animation-fill-mode: forwards;
 }
 
 .animateBar3-mobile {
-    animation-name: rotateBar3-mobile ;
-    animation-duration: .3s;
+    animation-name: rotateBar3-mobile;
+    animation-duration: .25s;
     animation-timing-function: ease-out;
     /* animation-iteration-count: infinite; */
     animation-fill-mode: forwards;
