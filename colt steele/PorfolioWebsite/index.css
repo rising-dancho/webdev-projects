@@ -300,6 +300,13 @@ footer a:active {
         width: 30px;
     }
 
+    /* header .hamburger:nth-child(2) {
+        animation-name: fadeBar2;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+    } */
+
     header .hamburger .bar {
         height: 4px;
         width: 26px;
@@ -316,6 +323,62 @@ footer a:active {
     main .project-grid .font-size {
         font-size: 14px;
         font-weight: bold;
+    }
+
+}
+
+.hamburger .bar:nth-child(1) {
+    animation-name: rotateBar1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.hamburger .bar:nth-child(2) {
+    animation-name: fadeBar2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.hamburger .bar:nth-child(3) {
+    animation-name: rotateBar3;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotateBar1 {
+    from {
+        transform: rotate(45deg);
+    }
+
+    to {
+        transform: rotate(45deg);
+    }
+
+}
+
+@keyframes fadeBar2 {
+    from {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scaleX(1);
+        opacity: 0;
+    }
+
+}
+
+@keyframes rotateBar3 {
+    from {
+        transform: rotate(45deg);
+    }
+
+    to {
+        transform: rotate(-45deg);
     }
 
 }
