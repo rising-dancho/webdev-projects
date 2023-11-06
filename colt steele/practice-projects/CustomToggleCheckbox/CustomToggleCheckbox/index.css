@@ -1,9 +1,13 @@
 body {
   display: flex;
+  /* flex-direction: column; */
+  gap: 2rem;
   justify-content: center;
   align-items: center;
   height: 100vh;
   font-family: sans-serif;
+  /* border: 1px solid red; */
+  text-align: left;
 }
 
 .wrapper {
