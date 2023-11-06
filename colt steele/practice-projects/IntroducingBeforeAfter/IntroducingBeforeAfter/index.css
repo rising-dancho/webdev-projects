@@ -1,23 +1,5 @@
-/* h1 {
-  font-size: 5rem;
-}
+/* https://steam-portfolio-demo.vercel.app/#contact */
 
-h1::before {
-  content: "";
-  height: 20px;
-  width: 20px;
-  background: purple;
-  display: inline-block;
-}
-
-h1::after {
-  content: "AFTER!";
-} */
-
-
-/* h1::before {
-  content: "";
-} */
 * {
   margin: 0;
   padding: 0;
@@ -35,6 +17,7 @@ h1 {
   font-weight: 900;
   font-size: 75px;
   line-height: 100%;
+  position: relative;
 }
 
 h1::after {
@@ -43,9 +26,18 @@ h1::after {
   width:50px;
   color: #0AFF9D;
 }
-h1::before {
-  content: "";
-  height: 50px;
-  width:50px;
-  color: #0AFF9D;
+
+span.divider {
+  height: 3.5px;
+  width: 100%;
+  background-color: rgb(87, 85, 85);
+  display: inline-block;
+  margin: 30px;
+}
+
+div.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
