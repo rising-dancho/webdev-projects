@@ -8,6 +8,7 @@ body {
   font-family: sans-serif;
   /* border: 1px solid red; */
   text-align: left;
+  overflow: hidden;
 }
 
 .wrapper {
