@@ -4,38 +4,44 @@ body {
   align-items: center;
   height: 100vh;
   font-family: sans-serif;
+  background-color: #0c1625e6;
+  overflow: hidden;
 }
 
+
 .spinner {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
+  background: conic-gradient(cyan, yellow, red, orange, green, blue, indigo, cyan);
   border-radius: 50%;
-  background: conic-gradient(cyan, yellow, magenta, cyan);
-  border: 4px solid white;
-  box-shadow: inset 0px 0px 110px -70px black;
+  border: 5px solid white;
+  box-shadow: 0px 0px 110px -50px black;
   position: relative;
-  animation: spin 1.5s linear infinite;
+  animation: spin;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .spinner::after {
   content: "";
-  background-color: white;
-  height: 80%;
-  width: 80%;
+  background-color: rgb(12, 23, 39);
+  width: 60%;
+  height: 60%;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: inset 0px 0px 110px -70px black;
-  border: 4px solid white;
+  border: 5px solid white;
+  box-shadow: 0px 0px 110px -70px black;
 }
 
 @keyframes spin {
-  from {
-    transform: rotate(0);
+  0%{
+    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: rotate(-360deg);
   }
 }
