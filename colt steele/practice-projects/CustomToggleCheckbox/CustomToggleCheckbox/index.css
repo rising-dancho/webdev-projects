@@ -22,6 +22,8 @@ body {
   position: relative;
   padding-left: 5rem;
   font-weight: bold;
+  cursor: pointer;
+   /* border: 1px solid red; */
 }
 
 .toggle + label::before {
@@ -33,6 +35,11 @@ body {
   position: absolute;
   top: -10px;
   left: -10px;
+  transition: background-color 300ms ease;
+}
+
+.toggle:checked + label::before {
+  background-color: #20b776;
 }
 
 .toggle + label::after {
@@ -46,10 +53,6 @@ body {
   top: -0.35rem;
   left: -0.25rem;
   transition: transform 300ms ease;
-}
-
-.toggle:checked + label::before {
-  background-color: #20b776;
 }
 
 .toggle:checked + label::after {
