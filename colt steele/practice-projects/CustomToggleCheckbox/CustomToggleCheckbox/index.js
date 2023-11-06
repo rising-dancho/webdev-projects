@@ -19,6 +19,6 @@ function addToggleListener(selector) {
     }
   }
   
-  addToggleListener("#enabled");
-  addToggleListener("#dogs");
+  addToggleListener("#music");
+  addToggleListener("#cats");
   
