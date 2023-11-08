@@ -176,3 +176,16 @@ p {
 .with-icon:hover > img {
   transform: translateX(4px);
 }
+
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .navbar ul {
+  list-style: none;
+  display: flex;
+  gap: var(--spacing-md);
+}
