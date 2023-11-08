@@ -53,6 +53,7 @@ h1 {
   letter-spacing: -1px;
   line-height: var(--h1-height);
 }
+
 h2 {
   font-family: var(--heading-font);
   font-weight: 500;
@@ -62,6 +63,7 @@ h2 {
   letter-spacing: -0.25px;
   line-height: var(--h2-height);
 }
+
 h3 {
   font-family: var(--heading-font);
   font-weight: 500;
@@ -105,6 +107,7 @@ a {
 a:hover {
   color: var(--primary-accent);
 }
+
 p {
   font-size: var(--p-size);
   line-height: var(--p-height);
@@ -120,6 +123,7 @@ p {
   font-size: var(--subtitle-size);
   line-height: var(--subtitle-height);
 }
+
 .subtitle2 {
   color: var(--blue-1);
 }
@@ -148,6 +152,7 @@ p {
   background-color: var(--primary-button-hover);
   cursor: pointer;
 }
+
 .secondary-button {
   font-family: var(--body-font);
   font-size: var(--button-size);
@@ -170,10 +175,12 @@ p {
   justify-content: center;
   align-items: center;
 }
-.with-icon > img {
+
+.with-icon>img {
   transition: transform 0.25s ease;
 }
-.with-icon:hover > img {
+
+.with-icon:hover>img {
   transform: translateX(4px);
 }
 
@@ -184,8 +191,26 @@ header .navbar {
   align-items: center;
 }
 
-header .navbar ul {
+header .navbar .menu {
   list-style: none;
   display: flex;
   gap: var(--spacing-md);
+  color: var(--text-light);
+}
+
+/* LVHA */
+header .navbar a {
+  color: var(--text-light);
+}
+
+header .navbar a:visited {
+  color: var(--text-light);
+}
+
+header .navbar a:hover {
+  text-decoration: underline;
+}
+
+header .navbar a:active {
+  text-decoration: underline;
 }
