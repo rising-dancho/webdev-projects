@@ -31,6 +31,7 @@
   --purple-1: #6962f7;
   --purple-2: #7000ff;
   --blue-1: #00d4ff;
+  --color-test: rgb(56, 42, 94);
   --primary-accent: #0a2540;
   --primary-button-hover: #6d7a88;
   --bg-white: #fff;
@@ -58,13 +59,13 @@
   box-sizing: border-box;
 }
 
-.two-column > .col-left {
+.two-column>.col-left {
   width: 50%;
   box-sizing: border-box;
   padding: 0 var(--spacing-md) 0 0;
 }
 
-.two-column >  .col-right {
+.two-column>.col-right {
   width: 50%;
   box-sizing: border-box;
   padding: 0 0 0 var(--spacing-md);
@@ -154,7 +155,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   padding: var(--spacing-sm) 0 0 0;
-  background-color: var(--purple-2);
+  background-color: var(--color-test);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -232,6 +233,7 @@ p {
   margin: var(--spacing-md) 0;
 }
 
+/* NAVIGATION SECTION */
 header .navbar {
   display: flex;
   justify-content: space-between;
@@ -272,7 +274,24 @@ header .navbar .navbar-button:hover {
   background-color: rgba(250, 250, 250, 0.5);
 }
 
+/* HERO SECTION */
+main {
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
 main .btn-wrapper {
   display: flex;
   gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+}
+
+main .btn-wrapper .secondary-button:nth-of-type(2) {
+  color: var(--purple-2);
+  /* border: 2px solid red; */
+}
+
+main .hero-section p {
+  max-width: 480px;
+  /* border: 2px solid red; */
 }
