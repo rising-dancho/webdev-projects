@@ -49,11 +49,32 @@
   width: 100%;
 }
 
-header,
+.two-column {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.two-column > .col-left {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 var(--spacing-md) 0 0;
+}
+
+.two-column >  .col-right {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 0 0 var(--spacing-md);
+}
+
+/* header,
 main,
 footer {
   border: 1px solid red;
-}
+} */
 
 .subtitle,
 .subtitle2 {
