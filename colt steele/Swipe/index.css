@@ -295,3 +295,15 @@ main .hero-section p {
   max-width: 480px;
   /* border: 2px solid red; */
 }
+
+main .hero-section .hero-phone-wrapper {
+  height: 564px;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+main .hero-phone {
+  height: 628px;
+  transform: translate(32px,-64px);
+}
