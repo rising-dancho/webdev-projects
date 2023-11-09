@@ -37,11 +37,16 @@
   --bg-light: #f7f9fc;
 }
 
-/* helper classes */
+/* utility classes */
 
 .container {
   margin: 0 auto;
   max-width: var(--standard-width);
+}
+
+.section-container {
+  max-width: var(--standard-width);
+  width: 100%;
 }
 
 header,
