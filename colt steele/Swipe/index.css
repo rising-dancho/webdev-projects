@@ -210,6 +210,7 @@ header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 var(--spacing-md);
 }
 
 header .navbar .menu {
@@ -222,6 +223,7 @@ header .navbar .menu {
 /* LVHA */
 header .navbar a {
   color: var(--text-light);
+  font-weight: bold;
 }
 
 header .navbar a:visited {
@@ -234,4 +236,12 @@ header .navbar a:hover {
 
 header .navbar a:active {
   text-decoration: underline;
+}
+
+header .navbar .navbar-button {
+  background-color: rgba(250, 250, 250, 0.25);
+}
+
+header .navbar .navbar-button:hover {
+  background-color: rgba(250, 250, 250, 0.5);
 }
