@@ -312,6 +312,8 @@ main .hero-phone {
 /* PARTNERS SECTION */
 main .partners-section .partners-grid {
   display: grid;
+  column-gap: var(--spacing-md);
+  row-gap: var(--spacing-lg);
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   margin: var(--spacing-xl) 0;
