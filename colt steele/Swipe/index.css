@@ -336,6 +336,24 @@ main .partners-section img {
 
 /* UNIFIED SECTION */
 main .unified-section button {
-  margin-top: var(--spacing-lg);
-  margin-bottom: var(--spacing-lg);
+  margin: var(--spacing-md) 0;
+  background-color: var(--purple-1);
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio */
+  /* aspect-ratio: 16/9; */
+  /* 1:1 (Square)
+  4:3 standard.
+  14:9 standard.
+  16:10 standard.
+  1.66:1, 1.75:1 & 16:9 standard widescreen.
+  1.85:1.
+  2:1 standard.
+  2:1, 2.2:1, 2.35:1, 2.39:1, 2.4:1, 2.55:1, 2.76:1 and 21:9 standard widescreen. */
+}
+
+main .unified-section button:hover {
+  background-color: var(--primary-accent);
+} 
+
+main .unified-section h3 {
+  width: 50%;
 }
