@@ -216,6 +216,7 @@ h6 {
   width: 100%;
 }
 
+/* LVHA */
 a {
   text-decoration: none;
   color: var(--purple-1);
@@ -223,7 +224,15 @@ a {
   transition: color 0.25s ease;
 }
 
+a:visited {
+  color: var(--purple-1);
+}
+
 a:hover {
+  color: var(--primary-accent);
+}
+
+a:active {
   color: var(--primary-accent);
 }
 
@@ -323,4 +332,10 @@ main .partners-section .partners-grid {
 main .partners-section img {
   height: 60px;
   place-self: center;
+}
+
+/* UNIFIED SECTION */
+main .unified-section button {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
 }
