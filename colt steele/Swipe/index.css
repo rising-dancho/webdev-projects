@@ -79,6 +79,30 @@ footer {
   border: 1px solid red;
 } */
 
+.card {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: var(--spacing-sm);
+  padding-left: 0;
+}
+
+.card .icon {
+  height: 50px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.card h3 {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: var(--h6-size);
+  margin: 0;
+  width: 100%;
+  color: var(--text-light);
+}
+
 .subtitle,
 .subtitle2 {
   color: var(--purple-1);
@@ -318,7 +342,7 @@ main .hero-section .hero-phone-wrapper {
 main .hero-phone {
   height: 628px;
   transform: translate(32px, -64px);
-  filter: drop-shadow( var(--standard-box-shadow));
+  filter: drop-shadow(var(--standard-box-shadow));
   /* border: 2px solid red; */
 }
 
@@ -381,23 +405,23 @@ main .graphic-grid {
 #credit-card {
   grid-area: credit-card;
   width: 100%;
-  filter: drop-shadow( var(--standard-box-shadow));
+  filter: drop-shadow(var(--standard-box-shadow));
 }
 
 #slack {
   grid-area: slack;
   width: 100%;
-  filter: drop-shadow( var(--standard-box-shadow));
+  filter: drop-shadow(var(--standard-box-shadow));
 }
 
 #phone {
   grid-area: phone;
   width: 100%;
-  filter: drop-shadow( var(--standard-box-shadow));
+  filter: drop-shadow(var(--standard-box-shadow));
 }
 
 #dash {
   grid-area: dash;
   width: 100%;
-  filter: drop-shadow( var(--standard-box-shadow));
+  filter: drop-shadow(var(--standard-box-shadow));
 }
