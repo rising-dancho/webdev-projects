@@ -6,12 +6,12 @@
   --heading-font: "Anek Telugu", sans-serif;
   --h1-size: 94px;
   --h1-height: 108px;
-  --h2-size: 50px;
-  --h2-height: 75px;
-  --h3-size: 40px;
+  --h2-size: 40px;
+  --h2-height: 1.2;
+  --h3-size: 32px;
   --h4-size: 32px;
-  --h5-size: 28px;
-  --h6-size: 22px;
+  --h5-size: 22px;
+  --h6-size: 18px;
   --subtitle-size: 17px;
   --subtitle-height: 26px;
   --p-size: 18px;
@@ -110,6 +110,7 @@ footer {
   font-weight: 500;
   font-size: var(--subtitle-size);
   line-height: var(--subtitle-height);
+  margin: var(--spacing-md) 0;
 }
 
 .subtitle2 {
@@ -387,7 +388,7 @@ main .unified-section button:hover {
   background-color: var(--primary-accent);
 }
 
-main .unified-section h3 {
+main .unified-section h2 {
   width: 50%;
   margin-bottom: var(--spacing-md);
 }
