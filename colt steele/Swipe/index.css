@@ -37,7 +37,7 @@
   --bg-white: #fff;
   --bg-light: #f7f9fc;
 
-  --standard-box-shadow: 0px 2px 40px rgbA(0, 0, 0, 0.15);
+  --standard-box-shadow: 0px 2px 40px rgba(0, 0, 0, .15);
 }
 
 /* utility classes */
@@ -318,6 +318,8 @@ main .hero-section .hero-phone-wrapper {
 main .hero-phone {
   height: 628px;
   transform: translate(32px, -64px);
+  filter: drop-shadow( var(--standard-box-shadow));
+  /* border: 2px solid red; */
 }
 
 /* PARTNERS SECTION */
@@ -334,7 +336,6 @@ main .partners-section .partners-grid {
 main .partners-section img {
   height: 60px;
   place-self: center;
-  filter: drop-shadow( var(--standard-box-shadow));
 }
 
 /* UNIFIED SECTION */
