@@ -362,3 +362,12 @@ main .unified-section h3 {
   width: 50%;
   margin-bottom: var(--spacing-md);
 }
+
+/* GRAPHIC GRID SECTION */
+main .graphic-grid {
+  display: grid;
+  grid-template-areas: 
+  "credit-card slack slack"
+  "credit-card slack slack"
+  ;
+}
