@@ -36,6 +36,8 @@
   --primary-button-hover: #6d7a88;
   --bg-white: #fff;
   --bg-light: #f7f9fc;
+
+  --standard-box-shadow: 0px 2px 40px rgbA(0, 0, 0, 0.15);
 }
 
 /* utility classes */
@@ -337,6 +339,7 @@ main .partners-section img {
 /* UNIFIED SECTION */
 main .unified-section {
   padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
 }
 
 main .unified-section button {
@@ -364,10 +367,40 @@ main .unified-section h3 {
 }
 
 /* GRAPHIC GRID SECTION */
+main .graphic-section {
+  padding-top: var(--spacing-xl);
+  /* border: 2px solid red; */
+}
+
 main .graphic-grid {
   display: grid;
-  grid-template-areas: 
-  "credit-card slack slack"
-  "credit-card slack slack"
-  ;
+  gap: var(--spacing-lg);
+  grid-template-areas:
+    "credit-card slack slack"
+    "phone slack slack"
+    "phone dash dash";
+}
+
+#credit-card {
+  grid-area: credit-card;
+  width: 100%;
+  box-shadow: var(--standard-box-shadow);
+}
+
+#slack {
+  grid-area: slack;
+  width: 100%;
+  box-shadow: var(--standard-box-shadow);
+}
+
+#phone {
+  grid-area: phone;
+  width: 100%;
+  box-shadow: var(--standard-box-shadow);
+}
+
+#dash {
+  grid-area: dash;
+  width: 100%;
+  box-shadow: var(--standard-box-shadow);
 }
