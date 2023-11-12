@@ -426,3 +426,22 @@ main .graphic-grid {
   width: 100%;
   filter: drop-shadow(var(--standard-box-shadow));
 }
+
+/* INTEGRATIONS SECTION */
+main .integrations-section {
+  color: var(--text-light);
+  background-color: var(--primary-accent);
+}
+
+main .integrations-section .card-container {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: start;
+  align-items: start;
+  border: 2px solid red;
+}
+
+main .card-container .card {
+  width: 50%;
+  
+}
