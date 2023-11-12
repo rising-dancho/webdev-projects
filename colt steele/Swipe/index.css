@@ -475,6 +475,10 @@ main .integrations-section .secondary-button {
 }
 
 /* WHY SWIPE SECTION */
+main .why-swipe-section {
+  margin-top: var(--spacing-xl);
+}
+
 main .why-swipe-section .card-container {
   display: flex;
   gap: var(--spacing-md);
