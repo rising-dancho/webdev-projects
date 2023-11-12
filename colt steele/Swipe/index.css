@@ -431,6 +431,7 @@ main .graphic-grid {
 main .integrations-section {
   color: var(--text-light);
   /* background-color: var(--primary-accent); */
+  margin-top: var(--spacing-xl);
 }
 
 main .integrations-section .card-container {
@@ -459,4 +460,16 @@ main .integrations-section .primary-button:hover {
 
 main .integrations-section .secondary-button {
   color: var(--blue-1);
+}
+
+#api-code,
+#terminal-code {
+  /* width: 100%; */
+  width: 470px;
+  border-radius: 10px;
+  filter: drop-shadow(var(--standard-box-shadow));
+}
+
+#terminal-code {
+  margin-top: var(--spacing-md);
 }
