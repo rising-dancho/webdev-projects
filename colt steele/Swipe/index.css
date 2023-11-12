@@ -430,7 +430,7 @@ main .graphic-grid {
 /* INTEGRATIONS SECTION */
 main .integrations-section {
   color: var(--text-light);
-  background-color: var(--primary-accent);
+  /* background-color: var(--primary-accent); */
 }
 
 main .integrations-section .card-container {
@@ -438,10 +438,25 @@ main .integrations-section .card-container {
   gap: var(--spacing-md);
   justify-content: start;
   align-items: start;
-  border: 2px solid red;
+  margin: var(--spacing-lg) 0;
+  /* border: 2px solid red; */
 }
 
 main .card-container .card {
   width: 50%;
-  
+}
+
+main .integrations-section .primary-button {
+  background-color: var(--blue-1);
+  color: var(--text-dark);
+  margin-top: var(--spacing-lg);
+}
+
+main .integrations-section .primary-button:hover {
+  background-color: var(--bg-white);
+}
+
+
+main .integrations-section .secondary-button {
+  color: var(--blue-1);
 }
