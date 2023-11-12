@@ -474,3 +474,15 @@ main .integrations-section .secondary-button {
   margin-top: var(--spacing-md);
 }
 
+/* WHY SWIPE SECTION */
+main .why-swipe-section .card-container {
+  display: flex;
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) 0;
+  /* border: 2px solid red; */
+}
+
+main .why-swipe-section .card-container .secondary-text {
+  margin: var(--spacing-md) 0;
+   /* border: 2px solid red; */
+}
