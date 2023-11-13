@@ -516,6 +516,19 @@ main .why-swipe-section .card-container .secondary-text {
 main .global-section {
   background-color: var(--primary-accent);
   color: var(--text-light);
+  position: relative;
+  padding: calc(var(--spacing-xl) * 3) 0;;
+}
+
+#globe {
+  max-width: 844px;
+  opacity: 25%;
+  position: absolute;
+  top: 10%;
+  z-index: 1;
+  /* makes the globe unselectable */
+  pointer-events: none; 
+  user-select: none;
 }
 
 main .global-section a {
@@ -523,12 +536,13 @@ main .global-section a {
 }
 
 main .global-section a:hover {
-  color: var(--bg-light);
+  color: var(--primary-button-hover);
 }
 
 main .global-section .card-container {
   display: flex;
   gap: var(--spacing-md);
+  z-index: 2;
 }
 
 main .global-section .card-container .card {
@@ -545,5 +559,5 @@ main .global-section .card h3 {
   padding: 0;
   padding-left: var(--spacing-sm);
   line-height: 28px;
-
 }
+
