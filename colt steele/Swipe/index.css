@@ -515,4 +515,35 @@ main .why-swipe-section .card-container .secondary-text {
 /* GLOBAL SECTION */
 main .global-section {
   background-color: var(--primary-accent);
+  color: var(--text-light);
+}
+
+main .global-section a {
+  color: var(--blue-1);
+}
+
+main .global-section a:hover {
+  color: var(--bg-light);
+}
+
+main .global-section .card-container {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+main .global-section .card-container .card {
+  width: 25%;
+  box-sizing: border-box;
+  padding-right: var(--spacing-sm);
+  margin: calc(var(--spacing-xl) * 2) 0;
+  margin-right: var(--spacing-md);
+  /* border: 2px solid red; */
+}
+
+main .global-section .card h3 {
+  border-left: 2px solid var(--blue-1);
+  padding: 0;
+  padding-left: var(--spacing-sm);
+  line-height: 28px;
+
 }
