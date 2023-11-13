@@ -181,9 +181,8 @@ body {
   width: 100%;
   margin: 0;
   box-sizing: border-box;
-  padding: var(--spacing-sm) 0 0 0;
-  background-color: var(--color-test);
-  /* background-color: var(--bg-white); */
+  /* background-color: var(--color-test); */
+  background-color: var(--bg-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -270,6 +269,11 @@ p {
 }
 
 /* NAVIGATION SECTION */
+header {
+  background-color: var(--primary-accent);
+  padding: var(--spacing-sm) 0 0 0;
+}
+
 header .navbar {
   display: flex;
   justify-content: space-between;
@@ -310,7 +314,6 @@ header .navbar .navbar-button:hover {
   background-color: rgba(250, 250, 250, 0.5);
 }
 
-/* HERO SECTION */
 main {
   margin-top: var(--spacing-xl);
   margin-bottom: var(--spacing-xl);
@@ -318,13 +321,18 @@ main {
   /* border: 2px solid red; */
 }
 
-main .btn-wrapper {
+/* HERO SECTION */
+/* main .hero-section {
+  background-color: var(--primary-accent);
+} */
+
+main .hero-section .btn-wrapper {
   display: flex;
   gap: var(--spacing-md);
   margin: var(--spacing-lg) 0;
 }
 
-main .btn-wrapper .secondary-button:nth-of-type(2) {
+main .hero-section .btn-wrapper .secondary-button:nth-of-type(2) {
   color: var(--purple-2);
   /* border: 2px solid red; */
 }
