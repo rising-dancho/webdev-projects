@@ -42,7 +42,7 @@
 
 /* utility classes */
 
-.container {
+.centered-container {
   margin: 0 auto;
   max-width: var(--standard-width);
 }
@@ -187,7 +187,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 h1 {
@@ -315,6 +314,8 @@ header .navbar .navbar-button:hover {
 main {
   margin-top: var(--spacing-xl);
   margin-bottom: var(--spacing-xl);
+  width: 100%;
+  /* border: 2px solid red; */
 }
 
 main .btn-wrapper {
@@ -430,8 +431,9 @@ main .graphic-grid {
 /* INTEGRATIONS SECTION */
 main .integrations-section {
   color: var(--text-light);
-  /* background-color: var(--primary-accent); */
+  background-color: var(--primary-accent);
   margin-top: var(--spacing-xl);
+  width: 100%;
 }
 
 main .integrations-section .card-container {
@@ -504,5 +506,5 @@ main .why-swipe-section .card-container .secondary-text {
 
 /* GLOBAL SECTION */
 main .global-section {
-  
-} 
+  background-color: var(--primary-accent);
+}
