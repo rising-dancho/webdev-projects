@@ -27,6 +27,7 @@
   --spacing-xl: 64px;
 
   --standard-width: 1144px;
+  --primary-gradient: linear-gradient( 101.33deg, #08209a 0.76%, #6563ff 33.33%, #36c5f0 76.92%, #83e2ff 96.96% );
 
   --purple-1: #6962f7;
   --purple-2: #7000ff;
@@ -518,7 +519,8 @@ main .global-section {
   background-color: var(--primary-accent);
   color: var(--text-light);
   position: relative;
-  padding: calc(var(--spacing-xl) * 3) 0;;
+  padding: calc(var(--spacing-xl) * 3) 0;
+  ;
 }
 
 #globe {
@@ -528,7 +530,7 @@ main .global-section {
   top: 10%;
   z-index: 1;
   /* makes the globe unselectable */
-  pointer-events: none; 
+  pointer-events: none;
   user-select: none;
 }
 
@@ -563,3 +565,66 @@ main .global-section .card h3 {
 }
 
 /* VIRTUAL EVENTS SECTION */
+main .virtual-events-section {
+  padding: calc(var(--spacing-xl) * 2) 0;
+  /* border: 2px solid red; */
+}
+
+main .virtual-events-section .primary-button {
+  background-color: var(--purple-1);
+  margin-top: var(--spacing-lg);
+}
+
+main .virtual-events-section .primary-button:hover {
+  background-color: var(--primary-accent);
+}
+
+main .virtual-events-section .swipe-sessions-card {
+  width: 540px;
+  height: 446px;
+  box-shadow: var(--standard-box-shadow);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+main .swipe-sessions-card .card-top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+main .swipe-sessions-card .card-top::before {
+  background: var(--primary-gradient);
+  content: "";
+  width: 100%;
+  height: 150%;
+  position: absolute;
+  top:-40%;
+  transform: skewY(-5deg);
+  z-index: -1;
+}
+
+main .swipe-sessions-card .card-bottom {
+  position: relative;
+  top: 0;
+  left: 50px;
+}
+
+main .swipe-sessions-card .card-bottom .avatars {
+  width: 140px;
+  height: 80px;
+}
+
+#swipe-sessions {
+  z-index: 2;
+  width: 338px
+}
+
+#avatar1,
+#avatar2 {
+  width: 80px;
+  z-index:2;
+}
