@@ -615,8 +615,8 @@ main .swipe-sessions-card .card-bottom {
 }
 
 main .card-bottom .subtitle {
-  margin-top: 22.5px;
-  margin-bottom: 5px;
+  margin-top: var(--spacing-lg);
+  margin-bottom: 3.5px;
 }
 
 main .card-content {
