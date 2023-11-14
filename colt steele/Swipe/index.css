@@ -608,9 +608,22 @@ main .swipe-sessions-card .card-top::before {
 }
 
 main .swipe-sessions-card .card-bottom {
-  position: relative;
-  top: 0;
-  left: 50px;
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+  padding: var(--spacing-xl);
+}
+
+main .card-bottom .subtitle {
+  margin-top: 22.5px;
+  margin-bottom: 5px;
+} 
+
+main .card-bottom .secondary-text {
+  color: var(--text-dark);
+  width: 50%;
+  font-weight: 600;
+  margin-top: 0;
 }
 
 main .swipe-sessions-card .avatars {
@@ -618,12 +631,14 @@ main .swipe-sessions-card .avatars {
   bottom: -70px;
   left: var(--spacing-xl);
   z-index: 3;
- 
 }
 
 #avatar1,
 #avatar2 {
   width: 80px;
+}
+
+#avatar1 {
   position: relative;
 }
 
