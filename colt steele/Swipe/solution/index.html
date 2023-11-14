@@ -29,6 +29,8 @@
         <button class="primary-button navbar-button">Sign In</button>
     </nav>
     <main>
+        <!-- GRADIENT BACKGROUND -->
+        <canvas id="gradient-canvas"></canvas>
         <!-- Hero Section -->
         <div class="hero">
             <div class="section-container two-column">
@@ -212,7 +214,7 @@
                             yearly for <a href="#">startups, Fortune 500s, and everything in between.</a></p>
                     </div>
                     <div class="col-right">
-                        <!-- <img src="assets/global-graphic.png" alt=""> -->
+                        <img id="globe" src="assets/global-graphic.png" alt="">
                     </div>
                 </div>
                 <div class="card-container">
@@ -236,7 +238,132 @@
             </div>
         </div>
 
+        <!-- Virtual Events Section -->
+        <div class="virtual-events-section">
+            <div class="section-container two-column">
+                <div class="col-left">
+                    <p class="subtitle">Virtual events</p>
+                    <h2>Check out Sessions now!</h2>
+                    <p>Swipe Sessions is our annual conference - it's now available to watch on demand! Check it out and
+                        become an "internet economy" genius, and see how Swipe can transform the way you do business
+                        online.</p>
+                    <button class="primary-button with-icon">
+                        Start now
+                        <img src="assets/arrow-right-light.svg">
+                    </button>
+                </div>
+                <div class="col-right">
+                    <div class="swipe-sessions-card">
+                        <div class="card-top">
+                            <img id="sessions-logo" src="assets/swipe-sessions.png" alt="">
+                            <div class="avatars">
+                                <img src="assets/avatar1.png" alt="">
+                                <img src="assets/avatar2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-bottom">
+                            <div class="card-content">
+                                <p class="subtitle">Keynote</p>
+                                <p class="secondary-text">Everything you need to know about the internet economy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GETTING STARTED SECTION -->
+        <div class="getting-started-section">
+            <div class="section-container two-column">
+                <div class="col-left">
+                    <h2>What are you waiting for?</h2>
+                    <p>Explore <a href="#">Swipe</a> now, or create an account and start accepting payments today! If
+                        you need a custom package for your business, let's chat today.</p>
+                    <button class="primary-button with-icon">
+                        Start now
+                        <img src="assets/arrow-right-light.svg" alt="">
+                    </button>
+                </div>
+                <div class="col-right">
+                    <div class="card">
+                        <img src="assets/shield-icon.png" alt="" class="icon">
+                        <h3>Always know what you pay</h3>
+                        <p class="secondary-text">Integrated per-transaction pricing with no hidden fees.</p>
+
+                        <button class="secondary-button with-icon">
+                            Pricing details
+                            <img src="assets/arrow-right-purple.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="card">
+                        <img src="assets/bars-icon.png" alt="" class="icon">
+                        <h3>Start your integration</h3>
+                        <p class="secondary-text">Get up and running with Stripe in as little as 10 minutes.</p>
+
+                        <button class="secondary-button with-icon">
+                            API reference
+                            <img src="assets/arrow-right-purple.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="section-container">
+                <div class="col">
+                    <img src="assets/logo-dark.svg" alt="" id="footer-logo">
+                    <div class="icon-link">
+                        <img src="assets/location-icon.png" alt="">
+                        <a href="#">United States</a>
+                    </div>
+                    <div class="icon-link">
+                        <img src="assets/comment-icon.png" alt="">
+                        <a href="#">English (United States)</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="#">Atlas</a></li>
+                        <li><a href="#">Billing</a></li>
+                        <li><a href="#">Invoicing</a></li>
+                        <li><a href="#">Payments</a></li>
+                        <li><a href="#">Checkout</a></li>
+                        <li><a href="#">Identity</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Use Cases</h3>
+                    <ul>
+                        <li><a href="#">eCommerce</a></li>
+                        <li><a href="#">SaaS</a></li>
+                        <li><a href="#">Marketplace</a></li>
+                        <li><a href="#">Embedded Finance</a></li>
+                        <li><a href="#">Crypto</a></li>
+                        <li><a href="#">Creator Economy</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Licenses</a></li>
+                        <li><a href="#">Privacy & Terms</a></li>
+                        <li><a href="#">Cookie Settings</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+
     </main>
+
+
+    <script src="gradient.js"></script>
 </body>
 
 </html>

@@ -31,6 +31,7 @@
   --purple-1: #6962f7;
   --purple-2: #7000ff;
   --blue-1: #00d4ff;
+  --blue-hover: hsl(190, 100%, 38%);
   --color-test: rgb(56, 42, 94);
   --primary-accent: #0a2540;
   --primary-button-hover: #6d7a88;
@@ -536,7 +537,7 @@ main .global-section a {
 }
 
 main .global-section a:hover {
-  color: var(--primary-button-hover);
+  color: var(--blue-hover);
 }
 
 main .global-section .card-container {
