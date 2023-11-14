@@ -617,13 +617,20 @@ main .swipe-sessions-card .card-bottom {
 main .card-bottom .subtitle {
   margin-top: 22.5px;
   margin-bottom: 5px;
-} 
+}
 
-main .card-bottom .secondary-text {
+main .card-content {
+  width: 65%;
+}
+
+main .card-bottom a {
   color: var(--text-dark);
-  width: 50%;
-  font-weight: 600;
+  line-height: 1.4;
   margin-top: 0;
+}
+
+main .card-bottom a:hover {
+  text-decoration: underline;
 }
 
 main .swipe-sessions-card .avatars {
