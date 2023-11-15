@@ -587,7 +587,7 @@ main .virtual-events-section .swipe-sessions-card {
   overflow: hidden;
 }
 
-main .virtual-events-section .two-column{
+main .virtual-events-section .two-column {
   display: flex;
   gap: var(--spacing-xl);
   justify-content: start;
@@ -665,4 +665,8 @@ main .virtual-events-section .swipe-sessions-card .avatars {
 #swipe-sessions {
   z-index: 2;
   width: 338px
+}
+
+main .call-to-action-section .card-container {
+  display: flex;
 }
