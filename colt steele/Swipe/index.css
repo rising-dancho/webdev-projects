@@ -410,25 +410,25 @@ main .graphic-grid {
     "phone dash dash";
 }
 
-#credit-card {
+main #credit-card {
   grid-area: credit-card;
   width: 100%;
   filter: drop-shadow(var(--standard-box-shadow));
 }
 
-#slack {
+main #slack {
   grid-area: slack;
   width: 100%;
   filter: drop-shadow(var(--standard-box-shadow));
 }
 
-#phone {
+main #phone {
   grid-area: phone;
   width: 100%;
   filter: drop-shadow(var(--standard-box-shadow));
 }
 
-#dash {
+main #dash {
   grid-area: dash;
   width: 100%;
   filter: drop-shadow(var(--standard-box-shadow));
@@ -472,15 +472,15 @@ main .integrations-section .secondary-button {
   padding-right: 0;
 }
 
-#api-code,
-#terminal-code {
+main #api-code,
+main #terminal-code {
   /* width: 100%; */
   width: 470px;
   border-radius: 15px;
   filter: drop-shadow(var(--standard-box-shadow));
 }
 
-#terminal-code {
+main #terminal-code {
   margin-top: var(--spacing-md);
 }
 
@@ -521,7 +521,7 @@ main .global-section {
   ;
 }
 
-#globe {
+main #globe {
   max-width: 844px;
   opacity: 25%;
   position: absolute;
@@ -646,21 +646,21 @@ main .virtual-events-section .swipe-sessions-card .avatars {
   z-index: 3;
 }
 
-#avatar1,
-#avatar2 {
+main #avatar1,
+main #avatar2 {
   width: 80px;
 }
 
-#avatar1 {
+main #avatar1 {
   position: relative;
 }
 
-#avatar2 {
+main #avatar2 {
   position: absolute;
   left: 65px;
 }
 
-#swipe-sessions {
+main #swipe-sessions {
   z-index: 2;
   width: 338px
 }
@@ -713,4 +713,63 @@ main .getting-started-section h3 {
 main .getting-started-section .card {
   padding: 0;
   padding-right: var(--spacing-sm);
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--bg-light);
+  padding: var(--spacing-xl) 0;
+}
+
+footer .footer-contents {
+  display: flex;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+
+footer .footer-contents .col {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+footer #footer-logo {
+  max-width: 108px;
+  margin-bottom: var(--spacing-md);
+}
+
+footer #location-icon,
+footer #message-icon {
+  width: 24px;
+  margin-right: var(--spacing-sm);
+}
+
+footer .icon-link {
+  margin: var(--spacing-md) 0;
+  display: flex;
+  align-items: center;
+}
+
+footer .icon-link:last-of-type {
+  margin-top: 0;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  margin: var(--spacing-md) 0;
+}
+
+footer .col a {
+  color: var(--text-dark);
+  font-weight: normal;
+}
+
+footer .col a:hover {
+  color: var(--purple-1);
+  text-decoration: underline;
 }
