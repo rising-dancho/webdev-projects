@@ -17,18 +17,27 @@
 <body>
     <header>
         <nav class="navbar centered-container">
-            <a href="#"><img src="./assets/logo-white.svg" alt="Swipe Inc."></a>
+            
             <ul class="menu">
+                <a href="#"><img src="./assets/logo-white.svg" alt="Swipe Inc."></a>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Solutions</a></li>
                 <li><a href="#">Developers</a></li>
                 <li><a href="#">Resources</a></li>
                 <li><a href="#">Pricing</a></li>
             </ul>
-            <button class="primary-button navbar-button">Sign-in</button>
+            <div class="cta-wrapper">
+                <button class="secondary-button with-icon">
+                    Contact sales
+                    <img src="assets/arrow-right-light.svg">
+                </button>
+                <button class="primary-button navbar-button">Sign-in</button>
+            </div>
+          
         </nav>
     </header>
     <main>
+        <canvas id="gradient-canvas"></canvas>
         <section class="hero-section">
             <div class="two-column centered-container">
                 <div class="col-left">
@@ -350,6 +359,7 @@
             </div>
         </section>
     </footer>
+    <script src="./gradient.js"></script>
 </body>
 
 </html>

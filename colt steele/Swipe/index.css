@@ -272,7 +272,7 @@ p {
 
 /* NAVIGATION SECTION */
 header {
-  background-color: var(--primary-accent);
+  /* background-color: var(--primary-accent); */
   padding: var(--spacing-sm) 0 0 0;
 }
 
@@ -280,14 +280,18 @@ header .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: var(--spacing-md);
+  padding: 0 var(--spacing-sm);
 }
 
 header .navbar .menu {
   list-style: none;
   display: flex;
-  gap: var(--spacing-md);
+  gap: var(--spacing-lg);
+  justify-content: start;
+  align-items: center;
+  height: 100%;
   color: var(--text-light);
+  padding-left: 0;
 }
 
 /* LVHA */
@@ -310,17 +314,50 @@ header .navbar a:active {
 
 header .navbar .navbar-button {
   background-color: rgba(250, 250, 250, 0.25);
+  margin-right: var(--spacing-sm);
 }
 
 header .navbar .navbar-button:hover {
   background-color: rgba(250, 250, 250, 0.5);
 }
 
+header .navbar .cta-wrapper {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+  height: 100%;
+}
+
+header .navbar .cta-wrapper .secondary-button {
+  color: var(--text-light);
+}
+
 main {
-  margin-top: var(--spacing-xl);
+  margin-top: calc(var(--spacing-xl) * 1.5);
   margin-bottom: var(--spacing-xl);
   width: 100%;
   /* border: 2px solid red; */
+  position: relative;
+ 
+}
+
+/* ANIMATED GRADIENT */
+main #gradient-canvas {
+  /* background-color: var(--primary-accent); */
+  width: 200%;
+  height: 1050px;
+  transform: skewY(-10deg);
+  border: 1px solid transparent; 
+  -webkit-transform-style: preserve-3d; 
+  -webkit-backface-visibility: hidden; 
+  position: absolute;
+  top: -876px;
+  left: -50%;
+  z-index: -1;
+  --gradient-color-1: #ef008f;
+  --gradient-color-2: #6ec3f4;
+  --gradient-color-3: #7038ff;
+  --gradient-color-4: #ffba27;
 }
 
 /* HERO SECTION */
