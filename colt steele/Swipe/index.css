@@ -324,10 +324,6 @@ main {
 }
 
 /* HERO SECTION */
-/* main .hero-section {
-  background-color: var(--primary-accent);
-} */
-
 main .hero-section .btn-wrapper {
   display: flex;
   gap: var(--spacing-md);
@@ -472,6 +468,8 @@ main .integrations-section .primary-button:hover {
 
 main .integrations-section .secondary-button {
   color: var(--blue-1);
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #api-code,
@@ -667,6 +665,52 @@ main .virtual-events-section .swipe-sessions-card .avatars {
   width: 338px
 }
 
-main .call-to-action-section .card-container {
+/* GETTING STARTED SECTION */
+main .getting-started-section {
+  padding: var(--spacing-xl) 0;
+}
+
+main .getting-started-section .card-container {
   display: flex;
+  gap: var(--spacing-md);
+}
+
+main .getting-started-section .two-column {
+  display: flex;
+  gap: var(--spacing-xl);
+}
+
+main .getting-started-section .col-left {
+  width: 45%;
+  box-sizing: border-box;
+  text-align: start;
+}
+
+main .getting-started-section .primary-button {
+  background-color: var(--purple-1);
+  margin-top: var(--spacing-lg);
+}
+
+main .getting-started-section .primary-button:hover {
+  background-color: var(--primary-accent);
+}
+
+main .getting-started-section .secondary-button {
+  color: var(--purple-2);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+main .getting-started-section .secondary-button:hover {
+  color: var(--purple-1);
+}
+
+main .getting-started-section h3 {
+  color: var(--text-dark);
+  font-size: var(--h5-size);
+}
+
+main .getting-started-section .card {
+  padding: 0;
+  padding-right: var(--spacing-sm);
 }
