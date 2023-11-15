@@ -437,9 +437,24 @@ main #dash {
 /* INTEGRATIONS SECTION */
 main .integrations-section {
   color: var(--text-light);
-  background-color: var(--primary-accent);
-  margin-top: var(--spacing-xl);
+  margin: calc(var(--spacing-xl) * 3) 0;
   width: 100%;
+  position: relative;
+}
+
+main .integrations-section::before {
+  content: "";
+  width: 100%;
+  height: 875px;
+  background-color: var(--primary-accent);
+  position: absolute;
+  top: -100px;
+  transform: skewY(-5deg);
+}
+
+main .integrations-section .col-left,
+main .integrations-section .col-right {
+  z-index: 3;
 }
 
 main .integrations-section .card-container {
@@ -451,7 +466,7 @@ main .integrations-section .card-container {
   /* border: 2px solid red; */
 }
 
-main .card-container .card {
+main .integrations-section .card-container .card {
   width: 50%;
 }
 
@@ -486,7 +501,7 @@ main #terminal-code {
 
 /* WHY SWIPE SECTION */
 main .why-swipe-section {
-  margin-top: var(--spacing-xl);
+  margin: calc(var(--spacing-xl) * 3) 0;
 }
 
 main .why-swipe-section h3,
@@ -514,11 +529,34 @@ main .why-swipe-section .card-container .secondary-text {
 
 /* GLOBAL SECTION */
 main .global-section {
-  background-color: var(--primary-accent);
   color: var(--text-light);
-  position: relative;
   padding: calc(var(--spacing-xl) * 3) 0;
-  ;
+  position: relative;;
+}
+
+main .global-section::after {
+  content: "";
+  width: 100%;
+  height: 575px;
+  background-color: var(--primary-accent);
+  position: absolute;
+  bottom: 70px;
+}
+
+main .global-section::before {
+  content: "";
+  width: 100%;
+  height: 785px;
+  background-color: var(--primary-accent);
+  position: absolute;
+  top: -50px;
+  transform: skewY(-5deg);
+}
+
+main .global-section .col-left,
+main .global-section .col-right,
+main .global-section .card-container .card {
+  z-index: 4;
 }
 
 main #globe {
