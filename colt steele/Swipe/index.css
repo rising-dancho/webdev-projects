@@ -446,7 +446,7 @@ main .unified-section h2 {
 /* GRAPHIC GRID SECTION */
 main .graphic-section {
   background-color: var(--bg-light);
-  background-color: red;
+  /* background-color: red; */
 }
 
 main .graphic-grid {
@@ -942,6 +942,19 @@ footer .col a:hover {
   .integrations-section .card-container {
     flex-direction: column;
   }
+
+  /* .integrations-section {
+    position: relative;
+  }
+  .integrations-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: red;
+  } */
 
   .integrations-section .card-container .card {
     width: 100%;
