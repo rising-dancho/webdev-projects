@@ -331,7 +331,7 @@ header .navbar .cta-wrapper .secondary-button {
   color: var(--text-light);
 }
 main {
-  margin-top: var(--spacing-xl);
+  /* margin-top: var(--spacing-xl); */
   margin-bottom: var(--spacing-xl);
   width: 100%;
   /* border: 2px solid red; */
