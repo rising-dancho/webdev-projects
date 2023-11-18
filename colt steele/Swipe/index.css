@@ -486,8 +486,12 @@ main #dash {
 main .integrations-section {
   color: var(--text-light);
   margin: calc(var(--spacing-xl) * 3) 0;
-  width: 100%;
+  width: 100%;;
   position: relative;
+}
+
+.integrations-section .card-container .card {
+  width: 100%;
 }
 
 main .integrations-section::before {
@@ -498,6 +502,17 @@ main .integrations-section::before {
   position: absolute;
   top: -100px;
   transform: skewY(-5deg);
+}
+
+main .integrations-section::after {
+  content: "";
+  width: 100%;
+  height: 300px;
+  background-color: var(--bg-light);
+  position: absolute;
+  top: -200px;
+  left: 0;
+  z-index: -1;
 }
 
 main .integrations-section .col-left,
@@ -938,28 +953,6 @@ footer .col a:hover {
     width: 100%;
   }
 
-  /* INTEGRATIONS SECTION */
-  .integrations-section .card-container {
-    flex-direction: column;
-  }
-
-  /* .integrations-section {
-    position: relative;
-  }
-  .integrations-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 300px;
-    background-color: red;
-  } */
-
-  .integrations-section .card-container .card {
-    width: 100%;
-  }
-
   /* WHY SWIPE SECTION */
   .why-swipe-section {
     padding: var(--spacing-md) 0 var(--spacing-xl) 0;
@@ -1153,6 +1146,4 @@ footer .col a:hover {
 }
 
 /* TABLET SIZE */
-@media only screen and (max-width:769px) {
-   
-}
+@media only screen and (max-width:769px) {}
