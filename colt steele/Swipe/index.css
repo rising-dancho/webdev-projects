@@ -1146,6 +1146,15 @@ footer .col a:hover {
 }
 
 /* TABLET SIZE */
-@media only screen and (max-width:769px) {}
+@media only screen and (max-width:769px) {
+  body {
+    background-color: purple;
+  }
+}
 
-@media only screen and (max-width:769px) {}
+/* PHONE SIZE */
+@media only screen and (max-width:550px) {
+  body {
+    background-color: cyan;
+  }
+}
