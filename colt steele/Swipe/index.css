@@ -879,10 +879,22 @@ footer .col a:hover {
 
 
 /* CUSTOM BREAKPOINT (850px) */
+@media only screen and (max-width: 1144px) {
+
+  header .navbar {
+    margin: 0;
+  }
+}
+
 @media only screen and (max-width: 850px) {
   :root {
     --h1-size: 70px;
     --h1-height: 75px;
+  }
+
+  /* PARTNERS SECTION */
+  main .partners-section .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
@@ -896,14 +908,8 @@ footer .col a:hover {
     --h6-size: 16px;
   }
 
-  /* PARTNERS SECTION */
-  main .partners-section .partners-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
 }
 
 /* MOBILE SIZE BREAKPOINT */
-@media only screen and (max-width: 550px) {
-  
-}
+@media only screen and (max-width: 550px) {}
