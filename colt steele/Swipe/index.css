@@ -964,7 +964,7 @@ footer .col a:hover {
   }
 
   main .integrations-section::before {
-    height: 995px;
+    height: 1045px;
   }
 
   main .global-section .card-container {
@@ -981,6 +981,14 @@ footer .col a:hover {
 
   main .global-section::after {
     height: 775px;
+  }
+
+  main .graphic-grid {
+    grid-template-areas:
+      "credit-card"
+      "slack"
+      "phone "
+      "dash ";
   }
 
 }
