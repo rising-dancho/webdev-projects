@@ -694,7 +694,7 @@ main .global-section .card h3 {
   width: 540px;
   height: 446px;
   box-shadow: var(--standard-box-shadow);
-  border-radius: var(--standard-border-radius);
+  border-radius: 20px;
   overflow: hidden;
 }
 
@@ -739,7 +739,7 @@ main .global-section .card h3 {
 
 .virtual-events-section .avatars img:nth-of-type(2) {
   position: absolute;
-  left: 55px;
+  left: 60px;
 }
 
 .virtual-events-section .card-bottom {
