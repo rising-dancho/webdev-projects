@@ -991,7 +991,7 @@ footer .col a:hover {
   main .virtual-events-section {
     padding: 0;
   }
-  
+
   main .virtual-events-section .swipe-sessions-card .avatars {
     position: absolute;
     bottom: -70px;
@@ -1001,13 +1001,18 @@ footer .col a:hover {
 
   main .virtual-events-section .swipe-sessions-card,
   main .virtual-events-section .card-bottom .secondary-text,
-  main .virtual-events-section .card-content  {
+  main .virtual-events-section .card-content {
     width: 100%;
   }
 
   main .virtual-events-section .card-bottom {
     padding: var(--spacing-lg);
     padding-top: var(--spacing-xl);
+  }
+
+  #sessions-logo {
+    z-index: 2;
+    width: 308px;
   }
 
   /* GETTING STARTED SECTION */
@@ -1050,4 +1055,15 @@ footer .col a:hover {
     width: 18px;
   }
 
+  @media only screen and (max-width: 360px) {
+    .virtual-events-section .col-left {
+      height: 465px;
+      padding: 0;
+    }
+
+    #sessions-logo {
+      z-index: 2;
+      width: 270px;
+    }
+  }
 }
