@@ -877,7 +877,6 @@ footer .col a:hover {
   text-decoration: underline;
 }
 
-
 /* CUSTOM BREAKPOINT (850px) */
 @media only screen and (max-width: 1144px) {
 
@@ -907,7 +906,6 @@ footer .col a:hover {
     --h3-size: 34px;
     --h6-size: 16px;
   }
-
 
 }
 
