@@ -888,6 +888,11 @@ footer .col a:hover {
     padding-left: var(--spacing-md);
     padding-right: var(--spacing-md);
   }
+  
+  main .unified-section h2 {
+    width: 100%;
+  }
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -928,11 +933,6 @@ footer .col a:hover {
   main .two-column .col-right {
     width: 100%;
   }
-
-  main .unified-section h2 {
-    width: 100%;
-  }
-
 
   main .unified-section .two-column .col-right {
     padding-left: 0;
