@@ -1050,10 +1050,4 @@ footer .col a:hover {
     width: 18px;
   }
 
-  @media only screen and (max-width: 360px) {
-    .virtual-events-section .col-left {
-      height: 550px;
-      padding: 0;
-    }
-  }
 }
