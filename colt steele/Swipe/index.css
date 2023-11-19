@@ -929,7 +929,8 @@ footer .col a:hover {
   }
 
   main .two-column .col-left,
-  main .two-column .col-right {
+  main .two-column .col-right,
+  main .two-column {
     width: 100%;
   }
 
@@ -983,12 +984,77 @@ footer .col a:hover {
     height: 775px;
   }
 
-  main .graphic-grid {
-    grid-template-areas:
-      "credit-card"
-      "slack"
-      "phone "
-      "dash ";
+  main .virtual-events-section {
+    padding: 0;
+  }
+
+
+  main .virtual-events-section .swipe-sessions-card .card-bottom {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding: var(--spacing-xl);
+  }
+
+  main .virtual-events-section .card-bottom .subtitle {
+    margin-top: var(--spacing-lg);
+    margin-bottom: 3.5px;
+  }
+
+  main .virtual-events-section .card-content {
+    width: 65%;
+  }
+
+  main .virtual-events-section .card-bottom a {
+    color: var(--text-dark);
+    line-height: 1.4;
+    margin-top: 0;
+  }
+
+  main .virtual-events-section .card-bottom a:hover {
+    text-decoration: underline;
+  }
+
+  main .virtual-events-section .swipe-sessions-card .avatars {
+    position: absolute;
+    bottom: -70px;
+    left: var(--spacing-xl);
+    z-index: 3;
+  }
+
+  main .virtual-events-section {
+    display: none;
+  }
+
+  /* main .getting-started-section {
+    display: none;
+  } */
+
+
+  /* FOOTER */
+  footer .footer-contents {
+    flex-wrap: wrap;
+  }
+
+  footer .footer-contents .col {
+    width: 50%;
+    margin: var(--spacing-md) 0;
+  }
+
+  footer .icon-link {
+    padding-right: var(--spacing-md);
+  }
+
+  footer .col a {
+    font-size: 12px;
+  }
+
+  #footer-logo {
+    width: 70px;
+  }
+
+  footer .icon-link img {
+    width: 18px;
   }
 
 }
