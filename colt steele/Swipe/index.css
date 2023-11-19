@@ -661,46 +661,54 @@ main .global-section .card h3 {
 }
 
 /* VIRTUAL EVENTS SECTION */
-main .virtual-events-section {
+.virtual-events-section {
+  display: flex;
+  justify-content: center;
   padding: calc(var(--spacing-xl) * 2) 0;
-  /* border: 2px solid red; */
+  position: relative;
+}
+.virtual-events-section::before {
+  content: "";
+  background-color: var(--bg-white);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
-main .virtual-events-section .primary-button {
+.virtual-events-section .primary-button {
   background-color: var(--purple-1);
-  margin-top: var(--spacing-lg);
+  margin: var(--spacing-md) 0 0 0;
 }
-
-main .virtual-events-section .primary-button:hover {
+.virtual-events-section .primary-button:hover {
   background-color: var(--primary-accent);
 }
 
-main .virtual-events-section .swipe-sessions-card {
+.virtual-events-section .col-left {
+  height: 446px;
+  padding: 0 var(--spacing-xl) 0 0;
+}
+
+.swipe-sessions-card {
   width: 540px;
   height: 446px;
   box-shadow: var(--standard-box-shadow);
-  border-radius: 20px;
+  border-radius: var(--standard-border-radius);
   overflow: hidden;
 }
 
-main .virtual-events-section .two-column {
-  display: flex;
-  gap: var(--spacing-xl);
-  justify-content: start;
-  align-items: center;
-  height: 446px;
-}
-
-main .virtual-events-section .swipe-sessions-card .card-top {
+.swipe-sessions-card .card-top {
   width: 100%;
   height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  /* transform: rotate(10deg); */
 }
 
-main .virtual-events-section .swipe-sessions-card .card-top::before {
+.swipe-sessions-card .card-top::before {
   background: var(--primary-gradient);
   content: "";
   width: 100%;
@@ -708,59 +716,46 @@ main .virtual-events-section .swipe-sessions-card .card-top::before {
   position: absolute;
   top: -40%;
   transform: skewY(-5deg);
-  z-index: -1;
+  z-index: 1;
 }
 
-main .virtual-events-section .swipe-sessions-card .card-bottom {
+#sessions-logo {
+  z-index: 2;
+  width: 338px;
+}
+
+.virtual-events-section .avatars {
+  position: absolute;
+  bottom: -70px;
+  left: var(--spacing-xl);
+  z-index: 3;
+  /* width: 140px;
+  height: 80px; */
+}
+
+.virtual-events-section .avatars img {
+  width: 80px;
+}
+
+.virtual-events-section .avatars img:nth-of-type(2) {
+  position: absolute;
+  left: 55px;
+}
+
+.virtual-events-section .card-bottom {
   width: 100%;
   height: 50%;
   box-sizing: border-box;
   padding: var(--spacing-xl);
 }
-
-main .virtual-events-section .card-bottom .subtitle {
-  margin-top: var(--spacing-lg);
-  margin-bottom: 3.5px;
+.virtual-events-section .card-bottom .subtitle {
+  margin: var(--spacing-lg) 0 0 0;
 }
 
-main .virtual-events-section .card-content {
-  width: 65%;
-}
-
-main .virtual-events-section .card-bottom a {
+.virtual-events-section .card-bottom .secondary-text {
   color: var(--text-dark);
-  line-height: 1.4;
-  margin-top: 0;
-}
-
-main .virtual-events-section .card-bottom a:hover {
-  text-decoration: underline;
-}
-
-main .virtual-events-section .swipe-sessions-card .avatars {
-  position: absolute;
-  bottom: -70px;
-  left: var(--spacing-xl);
-  z-index: 3;
-}
-
-main #avatar1,
-main #avatar2 {
-  width: 80px;
-}
-
-main #avatar1 {
-  position: relative;
-}
-
-main #avatar2 {
-  position: absolute;
-  left: 65px;
-}
-
-main #swipe-sessions {
-  z-index: 2;
-  width: 338px
+  font-weight: 700;
+  width: 50%;
 }
 
 /* GETTING STARTED SECTION */
@@ -1022,9 +1017,9 @@ footer .col a:hover {
     z-index: 3;
   }
 
-  main .virtual-events-section {
+  /* main .virtual-events-section {
     display: none;
-  }
+  } */
 
   /* GETTING STARTED SECTION */
   main .getting-started-section .card-container {
