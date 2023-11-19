@@ -49,11 +49,6 @@
   max-width: var(--standard-width);
 }
 
-.section-container {
-  max-width: var(--standard-width);
-  width: 100%;
-}
-
 .two-column {
   width: 100%;
   display: flex;
@@ -884,6 +879,15 @@ footer .col a:hover {
     margin: 0;
   }
 
+  header .navbar {
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+  }
+
+  .centered-container {
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -914,5 +918,31 @@ footer .col a:hover {
 @media only screen and (max-width: 550px) {
   main .partners-section .partners-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  main .two-column {
+    flex-direction: column;
+  }
+
+  main .two-column .col-left,
+  main .two-column .col-right {
+    width: 100%;
+  }
+
+  main .unified-section h2 {
+    width: 100%;
+  }
+
+
+  main .unified-section .two-column .col-right {
+    padding-left: 0;
+  }
+
+  main .why-swipe-section .card-container {
+    flex-direction: column;
+  }
+
+  main .why-swipe-section .card-container .card {
+    width: 100%;
   }
 }
