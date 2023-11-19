@@ -987,55 +987,28 @@ footer .col a:hover {
     height: 775px;
   }
 
+  /* VIRTUAL SESSIONS */
   main .virtual-events-section {
     padding: 0;
   }
-
-  main .virtual-events-section .swipe-sessions-card .card-bottom {
-    width: 100%;
-    height: 50%;
-    box-sizing: border-box;
-    padding: var(--spacing-xl);
-  }
-
-  main .virtual-events-section .card-bottom .subtitle {
-    margin-top: var(--spacing-lg);
-    margin-bottom: 3.5px;
-  }
-
-  main .virtual-events-section .card-content {
-    width: 65%;
-  }
-
-  main .virtual-events-section .card-bottom a {
-    color: var(--text-dark);
-    line-height: 1.4;
-    margin-top: 0;
-  }
-
-  main .virtual-events-section .card-bottom a:hover {
-    text-decoration: underline;
-  }
-
+  
   main .virtual-events-section .swipe-sessions-card .avatars {
     position: absolute;
     bottom: -70px;
-    left: var(--spacing-xl);
+    left: var(--spacing-lg);
     z-index: 3;
   }
 
-  main .virtual-events-section .swipe-sessions-card {
+  main .virtual-events-section .swipe-sessions-card,
+  main .virtual-events-section .card-bottom .secondary-text,
+  main .virtual-events-section .card-content  {
     width: 100%;
   }
 
   main .virtual-events-section .card-bottom {
-    padding: 0;
+    padding: var(--spacing-lg);
+    padding-top: var(--spacing-xl);
   }
-
-  .virtual-events-section .card-bottom .secondary-text {
-    width: 100%;
-  }
-  
 
   /* GETTING STARTED SECTION */
   main .getting-started-section .card-container {
@@ -1077,5 +1050,10 @@ footer .col a:hover {
     width: 18px;
   }
 
-
+  @media only screen and (max-width: 360px) {
+    .virtual-events-section .col-left {
+      height: 550px;
+      padding: 0;
+    }
+  }
 }
