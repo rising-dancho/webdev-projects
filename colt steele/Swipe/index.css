@@ -888,7 +888,7 @@ footer .col a:hover {
     padding-left: var(--spacing-md);
     padding-right: var(--spacing-md);
   }
-  
+
   main .unified-section h2 {
     width: 100%;
   }
@@ -916,7 +916,6 @@ footer .col a:hover {
     --h3-size: 34px;
     --h6-size: 16px;
   }
-
 }
 
 /* MOBILE SIZE BREAKPOINT */
@@ -945,4 +944,43 @@ footer .col a:hover {
   main .why-swipe-section .card-container .card {
     width: 100%;
   }
+
+  main .integrations-section::before {
+    height: 1175px;
+  }
+
+  main .integrations-section .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .integrations-section .col-left,
+  main .integrations-section .card-container .card {
+    width: 100%;
+  }
+
+  main .integrations-section .col-right {
+    display: none;
+  }
+
+  main .integrations-section::before {
+    height: 995px;
+  }
+
+  main .global-section .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: unset;
+  }
+
+  main .global-section .card-container .card {
+    width: 100%;
+    box-sizing: border-box;
+    margin: var(--spacing-md) 0;
+  }
+
+  main .global-section::after {
+    height: 775px;
+  }
+
 }
