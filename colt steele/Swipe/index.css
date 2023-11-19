@@ -937,7 +937,6 @@ footer .col a:hover {
     flex-direction: column;
   }
 
-
   main .unified-section .two-column .col-right {
     padding-left: 0;
   }
@@ -992,7 +991,6 @@ footer .col a:hover {
     padding: 0;
   }
 
-
   main .virtual-events-section .swipe-sessions-card .card-bottom {
     width: 100%;
     height: 50%;
@@ -1030,9 +1028,14 @@ footer .col a:hover {
     width: 100%;
   }
 
-  main .virtual-events-section .swipe-sessions-card .card-bottom .card-content .secondary-text {
+  main .virtual-events-section .card-bottom {
+    padding: 0;
+  }
+
+  .virtual-events-section .card-bottom .secondary-text {
     width: 100%;
   }
+  
 
   /* GETTING STARTED SECTION */
   main .getting-started-section .card-container {
@@ -1073,5 +1076,6 @@ footer .col a:hover {
   footer .icon-link img {
     width: 18px;
   }
+
 
 }
