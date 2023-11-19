@@ -1026,10 +1026,23 @@ footer .col a:hover {
     display: none;
   }
 
-  /* main .getting-started-section {
-    display: none;
-  } */
+  /* GETTING STARTED SECTION */
+  main .getting-started-section .card-container {
+    flex-direction: column;
+  }
 
+  main .getting-started-section .two-column {
+    gap: var(--spacing-xl);
+  }
+
+  main .getting-started-section .col-left,
+  main .getting-started-section .col-right {
+    width: 100%;
+  }
+
+  main .getting-started-section .two-column>.col-right {
+    padding: 0;
+  }
 
   /* FOOTER */
   footer .footer-contents {
