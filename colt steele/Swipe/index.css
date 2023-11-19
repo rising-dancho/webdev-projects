@@ -972,7 +972,7 @@ footer .col a:hover {
   main .global-section .card-container .card {
     width: 100%;
     box-sizing: border-box;
-    margin: var(--spacing-md) 0;
+    margin: var(--spacing-sm) 0;
   }
 
   main .global-section::after {
