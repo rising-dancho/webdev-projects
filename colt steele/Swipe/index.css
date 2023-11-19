@@ -877,12 +877,13 @@ footer .col a:hover {
   text-decoration: underline;
 }
 
-/* CUSTOM BREAKPOINT (850px) */
+/* CUSTOM BREAKPOINTS */
 @media only screen and (max-width: 1144px) {
 
   header .navbar {
     margin: 0;
   }
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -891,9 +892,9 @@ footer .col a:hover {
     --h1-height: 75px;
   }
 
-  /* PARTNERS SECTION */
-  main .partners-section .partners-grid {
-    grid-template-columns: repeat(2, 1fr);
+  main .partners-section img {
+    width: 100%;
+    height: auto;
   }
 
 }
@@ -910,4 +911,8 @@ footer .col a:hover {
 }
 
 /* MOBILE SIZE BREAKPOINT */
-@media only screen and (max-width: 550px) {}
+@media only screen and (max-width: 550px) {
+  main .partners-section .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
