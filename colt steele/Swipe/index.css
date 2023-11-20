@@ -328,6 +328,10 @@ header .navbar .cta-wrapper .secondary-button {
   color: var(--text-light);
 }
 
+header .hamburger-btn {
+  display: none;
+}
+
 main {
   margin-top: calc(var(--spacing-xl) * 1.5);
   margin-bottom: var(--spacing-xl);
@@ -335,6 +339,7 @@ main {
   /* border: 2px solid red; */
   position: relative;
 }
+
 
 /* ANIMATED GRADIENT */
 main #gradient-canvas {
