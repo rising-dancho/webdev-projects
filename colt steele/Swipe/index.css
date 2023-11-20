@@ -888,6 +888,7 @@ footer .col a:hover {
 
 }
 
+/* NAVIGATION BREAKPOINT */
 @media only screen and (max-width: 950px) {
   :root {
     --h1-size: 70px;
@@ -901,6 +902,13 @@ footer .col a:hover {
   .hero-section .col-right {
     width: 40%;
   }
+
+  .hamburger-btn {
+    width: 50px;
+    height: 30px;
+    background-color: rgba(250, 250, 250, 0.25);
+  }
+
 }
 
 @media only screen and (max-width: 930px) {
