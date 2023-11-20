@@ -909,21 +909,21 @@ footer .col a:hover {
     --h3-size: 34px;
     --h6-size: 16px;
   }
-}
-
-/* MOBILE SIZE BREAKPOINT */
-@media only screen and (max-width: 550px) {
-  :root {
-    --h1-size: 58px;
-    --h1-height: 65px;
-  }
 
   /* ANIMATED GRADIENT */
   main #gradient-canvas {
     top: -745px;
   }
 
+  main .two-column>.col-right {
+    padding: 0;
+  }
+
   main .hero-section .two-column .col-right {
+    display: none;
+  }
+
+  main .integrations-section .col-right {
     display: none;
   }
 
@@ -937,8 +937,18 @@ footer .col a:hover {
     width: 100%;
   }
 
-  main .two-column>.col-right {
-    padding: 0;
+}
+
+/* MOBILE SIZE BREAKPOINT */
+@media only screen and (max-width: 550px) {
+  :root {
+    --h1-size: 58px;
+    --h1-height: 65px;
+  }
+
+  /* ANIMATED GRADIENT */
+  main #gradient-canvas {
+    top: -735px;
   }
 
   main .partners-section .partners-grid {
@@ -973,10 +983,6 @@ footer .col a:hover {
   main .integrations-section .col-left,
   main .integrations-section .card-container .card {
     width: 100%;
-  }
-
-  main .integrations-section .col-right {
-    display: none;
   }
 
   main .integrations-section::before {
@@ -1067,6 +1073,14 @@ footer .col a:hover {
     width: 18px;
   }
 
+  @media only screen and (max-width: 438px) {
+
+    /* ANIMATED GRADIENT */
+    main #gradient-canvas {
+      top: -705px;
+    }
+  }
+
   @media only screen and (max-width: 380px) {
     :root {
       --h1-size: 48px;
@@ -1075,11 +1089,6 @@ footer .col a:hover {
       --p-size: 16px;
       --p-height: 24px;
       --button-size: 14px;
-    }
-
-    /* ANIMATED GRADIENT */
-    main #gradient-canvas {
-      top: -745px;
     }
 
     .virtual-events-section .col-left {
@@ -1094,8 +1103,9 @@ footer .col a:hover {
   }
 
   @media only screen and (max-width: 340px) {
-     /* ANIMATED GRADIENT */
-     main #gradient-canvas {
+
+    /* ANIMATED GRADIENT */
+    main #gradient-canvas {
       top: -710px;
     }
   }
