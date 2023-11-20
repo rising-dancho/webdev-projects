@@ -914,13 +914,17 @@ footer .col a:hover {
 /* MOBILE SIZE BREAKPOINT */
 @media only screen and (max-width: 550px) {
   :root {
-    --h1-size: 55px;
-    --h1-height: 60px;
+    --h1-size: 58px;
+    --h1-height: 65px;
   }
 
   /* ANIMATED GRADIENT */
   main #gradient-canvas {
-    top: -620px;
+    top: -745px;
+  }
+
+  main .hero-section .two-column .col-right {
+    display: none;
   }
 
   main {
@@ -1063,7 +1067,21 @@ footer .col a:hover {
     width: 18px;
   }
 
-  @media only screen and (max-width: 360px) {
+  @media only screen and (max-width: 380px) {
+    :root {
+      --h1-size: 48px;
+      --h1-height: 55px;
+      --h3-size: 28px;
+      --p-size: 16px;
+      --p-height: 24px;
+      --button-size: 14px;
+    }
+
+    /* ANIMATED GRADIENT */
+    main #gradient-canvas {
+      top: -745px;
+    }
+
     .virtual-events-section .col-left {
       height: 465px;
       padding: 0;
@@ -1072,6 +1090,13 @@ footer .col a:hover {
     #sessions-logo {
       z-index: 2;
       width: 270px;
+    }
+  }
+
+  @media only screen and (max-width: 340px) {
+     /* ANIMATED GRADIENT */
+     main #gradient-canvas {
+      top: -710px;
     }
   }
 }
