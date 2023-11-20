@@ -70,12 +70,6 @@
   padding: 0 0 0 var(--spacing-md);
 }
 
-/* header,
-main,
-footer {
-  border: 1px solid red;
-} */
-
 .card {
   /* border: 1px solid red; */
   display: flex;
@@ -172,6 +166,7 @@ footer {
 
 /* --> end */
 
+/* GENERAL STYES */
 html,
 body {
   max-width: 100%;
@@ -918,6 +913,19 @@ footer .col a:hover {
 
 /* MOBILE SIZE BREAKPOINT */
 @media only screen and (max-width: 550px) {
+  :root {
+    --h1-size: 55px;
+    --h1-height: 60px;
+  }
+
+  /* ANIMATED GRADIENT */
+  main #gradient-canvas {
+    top: -620px;
+  }
+
+  main {
+    margin-top: var(--spacing-lg);
+  }
 
   main .two-column .col-left,
   main .two-column .col-right,
