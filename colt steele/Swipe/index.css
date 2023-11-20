@@ -888,11 +888,22 @@ footer .col a:hover {
 
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
   :root {
     --h1-size: 70px;
     --h1-height: 75px;
   }
+
+  .hero-section .col-left {
+    width: 60%;
+  }
+
+  .hero-section .col-right {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
 
   main .partners-section img {
     width: 100%;
@@ -912,7 +923,7 @@ footer .col a:hover {
 
   /* ANIMATED GRADIENT */
   main #gradient-canvas {
-    top: -745px;
+    top: -825px;
   }
 
   main .two-column>.col-right {
@@ -937,6 +948,14 @@ footer .col a:hover {
     width: 100%;
   }
 
+}
+
+@media only screen and (max-width: 648px) {
+
+  /* ANIMATED GRADIENT */
+  main #gradient-canvas {
+    top: -745px;
+  }
 }
 
 /* MOBILE SIZE BREAKPOINT */
@@ -1089,6 +1108,11 @@ footer .col a:hover {
       --p-size: 16px;
       --p-height: 24px;
       --button-size: 14px;
+    }
+
+    /* ANIMATED GRADIENT */
+    main #gradient-canvas {
+      top: -735px;
     }
 
     .virtual-events-section .col-left {
