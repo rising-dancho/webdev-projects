@@ -903,6 +903,10 @@ footer .col a:hover {
   }
 }
 
+@media only screen and (max-width: 894px) {
+  
+}
+
 @media only screen and (max-width: 850px) {
 
   main .partners-section img {
