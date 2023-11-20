@@ -930,7 +930,8 @@ footer .col a:hover {
     top: -825px;
   }
 
-  main .two-column>.col-right {
+  main .two-column>.col-right,
+  main .two-column>.col-left {
     padding: 0;
   }
 
