@@ -921,6 +921,10 @@ footer .col a:hover {
     --h6-size: 16px;
   }
 
+  h1 {
+    width: 85%;
+  }
+
   /* ANIMATED GRADIENT */
   main #gradient-canvas {
     top: -825px;
@@ -950,6 +954,13 @@ footer .col a:hover {
 
 }
 
+@media only screen and (max-width: 754px) {
+  /* ANIMATED GRADIENT */
+  main #gradient-canvas {
+    top: -755px;
+  }
+}
+
 @media only screen and (max-width: 648px) {
 
   /* ANIMATED GRADIENT */
@@ -963,6 +974,10 @@ footer .col a:hover {
   :root {
     --h1-size: 58px;
     --h1-height: 65px;
+  }
+
+  h1 {
+    width: 100%;
   }
 
   /* ANIMATED GRADIENT */
