@@ -905,10 +905,22 @@ footer .col a:hover {
   }
 
   .hamburger-btn {
-    width: 50px;
+    width: 45px;
     height: 30px;
     background-color: rgba(250, 250, 250, 0.25);
-    border-radius: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburger-btn .bar {
+    width: 24px;
+    height: 3px;
+    background-color: var(--bg-white);
+    
   }
 
 }
