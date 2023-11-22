@@ -886,6 +886,9 @@ footer .col a:hover {
     width: 100%;
   }
 
+  .virtual-events-section .col-left {
+    padding: 0;
+  }
 }
 
 /* NAVIGATION BREAKPOINT */
@@ -1029,6 +1032,14 @@ footer .col a:hover {
     height: 345px;
   }
 
+  /* SECTION SPACINGS */
+  main .integrations-section::before {
+    content: "";
+    height: 661px;
+    position: absolute;
+    top: -73px;
+  }
+
 }
 
 @media only screen and (max-width: 754px) {
@@ -1036,6 +1047,10 @@ footer .col a:hover {
   /* ANIMATED GRADIENT */
   main #gradient-canvas {
     top: -755px;
+  }
+
+  .virtual-events-section .col-left {
+    height: 315px;
   }
 }
 
@@ -1221,6 +1236,12 @@ footer .col a:hover {
     padding: var(--spacing-md) 0;
   }
 
+}
+
+@media only screen and (max-width: 450px) {
+  main .virtual-events-section .col-left {
+    height: 385px;
+  }
 }
 
 @media only screen and (max-width: 438px) {
