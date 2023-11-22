@@ -1138,113 +1138,115 @@ footer .col a:hover {
     width: 18px;
   }
 
-  @media only screen and (max-width: 438px) {
 
-    /* ANIMATED GRADIENT */
-    main #gradient-canvas {
-      top: -705px;
-    }
+  /* SECTION SPACINGS */
+  main .partners-section .partners-grid {
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+    /* border: 2px solid red; */
   }
 
-  @media only screen and (max-width: 380px) {
-    :root {
-      --h1-size: 48px;
-      --h1-height: 55px;
-      --h3-size: 28px;
-      --p-size: 16px;
-      --p-height: 24px;
-      --button-size: 14px;
-    }
-
-    /* ANIMATED GRADIENT */
-    main #gradient-canvas {
-      top: -735px;
-    }
-
-    .virtual-events-section .col-left {
-      height: 465px;
-      padding: 0;
-    }
-
-    #sessions-logo {
-      z-index: 2;
-      width: 270px;
-    }
+  main .unified-section {
+    padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
   }
 
-  @media only screen and (max-width: 340px) {
-
-    /* ANIMATED GRADIENT */
-    main #gradient-canvas {
-      top: -710px;
-    }
-
-    /* SECTION SPACINGS */
-    main .partners-section .partners-grid {
-      margin-top: var(--spacing-xl);
-      margin-bottom: var(--spacing-md);
-      /* border: 2px solid red; */
-    }
-
-    main .unified-section {
-      padding-top: var(--spacing-md);
-      padding-bottom: var(--spacing-md);
-    }
-
-    main .integrations-section {
-      margin: var(--spacing-md) 0;
-    }
-
-    main .integrations-section::before {
-      content: "";
-      height: 855px;
-      position: absolute;
-      top: -10px;
-    }
-
-    main .why-swipe-section {
-      margin: var(--spacing-md) 0;
-    }
-
-    main .global-section {
-      padding: var(--spacing-md) 0;
-    }
-
-    main .global-section::after {
-      content: "";
-      width: 100%;
-      height: 575px;
-      position: absolute;
-      bottom: 10px;
-    }
-
-    .virtual-events-section .col-left {
-      height: 420px;
-    }
-
-    main .getting-started-section .two-column {
-      gap: var(--spacing-xl);
-    }
-
-    main .getting-started-section {
-      padding: var(--spacing-xl) 0;
-    }
-
-    main {
-      margin-bottom: 0;
-    }
-
-    footer {
-      padding: var(--spacing-md) 0;
-    }
-
-    main .global-section::before {
-      content: "";
-      width: 100%;
-      height: 785px;
-      position: absolute;
-      top: -10px;
-    }
-
+  main .integrations-section {
+    margin: var(--spacing-md) 0;
   }
+
+  main .integrations-section::before {
+    content: "";
+    height: 855px;
+    position: absolute;
+    top: -10px;
+  }
+
+  main .why-swipe-section {
+    margin: var(--spacing-md) 0;
+  }
+
+  main .global-section {
+    padding: var(--spacing-md) 0;
+  }
+
+  main .global-section::after {
+    content: "";
+    width: 100%;
+    height: 575px;
+    position: absolute;
+    bottom: 10px;
+  }
+
+  .virtual-events-section .col-left {
+    height: 420px;
+  }
+
+  main .getting-started-section .two-column {
+    gap: var(--spacing-xl);
+  }
+
+  main .getting-started-section {
+    padding: var(--spacing-xl) 0;
+  }
+
+  main {
+    margin-bottom: 0;
+  }
+
+  footer {
+    padding: var(--spacing-md) 0;
+  }
+
+  main .global-section::before {
+    content: "";
+    width: 100%;
+    height: 785px;
+    position: absolute;
+    top: -10px;
+  }
+}
+
+@media only screen and (max-width: 438px) {
+
+  /* ANIMATED GRADIENT */
+  main #gradient-canvas {
+    top: -705px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  :root {
+    --h1-size: 48px;
+    --h1-height: 55px;
+    --h3-size: 28px;
+    --p-size: 16px;
+    --p-height: 24px;
+    --button-size: 14px;
+  }
+
+  /* ANIMATED GRADIENT */
+  main #gradient-canvas {
+    top: -735px;
+  }
+
+  .virtual-events-section .col-left {
+    height: 465px;
+    padding: 0;
+  }
+
+  #sessions-logo {
+    z-index: 2;
+    width: 270px;
+  }
+
+}
+
+@media only screen and (max-width: 340px) {
+
+  /* ANIMATED GRADIENT */
+  main #gradient-canvas {
+    top: -710px;
+  }
+
 }
