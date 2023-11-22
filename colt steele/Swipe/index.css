@@ -1,4 +1,6 @@
+/* VARIABLES */
 :root {
+  /* TEXT SIZES */
   --text-dark: #000;
   --text-light: #fff;
   --text-grey: #adbdcc;
@@ -26,9 +28,7 @@
   --spacing-lg: 32px;
   --spacing-xl: 64px;
 
-  --standard-width: 1144px;
-  --primary-gradient: linear-gradient(101.33deg, #08209a 0.76%, #6563ff 33.33%, #36c5f0 76.92%, #83e2ff 96.96%);
-
+  /* COLORS */
   --purple-1: #6962f7;
   --purple-2: #7000ff;
   --blue-1: #00d4ff;
@@ -39,10 +39,14 @@
   --bg-white: #fff;
   --bg-light: #f7f9fc;
 
+  /* MISC. */
+  --standard-width: 1144px;
+  --primary-gradient: linear-gradient(101.33deg, #08209a 0.76%, #6563ff 33.33%, #36c5f0 76.92%, #83e2ff 96.96%);
   --standard-box-shadow: 0px 2px 40px rgba(0, 0, 0, .15);
+  
 }
 
-/* utility classes */
+/* LAYOUT STYLES */
 
 .centered-container {
   margin: 0 auto;
@@ -71,7 +75,6 @@
 }
 
 .card {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -114,6 +117,8 @@
   color: var(--text-grey);
   letter-spacing: 0.25px;
 }
+
+/* BUTTON STYLES */
 
 .primary-button {
   font-family: var(--body-font);
@@ -164,9 +169,8 @@
   transform: translateX(4px);
 }
 
-/* --> end */
+/* GENERAL ELEMENTS STYLES */
 
-/* GENERAL STYES */
 html,
 body {
   max-width: 100%;
@@ -266,7 +270,7 @@ p {
   margin: var(--spacing-md) 0;
 }
 
-/* NAVIGATION SECTION */
+/* HEADER: NAVIGATION SECTION */
 header {
   /* background-color: var(--primary-accent); */
   padding: var(--spacing-sm) 0 0 0;
@@ -328,6 +332,8 @@ header .navbar .cta-wrapper .secondary-button {
   color: var(--text-light);
 }
 
+/* MAIN: */
+
 main {
   margin-top: calc(var(--spacing-xl) * 1.5);
   margin-bottom: var(--spacing-xl);
@@ -335,7 +341,6 @@ main {
   /* border: 2px solid red; */
   position: relative;
 }
-
 
 /* ANIMATED GRADIENT */
 main #gradient-canvas {
@@ -474,6 +479,7 @@ main #dash {
 }
 
 /* INTEGRATIONS SECTION */
+
 main .integrations-section {
   color: var(--text-light);
   margin: calc(var(--spacing-xl) * 3) 0;
@@ -533,7 +539,6 @@ main .integrations-section .primary-button {
 main .integrations-section .primary-button:hover {
   background-color: var(--bg-white);
 }
-
 
 main .integrations-section .secondary-button {
   color: var(--blue-1);
