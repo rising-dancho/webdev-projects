@@ -982,6 +982,53 @@ footer .col a:hover {
     width: 100%;
   }
 
+  main .virtual-events-section {
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-xl) 0;
+    position: relative;
+  }
+
+  main .virtual-events-section .two-column {
+    flex-direction: column;
+  }
+
+  /* VIRTUAL SESSIONS */
+  main .virtual-events-section {
+    padding: 0;
+  }
+
+  main .virtual-events-section .swipe-sessions-card .avatars {
+    position: absolute;
+    bottom: -70px;
+    left: var(--spacing-lg);
+    z-index: 3;
+  }
+
+  main .virtual-events-section .swipe-sessions-card,
+  main .virtual-events-section .card-bottom .secondary-text,
+  main .virtual-events-section .card-content {
+    width: 100%;
+  }
+
+  main .virtual-events-section .card-bottom {
+    padding: var(--spacing-lg);
+    padding-top: var(--spacing-xl);
+  }
+
+  #sessions-logo {
+    z-index: 2;
+    width: 308px;
+  }
+
+  main .virtual-events-section {
+    padding: 0;
+  }
+
+  .virtual-events-section .col-left {
+    height: 345px;
+  }
+
 }
 
 @media only screen and (max-width: 754px) {
@@ -1070,34 +1117,6 @@ footer .col a:hover {
     height: 775px;
   }
 
-  /* VIRTUAL SESSIONS */
-  main .virtual-events-section {
-    padding: 0;
-  }
-
-  main .virtual-events-section .swipe-sessions-card .avatars {
-    position: absolute;
-    bottom: -70px;
-    left: var(--spacing-lg);
-    z-index: 3;
-  }
-
-  main .virtual-events-section .swipe-sessions-card,
-  main .virtual-events-section .card-bottom .secondary-text,
-  main .virtual-events-section .card-content {
-    width: 100%;
-  }
-
-  main .virtual-events-section .card-bottom {
-    padding: var(--spacing-lg);
-    padding-top: var(--spacing-xl);
-  }
-
-  #sessions-logo {
-    z-index: 2;
-    width: 308px;
-  }
-
   /* GETTING STARTED SECTION */
   main .getting-started-section .card-container {
     flex-direction: column;
@@ -1136,6 +1155,105 @@ footer .col a:hover {
 
   footer .icon-link img {
     width: 18px;
+  }
+
+  /* SECTION SPACINGS */
+  main .partners-section .partners-grid {
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+    /* border: 2px solid red; */
+  }
+
+  main .unified-section {
+    padding-top: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+  }
+
+  main .integrations-section {
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+  }
+
+  main .integrations-section::before {
+    content: "";
+    height: 790px;
+    position: absolute;
+    top: -50px;
+  }
+
+  main .why-swipe-section {
+    margin: var(--spacing-sm) 0;
+  }
+
+  main .global-section {
+    padding: var(--spacing-md) 0;
+  }
+
+  main .global-section::before {
+    content: "";
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: -10px;
+  }
+
+  main .global-section::after {
+    content: "";
+    width: 100%;
+    height: 575px;
+    position: absolute;
+    bottom: 10px;
+  }
+
+  main .getting-started-section .two-column {
+    gap: var(--spacing-xl);
+  }
+
+  main .getting-started-section {
+    padding: var(--spacing-xl) 0;
+  }
+
+  main {
+    margin-bottom: 0;
+  }
+
+  footer {
+    padding: var(--spacing-md) 0;
+  }
+
+}
+
+@media only screen and (max-width: 438px) {
+
+  /* ANIMATED GRADIENT */
+  main #gradient-canvas {
+    top: -705px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  :root {
+    --h1-size: 48px;
+    --h1-height: 55px;
+    --h3-size: 28px;
+    --p-size: 16px;
+    --p-height: 24px;
+    --button-size: 14px;
+  }
+
+  /* ANIMATED GRADIENT */
+  main #gradient-canvas {
+    top: -735px;
+  }
+
+  .virtual-events-section .col-left {
+    height: 465px;
+    padding: 0;
+  }
+
+  #sessions-logo {
+    z-index: 2;
+    width: 270px;
   }
 
 
@@ -1204,40 +1322,6 @@ footer .col a:hover {
     height: 785px;
     position: absolute;
     top: -10px;
-  }
-}
-
-@media only screen and (max-width: 438px) {
-
-  /* ANIMATED GRADIENT */
-  main #gradient-canvas {
-    top: -705px;
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  :root {
-    --h1-size: 48px;
-    --h1-height: 55px;
-    --h3-size: 28px;
-    --p-size: 16px;
-    --p-height: 24px;
-    --button-size: 14px;
-  }
-
-  /* ANIMATED GRADIENT */
-  main #gradient-canvas {
-    top: -735px;
-  }
-
-  .virtual-events-section .col-left {
-    height: 465px;
-    padding: 0;
-  }
-
-  #sessions-logo {
-    z-index: 2;
-    width: 270px;
   }
 
 }
