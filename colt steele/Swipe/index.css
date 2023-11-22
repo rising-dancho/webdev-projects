@@ -478,7 +478,6 @@ main .integrations-section {
   color: var(--text-light);
   margin: calc(var(--spacing-xl) * 3) 0;
   width: 100%;
-  ;
   position: relative;
 }
 
@@ -1012,39 +1011,6 @@ footer .col a:hover {
     width: 100%;
   }
 
-  main .partners-section .partners-grid {
-    margin-top: var(--spacing-xl);
-    margin-bottom: var(--spacing-md);
-    /* border: 2px solid red; */
-  }
-
-  main .unified-section {
-    padding-top: var(--spacing-md);
-    padding-bottom: var(--spacing-md);
-  }
-
-  main .integrations-section {
-    color: var(--text-light);
-    margin: var(--spacing-xl) 0;
-    width: 100%;
-    position: relative;
-  }
-
-  main .integrations-section::before {
-    content: "";
-    width: 100%;
-    height: 815px;
-    background-color: var(--primary-accent);
-    position: absolute;
-    top: -25px;
-    transform: skewY(-5deg);
-  }
-
-
-  main .why-swipe-section {
-    margin: var(--spacing-xl) 0;
-  }
-
   /* ANIMATED GRADIENT */
   main #gradient-canvas {
     top: -735px;
@@ -1070,6 +1036,10 @@ footer .col a:hover {
     width: 100%;
   }
 
+  main .integrations-section::before {
+    height: 1175px;
+  }
+
   main .integrations-section .card-container {
     display: flex;
     flex-direction: column;
@@ -1078,6 +1048,10 @@ footer .col a:hover {
   main .integrations-section .col-left,
   main .integrations-section .card-container .card {
     width: 100%;
+  }
+
+  main .integrations-section::before {
+    height: 1045px;
   }
 
   main .global-section .card-container {
@@ -1204,5 +1178,73 @@ footer .col a:hover {
     main #gradient-canvas {
       top: -710px;
     }
+
+    /* SECTION SPACINGS */
+    main .partners-section .partners-grid {
+      margin-top: var(--spacing-xl);
+      margin-bottom: var(--spacing-md);
+      /* border: 2px solid red; */
+    }
+
+    main .unified-section {
+      padding-top: var(--spacing-md);
+      padding-bottom: var(--spacing-md);
+    }
+
+    main .integrations-section {
+      margin: var(--spacing-md) 0;
+    }
+
+    main .integrations-section::before {
+      content: "";
+      height: 855px;
+      position: absolute;
+      top: -10px;
+    }
+
+    main .why-swipe-section {
+      margin: var(--spacing-md) 0;
+    }
+
+    main .global-section {
+      padding: var(--spacing-md) 0;
+    }
+
+    main .global-section::after {
+      content: "";
+      width: 100%;
+      height: 575px;
+      position: absolute;
+      bottom: 10px;
+    }
+
+    .virtual-events-section .col-left {
+      height: 420px;
+    }
+
+    main .getting-started-section .two-column {
+      gap: var(--spacing-xl);
+    }
+
+    main .getting-started-section {
+      padding: var(--spacing-xl) 0;
+    }
+
+    main {
+      margin-bottom: 0;
+    }
+
+    footer {
+      padding: var(--spacing-md) 0;
+    }
+
+    main .global-section::before {
+      content: "";
+      width: 100%;
+      height: 785px;
+      position: absolute;
+      top: -10px;
+    }
+
   }
 }
