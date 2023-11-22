@@ -927,6 +927,7 @@ footer .col a:hover {
     width: 24px;
     height: 3px;
     background-color: var(--bg-white);
+    border-radius: 20px;
 
   }
 
