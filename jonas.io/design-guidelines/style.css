@@ -169,4 +169,6 @@ header {
 
 footer {
   margin-bottom: 48px;
+  font-size: 14px;
+  /* 12 / 14 / 16 */
 }
