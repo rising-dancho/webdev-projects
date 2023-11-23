@@ -127,7 +127,7 @@ header {
   align-self: center;
 }
 
-.testimonial-box h2 {
+.testimonial-box h3 {
   margin-bottom: 24px;
   font-size: 24px;
    /* 24 / 30 / 36  */
@@ -170,5 +170,6 @@ header {
 footer {
   margin-bottom: 48px;
   font-size: 14px;
+  line-height: 1.5;
   /* 12 / 14 / 16 */
 }
