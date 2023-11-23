@@ -13,9 +13,15 @@ h4 - 16
 h5 - 13.28
 h6 - 10.72
 
+ACCESIBILITY CONCERNS:
+Use a minimum value of 1.5 for line-height for main paragraph content.
+https://developer.mozilla.org/en-US/docs/Web/CSS/line-height
+
 references: 
 http://zuga.net/articles/html-heading-elements/
 https://typescale.com/
+https://www.thegoodlineheight.com/
+https://ec.europa.eu/component-library/eu/guidelines/typography/#:~:text=Line%20height,-Line%2Dheight%2C%20relevant&text=Ideal%20line%2Dheight%20for%20standard,height%20ratio%20of%201%3A1.2.
 
 */
 
@@ -31,6 +37,7 @@ https://typescale.com/
 
 body {
   font-family: 'Inter', sans-serif;
+  line-height: 1.5;
 }
 
 header,
@@ -41,13 +48,15 @@ section {
 h1 {
   margin-bottom: 24px;
   font-size: 52px;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: -2px;
   /* 44 / 52 / 62 */
 }
 
 h2 {
   margin-bottom: 48px;
+  font-size: 36px;
+  letter-spacing: -1.2px;
   /* 24 / 30 / 36  */
 }
 
