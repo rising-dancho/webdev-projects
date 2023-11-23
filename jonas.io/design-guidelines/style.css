@@ -37,7 +37,8 @@ https://ec.europa.eu/component-library/eu/guidelines/typography/#:~:text=Line%20
 
 body {
   font-family: 'Inter', sans-serif;
-  line-height: 1.5;
+  line-height: 1.65;
+  font-size: 18px;
 }
 
 header,
@@ -56,12 +57,15 @@ h1 {
 h2 {
   margin-bottom: 48px;
   font-size: 36px;
-  letter-spacing: -1.2px;
+  letter-spacing: -0.5px;
   /* 24 / 30 / 36  */
 }
 
 h3 {
   margin-bottom: 24px;
+  font-size: 20px;
+  /* 18 / 20 / 24 */
+
 }
 
 img {
@@ -100,7 +104,6 @@ header {
 .header-text {
   margin-bottom: 24px;
   font-size: 18px;
-  line-height: 1.6;
   /* 16 / 18 / 20  */
 }
 
@@ -109,9 +112,12 @@ header {
 
 .features-title {
   margin-bottom: 16px;
+  font-size: 20px;
 }
 
-.features-text {}
+.features-text {
+  font-size: 18px;
+}
 
 /* TESTIMONIAL */
 .testimonial-section {}
@@ -123,6 +129,8 @@ header {
 
 .testimonial-box h2 {
   margin-bottom: 24px;
+  font-size: 24px;
+   /* 24 / 30 / 36  */
 }
 
 .testimonial-text {
@@ -156,6 +164,7 @@ header {
 .chair-price {
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
 }
 
 footer {
