@@ -36,6 +36,8 @@ https://ec.europa.eu/component-library/eu/guidelines/typography/#:~:text=Line%20
   /* COLOR SYSTEM */
   --main-color: #087f5b;
   --gray-color: #343a40;
+  --text-light: #fff;
+  --text-dark: #343a40;
 }
 
 
@@ -87,6 +89,16 @@ img {
   width: 100%;
 }
 
+.btn:link,
+.btn:visited {
+  background-color: var(--main-color);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  font-weight: 500;
+  display: inline-block;
+}
 
 /* ------------------------ */
 /* COMPONENT STYLES */
