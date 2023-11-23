@@ -13,6 +13,9 @@ h4 - 16
 h5 - 13.28
 h6 - 10.72
 
+MAIN COLOR: #087f5b
+GRAY COLOR: #343a40
+
 ACCESIBILITY CONCERNS:
 Use a minimum value of 1.5 for line-height for main paragraph content.
 https://developer.mozilla.org/en-US/docs/Web/CSS/line-height
@@ -26,6 +29,17 @@ https://ec.europa.eu/component-library/eu/guidelines/typography/#:~:text=Line%20
 */
 
 /* ------------------------ */
+/* VARIABLES */
+/* ------------------------ */
+
+:root {
+  /* COLOR SYSTEM */
+  --main-color: #087f5b;
+  --gray-color: #343a40;
+}
+
+
+/* ------------------------ */
 /* GENERAL STYLES */
 /* ------------------------ */
 
@@ -37,6 +51,7 @@ https://ec.europa.eu/component-library/eu/guidelines/typography/#:~:text=Line%20
 
 body {
   font-family: 'Inter', sans-serif;
+  color: var(--gray-color);
   line-height: 1.65;
   font-size: 18px;
 }
