@@ -116,7 +116,6 @@ img {
   font-size: 14px;
 }
 
-
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
@@ -152,7 +151,11 @@ header {
 }
 
 /* FEATURES */
-.features-icon {}
+.features-icon {
+  fill: var(--main-color);
+  width: 32px;
+  height: 32px;
+}
 
 .features-title {
   margin-bottom: 16px;
