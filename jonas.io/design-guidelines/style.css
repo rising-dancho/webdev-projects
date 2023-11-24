@@ -210,7 +210,11 @@ header {
   margin-bottom: 0;
 }
 
-.chair-icon {}
+.chair-icon {
+  fill: var(--main-color);
+  width: 32px;
+  height: 32px;
+}
 
 .chair-price {
   display: flex;
