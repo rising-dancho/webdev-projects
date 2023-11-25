@@ -67,7 +67,13 @@ body {
 
 header,
 section {
-  margin-bottom: 48px;
+  margin-bottom: 96px;
+  /* 48 / 64 / 80 / 96 / 128 */
+}
+
+header {
+  margin-top: 80px;
+  /* 48 / 64 / 80 */
 }
 
 h1 {
@@ -125,7 +131,7 @@ img {
 }
 
 .btn--big {
-  padding: 16px 32px;
+  padding: 14px 32px;
   font-size: 18px;
 }
 
@@ -155,7 +161,6 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 80px;
-  margin-top: 48px;
 }
 
 .header-text-box {
