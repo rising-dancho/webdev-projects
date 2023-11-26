@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+  background: none;
+  text-decoration: inherit;
+  font-family: system-ui;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+}
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+.border-gradient-green {
+  border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+}
+
+.only-top {
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > div {
+    width: 100%;
+    text-align: center;
+  }
+  > div > div {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+.on-dark {
+  background: #222;
+  button {
+    color: white;
+  }
+}
+    </style>
+</head>
+<body>
+    <div>
+        <!-- <div class="on-light">
+          <button class="border-gradient border-gradient-purple">
+            I have a gradient
+          </button>
+        </div>
+        
+        <div class="on-dark">
+          <button class="border-gradient border-gradient-purple">
+            I have a gradient
+          </button>
+        </div>
+        
+        <div class="on-light">
+          <button class="border-gradient border-gradient-green">
+            I have a gradient
+          </button>
+        </div>
+        
+        <div class="on-dark">
+          <button class="border-gradient border-gradient-green">
+            I have a gradient
+          </button>
+        </div> -->
+        
+        <div class="on-light">
+          <button class="border-gradient border-gradient-green only-top">
+            Top-Only
+          </button>
+        </div>
+        
+        <!-- <div class="on-dark">
+          <button class="border-gradient border-gradient-green only-top">
+            Top-Only
+          </button>
+        </div> -->
+        
+      </div>
+</body>
+</html>

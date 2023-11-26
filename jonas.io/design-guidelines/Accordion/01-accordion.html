@@ -112,7 +112,6 @@
         .icon {
             width: 24px;
             height: 24px;
-            stroke: var(--main-color)
         }
 
         .hidden-box {
@@ -130,8 +129,20 @@
             padding-left: 20px;
         }
 
+        /* GRADIENT BORDER: */
+        /* reference: https://css-tricks.com/gradient-borders-in-css/ */
+
         .active {
-            border-top: 4px solid var(--main-color);
+            border: 10px solid;
+            border-width: 5px;
+            border-image-slice: 1;
+            border-image-source: linear-gradient(to right, var(--main-gradient-light), var(--main-gradient-dark));
+        }
+
+        .active.only-top {
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 0;
         }
 
         .active .hidden-box {
@@ -141,6 +152,16 @@
         .active .number,
         .active .text {
             color: var(--main-color);
+        }
+
+        .active .icon {
+            stroke: var(--main-color)
+        }
+
+        .active .text {
+            background: -webkit-linear-gradient(var(--main-gradient-light), var(--main-gradient-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
@@ -168,7 +189,7 @@
                 </ul>
             </div>
         </div>
-        <div class="item active">
+        <div class="item active border-gradient-green only-top">
             <div class="number">02</div>
             <div class="text">How long do i have to return my chair?</div>
             <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"

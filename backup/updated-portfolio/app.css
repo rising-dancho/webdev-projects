@@ -37,6 +37,11 @@
     --btn-color-darkest: hsla(200, 100%, 50%, 0.75);
     --btn-white-text: #fff;
 
+    /* gradient color */
+    --gradient-light:#09B9FF;
+    --gradient-dark: #2B77FF;
+    --gradient-hover: #29c2ff;
+
     /* font-family */
     --play2start-font: "Press Start 2P", sans-serif;
     --rubik-font-family: 'Rubik', sans-serif;
@@ -347,8 +352,9 @@ main .hero-section img {
 
 main .hero-section h1 span {
     color: var(--highlight-color);
-    /* text-shadow: 1px 1px 11px hsla(200, 100%, 40%,.2); */
-    text-shadow: 1px 1px 8px hsla(200, 100%, 40%, .2);
+    background: -webkit-linear-gradient(left, var(--gradient-light), var(--gradient-dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 main .fun-facts ul,
@@ -473,8 +479,7 @@ main .form_label {
 
 main .contact .form_button {
     padding: .65rem 2rem;
-    border: none;
-    background-color: var(--btn-color);
+    background: linear-gradient(to right, var(--gradient-light),  var(--gradient-dark));
     color: var(--btn-white-text);
     border-radius: var(--border-radius);
     cursor: pointer;
@@ -484,11 +489,12 @@ main .contact .form_button {
     transition: .25s;
     font-size: 1rem;
     font-weight: 500;
+    border: none;
     box-shadow: 0px 0px 2px var(--btn-color);
 }
 
 main .contact .form_button:hover {
-    background-color: var(--btn-color-darkest);
+    background: linear-gradient(to right, var(--gradient-hover), var(--gradient-dark));
     box-shadow: 0px 0px 2px var(--btn-color-darkest);
     color: var(--btn-white-text);
 }
