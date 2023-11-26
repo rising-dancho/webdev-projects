@@ -149,19 +149,18 @@
             display: block;
         }
 
-        .active .number,
+        .active .number {
+            color: var(--main-gradient-light);
+        }
+
         .active .text {
-            color: var(--main-color);
+            background: -webkit-linear-gradient(left, var(--main-gradient-light), var(--main-gradient-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .active .icon {
             stroke: var(--main-color)
-        }
-
-        .active .text {
-            background: -webkit-linear-gradient(var(--main-gradient-light), var(--main-gradient-dark));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
@@ -191,7 +190,7 @@
         </div>
         <div class="item active border-gradient-green only-top">
             <div class="number">02</div>
-            <div class="text">How long do i have to return my chair?</div>
+            <div class="text">How long is the return period of my chair?</div>
             <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
