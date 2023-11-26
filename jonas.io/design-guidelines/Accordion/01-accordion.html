@@ -84,14 +84,16 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            color: var(--main-color);
         }
 
         .item {}
 
-        .number {}
-
-        .text {}
+        .text,
+        .number {
+            font-size: 24px;
+            font-weight: 500;
+            color: var(--main-color);
+        }
 
         .icon {
             width: 24px;
@@ -100,6 +102,10 @@
         }
 
         .hidden-box {}
+
+        .hidden-box p {
+         line-height: 1.6;
+        }
     </style>
 </head>
 

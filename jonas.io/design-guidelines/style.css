@@ -275,7 +275,7 @@ header {
 footer {
   margin-bottom: 48px;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.65;
   color: var(--gray-lighter);
   /* 12 / 14 / 16 */
 }
