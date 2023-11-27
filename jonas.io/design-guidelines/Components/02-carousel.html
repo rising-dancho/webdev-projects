@@ -47,6 +47,7 @@
             --main-gradient-dark: #087f5b;
             --main-gradient-light: #37b24d;
             --main-gradient-hover: #40c057;
+            --bg-white: #fff;
             --gray-color: #343a40;
             --gray-lighter: #65686c;
             --gray-plain: #868e96;
@@ -60,7 +61,8 @@
             --border-radius: 8px;
 
             /* BOX SHADOW */
-            --box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.08);
+            --box-shadow1: 0px 12px 24px rgba(0, 0, 0, 0.25);
+            --box-shadow2: 0px 12px 24px rgba(0, 0, 0, 0.25);
         }
 
         /* ------------------------ */
@@ -80,12 +82,140 @@
             font-size: 18px;
         }
 
-     
+        .carousel {
+            background-color: var(--main-color);
+            width: 800px;
+            margin: 100px auto;
+            border-radius: var(--border-radius);
+            padding: 32px;
+            padding-left: 86px;
+            padding-right: 100px; 
+            position: relative;
+
+            display: flex;
+            gap: 86px;
+            align-items: center;
+        }
+
+        img {
+            height: 200px;
+            border-radius: var(--border-radius);
+            transform: scale(1.5);
+            box-shadow: var(--box-shadow1);
+        }
+
+        .testimonial-text {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.5;
+            margin-bottom: 32px;
+            color: var(--text-subtle-green-lighter);
+        }
+
+        .testimonial-author {
+            font-size: 14px;
+            margin-bottom: 4px;
+            color: var(--text-subtle-green-darker);
+        }
+
+        .testimonial-job {
+            font-size: 12px;
+            color: var(--text-subtle-green-darker);
+        }
+
+        /* CONTROLS */
+        .btn {
+            background-color: var(--bg-white);
+            border: none;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            border-radius: 50%;
+            position: absolute;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn--left {
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%);
+            box-shadow: var(--box-shadow2);
+        }
+
+        .btn--right {
+            top: 50%;
+            right: 0;
+            transform: translate(50%, -50%);
+            box-shadow: var(--box-shadow2);
+        }
+
+        .btn-icon {
+            width: 24px;
+            height: 24px;
+            stroke: var(--main-color);
+        }
+
+        .dots-navigation {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, 32px);
+
+            display: flex;
+            gap: 12px;
+            /* 2 / 4 / 8 / 12 */
+        }
+
+        .dot {
+            height: 12px;
+            width: 12px;
+            background-color: var(--bg-white);
+            border: 2px solid var(--main-color);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .active.dot {
+            background-color: var(--main-color);
+        }
     </style>
 </head>
 
 <body>
-    
+    <div class="carousel">
+        <img src="./maria.jpg" alt="Maria de Almeida">
+        <blockquote class="testimonial">
+            <p class="testimonial-text">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi et reprehenderit est, dolore voluptas,
+                doloremque quis."
+            </p>
+            <p class="testimonial-author">
+                Maria de Almeida
+            </p>
+            <p class="testimonial-job">Senior Product Manager at EDP Comercial </p>
+        </blockquote>
+        <button class="btn btn--left">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+        </button>
+        <button class="btn btn--right">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+        </button>
+        <div class="dots-navigation">
+            <button class="dot active">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+        </div>
+    </div>
 </body>
 
 </html>
