@@ -70,15 +70,23 @@
             color: var(--gray-color);
             line-height: 1.65;
             font-size: 18px;
+            height: 100vh;
+
+            display: grid;
+            grid-template-columns: 80px 400px 1fr 250px;
+            grid-template-rows: 80px 1fr;
+
         }
 
         nav {
             background-color: var(--gray-color);
             color: var(--text-light);
+            grid-row: 1 / -1;
         }
 
         menu {
             background-color: var(--main-color);
+            grid-column: 2 / 5;
         }
 
         section {
