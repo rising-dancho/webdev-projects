@@ -44,17 +44,12 @@
             /* COLOR SYSTEM */
             --main-color: #e67e22;
             --main-lighter: hsl(28, 80%, 48%);
-            --main-gradient-dark: #087f5b;
-            --main-gradient-light: #37b24d;
-            --main-gradient-hover: #40c057;
             --gray-color: #343a40;
             --gray-lighter: #65686c;
             --gray-plain: #868e96;
             --gray-number: #ced4da;
             --text-light: #fff;
             --text-dark: #343a40;
-            --text-subtle-green-lighter: #e6fcf5;
-            --text-subtle-green-darker: #c3fae8;
 
             /* BORDER RADIUS */
             --border-radius: 8px;
@@ -64,13 +59,13 @@
         }
 
         /* ------------------------ */
-        /* HELPER CLASSES */
+        /* HELPER CLASS */
         /* ------------------------ */
         .container {
             margin: 0 auto;
             max-width: 1200px;
+            /* background-color: rgb(219, 118, 118); */
         }
-
 
         /* ------------------------ */
         /* GENERAL STYLES */
@@ -96,9 +91,15 @@
             justify-content: space-between;
         }
 
+        header {
+            /* background-color: rgb(219, 118, 118); */
+            height: 100vh;
+        }
+
         h1 {
             font-size: 52px;
             margin-bottom: 32px;
+            line-height: 1.2;
         }
 
         h2 {
@@ -110,10 +111,6 @@
             font-size: 20px;
             line-height: 1.6;
             margin-bottom: 48px;
-        }
-
-        section {
-            padding: 96px 0;
         }
 
         .btn:link,
@@ -134,6 +131,39 @@
         .btn:active {
             background-color: var(--main-lighter);
         }
+
+        /* ------------------------ */
+        /* SECTION STYLES */
+        /* ------------------------ */
+        header {
+            position: relative;
+            background-image: url(./hero.jpg);
+        }
+
+        header .hero-section {
+            /* background-color: violet; */
+            /* parent size 1200px */
+            width: 100%;
+            text-align: left;
+            /* in relation to the PARENT size */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            /* in relation to the ELEMENT size */
+            transform: translate(-50%, -50%);
+            /* background-color: blueviolet;  */
+        }
+
+        header .hero-section-details {
+            width: 50%;
+            /* background-color: aquamarine; */
+        }
+
+        main .random-section {
+            padding: 96px 0;
+            background-color: #f7f7f7;
+        }
     </style>
 </head>
 
@@ -143,15 +173,18 @@
             <div>LOGO</div>
             <div>NAVIGATION</div>
         </nav>
-        <div class="container">
-            <h1>A healthy meal deliver to your door, every single day</h1>
-            <p>The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your
-                personal taste and nutritional needs</p>
-            <a class="btn" href="#">Start eating well</a>
-        </div>
+        <section class="hero-section container">
+            <div class="hero-section-details">
+                <h1>A healthy meal deliver to your door, every single day</h1>
+                <p>The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your
+                    personal taste and nutritional needs</p>
+                <a class="btn" href="#">Start eating well</a>
+            </div>
+        </section>
     </header>
     <main>
-        <section class="container">
+        <section class="random-section container">
+
             <h2>Some random heading</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corrupti, incidunt facilis molestiae
                 voluptatibus distinctio rerum velit, delectus minima reiciendis ratione repellendus sunt voluptatum a
