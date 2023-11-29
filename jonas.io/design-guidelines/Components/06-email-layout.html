@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+        HEADING DEFAULTS (px)
+        h1 - 32
+        h2 - 24
+        h3 - 18.72
+        h4 - 16
+        h5 - 13.28
+        h6 - 10.72
+
+        MAIN COLOR: #087f5b
+        GRAY COLOR: #343a40
+
+        ACCESIBILITY CONCERNS:
+        Use a minimum value of 1.5 for line-height for main paragraph content.
+        https://developer.mozilla.org/en-US/docs/Web/CSS/line-height
+
+        references: 
+        https://typescale.com/
+        https://www.thegoodlineheight.com/
+        */
+
+        /* ------------------------ */
+        /* VARIABLES */
+        /* ------------------------ */
+
+        :root {
+            /* COLOR SYSTEM */
+            --main-color: #7048e8;
+            --main-lighter: #e9ecef;
+            --gray-color: #343a40;
+            --text-light: #fff;
+            --text-dark: #343a40;
+
+            /* BORDER RADIUS */
+            --border-radius: 8px;
+
+            /* BOX SHADOW */
+            --box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.08);
+        }
+
+        /* ------------------------ */
+        /* GENERAL STYLES */
+        /* ------------------------ */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--gray-color);
+            line-height: 1.65;
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: var(--gray-color);
+            color: var(--text-light);
+        }
+
+        menu {
+            background-color: var(--main-color);
+        }
+
+        section {
+            background-color: var(--main-lighter);
+        }
+
+        aside {
+            background-color: var(--main-lighter);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>Nav</nav>
+    <menu>Menu</menu>
+    <section>Inbox</section>
+    <main>Email</main>
+    <aside>Additional Info</aside>
+</body>
+
+</html>
