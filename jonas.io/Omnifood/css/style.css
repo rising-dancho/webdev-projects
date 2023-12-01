@@ -42,9 +42,13 @@
 
     /* Primary: */
     --primary-color: #e67e22;
+    --primary-color-darker: #cf711f;
 
     /* Tints: */
-    --bg-color: #fdf2e9;
+    --bg-primary-color: #fdf2e9;
+    --bg-white-color: #fff;
+    --bg-black-color: #fff;
+
     /* Shades: */
     /* Accents: */
     /* Greys: */
@@ -95,7 +99,7 @@ body {
 }
 
 .hero-section {
-    background-color: var(--bg-color);
+    background-color: var(--bg-primary-color);
     padding: var(--spacing-96px) 0;
     /* 64 / 80 / 96     */
 }
@@ -127,7 +131,7 @@ body {
 .btn:link,
 .btn:visited {
     display: inline-block;
-    color: var(--text-light);
+    color: var(--bg-white-color);
     font-size: var(--fs-20);
     padding: var(--spacing-16px) var(--spacing-32px);
     border-radius: var(--border-radius);
@@ -138,12 +142,26 @@ body {
 .btn--full:link,
 .btn--full:visited {
     background-color: var(--primary-color);
+    transition: background-color 300ms cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
-.btn--outline:link, 
+.btn--full:hover,
+.btn--full:active {
+    background-color: var(--primary-color-darker);
+}
+
+.btn--outline:link,
 .btn--outline:visited {
-    background-color: var(--text-light);
+    background-color: var(--bg-white-color);
     color: var(--text-gray);
+    transition: all 300ms cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+    background-color: var(--bg-color);
+    /* trick to add border inside of button */
+    box-shadow: inset 0 0 0 3px var(--bg-white-color);
 }
 
 .hero-img {
