@@ -58,6 +58,12 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+.heading-primary {
+    font-size: 3.875rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
 .hero-img {
     width: 100%;
 }
