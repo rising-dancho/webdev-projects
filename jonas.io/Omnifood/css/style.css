@@ -41,7 +41,7 @@
     /*--- 02 COLORS */
 
     /* Primary: */
-    --main-color: #e67e22;
+    --primary-color: #e67e22;
 
     /* Tints: */
     --bg-color: #fdf2e9;
@@ -96,14 +96,16 @@ body {
 
 .hero-section {
     background-color: var(--bg-color);
-    padding: var(--spacing-96px);
+    padding: var(--spacing-96px) 0;
     /* 64 / 80 / 96     */
 }
 
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-96px);
     align-items: center;
+
 }
 
 .heading-primary {
@@ -120,6 +122,28 @@ body {
     font-size: var(--fs-20);
     /* 18 / 20 / 24 */
     margin-bottom: var(--spacing-48px);
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    color: var(--text-light);
+    font-size: var(--fs-20);
+    padding: var(--spacing-16px) var(--spacing-32px);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn--full:link,
+.btn--full:visited {
+    background-color: var(--primary-color);
+}
+
+.btn--outline:link, 
+.btn--outline:visited {
+    background-color: var(--text-light);
+    color: var(--text-gray);
 }
 
 .hero-img {
