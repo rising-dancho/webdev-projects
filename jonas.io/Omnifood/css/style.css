@@ -81,7 +81,7 @@
 }
 
 /* ------------------------ */
-/* HELPER CLASSES             */
+/* HELPER CLASSES           */
 /* ------------------------ */
 
 .container {
@@ -89,9 +89,13 @@
     margin: 0 auto;
 }
 
-.btn-margin-right {
-    margin-right: var(--spacing-16px);
+.margin-right-sm {
+    margin-right: var(--spacing-16px) !important;
 }
+
+/* ------------------------ */
+/* GENERAL STYLES           */
+/* ------------------------ */
 
 * {
     padding: 0;
@@ -105,6 +109,10 @@ body {
     font-weight: 400;
     color: var(--text-gray);
 }
+
+/* ------------------------ */
+/* LAYOUT STYLES            */
+/* ------------------------ */
 
 .hero-section {
     background-color: var(--bg-primary-color);
