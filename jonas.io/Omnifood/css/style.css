@@ -1,5 +1,5 @@
 /* ------------------------ */
-/* VARIABLES */
+/* VARIABLES                */
 /* ------------------------ */
 :root {
     /*  01  TYPGRAPHY SYSTEM
@@ -80,9 +80,17 @@
     --spacing-128px: 8rem;
 }
 
+/* ------------------------ */
+/* HELPER CLASSES             */
+/* ------------------------ */
+
 .container {
     max-width: 81.25rem;
     margin: 0 auto;
+}
+
+.btn-margin-right {
+    margin-right: var(--spacing-16px);
 }
 
 * {
