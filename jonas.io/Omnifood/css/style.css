@@ -1,5 +1,3 @@
-
-
 * {
     padding: 0;
     margin: 0;
@@ -13,3 +11,13 @@ body {
     color: #444;
 }
 
+.hero {
+    max-width: 81.25rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-img {
+    width: 100%;
+}
