@@ -2,7 +2,7 @@
 /* VARIABLES */
 /* ------------------------ */
 :root {
-    /* --- 01  TYPGRAPHY SYSTEM
+    /*  01  TYPGRAPHY SYSTEM
 
     Heading Defaults (px)
     h1 - 32
@@ -43,34 +43,37 @@
     /* Primary: */
     --main-color: #e67e22;
 
-    /* 
-     Tints: 
-     Shades: 
-     Accents:*/
-
+    /* Tints: */
+    --bg-color: #fdf2e9;
+    /* Shades: */
+    /* Accents: */
     /* Greys: */
     --text-light: #fff;
     --text-gray: #444;
     --text-dark: #333;
 
-    /* --- 05 SHADOWS */
-    /* --- 06 BORDER RADIUS */
+    /*  05  SHADOWS */
+
+    /*  06  BORDER RADIUS */
     --border-radius: 8px;
 
-    /* White Space */
-    /* Spacing System (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
-    --spacing-2: 2px;
-    --spacing-4: 4px;
-    --spacing-8: 8px;
-    --spacing-12: 12px;
-    --spacing-16: 16px;
-    --spacing-24: 24px;
-    --spacing-32: 32px;
-    --spacing-48: 48px;
-    --spacing-64: 64px;
-    --spacing-80: 80px;
-    --spacing-96: 96px;
-    --spacing-128: 128px;
+    /*  07  WHITE SPACE 
+
+    Spacing System (px):
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+    */
+    --spacing-2px: 0.125rem;
+    --spacing-4px: 0.25rem;
+    --spacing-8px: 0.5rem;
+    --spacing-12px: 0.75rem;
+    --spacing-16px: 1rem;
+    --spacing-24px: 1.5rem;
+    --spacing-32px: 2rem;
+    --spacing-48px: 3rem;
+    --spacing-64px: 4rem;
+    --spacing-80px: 5rem;
+    --spacing-96px: 6rem;
+    --spacing-128px: 8rem;
 }
 
 .container {
@@ -86,25 +89,37 @@
 
 body {
     font-family: sans-serif;
-    line-height: 1.6;
+    line-height: var(--lh-1-6);
     font-weight: 400;
-    color: #444;
+    color: var(--text-gray);
+}
+
+.hero-section {
+    background-color: var(--bg-color);
+    padding: var(--spacing-96px);
+    /* 64 / 80 / 96     */
 }
 
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .heading-primary {
     font-size: 3.875rem;
     font-weight: 700;
     line-height: 1.05;
-    color: #333;
+    letter-spacing: -0.5px;
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-32px);
+    /* 24 / 32 / 48 */
 }
 
 .hero-desc {
-    font-size: 1.25rem;
+    font-size: var(--fs-20);
+    /* 18 / 20 / 24 */
+    margin-bottom: var(--spacing-48px);
 }
 
 .hero-img {
