@@ -32,13 +32,17 @@
     --fs-98: 6.125rem;
 
     /* Font Weights:  */
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
 
     /* Line Heights: */
     --lh-1-05: 1.05;
     --lh-1-6: 1.05;
 
 
-    /*--- 02 COLORS */
+    /*  02  COLORS */
 
     /* Primary: */
     --primary-color: #e67e22;
@@ -104,9 +108,9 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Rubik', sans-serif;
     line-height: var(--lh-1-6);
-    font-weight: 400;
+    font-weight: var(--fw-400);
     color: var(--text-gray);
 }
 
@@ -130,7 +134,7 @@ body {
 
 .heading-primary {
     font-size: 3.875rem;
-    font-weight: 700;
+    font-weight: var(--fw-700);
     line-height: 1.05;
     letter-spacing: -0.5px;
     color: var(--text-dark);
@@ -152,7 +156,7 @@ body {
     padding: var(--spacing-16px) var(--spacing-32px);
     border-radius: var(--border-radius);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: var(--fw-600);
 }
 
 .btn--full:link,
