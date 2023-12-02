@@ -132,6 +132,10 @@ body {
 
 }
 
+.hero-txt-box span {
+    font-weight: var(--fw-600);
+}
+
 .heading-primary {
     font-size: 3.875rem;
     font-weight: var(--fw-700);
