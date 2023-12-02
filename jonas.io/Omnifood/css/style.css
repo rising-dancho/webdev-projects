@@ -145,14 +145,20 @@
 
 body {
     font-family: 'Rubik', sans-serif;
-    line-height: var(--lh-1-6);
     font-weight: var(--fw-400);
     color: var(--text-gray);
+}
+
+p {
+    font-size: var(--fs-20);
+     /* 18 / 20 / 24 */
+    line-height: var(--lh-1-6);
 }
 
 /* ------------------------ */
 /* HEADER SECTION           */
 /* ------------------------ */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -165,7 +171,31 @@ body {
 }
 
 .logo {
-    height: var(--spacing-24px);
+    height: 1.375rem;
+}
+
+/* ------------------------ */
+/* NAVIGATION SECTION       */
+/* ------------------------ */
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-32px);
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+    text-decoration: none;
+    color: var(--text-dark);
+    /* not too bold or it takes too much focus */
+    font-weight: var(--fw-500);
+    font-size: var(--fs-18);
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    text-decoration: underline;
 }
 
 /* ------------------------ */
@@ -174,7 +204,7 @@ body {
 
 .hero-section {
     background-color: var(--bg-primary-color);
-    padding: var(--spacing-96px) 0;
+    padding: var(--spacing-48px) 0 var(--spacing-96px) 0;
     /* 64 / 80 / 96     */
 }
 
@@ -183,7 +213,8 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-96px);
     align-items: center;
-
+    padding: 0 var(--spacing-48px);
+    /* 24 / 32 / 48 */
 }
 
 .hero-txt-box span {
@@ -201,8 +232,6 @@ body {
 }
 
 .hero-desc {
-    font-size: var(--fs-20);
-    /* 18 / 20 / 24 */
     margin-bottom: var(--spacing-48px);
 }
 
