@@ -191,3 +191,31 @@ body {
 .hero-img {
     width: 100%;
 }
+
+.delivered-meals {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-16px);
+    margin-top: var(--spacing-80px);
+}
+
+.delivered-imgs {
+    display: flex;
+
+}
+
+.delivered-imgs img {
+    height: var(--spacing-48px);
+    width: var(--spacing-48px);
+    border-radius: 50%;
+    margin-right: calc(var(--spacing-16px) * -1);
+}
+
+.delivered-imgs img:last-of-type {
+    margin-right: 0;
+}
+
+.delivered-text {
+    font-size: var(--fs-18);
+    font-weight: var(--fw-600);
+}
