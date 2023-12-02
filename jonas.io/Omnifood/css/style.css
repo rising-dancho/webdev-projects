@@ -2,19 +2,7 @@
 /* VARIABLES                */
 /* ------------------------ */
 :root {
-    /*  01  TYPGRAPHY SYSTEM
-
-    Heading Defaults (px)
-    h1 - 32
-    h2 - 24
-    h3 - 18.72
-    h4 - 16
-    h5 - 13.28
-    h6 - 10.72 
-
-    Font Sizes (px):
-    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
-    */
+    /*  01  TYPGRAPHY SYSTEM */
     --fs-10: 0.625rem;
     --fs-12: 0.75rem;
     --fs-14: 0.875rem;
@@ -65,11 +53,7 @@
     /*  06  BORDER RADIUS */
     --border-radius: 8px;
 
-    /*  07  WHITE SPACE 
-
-    Spacing System (px):
-    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
-    */
+    /*  07  WHITE SPACE */
     --spacing-2px: 0.125rem;
     --spacing-4px: 0.25rem;
     --spacing-8px: 0.5rem;
@@ -82,6 +66,9 @@
     --spacing-80px: 5rem;
     --spacing-96px: 6rem;
     --spacing-128px: 8rem;
+
+    /* 08 MISC */
+    --transition-bezier:cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 /* ------------------------ */
@@ -111,7 +98,7 @@
 .btn--full:link,
 .btn--full:visited {
     background-color: var(--primary-color);
-    transition: background-color 300ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    transition: background-color 300ms var(--transition-bezier);
 }
 
 .btn--full:hover,
@@ -123,7 +110,7 @@
 .btn--outline:visited {
     background-color: var(--bg-white-color);
     color: var(--text-gray);
-    transition: all 300ms cubic-bezier(0.215, 0.610, 0.355, 1);
+    transition: all 300ms var(--transition-bezier);
 }
 
 .btn--outline:hover,
@@ -182,21 +169,34 @@ p {
     list-style: none;
     display: flex;
     gap: var(--spacing-32px);
+    align-items: center;
 }
 
 .main-nav-link:link,
 .main-nav-link:visited {
+    display: inline-block;
     text-decoration: none;
     color: var(--text-dark);
     /* not too bold or it takes too much focus */
     font-weight: var(--fw-500);
     font-size: var(--fs-18);
+    transition: color 300ms var(--transition-bezier);
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
-    text-decoration: underline;
+    color: var(--primary-color-darker);
 }
+
+.nav-cta:link,
+.nav-cta:visited {
+    padding: var(--spacing-12px) var(--spacing-24px);
+    /* 8 / 12 / 16 / 24 / 32  */
+    border-radius: var(--border-radius);
+    color: var(--text-light);
+    background-color: var(--primary-color-darker);
+}
+
 
 /* ------------------------ */
 /* HERO SECTION             */
