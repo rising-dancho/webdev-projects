@@ -85,7 +85,7 @@
 }
 
 /* ------------------------ */
-/* HELPER CLASSES           */
+/* REUSABLE COMPONENTS      */
 /* ------------------------ */
 
 .container {
@@ -95,61 +95,6 @@
 
 .margin-right-sm {
     margin-right: var(--spacing-16px) !important;
-}
-
-/* ------------------------ */
-/* GENERAL STYLES           */
-/* ------------------------ */
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Rubik', sans-serif;
-    line-height: var(--lh-1-6);
-    font-weight: var(--fw-400);
-    color: var(--text-gray);
-}
-
-/* ------------------------ */
-/* LAYOUT STYLES            */
-/* ------------------------ */
-
-.hero-section {
-    background-color: var(--bg-primary-color);
-    padding: var(--spacing-96px) 0;
-    /* 64 / 80 / 96     */
-}
-
-.hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-96px);
-    align-items: center;
-
-}
-
-.hero-txt-box span {
-    font-weight: var(--fw-600);
-}
-
-.heading-primary {
-    font-size: 3.875rem;
-    font-weight: var(--fw-700);
-    line-height: 1.05;
-    letter-spacing: -0.5px;
-    color: var(--text-dark);
-    margin-bottom: var(--spacing-32px);
-    /* 24 / 32 / 48 */
-}
-
-.hero-desc {
-    font-size: var(--fs-20);
-    /* 18 / 20 / 24 */
-    margin-bottom: var(--spacing-48px);
 }
 
 .btn:link,
@@ -186,6 +131,79 @@ body {
     background-color: var(--bg-primary-color);
     /* trick to add border inside of button */
     box-shadow: inset 0 0 0 3px var(--bg-white-color);
+}
+
+/* ------------------------ */
+/* GENERAL STYLES           */
+/* ------------------------ */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    line-height: var(--lh-1-6);
+    font-weight: var(--fw-400);
+    color: var(--text-gray);
+}
+
+/* ------------------------ */
+/* HEADER SECTION           */
+/* ------------------------ */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-primary-color);
+
+    /* sticky navigation is easier if height is given */
+    height: var(--spacing-96px);
+    padding: 0 var(--spacing-48px);
+}
+
+.logo {
+    height: var(--spacing-24px);
+}
+
+/* ------------------------ */
+/* HERO SECTION             */
+/* ------------------------ */
+
+.hero-section {
+    background-color: var(--bg-primary-color);
+    padding: var(--spacing-96px) 0;
+    /* 64 / 80 / 96     */
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-96px);
+    align-items: center;
+
+}
+
+.hero-txt-box span {
+    font-weight: var(--fw-600);
+}
+
+.heading-primary {
+    font-size: 3.875rem;
+    font-weight: var(--fw-700);
+    line-height: 1.05;
+    letter-spacing: -0.5px;
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-32px);
+    /* 24 / 32 / 48 */
+}
+
+.hero-desc {
+    font-size: var(--fs-20);
+    /* 18 / 20 / 24 */
+    margin-bottom: var(--spacing-48px);
 }
 
 .hero-img {
