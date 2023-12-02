@@ -27,7 +27,7 @@
 
     /* Line Heights: */
     --lh-1-05: 1.05;
-    --lh-1-6: 1.05;
+    --lh-1-6: 1.6;
 
     /*  02  COLORS */
 
@@ -67,7 +67,7 @@
     --spacing-128px: 8rem;
 
     /* 08 MISC */
-    --transition-bezier:cubic-bezier(0.215, 0.610, 0.355, 1);
+    --transition-bezier: cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 /* ------------------------ */
@@ -137,7 +137,7 @@ body {
 
 p {
     font-size: var(--fs-20);
-     /* 18 / 20 / 24 */
+    /* 18 / 20 / 24 */
     line-height: var(--lh-1-6);
 }
 
@@ -179,7 +179,7 @@ p {
     /* not too bold or it takes too much focus */
     font-weight: var(--fw-500);
     font-size: var(--fs-18);
-    transition: color 300ms var(--transition-bezier);
+    transition: all 300ms var(--transition-bezier);
 }
 
 .main-nav-link:hover,
@@ -193,15 +193,13 @@ p {
     /* 8 / 12 / 16 / 24 / 32  */
     border-radius: var(--border-radius);
     color: var(--text-light);
-    background-color: var(--primary-color-darker);
-    transition: background-color 300ms var(--transition-bezier);
+    background-color: var(--primary-color);
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-darker);
 }
-
 
 /* ------------------------ */
 /* HERO SECTION             */
@@ -229,7 +227,7 @@ p {
 .heading-primary {
     font-size: 3.875rem;
     font-weight: var(--fw-700);
-    line-height: 1.05;
+    line-height: var(--lh-1-05);
     letter-spacing: -0.5px;
     color: var(--text-dark);
     margin-bottom: var(--spacing-32px);
