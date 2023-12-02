@@ -29,7 +29,6 @@
     --lh-1-05: 1.05;
     --lh-1-6: 1.05;
 
-
     /*  02  COLORS */
 
     /* Primary: */
@@ -188,13 +187,19 @@ p {
     color: var(--primary-color-darker);
 }
 
-.nav-cta:link,
-.nav-cta:visited {
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
     padding: var(--spacing-12px) var(--spacing-24px);
     /* 8 / 12 / 16 / 24 / 32  */
     border-radius: var(--border-radius);
     color: var(--text-light);
     background-color: var(--primary-color-darker);
+    transition: background-color 300ms var(--transition-bezier);
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+    background-color: var(--primary-color);
 }
 
 
