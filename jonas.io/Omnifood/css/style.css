@@ -27,7 +27,12 @@
 
     /* Line Heights: */
     --lh-1-05: 1.05;
+    --lh-1-2: 1.2;
     --lh-1-6: 1.6;
+
+    /* Letter Spacing: */
+    --ls-1-75: 1.75px;
+    --ls--0-5: -0.5px;
 
     /*  02  COLORS */
 
@@ -44,6 +49,7 @@
     /* Accents: */
     /* Greys: */
     --text-light: #fff;
+    --text-grayish-white: #e9ecef;
     --text-gray: #444;
     --text-dark: #333;
 
@@ -99,6 +105,35 @@
 
 .margin-right-sm {
     margin-right: var(--spacing-16px) !important;
+}
+
+.subheading {
+    display: block;
+    font-size: var(--fs-16);
+    font-weight: var(--fw-500);
+    color: var(--primary-color-darker);
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-16px);
+    letter-spacing: var(--ls-1-75);
+}
+
+.heading-primary,
+.heading-secondary{
+    font-weight: var(--fw-700);
+    letter-spacing: var(--ls--0-5);
+    color: var(--text-dark)
+}
+.heading-primary {
+    font-size: 3.875rem;
+    line-height: var(--lh-1-05);
+    margin-bottom: var(--spacing-32px);
+    /* 24 / 32 / 48 */
+}
+
+.heading-secondary {
+    font-size: var(--fs-44);
+    line-height: var(--lh-1-2);
+    margin-bottom: var(--spacing-96px);
 }
 
 .btn:link,
@@ -240,16 +275,6 @@ p {
     font-weight: var(--fw-600);
 }
 
-.heading-primary {
-    font-size: 3.875rem;
-    font-weight: var(--fw-700);
-    line-height: var(--lh-1-05);
-    letter-spacing: -0.5px;
-    color: var(--text-dark);
-    margin-bottom: var(--spacing-32px);
-    /* 24 / 32 / 48 */
-}
-
 .hero-desc {
     margin-bottom: var(--spacing-48px);
 }
@@ -301,3 +326,18 @@ p {
     font-weight: 700;
 }
 
+.step-imgbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-img {
+    width: 50%;
+}
+
+.step-number {
+    font-size: var(--fs-98);
+    font-weight: var(--fw-600);
+    color: var(--text-grayish-white);
+}
