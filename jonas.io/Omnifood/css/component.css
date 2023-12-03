@@ -1,4 +1,83 @@
 /* ------------------------ */
+/* VARIABLES                */
+/* ------------------------ */
+:root {
+    /*  01  TYPGRAPHY SYSTEM */
+    --fs-10: 0.625rem;
+    --fs-12: 0.75rem;
+    --fs-14: 0.875rem;
+    --fs-16: 1rem;
+    --fs-18: 1.125rem;
+    --fs-20: 1.25rem;
+    --fs-24: 1.5rem;
+    --fs-30: 1.875rem;
+    --fs-36: 2.25rem;
+    --fs-44: 2.75rem;
+    --fs-52: 3.25rem;
+    --fs-62: 3.875rem;
+    --fs-74: 4.625rem;
+    --fs-86: 5.375rem;
+    --fs-98: 6.125rem;
+
+    /* Font Weights:  */
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+
+    /* Line Heights: */
+    --lh-1-05: 1.05;
+    --lh-1-2: 1.2;
+    --lh-1-6: 1.6;
+
+    /* Letter Spacing: */
+    --ls-1-75: 1.75px;
+    --ls--0-5: -0.5px;
+
+    /*  02  COLORS */
+
+    /* Primary: */
+    --primary-color: #e67e22;
+    --primary-color-darker: #cf711f;
+
+    /* Tints: */
+    --bg-primary-color: #fdf2e9;
+    --bg-white-color: #fff;
+    --bg-black-color: #444;
+
+    /* Shades: */
+    /* Accents: */
+    /* Greys: */
+    --text-light: #fff;
+    --text-grayish-white: #e9ecef;
+    --text-gray: #444;
+    --text-dark: #333;
+
+    /*  05  SHADOWS */
+
+    /*  06  BORDER RADIUS */
+    --border-radius: 8px;
+
+    /*  07  WHITE SPACE */
+    --spacing-2px: 0.125rem;
+    --spacing-4px: 0.25rem;
+    --spacing-8px: 0.5rem;
+    --spacing-12px: 0.75rem;
+    --spacing-16px: 1rem;
+    --spacing-24px: 1.5rem;
+    --spacing-32px: 2rem;
+    --spacing-48px: 3rem;
+    --spacing-64px: 4rem;
+    --spacing-80px: 5rem;
+    --spacing-96px: 6rem;
+    --spacing-128px: 8rem;
+
+    /* 08 MISC */
+    --transition-bezier: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+
+/* ------------------------ */
 /* REUSABLE COMPONENTS      */
 /* ------------------------ */
 
@@ -40,7 +119,8 @@
 }
 
 .heading-primary,
-.heading-secondary{
+.heading-secondary,
+.heading-tertiary{
     font-weight: var(--fw-700);
     letter-spacing: var(--ls--0-5);
     color: var(--text-dark)
@@ -56,6 +136,12 @@
     font-size: var(--fs-44);
     line-height: var(--lh-1-2);
     margin-bottom: var(--spacing-96px);
+}
+
+.heading-tertiary {
+    font-size: var(--fs-36);
+    line-height: var(--lh-1-2);
+    margin-bottom: var(--spacing-32px);
 }
 
 .btn:link,
