@@ -337,7 +337,7 @@ p {
 }
 
 .step-number {
-    font-size: var(--fs-98);
+    font-size: var(--fs-86);
     font-weight: var(--fw-600);
     color: var(--text-grayish-white);
 }
