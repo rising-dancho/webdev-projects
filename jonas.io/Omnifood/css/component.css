@@ -138,7 +138,6 @@
     line-height: var(--lh-1-05);
     margin-bottom: var(--spacing-32px);
     /* 24 / 32 / 48 */
-    font-weight: var(--fw-600);
 }
 
 .heading-secondary {
@@ -148,7 +147,7 @@
 }
 
 .heading-tertiary {
-    font-size: var(--fs-36);
+    font-size: var(--fs-30);
     line-height: var(--lh-1-2);
     margin-bottom: var(--spacing-32px);
 }
