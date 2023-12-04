@@ -26,6 +26,7 @@
     --fw-700: 700;
 
     /* Line Heights: */
+    --lh-1: 1;
     --lh-1-05: 1.05;
     --lh-1-2: 1.2;
     --lh-1-6: 1.6;
@@ -95,7 +96,7 @@ body {
 p {
     font-size: var(--fs-20);
     /* 18 / 20 / 24 */
-    line-height: var(--lh-1-6);
+    line-height: var(--lh-1);
 }
 
 /* ------------------------ */
@@ -185,6 +186,7 @@ p {
 
 .hero-desc {
     margin-bottom: var(--spacing-48px);
+    line-height: var(--lh-1-6);
 }
 
 .hero-img {
@@ -249,10 +251,13 @@ p {
     font-size: var(--fs-86);
     font-weight: var(--fw-600);
     color: var(--text-grayish-white);
+    line-height: 1;
+    margin-bottom: var(--spacing-12px);
 }
 
 .step-desc {
     font-size: var(--fs-18);
+    line-height: var(--lh-1-6);
     color: var(--text-gray);
     font-weight: 400;
 }

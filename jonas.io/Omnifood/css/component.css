@@ -26,6 +26,7 @@
     --fw-700: 700;
 
     /* Line Heights: */
+    --lh-1: 1;
     --lh-1-05: 1.05;
     --lh-1-2: 1.2;
     --lh-1-6: 1.6;
@@ -43,15 +44,15 @@
     /* Tints: */
     --bg-primary-color: #fdf2e9;
     --bg-white-color: #fff;
-    --bg-black-color: #444;
+    --bg-black-color: #4d4d4d;
 
     /* Shades: */
     /* Accents: */
     /* Greys: */
     --text-light: #fff;
-    --text-grayish-white: #e9ecef;
-    --text-gray: #444;
-    --text-dark: #333;
+    --text-grayish-white: #ddd;
+    --text-gray: #4d4d4d;
+    --text-dark: #2e2e2e;
 
     /*  05  SHADOWS */
 
@@ -75,7 +76,6 @@
     /* 08 MISC */
     --transition-bezier: cubic-bezier(0.215, 0.610, 0.355, 1);
 }
-
 
 /* ------------------------ */
 /* REUSABLE COMPONENTS      */
