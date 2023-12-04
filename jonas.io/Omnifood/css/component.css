@@ -33,6 +33,7 @@
 
     /* Letter Spacing: */
     --ls-1-75: 1.75px;
+    --ls--0-75: 0.75px;
     --ls--0-5: -0.5px;
 
     /*  02  COLORS */
@@ -43,6 +44,7 @@
 
     /* Tints: */
     --bg-primary-color: #fdf2e9;
+    --bg-secondary-color: #fae5d3;
     --bg-white-color: #fff;
     --bg-black-color: #4d4d4d;
 
@@ -51,6 +53,7 @@
     /* Greys: */
     --text-light: #fff;
     --text-grayish-white: #ddd;
+    --text-gray-lighter: #888;
     --text-gray: #4d4d4d;
     --text-dark: #2e2e2e;
 
@@ -131,10 +134,11 @@
     color: var(--text-dark)
 }
 .heading-primary {
-    font-size: 3.875rem;
+    font-size: var(--fs-52);
     line-height: var(--lh-1-05);
     margin-bottom: var(--spacing-32px);
     /* 24 / 32 / 48 */
+    font-weight: var(--fw-600);
 }
 
 .heading-secondary {
@@ -157,7 +161,7 @@
     padding: var(--spacing-16px) var(--spacing-32px);
     border-radius: var(--border-radius);
     text-decoration: none;
-    font-weight: var(--fw-600);
+    font-weight: var(--fw-500);
 }
 
 .btn--full:link,
@@ -176,11 +180,12 @@
     background-color: var(--bg-white-color);
     color: var(--text-gray);
     transition: all 300ms var(--transition-bezier);
+    font-weight: var(--fw-400);
 }
 
 .btn--outline:hover,
 .btn--outline:active {
-    background-color: var(--bg-primary-color-color);
+    background-color: var(--bg-primary-color);
     /* trick to add border inside of button */
-    box-shadow: inset 0 0 0 3px var(--bg-black-color);
+    box-shadow: inset 0 0 0 2.25px var(--bg-black-color);
 }
