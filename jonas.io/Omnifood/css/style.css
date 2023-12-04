@@ -43,6 +43,7 @@
 
     /* Tints: */
     --bg-primary-color: #fdf2e9;
+    --bg-secondary-color: #fae5d3;
     --bg-white-color: #fff;
     --bg-black-color: #4d4d4d;
 
@@ -240,6 +241,34 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.step-imgbox::before,
+.step-imgbox::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.step-imgbox::before {
+    width: 60%;
+    /* height: 60%; */
+    /* 60% of parent's width: because cant create 60% height it needs to be hard value */
+    padding-bottom: 60%;
+    background-color: var(--bg-primary-color);
+    z-index: -2;
+}
+
+.step-imgbox::after {
+    width: 50%;
+    padding-bottom: 50%;
+    background-color: var(--bg-secondary-color);
+    z-index: -1;
 }
 
 .step-img {
