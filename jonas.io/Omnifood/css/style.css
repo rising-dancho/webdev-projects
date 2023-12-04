@@ -43,15 +43,15 @@
     /* Tints: */
     --bg-primary-color: #fdf2e9;
     --bg-white-color: #fff;
-    --bg-black-color: #444;
+    --bg-black-color: #4d4d4d;
 
     /* Shades: */
     /* Accents: */
     /* Greys: */
     --text-light: #fff;
-    --text-grayish-white: #e9ecef;
-    --text-gray: #444;
-    --text-dark: #333;
+    --text-grayish-white: #ddd;
+    --text-gray: #4d4d4d;
+    --text-dark: #2e2e2e;
 
     /*  05  SHADOWS */
 
@@ -101,6 +101,10 @@ p {
 /* ------------------------ */
 /* HEADER SECTION           */
 /* ------------------------ */
+
+/* .header-section {
+    background-color: var(--bg-primary-color);
+} */
 
 .header {
     display: flex;
@@ -238,11 +242,17 @@ p {
 }
 
 .step-img {
-    width: 50%;
+    width: 35.75%;
 }
 
 .step-number {
     font-size: var(--fs-86);
     font-weight: var(--fw-600);
     color: var(--text-grayish-white);
+}
+
+.step-desc {
+    font-size: var(--fs-18);
+    color: var(--text-gray);
+    font-weight: 400;
 }

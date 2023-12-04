@@ -89,7 +89,8 @@
 
 .grid {
     display: grid;
-    gap: var(--spacing-96px);
+    column-gap: var(--spacing-64px);
+    row-gap: var(--spacing-96px);
 }
 
 .grid--2-cols {
@@ -102,6 +103,10 @@
 
 .grid--4-cols {
     grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+    align-items: center;
 }
 
 .margin-right-sm {
