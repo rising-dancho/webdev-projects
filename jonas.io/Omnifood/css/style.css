@@ -33,6 +33,7 @@
 
     /* Letter Spacing: */
     --ls-1-75: 1.75px;
+    --ls--0-75: 0.75px;
     --ls--0-5: -0.5px;
 
     /*  02  COLORS */
@@ -235,7 +236,12 @@ p {
 
 .section-featured {}
 
-.heading-featured-in {}
+.heading-featured-in {
+    font-size: var(--fs-14);
+    text-transform: uppercase;
+    letter-spacing: var(--ls--0-75);
+    font-weight: 500;
+}
 
 .logos-box {}
 
