@@ -323,3 +323,37 @@ p {
     color: var(--text-gray);
     font-weight: var(--fw-400);
 }
+
+/* ------------------------ */
+/* MEALS SECTION            */
+/* ------------------------ */
+
+.section-meals {
+    padding: var(--spacing-96px) 0;
+}
+
+.meal {}
+
+.meal-img {
+    width: 100%;
+}
+
+.tag {}
+
+.meal-title {
+    font-size: var(--fs-24);
+    color: var(--text-dark);
+    font-weight: var(--fw-600);
+    margin-bottom: var(--spacing-32px);
+}
+
+.meal-attributes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16px);
+}
+
+.meal-attribute {
+    font-size: var(--fs-18);
+}
