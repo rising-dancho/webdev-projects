@@ -50,7 +50,9 @@
 
     /* Shades: */
     /* Accents: */
-    --bg-green-color: #51cf66;
+    --accent-green-color: #51cf66;
+    --accent-light-green-color: #94D82D;
+    --accent-yellow-color: #FFD43B;
 
     /* Greys: */
     --text-light: #fff;
@@ -359,11 +361,14 @@ p {
     padding: var(--spacing-4px) var(--spacing-8px);
     font-size: var(--fs-12);
     text-transform: uppercase;
-    background-color: var(--bg-green-color);
     color: var(--text-dark);
     border-radius: 20px;
     font-weight: var(--fw-600);
 }
+
+.tag--vegetarian {  background-color: var(--accent-green-color);}
+.tag--vegan {background-color: var(--accent-light-green-color);}
+.tag--paleo {background-color: var(--accent-yellow-color);}
 
 .meal-title {
     font-size: var(--fs-24);
