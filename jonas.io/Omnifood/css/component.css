@@ -201,7 +201,7 @@
     color: var(--primary-color);
     padding-bottom: var(--spacing-2px);
     border-bottom: 1px solid currentColor;
-    transition: all 300ms var(--transition-bezier);
+    transition: border-bottom 300ms var(--transition-bezier);
 }
 
 .link:hover, 

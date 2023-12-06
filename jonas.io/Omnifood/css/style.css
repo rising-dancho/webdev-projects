@@ -63,6 +63,7 @@
 
     /*  05  SHADOWS */
     --std-box-shadow: 0 var(--spacing-24px) var(--spacing-48px) rgba(0, 0, 0, 0.075);
+    --var-box-shadow: 0 var(--spacing-32px) var(--spacing-64px) rgba(0, 0, 0, 0.075);
 
     /*  06  BORDER RADIUS */
     --border-radius-8px: 8px;
@@ -234,13 +235,6 @@ strong {
     /* font-weight: var(--fw-500); */
 }
 
-/* .delivered-text span {
-    color: var(--primary-color-darker);
-    font-weight: var(--fw-400);
-} */
-
-
-
 /* ------------------------ */
 /* FEATURED IN SECTION     */
 /* ------------------------ */
@@ -346,11 +340,12 @@ strong {
     box-shadow: var(--std-box-shadow);
     border-radius: var(--border-radius-12px);
     overflow: hidden;
-    transition: transform 300ms var(--transition-bezier);
+    transition: all 300ms var(--transition-bezier);
 }
 
 .meal:hover {
     transform: translateY(calc(var(--spacing-12px) * -1));
+    box-shadow: var(--var-box-shadow);
 }
 
 .meal-img {
@@ -438,6 +433,5 @@ strong {
 }
 
 .all-recipes {
-    /* text-align: center; */
     font-size: var(--fs-18);
 }
