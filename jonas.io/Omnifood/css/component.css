@@ -128,11 +128,12 @@
 
 .heading-primary,
 .heading-secondary,
-.heading-tertiary{
+.heading-tertiary {
     font-weight: var(--fw-700);
     letter-spacing: var(--ls--0-5);
     color: var(--text-dark)
 }
+
 .heading-primary {
     font-size: var(--fs-52);
     line-height: var(--lh-1-05);
@@ -166,7 +167,7 @@
 .btn--full:link,
 .btn--full:visited {
     background-color: var(--primary-color);
-    transition: background-color 300ms var(--transition-bezier);
+    transition: all 300ms var(--transition-bezier);
 }
 
 .btn--full:hover,
@@ -176,10 +177,12 @@
 
 .btn--outline:link,
 .btn--outline:visited {
-    background-color: var(--bg-white-color);
+    /* background-color: var(--bg-white-color); */
     color: var(--text-gray);
     transition: all 300ms var(--transition-bezier);
     font-weight: var(--fw-400);
+   
+
 }
 
 .btn--outline:hover,

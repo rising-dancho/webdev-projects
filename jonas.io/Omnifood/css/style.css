@@ -354,6 +354,8 @@ p {
 
 .meal-tags {
     margin-bottom: var(--spacing-12px);
+    display: flex;
+    gap: var(--spacing-4px);
 }
 
 .tag {
