@@ -108,6 +108,10 @@ p {
     line-height: var(--lh-1);
 }
 
+strong {
+    font-weight: var(--fw-600);
+}
+
 /* ------------------------ */
 /* HEADER SECTION           */
 /* ------------------------ */
@@ -349,7 +353,7 @@ p {
 }
 
 .meal-content {
-    padding:  var(--spacing-16px) var(--spacing-32px);
+    padding: var(--spacing-16px) var(--spacing-32px);
 }
 
 .meal-tags {
@@ -368,9 +372,17 @@ p {
     font-weight: var(--fw-600);
 }
 
-.tag--vegetarian {  background-color: var(--accent-green-color);}
-.tag--vegan {background-color: var(--accent-light-green-color);}
-.tag--paleo {background-color: var(--accent-yellow-color);}
+.tag--vegetarian {
+    background-color: var(--accent-green-color);
+}
+
+.tag--vegan {
+    background-color: var(--accent-light-green-color);
+}
+
+.tag--paleo {
+    background-color: var(--accent-yellow-color);
+}
 
 .meal-title {
     font-size: var(--fs-24);
@@ -399,6 +411,27 @@ p {
     color: var(--primary-color);
 }
 
-strong {
-    font-weight: var(--fw-600);
+.diets-title {
+    
+}
+
+.diets-list {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    gap: var(--spacing-12pxpx);
+    flex-direction: column;
+
+}
+
+.diets-list-item {
+    display: flex;
+    gap: var(--spacing-16px);
+    align-items: center;
+    font-size: var(--fs-18);
+}
+
+.diets-list-icon {
+    font-size: var(--fs-30);
+    color: var(--primary-color);
 }
