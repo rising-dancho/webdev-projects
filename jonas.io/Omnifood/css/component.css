@@ -185,8 +185,6 @@
     color: var(--text-gray);
     transition: all 300ms var(--transition-bezier);
     font-weight: var(--fw-400);
-   
-
 }
 
 .btn--outline:hover,
@@ -194,4 +192,20 @@
     background-color: var(--bg-primary-color);
     /* trick to add border inside of button */
     box-shadow: inset 0 0 0 2.25px var(--bg-black-color);
+}
+
+.link:link, 
+.link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding-bottom: var(--spacing-2px);
+    border-bottom: 1px solid currentColor;
+    transition: all 300ms var(--transition-bezier);
+}
+
+.link:hover, 
+.link:active {
+    color: var(--primary-color-darker);
+    border-bottom: 1px solid transparent;
 }

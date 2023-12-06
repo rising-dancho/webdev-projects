@@ -346,6 +346,11 @@ strong {
     box-shadow: var(--std-box-shadow);
     border-radius: var(--border-radius-12px);
     overflow: hidden;
+    transition: transform 300ms var(--transition-bezier);
+}
+
+.meal:hover {
+    transform: translateY(calc(var(--spacing-12px) * -1));
 }
 
 .meal-img {
@@ -433,6 +438,6 @@ strong {
 }
 
 .all-recipes {
-    text-align: center;
+    /* text-align: center; */
     font-size: var(--fs-18);
 }
