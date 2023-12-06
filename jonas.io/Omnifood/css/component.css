@@ -116,6 +116,10 @@
     margin-right: var(--spacing-16px) !important;
 }
 
+.margin-bottom-md {
+    margin-bottom: var(--spacing-48px) !important;
+}
+
 .subheading {
     display: block;
     font-size: var(--fs-16);

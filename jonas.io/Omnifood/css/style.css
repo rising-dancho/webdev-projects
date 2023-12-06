@@ -411,10 +411,6 @@ strong {
     color: var(--primary-color);
 }
 
-.diets-title {
-    
-}
-
 .diets-list {
     list-style: none;
     height: 100%;
@@ -434,4 +430,9 @@ strong {
 .diets-list-icon {
     font-size: var(--fs-30);
     color: var(--primary-color);
+}
+
+.all-recipes {
+    text-align: center;
+    font-size: var(--fs-18);
 }
