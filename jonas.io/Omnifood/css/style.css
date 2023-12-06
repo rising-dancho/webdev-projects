@@ -63,7 +63,7 @@
 
     /*  05  SHADOWS */
     --std-box-shadow: 0 var(--spacing-24px) var(--spacing-48px) rgba(0, 0, 0, 0.075);
-    --var-box-shadow: 0 var(--spacing-32px) var(--spacing-64px) rgba(0, 0, 0, 0.075);
+    --var-box-shadow: 0 var(--spacing-32px) var(--spacing-64px) rgba(0, 0, 0, 0.1);
 
     /*  06  BORDER RADIUS */
     --border-radius-8px: 8px;
@@ -353,7 +353,7 @@ strong {
 }
 
 .meal-content {
-    padding: var(--spacing-16px) var(--spacing-32px);
+    padding: var(--spacing-32px) var(--spacing-32px);
 }
 
 .meal-tags {
@@ -415,9 +415,8 @@ strong {
     list-style: none;
     height: 100%;
     display: flex;
-    gap: var(--spacing-12pxpx);
+    gap: var(--spacing-12px);
     flex-direction: column;
-
 }
 
 .diets-list-item {
