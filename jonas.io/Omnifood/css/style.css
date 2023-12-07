@@ -436,10 +436,12 @@ strong {
 }
 
 /* ------------------------ */
-/* TESTIMONIALS SECTION            */
+/* TESTIMONIALS SECTION     */
 /* ------------------------ */
 
-.section-testimonials {}
+.section-testimonials {
+    padding: var(--spacing-96px) 0;
+}
 
 .testimonials {}
 
