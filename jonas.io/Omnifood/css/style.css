@@ -148,7 +148,7 @@ strong {
 .main-nav-link:link,
 .main-nav-link:visited {
     display: inline-block;
-    text-decoration: none;
+    text-decoration: nfone;
     color: var(--text-dark);
     /* not too bold or it takes too much focus */
     font-weight: var(--fw-400);
@@ -443,6 +443,20 @@ strong {
     padding: var(--spacing-96px) 0;
 }
 
-.testimonials {}
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: var(--spacing-48px);
+}
+
+.testimonial-img {
+    width: var(--spacing-64px);
+    border-radius: 50%;
+}
+
+.testimonial-text {
+    font-size: var(--fs-18);
+    line-height: 1.8;
+}
 
 .gallery {}

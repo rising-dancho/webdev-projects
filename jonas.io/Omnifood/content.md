@@ -14,7 +14,7 @@ Brand color: #e67e22
 
 ### Summary
 
-The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. We have delivered 250, 000+ meals last year!
+The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. We have delivered 250,000+ meals last year!
 
 ### Omnifood features
 
@@ -49,23 +49,23 @@ Kid-friendly
 
 ### Sample meals
 
-**Omnifood AI chooses from 5, 000+ recipes**
+**Omnifood AI chooses from 5,000+ recipes**
 
 Meal 1: Japanese Gyozas
 
-* Category: Vegetarian
-* Calories: 650
-* NutriScore (Registered): 74
-* Average rating: 4.9
-* Number reviews: 537
+- Category: Vegetarian
+- Calories: 650
+- NutriScore (Registered): 74
+- Average rating: 4.9
+- Number reviews: 537
 
 Meal 2: Avocado Salad
 
-* Category: Vegan and Paleo
-* Calories: 400
-* NutriScore (Registered): 92
-* Average rating: 4.8
-* Number reviews: 441
+- Category: Vegan and Paleo
+- Calories: 400
+- NutriScore (Registered): 92
+- Average rating: 4.8
+- Number reviews: 441
 
 ### We offer a free sample meal
 
@@ -79,16 +79,16 @@ Prices include all applicable taxes. Users can cancel at any time.
 
 Starter: $399 per month
 
-* 1 meal per day
-* Order times are between 11am and 9pm
-* Delivery is free
+- 1 meal per day
+- Order times are between 11am and 9pm
+- Delivery is free
 
 Complete: $649 per month
 
-* 2 meal2 per day
-* Order 24/7
-* Delivery is free
-* Get access to latest recipes
+- 2 meal2 per day
+- Order 24/7
+- Delivery is free
+- Get access to latest recipes
 
 ### Photo gallery
 
@@ -119,10 +119,26 @@ Create account
 Sign in
 iOS app
 Android app
+
 About Omnifood
 For Business
 Cooking partners
 Careers
+
 Recipe directory
 Help center
 Privacy & terms
+
+######
+
+## Sections
+
+- Logo + Navigation
+- Hero
+- Featured in
+- How it works
+- Meals (and list of diets)
+- Testimonials + gallery
+- Pricing + features
+- CTA
+- Footer
