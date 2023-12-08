@@ -148,7 +148,7 @@ strong {
 .main-nav-link:link,
 .main-nav-link:visited {
     display: inline-block;
-    text-decoration: nfone;
+    text-decoration: none;
     color: var(--text-dark);
     /* not too bold or it takes too much focus */
     font-weight: var(--fw-400);
