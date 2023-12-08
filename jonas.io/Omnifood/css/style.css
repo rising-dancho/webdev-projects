@@ -462,7 +462,8 @@ strong {
 }
 
 .testimonial-name {
-    
+    font-size: var(--fs-16);
+    color: #777;
 }
 
 .gallery {}
