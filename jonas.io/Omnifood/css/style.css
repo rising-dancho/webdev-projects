@@ -452,11 +452,17 @@ strong {
 .testimonial-img {
     width: var(--spacing-64px);
     border-radius: 50%;
+    margin-bottom: var(--spacing-16px);
 }
 
 .testimonial-text {
     font-size: var(--fs-18);
     line-height: 1.8;
+    margin-bottom: var(--spacing-16px);
+}
+
+.testimonial-name {
+    
 }
 
 .gallery {}
