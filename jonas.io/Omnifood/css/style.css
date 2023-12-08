@@ -441,6 +441,7 @@ strong {
 
 .section-testimonials {
     padding: var(--spacing-96px) 0;
+    background-color: var(--bg-primary-color);
 }
 
 .testimonials {
@@ -469,6 +470,7 @@ strong {
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-16px);
 
 }
 
