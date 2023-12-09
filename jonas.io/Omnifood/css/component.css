@@ -99,7 +99,7 @@
 
 .btn--outline:link,
 .btn--outline:visited {
-    /* background-color: var(--bg-white-color); */
+    background-color: var(--bg-white-color);
     color: var(--text-gray);
     transition: all 300ms var(--transition-bezier);
     font-weight: var(--fw-400);
