@@ -490,7 +490,7 @@ strong {
     display: block;
     width: 100%;
     transition: transform 400ms ease;
-   
+
 }
 
 .gallery-item img:hover {
@@ -504,3 +504,19 @@ strong {
 .section-pricing {
     padding: var(--spacing-96px) 0;
 }
+
+.pricing-plan {}
+
+.plan-name {}
+
+.plan-price {}
+
+.plan-text {}
+
+.pricing-list {}
+
+.pricing-list-item {}
+
+.pricing-list-icon {}
+
+.checkmark-outline {}
