@@ -30,6 +30,7 @@
     --lh-1-05: 1.05;
     --lh-1-2: 1.2;
     --lh-1-6: 1.6;
+    --lh-1-8: 1.8;
 
     /* Letter Spacing: */
     --ls-1-75: 1.75px;
@@ -486,13 +487,43 @@ strong {
     /* background-color: red; */
 }
 
-.pricing-plan {}
+.pricing-plan {
+    border-radius: var(--border-radius-12px);
+    padding: var(--spacing-48px);
+    width: 75%;
+}
 
-.plan-name {}
+.pricing-plan--starter {
+    justify-self: end;
+}
 
-.plan-price {}
+.pricing-plan--complete {
+    background-color: var(--bg-primary-color);
+}
 
-.plan-text {}
+.plan-header {
+    text-align: center;
+    margin-bottom: var(--spacing-48px);
+}
+
+.plan-name {
+    color: var(--primary-color-darker);
+    font-weight: var(--fw-600);
+    font-size: var(--fs-18);
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+}
+
+.plan-price {
+    font-size: var(--fs-74);
+    font-weight: var(--fw-600);
+    color: var(--text-gray);
+}
+
+.plan-text {
+    font-size: var(--fs-18);
+    line-height: var(--lh-1-8);
+}
 
 .pricing-list {}
 
