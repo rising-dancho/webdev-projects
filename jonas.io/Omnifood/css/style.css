@@ -483,6 +483,7 @@ strong {
 
 .section-pricing {
     padding: var(--spacing-96px) 0;
+    /* background-color: red; */
 }
 
 .pricing-plan {}
