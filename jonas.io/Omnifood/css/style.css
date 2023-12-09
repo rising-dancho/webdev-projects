@@ -496,3 +496,11 @@ strong {
 .gallery-item img:hover {
     transform: scale(110%);
 }
+
+/* ------------------------ */
+/* PRICING SECTION          */
+/* ------------------------ */
+
+.section-pricing {
+    padding: var(--spacing-96px) 0;
+}
