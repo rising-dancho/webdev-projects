@@ -127,3 +127,23 @@
     color: var(--primary-color-darker);
     border-bottom: 1px solid transparent;
 }
+
+.list {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    gap: var(--spacing-12px);
+    flex-direction: column;
+}
+
+.list-item {
+    display: flex;
+    gap: var(--spacing-16px);
+    align-items: center;
+    font-size: var(--fs-18);
+}
+
+.list-icon {
+    font-size: var(--fs-30);
+    color: var(--primary-color);
+}
