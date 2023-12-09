@@ -532,3 +532,8 @@ strong {
     font-size: var(--fs-18);
     line-height: var(--lh-1-6);
 }
+
+.plan-sign-up {
+    text-align: center;
+    margin-top: var(--spacing-48pxpx);
+}
