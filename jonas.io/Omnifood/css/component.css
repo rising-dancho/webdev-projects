@@ -8,6 +8,10 @@
     padding: 0 var(--spacing-48px);
 }
 
+.text-align-center {
+    text-align: center;
+}
+
 .grid {
     display: grid;
     column-gap: var(--spacing-64px);
