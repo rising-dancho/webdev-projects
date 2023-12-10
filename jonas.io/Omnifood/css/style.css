@@ -491,6 +491,7 @@ strong {
     border-radius: var(--border-radius-12px);
     padding: var(--spacing-48px);
     width: 75%;
+    min-height: 470px;
 }
 
 .pricing-plan--starter {
@@ -535,5 +536,5 @@ strong {
 
 .plan-sign-up {
     text-align: center;
-    margin-top: var(--spacing-48pxpx);
+    margin-top: auto;
 }
