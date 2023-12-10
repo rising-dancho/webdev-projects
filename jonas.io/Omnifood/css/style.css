@@ -529,6 +529,10 @@ strong {
     margin-right: var(--spacing-8px);
 }
 
+.list-container {
+    /* background-color: red; */
+    padding-bottom: var(--spacing-48px);
+}
 .plan-text {
     font-size: var(--fs-18);
     line-height: var(--lh-1-6);
@@ -536,5 +540,5 @@ strong {
 
 .plan-sign-up {
     text-align: center;
-    margin-top: auto;
+    margin-top: auto;  
 }
