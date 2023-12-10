@@ -2,6 +2,9 @@
 /* REUSABLE COMPONENTS      */
 /* ------------------------ */
 
+
+/* HELPER CLASSES */
+
 .container {
     max-width: 81.25rem;
     margin: 0 auto;
@@ -11,6 +14,24 @@
 .text-align-center {
     text-align: center;
 }
+
+.grid-margin-bottom {
+    margin-bottom: var(--spacing-96px);
+}
+
+.margin-bottom-md {
+    margin-bottom: var(--spacing-48px) !important;
+}
+
+.grid--center-v {
+    align-items: center;
+}
+
+.margin-right-sm {
+    margin-right: var(--spacing-16px) !important;
+}
+
+/* COMPONENT CLASSES */
 
 .grid {
     display: grid;
@@ -28,18 +49,6 @@
 
 .grid--4-cols {
     grid-template-columns: repeat(4, 1fr);
-}
-
-.grid--center-v {
-    align-items: center;
-}
-
-.margin-right-sm {
-    margin-right: var(--spacing-16px) !important;
-}
-
-.margin-bottom-md {
-    margin-bottom: var(--spacing-48px) !important;
 }
 
 .subheading {
