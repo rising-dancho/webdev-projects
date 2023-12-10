@@ -15,10 +15,6 @@
     text-align: center;
 }
 
-.grid-margin-bottom {
-    margin-bottom: var(--spacing-96px);
-}
-
 .margin-bottom-md {
     margin-bottom: var(--spacing-48px) !important;
 }
@@ -37,6 +33,10 @@
     display: grid;
     column-gap: var(--spacing-64px);
     row-gap: var(--spacing-96px);
+}
+
+.grid:not(:last-child) {
+    margin-bottom: var(--spacing-96px);
 }
 
 .grid--2-cols {
