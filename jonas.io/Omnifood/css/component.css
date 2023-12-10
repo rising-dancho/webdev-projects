@@ -109,7 +109,7 @@
 .btn--outline:active {
     background-color: var(--bg-primary-color);
     /* trick to add border inside of button */
-    box-shadow: inset 0 0 0 2.25px var(--bg-black-color);
+    box-shadow: inset 0 0 0 3.75px var(--bg-white-color);
 }
 
 .link:link, 
