@@ -1,149 +1,148 @@
 body {
-    font-family: Raleway, sans-serif;
-  }
+  font-family: Raleway, sans-serif;
+}
+
+.pricing-plan {
+  /* flex and min-height */
+  display: flex;
+  flex-direction: column;
+  min-height: 720px;
   
-  .pricing-plan {
-    /* flex and min-height */
-    display: flex;
-    flex-direction: column;
-    min-height: 720px;
-    
-    width: 300px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    font-family: Raleway;
-    font-size: 16px;
-    line-height: 1.5;
-    color: black;
-    margin: 15px;
-  }
-  
-  .pricing-plan__highlighted {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-    transform: scale(10);
-  }
-  
-  .pricing-plan__special-text {
-    padding: 10px;
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    background: #125e68;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
-  }
-  
-  .pricing-plan__header {
-    background: #65e6f7;
-    color: black;
-    /* grid and min-height */
-    display: grid;
-    align-content: center;
-    min-height: 135px;
-    padding: 0 1rem;
-  }
-  
-  /* modifier for recommended header */
-  .pricing-plan__header--recommended {
-    display: unset;
-    padding: 0;
-  }
-  
-  .pricing-plan__header--recommended .pricing-plan__title {
-    margin-top: 1rem;
-  }
-  
-  .pricing-plan__title,
-  .pricing-plan__summary {
-    margin: 0;
-    text-align: center;
-  }
-  
-  .pricing-plan__title {
-    font-size: 1.5em;
-    font-weight: 400;
-  }
-  
-  .pricing-plan__summary {
-    font-size: 1em;
-    font-weight: 300;
-  }
-  
-  .pricing-plan__description {
-    padding: 3rem 1.5rem;
-  }
-  
-  .pricing-plan__list {
-    padding: 0;
-    margin: 0;
-  }
-  
-  .pricing-plan__feature {
-    list-style: none;
-    margin: 0;
-    padding-left: 25px;
-    position: relative;
-    font-size: 0.9em;
-  }
-  
-  .pricing-plan__feature:not(:last-child) {
-    margin-bottom: 0.5em;
-  }
-  
-  .pricing-plan__feature::before {
-    content: "\2714";
-    color: #65e6f7;
-    left: 0;
-    position: absolute;
-  }
-  
-  .pricing-plan__actions {
-    padding: 25px;
-    border-top: 1px solid #eee;
-    display: flex;
-    flex-direction: column;
-    /* auto margin top */
-    margin-top: auto;
-  }
-  
-  .pricing-plan__button {
-    display: inline-block;
-    margin: 15px auto;
-    padding: 8px 20px;
-    text-decoration: none;
-    color: #253c57;
-    background: white;
-    border-radius: 5px;
-    border: 1px solid #465f7c;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  .pricing-plan__button:hover {
-    background: #65e6f7;
-    color: white;
-  }
-  
-  .pricing-plan__cost {
-    margin: 0;
-    text-align: center;
-    font-size: 2em;
-    color: black;
-  }
-  
-  .pricing-plan__text {
-    font-size: 0.9em;
-    text-align: center;
-    margin: 0 0 10px 0;
-  }
-  
-  .pricing-plan__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    flex-wrap: wrap;
-  }
-  
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  font-family: Raleway;
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  margin: 15px;
+}
+
+.pricing-plan__highlighted {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  transform: scale(10);
+}
+
+.pricing-plan__special-text {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background: #125e68;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
+}
+
+.pricing-plan__header {
+  background: #65e6f7;
+  color: black;
+  /* grid and min-height */
+  display: grid;
+  align-content: center;
+  min-height: 135px;
+  padding: 0 1rem;
+}
+
+/* modifier for recommended header */
+.pricing-plan__header--recommended {
+  display: unset;
+  padding: 0;
+}
+
+.pricing-plan__header--recommended .pricing-plan__title {
+  margin-top: 1rem;
+}
+
+.pricing-plan__title,
+.pricing-plan__summary {
+  margin: 0;
+  text-align: center;
+}
+
+.pricing-plan__title {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.pricing-plan__summary {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.pricing-plan__description {
+  padding: 3rem 1.5rem;
+}
+
+.pricing-plan__list {
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-plan__feature {
+  list-style: none;
+  margin: 0;
+  padding-left: 25px;
+  position: relative;
+  font-size: 0.9em;
+}
+
+.pricing-plan__feature:not(:last-child) {
+  margin-bottom: 0.5em;
+}
+
+.pricing-plan__feature::before {
+  content: "\2714";
+  color: #65e6f7;
+  left: 0;
+  position: absolute;
+}
+
+.pricing-plan__actions {
+  padding: 25px;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  /* auto margin top */
+  margin-top: auto;
+}
+
+.pricing-plan__button {
+  display: inline-block;
+  margin: 15px auto;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: #253c57;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #465f7c;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pricing-plan__button:hover {
+  background: #65e6f7;
+  color: white;
+}
+
+.pricing-plan__cost {
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  color: black;
+}
+
+.pricing-plan__text {
+  font-size: 0.9em;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.pricing-plan__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
