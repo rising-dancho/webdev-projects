@@ -42,6 +42,8 @@
     /* Primary: */
     --primary-color: #e67e22;
     --primary-color-darker: #cf711f;
+    --primary-color-gradient-light:#eb984e;
+    --primary-color-gradient-dark:#e67e22;
 
     /* Tints and Shades: */
     --bg-primary-color: #fdf2e9;
@@ -612,6 +614,11 @@ strong {
 .cta {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    box-shadow: 0 var(--spacing-24px) var(--spacing-48px) var(--std-box-shadow);
+    border-radius: var(--border-radius-12px);
+
+    background-image: linear-gradient(to right bottom, var(--primary-color-gradient-light),var(--primary-color-gradient-dark)) ;
+    height: 500px;
 }
 
 .cta-text-box {}
