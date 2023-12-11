@@ -573,7 +573,11 @@ strong {
     display: block;
 }
 
-.feature {}
+.plan-details {
+    font-size: var(--fs-16);
+    line-height: var(--lh-1_6);
+    text-align: center;
+}
 
 .feature-icon {
     color: var(--primary-color);
@@ -581,7 +585,7 @@ strong {
     height: var(--spacing-32px);
     margin-bottom: var(--spacing-32px);
     background-color: var(--bg-primary-color);
-    padding: var(--spacing-8px) var(--spacing-8px);
+    padding: var(--spacing-12px);
     border-radius: 50%;
 }
 
