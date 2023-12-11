@@ -43,13 +43,12 @@
     --primary-color: #e67e22;
     --primary-color-darker: #cf711f;
 
-    /* Tints: */
+    /* Tints and Shades: */
     --bg-primary-color: #fdf2e9;
     --bg-secondary-color: #fae5d3;
     --bg-white-color: #fff;
     --bg-black-color: #4d4d4d;
 
-    /* Shades: */
     /* Accents: */
     --accent-green-color: #51cf66;
     --accent-light-green-color: #94D82D;
@@ -129,7 +128,8 @@ strong {
     align-items: center;
     /* sticky navigation is easier if height is given */
     height: var(--spacing-96px);
-    padding: 0 var(--spacing-48px);
+    padding: 0 var(--spacing-96px);
+    /* padding: 0 var(--spacing-48px); */
 }
 
 .logo {
@@ -600,3 +600,17 @@ strong {
     font-size: var(--fs-18);
     line-height: var(--lh-1_8);
 }
+
+/* ------------------------ */
+/* CTA SECTION          */
+/* ------------------------ */
+
+.section-cta {
+    padding: var(--spacing-96px) 0;
+}
+
+.cta {}
+
+.cta-text-box {}
+
+.cta-img-box {}
