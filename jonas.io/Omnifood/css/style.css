@@ -621,6 +621,7 @@ strong {
 
     background-image: linear-gradient(to right bottom, var(--primary-color-gradient-light),var(--primary-color-gradient-dark));
     height: 500px;
+    overflow: hidden;
 }
 
 .cta-text-box {}
@@ -629,8 +630,9 @@ strong {
     background-image: linear-gradient(to right bottom, var(--primary-color-gradient-opacity-light),var(--primary-color-gradient-opacity-dark)), url('../img/eating.jpg');
     background-size: cover;
     background-position: center;
-    border-top-right-radius: var(--border-radius-12px);
-    border-bottom-right-radius: var(--border-radius-12px);
+   
+    /* border-top-right-radius: var(--border-radius-12px);
+    border-bottom-right-radius: var(--border-radius-12px); */
 }
 
 
