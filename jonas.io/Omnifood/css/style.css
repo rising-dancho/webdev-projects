@@ -44,6 +44,8 @@
     --primary-color-darker: #cf711f;
     --primary-color-gradient-light:#eb984e;
     --primary-color-gradient-dark:#e67e22;
+    --primary-color-gradient-opacity-light:rgba(235, 151, 78, 0.35);
+    --primary-color-gradient-opacity-dark: rgba(230, 125, 34, 0.35);
 
     /* Tints and Shades: */
     --bg-primary-color: #fdf2e9;
@@ -617,14 +619,16 @@ strong {
     box-shadow: 0 var(--spacing-24px) var(--spacing-48px) var(--std-box-shadow);
     border-radius: var(--border-radius-12px);
 
-    background-image: linear-gradient(to right bottom, var(--primary-color-gradient-light),var(--primary-color-gradient-dark)) ;
+    background-image: linear-gradient(to right bottom, var(--primary-color-gradient-light),var(--primary-color-gradient-dark));
     height: 500px;
 }
 
 .cta-text-box {}
 
 .cta-img-box {
-    background-image: url('../img/eating.jpg');
+    background-image: linear-gradient(to right bottom, var(--primary-color-gradient-opacity-light),var(--primary-color-gradient-opacity-dark)), url('../img/eating.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 
