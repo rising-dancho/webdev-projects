@@ -70,6 +70,7 @@
     /*  05  SHADOWS */
     --std-box-shadow: 0 var(--spacing-24px) var(--spacing-48px) rgba(0, 0, 0, 0.075);
     --var-box-shadow: 0 var(--spacing-32px) var(--spacing-64px) rgba(0, 0, 0, 0.1);
+    --minimal-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 
     /*  06  BORDER RADIUS */
     --border-radius-8px: 8px;
@@ -629,9 +630,10 @@ strong {
     color: var(--text-orange-dark);
     padding: var(--spacing-48px) var(--spacing-64px) var(--spacing-64px) var(--spacing-64px);
 }
-
+ 
 .cta .heading-secondary {
-    color: var(--text-orange-dark);
+    /* color: var(--text-orange-dark); */
+    color: inherit;
     margin-bottom: var(--spacing-32px);
 }
 
@@ -664,10 +666,21 @@ strong {
     margin-bottom: var(--spacing-12px);
 }
 
+.cta-form input,
+.cta-form select,
+.cta-form option,
+.cta-form button {
+    font-family: inherit;
+}
+
 .cta-form input {
     width: 100%;
     padding: var(--spacing-12px);
     font-size: var(--fs-18);
+    border: none;
+    background-color: var(--bg-primary-color);
+    border-radius: var(--border-radius-8px);
+    box-shadow: var(--minimal-box-shadow);
 }
 
 .cta-form select {}
