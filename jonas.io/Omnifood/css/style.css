@@ -44,8 +44,10 @@
     --primary-color-darker: #cf711f;
     --primary-color-gradient-light: #eb984e;
     --primary-color-gradient-dark: #e67e22;
-    --primary-color-gradient-opacity-light: rgba(235, 151, 78, 0.35);
-    --primary-color-gradient-opacity-dark: rgba(230, 125, 34, 0.35);
+    --primary-color-gradient-opacity-light: #eb974e59;
+    --primary-color-gradient-opacity-dark: #e67d2259;
+    --primary-color-opacity-fifty-percent: rgba(230, 125, 34, 0.5);
+    --bg-primary-color-opacity-fifty-percent: rgba(253, 242, 233, 0.5);
 
     /* Tints and Shades: */
     --bg-primary-color: #fdf2e9;
@@ -66,6 +68,7 @@
     --text-gray: #4d4d4d;
     --text-dark: #2e2e2e;
     --text-orange-dark: #45260a;
+    --text-placeholder: #aaa;
 
     /*  05  SHADOWS */
     --std-box-shadow: 0 var(--spacing-24px) var(--spacing-48px) rgba(0, 0, 0, 0.075);
@@ -622,15 +625,19 @@ strong {
     border-radius: var(--border-radius-12px);
 
     background-image: linear-gradient(to right bottom, var(--primary-color-gradient-light), var(--primary-color-gradient-dark));
-    height: 500px;
     overflow: hidden;
+}
+
+.cta *:focus {
+    outline: none;
+    box-shadow: 0 0 0 var(--spacing-8px) var(--bg-primary-color-opacity-fifty-percent);
 }
 
 .cta-text-box {
     color: var(--text-orange-dark);
     padding: var(--spacing-48px) var(--spacing-64px) var(--spacing-64px) var(--spacing-64px);
 }
- 
+
 .cta .heading-secondary {
     /* color: var(--text-orange-dark); */
     color: inherit;
@@ -668,26 +675,25 @@ strong {
 
 .cta-form input,
 .cta-form select,
-.cta-form option,
-.cta-form button {
+.cta-form option {
     font-family: inherit;
 }
 
-.cta-form input {
+.cta-form input,
+.cta-form select {
     width: 100%;
     padding: var(--spacing-12px);
     font-size: var(--fs-18);
     border: none;
+    color: inherit;
     background-color: var(--bg-primary-color);
     border-radius: var(--border-radius-8px);
     box-shadow: var(--minimal-box-shadow);
 }
 
-.cta-form select {}
-
-.cta-form option {}
-
-.cta-form button {}
+.cta-form input::placeholder {
+    color: var(--text-placeholder);
+}
 
 
 @media only screen and (max-width: 1400px) {
