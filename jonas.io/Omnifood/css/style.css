@@ -131,7 +131,7 @@ strong {
     background-color: var(--bg-primary-color);
 }
 
-.header {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -695,9 +695,17 @@ strong {
     color: var(--text-placeholder);
 }
 
+/* ------------------------ */
+/* FOOTER           */
+/* ------------------------ */
+
+footer {
+    padding: var(--spacing-96px) 0;
+}
+
 
 @media only screen and (max-width: 1400px) {
-    .header {
+    .header-container {
         padding: 0 var(--spacing-48px);
     }
 }
