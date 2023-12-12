@@ -627,8 +627,7 @@ strong {
 
 .cta-text-box {
     color: var(--text-orange-dark);
-    padding: var(--spacing-64px);
-
+    padding: var(--spacing-48px) var(--spacing-64px) var(--spacing-64px) var(--spacing-64px);
 }
 
 .cta .heading-secondary {
@@ -639,6 +638,7 @@ strong {
 .cta-text {
     font-size: var(--fs-18);
     line-height: var(--lh-1_8);
+    margin-bottom: var(--spacing-48px);
 }
 
 .cta-img-box {
@@ -648,6 +648,14 @@ strong {
 
     /* border-top-right-radius: var(--border-radius-12px);
     border-bottom-right-radius: var(--border-radius-12px); */
+}
+
+.cta-form {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    column-gap: var(--spacing-32px);
+    column-rows: var(--spacing-24px);
+
 }
 
 
