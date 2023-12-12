@@ -652,12 +652,29 @@ strong {
 
 .cta-form {
     display: grid;
-    grid-template-columns:  1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: var(--spacing-32px);
-    column-rows: var(--spacing-24px);
-
+    row-gap: var(--spacing-24px);
 }
 
+.cta-form label {
+    display: block;
+    font-size: var(--fs-16);
+    font-weight: var(--fw-500);
+    margin-bottom: var(--spacing-12px);
+}
+
+.cta-form input {
+    width: 100%;
+    padding: var(--spacing-12px);
+    font-size: var(--fs-18);
+}
+
+.cta-form select {}
+
+.cta-form option {}
+
+.cta-form button {}
 
 
 @media only screen and (max-width: 1400px) {
