@@ -42,9 +42,9 @@
     /* Primary: */
     --primary-color: #e67e22;
     --primary-color-darker: #cf711f;
-    --primary-color-gradient-light:#eb984e;
-    --primary-color-gradient-dark:#e67e22;
-    --primary-color-gradient-opacity-light:rgba(235, 151, 78, 0.35);
+    --primary-color-gradient-light: #eb984e;
+    --primary-color-gradient-dark: #e67e22;
+    --primary-color-gradient-opacity-light: rgba(235, 151, 78, 0.35);
     --primary-color-gradient-opacity-dark: rgba(230, 125, 34, 0.35);
 
     /* Tints and Shades: */
@@ -65,6 +65,7 @@
     --text-gray-lighter: #888;
     --text-gray: #4d4d4d;
     --text-dark: #2e2e2e;
+    --text-orange-dark: #45260a;
 
     /*  05  SHADOWS */
     --std-box-shadow: 0 var(--spacing-24px) var(--spacing-48px) rgba(0, 0, 0, 0.075);
@@ -619,18 +620,32 @@ strong {
     box-shadow: 0 var(--spacing-24px) var(--spacing-48px) var(--std-box-shadow);
     border-radius: var(--border-radius-12px);
 
-    background-image: linear-gradient(to right bottom, var(--primary-color-gradient-light),var(--primary-color-gradient-dark));
+    background-image: linear-gradient(to right bottom, var(--primary-color-gradient-light), var(--primary-color-gradient-dark));
     height: 500px;
     overflow: hidden;
 }
 
-.cta-text-box {}
+.cta-text-box {
+    color: var(--text-orange-dark);
+    padding: var(--spacing-64px);
+
+}
+
+.cta .heading-secondary {
+    color: var(--text-orange-dark);
+    margin-bottom: var(--spacing-32px);
+}
+
+.cta-text {
+    font-size: var(--fs-18);
+    line-height: var(--lh-1_8);
+}
 
 .cta-img-box {
-    background-image: linear-gradient(to right bottom, var(--primary-color-gradient-opacity-light),var(--primary-color-gradient-opacity-dark)), url('../img/eating.jpg');
+    background-image: linear-gradient(to right bottom, var(--primary-color-gradient-opacity-light), var(--primary-color-gradient-opacity-dark)), url('../img/eating.jpg');
     background-size: cover;
     background-position: center;
-   
+
     /* border-top-right-radius: var(--border-radius-12px);
     border-bottom-right-radius: var(--border-radius-12px); */
 }
