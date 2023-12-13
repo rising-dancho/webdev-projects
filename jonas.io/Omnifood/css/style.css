@@ -783,9 +783,3 @@ footer {
         padding: 0 var(--spacing-48px);
     }
 }
-
-@media only screen and (max-width: 1200px) {
-    .header-container {
-        padding: 0 var(--spacing-48px);
-    }
-}
