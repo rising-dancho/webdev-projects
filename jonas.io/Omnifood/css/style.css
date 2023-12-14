@@ -778,8 +778,3 @@ footer {
     color: var(--text-gray);
 }
 
-@media only screen and (max-width: 1400px) {
-    .header-container {
-        padding: 0 var(--spacing-48px);
-    }
-}
