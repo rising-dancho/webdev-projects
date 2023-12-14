@@ -44,5 +44,13 @@
     .hero {
         gap: var(--spacing-48px);
     }
+
+    .main-nav-list {
+        gap: var(--spacing-32px);
+    }
+
+    .testimonial-container {
+        padding: var(--spacing-96px) var(--spacing-48px);
+    }    
     
 }
