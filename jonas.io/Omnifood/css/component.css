@@ -177,6 +177,7 @@
     gap: var(--spacing-16px);
     align-items: center;
     font-size: var(--fs-18);
+    line-height: var(--lh-1_2);
 }
 
 .list-icon {
