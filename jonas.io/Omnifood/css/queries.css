@@ -1,5 +1,5 @@
 /* /* ------------------------ */
-/* BELOW 1400px                */
+/* BELOW 1400px (Desktops)              */
 /* --------------------------- */
 @media only screen and (max-width: 87.5em) {
     .header-container {
@@ -8,7 +8,7 @@
 }
 
 /* /* ---------------------------- */
-/* BELOW 1366px (smaller desktops) */
+/* BELOW 1366px (Laptops) */
 /* ------------------------------- */
 @media only screen and (max-width: 85.4em) {
     .heading-primary {
@@ -26,4 +26,11 @@
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+/* /* ---------------------------- */
+/* BELOW 1200px (Landscape Mode: Tablets) */
+/* ------------------------------- */
+@media only screen and (max-width: 75em) {
+   
 }
