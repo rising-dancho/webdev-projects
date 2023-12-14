@@ -32,5 +32,12 @@
 /* BELOW 1200px (Landscape Mode: Tablets) */
 /* ------------------------------- */
 @media only screen and (max-width: 75em) {
-   
+    html {
+        font-size: 93.75%;
+    }
+
+    .grid {
+        column-gap: var(--spacing-48px);
+        row-gap: var(--spacing-80px);
+    }
 }
