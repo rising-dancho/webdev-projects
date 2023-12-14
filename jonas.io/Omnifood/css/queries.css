@@ -33,6 +33,9 @@
 /* ------------------------------- */
 @media only screen and (max-width: 75em) {
     html {
+        /* 0.625 (scaled down fontsize 10px) - 0.5625 (scaled down fontsize 9px)
+        =  0.0625 x 100 = 6.25 differencel;
+        100 - 6.25 = 93.75%*/
         font-size: 93.75%;
     }
 
@@ -51,6 +54,50 @@
 
     .testimonial-container {
         padding: var(--spacing-96px) var(--spacing-48px);
-    }    
-    
+    }
+
+}
+
+/* /* ---------------------------- */
+/* BELOW 999px (Tablets) */
+/* ------------------------------- */
+@media only screen and (max-width: 62.43em) {
+    html {
+        font-size: 87.5%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+
+    }
+
+    /* .hero-txt-box {
+        order: 1;
+    }
+
+    .hero-img-box {
+        order: 0;
+        overflow: hidden;
+    } */
+
+    .hero-img {
+        width: 65%;
+        content: url('./img/hero2.jpg');
+        border-radius: var( --border-radius-8px);
+        object-fit: cover;
+        /* width: 100%; */
+        transition: transform 400ms ease;
+    }
+
+    .hero-img-box,
+    .hero-txt-box {
+        text-align: center;
+    }
+
+    .delivered-meals {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
