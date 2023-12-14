@@ -40,4 +40,9 @@
         column-gap: var(--spacing-48px);
         row-gap: var(--spacing-80px);
     }
+
+    .hero {
+        gap: var(--spacing-48px);
+    }
+    
 }
