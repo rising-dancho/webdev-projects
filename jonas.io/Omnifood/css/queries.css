@@ -1,5 +1,29 @@
-@media only screen and (max-width: 1400px) {
+/* /* ------------------------ */
+/* BELOW 1400px                */
+/* --------------------------- */
+@media only screen and (max-width: 87.5em) {
     .header-container {
         padding: 0 var(--spacing-48px);
+    }
+}
+
+/* /* ---------------------------- */
+/* BELOW 1366px (smaller desktops) */
+/* ------------------------------- */
+@media only screen and (max-width: 85.4em) {
+    .heading-primary {
+        font-size: var(--fs-44);
+    }
+
+    .heading-secondary {
+        font-size: var(--fs-36);
+    }
+
+    .heading-tertiary {
+        font-size: var(--fs-24);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
