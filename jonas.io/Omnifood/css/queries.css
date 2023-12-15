@@ -234,6 +234,7 @@
     .nav-col {
        grid-row: 2;
        grid-column: span 2;
+       margin-bottom: var(--spacing-32px);
     }
 
     .address-col,
@@ -241,5 +242,25 @@
         grid-row: 1;
         grid-column: span 3;
     }
+}
 
+/* /* ---------------------------- */
+/* BELOW 650px (Smaller Tablets) */
+/* ------------------------------- */
+@media only screen and (max-width: 40.625em) {
+    
+    .grid {
+        row-gap: var(--spacing-48px);
+    }
+    
+    .grid--2-cols,
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: 1fr;
+    }
+
+     /* take note how this works!! check  */
+     .diets {
+        grid-column: auto;
+    }
 }
