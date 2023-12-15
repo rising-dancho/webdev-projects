@@ -149,12 +149,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: all 300ms var(--transition-bezier);
 
         /* Hide the navigation */
         /* display: none; */
         /* allows NO animations at all */
         opacity: 0;
+    }
 
+    .nav-open .main-nav {
+        opacity: 1;
     }
 
     .main-nav-list {
