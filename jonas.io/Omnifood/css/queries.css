@@ -133,4 +133,22 @@
        margin-top: var(--spacing-12px);
     }
 
+    /* MOBILE NAVIGATION */
+    .btn-mobile-nav {
+        display: block;
+    }
+
+    .main-nav {
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+    }
+
+    /* .main-nav-list {
+        display: none;
+    } */
+
 }

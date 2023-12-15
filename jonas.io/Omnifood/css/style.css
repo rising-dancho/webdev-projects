@@ -188,6 +188,31 @@ strong {
     background-color: var(--primary-color-darker);
 }
 
+/* MOBILE NAV */
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: var(--spacing-48px);
+    width: var(--spacing-48px);
+    color: var(--text-dark);
+}
+
+/* <ion-icon class="icon-mobile-nav" name="menu-outline">
+</ion-icon>
+<ion-icon class="icon-mobile-nav" name="close-outline">
+</ion-icon> */
+
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
+
 /* ------------------------ */
 /* HERO SECTION             */
 /* ------------------------ */
@@ -778,4 +803,3 @@ footer {
 .footer-link:active {
     color: var(--text-gray);
 }
-
