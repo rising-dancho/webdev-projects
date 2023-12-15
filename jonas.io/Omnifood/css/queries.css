@@ -207,6 +207,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .heading-secondary {
+        margin-bottom: var(--spacing-48px);
+    }
+
     .pricing-plan {
         width: 100%;
     }
@@ -221,11 +225,21 @@
         justify-self: center;
     }
 
-    .heading-secondary {
-        margin-bottom: var(--spacing-48px);
-    }
+    /* FOOTER RESPONSIVE*/
 
     .grid--footer {
-        grid-template-columns: 1.5fr 1.5fr;
+        grid-template-columns: repeat(6, 1fr);
     }
+
+    .nav-col {
+       grid-row: 2;
+       grid-column: span 2;
+    }
+
+    .address-col,
+    .logo-col {
+        grid-row: 1;
+        grid-column: span 3;
+    }
+
 }
