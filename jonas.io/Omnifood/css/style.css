@@ -108,10 +108,18 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Rubik', sans-serif;
     font-weight: var(--fw-400);
     color: var(--text-gray);
+
+    /* only works if there is nothing 
+    positioned absolutely to the body */
+    overflow-x: hidden;
 }
 
 p {

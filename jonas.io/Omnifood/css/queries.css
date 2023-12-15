@@ -138,6 +138,10 @@
         display: block;
     }
 
+    .header-container {
+        position: relative;
+    }
+
     .main-nav {
         background-color: rgba(255, 255, 255, 0.97);
         position: absolute;
@@ -145,20 +149,39 @@
         left: 0;
         width: 100%;
         height: 100vh;
+        transform: translateX(100%);
 
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: all 300ms var(--transition-bezier);
+        transition: all 500ms var(--transition-bezier);
 
         /* Hide the navigation */
         /* display: none; */
         /* allows NO animations at all */
+
+        /* STEP 1: hide the element visually */
         opacity: 0;
+        
+        /* STEP 2: make it inaccesible to mouse and kb */
+        pointer-events: none;
+
+        /* STEP 3: hide it from screen readers */
+        visibility: hidden;
     }
 
     .nav-open .main-nav {
         opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+    }
+
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+    }
+
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
     }
 
     .main-nav-list {
