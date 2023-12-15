@@ -201,5 +201,14 @@
 /* BELOW 800px (Smaller Tablets) */
 /* ------------------------------- */
 @media only screen and (max-width: 50em) {
+    .grid--3-cols, 
+    .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .diets {
+        
+        justify-content: center;
+    }
 
 }
