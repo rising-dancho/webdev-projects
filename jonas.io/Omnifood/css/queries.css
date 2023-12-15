@@ -82,7 +82,7 @@
     .hero-img {
         width: 65%;
         content: url('./img/hero2.jpg');
-        border-radius: var( --border-radius-8px);
+        border-radius: var(--border-radius-8px);
         object-fit: cover;
         /* width: 100%; */
         transition: transform 400ms ease;
@@ -115,7 +115,7 @@
     .section-testimonials {
         grid-template-columns: 1fr;
     }
-    
+
     .gallery {
         grid-template-columns: repeat(6, 1fr);
     }
@@ -125,12 +125,12 @@
         grid-template-columns: 3fr 2fr;
     }
 
-    .cta-form { 
+    .cta-form {
         grid-template-columns: 1fr;
     }
 
     .btn--form {
-       margin-top: var(--spacing-12px);
+        margin-top: var(--spacing-12px);
     }
 
     /* MOBILE NAVIGATION */
@@ -139,16 +139,31 @@
     }
 
     .main-nav {
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.97);
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Hide the navigation */
+        /* display: none; */
+        /* allows NO animations at all */
+        opacity: 0;
+
     }
 
-    /* .main-nav-list {
-        display: none;
-    } */
+    .main-nav-list {
+        flex-direction: column;
+        gap: var(--spacing-48px);
+    }
 
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: var(--fs-30);
+    }
 }
