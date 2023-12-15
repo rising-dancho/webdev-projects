@@ -162,7 +162,7 @@
 
         /* STEP 1: hide the element visually */
         opacity: 0;
-        
+
         /* STEP 2: make it inaccesible to mouse and kb */
         pointer-events: none;
 
@@ -201,14 +201,31 @@
 /* BELOW 800px (Smaller Tablets) */
 /* ------------------------------- */
 @media only screen and (max-width: 50em) {
-    .grid--3-cols, 
+
+    .grid--3-cols,
     .grid--4-cols {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .diets {
-        
-        justify-content: center;
+    .pricing-plan {
+        width: 100%;
     }
 
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* take note how this works!! check  */
+    .diets {
+        grid-column: span 2;
+        justify-self: center;
+    }
+
+    .heading-secondary {
+        margin-bottom: var(--spacing-48px);
+    }
+
+    .grid--footer {
+        grid-template-columns: 1.5fr 1.5fr;
+    }
 }
