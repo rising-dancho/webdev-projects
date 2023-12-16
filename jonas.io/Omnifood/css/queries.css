@@ -245,7 +245,7 @@
 }
 
 /* /* ---------------------------- */
-/* BELOW 650px (Smaller Tablets) */
+/* BELOW 650px (Phone) */
 /* ------------------------------- */
 @media only screen and (max-width: 40.625em) {
 
@@ -268,10 +268,6 @@
         width: 85%;
         justify-self: center;
     }
-
-    /* .btn.btn--full {
-        margin-right: 0 !important;
-    }     */
 
     .logos-box img {
         height: var(--spacing-16px);
@@ -305,19 +301,34 @@
     }
 
     .testimonials {
-     
+
         grid-template-columns: 1fr;
         row-gap: var(--spacing-48px);
         column-gap: var(--spacing-80px);
     }
 
     .cta {
-      
+
         grid-template-columns: 1fr;
     }
 
     .cta-img-box {
         height: 36rem;
         grid-row: 1;
+    }
+}
+
+/* /* ---------------------------- */
+/* BELOW 400px (Smaller Phones) */
+/* ------------------------------- */
+@media only screen and (max-width: 25em) {
+
+    .btn.btn--full {
+        margin-right: 0 !important;
+    }    
+
+    .meal,
+    .pricing-plan {
+        width: 100%;
     }
 }
