@@ -245,7 +245,7 @@
 }
 
 /* /* ---------------------------- */
-/* BELOW 650px (Phone) */
+/* BELOW 650px (Phones) */
 /* ------------------------------- */
 @media only screen and (max-width: 40.625em) {
 
@@ -316,19 +316,84 @@
         height: 36rem;
         grid-row: 1;
     }
+
+    .cta-text-box {
+        color: var(--text-orange-dark);
+        padding: var(--spacing-32px) var(--spacing-48px) var(--spacing-48px) var(--spacing-48px);
+    }
 }
 
 /* /* ---------------------------- */
-/* BELOW 400px (Smaller Phones) */
+/* BELOW 400px (Phones) */
 /* ------------------------------- */
 @media only screen and (max-width: 25em) {
 
-    .btn.btn--full {
-        margin-right: 0 !important;
+    .container {
+        padding: 0 var(--spacing-24px);
+    }
+
+    .hero-img {
+        width: 100%;
+    }
+
+    .section-hero {
+        padding: var(--spacing-24px) 0 var(--spacing-64px) 0;
+    }
+
+    .hero .btn.btn--full {
+        margin-bottom: var(--spacing-16px);
     }    
+
+    .header-container {
+        padding: 0 var(--spacing-24px);
+    }
 
     .meal,
     .pricing-plan {
         width: 100%;
     }
+
+    
 }
+
+/* /* ---------------------------- */
+/* BELOW 360px (Phones) */
+/* ------------------------------- */
+@media only screen and (max-width: 22.5em) {
+
+    .nav-col {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .hero .btn.btn--full {
+        margin-right: 0 !important;
+    }   
+
+    .address-col,
+    .logo-col {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .grid--footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-heading {
+        margin-bottom: var(--spacing-32px);
+    }
+
+    .footer-nav {
+        gap: var(--spacing-16px);
+    }
+
+    .grid {
+        row-gap: var(--spacing-48px);
+    }
+
+    .nav-col {
+        margin-bottom: 0;
+    }
+}
+    
