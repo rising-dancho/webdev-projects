@@ -232,9 +232,9 @@
     }
 
     .nav-col {
-       grid-row: 2;
-       grid-column: span 2;
-       margin-bottom: var(--spacing-32px);
+        grid-row: 2;
+        grid-column: span 2;
+        margin-bottom: var(--spacing-32px);
     }
 
     .address-col,
@@ -248,19 +248,47 @@
 /* BELOW 650px (Smaller Tablets) */
 /* ------------------------------- */
 @media only screen and (max-width: 40.625em) {
-    
+
     .grid {
         row-gap: var(--spacing-48px);
     }
-    
+
     .grid--2-cols,
     .grid--3-cols,
     .grid--4-cols {
         grid-template-columns: 1fr;
     }
 
-     /* take note how this works!! check  */
-     .diets {
+    .section-hero {
+        padding: var(--spacing-48px) 0 var(--spacing-64px) 0;
+    }
+
+    .meal,
+    .pricing-plan {
+        width: 85%;
+        justify-self: center;
+    }
+
+    /* .btn.btn--full {
+        margin-right: 0 !important;
+    }     */
+
+    .logos-box img {
+        height: var(--spacing-16px);
+    }
+
+    .btn,
+    .btn:link,
+    .btn:visited {
+        padding: var(--spacing-24px) var(--spacing-16px);
+    }
+
+    .margin-right-sm {
+        margin-right: 0;
+    }
+
+    /* take note how this works!! check  */
+    .diets {
         grid-column: auto;
     }
 }
