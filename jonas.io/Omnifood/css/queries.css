@@ -259,10 +259,6 @@
         grid-template-columns: 1fr;
     }
 
-    .section-hero {
-        padding: var(--spacing-48px) 0 var(--spacing-64px) 0;
-    }
-
     .meal,
     .pricing-plan {
         width: 85%;
@@ -327,6 +323,24 @@
 /* BELOW 400px (Phones) */
 /* ------------------------------- */
 @media only screen and (max-width: 25em) {
+
+    .section-hero,
+    .section-featured,
+    .section-how,
+    .section-meals,
+    .section-testimonials,
+    .section-pricing,
+    .section-cta {
+        padding: var(--spacing-48px) 0 var(--spacing-64px) 0;
+    }
+
+    .testimonial-container {
+        padding: var(--spacing-64px) var(--spacing-48px);
+    }
+
+    footer {
+        padding: var(--spacing-96px) 0;
+    }
 
     .container {
         padding: 0 var(--spacing-24px);
