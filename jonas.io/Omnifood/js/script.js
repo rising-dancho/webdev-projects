@@ -1,6 +1,6 @@
-console.log("Hello world!");
+// console.log("Hello world!");
 
-const myName = "Jonas Schmedtmann";
+const myName = "Jose Alejo Perez Jr";
 const h1 = document.querySelector(".heading-primary");
 console.log(myName);
 console.log(h1);
@@ -8,8 +8,14 @@ console.log(h1);
 // h1.addEventListener("click", function () {
 //   h1.textContent = myName;
 //   h1.style.backgroundColor = "red";
-//   h1.style.padding = "5rem";
-// });
+//   h1.style.fontSize = "var(--spacing-32px)";
+//   h1.style.padding = "2rem";
+// })
+
+// const changeYear = document.querySelector(".year");
+// const currentYear = new Date().getFullYear();
+// changeYear.textContent = currentYear;
+
 
 ///////////////////////////////////////////////////////////
 // Set current year
@@ -18,14 +24,38 @@ const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
 ///////////////////////////////////////////////////////////
-// Make mobile navigation work
 
+
+const headerEl = document.querySelector(".section-header");
 const btnNavEl = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector(".header");
 
-btnNavEl.addEventListener("click", function () {
+btnNavEl.addEventListener("click", function() {
   headerEl.classList.toggle("nav-open");
-});
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Make mobile navigation work
+
+// const btnNavEl = document.querySelector(".btn-mobile-nav");
+// const headerEl = document.querySelector(".header");
+
+// btnNavEl.addEventListener("click", function () {
+//   headerEl.classList.toggle("nav-open");
+// });
 
 ///////////////////////////////////////////////////////////
 // Smooth scrolling animation
