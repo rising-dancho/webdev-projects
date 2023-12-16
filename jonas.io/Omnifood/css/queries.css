@@ -291,4 +291,12 @@
     .diets {
         grid-column: auto;
     }
+
+    .step-imgbox:nth-child(2) {
+        grid-row: 1;
+    }
+
+    .step-imgbox:nth-child(6) {
+        grid-row: 5;
+    }
 }
