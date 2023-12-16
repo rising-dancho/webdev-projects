@@ -299,4 +299,25 @@
     .step-imgbox:nth-child(6) {
         grid-row: 5;
     }
+
+    .step-imgbox {
+        transform: translateY(var(--spacing-32px));
+    }
+
+    .testimonials {
+     
+        grid-template-columns: 1fr;
+        row-gap: var(--spacing-48px);
+        column-gap: var(--spacing-80px);
+    }
+
+    .cta {
+      
+        grid-template-columns: 1fr;
+    }
+
+    .cta-img-box {
+        height: 36rem;
+        grid-row: 1;
+    }
 }
