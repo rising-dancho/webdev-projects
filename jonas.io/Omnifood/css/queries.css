@@ -129,7 +129,6 @@
         grid-template-columns: 1fr;
     }
 
-    .btn--form {
         margin-top: var(--spacing-12px);
     }
 
