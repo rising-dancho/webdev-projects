@@ -139,9 +139,9 @@
         z-index: 9999;
     }
 
-    .header-container {
+    /* .header-container {
         position: relative;
-    }
+    } */
 
     .main-nav {
         background-color: rgba(255, 255, 255, 0.97);
