@@ -110,6 +110,9 @@
 
 html {
     overflow-x: hidden;
+
+    /* smooth scroll now supported accross all browsers */
+    scroll-behavior: smooth;
 }
 
 body {
