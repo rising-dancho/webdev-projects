@@ -144,7 +144,9 @@
     }
 
     .main-nav {
-        background-color: rgba(255, 255, 255, 0.97);
+        background-color: rgba(255, 255, 255, 0.7);
+        -webkit-backdrop-filter: blur(45.5px);
+        backdrop-filter: blur(45.5px);
         position: absolute;
         top: 0;
         left: 0;
