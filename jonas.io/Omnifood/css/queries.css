@@ -129,6 +129,7 @@
         grid-template-columns: 1fr;
     }
 
+    .btn--form {
         margin-top: var(--spacing-12px);
     }
 
@@ -138,9 +139,9 @@
         z-index: 9999;
     }
 
-    /* .header-container {
+    .header-container {
         position: relative;
-    } */
+    }
 
     .main-nav {
         background-color: rgba(255, 255, 255, 0.97);
