@@ -81,7 +81,6 @@
 
     .hero-img {
         width: 65%;
-        content: url('./img/hero2.jpg');
         border-radius: var(--border-radius-8px);
         object-fit: cover;
         /* width: 100%; */
@@ -427,3 +426,4 @@
         margin-bottom: 0;
     }
 }
+
