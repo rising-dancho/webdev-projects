@@ -270,6 +270,7 @@ strong {
 
 .hero-img {
     width: 100%;
+    border-radius: var(--border-radius-8px);
 }
 
 .delivered-meals {
