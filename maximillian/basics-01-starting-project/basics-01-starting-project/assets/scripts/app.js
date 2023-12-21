@@ -3,4 +3,6 @@ let currentResult = 0;
 
 currentResult = currentResult + 10;
 
-outputResult(currentResult, '');
+let calculationDescription = `(0 + 10) * 3 / 2 - 1`;
+
+outputResult(currentResult, calculationDescription);
