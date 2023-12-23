@@ -43,31 +43,24 @@
 // `);
 
 
-// // mark : 78kg, 1.69m
-// const massMark = 78; 
-// const heightMark = 1.69;
+// BMI = mass / (height * height)
 
-// // john : 92 kg, 1.95m
-// const massJohn = 92;
-// const heightJohn = 1.95;
 
-// let mass = massMark;
-// let height = heightMark;
+const massMark = 78;
+const heightMark = 1.69;
 
-// let BMI = mass / (height * height);
+const massJohn = 92;
+const heightJohn = 1.95;
 
-// const BMIMark = BMI;
 
-// console.log('Mark',BMIMark);
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+console.log(BMIMark);
+console.log(BMIJohn);
 
-// mass = massJohn;
-// height = heightJohn;
+const markHigherBMI = BMIMark > BMIJohn;
+console.log(markHigherBMI);
 
-// BMI = mass / (height * height);
-
-// const BMIJohn = BMI;
-
-// console.log('John', BMIJohn);
 
 
 /* Write your code below. Good luck! 🙂 */
