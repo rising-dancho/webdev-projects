@@ -116,3 +116,107 @@
 const inputYear = '1992';
 // const numYear = Number(inputYear);
 console.log(Number(inputYear) + 18);
+
+// can only convet to:
+// Number();
+// String();
+// Boolean();
+
+
+
+// const tweet = prompt("Create your tweet");
+// const tweetCount = tweet.length;
+// const tweetUnder140 = tweet.slice(0, 140);
+// console.log(tweetCount);
+// alert(tweetUnder140);
+
+// alert(prompt("Create your tweet").slice(0, 140));
+// alert(`You have written ${tweetCount} characters, you have ${140 - tweetCount} characters remaining`);
+
+
+// let name = prompt("What is your name?");
+// let initial = name.slice(0,1);
+// let restOfName = name.slice(1, name.length);
+
+// alert(`Hello, ${initial.toUpperCase() + restOfName.toLowerCase()}!`);
+
+
+// const dogAge = prompt("What is the age of you dog?");
+// let humanAge = ((dogAge - 2) * 4) + 21;
+// alert(`Your dog's age is ${dogAge}, but in human years his'/her's age would be ${humanAge}`);
+
+
+// function getMilk() {
+//     alert("getting milk!!");
+// }
+
+// function getMilk() {   
+//     console.log("leaveHouse");
+//     console.log("moveRight");
+//     console.log("moveRight");
+//     console.log("moveUp");
+//     console.log("moveUp");
+//     console.log("moveUp");
+//     console.log("moveUp");
+//     console.log("moveRight");
+//     console.log("moveRight");
+//     console.log("moveLeft");
+//     console.log("moveLeft");
+//     console.log("moveDown");
+//     console.log("moveDown");
+//     console.log("moveDown");
+//     console.log("moveDown");
+//     console.log("moveLeft");
+//     console.log("moveLeft");
+//     console.log("enterHouse");
+//   }
+
+// function getMilk(money) {
+//     const cost = 1.5;
+//     let bottles = Math.floor(money / cost);
+//     const change = money - (cost * bottles);
+//     console.log("leaveHouse");
+//     console.log("moveRight");
+//     console.log("moveRight");
+//     console.log("moveUp");
+//     console.log("moveUp");
+//     console.log("moveUp");
+//     console.log("moveUp");
+//     console.log("moveRight");
+//     console.log("moveRight");
+//     console.log(`buyMilk: $${cost}`);
+//     console.log("moveLeft");
+//     console.log("moveLeft");
+//     console.log("moveDown");
+//     console.log("moveDown");
+//     console.log("moveDown");
+//     console.log("moveDown");
+//     console.log("moveLeft");
+//     console.log("moveLeft");
+//     console.log("enterHouse");
+//     alert(`The milk costs $${cost}. You payed $${money} which can buy you ${bottles} bottles. Your change is $${change}.`);
+// }
+// const money = prompt("How much would you pay for milk?");
+// getMilk(money);
+
+function lifeInWeeks(age) {
+    
+    /************Don't change the code above************/    
+        
+        //Write your code here.
+        // create a function that tells us how many days, weeks and months we have left if we live until 90 years old.
+        // You have x days, y weeks, and z months left.
+        // For this challenge, assume there are 365 days in a year, 52 weeks in a year and 12 months in a year.
+    
+        function lifeInWeeks(age){
+            
+        }
+        
+        const age = prompt("How old are you?");
+        lifeInWeeks(age);
+        
+        
+    /*************Don't change the code below**********/
+    }
+    
+    
