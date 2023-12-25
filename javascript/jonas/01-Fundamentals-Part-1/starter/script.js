@@ -171,6 +171,34 @@ console.log(Number(inputYear) + 18);
 //     console.log("enterHouse");
 //   }
 
+// function lifeInWeeks(age) {
+
+//     /************Don't change the code above************/
+
+//     //Write your code here.
+//     // create a function that tells us how many days, weeks and months we have left if we live until 90 years old.
+//     // You have x days, y weeks, and z months left.
+//     // For this challenge, assume there are 365 days in a year, 52 weeks in a year and 12 months in a year.
+
+
+//     const averageLifeSpan = 90;
+//     const lifeRemaining = 90 - age;
+//     const days = lifeRemaining * 365;
+//     const weeks = lifeRemaining * 52;
+//     const months = lifeRemaining * 12;
+//     // const weeks = Math.floor(days / 7);
+//     // const months = Math.floor(weeks / 4);
+
+//     alert(`You have ${days} days, ${weeks} weeks, and ${months} months left.`)
+
+
+//     /*************Don't change the code below**********/
+// }
+
+// const age = prompt("How old are you?");
+// lifeInWeeks(age);
+
+
 // function getMilk(money) {
 //     const cost = 1.5;
 //     let bottles = Math.floor(money / cost);
@@ -199,24 +227,49 @@ console.log(Number(inputYear) + 18);
 // const money = prompt("How much would you pay for milk?");
 // getMilk(money);
 
-function lifeInWeeks(age) {
-    
-    /************Don't change the code above************/    
-        
-        //Write your code here.
-        // create a function that tells us how many days, weeks and months we have left if we live until 90 years old.
-        // You have x days, y weeks, and z months left.
-        // For this challenge, assume there are 365 days in a year, 52 weeks in a year and 12 months in a year.
-    
-        function lifeInWeeks(age){
-            
-        }
-        
-        const age = prompt("How old are you?");
-        lifeInWeeks(age);
-        
-        
-    /*************Don't change the code below**********/
-    }
-    
-    
+
+function getMilk(money) {
+    const costPerBottle = 1.5;
+    const numBottles = calcBottle(money,costPerBottle);
+    console.log("leaveHouse");
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("buy " + numBottles + " bottles of milk");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("enterHouse");
+    const change = money % costPerBottle;
+    return {
+        // returning a dictionary
+        bottles: numBottles,
+        change: change
+    };
+}
+
+function calcBottle(startingMoney, costPerBottle) {
+    const numberOfBottles = Math.floor(startingMoney / costPerBottle);
+    return numberOfBottles;
+}
+
+const money = prompt("How much would you pay for milk?");
+
+const result = getMilk(money);
+alert(`
+You payed $${money} 
+which can buy you ${result.bottles} bottles. 
+
+Your change is $${result.change}.`);
+
+
