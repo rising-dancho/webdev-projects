@@ -228,6 +228,7 @@ console.log(Number(inputYear) + 18);
 // getMilk(money);
 
 
+
 function getMilk(money) {
     const costPerBottle = 1.5;
     const numBottles = calcBottle(money,costPerBottle);
@@ -250,7 +251,7 @@ function getMilk(money) {
     console.log("moveLeft");
     console.log("moveLeft");
     console.log("enterHouse");
-    const change = money % costPerBottle;
+    const change = calcChange(money, costPerBottle);
     return {
         // returning a dictionary
         bottles: numBottles,
@@ -263,13 +264,16 @@ function calcBottle(startingMoney, costPerBottle) {
     return numberOfBottles;
 }
 
+function calcChange(startingMoney, costPerBottle) {
+    const change = money % costPerBottle;
+    return change;
+}
+
 const money = prompt("How much would you pay for milk?");
 
-const result = getMilk(money);
+const getMilkResult = getMilk(money);
 alert(`
 You payed $${money} 
-which can buy you ${result.bottles} bottles. 
+which can buy you ${getMilkResult.bottles} bottles. 
 
-Your change is $${result.change}.`);
-
-
+Your change is $${getMilkResult.change}.`);
