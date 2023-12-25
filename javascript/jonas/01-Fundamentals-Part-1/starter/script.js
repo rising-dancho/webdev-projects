@@ -229,51 +229,77 @@ console.log(Number(inputYear) + 18);
 
 
 
-function getMilk(money) {
-    const costPerBottle = 1.5;
-    const numBottles = calcBottle(money,costPerBottle);
-    console.log("leaveHouse");
-    console.log("moveRight");
-    console.log("moveRight");
-    console.log("moveUp");
-    console.log("moveUp");
-    console.log("moveUp");
-    console.log("moveUp");
-    console.log("moveRight");
-    console.log("moveRight");
-    console.log("buy " + numBottles + " bottles of milk");
-    console.log("moveLeft");
-    console.log("moveLeft");
-    console.log("moveDown");
-    console.log("moveDown");
-    console.log("moveDown");
-    console.log("moveDown");
-    console.log("moveLeft");
-    console.log("moveLeft");
-    console.log("enterHouse");
-    const change = calcChange(money, costPerBottle);
-    return {
-        // returning a dictionary
-        bottles: numBottles,
-        change: change
-    };
+// function getMilk(money) {
+//     const costPerBottle = 1.5;
+//     const numBottles = calcBottle(money,costPerBottle);
+//     console.log("leaveHouse");
+//     console.log("moveRight");
+//     console.log("moveRight");
+//     console.log("moveUp");
+//     console.log("moveUp");
+//     console.log("moveUp");
+//     console.log("moveUp");
+//     console.log("moveRight");
+//     console.log("moveRight");
+//     console.log("buy " + numBottles + " bottles of milk");
+//     console.log("moveLeft");
+//     console.log("moveLeft");
+//     console.log("moveDown");
+//     console.log("moveDown");
+//     console.log("moveDown");
+//     console.log("moveDown");
+//     console.log("moveLeft");
+//     console.log("moveLeft");
+//     console.log("enterHouse");
+//     const change = calcChange(money, costPerBottle);
+//     return {
+//         // returning a dictionary
+//         bottles: numBottles,
+//         change: change
+//     };
+// }
+
+// function calcBottle(startingMoney, costPerBottle) {
+//     const numberOfBottles = Math.floor(startingMoney / costPerBottle);
+//     return numberOfBottles;
+// }
+
+// function calcChange(startingMoney, costPerBottle) {
+//     const change = money % costPerBottle;
+//     return change;
+// }
+
+// const money = prompt("How much would you pay for milk?");
+
+// const getMilkResult = getMilk(money);
+// alert(`
+// You payed $${money} 
+// which can buy you ${getMilkResult.bottles} bottles. 
+
+// Your change is $${getMilkResult.change}.`);
+
+
+
+// BMI CALC
+//Create your function below this line.
+function bmiCalculator(weight, height){
+    const resultBMI = Math.round(weight / (height*height));
+    return resultBMI;
 }
 
-function calcBottle(startingMoney, costPerBottle) {
-    const numberOfBottles = Math.floor(startingMoney / costPerBottle);
-    return numberOfBottles;
-}
+//The first parameter should be the weight and the second should be the height.
 
-function calcChange(startingMoney, costPerBottle) {
-    const change = money % costPerBottle;
-    return change;
-}
+const weight = prompt(`What is your current weight(kg)?`);
+const height = prompt(`What is your height(m)?`);
 
-const money = prompt("How much would you pay for milk?");
+alert(bmiCalculator(weight, height));
 
-const getMilkResult = getMilk(money);
-alert(`
-You payed $${money} 
-which can buy you ${getMilkResult.bottles} bottles. 
 
-Your change is $${getMilkResult.change}.`);
+/* If my weight is 65Kg and my height is 1.8m, I should be able to call your function like this:
+
+var bmi = bmiCalculator(65, 1.8); 
+
+bmi should equal 20 when it's rounded to the nearest whole number.
+
+*/
+
