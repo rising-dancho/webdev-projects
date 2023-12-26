@@ -303,3 +303,6 @@ console.log(Number(inputYear) + 18);
 
 // */
 
+// let num = Math.random();
+// num = Math.floor(num * 6) + 1;
+// console.log(num);
