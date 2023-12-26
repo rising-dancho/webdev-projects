@@ -308,26 +308,62 @@ console.log(Number(inputYear) + 18);
 // console.log(num);
 
 
-if (lovesScore == 100) {
-    alert(`
-    ${person} ❤️ ${crush}
+// const person = prompt("What is your name?");
+// const crush = prompt("What is the name of your crush?");
 
-    ${lovesScore}%
+// let lovesScore = Math.random();
+// lovesScore = Math.floor(lovesScore * 100) + 1;
 
-    You love each other like Kanye loves Kanye.
-    `);
-} else if(lovesScore > 30 && lovesScore < 70) {
-     alert(`
-    ${person} ❤️ ${crush}
+// // console.log(randomNum);
 
-    ${lovesScore}%
+// if (lovesScore == 100) {
+//     alert(`
+//     ${person} ❤️ ${crush}
 
-    You love each other like Kanye loves Kanye.
-    `);  
-} else {
-    alert(`
-    ${person} ❤️ ${crush}
+//     ${lovesScore}%
 
-    ${lovesScore}%
-    `);
+//     You love each other like Kanye loves Kanye.
+//     `);
+// } else if(lovesScore > 30 && lovesScore < 70) {
+//      alert(`
+//     ${person} ❤️ ${crush}
+
+//     ${lovesScore}%
+//     `);  
+// } else if(lovesScore <= 30){
+//     alert(`
+//     ${person} ❤️ ${crush}
+
+//     ${lovesScore}%
+
+//     You go together like oil and water.
+//     `);
+// }
+
+
+function bmiCalculator(weight, height) {
+    const resultBMI = Math.round(weight / Math.pow(height, 2));
+    let interpretation;
+    return resultBMI;
+
+    if (resultBMI < 18.5) {
+        interpretation = `Your BMI is ${resultBMI}, so you are underweight.`;
+    } else if (resultBMI >= 18.5 && resultBMI <= 24.9) {
+        interpretation = `Your BMI is ${resultBMI}, so you are normal.`;
+    } else if (resultBMI >= 25 && resultBMI <= 29.9) {
+        interpretation = `Your BMI is ${resultBMI}, so you are overweight.`;
+    } else if (resultBMI >= 30 && resultBMI <= 34.9) {
+        interpretation = `Your BMI is ${resultBMI}, so you are obese.`;
+    } else {
+        interpretation = `Your BMI is ${resultBMI}, so you are extremely obese.`;
+    }
+    return interpretation;
 }
+
+//The first parameter should be the weight and the second should be the height.
+
+const weight = prompt(`What is your current weight(kg)?`);
+const height = prompt(`What is your height(m)?`);
+
+alert(bmiCalculator(weight, height));
+
