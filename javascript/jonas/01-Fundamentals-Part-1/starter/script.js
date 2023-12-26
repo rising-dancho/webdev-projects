@@ -308,15 +308,7 @@ console.log(Number(inputYear) + 18);
 // console.log(num);
 
 
-const person = prompt("What is your name?");
-const crush = prompt("What is the name of your crush?");
-
-let lovesScore = Math.random();
-lovesScore = Math.floor(lovesScore * 100) + 1;
-
-// console.log(randomNum);
-
-if (lovesScore >= 70) {
+if (lovesScore == 100) {
     alert(`
     ${person} ❤️ ${crush}
 
@@ -324,6 +316,14 @@ if (lovesScore >= 70) {
 
     You love each other like Kanye loves Kanye.
     `);
+} else if(lovesScore > 30 && lovesScore < 70) {
+     alert(`
+    ${person} ❤️ ${crush}
+
+    ${lovesScore}%
+
+    You love each other like Kanye loves Kanye.
+    `);  
 } else {
     alert(`
     ${person} ❤️ ${crush}
@@ -331,4 +331,3 @@ if (lovesScore >= 70) {
     ${lovesScore}%
     `);
 }
-
