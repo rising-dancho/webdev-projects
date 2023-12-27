@@ -412,18 +412,43 @@ console.log(Number(inputYear) + 18);
 // guestList.includes("Angela");
 
 
-// let fizzBuzzResult = [];
-// let counter = 0;
-// function fizzBuzz(){
-//     counter++; 
-//     fizzBuzzResult.push(counter);
-//     console.log(fizzBuzzResult);
-// }
+let fizzBuzzResult = [];
+let counter = 0;
+function fizzBuzz() {
+    counter++;
+    if (counter % 3 === 0 && !(counter % 5 === 0)) {
+        fizzBuzzResult.push('fizz');
+        alert('fizz');
 
-// fizzBuzz();
-// fizzBuzz();
-// fizzBuzz();
-// fizzBuzz();
-// fizzBuzz();
-// fizzBuzz();
-// fizzBuzz();
+    } else if (!(counter % 3 === 0) && counter % 5 === 0) {
+        fizzBuzzResult.push('buzz');
+        alert('buzz');
+    } else if (counter % 3 === 0 && counter % 5 === 0) {
+        fizzBuzzResult.push('fizzBuzz');
+        alert('fizzBuzz');
+    } else {
+        fizzBuzzResult.push(counter);
+        alert(fizzBuzzResult);
+    }
+}
+
+// 3 fizz
+// 5 buzz
+// 3 && 5 fizzBuzz
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
+fizzBuzz();
