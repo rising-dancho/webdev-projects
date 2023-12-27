@@ -382,12 +382,22 @@ function isLeap(year) {
     /**************Don't change the code above****************/
 
     //Write your code here.    
-    if (year % 4 === 0 && !(year % 100)) {
-        return `${year} is a leap year`;
-    }else if(year % 4 === 0 && year % 100 && year % 500){
-        return `${year} is a leap year`;
-    }else {
-        return `${year} is not a leap year`;
+    // if (year % 4 === 0 && !(year % 100)) {
+    //     return `${year} is a leap year`;
+    // }else if(year % 4 === 0 && year % 100 && year % 500){
+    //     return `${year} is a leap year`;
+    // }else {
+    //     return `${year} is not a leap year`;
+    // }
+
+    if (year % 4 === 0) {
+        if (!(year % 100 === 0)) {
+            return 'Leap year.';
+        } else if (year % 100 === 0 && year % 500 === 0) {
+            return 'Leap year.';
+        }
+    } else {
+        return 'Not leap year.';
     }
     /**************Don't change the code below****************/
 }
