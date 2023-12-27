@@ -341,29 +341,56 @@ console.log(Number(inputYear) + 18);
 // }
 
 
-function bmiCalculator(weight, height) {
-    const resultBMI = Math.round(weight / Math.pow(height, 2));
-    let interpretation;
-    return resultBMI;
+// function bmiCalculator(weight, height) {
+//     const resultBMI = Math.round(weight / Math.pow(height, 2));
+//     let interpretation;
 
-    if (resultBMI < 18.5) {
-        interpretation = `Your BMI is ${resultBMI}, so you are underweight.`;
-    } else if (resultBMI >= 18.5 && resultBMI <= 24.9) {
-        interpretation = `Your BMI is ${resultBMI}, so you are normal.`;
-    } else if (resultBMI >= 25 && resultBMI <= 29.9) {
-        interpretation = `Your BMI is ${resultBMI}, so you are overweight.`;
-    } else if (resultBMI >= 30 && resultBMI <= 34.9) {
-        interpretation = `Your BMI is ${resultBMI}, so you are obese.`;
-    } else {
-        interpretation = `Your BMI is ${resultBMI}, so you are extremely obese.`;
+//     if (resultBMI < 18.5) {
+//         interpretation = `Your BMI is ${resultBMI}, so you are underweight.`;
+//     } else if (resultBMI >= 18.5 && resultBMI <= 24.9) {
+//         interpretation = `Your BMI is ${resultBMI}, so you are normal.`;
+//     } else if (resultBMI >= 25 && resultBMI <= 29.9) {
+//         interpretation = `Your BMI is ${resultBMI}, so you are overweight.`;
+//     } else if (resultBMI >= 30 && resultBMI <= 34.9) {
+//         interpretation = `Your BMI is ${resultBMI}, so you are obese.`;
+//     } else {
+//         interpretation = `Your BMI is ${resultBMI}, so you are extremely obese.`;
+//     }
+//     return interpretation;
+// }
+
+// //The first parameter should be the weight and the second should be the height.
+
+// const weight = prompt(`What is your current weight(kg)?`);
+// const height = prompt(`What is your height(m)?`);
+
+// alert(bmiCalculator(weight, height));
+
+
+// /* If my weight is 65Kg and my height is 1.8m, I should be able to call your function like this:
+
+// var bmi = bmiCalculator(65, 1.8); 
+
+// bmi should equal 20 when it's rounded to the nearest whole number.
+
+// */
+
+
+
+function isLeap(year) {
+
+    /**************Don't change the code above****************/
+
+    //Write your code here.    
+    if (year % 4 === 0 && !(year % 100)) {
+        return `${year} is a leap year`;
+    }else if(year % 4 === 0 && year % 100 && year % 500){
+        return `${year} is a leap year`;
+    }else {
+        return `${year} is not a leap year`;
     }
-    return interpretation;
+    /**************Don't change the code below****************/
 }
 
-//The first parameter should be the weight and the second should be the height.
-
-const weight = prompt(`What is your current weight(kg)?`);
-const height = prompt(`What is your height(m)?`);
-
-alert(bmiCalculator(weight, height));
-
+const year = prompt("Enter a year:");
+alert(isLeap(year));
