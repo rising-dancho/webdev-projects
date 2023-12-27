@@ -377,30 +377,53 @@ console.log(Number(inputYear) + 18);
 
 
 
-function isLeap(year) {
+// function isLeap(year) {
 
-    /**************Don't change the code above****************/
+//     /**************Don't change the code above****************/
 
-    //Write your code here.    
-    // if (year % 4 === 0 && !(year % 100)) {
-    //     return `${year} is a leap year`;
-    // }else if(year % 4 === 0 && year % 100 && year % 500){
-    //     return `${year} is a leap year`;
-    // }else {
-    //     return `${year} is not a leap year`;
-    // }
+//     //Write your code here.    
+//     // if (year % 4 === 0 && !(year % 100)) {
+//     //     return `${year} is a leap year`;
+//     // }else if(year % 4 === 0 && year % 100 && year % 500){
+//     //     return `${year} is a leap year`;
+//     // }else {
+//     //     return `${year} is not a leap year`;
+//     // }
 
-    if (year % 4 === 0) {
-        if (!(year % 100 === 0)) {
-            return 'Leap year.';
-        } else if (year % 100 === 0 && year % 500 === 0) {
-            return 'Leap year.';
-        }
-    } else {
-        return 'Not leap year.';
-    }
-    /**************Don't change the code below****************/
-}
+//     if (year % 4 === 0) {
+//         if (!(year % 100 === 0)) {
+//             return 'Leap year.';
+//         } else if (year % 100 === 0 && year % 500 === 0) {
+//             return 'Leap year.';
+//         }
+//     } else {
+//         return 'Not leap year.';
+//     }
+//     /**************Don't change the code below****************/
+// }
 
-const year = prompt("Enter a year:");
-alert(isLeap(year));
+// const year = prompt("Enter a year:");
+// alert(isLeap(year));
+
+// const guestList = ["Angela", "Jack", "Pam","James","Lara","Jason"];
+
+// // console.log(guestList[0]);
+// // guestList.length
+// guestList.includes("Angela");
+
+
+// let fizzBuzzResult = [];
+// let counter = 0;
+// function fizzBuzz(){
+//     counter++; 
+//     fizzBuzzResult.push(counter);
+//     console.log(fizzBuzzResult);
+// }
+
+// fizzBuzz();
+// fizzBuzz();
+// fizzBuzz();
+// fizzBuzz();
+// fizzBuzz();
+// fizzBuzz();
+// fizzBuzz();
