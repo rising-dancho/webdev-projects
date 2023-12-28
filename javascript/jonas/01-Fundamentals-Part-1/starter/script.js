@@ -455,19 +455,56 @@ console.log(Number(inputYear) + 18);
 
 
 
-const names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+// const names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
 
-function whosPaying(names) {
+// function whosPaying(names) {
 
-    /******Don't change the code above*******/
+//     /******Don't change the code above*******/
 
-    //Write your code here.
-    let randomNum = Math.floor(Math.random() * names.length);
-    // console.log(typeof randomNum);
-    console.log(names.length);
-    return `${names[randomNum]} is going to buy lunch today!`;
-    
-    /******Don't change the code below*******/
+//     //Write your code here.
+//     let randomNum = Math.floor(Math.random() * names.length);
+//     // console.log(typeof randomNum);
+//     console.log(names.length);
+//     return `${names[randomNum]} is going to buy lunch today!`;
+
+//     /******Don't change the code below*******/
+// }
+
+// alert(whosPaying(names));
+
+
+let numBottles = 99;
+let decrement = numBottles - 1;
+function beer() {
+    while (decrement > 0) {
+        console.log(`${numBottles} bottles of beer on the wall, ${numBottles} bottles of beer.
+Take one down and pass it around, ${decrement} bottles of beer on the wall.`);
+        if (decrement != 0) {
+            decrement--;
+        } else {
+            decrement = `no more`;
+        }
+
+        numBottles = decrement;
+        numBottles++;
+    }
+    console.log(`1 bottle of beer on the wall, 1 bottle of beer.
+Take one down and pass it around, no more bottles of beer on the wall.`);
+    console.log(`No more bottles of beer on the wall, no more bottles of beer.
+Go to the store and buy some more, 99 bottles of beer on the wall.`);
 }
 
-alert(whosPaying(names));
+beer();
+
+var numberOfBottles = 99
+while (numberOfBottles >= 0) {
+    var bottleWord = "bottle";
+    if (numberOfBottles === 1) {
+        bottleWord = "bottles";
+    } 
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
+    console.log(numberOfBottles + " " + bottleWord + " of beer,");
+    console.log("Take one down, pass it around,");
+	numberOfBottles--;
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
+}
