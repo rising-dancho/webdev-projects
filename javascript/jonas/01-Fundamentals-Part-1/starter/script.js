@@ -412,43 +412,62 @@ console.log(Number(inputYear) + 18);
 // guestList.includes("Angela");
 
 
-let fizzBuzzResult = [];
-let counter = 0;
-function fizzBuzz() {
-    counter++;
-    if (counter % 3 === 0 && !(counter % 5 === 0)) {
-        fizzBuzzResult.push('fizz');
-        alert('fizz');
+// let fizzBuzzResult = [];
+// let counter = 0;
+// function fizzBuzz() {
+//     counter++;
+//     if (counter % 3 === 0 && !(counter % 5 === 0)) {
+//         fizzBuzzResult.push('fizz');
+//         alert('fizz');
 
-    } else if (!(counter % 3 === 0) && counter % 5 === 0) {
-        fizzBuzzResult.push('buzz');
-        alert('buzz');
-    } else if (counter % 3 === 0 && counter % 5 === 0) {
-        fizzBuzzResult.push('fizzBuzz');
-        alert('fizzBuzz');
-    } else {
-        fizzBuzzResult.push(counter);
-        alert(fizzBuzzResult);
-    }
+//     } else if (!(counter % 3 === 0) && counter % 5 === 0) {
+//         fizzBuzzResult.push('buzz');
+//         alert('buzz');
+//     } else if (counter % 3 === 0 && counter % 5 === 0) {
+//         fizzBuzzResult.push('fizzBuzz');
+//         alert('fizzBuzz');
+//     } else {
+//         fizzBuzzResult.push(counter);
+//         alert(fizzBuzzResult);
+//     }
+// }
+
+// // 3 fizz
+// // 5 buzz
+// // 3 && 5 fizzBuzz
+// fizzBuzz();
+// fizzBuzz();
+// fizzBuzz();
+// fizzBuzz();
+// fizzBuzz();
+
+// fizzBuzz();
+// fizzBuzz();
+// fizzBuzz();
+// fizzBuzz();
+// fizzBuzz();
+
+// fizzBuzz();
+// fizzBuzz();
+// fizzBuzz();
+// fizzBuzz();
+// fizzBuzz();
+
+
+
+const names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+
+function whosPaying(names) {
+
+    /******Don't change the code above*******/
+
+    //Write your code here.
+    let randomNum = Math.floor(Math.random() * names.length);
+    // console.log(typeof randomNum);
+    console.log(names.length);
+    return `${names[randomNum]} is going to buy lunch today!`;
+    
+    /******Don't change the code below*******/
 }
 
-// 3 fizz
-// 5 buzz
-// 3 && 5 fizzBuzz
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
-fizzBuzz();
+alert(whosPaying(names));
