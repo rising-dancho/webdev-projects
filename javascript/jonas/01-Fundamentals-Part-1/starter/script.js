@@ -540,15 +540,37 @@ console.log(Number(inputYear) + 18);
 
 
 
-function fibonacciGenerator(n){
-    let sequenceArray = [];
 
-    for(i = 0; i < n; i++){
-        sequenceArray.push('fiboratchi');
+function fibonacciGenerator(n) {
+
+    let sequenceArray = [];
+    let dummyArray = [`tae`, `bitlog`, `tite`];
+
+    for (var i = 0; i < n; i++) {
+        let lastPosition = 0;
+        let beforePosition = 0;
+        let nextPosition = 0;
+
+        if (i === 0 || i === 1) {
+            sequenceArray.push(i);
+            console.log(sequenceArray[sequenceArray.length - 1]);
+        }
+        else if (sequenceArray.length >= 2) {
+            lastPosition = sequenceArray[sequenceArray.length - 1];
+            beforePosition = sequenceArray[sequenceArray.length - 2];
+
+            // alert(`lastPosition: ${lastPosition}`);
+            // alert(`beforePosition: ${beforePosition}`);
+
+            nextPosition = beforePosition + lastPosition;
+            sequenceArray.push(nextPosition);
+        }
     }
-    
     return sequenceArray;
 }
 
 let n = prompt("Enter the number of length of the sequence");
-console.log(fibonacciGenerator(n));
+
+let output = fibonacciGenerator(n);
+console.log(output);
+// console.log(dummyArray[dummyArray.length - 2]);
