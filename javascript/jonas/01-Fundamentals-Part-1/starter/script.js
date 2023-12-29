@@ -539,10 +539,16 @@ console.log(Number(inputYear) + 18);
 // fizzBuzz();
 
 
+
 function fibonacciGenerator(n){
     let sequenceArray = [];
+
+    for(i = 0; i < n; i++){
+        sequenceArray.push('fiboratchi');
+    }
     
+    return sequenceArray;
 }
 
 let n = prompt("Enter the number of length of the sequence");
-fibonacciGenerator(n);
+console.log(fibonacciGenerator(n));
