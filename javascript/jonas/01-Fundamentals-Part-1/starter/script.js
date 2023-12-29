@@ -511,30 +511,38 @@ console.log(Number(inputYear) + 18);
 
 
 
-let fizzBuzzResult = [];
+// let fizzBuzzResult = [];
 
-function fizzBuzz() {
-    for (let counter = 1; counter <= 15 + 1; counter++) {
+// function fizzBuzz() {
+//     for (let counter = 1; counter <= 15 + 1; counter++) {
 
-        if (counter % 3 === 0 && !(counter % 5 === 0)) {
-            fizzBuzzResult.push('fizz');
-            console.log('fizz');
-        } else if (!(counter % 3 === 0) && counter % 5 === 0) {
-            fizzBuzzResult.push('buzz');
-            console.log('buzz');
-        } else if (counter % 3 === 0 && counter % 5 === 0) {
-            fizzBuzzResult.push('fizzBuzz');
-            console.log('fizzBuzz');
-        } else {
-            fizzBuzzResult.push(counter);
-            console.log(fizzBuzzResult);
-        }
+//         if (counter % 3 === 0 && !(counter % 5 === 0)) {
+//             fizzBuzzResult.push('fizz');
+//             console.log('fizz');
+//         } else if (!(counter % 3 === 0) && counter % 5 === 0) {
+//             fizzBuzzResult.push('buzz');
+//             console.log('buzz');
+//         } else if (counter % 3 === 0 && counter % 5 === 0) {
+//             fizzBuzzResult.push('fizzBuzz');
+//             console.log('fizzBuzz');
+//         } else {
+//             fizzBuzzResult.push(counter);
+//             console.log(fizzBuzzResult);
+//         }
 
-    }
+//     }
+// }
+
+// // 3 fizz
+// // 5 buzz
+// // 3 && 5 fizzBuzz
+// fizzBuzz();
+
+
+function fibonacciGenerator(n){
+    let sequenceArray = [];
+    
 }
 
-// 3 fizz
-// 5 buzz
-// 3 && 5 fizzBuzz
-fizzBuzz();
-
+let n = prompt("Enter the number of length of the sequence");
+fibonacciGenerator(n);
