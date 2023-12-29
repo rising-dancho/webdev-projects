@@ -473,38 +473,68 @@ console.log(Number(inputYear) + 18);
 // alert(whosPaying(names));
 
 
-let numBottles = 99;
-let decrement = numBottles - 1;
-function beer() {
-    while (decrement > 0) {
-        console.log(`${numBottles} bottles of beer on the wall, ${numBottles} bottles of beer.
-Take one down and pass it around, ${decrement} bottles of beer on the wall.`);
-        if (decrement != 0) {
-            decrement--;
+// let numBottles = 99;
+// let decrement = numBottles - 1;
+// function beer() {
+//     while (decrement > 0) {
+//         console.log(`${numBottles} bottles of beer on the wall, ${numBottles} bottles of beer.
+// Take one down and pass it around, ${decrement} bottles of beer on the wall.`);
+//         if (decrement != 0) {
+//             decrement--;
+//         } else {
+//             decrement = `no more`;
+//         }
+
+//         numBottles = decrement;
+//         numBottles++;
+//     }
+//     console.log(`1 bottle of beer on the wall, 1 bottle of beer.
+// Take one down and pass it around, no more bottles of beer on the wall.`);
+//     console.log(`No more bottles of beer on the wall, no more bottles of beer.
+// Go to the store and buy some more, 99 bottles of beer on the wall.`);
+// }
+
+// beer();
+
+// var numberOfBottles = 99
+// while (numberOfBottles >= 0) {
+//     var bottleWord = "bottle";
+//     if (numberOfBottles === 1) {
+//         bottleWord = "bottles";
+//     }
+//     console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
+//     console.log(numberOfBottles + " " + bottleWord + " of beer,");
+//     console.log("Take one down, pass it around,");
+//     numberOfBottles--;
+//     console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
+// }
+
+
+
+let fizzBuzzResult = [];
+
+function fizzBuzz() {
+    for (let counter = 1; counter <= 15 + 1; counter++) {
+
+        if (counter % 3 === 0 && !(counter % 5 === 0)) {
+            fizzBuzzResult.push('fizz');
+            console.log('fizz');
+        } else if (!(counter % 3 === 0) && counter % 5 === 0) {
+            fizzBuzzResult.push('buzz');
+            console.log('buzz');
+        } else if (counter % 3 === 0 && counter % 5 === 0) {
+            fizzBuzzResult.push('fizzBuzz');
+            console.log('fizzBuzz');
         } else {
-            decrement = `no more`;
+            fizzBuzzResult.push(counter);
+            console.log(fizzBuzzResult);
         }
 
-        numBottles = decrement;
-        numBottles++;
     }
-    console.log(`1 bottle of beer on the wall, 1 bottle of beer.
-Take one down and pass it around, no more bottles of beer on the wall.`);
-    console.log(`No more bottles of beer on the wall, no more bottles of beer.
-Go to the store and buy some more, 99 bottles of beer on the wall.`);
 }
 
-beer();
+// 3 fizz
+// 5 buzz
+// 3 && 5 fizzBuzz
+fizzBuzz();
 
-var numberOfBottles = 99
-while (numberOfBottles >= 0) {
-    var bottleWord = "bottle";
-    if (numberOfBottles === 1) {
-        bottleWord = "bottles";
-    } 
-    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
-    console.log(numberOfBottles + " " + bottleWord + " of beer,");
-    console.log("Take one down, pass it around,");
-	numberOfBottles--;
-    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
-}
