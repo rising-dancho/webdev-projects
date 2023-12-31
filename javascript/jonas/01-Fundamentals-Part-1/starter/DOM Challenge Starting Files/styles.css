@@ -5,3 +5,11 @@ h1 {
 /* button {
   background-color: yellow;
 } */
+
+.invisible {
+  opacity: 0;
+}
+
+.huge {
+  font-size: 10rem;
+}
