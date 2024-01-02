@@ -1,8 +1,0 @@
-.one, .two, .three  {
-    background-color: skyblue;
-}
-
-.container{
-    display: flex;
-    gap: 1%;
-}
