@@ -51,16 +51,15 @@ for (var i = 0; i < numOfButtons; i++) {
         const num2 = prompt("Enter second number");
         const operator = prompt("Choose an operator: [1] add, [2] sub, [3] mult, [4] div");
         if (operator === "add" || operator === "1") {
-            alert(calculator(num1, num2, add));
+            alert("Sum: " + calculator(num1, num2, add));
         } else if (operator === "sub" || operator === "2") {
-            alert(calculator(num1, num2, sub));
+            alert("Difference: " + calculator(num1, num2, sub));
         } else if (operator === "mult" || operator === "3") {
-            alert(calculator(num1, num2, mult));
+            alert("Product: " + calculator(num1, num2, mult));
         } else if (operator === "div" || operator === "4") {
-            alert(calculator(num1, num2, div));
+            alert("Quotient: " + calculator(num1, num2, div));
         } else {
             alert("Incorrect entry. Please try again..");
         }
-
     })
 }
