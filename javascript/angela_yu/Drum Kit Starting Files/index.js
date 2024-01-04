@@ -42,7 +42,7 @@ function div(num1, num2) {
 }
 
 function calculator(num1, num2, operator) {
-    return operator(Number(num1) + Number(num2));
+    return operator(Number(num1), Number(num2));
 }
 const numOfButtons = document.querySelectorAll(".drum").length;
 for (var i = 0; i < numOfButtons; i++) {
