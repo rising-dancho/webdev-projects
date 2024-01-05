@@ -137,20 +137,19 @@ for (var i = 0; i < numOfButtons; i++) {
             case "l":
                 var audio = new Audio("./sounds/kick-bass.mp3");
                 break;
-            
+
             default:
-            console.log("whooops!! something happened");
-        }     
+                console.log("whooops!! something happened");
+        }
         audio.play();
     });
 }
 
-
-document.addEventListener("keydown", function(event){
+document.addEventListener("keydown", function (event) {
     console.log(event);
-    if(event.key === 'w') {
+    if (event.key === 'w') {
         var audio = new Audio("./sounds/tom-1.mp3");
-    } 
+    }
     else if ((event.key === 'a')) {
         var audio = new Audio("./sounds/tom-2.mp3");
     }
