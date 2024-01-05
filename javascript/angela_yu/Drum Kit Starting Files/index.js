@@ -63,3 +63,84 @@
 //         }
 //     })
 // }
+
+
+// add event listener to all buttons using: for loop
+const numOfButtons = document.querySelectorAll(".drum").length;
+
+// for (var i = 0; i < numOfButtons; i++) {
+//     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
+
+//         if (this.innerHTML == "w") {
+//             var audio = new Audio("./sounds/tom-1.mp3");
+
+//         } else if (this.innerHTML == "a") {
+//             var audio = new Audio("./sounds/tom-2.mp3");
+//         } else if (this.innerHTML == "s") {
+//             var audio = new Audio("./sounds/tom-3.mp3");
+//         } else if (this.innerHTML == "d") {
+//             var audio = new Audio("./sounds/tom-4.mp3");
+//         } else if (this.innerHTML == "j") {
+//             var audio = new Audio("./sounds/snare.mp3");
+//         } else if (this.innerHTML == "k") {
+//             var audio = new Audio("./sounds/crash.mp3");
+//         } else if (this.innerHTML == "l") {
+//             var audio = new Audio("./sounds/kick-bass.mp3");
+//         }
+//         audio.play();
+//     })
+// }
+
+
+for (var i = 0; i < numOfButtons; i++) {
+    document.querySelectorAll(".drum")[i].addEventListener("click", function () {
+
+
+        switch (this.innerHTML) {
+            case "w":
+                var audio = new Audio("./sounds/tom-1.mp3");
+                break;
+            case "a":
+                var audio = new Audio("./sounds/tom-2.mp3");
+                break;
+            case "s":
+                var audio = new Audio("./sounds/tom-3.mp3");
+                break;
+            case "d":
+                var audio = new Audio("./sounds/tom-4.mp3");
+                break;
+            case "j":
+                var audio = new Audio("./sounds/snare.mp3");
+                break;
+            case "k":
+                var audio = new Audio("./sounds/crash.mp3");
+                break;
+            case "l":
+                var audio = new Audio("./sounds/kick-bass.mp3");
+                break;
+            
+            default:
+            console.log("whooops!! something happened");
+        }     
+        audio.play();
+    })
+}
+
+
+// var houseKeeper1 = {
+//  yearsOfExperience: 12,
+//  name: "Jane",
+//  cleaningReppertoire: ["bathroom","lobby","bedroom"]
+// }
+
+// alert(houseKeeper1.yearsOfExperience +  houseKeeper1.name +  houseKeeper1.cleaningReppertoire);
+
+// function HouseKeeper(yearsOfExperience, name, cleaningReppertoire) {
+//     this.yearsOfExperience = yearsOfExperience;
+//     this.name = name;
+//     this.cleaningReppertoire = cleaningReppertoire;
+// }
+
+// var employee1 = new HouseKeeper("12", "titi", "kumantot");
+// console.log(employee1);
+// alert(employee1.name);
