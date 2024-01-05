@@ -64,9 +64,8 @@
 //     })
 // }
 
-
-// add event listener to all buttons using: for loop
-const numOfButtons = document.querySelectorAll(".drum").length;
+// // add event listener to all buttons using: for loop
+// const numOfButtons = document.querySelectorAll(".drum").length;
 
 // for (var i = 0; i < numOfButtons; i++) {
 //     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
@@ -91,6 +90,26 @@ const numOfButtons = document.querySelectorAll(".drum").length;
 //     })
 // }
 
+// var houseKeeper1 = {
+//  yearsOfExperience: 12,
+//  name: "Jane",
+//  cleaningReppertoire: ["bathroom","lobby","bedroom"]
+// }
+
+// alert(houseKeeper1.yearsOfExperience +  houseKeeper1.name +  houseKeeper1.cleaningReppertoire);
+
+// function HouseKeeper(yearsOfExperience, name, cleaningReppertoire) {
+//     this.yearsOfExperience = yearsOfExperience;
+//     this.name = name;
+//     this.cleaningReppertoire = cleaningReppertoire;
+// }
+
+// var employee1 = new HouseKeeper("12", "titi", "kumantot");
+// console.log(employee1);
+// alert(employee1.name);
+
+// add event listener to all buttons using: for loop
+const numOfButtons = document.querySelectorAll(".drum").length;
 
 for (var i = 0; i < numOfButtons; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
@@ -155,20 +174,3 @@ document.addEventListener("keydown", function(event){
     audio.play();
 });
 
-// var houseKeeper1 = {
-//  yearsOfExperience: 12,
-//  name: "Jane",
-//  cleaningReppertoire: ["bathroom","lobby","bedroom"]
-// }
-
-// alert(houseKeeper1.yearsOfExperience +  houseKeeper1.name +  houseKeeper1.cleaningReppertoire);
-
-// function HouseKeeper(yearsOfExperience, name, cleaningReppertoire) {
-//     this.yearsOfExperience = yearsOfExperience;
-//     this.name = name;
-//     this.cleaningReppertoire = cleaningReppertoire;
-// }
-
-// var employee1 = new HouseKeeper("12", "titi", "kumantot");
-// console.log(employee1);
-// alert(employee1.name);
