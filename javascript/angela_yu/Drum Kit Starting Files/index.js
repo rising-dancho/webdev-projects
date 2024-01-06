@@ -108,18 +108,30 @@
 // console.log(employee1);
 // alert(employee1.name);
 
+// // 2 ways to create callback functions
+// $0.addEventListener("click", function(event){
+//     console.log(event);
+// });
+
+// $0.addEventListener("click", respondToClick(event));
+// function respondToClick(event) {
+//      console.log(event);
+// }
+
 // add event listener to all buttons using: for loop
 const numOfButtons = document.querySelectorAll(".drum").length;
 
 for (var i = 0; i < numOfButtons; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
         makeSound(this.innerHTML);
+        buttonAnimation(this.innerHTML);
     });
 }
 
 document.addEventListener("keydown", function (event) {
     // console.log(event);
     makeSound(event.key);
+    buttonAnimation(event.key);
 });
 
 
@@ -154,13 +166,15 @@ function makeSound(key){
 }
 
 
-// // 2 ways to create callback functions
-// $0.addEventListener("click", function(event){
-//     console.log(event);
-// });
+function buttonAnimation(currentKey) {
 
-// $0.addEventListener("click", respondToClick(event));
-// function respondToClick(event) {
-//      console.log(event);
-// }
-
+    var activeButton = document.querySelector("." + currentKey);
+  
+    activeButton.classList.add("pressed");
+  
+    setTimeout(function() {
+      activeButton.classList.remove("pressed");
+    }, 100);
+  
+}
+  
