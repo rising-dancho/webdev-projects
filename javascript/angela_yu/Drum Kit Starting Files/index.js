@@ -152,3 +152,15 @@ function makeSound(key){
     }
     audio.play();
 }
+
+
+// // 2 ways to create callback functions
+// $0.addEventListener("click", function(event){
+//     console.log(event);
+// });
+
+// $0.addEventListener("click", respondToClick(event));
+// function respondToClick(event) {
+//      console.log(event);
+// }
+
