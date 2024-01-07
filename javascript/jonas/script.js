@@ -85,24 +85,29 @@
 
 // IMPORTANT: The ** operator is not supported in this editor. Please make sure to use exactly this formula mass / (height * height), and not this one mass / (height ** 2).
 
+
 const massMark = 78; //kg
 const heightMark = 1.69; //meters
 const massJohn = 92;
 const heightJohn = 1.95;
 
 
+function bmiCalculator(mass, height) {
+    return BMI = mass / (height * height);
+}
+
 // function bmiCalculator(mass, height) {
 //     return BMI = mass / (height * height);
 // }
 
+// const BMIMark = bmiCalculator(massMark, heightMark);
+// const BMIJohn = bmiCalculator(massJohn, heightJohn);
+
 const BMIMark = massMark / (heightMark * heightMark);
 const BMIJohn =  massJohn / (heightJohn  *  heightJohn);
 
-
-// console.log(`Mark's BMI: ${BMIMark}`);
-// console.log(`Johns's BMI: ${BMIJohn}`);
-
-console.log(BMIMark);
-console.log(BMIJohn);
-
-// "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!".
+if (BMIMark > BMIJohn) {
+    console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
+} else {
+    console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
+}

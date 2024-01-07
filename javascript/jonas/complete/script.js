@@ -689,9 +689,9 @@ console.log(Number(inputYear) + 18);
 //    console.log(`John's BMI (${BMIJohn}) is higher than Marr's (${BMIMark})`);
 // }
 
-const inputYear = '1992';
-// const numYear = Number(inputYear);
-console.log(Number(inputYear) + 18);
+// const inputYear = '1992';
+// // const numYear = Number(inputYear);
+// console.log(Number(inputYear) + 18);
 
 // can only convet to:
 // Number();
@@ -706,23 +706,65 @@ console.log(Number(inputYear) + 18);
 // BMI = mass / (height * height)
 
 
-const massMark = 78;
-const heightMark = 1.69;
+// const massMark = 78;
+// const heightMark = 1.69;
 
-const massJohn = 92;
-const heightJohn = 1.95;
+// const massJohn = 92;
+// const heightJohn = 1.95;
 
-const BMIMark = massMark / (heightMark * heightMark);
-const BMIJohn = massJohn / (heightJohn * heightJohn);
-const markHigherBMI = BMIMark > BMIJohn;
-console.log(`Mark: ${BMIMark}`);
-console.log(`John: ${BMIJohn}`);
-console.log(`Is Mark's BMI higher than John's? Answer: ${markHigherBMI}`);
+// const BMIMark = massMark / (heightMark * heightMark);
+// const BMIJohn = massJohn / (heightJohn * heightJohn);
+// const markHigherBMI = BMIMark > BMIJohn;
+// console.log(`Mark: ${BMIMark}`);
+// console.log(`John: ${BMIJohn}`);
+// console.log(`Is Mark's BMI higher than John's? Answer: ${markHigherBMI}`);
 
 
-if (BMIMark > BMIJohn) {
-    console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})`); 
-}else{
-   console.log(`John's BMI (${BMIJohn}) is higher than Marr's (${BMIMark})`);
+// if (BMIMark > BMIJohn) {
+//     console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})`); 
+// }else{
+//    console.log(`John's BMI (${BMIJohn}) is higher than Marr's (${BMIMark})`);
+// }
+
+
+/* Write your code below. Good luck! 🙂 */
+
+/*
+CHALLENGE #3
+There are two gymnastics teams: Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins a trophy!
+
+Your tasks:
+
+    1. Calculate the average score for each team, using the test data included below. The average score for Dolphins should be assigned to the scoreDolphins variable, and the average score of Koalas should be assigned to the scoreKoalas variable.
+
+    2. Compare the team's average scores to determine the winner of the competition, and print to the console:
+
+    "Dolphins win the trophy" if Dolphins win, or
+
+    "Koalas win the trophy" if Koalas win, or
+
+    "Both win the trophy" if their average scores are equal.
+
+
+TEST DATA: Dolphins scored 96, 108, and 89. Koalas scored 88, 91, and 110.
+*/
+
+// Dolphins scored 96, 108, and 89
+// Koalas scored 88, 91, and 110
+
+const scoreDolphins = (96 + 108 + 89) / 3;
+const scoreKoalas = (88 + 91 + 110) / 3;
+
+console.log('Dolphins: ', scoreDolphins);
+console.log('Koalas: ', scoreKoalas);
+console.log('\n');
+
+if (scoreDolphins > scoreKoalas) {
+    // console.log(`Dolphins win the tournament with the score of ${scoreDolphins}`);
+    console.log(`Dolphins win the trophy`);
+} else if (scoreDolphins === scoreKoalas) {
+    console.log(`Both win the trophy`);
+} else {
+    // console.log(`Koalas win the tournament with the score of ${scoreKoalas}`);
+    console.log(`Koalas win the trophy`);
 }
-
