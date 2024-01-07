@@ -698,3 +698,31 @@ console.log(Number(inputYear) + 18);
 // String();
 // Boolean();
 
+// 1.) Print a nice output to the console, telling the user who has the higher BMI. The message can be either:
+// "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+// 2.) Modify the outputs above to use template literals to include the BMI values in the outputs.
+
+
+// BMI = mass / (height * height)
+
+
+const massMark = 78;
+const heightMark = 1.69;
+
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+const markHigherBMI = BMIMark > BMIJohn;
+console.log(`Mark: ${BMIMark}`);
+console.log(`John: ${BMIJohn}`);
+console.log(`Is Mark's BMI higher than John's? Answer: ${markHigherBMI}`);
+
+
+if (BMIMark > BMIJohn) {
+    console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})`); 
+}else{
+   console.log(`John's BMI (${BMIJohn}) is higher than Marr's (${BMIMark})`);
+}
+
