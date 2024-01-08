@@ -138,25 +138,26 @@
 // 1. Calculate the average score for each team, using the test data included below. 
 // Dolphins scored 96, 108, and 89
 
-function average(score1, score2, score3) {
-    return (score1 + score2 + score3) / 3;
-}
+// function average(score1, score2, score3) {
+//     return (score1 + score2 + score3) / 3;
+// }
 
-const scoreDolphins = average(96, 108, 89);
-const scoreKoalas = average(88, 91, 110);
+// const scoreDolphins = average(96, 108, 89);
+// const scoreKoalas = average(88, 91, 110);
 
-// 2. Compare the team's average scores to determine the winner of the competition, and print to the console:
+// // 2. Compare the team's average scores to determine the winner of the competition, and print to the console:
 
-// "Dolphins win the trophy" if Dolphins win, or
+// // "Dolphins win the trophy" if Dolphins win, or
 
-// "Koalas win the trophy" if Koalas win, or
+// // "Koalas win the trophy" if Koalas win, or
 
-// "Both win the trophy" if their average scores are equal.
+// // "Both win the trophy" if their average scores are equal.
 
-if (scoreDolphins > scoreKoalas) {
-    console.log("Dolphins win the trophy");
-} else if (scoreKoalas > scoreDolphins) {
-    console.log("Koalas win the trophy");
-} else {
-    console.log("Both win the trophy");
-}
+// if (scoreDolphins > scoreKoalas) {
+//     console.log("Dolphins win the trophy");
+// } else if (scoreKoalas > scoreDolphins) {
+//     console.log("Koalas win the trophy");
+// } else {
+//     console.log("Both win the trophy");
+// }
+

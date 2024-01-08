@@ -752,19 +752,85 @@ TEST DATA: Dolphins scored 96, 108, and 89. Koalas scored 88, 91, and 110.
 // Dolphins scored 96, 108, and 89
 // Koalas scored 88, 91, and 110
 
-const scoreDolphins = (96 + 108 + 89) / 3;
-const scoreKoalas = (88 + 91 + 110) / 3;
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 91 + 110) / 3;
 
-console.log('Dolphins: ', scoreDolphins);
-console.log('Koalas: ', scoreKoalas);
-console.log('\n');
+// console.log('Dolphins: ', scoreDolphins);
+// console.log('Koalas: ', scoreKoalas);
+// console.log('\n');
 
-if (scoreDolphins > scoreKoalas) {
-    // console.log(`Dolphins win the tournament with the score of ${scoreDolphins}`);
-    console.log(`Dolphins win the trophy`);
-} else if (scoreDolphins === scoreKoalas) {
-    console.log(`Both win the trophy`);
-} else {
-    // console.log(`Koalas win the tournament with the score of ${scoreKoalas}`);
-    console.log(`Koalas win the trophy`);
+// if (scoreDolphins > scoreKoalas) {
+//     // console.log(`Dolphins win the tournament with the score of ${scoreDolphins}`);
+//     console.log(`Dolphins win the trophy`);
+// } else if (scoreDolphins === scoreKoalas) {
+//     console.log(`Both win the trophy`);
+// } else {
+//     // console.log(`Koalas win the tournament with the score of ${scoreKoalas}`);
+//     console.log(`Koalas win the trophy`);
+// }
+
+
+/*
+CHALLENGE #4
+Steven needs a very simple tip calculator for whenever he goes to eat in a restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+
+Your tasks:
+
+    Calculate the tip, depending on the bill value. Create a variable called tip for this. It's not allowed to use an if...else statement (if it's easier for you, you can start with an if...else statement, and then try to convert it to a ternary operator).
+
+    Print a string to the console containing the bill value, the tip, and the final value (bill + tip).
+
+    Example: The bill was 275, the tip was 41.25, and the total value 316.25.
+
+Note: Use the values of the bill and tip variables to construct this string. Don't hard-code them 🙂
+
+TEST DATA: Test with different bill values: 275, 40, and 430
+
+*/
+// ternary operator syntax : condition ? action : else (this part is mandatory).
+
+let bill = 275;
+
+let choice = prompt(`
+Bill Amount: 
+a.) 275 dollars
+b.) 40 dollars
+c.) 430 dollars`
+);
+
+
+switch (choice) {
+    case 'a':
+        bill = 275;
+        break;
+    
+    case 'b':
+        bill = 40;
+        break;
+    
+    case 'c':
+        bill = 430;
+        break;
+    default:
+        console.log(`pls write a, b, or c. no other choices are allowed.`)
 }
+
+const tip = bill >= 50 && bill <= 300 ? bill *.15 : bill*.20;
+
+// let tipPercentage;
+// determine tip percentage
+// if (bill >= 50 && bill <= 300 ){
+//     tipPercentage = `15%`
+// }else{
+//     tipPercentage = `20%`
+// }
+
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+// console.log(`-  you spent ${bill} dollars. so the tip should be ${tip} dollars. which is ${tipPercentage} percent of your spending.`);
+
+
+//  lol the only acceptable answer.. word for word.. sad. i included a dot and it wont pass the test. sad.
+// const bill = 275;
+// const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+// console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
