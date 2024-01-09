@@ -219,5 +219,6 @@ const yearsUntilRetirement = birthYear => {
     const retirement = 65 - age;
     return retirement;
 }
+//  add (paramter1, paramter2) or {} accordingly
 
 console.log(`Years until retirement ${yearsUntilRetirement}`);
