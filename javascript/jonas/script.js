@@ -212,3 +212,12 @@ const calcAge = function (birthYear) {
 // arrow function
 const calcAge2 = birthYear => 2024 - birthYear;
 // var = [parameter] => return [statement];
+
+// Calculate retirement 
+const yearsUntilRetirement = birthYear => {
+    const age = 2024 - birthYear;
+    const retirement = 65 - age;
+    return retirement;
+}
+
+console.log(`Years until retirement ${yearsUntilRetirement}`);
