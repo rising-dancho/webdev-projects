@@ -198,3 +198,17 @@
 // const bill = [275, 40, 430];
 
 // console.log(`The bill was ${bill[0]}, the tip was ${tipCalculator(bill[0])}, and the total value ${bill[0] + tipCalculator(bill[0])}`);
+
+// function expression
+const aFunctionExpression = function (paremeter) {
+    return console.log(`i am a function expression ${paremeter}`);
+}
+
+// calc year
+const calcAge = function (birthYear) {
+    return 2024 - birthYear;
+}
+
+// arrow function
+const calcAge2 = birthYear => 2024 - birthYear;
+// var = [parameter] => return [statement];
