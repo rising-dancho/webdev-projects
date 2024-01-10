@@ -59,3 +59,7 @@ ${jose['lastName']}
 ${jose['age']}
 ${jose['job']}
 ${jose['friends']}`);
+
+const nameKey = 'Name';
+console.log(`${jose['first' + nameKey]}`);
+console.log(`${jose['last' + nameKey]}`);
