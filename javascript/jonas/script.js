@@ -1,7 +1,8 @@
 // CHALLENGE #3
 // Let's go back to Mark and John comparing their BMIs!
 
-// This time, let's use objects to implement the calculations! Remember: BMI = mass / (height * height) (mass in kg and height in meters).
+// This time, let's use objects to implement the calculations! 
+// Remember: BMI = mass / (height * height) (mass in kg and height in meters).
 
 // Your tasks:
 
@@ -19,3 +20,28 @@
 
 // IMPORTANT: The ** operator is not supported in this editor. Please make sure to use exactly this formula mass / (height * height), and not this one mass / (height ** 2).
 
+/* Write your code below. Good luck! 🙂 */
+
+// BMI = mass / (height * height
+// Mark Miller and John Smith
+
+const mark = {
+    fullName: `Mark Miller`,
+    mass: 78, //kg
+    height: 1.69, //meters
+    calcBMI: function () {
+        return this.mass / (this.height * this.height);
+    }
+};
+
+const john = {
+    fullName: `John Smith`,
+    mass: 92, //kg
+    height: 1.95, //meters
+    calcBMI: function () {
+        return this.mass / (this.height * this.height);
+    }
+};
+
+console.log(mark.calcBMI());
+console.log(john.calcBMI());
