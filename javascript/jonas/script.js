@@ -25,23 +25,28 @@
 // BMI = mass / (height * height
 // Mark Miller and John Smith
 
+function calcBMI(mass, height){
+    const bmi =  mass / (height * height);
+    return bmi;
+}
+
 const mark = {
     fullName: `Mark Miller`,
     mass: 78, //kg
     height: 1.69, //meters
-    calcBMI: function () {
-        return this.mass / (this.height * this.height);
-    }
+    bmi: calcBMI(mark.mass, mark.height)
 };
 
 const john = {
     fullName: `John Smith`,
-    mass: 92, //kg
-    height: 1.95, //meters
-    calcBMI: function () {
-        return this.mass / (this.height * this.height);
-    }
+    mass: 92, 
+    height: 1.95,
+    bmi: calcBMI(john.mass, john.height)
 };
 
-console.log(mark.calcBMI());
-console.log(john.calcBMI());
+
+if(mark.bmi > john.bmi) {
+    console.log(`John Smith's BMI (${john.bmi}) is higher than Mark Miller's (${mark.bmi})!`);
+}else {
+     console.log(`Mark Miller's BMI (${mark.bmi}) is higher than John Smith's (${john.bmi})!`);
+}

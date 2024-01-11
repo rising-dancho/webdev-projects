@@ -1210,30 +1210,30 @@ TEST DATA: Test with different bill values: 275, 40, and 430
 // console.log(`${jose.firstName} has ${jose.friends.length} friends, and his bestfriend's name is  ${jose.friends[0]}`);
 
 
-// const jose = {
-//     firstName: 'Jose',
-//     lastName: 'Perez',
-//     birthYear: 1992,
-//     job: 'student',
-//     friends: ['Micheal', 'Peter', 'Steven'],
-//     hasDriversLicense: true,
+const jose = {
+    firstName: 'Jose',
+    lastName: 'Perez',
+    birthYear: 1992,
+    job: 'student',
+    friends: ['Micheal', 'Peter', 'Steven'],
+    hasDriversLicense: true,
 
 
-//     // calcAge: function (birthYear) {
-//     //     return 2024 - birthYear;
-//     // }
-//     // calcAge: function () {
-//     //     return 2024 - this.birthYear;
-//     // }
-//     calcAge: function () {
-//         this.age = 2024 - this.birthYear;
-//         return this.age;
-//     },
+    // calcAge: function (birthYear) {
+    //     return 2024 - birthYear;
+    // }
+    // calcAge: function () {
+    //     return 2024 - this.birthYear;
+    // }
+    calcAge: function () {
+        this.age = 2024 - this.birthYear;
+        return this.age;
+    },
 
-//     getSummary: function () {
-//         return `${jose.firstName} is a ${jose.calcAge()} old teacher, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
-//     }
-// };
+    getSummary: function () {
+        return `${jose.firstName} is a ${jose.calcAge()} old teacher, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
+    }
+};
 
 // console.log(jose.calcAge());
 
