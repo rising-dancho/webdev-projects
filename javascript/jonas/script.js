@@ -1,47 +1,21 @@
-const jonasArray = [
-    'Jonas',
-    'Schmedtmann',
-    2037-1992,
-    'teacher',
-    ['Micheal','Peter','Steven']
-];
+// CHALLENGE #3
+// Let's go back to Mark and John comparing their BMIs!
 
-const jose = {
-    firstName: 'Jose',
-    lastName: 'Perez',
-    age: 2024 - 1992,
-    job: 'student',
-    friends: ['n/a']
-};
+// This time, let's use objects to implement the calculations! Remember: BMI = mass / (height * height) (mass in kg and height in meters).
 
-// console.log(`${jose.firstName}
-// ${jose.lastName}
-// ${jose.age}
-// ${jose.job}
-// ${jose.friends}`);
+// Your tasks:
 
-// console.log(`${jose['firstName']}
-// ${jose['lastName']}
-// ${jose['age']}
-// ${jose['job']}
-// ${jose['friends']}`);
+// For each of them, create an object with properties for their full name, mass, and height (Mark Miller and John Smith). Name these objects as mark and john, and their properties exactly as fullName, mass and height.
 
-// const nameKey = 'Name';
-// console.log(`${jose['first' + nameKey]}`);
-// console.log(`${jose['last' + nameKey]}`);
+// Create a calcBMI method on each object to calculate the BMI (the same method on both objects). Assign the BMI value to a property, and also return it from the method.
 
-// const interestedIn = prompt(`What do you want to know about Jose?
-// Choose between firstName, lastName, age, job, and friends`);
+// Log to the console who has the higher BMI, together with the full name and the respective BMI. Example: "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!".
 
-// if(jonas[interestedIn]){
-//     console.log(jonas[interestedIn]);
-// }else {
-//     console.log(`Wrong entry! Please choose between firstName, lastName, age, job, and friends`);
-// }
-
-jose.location = 'Philippines';
-jose.sport = 'Mauy Thai';
+// TEST DATA: Marks weighs 78 kg and is 1.69 m tall. John weighs 92 kg and is 1.95 m tall.
 
 
-console.log(jose.location);
-console.log(jose.sport);
+
+// 👋 OPTIONAL: You can watch my solution in video format in the next lecture
+
+// IMPORTANT: The ** operator is not supported in this editor. Please make sure to use exactly this formula mass / (height * height), and not this one mass / (height ** 2).
+

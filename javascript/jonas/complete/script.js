@@ -1142,3 +1142,102 @@ TEST DATA: Test with different bill values: 275, 40, and 430
 
 
 // console.log(`The bill was ${bills[0]}, the tip was ${tips[0]}, and the total value ${bills[0] + tips[0]}`);
+
+
+// const jose = {
+//     firstName: 'Jose',
+//     lastName: 'Perez',
+//     age: 2024 - 1992,
+//     job: 'student',
+//     friends: ['n/a']
+// };
+
+// console.log(`${jose.firstName}
+// ${jose.lastName}
+// ${jose.age}
+// ${jose.job}
+// ${jose.friends}`);
+
+// console.log(`${jose['firstName']}
+// ${jose['lastName']}
+// ${jose['age']}
+// ${jose['job']}
+// ${jose['friends']}`);
+
+// const nameKey = 'Name';
+// console.log(`${jose['first' + nameKey]}`);
+// console.log(`${jose['last' + nameKey]}`);
+
+// const interestedIn = prompt(`What do you want to know about Jose?
+// Choose between firstName, lastName, age, job, and friends`);
+
+// if(jonas[interestedIn]){
+//     console.log(jonas[interestedIn]);
+// }else {
+//     console.log(`Wrong entry! Please choose between firstName, lastName, age, job, and friends`);
+// }
+
+// jose.location = 'Philippines';
+// jose.sport = 'Mauy Thai';
+
+
+// console.log(jose.location);
+// console.log(jose.sport);
+// console.log(jose);
+
+// const jonasArray = [
+//     'Jonas',
+//     'Schmedtmann',
+//     2037-1992,
+//     'teacher',
+//     ['Micheal','Peter','Steven']
+// ];
+
+// Challenge
+// "Jonas has 3 friends, and his best friend is called Micheal"
+// console.log(`${jonasArray[0]} has ${jonasArray[4].length} friends, and his best friend is ${jonasArray[4][0]}`);
+
+// const jose = {
+//     firstName: 'Jose',
+//     lastName: 'Perez',
+//     age: 2024 - 1992,
+//     job: 'student',
+//     friends: ['Micheal','Peter','Steven']
+// };
+
+// // Challenge
+// // "Jonas has 3 friends, and his best friend is called Micheal"
+// console.log(`${jose.firstName} has ${jose.friends.length} friends, and his bestfriend's name is  ${jose.friends[0]}`);
+
+
+// const jose = {
+//     firstName: 'Jose',
+//     lastName: 'Perez',
+//     birthYear: 1992,
+//     job: 'student',
+//     friends: ['Micheal', 'Peter', 'Steven'],
+//     hasDriversLicense: true,
+
+
+//     // calcAge: function (birthYear) {
+//     //     return 2024 - birthYear;
+//     // }
+//     // calcAge: function () {
+//     //     return 2024 - this.birthYear;
+//     // }
+//     calcAge: function () {
+//         this.age = 2024 - this.birthYear;
+//         return this.age;
+//     },
+
+//     getSummary: function () {
+//         return `${jose.firstName} is a ${jose.calcAge()} old teacher, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
+//     }
+// };
+
+// console.log(jose.calcAge());
+
+// // Challenge
+// // Jonas is a 46 years old teacher. and he has a driver's license
+
+// console.log(jose.getSummary());
