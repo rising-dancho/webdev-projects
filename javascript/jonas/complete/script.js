@@ -1314,7 +1314,12 @@ TEST DATA: Test with different bill values: 275, 40, and 430
 //   console.log(`Lifting weigt repetition ${rep}`);
 // }
 
-const jonas = [
+  
+  for (let i = 0; i < 5; i++) {
+    console.log(jonas[i]);
+  }
+  
+  const jonas = [
     'Jonas',
     'Schmedtmann',
     2037 - 1992,
@@ -1323,7 +1328,7 @@ const jonas = [
   ];
   
   
-  for (let i = 0; i < 5; i++) {
-    console.log(jonas[i]);
+  for (let i = 0; i < jonas.length; i++) {
+    console.log(jonas[i], typeof jonas[i]);
   }
   
