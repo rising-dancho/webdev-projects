@@ -1,11 +1,7 @@
-const jonas = [
-  'Jonas',
-  'Schmedtmann',
-  2037 - 1992,
-  'teacher',
-  ['Micheal', 'Peter', 'Steven']
-];
+for(let exercise = 1; exercise <= 3;exercise++){
+  console.log(`--------- Starting exercise ${exercise}`);
 
-for(let i = jonas.length -1; i >= 0; i--){
-console.log(jonas[i]);
+  for(let rep=1; rep<=5; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
+  }
 }
