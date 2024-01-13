@@ -1,7 +1,10 @@
-for(let exercise = 1; exercise <= 3;exercise++){
-  console.log(`--------- Starting exercise ${exercise}`);
-
-  for(let rep=1; rep<=5; rep++) {
-    console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
-  }
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weight repetition ${rep}`);
+}
+console.log(`
+`);
+let rep = 1;
+while (rep <= 10) {
+  console.log(`Lifting weight repetition ${rep}`);
+  rep++;
 }
