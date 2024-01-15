@@ -44,4 +44,4 @@ console.log(` average: ${calcAverage(totals)}`);
 
 
 
-
+console.log();
