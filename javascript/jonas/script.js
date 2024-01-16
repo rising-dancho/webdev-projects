@@ -27,7 +27,7 @@ console.log(
 function calcAverage(arr) {
     // This function calculates the average of all numbers in the given array.
     let sum = 0;
-    for (let i=0; i<arr.length;i++) {
+    for (let i = 0; i < arr.length; i++) {
         sum += arr[i];
     }
     console.log(` sum total: ${sum}`)
@@ -45,3 +45,5 @@ console.log(` average: ${calcAverage(totals)}`);
 
 
 console.log();
+
+// PROBLEM: 
