@@ -1437,8 +1437,6 @@ TEST DATA: Test with different bill values: 275, 40, and 430
 // // Call the function with the totals array.
 
 
-
-
 // Remember, we're gonna use strict mode in all scripts now!
 'use strict';
 
