@@ -12,7 +12,7 @@ function printForecast(arr) {
   let day = 1;
   let forecastOutput= [];
   console.log(`
--- Weather Forecast: --
+Weather Forecast: 
    `);
   for (let i = 0; i < arr.length; i++) {
     forecastOutput +=`... ${arr[i]}ºC in ${day} days `;
@@ -25,4 +25,4 @@ let tempData1 = [17, 21, 23];
 let tempData2 = [12, 5, -5, 0, 4];
 
 printForecast(tempData1);
-// printForecast(tempData2);
+printForecast(tempData2);
