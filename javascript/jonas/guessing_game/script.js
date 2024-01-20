@@ -29,10 +29,13 @@ const number = Math.floor((Math.random() * 20)) + 1;
 // ✅ change the highscore once game is over
 // ✅ check if the new score is higher than the old score
 // ✅ if new score is higher: replace the old highscore
-// ❌ save the highscore to local storage and readd the value on reload
+// ✅ save the highscore to local storage and readd the value on reload
+// ❌ check if the new score is higher than the high score in local storage if yes: replace
 
 let score = 20;
-let highscore = 0;
+let highscore = localStorage.getItem("highScore");
+
+console.log(localStorage.getItem("highScore"));
 if (!localStorage.getItem("highScore")) {
     populateStorage();
 } else {
@@ -95,6 +98,8 @@ document.querySelector('.check').addEventListener('click', function () {
         document.querySelector('body').style.backgroundColor = "#60B347";
         disableCheckButton();
         // updating the highscore
+        console.log(`current highscore: ${highscore}`);
+        console.log(`score: ${score}`);
         if (score > highscore) {
             highscore = document.querySelector('.highscore').textContent = score;
             localStorage.setItem("highScore", highscore);
