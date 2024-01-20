@@ -89,7 +89,7 @@ document.querySelector('.check').addEventListener('click', function () {
             if (score >= 0) document.querySelector('.score').textContent = --score;
             if (score === 0) {
                 document.querySelector('.message').textContent = '💥 You lost the game!';
-                document.querySelector('body').style.backgroundColor = "#f03e3e";
+                document.querySelector('body').style.backgroundColor = "#ff8787";
                 disableCheckButton();
             }
         }
