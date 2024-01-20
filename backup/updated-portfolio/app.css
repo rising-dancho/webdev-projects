@@ -149,7 +149,7 @@ h2 {
 main .portfolio .heading,
 main .portfolio .new,
 main .portfolio .archived {
-    font-size: .85rem;
+    font-size: .88rem;
     letter-spacing: 1.5px;
     color: var(--new-color);
     line-height: 1.4;
@@ -157,7 +157,7 @@ main .portfolio .archived {
 
 main .portfolio .heading {
     color: var(--heading-color);
-    font-size: 1.05rem;
+    font-size: 1rem;
 }
 
 main .portfolio .archived {
