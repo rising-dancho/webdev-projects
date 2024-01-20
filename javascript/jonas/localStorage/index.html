@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- label + input-field -->
+    <label>Value: <input type="text" id="userInput"></label>
+    <!-- button -->
+    <input type="button" id="setValue" value="Set">
+    <script>
+        (function () {
+            var input = document.getElementById("userInput");
+            // Reading the value, which was store as "theValue"
+            // (localStorage && 'userInput' in localStorage)
+            if ('userInput' in localStorage) {
+                input.value = localStorage.userInput;
+            }
+
+            document.getElementById("setValue").onclick = function () {
+                // Writing the value
+                // localStorage && (localStorage.userInput = input.value);
+                localStorage.userInput = input.value;
+            };
+        })();
+    </script>
+</body>
+
+</html>

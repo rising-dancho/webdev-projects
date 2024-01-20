@@ -25,7 +25,29 @@
 const number = Math.floor((Math.random() * 20)) + 1;
 // console.log(number);
 
+// ❌ How and when to change the high score?
+// ✅ change the highscore once game is over
+// ✅ check if the new score is higher than the old score
+// ✅ if new score is higher: replace the old highscore
+// ❌ save the highscore to local storage and readd the value on reload
+
 let score = 20;
+let highscore = 0;
+if (!localStorage.getItem("highScore")) {
+    populateStorage();
+} else {
+    setHighScore();
+}
+
+function populateStorage() {
+    localStorage.setItem("highScore", document.querySelector('.highscore').textContent);
+    setHighScore();
+}
+
+function setHighScore() {
+    const currentHighScore = localStorage.getItem("highScore");
+    document.querySelector('.highscore').textContent = currentHighScore;
+}
 
 function disableCheckButton() {
     document.querySelector(".check").disabled = true;
@@ -35,6 +57,8 @@ function disableCheckButton() {
 
 document.querySelector('.check').addEventListener('click', function () {
     const guess = Number(document.querySelector('.guess').value);
+
+
     document.querySelector('.number').textContent = guess;
     console.log(guess, typeof guess);
 
@@ -70,6 +94,12 @@ document.querySelector('.check').addEventListener('click', function () {
         document.querySelector('.message').textContent = '🎉 Correct Number!';
         document.querySelector('body').style.backgroundColor = "#60B347";
         disableCheckButton();
+        // updating the highscore
+        if (score > highscore) {
+            highscore = document.querySelector('.highscore').textContent = score;
+            localStorage.setItem("highScore", highscore);
+            console.log(`highscore: ${highscore}`);
+        }
     }
 });
 
