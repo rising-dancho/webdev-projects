@@ -15,11 +15,11 @@
 // TODO:
 // ✅ How to check the user's number against the random number?
 // ✅ how to get the random number compare with the number in the input field?
+// ✅ How to toggle between winner
+// ✅ press "Again" button: set to defualt: score, ?, input field, "Start guessing. . .", Background color #222
 // ❌ How and when to change the score?
 // ❌ How and when to change the high score?
-// ❌ How and when to show the winner?
 // ❌ How to implement the Responses after each number change?
-// ❌ How to reset the game after pressing "Again" button?
 
 
 const number = Math.floor((Math.random() * 20)) + 1;
@@ -38,8 +38,15 @@ document.querySelector('.check').addEventListener('click', function () {
         document.querySelector('.message').textContent = '📉 Too low!';
     } else if (guess === number) {
         document.querySelector('.message').textContent = '🎉 Correct Number!';
-
-        document.body.style.backgroundColor = "#60B347";
+        document.querySelector('body').style.backgroundColor = "#60B347";
     }
-
 });
+
+document.querySelector('.again').addEventListener('click', function () {
+    document.querySelector('.message').textContent = 'Start guessing. . .';
+    document.querySelector('body').style.backgroundColor = "#222";
+    document.querySelector('.guess').value = "";
+    document.querySelector('.number').textContent = "?";
+    document.querySelector('.score').textContent = "20";
+});
+
