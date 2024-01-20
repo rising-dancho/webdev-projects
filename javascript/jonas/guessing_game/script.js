@@ -25,6 +25,14 @@
 const number = Math.floor((Math.random() * 20)) + 1;
 // console.log(number);
 
+
+// ❌ How and when to change the score?
+// - score goes down with every wrong answer
+// - .score class is decremented
+// - if reached zero: 💥 You lost the game!
+// - how to decrement score upon wrong answer?
+let score = 19;
+
 document.querySelector('.check').addEventListener('click', function () {
     const guess = Number(document.querySelector('.guess').value);
     document.querySelector('.number').textContent = guess;
@@ -33,9 +41,27 @@ document.querySelector('.check').addEventListener('click', function () {
     if (!guess) {
         document.querySelector('.message').textContent = '⛔ No number!';
     } else if (guess > number) {
+        let inputField = document.querySelector('.number').value;
+        if (inputField !== '' && score !== 0) {
+            console.log(score--);
+            document.querySelector('score').textContent = score;
+        } else {
+            document.querySelector('.message').textContent = '💥 You lost the game!';
+            document.querySelector('body').style.backgroundColor = "#f03e3e";
+        }
         document.querySelector('.message').textContent = '📈 Too high!';
+
     } else if (guess < number) {
+        let inputField = document.querySelector('.number').value;
+        if (inputField !== '' && score !== 0) {
+            console.log(score--);
+            document.querySelector('score').textContent = score;
+        } else {
+            document.querySelector('.message').textContent = '💥 You lost the game!';
+            document.querySelector('body').style.backgroundColor = "#f03e3e";
+        }
         document.querySelector('.message').textContent = '📉 Too low!';
+
     } else if (guess === number) {
         document.querySelector('.message').textContent = '🎉 Correct Number!';
         document.querySelector('body').style.backgroundColor = "#60B347";
@@ -49,4 +75,3 @@ document.querySelector('.again').addEventListener('click', function () {
     document.querySelector('.number').textContent = "?";
     document.querySelector('.score').textContent = "20";
 });
-
