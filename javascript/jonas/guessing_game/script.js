@@ -19,35 +19,36 @@
 // ✅ How to toggle between winner
 // ✅ press "Again" button: set to defualt: score, ?, input field, "Start guessing. . .", Background color #222
 // ✅ How and when to change the score?
-// ❌ How and when to change the high score?
+// ✅ change the highscore once game is over
+// ✅ check if the new score is higher than the old score
+// ✅ if new score is higher: replace the old highscore
+// ✅ save the highscore to local storage and readd the value on reload
+// ✅ check if the new score is higher than the high score in local storage if yes: replace
 
 
 const number = Math.floor((Math.random() * 20)) + 1;
 // console.log(number);
 
-// ❌ How and when to change the high score?
-// ✅ change the highscore once game is over
-// ✅ check if the new score is higher than the old score
-// ✅ if new score is higher: replace the old highscore
-// ✅ save the highscore to local storage and readd the value on reload
-// ❌ check if the new score is higher than the high score in local storage if yes: replace
-
 let score = 20;
 let highscore = localStorage.getItem("highScore");
+console.log("what is this",!(localStorage.getItem("highScore")));
+console.log("value inside storage",localStorage.getItem("highScore"));
 
-console.log(localStorage.getItem("highScore"));
+// if there is no "highScore" stored value in storage: run populateStorage();
 if (!localStorage.getItem("highScore")) {
     populateStorage();
-} else {
+} 
+else {
     setHighScore();
 }
 
 function populateStorage() {
+    // get the text content of ".highscore" and save it into local storage with name/keyName "highScore"
     localStorage.setItem("highScore", document.querySelector('.highscore').textContent);
-    setHighScore();
 }
 
 function setHighScore() {
+    // get the highscore from storage and show it on the webpage
     const currentHighScore = localStorage.getItem("highScore");
     document.querySelector('.highscore').textContent = currentHighScore;
 }
