@@ -13,25 +13,25 @@
 
 //  BREAKING UP INTO SUB-PROBLEMS 
 // TODO:
+// ✅ How to implement the Responses after each number change?
 // ✅ How to check the user's number against the random number?
 // ✅ how to get the random number compare with the number in the input field?
 // ✅ How to toggle between winner
 // ✅ press "Again" button: set to defualt: score, ?, input field, "Start guessing. . .", Background color #222
-// ❌ How and when to change the score?
+// ✅ How and when to change the score?
 // ❌ How and when to change the high score?
-// ❌ How to implement the Responses after each number change?
 
 
 const number = Math.floor((Math.random() * 20)) + 1;
 // console.log(number);
 
+let score = 20;
 
-// ❌ How and when to change the score?
-// - score goes down with every wrong answer
-// - .score class is decremented
-// - if reached zero: 💥 You lost the game!
-// - how to decrement score upon wrong answer?
-let score = 19;
+function disableCheckButton() {
+    document.querySelector(".check").disabled = true;
+    document.querySelector(".check").style.backgroundColor = "#adb5bd";
+    document.querySelector(".check").style.cursor = "not-allowed";
+}
 
 document.querySelector('.check').addEventListener('click', function () {
     const guess = Number(document.querySelector('.guess').value);
@@ -40,38 +40,39 @@ document.querySelector('.check').addEventListener('click', function () {
 
     if (!guess) {
         document.querySelector('.message').textContent = '⛔ No number!';
-    } else if (guess > number) {
-        let inputField = document.querySelector('.number').value;
-        if (inputField !== '' && score !== 0) {
-            console.log(score--);
-            document.querySelector('score').textContent = score;
-        } else {
-            document.querySelector('.message').textContent = '💥 You lost the game!';
-            document.querySelector('body').style.backgroundColor = "#f03e3e";
-        }
+    }
+
+    if (guess > number) {
         document.querySelector('.message').textContent = '📈 Too high!';
-
-    } else if (guess < number) {
-        let inputField = document.querySelector('.number').value;
-        if (inputField !== '' && score !== 0) {
-            console.log(score--);
-            document.querySelector('score').textContent = score;
-        } else {
-            document.querySelector('.message').textContent = '💥 You lost the game!';
-            document.querySelector('body').style.backgroundColor = "#f03e3e";
+        if (document.querySelector('.number').value !== "") {
+            // console.log(--score);
+            if (score >= 0) document.querySelector('.score').textContent = --score;
+            if (score === 0) {
+                document.querySelector('.message').textContent = '💥 You lost the game!';
+                document.querySelector('body').style.backgroundColor = "#f03e3e";
+                disableCheckButton();
+            }
         }
+    }
+    if (guess < number) {
         document.querySelector('.message').textContent = '📉 Too low!';
-
-    } else if (guess === number) {
+        if (document.querySelector('.number').value !== "") {
+            // console.log(--score);
+            if (score >= 0) document.querySelector('.score').textContent = --score;
+            if (score === 0) {
+                document.querySelector('.message').textContent = '💥 You lost the game!';
+                document.querySelector('body').style.backgroundColor = "#f03e3e";
+                disableCheckButton();
+            }
+        }
+    }
+    if (guess === number) {
         document.querySelector('.message').textContent = '🎉 Correct Number!';
         document.querySelector('body').style.backgroundColor = "#60B347";
+        disableCheckButton();
     }
 });
 
 document.querySelector('.again').addEventListener('click', function () {
-    document.querySelector('.message').textContent = 'Start guessing. . .';
-    document.querySelector('body').style.backgroundColor = "#222";
-    document.querySelector('.guess').value = "";
-    document.querySelector('.number').textContent = "?";
-    document.querySelector('.score').textContent = "20";
+    location.reload();
 });
