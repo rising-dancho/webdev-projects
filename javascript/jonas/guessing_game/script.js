@@ -59,6 +59,10 @@ function disableCheckButton() {
     document.querySelector(".check").style.cursor = "not-allowed";
 }
 
+function displayMessage(message) {
+    document.querySelector('.message').textContent = message;
+}
+
 document.querySelector('.check').addEventListener('click', function () {
 
     const guess = Number(document.querySelector('.guess').value);
@@ -70,7 +74,7 @@ document.querySelector('.check').addEventListener('click', function () {
     }
 
     if (guess === secretNumber) {
-        document.querySelector('.message').textContent = '🎉 Correct Number!';
+        displayMessage('🎉 Correct Number!');
         document.querySelector('body').style.backgroundColor = "#60B347";
         document.querySelector('.number').style.width = "30rem";
         disableCheckButton();
@@ -86,47 +90,47 @@ document.querySelector('.check').addEventListener('click', function () {
 
     if (guess !== secretNumber) {
         // ternary
-        (guess > secretNumber) ? document.querySelector('.message').textContent = '📈 Too high!' :
-            document.querySelector('.message').textContent = '📉 Too low!';
-            
+        (guess > secretNumber) ? displayMessage('📈 Too high!') : displayMessage('📉 Too low!');
+
         if (document.querySelector('.number').value !== "") {
             // console.log(--score);
             if (score >= 0) document.querySelector('.score').textContent = --score;
             if (score === 0) {
-                document.querySelector('.message').textContent = '💥 You lost the game!';
+                displayMessage('💥 You lost the game!');
                 document.querySelector('body').style.backgroundColor = "#ff8787";
                 disableCheckButton();
             }
         }
     }
-
-    // REFERENCE FOR THE TERNARY:
-    // if (guess > secretNumber) {
-    //     document.querySelector('.message').textContent = '📈 Too high!';
-    //     if (document.querySelector('.number').value !== "") {
-    //         // console.log(--score);
-    //         if (score >= 0) document.querySelector('.score').textContent = --score;
-    //         if (score === 0) {
-    //             document.querySelector('.message').textContent = '💥 You lost the game!';
-    //             document.querySelector('body').style.backgroundColor = "#f03e3e";
-    //             disableCheckButton();
-    //         }
-    //     }
-    // }
-    // if (guess < secretNumber) {
-    //     document.querySelector('.message').textContent = '📉 Too low!';
-    //     if (document.querySelector('.number').value !== "") {
-    //         // console.log(--score);
-    //         if (score >= 0) document.querySelector('.score').textContent = --score;
-    //         if (score === 0) {
-    //             document.querySelector('.message').textContent = '💥 You lost the game!';
-    //             document.querySelector('body').style.backgroundColor = "#ff8787";
-    //             disableCheckButton();
-    //         }
-    //     }
-    // }
 });
 
 document.querySelector('.again').addEventListener('click', function () {
     location.reload();
 });
+
+
+// REFERENCE FOR THE TERNARY:
+// if (guess > secretNumber) {
+//     document.querySelector('.message').textContent = '📈 Too high!';
+//     if (document.querySelector('.number').value !== "") {
+//         // console.log(--score);
+//         if (score >= 0) document.querySelector('.score').textContent = --score;
+//         if (score === 0) {
+//             document.querySelector('.message').textContent = '💥 You lost the game!';
+//             document.querySelector('body').style.backgroundColor = "#ff8787";
+//             disableCheckButton();
+//         }
+//     }
+// }
+// if (guess < secretNumber) {
+//     document.querySelector('.message').textContent = '📉 Too low!';
+//     if (document.querySelector('.number').value !== "") {
+//         // console.log(--score);
+//         if (score >= 0) document.querySelector('.score').textContent = --score;
+//         if (score === 0) {
+//             document.querySelector('.message').textContent = '💥 You lost the game!';
+//             document.querySelector('body').style.backgroundColor = "#ff8787";
+//             disableCheckButton();
+//         }
+//     }
+// }
