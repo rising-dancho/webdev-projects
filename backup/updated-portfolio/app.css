@@ -158,6 +158,11 @@ main .portfolio .archived {
     line-height: 1.4;
 }
 
+main .portfolio .new,
+main .portfolio .archived {
+    margin-top: 2.25em !important;
+}
+
 main .portfolio .heading-html-css {
     color: var(--heading-html-color);
     font-size: 1rem;
