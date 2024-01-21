@@ -15,10 +15,12 @@
 
 
     /* alerts */
-    --new-color: #fdf9fd;
-    --heading-color: #10b981;
-    --heading-color-hover: #10b981;
-    --archived-color: #fdf9fd;
+    --new-color: #d8d7d8;
+    --heading-javascript-color: #00aaff;
+    --heading-javascript-color-hover: #00aaff;
+    --heading-html-color: #00aaff;
+    --heading-html-color-hover: #00aaff;
+    --archived-color: #d8d7d8;
 
     /* scroll bar */
     --lighter-color-scollbar: #A9A9A9;
@@ -130,7 +132,7 @@ main .fun-facts h2 {
 }
 
 h3 {
-    margin-top: 1em;
+    margin-top: 2em;
     margin-bottom: 0.3em;
 }
 
@@ -146,7 +148,8 @@ h2 {
     letter-spacing: -1px;
 }
 
-main .portfolio .heading,
+main .portfolio .heading-javascript,
+main .portfolio .heading-html-css,
 main .portfolio .new,
 main .portfolio .archived {
     font-size: .88rem;
@@ -155,8 +158,12 @@ main .portfolio .archived {
     line-height: 1.4;
 }
 
-main .portfolio .heading {
-    color: var(--heading-color);
+main .portfolio .heading-html-css {
+    color: var(--heading-html-color);
+    font-size: 1rem;
+}
+main .portfolio .heading-javascript {
+    color: var(--heading-javascript-color);
     font-size: 1rem;
 }
 
@@ -182,7 +189,8 @@ main .contact button {
     font-size: 1.1rem;
 }
 
-main .portfolio-link,
+main .portfolio-link-html,
+main .portfolio-link-javascript,
 main .portfolio-link-archived {
     font-size: 1rem;
 }
@@ -212,7 +220,8 @@ p {
     font-weight: 400;
 }
 
-.portfolio-link,
+.portfolio-link-html,
+.portfolio-link-javascript,
 .portfolio-link-archived {
     font-weight: 600;
 }
@@ -406,24 +415,37 @@ main .portfolio .links-container-archived {
 }
 
 /* LVHA */
-main .portfolio-link {
+main .portfolio-link-html,
+main .portfolio-link-javascript
+ {
     text-decoration: none;
     color: var(--lesser-white-text);
     transition: all .1s;
 }
 
-main .portfolio-link:visited {
+main .portfolio-link-html:visited,
+main .portfolio-link-javascript:visited {
     color: var(--lesser-white-text);
 }
 
-main .portfolio-link:hover {
-    color: var(--heading-color-hover);
-    text-shadow: 0px 0px 18px var(--heading-color-hover);
+main .portfolio-link-html:hover {
+    color: var(--heading-html-color-hover);
+    text-shadow: 0px 0px 18px var(--heading-html-color-hover);
 }
 
-main .portfolio-link:active {
-    color: var(--heading-color-hover);
-    text-shadow: 0px 0px 18px var(--heading-color-hover);
+main .portfolio-link-html:active {
+    color: var(--heading-html-color-hover);
+    text-shadow: 0px 0px 18px var(--heading-html-color-hover);
+}
+
+main .portfolio-link-javascript:hover {
+    color: var(--heading-javascript-color-hover);
+    text-shadow: 0px 0px 18px var(--heading-javascript-color-hover);
+}
+
+main .portfolio-link-javascript:active {
+    color: var(--heading-javascript-color-hover);
+    text-shadow: 0px 0px 18px var(--heading-javascript-color-hover);
 }
 
 /* archived links */
