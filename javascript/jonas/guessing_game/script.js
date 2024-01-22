@@ -66,14 +66,11 @@ function displayMessage(message) {
 document.querySelector('.check').addEventListener('click', function () {
 
     const guess = Number(document.querySelector('.guess').value);
-    document.querySelector('.number').textContent = guess;
-    console.log(guess, typeof guess);
+    // console.log(guess, typeof guess);
 
     if (!guess) {
-        document.querySelector('.message').textContent = '⛔ No number!';
-    }
-
-    if (guess === secretNumber) {
+        displayMessage('⛔ No number!');
+    } else if (guess === secretNumber) {
         displayMessage('🎉 Correct Number!');
         document.querySelector('body').style.backgroundColor = "#60B347";
         document.querySelector('.number').style.width = "30rem";
@@ -84,22 +81,17 @@ document.querySelector('.check').addEventListener('click', function () {
         if (score > highscore) {
             highscore = document.querySelector('.highscore').textContent = score;
             localStorage.setItem("highScore", highscore);
-            console.log(`highscore: ${highscore}`);
+            // console.log(`highscore: ${highscore}`);
         }
-    }
-
-    if (guess !== secretNumber) {
-        // ternary
-        (guess > secretNumber) ? displayMessage('📈 Too high!') : displayMessage('📉 Too low!');
-
-        if (document.querySelector('.number').value !== "") {
-            // console.log(--score);
-            if (score >= 0) document.querySelector('.score').textContent = --score;
-            if (score === 0) {
-                displayMessage('💥 You lost the game!');
-                document.querySelector('body').style.backgroundColor = "#ff8787";
-                disableCheckButton();
-            }
+    } else if (guess !== secretNumber) {
+        if (score > 1) {
+            // ternary
+            displayMessage(guess > secretNumber ? '📈 Too high!' : '📉 Too low!');
+            score--;
+            document.querySelector('.score').textContent = score;
+        } else {
+            displayMessage('💥 You lost the game!');
+            document.querySelector('.score').textContent = 0;
         }
     }
 });
