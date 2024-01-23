@@ -29,6 +29,13 @@
 const secretNumber = Math.floor((Math.random() * 20)) + 1;
 // console.log(number);
 
+const highscoreUI = document.querySelector('.highscore');
+const checkUI = document.querySelector('.check');
+const messageUI = document.querySelector('.message');
+const scoreUI = document.querySelector('.score');
+const numberUI = document.querySelector('.number');
+const bodyUI = document.querySelector('body');
+
 let score = 20;
 let highscore = localStorage.getItem("highScore");
 console.log("what is this", !(localStorage.getItem("highScore")));
@@ -44,42 +51,43 @@ else {
 
 function populateStorage() {
     // get the text content of ".highscore" and save it into local storage with name/keyName "highScore"
-    localStorage.setItem("highScore", document.querySelector('.highscore').textContent);
+    localStorage.setItem("highScore", highscoreUI.textContent);
 }
 
 function setHighScore() {
     // get the highscore from storage and show it on the webpage
     const currentHighScore = localStorage.getItem("highScore");
-    document.querySelector('.highscore').textContent = currentHighScore;
+    highscoreUI.textContent = currentHighScore;
 }
 
 function disableCheckButton() {
-    document.querySelector(".check").disabled = true;
-    document.querySelector(".check").style.backgroundColor = "#adb5bd";
-    document.querySelector(".check").style.cursor = "not-allowed";
+    checkUI.disabled = true;
+    checkUI.style.backgroundColor = "#adb5bd";
+    checkUI.style.cursor = "not-allowed";
 }
 
 function displayMessage(message) {
-    document.querySelector('.message').textContent = message;
+    messageUI.textContent = message;
 }
 
 document.querySelector('.check').addEventListener('click', function () {
 
     const guess = Number(document.querySelector('.guess').value);
+    numberUI.textContent = guess;
     // console.log(guess, typeof guess);
 
     if (!guess) {
         displayMessage('⛔ No number!');
     } else if (guess === secretNumber) {
         displayMessage('🎉 Correct Number!');
-        document.querySelector('body').style.backgroundColor = "#60B347";
-        document.querySelector('.number').style.width = "30rem";
+        bodyUI.style.backgroundColor = "#60B347";
+        numberUI.style.width = "30rem";
         disableCheckButton();
         // updating the highscore
-        console.log(`current highscore: ${highscore}`);
-        console.log(`score: ${score}`);
+        // console.log(`current highscore: ${highscore}`);
+        // console.log(`score: ${score}`);
         if (score > highscore) {
-            highscore = document.querySelector('.highscore').textContent = score;
+            highscore = highscoreUI.textContent = score;
             localStorage.setItem("highScore", highscore);
             // console.log(`highscore: ${highscore}`);
         }
@@ -87,11 +95,12 @@ document.querySelector('.check').addEventListener('click', function () {
         if (score > 1) {
             // ternary
             displayMessage(guess > secretNumber ? '📈 Too high!' : '📉 Too low!');
-            score--;
-            document.querySelector('.score').textContent = score;
+            if (score >= 0) scoreUI.textContent = --score;
         } else {
             displayMessage('💥 You lost the game!');
-            document.querySelector('.score').textContent = 0;
+            scoreUI.textContent = 0;
+            document.querySelector('body').style.backgroundColor = "#ff8787";
+            disableCheckButton();
         }
     }
 });
