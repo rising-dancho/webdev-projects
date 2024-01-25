@@ -13,43 +13,13 @@ const btnRollElmnt = document.querySelector('.btn--roll');
 const btnNewGameElmnt = document.querySelector('.btn--new');
 const btnHoldElmnt = document.querySelector('.btn--hold');
 
-let currenteScore = 0;
-btnRollElmnt.addEventListener('click', function () {
-  let diceRoll = Math.floor(Math.random() * 6) + 1;
-  currentScore1Elmnt.textContent = currenteScore += diceRoll;
-  // console.log(diceRoll);
 
-  switch (diceRoll) {
-    case 1:
-      currenteScore = 0;
-      currentScore1Elmnt.textContent = currenteScore;
-      document.querySelector(".dice").setAttribute("src", './img/dice-1.png');
-      break;
-    case 2:
-      document.querySelector(".dice").setAttribute("src", './img/dice-2.png');
-      break;
-    case 3:
-      document.querySelector(".dice").setAttribute("src", './img/dice-3.png');
-      break;
-    case 4:
-      document.querySelector(".dice").setAttribute("src", './img/dice-4.png');
-      break;
-    case 5:
-      document.querySelector(".dice").setAttribute("src", './img/dice-5.png');
-      break;
-    case 6:
-      document.querySelector(".dice").setAttribute("src", './img/dice-6.png');
-      break;
-    default:
-      console.log("error");
-  }
-});
 
 btnNewGameElmnt.addEventListener('click', function () {
   location.reload();
 });
 
-
+let currenteScore = 0;
 let activePlayer = true;
 let player1Score = 0;
 let player2Score = 0;
@@ -78,6 +48,37 @@ btnHoldElmnt.addEventListener('click', function () {
     score0Elmnt.textContent = player2Score;
     currentScore1Elmnt.textContent = 0;
     activePlayer = false;
+  }
+});
+
+btnRollElmnt.addEventListener('click', function () {
+  let diceRoll = Math.floor(Math.random() * 6) + 1;
+  currentScore1Elmnt.textContent = currenteScore += diceRoll;
+  // console.log(diceRoll);
+
+  switch (diceRoll) {
+    case 1:
+      currenteScore = 0;
+      currentScore1Elmnt.textContent = currenteScore;
+      document.querySelector(".dice").setAttribute("src", './img/dice-1.png');
+      break;
+    case 2:
+      document.querySelector(".dice").setAttribute("src", './img/dice-2.png');
+      break;
+    case 3:
+      document.querySelector(".dice").setAttribute("src", './img/dice-3.png');
+      break;
+    case 4:
+      document.querySelector(".dice").setAttribute("src", './img/dice-4.png');
+      break;
+    case 5:
+      document.querySelector(".dice").setAttribute("src", './img/dice-5.png');
+      break;
+    case 6:
+      document.querySelector(".dice").setAttribute("src", './img/dice-6.png');
+      break;
+    default:
+      console.log("error");
   }
 });
 
