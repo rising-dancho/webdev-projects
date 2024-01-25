@@ -3,6 +3,9 @@
 // Selecting elements
 const score0Elmnt = document.getElementById('score--0');
 const score1Elmnt = document.getElementById('score--1');
+const activePlayer1Elmnt = document.querySelector('.player--0');
+const activePlayer2Elmnt = document.querySelector('.player--1');
+
 const currentScore1Elmnt = document.querySelector('#current--0');
 const currentScore2Elmnt = document.querySelector('#current--1');
 const btnRollElmnt = document.querySelector('.btn--roll');
@@ -51,5 +54,12 @@ btnNewGameElmnt.addEventListener('click', function () {
 btnHoldElmnt.addEventListener('click', function () {
   score0Elmnt.textContent = currenteScore;
   currentScore1Elmnt.textContent = 0;
+  activePlayer1Elmnt.classList.remove('player--active');
+  activePlayer2Elmnt.classList.add('player--active');
   // console.log(score0Elmnt);
 });
+
+// const openModal = function () {
+//   modal.classList.remove('hidden');
+//   overlay.classList.remove('hidden');
+// }
