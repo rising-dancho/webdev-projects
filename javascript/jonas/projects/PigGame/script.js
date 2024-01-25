@@ -16,6 +16,8 @@ btnRollElmnt.addEventListener('click', function () {
     let diceRoll = Math.floor(Math.random() * 6) + 1;
     currentScore1Elmnt.textContent = currenteScore += diceRoll;
     console.log(diceRoll);
+
+    document.querySelector(".dice").setAttribute("src", './img/dice-6.png');
 });
 
 
@@ -23,3 +25,4 @@ btnRollElmnt.addEventListener('click', function () {
 btnNewGame.addEventListener('click', function () {
     location.reload();
 });
+
