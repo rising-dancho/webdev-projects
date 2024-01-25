@@ -12,12 +12,12 @@ let player1Score = 0;
 let player2Score = 0;
 
 let currenteScore = 0;
-let diceRoll = Math.floor(Math.random() * 7);
-
 btnRollElmnt.addEventListener('click', function () {
-    currenteScore += diceRoll;
-    currentScore1Elmnt.textContent = currenteScore;
+    let diceRoll = Math.floor(Math.random() * 6) + 1;
+    currentScore1Elmnt.textContent = currenteScore += diceRoll;
+    console.log(diceRoll);
 });
+
 
 
 btnNewGame.addEventListener('click', function () {
