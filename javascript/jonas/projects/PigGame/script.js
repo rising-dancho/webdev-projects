@@ -55,7 +55,6 @@ btnRollElmnt.addEventListener('click', function () {
 
   switch (diceRoll) {
     case 1:
-      // currenteScore = 0;
       if (player1Active === false) {
         // PLAYER 1
         currentScore1 = 0;
