@@ -20,6 +20,8 @@ let currentScore1 = 0;
 let currentScore2 = 0;
 
 let activePlayer = true;
+let activePlayer1 = true;
+let activePlayer2 = true;
 
 function deactivatePlayer1() {
   activePlayer1Elmnt.classList.remove('player--active');
@@ -37,21 +39,16 @@ function deactivatePlayer2() {
   activePlayer = true;
 }
 
-let untilHoldPressed = true;
+let scoreApplied = true;
+
 // DICE ROLL
 btnRollElmnt.addEventListener('click', function () {
   let diceRoll = Math.floor(Math.random() * 6) + 1;
   if (activePlayer === true) {
-    // deactivating PLAYER 1
-    deactivatePlayer1()
-    // PLAYER 2 is active:
     currentScore2Elmnt.textContent = currentScore2 += diceRoll;
     player2Score = currentScore2;
     activePlayer = false;
   } else {
-    // deactivating PLAYER 2
-    deactivatePlayer2()
-    // PLAYER 1 is active:
     currentScore1Elmnt.textContent = currentScore1 += diceRoll;
     player1Score = currentScore1;
     activePlayer = true;
@@ -59,16 +56,16 @@ btnRollElmnt.addEventListener('click', function () {
 
   switch (diceRoll) {
     case 1:
-      // // currenteScore = 0;
-      // if (activePlayer === true) {
-      //   // PLAYER 1
-      //   currentScore1Elmnt.textContent = currentScore1;
-      //   activePlayer = true;
-      // } else {
-      //   // PLAYER 2
-      //   currentScore2Elmnt.textContent = currentScore2;
-      //   activePlayer = false;
-      // }
+      // currenteScore = 0;
+      if (activePlayer === true) {
+        // PLAYER 1
+        currentScore1Elmnt.textContent = currentScore1;
+        activePlayer = true;
+      } else {
+        // PLAYER 2
+        currentScore2Elmnt.textContent = currentScore2;
+        activePlayer = false;
+      }
 
       document.querySelector(".dice").setAttribute("src", './img/dice-1.png');
       break;
