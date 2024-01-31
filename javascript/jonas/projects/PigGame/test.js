@@ -22,5 +22,9 @@ btnRollElmnt.addEventListener('click', function () {
     diceElmnt.classList.remove('hidden');
     diceElmnt.src = `./img/dice-${dice}.png`
     // Check for rolled 1: if true, to next player
-       
+    if (dice !== 1){
+
+    }else {
+        
+    }
 });
