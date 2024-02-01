@@ -29,7 +29,7 @@ btnRollElmnt.addEventListener('click', function () {
     if (dice !== 1){
         // add dice to current score
         currentScore += dice;
-        currentScore0Elmnt.textContent = currentScore;
+        currentScore0Elmnt.textContent = currentScore; //CHANGE LATER
     }else {
     // if true, switch to next player
         
