@@ -25,11 +25,13 @@ body {
 h1 {
   font-size: 25px;
   color: var(--txt-dark-blue);
-  margin-bottom: 25px;
 }
 
 .text-container {
   margin: 25px 10px 25px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .text-instruction,
