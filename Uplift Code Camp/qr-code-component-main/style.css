@@ -1,0 +1,77 @@
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+:root {
+  --bg-white: #ffffff;
+  --bg-light-gray: #d6e2f0;
+  --txt-grayish-blue: #7b879d;
+  --txt-dark-blue: #1f3251;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #d5e1ef;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: var(--txt-dark-blue);
+  margin-bottom: 25px;
+}
+
+.text-container {
+    margin: 25px 0 25px 0;
+}
+
+.text-instruction,
+.attribution {
+  color: var(--txt-grayish-blue);
+}
+
+h1,
+.text-instruction,
+.attribution {
+  text-align: center;
+}
+
+.qr-code {
+  width: 360px;
+  height: 360px;
+  border-radius: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  background-color: #ffffff;
+  width: 400px;
+  /* height: 600px; */
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+
+/* yung leetcode may feeling ako na kasama sa challenge yung instruction haha. ang hirap intindihin parang hindi nageenlish eh. pero nkagawa ako ng isa. */
