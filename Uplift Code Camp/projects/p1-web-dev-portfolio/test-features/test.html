@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Change Image on Hover in CSS</title>
+  <style>
+    .card {
+      width: 130px;
+      height: 195px;
+      background: url("./card-back.jpg") no-repeat;
+      margin: 50px;
+    }
+
+    .card:hover {
+      background: url("./card-front.jpg") no-repeat;
+    }
+
+    body {
+      min-height: 1000px;
+      font-family: sans-serif;
+    }
+
+    div#container {
+      height: 300px;
+      width: 300px;
+      overflow: scroll;
+      border-radius: 5px;
+      margin: 10px;
+      border: 1px solid #AAAAAA;
+    }
+
+    div#content {
+      height: 1000px;
+      outline: none;
+      padding: 10px;
+    }
+
+    ::-webkit-scrollbar {
+      width: 15px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border: 4px solid rgba(0, 0, 0, 0);
+      background-clip: padding-box;
+      border-radius: 9999px;
+      background-color: #AAAAAA;
+    }
+
+    /* 
+    scrollbar: https://stackoverflow.com/questions/21684101/css-vertical-scrollbar-padding-left-right-in-ul-possible 
+    hover: https://www.tutorialrepublic.com/codelab.php?topic=faq&file=changing-image-on-hover-with-css
+    */
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="content">
+      <div class="card"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,20 +1,21 @@
 console.log(100);
+console.log('Henlo World');
+console.log(20, "hello", true);
 
-console.log('hello, world');
-console.log(20, 'hello', false);
+
 const x = 100;
 console.log(x);
 
-console.table({
-    name: 'adfinem', email: 'josealejoperezjr@gmail.com'
-});
+console.error('Welp! dat\'s an error');
+console.warn('Zap dawg!!');
+console.table({name: 'Jose', email: 'jose@gmail.com'});
 
-console.group('simple');
-console.log(x + 2);
-console.error('Alert');
-console.warn('Warning');
+
+console.group('Grouped Content:');
+console.error('Welp! dat\'s an error');
+console.warn('Zap dawg!!');
 console.groupEnd();
 
-const styles = 'margin: 20px; padding:20px; background-color: skyblue; color: black; border-radius: 4px; font-weight: bold;';
+const styles = 'padding: 10px; background-color: white; color: green';
 
-console.log('%cadfinem', styles);
+console.log('%cHello World', styles);

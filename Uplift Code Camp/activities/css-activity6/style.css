@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex-item {
+  /** Add your styles */
+  background-color: #007acc;
+  padding: 50px;
+  border-radius: 10px;
+  border: 3px solid #005b91;
+  font-size: 30px;
+}
+
+header {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 85vh;
+}

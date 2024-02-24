@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/** ☝️ Start by reset any padding and margin */
+
+/** ✅ All device styles STARTS here */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+  background-color: #333333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+  color: red;
+}
+
+main {
+  display: flex;
+}
+
+/** ❌ All device styles ENDS here */
+
+@media (width > 769px) {
+  /** ✅ All desktop specific styles STARTS here ✅ */
+  h2 {
+    color: red;
+  }
+
+  /** ❌ All desktop specific styles ENDS here ❌ */
+}
