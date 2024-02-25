@@ -1,5 +1,5 @@
 /*  ===============
-    Primitive Data Types 
+    PRIMITIVE DATA TYPES 
 ===================
 */
 
@@ -25,13 +25,24 @@ const id = Symbol('id');
 // BigInt
 const n = 23145353n;
 
-let output = n;
-
-
 /*  ===============
-    Reference Types 
+    REFERENCE TYPES : any reference type is an object
 ===================
 */
 
+// Array
+const numbers = [1, 2, 3, 4];
+
+// Object
+const person = {
+    name: "adfinem"
+}
+
+// Function
+function hello(){
+    console.log("hello");
+}
+
+let output = hello;
 
 console.log(output, typeof output);
