@@ -19,8 +19,7 @@ function hideName(name) {
     //   replace on specific index: https://bobbyhadz.com/blog/javascript-string-replace-character-at-index
     //   replace: https://bobbyhadz.com/blog/javascript-remove-first-and-last-character-from-string
     //   split: https://bobbyhadz.com/blog/javascript-get-first-word-of-string
-  }
-  
+  }  
   
   
   hideName('Anonas Mayaman');
@@ -65,6 +64,7 @@ function hideName(name) {
   regex = /(\w+\-?_?\w+)\.mp3/g;
   match = regex.exec(testString);
   
+
   while(match){
     const filename = match[1];
     console.log(filename);
