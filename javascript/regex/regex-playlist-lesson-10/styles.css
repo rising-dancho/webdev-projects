@@ -24,10 +24,26 @@ input{
 }
 
 
-.valid {
-    border-color: green;
+input.valid {
+    border-color: rgba(62, 194, 62, 0.753);
 }
 
-.invalid{
-    border-color: red;
+input.invalid{
+    border-color: rgba(201, 53, 53, 0.753);
+}
+
+input + p {
+    font-family: inherit;
+    font-size:0.9em;
+    font-weight:600;
+    /* text-align: center; */
+    margin: 0 10px;
+    color: rgba(201, 53, 53, 0.753);
+    opacity: 0;
+    height: 0;
+}
+
+input.invalid + p{
+    opacity: 1;
+    height: fit-content;
 }
