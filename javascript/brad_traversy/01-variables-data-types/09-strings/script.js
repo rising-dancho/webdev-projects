@@ -21,15 +21,14 @@ x = s.__proto__;
 
 x = s.toUpperCase();
 x = s.toLowerCase();
-
 x = s.charAt(0);
 
 x = s.indexOf('e');
-
 x = s.substring(1, 5);
 x = s.slice(-10);
 
 x = s.replace('Hell', 'Heaven');
 
 console.log(x);
+
 

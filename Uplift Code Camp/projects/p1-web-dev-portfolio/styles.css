@@ -488,7 +488,7 @@ main .preview {
   object-fit: contain;
 }
 
-main .project-price {
+main .project-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -694,7 +694,7 @@ footer a:active {
   a.anchor {
     display: block;
     position: relative;
-    top: 770px;
+    top: 1205px;
     visibility: hidden;
   }
 
@@ -747,6 +747,26 @@ footer a:active {
 }
 
 /* /* ------------------------ */
+/* BELOW 900px */
+/* --------------------------- */
+
+@media only screen and (max-width: 980px) {
+  a.anchor {
+    top: 1105px;
+  }
+}
+
+/* /* ------------------------ */
+/* BELOW 800px */
+/* --------------------------- */
+
+@media only screen and (max-width: 800px) {
+  a.anchor {
+    top: 1000px;
+  }
+}
+
+/* /* ------------------------ */
 /* BELOW 702px */
 /* --------------------------- */
 
@@ -759,6 +779,10 @@ footer a:active {
 
   .project-box {
     text-align: center;
+  }
+
+  a.anchor {
+    top: 895px;
   }
 
   /* .project-details li {
@@ -777,6 +801,26 @@ footer a:active {
 }
 
 /* /* ------------------------ */
+/* BELOW 600px */
+/* --------------------------- */
+
+@media only screen and (max-width: 600px) {
+  a.anchor {
+    top: 785px;
+  }
+}
+
+/* /* ------------------------ */
+/* BELOW 500px */
+/* --------------------------- */
+
+@media only screen and (max-width: 500px) {
+  a.anchor {
+    top: 775px;
+  }
+}
+
+/* /* ------------------------ */
 /* BELOW 470px */
 /* --------------------------- */
 
@@ -784,6 +828,10 @@ footer a:active {
   .grid-3-cols {
     grid-template-columns: repeat(1, 1fr);
     margin: auto 0;
+  }
+
+  a.anchor {
+    top: 755px;
   }
 }
 
@@ -799,6 +847,10 @@ footer a:active {
 
   h1 {
     font-size: var(--fs-24);
+  }
+
+  a.anchor {
+    top: 765px;
   }
 }
 
