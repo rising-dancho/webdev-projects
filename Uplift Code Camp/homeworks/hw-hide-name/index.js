@@ -1,43 +1,40 @@
 /* HELPER FUNCTIONS */
-function createStars(stars) {
-  console.log(stars);
+function createStars(starsLength) {
+  // console.log(starsLength);
   let result = '';
-  for (let i = 0; i < stars; i++) {
+  for (let i = 0; i < starsLength; i++) {
     result += '*';
-    console.log(result);
+    // console.log(result);
   }
   return result;
 }
 
 function hideFirstName(name) {
   let nameArray = name.split(',');
-  console.log(nameArray, typeof nameArray, String(nameArray.length));
+  // console.log(nameArray, typeof nameArray, String(nameArray.length));
 
   let replaceWithStars = '';
   if (nameArray.length > 1) {
-    console.log('GREATER THAN 1');
+    // looping through the first names
     for (let i = 0; i < nameArray.length; i++) {
       if (nameArray.length > 1) {
-        // console.log(nameArray[i]);
-        console.log(nameArray[i].slice(2));
-        // getting the characters to be replaced
-        let nameSliced = nameArray[i].slice(2);
-        console.log(nameSliced);
-        // create stars to cover slice length
+        // extracting the characters to be replaced
+        let nameSliced = nameArray[i].slice(2, nameArray[i].length - 1);
+        // console.log(nameSliced);
         let sliceLength = nameSliced.length;
         let stars = createStars(sliceLength);
-        // replace sliced characters with **
-        replaceWithStars = name.replace(nameSliced, stars);
+        // console.log(nameArray[i]);
+        // replaced extracted target characters with stars. and then populated the result per iteration to the replaceWithStars variable
+        replaceWithStars += nameArray[i].replace(nameSliced, stars).concat(' ');
 
         // result:
-        console.log(replaceWithStars);
+        // console.log(replaceWithStars);
       }
     }
   } else {
-    console.log('it works!');
     // getting the characters to be replaced
     let nameSliced = name.slice(2, name.length - 1);
-    console.log(nameSliced);
+    // console.log(nameSliced);
     // create stars to cover slice length
     let sliceLength = nameSliced.length;
     let stars = createStars(sliceLength);
@@ -45,46 +42,63 @@ function hideFirstName(name) {
     replaceWithStars = name.replace(nameSliced, stars);
 
     // result:
-    console.log(replaceWithStars);
+    // console.log(replaceWithStars);
   }
-
   return replaceWithStars;
 }
 
 function hideLastName(name) {
   // getting the characters to be replaced
   let getAllCharsAfterInitialLetter = name.slice(1);
-  console.log(getAllCharsAfterInitialLetter);
+  // console.log(getAllCharsAfterInitialLetter);
   // replace sliced characters with .
   let replaceWithDot = name.replace(getAllCharsAfterInitialLetter, '.');
 
   // result:
-  console.log(replaceWithDot);
+  // console.log(replaceWithDot);
   return replaceWithDot;
 }
 
 /* MAIN FUNCTION */
 function hideName(name) {
-  // split the string to get the firstName
-  let nameArray = name.split(' ');
-  // let firstName = nameArray[0];
-  let firstName = String(nameArray.slice(0, -1));
-  console.log(firstName);
+  // checks if there are numbers or special characters existing except period
+  const regexNumbersOrOthersExists =
+    /[\d_\^~!@#\$%&*\(\)+\-)`={}\\\|;:'"?/>,<\[\]]+/g;
+  //checks for 1 letter name: if true, reject
+  const regex1LetterNameNotAllowed = /^[a-z]{2,}$/i;
 
-  // split the string to get the lastName
-  nameArray = name.split(' ');
-  // let lastName = nameArray[nameArray.length-1];
-  let lastName = String(nameArray.slice(-1));
-  console.log(lastName, typeof lastName);
+  let result = '';
+  if (
+    regexNumbersOrOthersExists.test(name) ||
+    regex1LetterNameNotAllowed.test(name)
+  ) {
+    result = 'Input provided is not a valid name';
+  } else {
+    // split the string to get the firstName
+    let nameArray = name.split(' ');
+    let firstName = String(nameArray.slice(0, -1));
+    // console.log(firstName);
 
-  return `${hideFirstName(firstName.toUpperCase())} ${hideLastName(
-    lastName.toUpperCase()
-  )}`;
+    // split the string to get the lastName
+    // taking the very last word in the string: slice(-1)
+    let lastName = String(nameArray.slice(-1));
+    // console.log(lastName);
+
+    result = `${hideFirstName(firstName.toUpperCase())} ${hideLastName(
+      lastName.toUpperCase()
+    )}`;
+  }
+
+  return console.log(result);
 }
 
-console.log(hideName('Anonas Mayaman'));
-console.log(hideName('catalina Bongga'));
-console.log(hideName('Maria Josefina Alvarez'));
+hideName('Anonas Mayaman');
+hideName('catalina Bongga');
+hideName('Maria Josefina Alvarez');
+hideName('Rizal');
+hideName('aj3j3j3');
+hideName('MinD_ContRoL~!');
+hideName('143');
 
 // REFERENCES:
 // remove character: https://www.geeksforgeeks.org/how-to-remove-a-character-from-string-in-javascript/
@@ -93,11 +107,8 @@ console.log(hideName('Maria Josefina Alvarez'));
 // createStars: uplift bootcamp
 // get last element of an array (variations): https://flexiple.com/javascript/get-last-array-element-javascript
 // get all elements of an array except the last one: https://www.w3resource.com/javascript-exercises/fundamental/javascript-fundamental-exercise-215.php#:~:text=Use%20Array.,last%20element%20of%20the%20array.
-// trying to split an array entry with more than two words: https://stackoverflow.com/questions/54981508/slicing-words-from-string
-
-// let arry = [2, 4, 6 , 8, 10, 12, 14, 16];
-// let lastElement = arry.slice(-1);
-
-// console.log(lastElement, typeof String(lastElement));
-
-// //Output: 16
+// trying to split an array entry with more than two words: https://stackoverflow.com/questions/9133102/how-to-grab-substring-before-a-specified-character-in-javascript
+// iterating over an array: https://www.youtube.com/shorts/Ou0W1dZ6ZJI
+// regex validation using if statements: https://stackoverflow.com/questions/6603015/check-whether-a-string-matches-a-regex-in-js
+// regex testing: regexr.com/7spkm
+// regex for sr/jr/ii/iii: https://www.reddit.com/r/Rlanguage/comments/yvosdb/help_i_want_regex_to_capture_the_last_name_with/
