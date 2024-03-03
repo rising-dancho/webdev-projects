@@ -16,19 +16,3 @@ console.log(capitalD + restOfTheWord);
 console.log(myString.charAt(0).toUpperCase() + restOfTheWord);
 // answer3:
 console.log(`${myString.charAt(0).toUpperCase()}${restOfTheWord}`);
-
-let string1 = "Test";
-let object1 = {age: 31};
-let array1 = [0,1,2,3,4,5];
-
-let testString = Array.isArray(string1);
-let testObj = Array.isArray(object1);
-let testArray = Array.isArray(array1);
-
-console.log(testString);
-console.log(testObj);
-console.log(testArray);
-
-let array2 = [0,1,2,3,4,5,6,7,8,9];
-let arrayLen = array2.length
-console.log(arrayLen);
