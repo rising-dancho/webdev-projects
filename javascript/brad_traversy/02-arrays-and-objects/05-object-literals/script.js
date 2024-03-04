@@ -1,0 +1,5 @@
+function calc(){
+    return 
+}
+
+calc();

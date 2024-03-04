@@ -17,7 +17,7 @@ console.log(arr);
 // [6, 5, 4, 3, 2, 1, 0];
 ```
 
-**Hint**: No hints. This one is pretty easy ;)
+**Hint**: No hints. This one is pretty easy
 
 <details>
   <summary>Click For Solution</summary>
