@@ -1,34 +1,7 @@
-{
-  "login": "rising-dancho",
-  "id": 43742265,
-  "node_id": "MDQ6VXNlcjQzNzQyMjY1",
-  "avatar_url": "https://avatars.githubusercontent.com/u/43742265?v=4",
-  "gravatar_id": "",
-  "url": "https://api.github.com/users/rising-dancho",
-  "html_url": "https://github.com/rising-dancho",
-  "followers_url": "https://api.github.com/users/rising-dancho/followers",
-  "following_url": "https://api.github.com/users/rising-dancho/following{/other_user}",
-  "gists_url": "https://api.github.com/users/rising-dancho/gists{/gist_id}",
-  "starred_url": "https://api.github.com/users/rising-dancho/starred{/owner}{/repo}",
-  "subscriptions_url": "https://api.github.com/users/rising-dancho/subscriptions",
-  "organizations_url": "https://api.github.com/users/rising-dancho/orgs",
-  "repos_url": "https://api.github.com/users/rising-dancho/repos",
-  "events_url": "https://api.github.com/users/rising-dancho/events{/privacy}",
-  "received_events_url": "https://api.github.com/users/rising-dancho/received_events",
-  "type": "User",
-  "site_admin": false,
-  "name": "adfinem",
-  "company": null,
-  "blog": "https://adfinem-portfolio.netlify.app/",
-  "location": null,
-  "email": null,
-  "hireable": null,
-  "bio": "victory is imminent ",
-  "twitter_username": null,
-  "public_repos": 24,
-  "public_gists": 0,
-  "followers": 4,
-  "following": 41,
-  "created_at": "2018-10-01T08:09:30Z",
-  "updated_at": "2024-02-22T03:26:28Z"
-}
+[
+  {
+    "name": "bitlog",
+    "nagsupsupan": "tite",
+    "task": "take the trash"
+  }
+]
