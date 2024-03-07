@@ -16,4 +16,17 @@ const socials = ['facebook', 'twitter', 'instagram', 'youtube'];
 // });
 
 // style 3
-function ()
+function printSocials(social, index) {
+  console.log(index, social);
+}
+
+// socials.forEach(printSocials);
+
+// style 4
+const socialObj = [
+  { name: 'facebook', url: 'www.facebook.com' },
+  { name: 'friendster', url: 'www.friendster.com' },
+  { name: 'myspace', url: 'www.myspace.com' },
+];
+
+socialObj.forEach((social) => console.log(social.name, social.url));
