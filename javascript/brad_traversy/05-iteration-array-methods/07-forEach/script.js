@@ -16,4 +16,4 @@ const socials = ['facebook', 'twitter', 'instagram', 'youtube'];
 // });
 
 // style 3
-function ()
+// function ()

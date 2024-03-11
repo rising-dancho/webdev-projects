@@ -65,12 +65,15 @@ function hideName(name) {
   const regexNumbersOrOthersExists =
     /[\d_\^~!@#\$%&*\(\)+\-)`={}\\\|;:'"?/>,<\[\]]+/g;
   //checks for 1 letter name: if true, reject
-  const regex1LetterNameNotAllowed = /^[a-z]{2,}$/i;
+  const regex1LetterNameNotAllowed = /^[a-z]$/gi;
+   //checks for 1 word name: if true, reject
+  const regex1WordNameNotAllowed = /^[a-z]+$/gi;
 
   let result = '';
   if (
     regexNumbersOrOthersExists.test(name) ||
-    regex1LetterNameNotAllowed.test(name)
+    regex1LetterNameNotAllowed.test(name) ||
+    regex1WordNameNotAllowed.test(name)
   ) {
     result = 'Input provided is not a valid name';
   } else {
@@ -92,6 +95,7 @@ function hideName(name) {
   return console.log(result);
 }
 
+hideName("a");
 hideName('Anonas Mayaman');
 hideName('catalina Bongga');
 hideName('Maria Josefina Alvarez');
@@ -99,6 +103,7 @@ hideName('Rizal');
 hideName('aj3j3j3');
 hideName('MinD_ContRoL~!');
 hideName('143');
+
 
 // REFERENCES:
 // remove character: https://www.geeksforgeeks.org/how-to-remove-a-character-from-string-in-javascript/
