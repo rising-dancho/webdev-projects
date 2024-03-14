@@ -17,4 +17,4 @@ const todo = {
 
 const { id, title } = todo;
 //  you desctructure to get the actual value from an object
-console.log(id);4
+console.log(id);
