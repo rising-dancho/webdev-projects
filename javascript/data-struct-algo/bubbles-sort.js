@@ -14,6 +14,5 @@ function bubbleSort(array) {
   return array;
 }
 
-
 let result = bubbleSort(numbers);
 console.log(result);
