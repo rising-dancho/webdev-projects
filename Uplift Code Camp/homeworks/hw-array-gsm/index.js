@@ -39,7 +39,7 @@ function sumColumns(array) {
 
   for (let i = 0; i < reorganizedArray.length; i++) {
     sumColumn = 0; // variable repeats to zero after finishing a row
-    elementsInfo = makeIndexes(reorganizedArray[i]);
+    elementsInfo = returnEachNumber(reorganizedArray[i]);
     reorganizedArray[i].forEach((num) => {
       sumColumn += num;
     });
@@ -56,7 +56,7 @@ function sumRows(array) {
 
   for (let i = 0; i < array.length; i++) {
     sumRow = 0; // variable repeats to zero after finishing a row
-    elementsInfo = makeIndexes(array[i]);
+    elementsInfo = returnEachNumber(array[i]);
     array[i].forEach((num) => {
       sumRow += num;
     });
@@ -77,25 +77,35 @@ function findLargestNumber(array) {
   return max;
 }
 
-function makeIndexes(array) {
-  // pseudo code:
-  // ❌ create an array that assigns an index for each element in that given array
-  // ✅ scratch that.. map/forEach has built (element, index, array)
-
+function returnEachNumber(array) {
   const result = array.map((num) => num);
   return result;
 }
 
 function isJagged(array) {
-  let result;
   const rowLength = array[0].length;
   for (const row of array) {
     if (row.length !== rowLength) {
-      result = true;
+      return true;
     }
   }
-  result = false;
-  return result;
+  return false;
+}
+
+function checkIfSquare2DArray(array) {
+  let numberOfCols;
+  let numberOfRows = array.length;
+  // console.log(numberOfRows);
+
+  for (let i = 0; i < numberOfRows; i++) {
+    numberOfCols = array[i].length;
+    // console.log(numberOfCols);
+  }
+
+  if (numberOfRows === numberOfCols) {
+    return true;
+  }
+  return false;
 }
 
 /* MAIN FUNCTION */
@@ -112,44 +122,41 @@ function getGreatestSum(array) {
   // ✅ function rejects invalid 2d arrays and returns this: "Invalid input"
 
   // check if the incoming array is jagged array. if yes, reject:
-  if (isJagged(array)) {
+  if (isJagged(array) === true) {
     return console.log('Invalid input');
-  }
-
-  let whichIsGreater = [];
-  const greatestFromWhere = {};
-  const greatestOfRows = findLargestNumber(sumRows(array).sum);
-  let greatestOfCols;
-  try {
-    greatestOfCols = findLargestNumber(sumColumns(array).sum);
-  } catch (error) {
-    // console.error(error)
-    // return console.log('Invalid input');
-    return;
-  }
-  let summation;
-  let indexOfGreatest = 0;
-
-  if (greatestOfRows > greatestOfCols) {
-    greatestFromWhere.value = greatestOfRows;
-    greatestFromWhere.fromWhere = 'row';
-    // add greatest summation results from columns or rows into an empty array
-    whichIsGreater = sumRows(array).sum;
-    summation = array[indexOfGreatest + 1];
+  } else if (checkIfSquare2DArray(array) === false) {
+    // check if the incoming array is a square 2D array (not rectangular array). if false, reject:
+    return console.log('Invalid input');
   } else {
-    greatestFromWhere.value = greatestOfCols;
-    greatestFromWhere.fromWhere = 'column';
-    // add greatest summation results from columns or rows into an empty array
-    whichIsGreater = sumColumns(array).sum;
-    summation = sumColumns(array).info;
-  }
-  indexOfGreatest = whichIsGreater.indexOf(greatestFromWhere.value) + 1;
+    let whichIsGreater = [];
+    const greatestFromWhere = {};
+    const greatestOfRows = findLargestNumber(sumRows(array).sum);
+    const greatestOfCols = findLargestNumber(sumColumns(array).sum);
 
-  return console.log(
-    `${greatestFromWhere.value} coming from ${
-      greatestFromWhere.fromWhere
-    } ${indexOfGreatest}, ${summation.join('+')}`
-  );
+    let summation;
+    let indexOfGreatest = 0;
+
+    if (greatestOfRows > greatestOfCols) {
+      greatestFromWhere.value = greatestOfRows;
+      greatestFromWhere.fromWhere = 'row';
+      // add greatest summation results from columns or rows into an empty array
+      whichIsGreater = sumRows(array).sum;
+      summation = array[indexOfGreatest + 1];
+    } else {
+      greatestFromWhere.value = greatestOfCols;
+      greatestFromWhere.fromWhere = 'column';
+      // add greatest summation results from columns or rows into an empty array
+      whichIsGreater = sumColumns(array).sum;
+      summation = sumColumns(array).info;
+    }
+    indexOfGreatest = whichIsGreater.indexOf(greatestFromWhere.value) + 1;
+
+    return console.log(
+      `${greatestFromWhere.value} coming from ${
+        greatestFromWhere.fromWhere
+      } ${indexOfGreatest}, ${summation.join('+')}`
+    );
+  }
 }
 
 const testArray1 = [
@@ -200,3 +207,4 @@ getGreatestSum(testArray4); // ✅
 // getting only the last n elements of an array: https://bobbyhadz.com/blog/javascript-get-last-n-elements-of-array
 // checking if an array is jagged or not: https://stackoverflow.com/questions/22852758/checking-to-see-if-a-2d-array-is-jagged
 // try catch: uplift
+// how to check number of columns in an array: https://stackoverflow.com/questions/17302300/how-to-get-the-number-of-columns-of-a-2dimension-array-in-javascript

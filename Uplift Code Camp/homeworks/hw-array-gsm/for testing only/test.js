@@ -77,7 +77,7 @@
 
 // Is it possible to add dynamically named properties to JavaScript object? https://stackoverflow.com/questions/1184123/is-it-possible-to-add-dynamically-named-properties-to-javascript-object
 
-const numbers = [10, 20, 40, 40, 50, 60, 70, -80, 90];
+// const numbers = [10, 20, 40, 40, 50, 60, 70, -80, 90];
 
 // const newArr = numbers.map(myFunction);
 
@@ -124,6 +124,8 @@ const numbers = [10, 20, 40, 40, 50, 60, 70, -80, 90];
 
 // how to know if a value is in an array: https://www.digitalocean.com/community/tutorials/js-array-search-methods
 
+// const numbers = [10, 20, 40, 40, 50, 60, 70, -80, 90];
+
 function isJagged(arr) {
   const rowLength = arr[0].length;
   for (const row of arr) {
@@ -134,17 +136,17 @@ function isJagged(arr) {
   return false;
 }
 
-function isSquare(arr) {
-  const length = arr.length;
-  for (const row of arr) {
-    if (row.length !== length) {
-      return false;
-    }
-  }
-  return true;
-}
+// function isSquare(arr) {
+//   const length = arr.length;
+//   for (const row of arr) {
+//     if (row.length !== length) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
 
-// Test cases
+// // Test cases
 const testArray1 = [
   [10, 20, 40],
   [40, 50, 60],
@@ -176,3 +178,59 @@ console.log(isJagged(testArray4)); // false
 // console.log(isSquare(arr2));
 // checking if an array is jagged or not: https://stackoverflow.com/questions/22852758/checking-to-see-if-a-2d-array-is-jagged
 // conversion: https://chat.openai.com/c/c704da09-8535-4761-853a-656172df4d94
+
+// const numbers = [
+//   [10, 23, -2],
+//   [4, 50, 87],
+// ];
+
+// var numberOfRows = numbers.length;
+// if (numbers.length) {
+//   console.log(numbers.length);
+// }
+// for (var i = 0; i < numberOfRows; i++) console.log(numbers[i].length);
+
+// let x = [
+//   [2,3,4],
+//   [1,1,1]
+// ];
+
+// console.log(x.length)  // row count
+// console.log(x[0].length) // column count
+
+// function checkIfSquare2DArray(array) {
+//   let result;
+//   let numberOfCols;
+//   let numberOfRows = array.length;
+//   // console.log(numberOfRows);
+
+//   for (let i = 0; i < numberOfRows; i++) {
+//     numberOfCols = array[i].length;
+//   }
+//   // console.log(numberOfCols);
+
+//   if (numberOfRows !== numberOfCols) {
+//     result = 'Invalid Input';
+//     console.log(result);
+//   } else {
+//     result = array;
+//     console.log(result);
+//   }
+//   return result;
+// }
+
+// const testArray2 = [
+//   [10, 20, 40],
+//   [40, 50, 90],
+//   [70, 80, 10],
+// ];
+
+// const testArray4 = [
+//   [10, 23, -2],
+//   [4, 50, 87],
+// ];
+
+// checkIfSquare2DArray(testArray2);
+// checkIfSquare2DArray(testArray4);
+
+// how to check number of columns in an array: https://stackoverflow.com/questions/17302300/how-to-get-the-number-of-columns-of-a-2dimension-array-in-javascript
