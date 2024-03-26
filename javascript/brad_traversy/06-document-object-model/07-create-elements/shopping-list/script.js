@@ -15,9 +15,10 @@ output = div.appendChild(text);
 // document.body.appendChild(div);
 
 const li = document.createElement('li');
+const input = 'Titeng galet';
 
 li.innerHTML = `
-teti
+${input}
 <button class="remove-item btn-link text-red">
   <i class="fa-solid fa-xmark"></i>
 </button>
