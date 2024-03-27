@@ -1,4 +1,4 @@
-// Quick and dirty
+// QUICK AND DIRTY (browser: reparse, recreate all the dom nodes inside the ul)
 function createListItem(entry) {
   let li = document.createElement('li');
   li.innerHTML = ` ${entry}
@@ -6,11 +6,11 @@ function createListItem(entry) {
     <i class="fa-solid fa-xmark"></i>
   </button>`;
 
-  let list = document.querySelector('#item-list');
+  const list = document.querySelector('#item-list');
   list.appendChild(li);
 }
 
-// Clean and performant
+// CLEAN AND PERFORMANT
 function createNewItem(item) {
   const listItem = document.createElement('li');
   listItem.appendChild(document.createTextNode(item));
@@ -25,8 +25,7 @@ function createNewItem(item) {
   listItem.appendChild(button);
 
   console.log(listItem.innerHTML);
-  list = document.querySelector('#item-list');
-  list.appendChild(listItem);
+  document.querySelector('#item-list').appendChild(listItem);
 }
 
 createListItem('Eggs');

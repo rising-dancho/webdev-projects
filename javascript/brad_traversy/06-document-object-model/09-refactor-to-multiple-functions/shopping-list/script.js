@@ -1,17 +1,28 @@
+// CLEAN AND PERFORMANT
 function createNewItem(item) {
   const li = document.createElement('li');
   li.appendChild(document.createTextNode(item));
 
-  const button = document.createElement('button');
-  button.className = 'remove-item btn-link text-red';
+  const button = createButton('remove-item btn-link text-red');
+  const i = createIcon('fa-solid fa-xmark');
 
-  const icon = document.createElement('i');
-  icon.className = 'fa-solid fa-xmark';
-
-  button.appendChild(icon);
+  button.appendChild(i);
   li.appendChild(button);
 
-  document.querySelector('.items').appendChild(li);
+  console.log(li.innerHTML);
+  document.querySelector('#item-list').appendChild(li);
 }
 
-createNewItem('Cheese');
+function createButton(classes) {
+  const button = document.createElement('button');
+  button.className = classes;
+  return button;
+}
+
+function createIcon(classes) {
+  const i = document.createElement('i');
+  i.className = classes;
+  return i;
+}
+
+createNewItem('Utot');
