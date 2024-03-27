@@ -31,6 +31,20 @@ function insertHTML() {
 }
 
 // insertBefore Example
+function insertBefore() {
+  const ul = document.querySelector('ul');
+
+  const item = document.createElement('li');
+  item.appendChild(document.createTextNode('etits'));
+
+  const thirdItem = document.querySelector('li:nth-child(3)');
+  ul.insertBefore(item, thirdItem);
+}
+
+insertElement();
+inserText();
+insertHTML();
+insertBefore();
 
 /*
 <!-- beforebegin -->
@@ -41,7 +55,3 @@ function insertHTML() {
 </p>
 <!-- afterend -->
 */
-
-insertElement();
-inserText();
-insertHTML();
