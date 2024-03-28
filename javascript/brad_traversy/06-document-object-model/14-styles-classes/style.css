@@ -11,6 +11,14 @@ body {
   background: #f4f4f4;
   border: 1px #ccc solid;
   padding: 15px;
+  border-radius: 6px;
+}
+
+button {
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .dark {
