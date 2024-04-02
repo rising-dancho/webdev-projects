@@ -1,6 +1,8 @@
-function toggle(e) {
-  console.log('callback ran');
+const btn = document.querySelector('button');
+
+function callBack(e) {
+  // console.dir(e.target.classList);
   e.target.classList.toggle('danger');
 }
 
-document.querySelector('button').addEventListener('click', toggle);
+btn.addEventListener('click', callBack);
