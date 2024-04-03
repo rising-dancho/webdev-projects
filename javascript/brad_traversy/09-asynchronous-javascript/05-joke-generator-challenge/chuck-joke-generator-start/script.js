@@ -29,11 +29,7 @@
 
 // jokeBtn.addEventListener('click', generateJoke);
 
-
-
 /* ================================================= */
-
-
 
 // CORRECT WAY: ALL xhr methods should all be inside the same function
 
@@ -63,7 +59,7 @@ function generateJoke() {
         // console.log(response.value);
         div.innerHTML = `${response.value}`;
       } else {
-        console.log('Whoops! Something went wrong... (not funny)');
+        div.innerHTML = `Whoops! something went wrong.. not funny :( `;
       }
     }
   };
