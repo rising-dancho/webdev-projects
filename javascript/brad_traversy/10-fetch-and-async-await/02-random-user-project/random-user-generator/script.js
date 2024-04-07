@@ -1,10 +1,12 @@
 const generateBtn = document.getElementById('generate');
 
 function fetchUser() {
+  // loading animation: before the fetch happens
   showSpinner();
   fetch('https://randomuser.me/api/')
     .then((response) => response.json())
     .then((data) => {
+      // remove loading animation: when data is already fetched
       hideSpinner();
       console.log(data.results[0]);
       displayUser(data.results[0]);
