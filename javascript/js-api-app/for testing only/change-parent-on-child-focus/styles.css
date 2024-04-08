@@ -1,0 +1,19 @@
+/* https://stackoverflow.com/questions/24287192/css-change-parent-on-focus-of-child */
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within */
+
+/* https://stackoverflow.com/questions/32571296/how-to-prevent-adjoining-elements-from-moving-when-increasing-border-width */
+
+body {
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+}
+
+label:focus-within {
+  /* font-weight: bold; */
+  box-shadow: inset 0 0 0 1px black; /* solution */
+}

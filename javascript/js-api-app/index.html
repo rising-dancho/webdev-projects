@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Grocery List App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+
+
+        <div class="todo-app">
+            <nav>
+                <h2>Grocery List</h2>
+                <div>
+                    <a href="">Search</a>
+                    <a href="">How To</a>
+                </div>
+            </nav>
+
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Type in your item">
+                <button class="btn-add"> Add</button>
+            </div>
+            <div class="filter">
+                <input type="text" class="form-input-filter" id="filter" placeholder="Filter Items" />
+            </div>
+            <ul id="list-container">
+                <!-- dynamically adding li via javascript-->
+            </ul>
+            <button id="clear" class="btn-clear">Clear All</button>
+        </div>
+    </div>
+</body>
+
+</html>
