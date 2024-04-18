@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic List with Hover Effect</title>
+<style>
+  /* Define the default background color for the list items */
+  li {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<ul id="list">
+  <!-- List items will be dynamically added here -->
+</ul>
+
+<button id="addButton">Add Item</button>
+
+<script>
+// Function to add a new list item
+function addListItem() {
+  const list = document.getElementById('list');
+  const newItem = document.createElement('li');
+  newItem.textContent = 'New Item';
+  list.appendChild(newItem);
+
+  // Add event listeners to the new list item
+  newItem.addEventListener('mouseover', () => {
+    // Change the background color to a different color when mouse is over
+    newItem.style.backgroundColor = '#c0c0c0';
+  });
+
+  newItem.addEventListener('mouseout', () => {
+    // Revert the background color back to the default color when mouse moves out
+    newItem.style.backgroundColor = '#f0f0f0';
+  });
+}
+
+// Add event listener to the button
+document.getElementById('addButton').addEventListener('click', addListItem);
+</script>
+
+</body>
+</html>

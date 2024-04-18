@@ -1,0 +1,360 @@
+:root {
+  --transition: 300ms ease;
+  --transition--faster: 80ms ease;
+
+  --primary-color: #047ed6;
+  --primary-color--lighter: #2ac2d2;
+  --btn-color-exit: #ef4444;
+  --btn-color-hover: #edeef0;
+
+  --text-dark-blue: #002765;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body,
+button,
+input {
+  font-family: 'Rubik', sans-serif;
+}
+
+.li-hover {
+  background-color: #edeef0;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  /*https://mycolor.space/gradient3?ori=to+left+top&hex=%235EEED5&hex2=%2340B9EC&hex3=%2333A3F5&submit=submit */
+  background-image: linear-gradient(
+    to left top,
+    #5eeed5,
+    #41e5de,
+    #25dce5,
+    #12d2eb,
+    #1fc8ed,
+    #20c2ef,
+    #29bbef,
+    #36b4ef,
+    #31b0f1,
+    #2eacf3,
+    #2fa8f4,
+    #33a3f5
+  );
+  padding: 10px;
+}
+
+.foreground {
+  z-index: 1;
+  /* default z-index is : 0; setting the "wrapper" to have higher z-index will prvent the dynamically added li from the Grocery list from showing on top of the overlay navigation*/
+  /* elements that have lower z-index CAN NOT be clicked if there is an element on top of them */
+}
+
+/* SEARCH AND HELP BUTTONS */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav div a {
+  text-decoration: none;
+}
+
+.recipe-grocery-app {
+  width: 100%;
+  max-width: 540px;
+  background-color: #fff;
+  margin: 100px auto 20px;
+  padding: 50px 30px;
+  border-radius: 15px;
+}
+
+
+h2 {
+  color: var(--text-dark-blue);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  font-weight: 500;
+  padding-left: 12.5px;
+}
+
+.recipe-grocery-app h2 img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+input,
+.btn-add {
+  border: none;
+  outline: none;
+}
+
+input {
+  width: 100%;
+  background: transparent;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 10px;
+  padding-left: 5px;
+  margin-bottom: 25px;
+  transition: box-shadow var(--transition);
+}
+
+.row:focus-within {
+  /* font-weight: bold; */
+  box-shadow: inset 0 0 0 1.5px var(--primary-color); /* solution */
+}
+
+.form-input-filter {
+  margin-top: 5px;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-left: 17px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  outline: none;
+  transition: box-shadow var(--transition);
+}
+
+.form-input-filter:focus {
+  /* border-bottom: 2px solid #ccc; */
+  /* box-shadow: inset 0px 0px 0 0px black; */
+  box-shadow: 0px 1.5px 0px 0px var(--primary-color);
+}
+
+/* https://markodenic.com/tools/.btn-adds-generator/ */
+.btn-add {
+  padding: 16px 50px;
+  background-size: 120% auto;
+  background-image: linear-gradient(
+    315deg,
+    var(--primary-color--lighter) 0%,
+    var(--primary-color) 75%
+  );
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  /* border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; */
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: none;
+  min-width: 130px;
+  margin: 8.5px;
+}
+
+.btn-add:hover {
+  background-position: right center;
+}
+.btn-add:active {
+  top: 2px;
+}
+
+.btn-clear {
+  margin-top: 40px;
+  width: 100%;
+  font-size: 16px;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color var(--transition--faster);
+}
+
+.btn-clear:hover {
+  background-color: var(--btn-color-hover);
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+ul li span {
+  position: absolute;
+  right: 8.5px;
+  top: 7px;
+  height: 30px;
+  width: 30px;
+  font-size: 22px;
+  color: #555;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 6px;
+  transition: all var(--transition--faster);
+}
+
+ul li span:hover {
+  cursor: pointer;
+  background: var(--btn-color-exit);
+  color: #fff;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 20%;
+  left: 2%;
+ 
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(images/checked.png);
+}
+
+/* RECIPE SEARCH APP */
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+#search {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 12px;
+  width: 300px;
+}
+
+.btn-search {
+  cursor: pointer;
+}
+
+
+#submit[type='submit'] {
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 12px 20px;
+  transition: background-color 0.2s;
+}
+
+#submit[type='submit']:hover {
+  background-color: #0069d9;
+}
+
+#results {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 40px 0;
+}
+
+#results > div {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#results img {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+#results h3 {
+  color: #333;
+  font-size: 24px;
+  margin: 0;
+}
+
+#results ul {
+  margin: 0;
+  padding: 0;
+}
+
+#results li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#results a {
+  background-color: #007bff;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+#results a:hover {
+  background-color: #0069d9;
+}
+
+/* UI Reference: https://dribbble.com/shots/15692835-UI-UX-Challenge-Recipe-Shopping-List */
+
+@media (max-width: 600px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
