@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function ChildA() {
-  return (
-    <div>
-      
-    </div>
-  )
+  return <div>Child A Component</div>;
 }
 
-export default ChildA
+export default ChildA;

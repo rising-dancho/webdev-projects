@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from 'react';
+
 // GETTING HOUR OF DAY: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours
 // NESTED TERNARY OPERATOR: https://www.sitepoint.com/javascript-ternary-operator/#:~:text=Although%20ternary%20operators%20are%20used,if...else%20statements.
 // 24hr to 12hr:
@@ -58,14 +60,39 @@ hours >= 0 && hours < 12
 // console.log(timeOfDay);
 console.log(greeting);
 
-function convertTo12HourClock(time) {
-  const options = { timeStyle: 'short', hour12: true };
-  let timeString = time.toLocaleTimeString('en-PH', options);
-  return timeString;
-}
-console.log(convertTo12HourClock(currentTime));
+// function convertTo12HourClock(time) {
+//   const options = { timeStyle: 'short', hour12: true };
+//   let timeString = time.toLocaleTimeString('en-PH', options);
+//   return timeString;
+// }
+// console.log(convertTo12HourClock(currentTime));
 
 function ReactStyling() {
+  // useEffect amd useState hooks for digital clock: https://www.youtube.com/watch?v=BzqymsqIXG8
+
+  // APPROACH 1 : dynamic digital clock
+  // const [currentTime, setCurrentTime] = useState(
+  //   new Date().toLocaleTimeString()
+  // );
+
+  // useEffect(() => {
+  //   // console.log('useEffect Called..' + currentTime);
+  //   setInterval(() => {
+  //     setCurrentTime(new Date().toLocaleTimeString());
+  //   }, 1000);
+  // });
+
+  // APPROACH 2 :  dynamic digital clock
+  let time = new Date().toLocaleTimeString();
+  //   console.log(time);
+  const [state, setState] = useState(time);
+
+  function updateTime() {
+    let newTime = new Date().toLocaleTimeString();
+    setState(newTime);
+  }
+  setInterval(updateTime, 1000);
+
   return (
     <>
       <h1
@@ -90,7 +117,14 @@ function ReactStyling() {
           ? 'Good Afternoon!!'
           : 'Good Evening !!'}
       </h1>
-      <p className="clock">{convertTo12HourClock(currentTime)}</p>
+      {/* STATIC TIME */}
+      {/* <p className="clock">{convertTo12HourClock(currentTime)}</p> */}
+      {/* DYNAMIC TIME */}
+      {/* APPROACH 1 */}
+      {/* <p className="clock">{currentTime}</p> */}
+      {/* APPROACH 2 */}
+      <p className="clock">{state}</p>
+      {/* <button onClick={() => setCurrentTime(new Date().toLocaleTimeString())}>set time</button> */}
     </>
   );
 }

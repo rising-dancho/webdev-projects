@@ -1,0 +1,75 @@
+.grid-container {
+  display: grid;
+  gap: 1rem;
+  /* https://www.digitalocean.com/community/tutorials/css-align-justify */
+  justify-items: center; /* SOMETHING TO LOOK OUT FOR!! center the grid items "different from 'justify-content'"*/
+  /* margin: 0 10%; */
+  /* APPROACH 1 */
+  /* grid-template-columns: repeat(4, 1fr); */
+
+  /* APPROACH 2 */
+  /* SHORTER SOLUTION: 
+  learn auto-fit/auto-fill: 
+  https://www.youtube.com/watch?v=qII5BueXWD4 
+  minmax:
+  https://www.youtube.com/watch?v=PuhObGdKSDs
+  */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 300px;
+  /* height: 500px; */
+  border-radius: 6px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  /* border: 1px solid red; */
+}
+
+.card > div {
+  padding: 10px;
+}
+
+.card > div > h2 {
+  font-size: 1.2rem;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+  /* border: 1px solid red; */
+}
+
+.card-details p {
+  font-size: 1.8rem;
+  display: flex;
+  place-self: center;
+  font-weight: bold;
+}
+
+body {
+  padding: 0px 2%;
+}
+
+img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+}
+
+button {
+  background-color: #2563eb;
+  color: #eee;
+  border-radius: 6px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: hsl(221, 83%, 48%);
+}

@@ -4,7 +4,7 @@ function ScoreWidget(props) {
   return (
     <>
       <div>Score: {props.points}</div>
-      <div>Passed: {props.points >= props.passing ? 'Passed' : 'Failed'}</div>
+      <div>Passed: {props.points >= props.passing ? 'passed' : 'failed'}</div>
     </>
   );
 }

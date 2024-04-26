@@ -1,4 +1,6 @@
 import ChildA from './components/ChildA';
+import ChildB from './components/ChildB';
+import ChildC from './components/ChildC';
 import ScoreWidget from './components/ScoreWidget';
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
         <p>12</p>
       </ScoreWidget>
       <ChildA data={data} />
+      <ChildB data={data} />
+      <ChildC data={data} />
     </>
   );
 }

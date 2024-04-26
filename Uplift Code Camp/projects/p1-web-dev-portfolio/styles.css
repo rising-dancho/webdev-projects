@@ -275,6 +275,8 @@ h3 {
 img {
   width: 100%;
   border-radius: var(--border-radius);
+  height: 80%;
+  place-self: center;
 }
 
 /* lvha */
