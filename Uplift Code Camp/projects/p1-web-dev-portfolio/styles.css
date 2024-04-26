@@ -229,7 +229,7 @@ body {
   color: var(--black-text);
   line-height: var(--lh-1_6);
   font-size: var(--fs-18);
-  padding-top: var(--spacing-80px);
+  /* padding-top: var(--spacing-80px); */
 }
 
 body,

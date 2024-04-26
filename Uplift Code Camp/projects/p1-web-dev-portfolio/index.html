@@ -257,7 +257,11 @@
             </section>
         </main>
         <footer>
-            <p>&copy; 2023 <a href="https://github.com/rising-dancho" target="_blank">adfinem</a> </p>
+            <p>&copy; <span id="copyright">
+                    <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                </span>
+                <a href="https://github.com/rising-dancho" target="_blank">adfinem</a>
+            </p>
         </footer>
     </div>
 </body>
