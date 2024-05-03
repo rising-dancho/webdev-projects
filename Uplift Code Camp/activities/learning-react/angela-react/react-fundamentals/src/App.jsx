@@ -6,6 +6,7 @@ import ImportExportModules from './components/ImportExportModules';
 import ImportExportChallenge from './components/ImportExportChallenge';
 // import ReactProps from './components/ReactProps';
 import ReactPropsChallenge from './components/ReactPropsChallenge';
+import Destructuring from './components/Destructuring';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <ImportExportChallenge />
       {/* <ReactProps /> */}
       <ReactPropsChallenge />
+      <Destructuring />
       <JSXChallenge />
     </>
   );

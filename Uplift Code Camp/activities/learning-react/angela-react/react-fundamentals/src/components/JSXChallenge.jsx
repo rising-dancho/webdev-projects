@@ -16,11 +16,9 @@ let currentYear = new Date().getFullYear();
 
 function JSXChallenge() {
   return (
-    <>
-      <span>
-        &copy; {currentYear} <a href="#">{name} </a>
-      </span>
-    </>
+    <span className="footer">
+      &copy; {currentYear} <a href="#">{name} </a>
+    </span>
   );
 }
 

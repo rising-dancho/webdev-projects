@@ -1,16 +1,43 @@
-import FormInput from './components/FormInput';
+import { useState } from "react";
+import FormInput from "./components/FormInput";
+import inputs from "./components/functions/inputs.js";
+import "./index.css";
 
-function App() {
+const App = () => {
+  const [values, setValues] = useState({
+    username: "",
+    email: "",
+    birthday: "",
+    password: "",
+    confirmPassword: "",
+  });
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
+  const onChange = (e) => {
+    
+    setValues({ ...values, [e.target.name]: e.target.value });
+  };
+
   return (
     <div className="app">
-      <FormInput name="First Name:" placeholder="First Name" />
-      <FormInput name="Last Name:" placeholder="Last Name" />
-      <FormInput name="Username:" placeholder="Username" />
-      <FormInput name="Email:" placeholder="Email" />
-      <FormInput name="Password:" placeholder="Password" />
-      <FormInput name="Confirm Password:" placeholder="Confirm Password" />
+      <form onSubmit={handleSubmit}>
+        <h1>Register</h1>
+        {inputs.map((input) => (
+          <FormInput
+            key={input.id}
+            {...input}
+            value={values[input.name]}
+            onChange={onChange}
+          />
+        ))}
+        <button >Submit</button>
+      </form>
     </div>
   );
-}
+};
 
 export default App;

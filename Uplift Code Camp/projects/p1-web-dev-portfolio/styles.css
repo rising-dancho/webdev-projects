@@ -461,6 +461,8 @@ main .project img {
 
 main .project-box {
   padding: var(--spacing-24px);
+  /* height: 100%; */
+  /* border: 2px solid red; */
 }
 
 main .project-details img {
@@ -486,8 +488,9 @@ main .project-details li:last-child {
 }
 
 main .preview {
-  height: 220px;
+  height: fit-content;
   object-fit: contain;
+  /* border: 2px solid red; */
 }
 
 main .project-link {

@@ -25,9 +25,14 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-h1 {
+h1,
+.table-title {
   font-size: 3.5em;
   line-height: 1.1;
+}
+
+.table-title{
+  font-weight: bold;
 }
 
 ul > li {
@@ -136,4 +141,9 @@ a:active {
 .info {
   margin: 20px 0;
   color: #1a7e76;
+}
+
+table {
+  margin-bottom: 37.52px;
+  margin-top: 37.52px;
 }
