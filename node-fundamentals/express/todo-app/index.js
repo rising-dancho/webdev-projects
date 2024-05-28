@@ -5,6 +5,7 @@ const PORT = 8081;
 const server = createServer((request, response) => {
   let todos = JSON.parse(fs.readFileSync('./data.json'));
 
+  // GET
   if (request.url === '/api/v1/todos/' && request.method === 'GET') {
     fs.readFile('./data.json', (err, data) => {
       if (err) throw err;
@@ -12,7 +13,10 @@ const server = createServer((request, response) => {
       response.writeHead(statusCode, { 'Content-Type': 'application/json' });
       return response.end(data);
     });
-  } else if (request.url === '/api/v1/todos/add' && request.method === 'POST') {
+  }
+
+  // POST
+  else if (request.url === '/api/v1/todos/add' && request.method === 'POST') {
     request.on('data', (chunk) => {
       const newTodo = JSON.parse(chunk);
       todos.push(newTodo);
@@ -23,7 +27,8 @@ const server = createServer((request, response) => {
       response.end(JSON.stringify(newTodo));
     });
   }
-  // edit an entry based on id: eg. {{HOST}}api/v1/todos/edit/3
+
+  // EDIT an entry based on id: eg. {{HOST}}api/v1/todos/edit/3
   else if (request.url.split('/')[4] === 'edit' && request.method === 'PATCH') {
     const todoToEdit = todos.find((todo) => {
       return request.url.split('/')[5] === todo.id.toString();
@@ -39,7 +44,8 @@ const server = createServer((request, response) => {
       response.end(JSON.stringify(todoToEdit));
     });
   }
-  // delete an entry based on id: eg. {{HOST}}api/v1/todos/remove/3
+
+  // DELETE an entry based on id: eg. {{HOST}}api/v1/todos/remove/3
   else if (
     request.url.split('/')[4] === 'remove' &&
     request.method === 'DELETE'
