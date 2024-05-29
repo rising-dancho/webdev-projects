@@ -1,5 +1,5 @@
 import express from 'express';
-import bodyParser from 'body-parser';
+// import bodyParser from 'body-parser';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -16,7 +16,7 @@ function logger(req, res, next) {
 app.use(logger);
 
 // body-parser
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 function bandNameGenerator(req, res, next) {
   console.log(req.body);
   bandName = `${req.body['street']}${req.body['pet']}`;
