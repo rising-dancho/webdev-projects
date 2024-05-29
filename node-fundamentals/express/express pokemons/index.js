@@ -1,9 +1,9 @@
 import fs from 'fs';
 import express from 'express';
-import { request } from 'http';
+import dotenv from 'dotenv';
 
+dotenv.config();
 const app = express();
-const PORT = 8080;
 const baseURL = '/api/v1';
 
 // body parser? (built-in) express.json() used to parse request.body.
@@ -39,6 +39,10 @@ app.use('/', (_request, response) => {
   return response.send({ app_name: 'pokemon_api' });
 });
 
-app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
+app.listen(process.env.PORT, () =>
+  console.log(`Server is listening on port ${process.env.PORT}`)
+);
 
 // {{HOST}}/api/v1/pokemons
+// know which ports are currently listening: 
+// netstat -ano | findstr "LISTENING"
