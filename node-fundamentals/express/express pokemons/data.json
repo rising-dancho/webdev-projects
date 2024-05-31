@@ -18,5 +18,10 @@
     "name": "Charizard",
     "img": "http://img.pokemondb.net/artwork/charizard.jpg",
     "type": ["Fire", "Flying"]
+  },
+  {
+    "name": "Hitmonlee",
+    "img": "http://img.pokemondb.net/artwork/hitmonlee.jpg",
+    "type": ["Fighting"]
   }
 ]
