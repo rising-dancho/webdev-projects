@@ -1,6 +1,6 @@
-import fs from 'fs';
 import express from 'express';
 import dotenv from 'dotenv';
+import pokemonsRouter from './routes/pokemons.routes.js';
 
 dotenv.config();
 const app = express();
@@ -24,29 +24,8 @@ function logger(req, res, next) {
 }
 app.use(logger);
 
-// GET
-app.get(`${baseURL}/pokemons`, (request, response) => {
-  const pokemons = JSON.parse(fs.readFileSync('./data.json'));
-  response.status(200);
-  response.send({
-    message: 'List of Pokemons',
-    data: pokemons,
-  });
-});
-
-// POST : raw json
-app.post(`${baseURL}/pokemons`, (request, response) => {
-  const pokemons = JSON.parse(fs.readFileSync('./data.json'));
-  pokemons.push(request.body);
-
-  fs.writeFileSync('./data.json', JSON.stringify(pokemons));
-
-  response.status(201);
-  response.send({
-    message: 'New pokemon was added',
-    data: request.body,
-  });
-});
+// GET, POST : raw json are all in the the router. router routs to the correct destination
+app.use(`${baseURL}/pokemons`, pokemonsRouter);
 
 app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
 
