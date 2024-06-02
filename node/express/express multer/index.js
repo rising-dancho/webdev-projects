@@ -1,12 +1,17 @@
-import express from 'express';
-import dotenv from 'dotenv';
+import express from "express";
+import dotenv from "dotenv";
+import blobRouter from "./routes/blob.routes.js";
 
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT;
+const baseURL = "/api/v1";
 
-app.use(express.json()); // to parse incoming data and attach the request to the data: body property for request object
+app.use(express.json());
 
-app.use('/', (req, res) => res.send({ app: 'multer' }));
+app.use(`${baseURL}/blobs`, blobRouter);
+app.use("/", (request, response) => response.send({ app: "multer" }));
 
-app.listen(PORT, () => console.log(`Server is listening at port ${PORT}`));
+app.listen(process.env.PORT, () =>
+  console.log(`Server is listening on port ${process.env.PORT}`)
+);
+
