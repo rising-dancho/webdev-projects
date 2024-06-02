@@ -15,9 +15,7 @@ app.use(logger);
 // setup middleware and auto parse incoming data
 app.use(express.json());
 
+app.use('/', userRouter);
 app.use(`${baseURL}/users`, userRouter);
-app.use('/', (req, res) => {
-  return res.send({ app: 'bcrypt' });
-});
 
 app.listen(PORT, () => console.log(`Server is listening to port ${PORT}`));

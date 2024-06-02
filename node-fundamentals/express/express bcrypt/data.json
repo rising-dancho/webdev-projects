@@ -4,5 +4,11 @@
     "username": "Bart",
     "email": "bart@gmail.com",
     "password": "$2b$10$Gh626p/bP/FHtH.6ObLMQ.kqm1.00RIZiMStPBWrPmHoKfsysg/oe"
+  },
+  {
+    "id": "40cf152a-419f-45dc-8f1b-ff5f08008409",
+    "username": "Vitlog",
+    "email": "vitlog@gmail.com",
+    "password": "$2b$10$wcYKymsg6Ci58pQWdYwz8e85jQQ.mHH5mRY2JmIqSP3W6P9nv/qmG"
   }
 ]
