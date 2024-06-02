@@ -7,7 +7,7 @@ export const getAllPokemons = (request, response) => {
     message: 'List of Pokemons',
     data: pokemons,
   });
-};
+}; 
 
 export const addPokemon = (request, response) => {
   const pokemons = JSON.parse(fs.readFileSync('./data.json'));
@@ -16,7 +16,7 @@ export const addPokemon = (request, response) => {
   fs.writeFileSync('./data.json', JSON.stringify(pokemons));
 
   response.status(201);
-  response.send({
+  response.send({ 
     message: 'New pokemon was added',
     data: request.body,
   });

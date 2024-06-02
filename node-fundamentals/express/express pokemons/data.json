@@ -1,1 +1,22 @@
-[{"name":"Ivysaur","img":"http://img.pokemondb.net/artwork/ivysaur.jpg","type":["Grass","Poison"]},{"name":"Pikachu","img":"http://img.pokemondb.net/artwork/pikachu.jpg","type":["Lightning"]},{"name":"Squirtle","img":"http://img.pokemondb.net/artwork/squirtle.jpg","type":["Water"]},{"name":"Hitmonlee","img":"http://img.pokemondb.net/artwork/hitmonlee.jpg","type":["Fighting"]}]
+[
+  {
+    "name": "Ivysaur",
+    "img": "http://img.pokemondb.net/artwork/ivysaur.jpg",
+    "type": ["Grass", "Poison"]
+  },
+  {
+    "name": "Pikachu",
+    "img": "http://img.pokemondb.net/artwork/pikachu.jpg",
+    "type": ["Lightning"]
+  },
+  {
+    "name": "Squirtle",
+    "img": "http://img.pokemondb.net/artwork/squirtle.jpg",
+    "type": ["Water"]
+  },
+  {
+    "name": "Hitmonlee",
+    "img": "http://img.pokemondb.net/artwork/hitmonlee.jpg",
+    "type": ["Fighting"]
+  }
+]
