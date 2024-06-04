@@ -43,6 +43,7 @@ const peaches = new Fruit({
   review: 'Awesomesauce!!',
 });
 
+// CREATE
 async function saveFruits() {
   try {
     await Fruit.insertMany([peaches]);
@@ -52,6 +53,19 @@ async function saveFruits() {
   }
 }
 
+// READ
+async function getFruits() {
+  try {
+    const fruits = await Fruit.find({});
+    fruits.map((fruit) => {
+      console.log(fruit.name);
+    });
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+// UPDATE
 async function updateFruit() {
   try {
     await Fruit.updateOne(
@@ -64,12 +78,13 @@ async function updateFruit() {
   }
 }
 
-async function getFruits() {
+// DELETE
+async function deleteFruit() {
   try {
-    const fruits = await Fruit.find({});
-    fruits.map((fruit) => {
-      console.log(fruit.name);
-    });
+    await Fruit.deleteOne(
+      { _id: '665f5ef976a65be7a6e6e378' } // no need ObjectId()
+    );
+    console.log('Successfully deleted an item from fruits_db.');
   } catch (err) {
     console.log(err);
   }
@@ -79,6 +94,7 @@ async function run() {
   try {
     // await saveFruits();
     // await updateFruit();
+    await deleteFruit();
     await getFruits();
   } finally {
     // close connection
