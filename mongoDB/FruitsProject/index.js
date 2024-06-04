@@ -7,7 +7,11 @@ mongoose.connect(`mongodb://localhost:27017/${db_name}`); //also create or look 
 // schema
 const fruitSchema = new mongoose.Schema({
   name: String,
-  rating: Number,
+  rating: {
+    type: Number,
+    min: 1,
+    max: 10,
+  },
   review: String,
 });
 
