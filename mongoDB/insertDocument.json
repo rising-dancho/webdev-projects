@@ -1,0 +1,27 @@
+{
+  "_id": {
+    "$oid": "665ed9f2dd3b0b0cf99308a6"
+  },
+  "plot": "A young man is accidentally sent 30 years into the past...",
+  "genres": [
+    "Adventure",
+    "Comedy",
+    "Sci-Fi"
+  ],
+  "title": "Back to the Future",
+  "runtime": 120
+}
+
+{
+  "_id": {
+    "$oid": "665eda17dd3b0b0cf99308a9"
+  },
+  "plot": "Capt. Nathan Algren (Tom Cruise) is an American military officer hired by the Emperor of Japan to train the country's first army in the art of modern warfare...",
+  "genres": [
+    "Action",
+    "Drama",
+    "History"
+  ],
+  "title": "The Last Samurai",
+  "runtime": 60
+}

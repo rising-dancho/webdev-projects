@@ -1,0 +1,53 @@
+db.products.insertOne(
+  name: "Rubber",
+  price: 1.3,
+  stock: 43,
+  reviews: [
+  {
+    "_id": {
+      "$oid": "665eb1303df40454cb75aa25"
+    },
+    "name": "Rubber",
+    "price": 1.3,
+    "stock": 43,
+    "reviews": [
+      {
+        "authorName": "Sally",
+        "rating": 5,
+        "review": "Best rubber ever!"
+      },
+      {
+        "authorName": "John",
+        "rating": 5,
+        "review": "Awesome rubber!"
+      }
+    ]
+  }]
+)
+
+db.products.insertOne(
+  {
+    name: "Pencil",
+    price: 0.80,
+    stock: 12,
+    reviews: [
+
+        {
+          "authorName": "Ben",
+          "rating": 4.8,
+          "review": "Nice pencil!"
+        },
+        {
+          "authorName": "Sarah",
+          "rating": 5,
+          "review": "I like it!"
+        }
+    ]
+  }
+)
+
+db.movies.insertOne({
+  plot: 'A young man is accidentally sent 30 years into the past...',
+  genres: [ 'Adventure', 'Comedy', 'Sci-Fi' ],
+  title: 'Back to the Future',
+})
