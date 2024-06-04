@@ -1,15 +1,29 @@
-import { ServerMonitoringMode } from 'mongodb';
 import mongoose from 'mongoose';
 
-// Replace the uri string with your connection string.sasd
+// Replace the uri string with your connection string
 const db_name = 'fruits_db';
-mongoose.connect(`mongodb://localhost:27017/${db_name}`); //also create or look for your db
+const uri = `mongodb://localhost:27017/${db_name}`;
+
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+
+// connection events: listens to connected, error, disconnected
+mongoose.connection.on('connected', () => {
+  console.log('Mongoose connected to ' + uri);
+});
+
+mongoose.connection.on('error', (err) => {
+  console.log('Mongoose connection error: ' + err);
+});
+
+mongoose.connection.on('disconnected', () => {
+  console.log('Mongoose disconnected');
+});
 
 // schema
 const fruitSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: true,
+    required: [true, 'Name is required'],
   },
   rating: {
     type: Number,
@@ -23,33 +37,15 @@ const fruitSchema = new mongoose.Schema({
 const Fruit = mongoose.model('Fruit', fruitSchema);
 
 // document
-// const apple = new Fruit({
-//   name: 'Apple',
-//   rating: 7,
-//   review: 'Pretty solid as a fruit.',
-// });
-
-// const orange = new Fruit({
-//   name: 'Orange',
-//   rating: 6,
-//   review: 'Great for vitamin C.',
-// });
-
-// const banana = new Fruit({
-//   name: 'Banana',
-//   rating: 8,
-//   review: 'Great texture.',
-// });
-
-const kiwi = new Fruit({
-  name: 'Kiwi',
+const peaches = new Fruit({
+  name: 'Peaches',
   rating: 10,
-  review: 'The best fruit',
+  review: 'Awesomesauce!!',
 });
 
 async function saveFruits() {
   try {
-    await Fruit.insertMany([kiwi]);
+    await Fruit.insertMany([peaches]);
     console.log('Successfully saved all the fruits to fruits_db.');
   } catch (err) {
     console.log(err);
@@ -59,19 +55,20 @@ async function saveFruits() {
 async function getFruits() {
   try {
     const fruits = await Fruit.find({});
-    // console.log(`All fruits: ${all}`);
-
-    // only access the name from the fruits object
     fruits.map((fruit) => {
       console.log(fruit.name);
     });
-
-    // close connection
-    mongoose.connection.close();
   } catch (err) {
     console.log(err);
+  } finally {
+    // close connection
+    mongoose.connection.close();
   }
 }
 
-// saveFruits();
-getFruits();
+async function run() {
+  await saveFruits();
+  await getFruits();
+}
+
+run();
