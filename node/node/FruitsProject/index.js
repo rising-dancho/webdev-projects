@@ -29,7 +29,7 @@ async function run() {
       },
     ];
     const result = await fruits.insertMany(newFruit);
-    console.log(`Fruits: ${result}`);
+    console.log(`# of fruits inserted: ${result.insertedCount}`);
 
     // FIND:
     const query = {};
