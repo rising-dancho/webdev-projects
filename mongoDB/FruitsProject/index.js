@@ -1,3 +1,4 @@
+import { ServerMonitoringMode } from 'mongodb';
 import mongoose from 'mongoose';
 
 // Replace the uri string with your connection string.sasd
@@ -6,7 +7,10 @@ mongoose.connect(`mongodb://localhost:27017/${db_name}`); //also create or look 
 
 // schema
 const fruitSchema = new mongoose.Schema({
-  name: String,
+  name: {
+    type: String,
+    required: true,
+  },
   rating: {
     type: Number,
     min: 1,
