@@ -1,0 +1,66 @@
+[{
+  "_id": {
+    "$oid": "665d79551fa5f0aff6ba72e4"
+  },
+  "title": "Name of the wind",
+  "author": "Patrick Rothfus",
+  "pages": 350,
+  "genres": [
+    "fantasy",
+    "magical"
+  ],
+  "rating": 9
+},
+{
+  "_id": {
+    "$oid": "665d79f21fa5f0aff6ba72e6"
+  },
+  "title": "The Final Empire",
+  "author": "Brandon Sanderson",
+  "pages": 450,
+  "genres": [
+    "fantasy",
+    "dystopian"
+  ],
+  "rating": 8
+},
+{
+  "_id": {
+    "$oid": "665d79f21fa5f0aff6ba72e7"
+  },
+  "title": "The Way of the King",
+  "author": "Brandon Sanderson",
+  "pages": 350,
+  "genres": [
+    "fantasy",
+    "dystopian"
+  ],
+  "rating": 9
+},
+{
+  "_id": {
+    "$oid": "665d79f21fa5f0aff6ba72e8"
+  },
+  "title": "The Call of the Weird",
+  "author": "Louis Theroux",
+  "pages": 350,
+  "genres": [
+    "non-fiction",
+    "strange",
+    "comedy"
+  ],
+  "rating": 7
+},
+{
+  "_id": {
+    "$oid": "665d81a2dace5ee8fc1378e5"
+  },
+  "title": "48 Laws of Power",
+  "author": "Robert Greene",
+  "pages": 500,
+  "genres": [
+    "self-help",
+    "business"
+  ],
+  "rating": 9
+}]
