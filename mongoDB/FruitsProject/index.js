@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 const db_name = 'fruits_db';
 const uri = `mongodb://localhost:27017/${db_name}`;
 
-mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(uri);
 
 // connection events: listens to connected, error, disconnected
 mongoose.connection.on('connected', () => {
@@ -52,6 +52,18 @@ async function saveFruits() {
   }
 }
 
+async function updateFruit() {
+  try {
+    await Fruit.updateOne(
+      { _id: '665f13666ca868330800de1a' }, // no need ObjectId()
+      { $set: { name: 'Peach' } } // Added $set to specify the update operation
+    );
+    console.log('Successfully updated an item from fruits_db.');
+  } catch (err) {
+    console.log(err);
+  }
+}
+
 async function getFruits() {
   try {
     const fruits = await Fruit.find({});
@@ -60,16 +72,18 @@ async function getFruits() {
     });
   } catch (err) {
     console.log(err);
-  } finally {
-    // close connection
-    mongoose.connection.close();
   }
 }
 
 async function run() {
-  await saveFruits();
-  await getFruits();
+  try {
+    // await saveFruits();
+    // await updateFruit();
+    await getFruits();
+  } finally {
+    // close connection
+    await mongoose.connection.close();
+  }
 }
 
 run();
-// test
