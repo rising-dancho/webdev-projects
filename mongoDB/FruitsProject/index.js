@@ -53,13 +53,13 @@ async function getFruits() {
     const fruits = await Fruit.find({});
     // console.log(`All fruits: ${all}`);
 
-    // close connection
-    mongoose.connection.close();
-
     // only access the name from the fruits object
     fruits.map((fruit) => {
       console.log(fruit.name);
     });
+
+    // close connection
+    mongoose.connection.close();
   } catch (err) {
     console.log(err);
   }
