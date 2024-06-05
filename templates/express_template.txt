@@ -1,0 +1,17 @@
+import express from 'express';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+const app = express();
+const baseURL = '/api/v1';
+const PORT = process.env.PORT;
+
+// attaches body to request object
+app.use(express.json());
+
+app.use('/', (req, res) => {
+  res.send({ app: 'blog_app' });
+});
+
+app.listen(PORT, () => console.log(`Server is listening at port ${PORT}`));
