@@ -116,7 +116,7 @@ const personSchema = new mongoose.Schema({
 // model
 const Person = mongoose.model('Person', personSchema);
 
-// relationship: document
+// FavoriteFruit (relationship): document
 const pineapple = new Fruit({
   name: 'Pineapple',
   score: 9,
@@ -158,7 +158,7 @@ async function run() {
     // await updateFruit();
     // await deleteFruit();
     // await createEntry();
-    
+
     await getFruits();
     console.log('--------------------');
     await getPeople();
