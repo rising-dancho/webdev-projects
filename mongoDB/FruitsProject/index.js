@@ -19,11 +19,16 @@ mongoose.connection.on('disconnected', () => {
   console.log('Mongoose disconnected');
 });
 
+/* ==========================
+  - Fruits
+  ===========================
+ */
+
 // schema
 const fruitSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: [true, 'Name is required'],
+    required: [true],
   },
   rating: {
     type: Number,
@@ -90,12 +95,73 @@ async function deleteFruit() {
   }
 }
 
+/* ==========================
+  - People
+  ===========================
+ */
+
+// schema
+const personSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: [true],
+  },
+  age: {
+    type: Number,
+    required: true,
+  },
+  favoriteFruit: fruitSchema,
+});
+
+// model
+const Person = mongoose.model('Person', personSchema);
+
+// relationship: document
+const pineapple = new Fruit({
+  name: 'Pineapple',
+  score: 9,
+  review: 'Great fruit!',
+});
+
+// document
+const person = new Person({
+  name: 'King Baldwin IV',
+  age: 30,
+  favoriteFruit: pineapple,
+});
+
+// CREATE
+async function createEntry() {
+  try {
+    await Person.insertMany([person]);
+    console.log('Successfully created a person entry to the fruits_db.');
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+// READ
+async function getPeople() {
+  try {
+    const people = await Person.find({});
+    people.map((person) => {
+      console.log(person.name);
+    });
+  } catch (err) {
+    console.log(err);
+  }
+}
+
 async function run() {
   try {
     // await saveFruits();
     // await updateFruit();
-    await deleteFruit();
+    // await deleteFruit();
+    // await createEntry();
+    
     await getFruits();
+    console.log('--------------------');
+    await getPeople();
   } finally {
     // close connection
     await mongoose.connection.close();
