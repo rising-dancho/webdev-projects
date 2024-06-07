@@ -1,6 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import db from './config/db.js';
+import userRoutes from './routes/user.routes.js';
 
 dotenv.config();
 
@@ -14,6 +15,7 @@ db();
 // attaches body to request object
 app.use(express.json());
 
+app.use(`${baseURL}/users`, userRoutes);
 app.use('/', (req, res) => {
   res.send({ app: 'blog_app' });
 });

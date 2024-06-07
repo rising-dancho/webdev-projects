@@ -17,12 +17,40 @@ async function signup(req, res) {
         email,
         password: hash,
       });
+      await newUser.save();
 
-      await User.save();
+      res.status(201).send({
+        message: 'User has been created',
+        data: newUser,
+      });
     }
   } catch (error) {
     console.error(error.message);
   }
 }
 
-export { signup };
+async function signin(req, res) {
+  try {
+    const { email, password } = req.body;
+
+    const user = await User.findOne({ email: email });
+    if (!user) {
+      res.status(404).send({ message: 'User does not exist.' });
+    } else {
+      const isPasswordMatched = await bcrypt.compare(password, user.password);
+
+      if (!isPasswordMatched) {
+        res.status(400).send({ message: `Password didn't match.` });
+      } else {
+        res.status(200).send({
+          message: 'Login successful',
+          data: user,
+        });
+      }
+    }
+  } catch (error) {
+    console.error(error.message);
+  }
+}
+
+export { signup, signin };
