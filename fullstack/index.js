@@ -16,8 +16,7 @@ app.use(express.json());
 app.use(`${baseURL}/users`, userRoutes);
 app.use(`${baseURL}/blogs`, blogRoutes);
 
+
 app.listen(process.env.PORT, () =>
   console.log(`Server is listening on port ${process.env.PORT}`)
 );
-
-export default app;

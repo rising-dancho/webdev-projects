@@ -10,7 +10,7 @@ async function db() {
     const conn = await connect(MONGODB_URI);
     const host = conn.connection.host;
     console.log(`Database connection established: ${host}`);
-    
+
     // connection events: listens to connected, error, disconnected
     conn.connection.on('connected', () => {
       console.log('Mongoose connected to ' + uri);
