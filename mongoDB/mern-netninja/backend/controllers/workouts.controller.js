@@ -25,7 +25,7 @@ const getWorkout = async (req, res) => {
     return res.status(404).send({ error: 'No such workout' });
   }
 
-  res.status(200).send({ message: `Workout with id: ${id}`, data: workout });
+  res.status(200).send({ message: `Workout with id: ${id}` });
 };
 
 // POST a single workout
@@ -65,7 +65,23 @@ const deleteWorkout = async (req, res) => {
 };
 
 // UPDATE a single workout
-const updateWorkout = async (req, res) =>
-  res.send({ message: 'UPDATE a single workouts' });
+const updateWorkout = async (req, res) => {
+  const { id } = req.params;
+  // check if id is valid
+  if (!Types.ObjectId.isValid(id)) {
+    return res.status(404).send({ error: 'No such workout' });
+  }
+
+  const workout = await Workout.findByIdAndUpdate(
+    { _id: id },
+    {
+      ...req.body,
+    }
+  );
+
+  res.status(200).send({
+    message: `Workout with id: ${id} updated successfully!`,
+  });
+};
 
 export { getAllWorkout, getWorkout, postWorkout, deleteWorkout, updateWorkout };

@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import workoutRoutes from './routes/workouts.routes.js';
+// import cors from 'cors';
 
 // enable .env variable: "process" is a global object available in node applications
 dotenv.config();
@@ -10,6 +11,9 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT;
 const baseURL = '/api/v1/';
+
+// Use CORS middleware
+// app.use(cors());
 
 // middlewares from express
 //attaches .body to the req handler
