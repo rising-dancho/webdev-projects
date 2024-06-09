@@ -38,7 +38,7 @@ const postWorkout = async (req, res) => {
     // response code and sending the json file
     res.status(200).send(workout);
   } catch (error) {
-    res.status(400).send({ message: error.message });
+    res.status(400).send({ error: error.message });
   }
 };
 
@@ -60,7 +60,7 @@ const deleteWorkout = async (req, res) => {
       message: `Workout with id: ${id} deleted successfully!`,
     });
   } catch (error) {
-    res.status(404).send({ message: error.message });
+    res.status(404).send({ error: error.message });
   }
 };
 

@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 
 // components
+import WorkoutDetails from '../components/WorkoutDetails';
+import WorkoutForm from '../components/WorkoutForm';
 
 const Home = () => {
   const [workouts, setWorkouts] = useState(null);
@@ -11,7 +13,7 @@ const Home = () => {
       const json = await response.json();
 
       // Log the entire response to the console
-      console.log('API response:', json);
+      console.log('API response (GET ALL):', json);
 
       if (response.ok) {
         setWorkouts(json.data);
@@ -28,8 +30,11 @@ const Home = () => {
     <div className="home">
       <div className="workouts">
         {workouts &&
-          workouts.map((workout) => <p key={workout._id}>{workout.title}</p>)}
+          workouts.map((workout) => (
+            <WorkoutDetails key={workout._id} workout={workout} />
+          ))}
       </div>
+      <WorkoutForm />
     </div>
   );
 };
