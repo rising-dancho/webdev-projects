@@ -31,6 +31,7 @@ function WorkoutForm() {
       setReps('');
       setError(null);
       console.log('New workout added!');
+      // window.location.reload();
     }
   }
 
