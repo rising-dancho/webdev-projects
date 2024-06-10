@@ -32,6 +32,24 @@ const getWorkout = async (req, res) => {
 const postWorkout = async (req, res) => {
   // extract from the body
   const { title, load, reps } = req.body;
+
+  let emptyFields = [];
+
+  if (!title) {
+    emptyFields.push('title');
+  }
+  if (!load) {
+    emptyFields.push('load');
+  }
+  if (!reps) {
+    emptyFields.push('reps');
+  }
+  if (emptyFields.length > 0) {
+    return res
+      .status(400)
+      .json({ error: 'Please fill in all fields', emptyFields });
+  }
+
   try {
     // create from the model by passing in the title, load, reps from the body
     const workout = await Workout.create({ title, load, reps });
@@ -45,23 +63,18 @@ const postWorkout = async (req, res) => {
 // DELETE a workout
 const deleteWorkout = async (req, res) => {
   const { id } = req.params;
-  // check if id is valid
+
   if (!Types.ObjectId.isValid(id)) {
-    return res.status(404).send({ error: 'No such workout' });
+    return res.status(400).json({ error: 'No such workout' });
   }
 
   const workout = await Workout.findOneAndDelete({ _id: id });
+
   if (!workout) {
-    return res.status(400).send({ error: 'No such workout' });
+    return res.status(400).json({ error: 'No such workout' });
   }
 
-  try {
-    res.status(200).send({
-      message: `Workout with id: ${id} deleted successfully!`,
-    });
-  } catch (error) {
-    res.status(404).send({ error: error.message });
-  }
+  res.status(200).json(workout);
 };
 
 // UPDATE a single workout

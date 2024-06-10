@@ -26,3 +26,5 @@ export default defineConfig({
     },
   },
 });
+
+// docs: https://date-fns.org/
