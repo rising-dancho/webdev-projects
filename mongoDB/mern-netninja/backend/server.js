@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import workoutRoutes from './routes/workouts.routes.js';
+import userRoutes from './routes/user.routes.js';
 // import cors from 'cors';
 
 // enable .env variable: "process" is a global object available in node applications
@@ -27,6 +28,7 @@ app.use((req, res, next) => {
 
 // routes
 app.use(`${baseURL}workouts`, workoutRoutes);
+app.use(`${baseURL}user`, userRoutes);
 
 // connect to db mongodb
 mongoose

@@ -94,6 +94,7 @@ const updateWorkout = async (req, res) => {
 
   res.status(200).send({
     message: `Workout with id: ${id} updated successfully!`,
+    data: workout,
   });
 };
 
