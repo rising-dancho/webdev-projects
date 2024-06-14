@@ -1,44 +1,34 @@
 import express from 'express';
-import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import workoutRoutes from './routes/workouts.routes.js';
-import userRoutes from './routes/user.routes.js';
-// import cors from 'cors';
-
-// enable .env variable: "process" is a global object available in node applications
+import workoutRoutes from './routes/workouts.js';
+import userRoutes from './routes/user.js';
+import dotenv from 'dotenv';
 dotenv.config();
 
-// create express app
+// express app
 const app = express();
-const PORT = process.env.PORT;
-const baseURL = '/api/v1/';
 
-// Use CORS middleware
-// app.use(cors());
-
-// middlewares from express
-//attaches .body to the req handler
+// middleware
 app.use(express.json());
 
-// logger
 app.use((req, res, next) => {
   console.log(req.path, req.method);
   next();
 });
 
 // routes
-app.use(`${baseURL}workouts`, workoutRoutes);
-app.use(`${baseURL}user`, userRoutes);
+app.use('/api/v1/workouts', workoutRoutes);
+app.use('/api/v1/user', userRoutes);
 
-// connect to db mongodb
+// connect to db
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
     // listen for requests
-    app.listen(PORT, () =>
-      console.log(`Connected to db and listening on port ${PORT}`)
-    );
+    app.listen(process.env.PORT, () => {
+      console.log('connected to db & listening on port', process.env.PORT);
+    });
   })
   .catch((error) => {
-    console.log(error.message);
+    console.log(error);
   });

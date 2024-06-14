@@ -1,19 +1,25 @@
 import { useWorkoutsContext } from '../hooks/useWorkoutsContext';
+import { useAuthContext } from '../hooks/useAuthContext';
 
 // date fns
 import formatDistanceToNow from 'date-fns/formatDistanceToNow';
 
 const WorkoutDetails = ({ workout }) => {
   const { dispatch } = useWorkoutsContext();
+  const { user } = useAuthContext();
 
   const handleClick = async () => {
-    const response = await fetch(`/api/v1/workouts/${workout._id}`, {
+    if (!user) {
+      return;
+    }
+
+    const response = await fetch('/api/v1/workouts/' + workout._id, {
       method: 'DELETE',
+      headers: {
+        Authorization: `Bearer ${user.token}`,
+      },
     });
     const json = await response.json();
-
-    // Log the entire response to the console
-    console.log('API response (DELETE):', json);
 
     if (response.ok) {
       dispatch({ type: 'DELETE_WORKOUT', payload: json });
@@ -28,7 +34,7 @@ const WorkoutDetails = ({ workout }) => {
         {workout.load}
       </p>
       <p>
-        <strong>Number of reps: </strong>
+        <strong>Reps: </strong>
         {workout.reps}
       </p>
       <p>

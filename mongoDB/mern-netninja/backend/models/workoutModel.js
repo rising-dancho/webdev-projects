@@ -1,6 +1,7 @@
-import { Schema, model } from 'mongoose';
+import mongoose from 'mongoose';
 
-// Schema: enforces the schema on the objects entering the database
+const Schema = mongoose.Schema;
+
 const workoutSchema = new Schema(
   {
     title: {
@@ -15,14 +16,14 @@ const workoutSchema = new Schema(
       type: Number,
       required: true,
     },
+    user_id: {
+      type: String,
+      required: true,
+    },
   },
-  {
-    timestamps: true,
-  }
+  { timestamps: true }
 );
 
-// model
-const Workout = model('Workout', workoutSchema);
+const Workout = mongoose.model('Workout', workoutSchema);
 
 export default Workout;
-

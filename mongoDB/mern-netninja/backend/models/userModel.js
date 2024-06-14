@@ -4,7 +4,6 @@ import validator from 'validator';
 
 const Schema = mongoose.Schema;
 
-// schema
 const userSchema = new Schema({
   email: {
     type: String,
@@ -23,9 +22,8 @@ userSchema.statics.signup = async function (email, password) {
   if (!email || !password) {
     throw Error('All fields must be filled');
   }
-
   if (!validator.isEmail(email)) {
-    throw Error('Email is not valid');
+    throw Error('Email not valid');
   }
 
   // docs: https://www.npmjs.com/package/validator
@@ -43,13 +41,14 @@ userSchema.statics.signup = async function (email, password) {
   }
 
   const exists = await this.findOne({ email });
+
   if (exists) {
     throw Error('Email already in use');
   }
 
-  // signup user
   const salt = await bcrypt.genSalt(10);
   const hash = await bcrypt.hash(password, salt);
+
   const user = await this.create({ email, password: hash });
 
   return user;
@@ -62,23 +61,18 @@ userSchema.statics.login = async function (email, password) {
   }
 
   const user = await this.findOne({ email });
-
-  console.log('Login method', user);
-
   if (!user) {
     throw Error('Incorrect email');
   }
 
   const match = await bcrypt.compare(password, user.password);
-
   if (!match) {
     throw Error('Incorrect password');
-  } else {
-    return user;
   }
+
+  return user;
 };
 
-// model (defines structure for User documents. and will not allow to save unless it adhears to the Schema)
 const User = mongoose.model('User', userSchema);
 
-export { User };
+export default User;
