@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(`${baseURL}/users`, userRoutes);
 app.use(`${baseURL}/blogs`, blogRoutes);
-
+app.use('/', (req, res) => res.send({ app: 'blog_app' }));
 
 app.listen(process.env.PORT, () =>
   console.log(`Server is listening on port ${process.env.PORT}`)
