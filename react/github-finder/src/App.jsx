@@ -4,21 +4,11 @@ class App extends Component {
   foo = () => 'Bar';
   render() {
     const name = 'Happy Coding 🚀';
-    // const loading = false;
-    const loading = true;
+    const loading = false;
+    // const loading = true;
+    const showName = true;
 
-    return (
-      <h1>
-        {loading ? (
-          'Loading...'
-        ) : (
-          <>
-            {' '}
-            {name} {this.foo()}
-          </>
-        )}
-      </h1>
-    );
+    return <>{loading ? 'Loading...' : <h1>Hello {showName && name}</h1>}</>;
   }
 }
 
