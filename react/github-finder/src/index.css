@@ -296,6 +296,7 @@ img {
 
 .btn:hover {
   opacity: 0.8;
+  color: #fff;
 }
 
 .bg-light,

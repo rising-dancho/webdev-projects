@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
+import Navbar from './components/layouts/Navbar';
+import Users from './components/users/Users';
 
 class App extends Component {
-  foo = () => 'Bar';
   render() {
-    const name = 'Happy Coding 🚀';
-    const loading = false;
-    // const loading = true;
-    const showName = true;
-
-    return <>{loading ? 'Loading...' : <h1>Hello {showName && name}</h1>}</>;
+    return (
+      <>
+        <Navbar title="Github Finder" icon="fab fa-github" />
+        <div className="container ">
+          <Users />
+        </div>
+      </>
+    );
   }
 }
 
