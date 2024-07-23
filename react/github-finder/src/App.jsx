@@ -10,9 +10,14 @@ class App extends Component {
   };
 
   async componentDidMount() {
-    this.setState({ loading: true });
-    const res = await axios.get('https://api.github.com/users');
+ this.setState({ loading: true });
+    const res = await axios.get(
+      `https://api.github.com/users?client_id=${
+        import.meta.env.VITE_CLIENT_ID
+      }&client_secret=${import.meta.env.VITE_CLIENT_SECRET}`
+    );
     this.setState({ users: res.data, loading: false });
+    console.log(res);
   }
 
   render() {
