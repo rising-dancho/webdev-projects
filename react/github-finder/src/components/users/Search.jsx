@@ -1,10 +1,22 @@
 import React, { Component } from 'react';
 
 export class Search extends Component {
+  state = {
+    text: '',
+  };
+
+  onSubmit = (e) => {
+    e.preventDefault();
+    console.log(this.state.text);
+  };
+
+  onChange = (e) => this.setState({ [e.target.name]: e.target.value });
+
   render() {
     return (
       <div>
         <form
+          onSubmit={this.onSubmit}
           action=""
           style={{
             display: 'flex',
@@ -16,6 +28,8 @@ export class Search extends Component {
             type="text"
             name="text"
             placeholder="Find people on Github.."
+            value={this.state.text}
+            onChange={this.onChange}
           />
           <input
             type="submit"
