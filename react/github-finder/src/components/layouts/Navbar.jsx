@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Navbar = ({ icon = 'fab fa-github', title = 'Github Finder' }) => {
   return (
-    <div className="navbar bg-primary">
+    <div className="navbar container"> 
       <h1>
         <i className={icon}></i> {title}
       </h1>

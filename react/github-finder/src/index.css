@@ -353,6 +353,7 @@ table th {
   justify-content: space-between;
   align-items: center;
   padding: 0.7rem 2rem;
+  /* padding: 0.7rem 0px; */
   z-index: 1;
   width: 100%;
   opacity: 0.9;
