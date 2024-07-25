@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export class Search extends Component {
   state = {
     text: '',
+  };
+
+  static propTypes = {
+    searchUsers: PropTypes.func.isRequired,
+    clearUsers: PropTypes.func.isRequired,
+    showClear: PropTypes.bool.isRequired,
   };
 
   onSubmit = (e) => {
@@ -14,30 +21,36 @@ export class Search extends Component {
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
   render() {
+    const { showClear, clearUsers } = this.props;
     return (
       <div>
-        <form
-          onSubmit={this.onSubmit}
-          action=""
-          style={{
-            display: 'flex',
-            alignItems: 'flex-end',
-            justifyContent: 'center',
-          }}
-        >
-          <input
-            type="text"
-            name="text"
-            placeholder="Find people on Github.."
-            value={this.state.text}
-            onChange={this.onChange}
-          />
-          <input
-            type="submit"
-            value="Search"
-            className="btn btn-dark"
-            style={{ marginRight: '0px' }}
-          />
+        <form onSubmit={this.onSubmit} action="">
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'flex-end',
+              justifyContent: 'center',
+            }}
+          >
+            <input
+              type="text"
+              name="text"
+              placeholder="Find people on Github.."
+              value={this.state.text}
+              onChange={this.onChange}
+            />
+            <input
+              type="submit"
+              value="Search"
+              className="btn btn-dark"
+              style={{ marginRight: '0px' }}
+            />
+          </div>
+          {showClear === true && (
+            <button className="btn btn-light btn-block" onClick={clearUsers}>
+              Clear
+            </button>
+          )}
         </form>
       </div>
     );
