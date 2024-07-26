@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/layouts/Navbar';
 import Users from './components/users/Users';
 import axios from 'axios';
 import Search from './components/users/Search';
 import Alert from './components/layouts/Alert';
+import About from './components/pages/About';
 
 class App extends Component {
   state = {
@@ -59,21 +61,33 @@ class App extends Component {
     const { users, loading, alert } = this.state;
 
     return (
-      <div className="App">
-        <div className=" bg-primary">
-          <Navbar title="Github Finder" icon="fab fa-github" />
+      <Router>
+        <div className="App">
+          <div className=" bg-primary">
+            <Navbar title="Github Finder" icon="fab fa-github" />
+          </div>
+          <div className="container">
+            <Alert alert={alert} />
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Search
+                      searchUsers={this.searchUsers}
+                      clearUsers={this.clearUsers}
+                      showClear={users.length > 0 ? true : false}
+                      setAlert={this.setAlert}
+                    />
+                    <Users loading={loading} users={users} />
+                  </>
+                }
+              />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </div>
         </div>
-        <div className="container">
-          <Alert alert={alert} />
-          <Search
-            searchUsers={this.searchUsers}
-            clearUsers={this.clearUsers}
-            showClear={users.length > 0 ? true : false}
-            setAlert={this.setAlert}
-          />
-          <Users loading={loading} users={users} />
-        </div>
-      </div>
+      </Router>
     );
   }
 }
