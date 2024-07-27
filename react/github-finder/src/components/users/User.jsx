@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import Spinner from '../layouts/Spinner';
 import PropTypes from 'prop-types';
 
@@ -12,6 +12,7 @@ const User = ({ getUser, user, loading }) => {
 
   const {
     name,
+    company,
     avatar_url,
     location,
     bio,
@@ -29,52 +30,70 @@ const User = ({ getUser, user, loading }) => {
 
   return (
     <div>
-      <h1>{login}</h1>
-      <img
-        src={avatar_url}
-        alt="avatar"
-        style={{ width: '250px', height: '250px', borderRadius: '8px' }}
-      />
-
-      <ul>
-        <li>
-          <strong>name:</strong> {name}
-        </li>
-
-        <li>
-          <strong>location:</strong> {location}
-        </li>
-        <li>
-          <strong>bio: </strong> {bio}
-        </li>
-        <li>
-          <strong>blog: </strong>{' '}
-          <a href={blog} target="_blank" rel="noopener noreferrer">
-            {blog}
+      <Link to="/" className="btn btn-light">
+        Back To Search
+      </Link>
+      Hireable:{' '}
+      {hireable ? (
+        <i className="fas fa-check text-success" />
+      ) : (
+        <i className="fas fa-times-circle text-danger" />
+      )}
+      <div className="card grid-2">
+        <div className="all-center">
+          <img
+            src={avatar_url}
+            alt="avatar"
+            className="round-img"
+            style={{ width: '150px' }}
+          />
+          <h1>{name}</h1>
+          <p>location: {location}</p>
+        </div>
+        <div>
+          {bio && (
+            <>
+              <h3>Bio</h3>
+              <p>{bio}</p>
+            </>
+          )}
+          <ul>
+            <li>
+              {login && (
+                <>
+                  <strong>Username: </strong> {login}
+                </>
+              )}
+            </li>
+            <li>
+              {company && (
+                <>
+                  <strong>Company: </strong> {company}
+                </>
+              )}
+            </li>
+            <li>
+              {blog && (
+                <>
+                  <strong>Website: </strong>{' '}
+                  <a href={blog} target="_blank">
+                    {blog}
+                  </a>
+                </>
+              )}
+            </li>
+          </ul>
+          <a href={html_url} className="btn btn-dark my-1">
+            Visit Github Profile
           </a>
-        </li>
-        <li>
-          <strong>html url: </strong>
-          <a href={html_url} target="_blank" rel="noopener noreferrer">
-            {html_url}
-          </a>
-        </li>
-        <li>
-          <strong>followers: </strong> {followers}
-        </li>
-        <li>
-          <strong>following:</strong> {following}
-        </li>
-        <li>
-          <strong>public repos:</strong> {public_repos}
-        </li>
-        <li>
-          <strong> public gists</strong> {public_gists}
-        </li>
-        <li>
-          <strong> hireable:</strong> {hireable}
-        </li>
-      </ul>
+        </div>
+      </div>
+      <div className="card text-center">
+        <div className="badge badge-primary">Followers: {followers}</div>
+        <div className="badge badge-success">Following: {following}</div>
+        <div className="badge badge-dark">Public Gists: {public_gists}</div>
+        <div className="badge badge-light">Public Repos: {public_repos}</div>
+      </div>
     </div>
   );
 };

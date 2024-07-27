@@ -311,7 +311,7 @@ img {
 }
 
 .round-img {
-  border-radius: 50%;
+  border-radius: 8px;
 }
 
 /* Forms */
