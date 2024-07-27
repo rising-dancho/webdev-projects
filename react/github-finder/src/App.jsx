@@ -6,10 +6,12 @@ import axios from 'axios';
 import Search from './components/users/Search';
 import Alert from './components/layouts/Alert';
 import About from './components/pages/About';
+import User from './components/users/User';
 
 class App extends Component {
   state = {
     users: [],
+    user: {},
     loading: false,
     alert: null,
   };
@@ -17,7 +19,6 @@ class App extends Component {
   // search github users
   searchUsers = async (text) => {
     this.setState({ loading: true });
-    // console.log(text);
 
     const res = await axios.get(
       `https://api.github.com/search/users?q=${text}&client_id=${
@@ -25,32 +26,32 @@ class App extends Component {
       }&client_secret=${import.meta.env.VITE_CLIENT_SECRET}`
     );
     this.setState({ users: res.data.items, loading: false });
+  };
 
-    console.log(res);
+  // get a single user
+  getUser = async (username) => {
+    this.setState({ loading: true });
+
+    const res = await axios.get(
+      `https://api.github.com/users/${username}?client_id=${
+        import.meta.env.VITE_CLIENT_ID
+      }&client_secret=${import.meta.env.VITE_CLIENT_SECRET}`
+    );
+
+    this.setState({ user: res.data, loading: false });
+    console.log(res.data);
+    console.log(res.data.login);
   };
 
   // clear users for state
   clearUsers = () => {
     this.setState({ users: [], loading: true });
     window.location.reload();
-    // axios
-    //   .get(
-    //     `https://api.github.com/users?client_id=${
-    //       import.meta.env.VITE_CLIENT_ID
-    //     }&client_secret=${import.meta.env.VITE_CLIENT_SECRET}`
-    //   )
-    //   .then((res) => {
-    //     this.setState({ users: res.data, loading: false });
-    //     console.log(res);
-    //   })
-    //   .catch((error) => {
-    //     console.error(error);
-    //   });
   };
 
   // set alert
   setAlert = (msg, type) => {
-    this.setState({ alert: { msg: msg, type: type } });
+    this.setState({ alert: { msg, type } });
 
     setTimeout(() => {
       this.setState({ alert: null });
@@ -58,7 +59,7 @@ class App extends Component {
   };
 
   render() {
-    const { users, loading, alert } = this.state;
+    const { users, loading, alert, user } = this.state;
 
     return (
       <Router>
@@ -84,6 +85,12 @@ class App extends Component {
                 }
               />
               <Route path="/about" element={<About />} />
+              <Route
+                path="/user/:login"
+                element={
+                  <User user={user} getUser={this.getUser} loading={loading} />
+                }
+              />
             </Routes>
           </div>
         </div>
