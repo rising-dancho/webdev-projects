@@ -1,16 +1,13 @@
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Spinner from '../layouts/Spinner';
+import PropTypes from 'prop-types';
 
 const User = ({ getUser, user, loading }) => {
   const { login: logIn } = useParams();
 
   useEffect(() => {
-    if (loading) {
-      return <Spinner />;
-    } else {
-      getUser(logIn);
-    }
+    getUser(logIn);
   }, [logIn, getUser]);
 
   const {
@@ -28,16 +25,22 @@ const User = ({ getUser, user, loading }) => {
     hireable,
   } = user;
 
+  if (loading) return <Spinner />;
+
   return (
     <div>
       <h1>{login}</h1>
+      <img
+        src={avatar_url}
+        alt="avatar"
+        style={{ width: '250px', height: '250px', borderRadius: '8px' }}
+      />
+
       <ul>
         <li>
           <strong>name:</strong> {name}
         </li>
-        <li>
-          <strong>avatar url:</strong> {avatar_url}
-        </li>
+
         <li>
           <strong>location:</strong> {location}
         </li>
@@ -45,10 +48,16 @@ const User = ({ getUser, user, loading }) => {
           <strong>bio: </strong> {bio}
         </li>
         <li>
-          <strong>blog: </strong> {blog}
+          <strong>blog: </strong>{' '}
+          <a href={blog} target="_blank" rel="noopener noreferrer">
+            {blog}
+          </a>
         </li>
         <li>
-          <strong>html url: </strong> {html_url}
+          <strong>html url: </strong>
+          <a href={html_url} target="_blank" rel="noopener noreferrer">
+            {html_url}
+          </a>
         </li>
         <li>
           <strong>followers: </strong> {followers}
@@ -68,6 +77,12 @@ const User = ({ getUser, user, loading }) => {
       </ul>
     </div>
   );
+};
+
+User.propTypes = {
+  getUser: PropTypes.func.isRequired,
+  user: PropTypes.object.isRequired,
+  loading: PropTypes.bool.isRequired,
 };
 
 export default User;
