@@ -2,13 +2,15 @@ import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Spinner from '../layouts/Spinner';
 import PropTypes from 'prop-types';
+import Repos from '../repos/Repos';
 
-const User = ({ getUser, user, loading }) => {
+const User = ({ getUser, getUserRepos, user, repos, loading }) => {
   const { login: logIn } = useParams();
 
   useEffect(() => {
     getUser(logIn);
-  }, [logIn, getUser]);
+    getUserRepos(logIn);
+  }, [logIn, getUser, getUserRepos]);
 
   const {
     name,
@@ -26,13 +28,15 @@ const User = ({ getUser, user, loading }) => {
     hireable,
   } = user;
 
+  // const [name] = repos;
+
   if (loading) return <Spinner />;
 
   return (
     <div>
       <Link to="/" className="btn btn-light">
         Back To Search
-      </Link>
+      </Link>{' '}
       Hireable:{' '}
       {hireable ? (
         <i className="fas fa-check text-success" />
@@ -48,7 +52,7 @@ const User = ({ getUser, user, loading }) => {
             style={{ width: '150px' }}
           />
           <h1>{name}</h1>
-          <p>location: {location}</p>
+          {location && <p>location: {location}</p>}
         </div>
         <div>
           {bio && (
@@ -83,7 +87,7 @@ const User = ({ getUser, user, loading }) => {
               )}
             </li>
           </ul>
-          <a href={html_url} className="btn btn-dark my-1">
+          <a href={html_url} className="btn btn-dark my-1" target="_blank">
             Visit Github Profile
           </a>
         </div>
@@ -94,13 +98,21 @@ const User = ({ getUser, user, loading }) => {
         <div className="badge badge-dark">Public Gists: {public_gists}</div>
         <div className="badge badge-light">Public Repos: {public_repos}</div>
       </div>
+      {/* testing if repos  */}
+      {/* {repos.map((repo) => (
+        <h3>{repo.name}</h3>
+      ))} */}
+      {/* <h2>Repositories:</h2> */}
+      <Repos repos={repos} />
     </div>
   );
 };
 
 User.propTypes = {
   getUser: PropTypes.func.isRequired,
+  getUserRepos: PropTypes.func.isRequired,
   user: PropTypes.object.isRequired,
+  repos: PropTypes.array.isRequired,
   loading: PropTypes.bool.isRequired,
 };
 
