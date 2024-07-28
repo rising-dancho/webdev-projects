@@ -13,7 +13,7 @@ function App() {
   const [user, setUser] = useState({});
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [alert, setAlertState] = useState(null);
+  const [alert, setAlert] = useState(null);
 
   // search github users
   const searchUsers = async (text) => {
@@ -67,11 +67,11 @@ function App() {
   };
 
   // set alert
-  const setAlert = (msg, type) => {
-    setAlertState({ msg, type });
+  const showAlert = (msg, type) => {
+    setAlert({ msg, type });
 
     setTimeout(() => {
-      setAlertState(null);
+      setAlert(null);
     }, 4500);
   };
 
@@ -92,7 +92,7 @@ function App() {
                     searchUsers={searchUsers}
                     clearUsers={clearUsers}
                     showClear={users.length > 0 ? true : false}
-                    setAlert={setAlert}
+                    showAlert={showAlert}
                   />
                   <Users loading={loading} users={users} />
                 </>

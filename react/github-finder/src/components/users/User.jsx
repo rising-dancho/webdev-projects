@@ -53,7 +53,7 @@ const User = ({ getUser, getUserRepos, user, repos, loading }) => {
             style={{ width: '150px' }}
           />
           <h1>{name}</h1>
-          {location && <p>location: {location}</p>}
+          {location && <p>{location}</p>}
         </div>
         <div>
           {bio && (
@@ -65,26 +65,26 @@ const User = ({ getUser, getUserRepos, user, repos, loading }) => {
           <ul>
             <li>
               {login && (
-                <>
+                <p>
                   <strong>Username: </strong> {login}
-                </>
+                </p>
               )}
             </li>
             <li>
               {company && (
-                <>
+                <p>
                   <strong>Company: </strong> {company}
-                </>
+                </p>
               )}
             </li>
             <li>
               {blog && (
-                <>
+                <p>
                   <strong>Website: </strong>{' '}
                   <a href={blog} target="_blank">
                     {blog}
                   </a>
-                </>
+                </p>
               )}
             </li>
           </ul>
