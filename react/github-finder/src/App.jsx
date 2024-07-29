@@ -16,20 +16,6 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [alert, setAlert] = useState(null);
 
-  // search github users
-  const searchUsers = async (text) => {
-    setLoading(true);
-
-    const res = await axios.get(
-      `https://api.github.com/search/users?q=${text}&client_id=${
-        import.meta.env.VITE_CLIENT_ID
-      }&client_secret=${import.meta.env.VITE_CLIENT_SECRET}`
-    );
-
-    setUsers(res.data.items);
-    setLoading(false);
-  };
-
   // get a single user
   const getUser = async (username) => {
     setLoading(true);
@@ -91,7 +77,6 @@ function App() {
                 element={
                   <>
                     <Search
-                      searchUsers={searchUsers}
                       clearUsers={clearUsers}
                       showClear={users.length > 0 ? true : false}
                       showAlert={showAlert}
