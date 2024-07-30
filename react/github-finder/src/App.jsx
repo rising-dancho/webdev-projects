@@ -47,11 +47,6 @@ function App() {
     // console.log(res.data);
   };
 
-  // clear users for state
-  const clearUsers = () => {
-    setUsers([]);
-    setLoading(false);
-  };
 
   // set alert
   const showAlert = (msg, type) => {
@@ -76,11 +71,7 @@ function App() {
                 path="/"
                 element={
                   <>
-                    <Search
-                      clearUsers={clearUsers}
-                      showClear={users.length > 0 ? true : false}
-                      showAlert={showAlert}
-                    />
+                    <Search showAlert={showAlert} />
                     <Users loading={loading} users={users} />
                   </>
                 }
