@@ -12,7 +12,7 @@ export default (state, action) => {
 
     case REMOVE_ALERT:
       return {
-        alert: action.payload,
+        alert: null,
       };
 
     default:
