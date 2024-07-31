@@ -1,11 +1,8 @@
-import React from 'react';
 import {
   GET_USER,
   SEARCH_USERS,
   CLEAR_USERS,
   GET_REPOS,
-  SET_ALERT,
-  REMOVE_ALERT,
   SET_LOADING,
 } from '../types';
 
@@ -46,18 +43,6 @@ export default (state, action) => {
         ...state,
         users: [],
         loading: false,
-      };
-
-    case SET_ALERT:
-      return {
-        ...state,
-        alert: action.payload,
-      };
-
-    case REMOVE_ALERT:
-      return {
-        ...state,
-        alert: action.payload,
       };
 
     default:
