@@ -3,13 +3,13 @@ import GithubContext from './githubContext';
 import axios from 'axios';
 import githubReducer from './githubReducer';
 import {
+  GET_USER,
+  SEARCH_USERS,
   CLEAR_USERS,
   GET_REPOS,
-  GET_USERS,
-  SEARCH_USERS,
-  SET_LOADING,
   SET_ALERT,
   REMOVE_ALERT,
+  SET_LOADING,
 } from '../types';
 
 const GithubState = (props) => {
@@ -43,14 +43,45 @@ const GithubState = (props) => {
   };
 
   // Get user
+  const getUser = async (username) => {
+    setLoading();
+
+    const res = await axios.get(
+      `https://api.github.com/users/${username}?client_id=${
+        import.meta.env.VITE_CLIENT_ID
+      }&client_secret=${import.meta.env.VITE_CLIENT_SECRET}`
+    );
+    // console.log(res.data);
+    dispatch({ type: GET_USER, payload: res.data });
+  };
 
   // Get repos
+  const getUserRepos = async (username) => {
+    setLoading(true);
+
+    const res = await axios.get(
+      `https://api.github.com/users/${username}/repos?sort=created:asc&client_id=${
+        import.meta.env.VITE_CLIENT_ID
+      }&client_secret=${import.meta.env.VITE_CLIENT_SECRET}`
+    );
+    // console.log(res.data);
+    dispatch({ type: GET_REPOS, payload: res.data });
+  };
 
   // Clear users
   const clearUsers = () => dispatch({ type: CLEAR_USERS });
 
   // Set loading
   const setLoading = () => dispatch({ type: SET_LOADING });
+
+  // Set alert
+  const showAlert = (msg, type) => {
+    dispatch({ type: SET_ALERT, payload: { msg, type } });
+
+    setTimeout(() => {
+      dispatch({ type: REMOVE_ALERT });
+    }, 4500);
+  };
 
   return (
     <GithubContext.Provider
@@ -61,6 +92,9 @@ const GithubState = (props) => {
         loading: state.loading,
         searchUsers,
         clearUsers,
+        getUser,
+        getUserRepos,
+        showAlert,
       }}
     >
       {props.children}

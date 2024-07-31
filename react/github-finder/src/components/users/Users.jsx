@@ -20,9 +20,9 @@ const Users = () => {
     );
 };
 
-Users.propTypes = {
-  users: PropTypes.array.isRequired,
-};
+// Users.propTypes = {
+//   users: PropTypes.array.isRequired,
+// };
 
 const userStyle = {
   display: 'grid',

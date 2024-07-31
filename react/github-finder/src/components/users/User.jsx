@@ -1,12 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Spinner from '../layouts/Spinner';
 import PropTypes from 'prop-types';
 import Repos from '../repos/Repos';
+import GithubContext from '../context/github/githubContext';
 
-const User = ({ getUser, getUserRepos, user, repos, loading }) => {
+const User = () => {
+  const githubContext = useContext(GithubContext);
+  const { repos, getUserRepos, getUser, user, loading } = githubContext;
+
   const { login: logIn } = useParams();
-
   useEffect(() => {
     getUser(logIn);
     getUserRepos(logIn);
@@ -28,8 +31,6 @@ const User = ({ getUser, getUserRepos, user, repos, loading }) => {
     public_gists,
     hireable,
   } = user;
-
-  // const [name] = repos;
 
   if (loading) return <Spinner />;
 
@@ -109,12 +110,12 @@ const User = ({ getUser, getUserRepos, user, repos, loading }) => {
   );
 };
 
-User.propTypes = {
-  getUser: PropTypes.func.isRequired,
-  getUserRepos: PropTypes.func.isRequired,
-  user: PropTypes.object.isRequired,
-  repos: PropTypes.array.isRequired,
-  loading: PropTypes.bool.isRequired,
-};
+// User.propTypes = {
+//   getUser: PropTypes.func.isRequired,
+//   getUserRepos: PropTypes.func.isRequired,
+//   user: PropTypes.object.isRequired,
+//   repos: PropTypes.array.isRequired,
+//   loading: PropTypes.bool.isRequired,
+// };
 
 export default User;
